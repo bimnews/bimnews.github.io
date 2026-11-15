@@ -117,6 +117,12 @@ Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato co
      - perché per lui è diventata una cosa importante.
    - **Bloccato:** l'artefatto non compare nell'elenco degli artefatti di Marco e il sito non lo conosciamo. Bisogna chiedergli il link dell'artefatto (o le immagini) e l'indirizzo del sito.
 
+7. **Statistiche delle visite dentro il sito (domanda di Marco del 15/11/2026, in attesa della sua scelta).**
+   - Il sito usa già GoatCounter (`mscigliuolo.goatcounter.com`).
+   - **Strada proposta:** contatore con `goatcounter.visit_count` o con `/counter/TOTAL.json`.
+   - **Prima serve un'azione di Marco:** attivare in GoatCounter «Allow adding visitor counts on your website». Oggi l'endpoint risponde 403.
+   - **Alternativa:** dashboard pubblica incorporata in un frame. GoatCounter ha una pagina di aiuto apposita, da verificare.
+
 ## Fatto di recente
 
 - **15/11/2026, revisione 100:**
