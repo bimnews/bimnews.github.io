@@ -71,7 +71,7 @@ Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato co
 1. **Globo 3D: PUBBLICATO il 15/11/2026 (revisione 106) dopo il sì di Marco.**
    - **Codice:** `assets/globo/` (`globo.js`, `mondo.json`, `citta.json`, le librerie, `LICENZE.txt`); `loadGlobe()` parte dopo `loadMap()`, solo nella versione completa.
    - **Cosa fa:** orientamento iniziale dal fuso orario; asse inclinato di 23,44°; giorno e notte reali; luci delle città; clic su un paese → volo sul paese, poi passaggio alla mappa piatta; «← Mondo» → torna il globo.
-   - **Scelta ancora aperta:** rotazione continua (attuale) oppure oscillazione attorno al continente di chi guarda.
+   - **Movimento:** il globo ruota soltanto, senza oscillare in su e in giù: Marco l'ha trovato brutto (15/11/2026). Rotazione continua.
 2. **Animazioni stagionali (solo anteprime per ora):** effetti leggeri e trasparenti sulla fascia della ricerca, attivati da soli nel periodo giusto.
    - **Natale:** neve e simboli natalizi dall'8 dicembre al 6 gennaio (Marco ha scritto «6 dicembre», ma intende la Befana).
    - **Altre grandi religioni**, ciascuna con un tema suo:
@@ -83,7 +83,7 @@ Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato co
      - Pasqua.
    - **Calcolo delle date:** usare `Intl.DateTimeFormat` con i calendari `islamic-umalqura`, `hebrew` e `chinese`, così le date si calcolano da sole. Diwali e Vesak vanno in una tabella verificata anno per anno.
    - **Anteprime:** GIF da mostrare a Marco prima di pubblicare.
-3. **Pulsanti 3D «a LED incassati»** (richiesta del 15/11/2026: anche le scritte dei pulsanti devono accendersi come LED al passaggio del cursore e al clic): pulsanti in rilievo con un LED luminoso, eleganti. Fare un'anteprima.
+3. **Pulsanti 3D «a LED incassati»: anteprima inviata il 15/11/2026 (GIF e foto nei due temi), si aspetta il sì.** CSS pronto in `strumenti/led/led.css` (da incollare in fondo allo `<style>`); `strumenti/led/rec.js` registra i fotogrammi. Riguarda la barra in alto, le schede di BIM News, i pulsanti delle impostazioni, «Vedi le notizie» e «Tutti gli appuntamenti». Richiesta originale (richiesta del 15/11/2026: anche le scritte dei pulsanti devono accendersi come LED al passaggio del cursore e al clic): pulsanti in rilievo con un LED luminoso, eleganti. Fare un'anteprima.
 4. **Sito multilingue, proposta 2, scelta da Marco.**
    - Interfaccia in 7 lingue: it, en, de, fr, es, zh (semplificato), ja.
    - Pagine separate per lingua (`/en/`, `/de/`…) con `hreflang`.
@@ -146,3 +146,4 @@ Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato co
 - **15/11/2026, revisione 105:** il tasto Home ricarica tutto il sito.
 - **15/11/2026, revisione 106:** pubblicato il globo 3D della home.
 - **15/11/2026, revisione 107:** scheda Tai Chi e Kung Fu con le cinque virtù.
+- **15/11/2026, revisione 108:** il globo non oscilla più, ruota soltanto.
