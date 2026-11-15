@@ -1,0 +1,190 @@
+v0917	09 · Las certificaciones en el mundo
+v0918	Obligatoria en las obras públicas
+v0919	Voluntaria
+v0920	Requisitos de formación y experiencia
+v0921	Voluntaria, para organizaciones
+v0922	Perfil
+v0923	Quién soy, trayectoria, competencias y herramientas
+v0924	Los proyectos en los que he trabajado
+v0925	Problemas, soluciones y manuales para quien proyecta
+v0926	Mis propuestas
+v0927	Ideas para el mundo del BIM
+v0928	Los trabajos en curso
+v0929	Pasiones, reflexiones y manuales no profesionales
+v0930	Los libros que me han formado
+v0931	Leer en Academia ↗
+v0932	Tesis de máster · 2018
+v0933	Regeneración urbana
+v0934	El curador · Portfolio
+v0935	Revit · datos
+v0936	AutoCAD · AutoLISP
+v0937	Instalaciones eléctricas
+v0938	Energía · CasaClima
+v0939	Script · Excel
+v0940	IFC · experimento
+v0941	Trabajo · método
+v0942	IFC · herramientas
+v0943	IFC · versiones
+v0944	IFC · interoperabilidad
+v0945	Sitio · manuales
+v0946	Psicología · 1976
+v0947	Dónde encontrarlo · IBS ↗
+v0948	Ficha del editor · Rizzoli ↗
+v0949	Your Erroneous Zones · Wikipedia ↗
+v0950	Psicología · 2024–2026
+v0951	Dónde encontrarlos · página de la autora ↗
+v0952	Gabriella Tupini Official · YouTube ↗
+v0953	Lista de libros · Goodreads ↗
+v0954	Psicología · Terapia breve estratégica
+v0955	Dónde encontrarlos · IBS ↗
+v0956	Centro de Terapia Estratégica · Arezzo ↗
+v0957	Crecimiento personal · 2000
+v0958	Psicología · 1995–1998
+v0959	Inteligencia emocional · IBS ↗
+v0960	La práctica de la inteligencia emocional · IBS ↗
+v0961	Daniel Goleman · sitio del autor ↗
+v0962	Novela · 1906
+v0963	Texto original gratuito · Project Gutenberg ↗
+v0964	Colmillo Blanco · Wikipedia ↗
+v0965	Novela · 1864
+v0966	Texto gratuito en italiano · Liber Liber ↗
+v0967	Viaje al centro de la Tierra · Wikipedia ↗
+v0968	Poesía · 1929–1938
+v0969	Antonia Pozzi · Wikipedia ↗
+v0970	«Desiderio di cose leggere» · análisis (en italiano) ↗
+v0973	1 de febrero de 1934
+v0974	Ensayo · 2018
+v0975	Hábitos atómicos · sitio del autor ↗
+v0976	Ensayo · 2022
+v0977	Steve Magness · sitio del autor ↗
+v0978	Ensayo · 2016
+v0979	Cal Newport · sitio del autor ↗
+v0980	Ensayo · 1998
+v0981	Robert Greene · sitio del autor ↗
+v0982	Ensayo · Alimentación
+v0983	La dieta termodinamica · IBS ↗
+v0984	La digestión es la cuestión · IBS ↗
+v0985	Dario Bressanini · YouTube ↗
+v0986	Fotografía · 2017
+v0987	La exposición en Bari · Giornale Armonia ↗
+v0988	La exposición en Foggia · Il Mattino di Foggia ↗
+v0989	Fotografía · 2007
+v0990	Michael Freeman · Wikipedia ↗
+v0991	Economía · For Dummies
+v0992	Ficha del editor · Hoepli ↗
+v0993	Economía · 2020
+v0994	Contacto
+v0995	Privacidad
+v0996	Ninguna cookie. <a href="#mappa" data-goto-art="visite">Estadísticas anónimas</a> con GoatCounter.
+v0997	Cerrar la guía
+v0998	Paso anterior
+v0999	Ajustes del sitio
+v1000	Una visita guiada a la portada
+v1001	Pasar a la versión esencial: para conexiones lentas, descarga solo textos y noticias, sin mapa, animaciones, ilustraciones ni fuentes
+v1002	Volver a la portada
+v1003	Secciones
+v1004	Fecha y hora de hoy
+v1005	Busca un país, una región, una ciudad o un tema…
+v1006	Busca un país, una región, una ciudad o un tema
+v1007	Sugerencias
+v1008	Mapa del mundo: toca un continente, un país y luego una región o un estado para acercarte y filtrar las noticias
+v1009	Regiones y estados
+v1010	Zoom del mapa
+v1011	Acercar
+v1012	Alejar
+v1013	Regiones
+v1014	Próximas citas
+v1022	Vistas de BIM News
+v1023	Ilustración: un edificio en construcción, con las plantas bajas ya construidas y las altas todavía en modelo BIM, una grúa y dos etiquetas con la información de los elementos
+v1024	Qué es BIM News y qué no es
+v1025	Filtros, eventos y webinars
+v1026	p. ej. IFC, Revit, pliego
+v1027	Tipo
+v1028	Coste por verificar en el sitio
+v1029	Gratuito
+v1030	Precio de la entrada por verificar en el sitio
+v1031	Ir al mes
+v1032	Páginas del archivo
+v1033	título, autor, revista, palabra del resumen
+v1034	Idioma del resumen
+v1035	Coste por verificar: la página no lo indica
+v1037	por ejemplo: idiomas, mapa, traducciones
+v1038	Abrir o cerrar: El sitio
+v1039	Abrir o cerrar: BIM News
+v1040	Abrir o cerrar: El BIM en 5 minutos
+v1041	Abrir o cerrar: Vídeos
+v1042	Abrir o cerrar: Agenda
+v1043	Abrir o cerrar: El curador
+v1044	Abrir o cerrar: En el estudio
+v1045	Abrir o cerrar: Fuera del estudio
+v1046	Abrir o cerrar: Mis libros
+v1047	Abrir o cerrar: FAQ
+v1048	En esta página
+v1049	Planta y sección de la Villa Rotonda, grabado de Los cuatro libros de arquitectura de Andrea Palladio, 1570
+v1050	En CAD, un muro está hecho de cuatro líneas; a una línea se le pueden dar atributos como la capa, el color y el tipo de línea
+v1051	En BIM, el muro es un objeto 3D gobernado por parámetros: al cambiar la longitud y la altura, se actualizan la superficie y el volumen
+v1052	El modelo acompaña la obra en todas sus fases
+v1053	Tipo de documento
+v1054	Retroceder en el tiempo
+v1055	Cronología de las normas, desplazamiento horizontal
+v1056	Avanzar en el tiempo
+v1057	Líneas que mostrar
+v1058	Cronología mundo e Italia, desplazamiento horizontal
+v1069	Directiva 2014/24/UE, art. 22, apdo. 4
+v1071	ISO 19650-1 y -2:2018
+v1072	ISO 19650-3 y -5:2020
+v1074	ISO 16739-1:2024 e ISO 7817-1:2024
+v1078	Decreto Legislativo 50/2016, art. 23, apdo. 13
+v1082	UNI EN ISO 19650-1 y -2:2019
+v1088	Decreto Legislativo 36/2023, art. 43 y Anexo I.9
+v1091	Decreto Legislativo 209/2024 (correctivo)
+v1092	Obligación vigente
+v1094	Directrices del MIT (Ministerio italiano de Infraestructuras)
+v1096	Ir a una dimensión
+v1097	Ilustración de la dimensión 3D: el modelo geométrico
+v1098	Ilustración de la dimensión 4D: los plazos
+v1099	Ilustración de la dimensión 5D: los costes
+v1100	Ilustración de la dimensión 6D: la gestión de la obra
+v1101	Ilustración de la dimensión 7D: la sostenibilidad
+v1102	Ilustración de la dimensión 8D: la seguridad
+v1103	Ilustración de la dimensión 9D: la construcción ajustada
+v1104	Ilustración de la dimensión 10D: la industrialización
+v1105	Subsecciones del curador
+v1106	Tipo de etapa
+v1107	Cerrar: Guía: AutoCAD 2026, xrefs e impresión
+v1108	Cerrar: Property Sets para la exportación IFC desde Revit
+v1109	Cerrar: Sustituir el IFC vinculado con Dynamo
+v1110	Animación: APPLOAD, elección del archivo .lsp, Cargar y luego el comando SOSTXRIF
+v1111	Cerrar: AutoCAD 2026: xrefs e impresión
+v1112	Cerrar: Diseño eléctrico con i-project
+v1113	Cerrar: Lenguajes de programación para quien trabaja en el BIM
+v1114	Fase actual: desarrollo
+v1115	Fase actual: idea
+v1116	Fase actual: borrador
+v1117	Cerrar: El escultismo
+v1118	Las cinco virtudes del Kung Fu
+v1119	Cerrar: Tai Chi y Kung Fu
+v1120	Cerrar: Tus zonas erróneas
+v1121	Cerrar: Los libros de Gabriella Tupini
+v1122	Cerrar: Los libros de Giorgio Nardone
+v1123	Cerrar: Las 5 heridas y cómo sanarlas
+v1124	Cerrar: La inteligencia emocional de Daniel Goleman
+v1125	Cerrar: Crecimiento personal y psicología
+v1126	Cerrar: Colmillo Blanco
+v1127	Cerrar: Viaje al centro de la Tierra
+v1128	Cerrar: Novelas
+v1129	Cerrar: Parole
+v1130	Cerrar: Poesía
+v1131	Cerrar: Hábitos atómicos
+v1132	Cerrar: Do Hard Things
+v1133	Cerrar: Deep Work
+v1134	Cerrar: Las 48 leyes del poder
+v1135	Cerrar: Alimentación: la física y la biología
+v1136	Cerrar: Ensayo
+v1137	Cerrar: Il mio Regio Tratturo
+v1138	Cerrar: El ojo del fotógrafo
+v1139	Cerrar: Arte y fotografía
+v1140	Cerrar: Capire l'economia For Dummies
+v1141	Cerrar: La psicología del dinero
+v1142	Cerrar: Economía
+v1143	Otras secciones del sitio
