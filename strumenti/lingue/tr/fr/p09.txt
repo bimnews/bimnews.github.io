@@ -1,0 +1,55 @@
+v0680	Des manuels avec des images qui parlent votre langue
+v0681	Enrichir les manuels d'images « dynamiques », dont les textes changent avec la langue choisie pour le site.
+v0682	Des images dessinées en SVG, avec les textes en tant que texte et non en pixels
+v0683	Des textes qui suivent la langue sélectionnée
+v0684	Un essai sur les premiers manuels
+v0685	Hors du bureau
+v0686	Réflexions sur ce qui me passionne et sur la façon dont le travail change. Mes opinions, avec la même rigueur que je mets dans les projets.
+v0687	Passions et réflexions
+v0688	La musique
+v0689	Exploration et discipline : ce que la musique m'a appris, au travail et au-delà.
+v0690	Mes livres
+v0691	Les livres qui ont été fondamentaux pour ma formation. Ils ont une page à eux : <a href="#libri">Mes livres →</a>
+v0692	Ce que signifie être ingénieur · hors du bureau
+v0693	La même question vue de l'intérieur : comment on se voit et comment on se sent dans ce métier, entre doutes, fatigue et satisfactions. L'autre face est dans <a href="#studio">Au bureau →</a>
+v0694	Le scoutisme
+v0695	J'ai commencé à l'AGESCI, l'association des scouts catholiques italiens. Avec le temps, j'ai compris que ce n'était pas le bon choix pour moi : à l'AGESCI, on fait le « choix de la foi », et mon chemin spirituel m'a amené à reconnaître que je ne suis pas croyant. Depuis que je vis et travaille à Bolzano, je suis au <span translate="no">CNGEI</span>, les scouts laïques, parce que je crois fermement que l'éducation doit être laïque et jamais orientée par des principes religieux.
+v0696	Qu'est-ce que je donne ? Mes compétences, ma passion, l'envie de donner un coup de main. Nous organisons des collectes alimentaires et aidons la communauté autant que possible.
+v0697	Qu'est-ce que le scoutisme me donne ? Surtout le sens de ce sur quoi le <span translate="no">CNGEI</span> se fonde : l'éducation des jeunes. C'est le pilier pour construire une société saine, avec une éducation laïque qui ne néglige pas la dimension spirituelle de chacun et aide à devenir de meilleurs citoyens du monde. C'est ainsi que se forment les citoyens de demain.
+v0698	« Le but de la formation scoute est d'améliorer la qualité des citoyens de demain, surtout dans le caractère et la santé ; remplacer le moi par le service. »
+v0699	Robert Baden-Powell, <i lang="en">Aids to Scoutmastership</i>, chapitre « The Aim of Scouting » (édition de 1930). Notre traduction de l'anglais : <span lang="en">« The aim of the Scout training is to improve the standard of our future citizenhood, especially in Character and Health; to replace Self with Service ».</span> <a href="https://isf-world.org/pdf/A2SM-A5.pdf" target="_blank" rel="noopener">Texte original ↗</a>
+v0700	Tai Chi et Kung Fu
+v0701	À la base des arts martiaux, il y a les vertus : non pas des règles à réciter, mais des dispositions de l'âme, des pistes pour s'améliorer devant le maître et dans la vie de tous les jours. Les déclarer ne signifie pas les posséder : cela signifie avoir la volonté de les conquérir. Et avec la croissance intérieure, chacun trouve son propre sens.
+v0702	<span lang="zh-Hans">智</span> Sagesse <small lang="zh-Latn-pinyin">zhì</small>
+v0703	L'équilibre dans le comportement et dans le conseil, mûri par l'expérience et par l'envie de regarder les choses de plusieurs points de vue.
+v0704	<span lang="zh-Hans">仁</span> Compassion <small lang="zh-Latn-pinyin">rén</small>
+v0705	Être compréhensif envers les autres, même envers l'adversaire, et avant tout envers soi-même : accepter ses limites est le premier pas pour les dépasser, et pour aider ceux qui nous entourent. « Si l'ennemi combat avec rage, ne cède pas à la colère : use de compassion ».
+v0706	<span lang="zh-Hans">信</span> Sincérité <small lang="zh-Latn-pinyin">xìn</small>
+v0707	Agir et parler selon ce que nous pensons vraiment, sans nous laisser dévier. C'est aussi reconnaître honnêtement ses limites et s'engager à les dépasser.
+v0708	<span lang="zh-Hans">勇</span> Courage <small lang="zh-Latn-pinyin">yǒng</small>
+v0709	Ce n'est pas l'absence de peur : c'est affronter les difficultés sans trahir ses valeurs, persévérer dans l'adversité, maîtriser la peur et savoir quand s'arrêter.
+v0710	<span lang="zh-Hans">忍</span> Patience <small lang="zh-Latn-pinyin">rěn</small>
+v0711	La plus abstraite, mais la base de toutes les autres. Ce n'est pas de la résignation : c'est accepter que chaque chose a son temps, et s'engager sur le long chemin. « Mâche, avale, digère. Puis demande encore du riz ».
+v0712	Les descriptions résument, avec nos mots, la page <a href="https://www.kungfuetaichi.com/5-virt%C3%B9" target="_blank" rel="noopener">Le 5 Virtù · Kung Fu e Tai Chi (en italien) ↗</a>, d'où viennent aussi les deux citations.
+v0713	Pourquoi c'est important pour moi
+v0714	Le Tai Chi et le Kung Fu prennent une place de plus en plus importante dans ma vie. Avant tout, ce sont une soupape : une façon de chercher un équilibre intérieur et d'exprimer mon agressivité de façon saine, en trouvant une dimension bien à moi, à l'intérieur.
+v0715	Sur le plan spirituel, ils m'amènent à réfléchir au sens du bien et du mal, et au fait que ces outils ne doivent être utilisés qu'en dernier recours : pour sauver sa propre vie ou celle de quelqu'un d'autre. Comme l'enseigne la première vertu, la sagesse, il faut apprendre à choisir ses combats.
+v0716	C'est un principe fondamental pour moi aussi au travail, et pas seulement dans la vie privée : il est inutile de perdre du temps dans ce qui nous prend énergie, santé et sérénité. Chaque vertu du Kung Fu m'apprend quelque chose. La philosophie chinoise qui vit dans ces disciplines vous imprègne, et aide à affronter la vie de tous les jours avec plus de conscience.
+v0717	Des manuels non professionnels que j'ai créés moi-même, en demandant à Claude, l'assistant d'intelligence artificielle d'Anthropic, de les écrire selon des indications précises : le sujet, la structure, le niveau de détail et les exemples, c'est moi qui les ai choisis. Pour l'instant, vous trouvez les titres : les textes arriveront un par un.
+v0718	Le son : mathématiques, effets et psychoacoustique
+v0719	Ce qu'est le son, des mathématiques à la perception.
+v0720	Bibliothèque d'effets pour guitare et basse
+v0721	Les effets pour guitare et basse, rassemblés et expliqués.
+v0722	Sons de guitare avec le modeleur
+v0723	Synthèse de la playlist de tutoriels Fractal sur les sons de guitare.
+v0724	Les livres qui ont été fondamentaux pour ma formation. Pour chacun, il y aura un bref article sur ce qu'il m'a apporté, regroupé par catégorie.
+v0725	Développement personnel et psychologie
+v0726	Les livres qui m'ont aidé à comprendre comment fonctionnent les gens, à commencer par moi-même.<span class="acc-count">· 5 fiches</span>
+v0727	Vos zones erronées
+v0728	Guide de l'indépendance de l'esprit · Wayne W. Dyer · éd. italienne Rizzoli, BUR
+v0729	Le premier livre de développement personnel du psychothérapeute américain Wayne W. Dyer, paru en 1976 et devenu un best-seller international. Dyer appelle « zones erronées » les habitudes de pensée qui nous font du mal sans que nous nous en rendions compte : le sentiment de culpabilité et l'inquiétude, le besoin constant d'approbation, les étiquettes par lesquelles nous nous définissons (« je suis comme ça »), la tendance à remettre à plus tard. L'idée de fond est que les émotions dépendent en grande partie de notre façon de penser, et que chacun peut choisir de vivre dans le présent et de prendre la responsabilité de soi.
+v0730	Je peux le dire tranquillement : pour moi, ce livre est l'année zéro, le point de départ de tout mon intérêt pour le développement personnel et la psychologie. Avant, j'étais très attiré par la philosophie, mais je n'y avais rien trouvé de concret à apporter dans ma vie, et je l'avais un peu mise de côté. Ici, en revanche, j'ai trouvé des outils pratiques.
+v0731	Depuis, j'ai suivi de nombreuses formations et stages de développement personnel, et pendant longtemps ce livre a été mon guide : il m'a appris à ne pas me laisser entraîner, sans esprit critique, par les convictions profondes que le monde nous livre toutes faites.
+v0732	Les livres de Gabriella Tupini
+v0733	Huit livres de psychologie des profondeurs · Gabriella Tupini
+v0734	Gabriella Tupini est une psychologue et psychothérapeute qui travaille avec l'analyse et l'interprétation des rêves, très suivie comme vulgarisatrice : sur sa chaîne YouTube, elle parle de traumatismes, d'émotions refoulées, de conscience et du poids des schémas familiaux et sociaux. Dans ses livres, elle applique la même méthode : du voyage dans ses propres peurs de <i>Nella tana del lupo</i> au manuel sur les rêves, écrit, comme elle l'explique elle-même, pour ceux qui ne peuvent pas se permettre une analyse, jusqu'à la série <i>Storia di un'analisi</i>, où chaque volume suit le parcours d'une personne.
