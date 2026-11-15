@@ -1,0 +1,201 @@
+diff --git a/index.html b/index.html
+index 582f10d..2d035e2 100644
+--- a/index.html
++++ b/index.html
+@@ -983,6 +983,25 @@ body{transition:background-color .3s}
+ #bim-wall path{stroke:var(--k-b5);stroke-width:1.2;stroke-linejoin:round}
+ .bim-ctl{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.6rem;font:600 .72rem var(--mono);color:var(--muted)}
+ .bim-ctl label{display:grid;gap:.2rem}.bim-ctl input{width:100%;accent-color:var(--k-b5)}
++/* BIM in breve: linea del tempo dei tre passi, approfondimento e futuro */
++.evo-tl{list-style:none;margin:.6rem 0 .2rem;padding:0;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:0;position:relative}
++.evo-tl::before{content:"";position:absolute;left:0;right:0;top:.55rem;height:3px;background:linear-gradient(90deg,#9a8a6a 0 18%,#6a8fb0 18% 50%,var(--k-b5) 50%);border-radius:2px}
++.evo-tl li{position:relative;padding:1.4rem .5rem 0 0;display:grid;gap:.2rem}
++.evo-tl li::before{content:"";position:absolute;top:.1rem;left:0;width:1.05rem;height:1.05rem;border-radius:50%;background:var(--paper);border:3px solid var(--k-b5)}
++.evo-tl li.h::before{border-color:#9a8a6a}.evo-tl li.c::before{border-color:#6a8fb0}.evo-tl li.now::before{background:var(--k-b5)}
++.evo-tl b{font-family:var(--mono);font-size:.95rem}
++.evo-tl span{font-size:.84rem;color:var(--muted);line-height:1.35}
++.evo-tl-src{font-size:.76rem;color:var(--muted);margin:0 0 .8rem}
++@media (max-width:760px){.evo-tl{grid-template-columns:minmax(0,1fr);gap:.7rem;padding-left:1.6rem}.evo-tl::before{left:.45rem;right:auto;top:0;bottom:0;width:3px;height:auto;background:linear-gradient(180deg,#9a8a6a 0 18%,#6a8fb0 18% 50%,var(--k-b5) 50%)}.evo-tl li{padding:0}.evo-tl li::before{left:-1.6rem;top:.15rem}}
++.evo-deep{margin-top:.4rem}
++.evo-code{margin:0;padding:.7rem .9rem;background:var(--paper);border:1px solid var(--line);border-radius:8px;overflow-x:auto;font:400 .8rem/1.5 var(--mono);white-space:pre}
++.fu-wrap{display:grid;gap:.8rem;margin-top:2rem}
++.fu-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(16rem,1fr));gap:.8rem}
++.fu-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow);padding:1rem;display:grid;gap:.4rem;align-content:start}
++.fu-card h4{margin:0;font-family:var(--display);font-size:1.08rem}
++.fu-card p{margin:0;font-size:.95rem}
++.fu-k{justify-self:start;font-family:var(--mono);font-size:.7rem;padding:.12rem .5rem;border-radius:999px;border:1px solid currentColor}
++.fu-k.ok{color:var(--k-b5)}.fu-k.q{color:var(--muted)}
+ .evo-why{padding:1rem 1.2rem;border-left:4px solid var(--k-b5);background:var(--k-b5-s);border-radius:0 var(--r) var(--r) 0;display:grid;gap:.5rem}
+ .evo-why h4{margin:0;font-family:var(--display);font-size:1.1rem}
+ .evo-why ul{margin:0;padding-left:1.1rem;display:grid;gap:.35rem}
+@@ -1072,6 +1091,35 @@ body{transition:background-color .3s}
+ .agp-grp button,.agp-world{font-family:var(--mono);font-size:.74rem;border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:.32rem .75rem;border-radius:999px;cursor:pointer}
+ .agp-grp button[aria-pressed="true"]{background:var(--accent);color:var(--on-accent);border-color:var(--accent)}
+ .agp-grp button:hover,.agp-world:hover{border-color:var(--accent)}
++/* agenda a calendario */
++.agc{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow);padding:1rem;margin:0 0 1rem;display:grid;gap:.55rem}
++.agc-top{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem}
++.agc-tit{margin:0 .3rem;font-family:var(--display);font-size:1.25rem;font-weight:750;min-width:9.5rem;text-align:center;text-transform:capitalize}
++.agc-nav,.agc-today{font:600 .9rem/1 var(--sans,system-ui);border:1px solid var(--line);background:var(--paper);color:var(--ink);border-radius:999px;min-width:2rem;height:2rem;padding:0 .7rem;cursor:pointer}
++.agc-nav:hover,.agc-today:hover{border-color:var(--k-ag)}
++.agc-leg{margin-left:auto;display:flex;flex-wrap:wrap;gap:.35rem .9rem;font-family:var(--mono);font-size:.74rem;color:var(--muted)}
++.agc-leg span{display:inline-flex;align-items:center;gap:.35rem}
++.agc i,.agc-day i{display:inline-block;width:.6rem;height:.6rem;border-radius:50%;flex:none}
++.agc .ev,.agc-day .ev{background:var(--k-ag)}.agc .wb,.agc-day .wb{background:#8a5cd6}.agc .sc,.agc-day .sc{background:var(--k-news);border-radius:2px}.agc .td,.agc-day .td{background:#2bb3a3;border-radius:2px;transform:rotate(45deg) scale(.85)}
++.agc-dow,.agc-grid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:4px}
++.agc-dow span{font-family:var(--mono);font-size:.72rem;color:var(--muted);text-align:center;text-transform:uppercase}
++.agc-c{min-height:5.6rem;border:1px solid var(--line);border-radius:8px;background:var(--paper);padding:.3rem .35rem;display:flex;flex-direction:column;gap:3px;text-align:left;font:inherit;color:inherit;cursor:pointer;overflow:hidden}
++.agc-c.out{opacity:.35}.agc-c.empty{cursor:default}
++.agc-c.has:hover,.agc-c.sel{border-color:var(--k-ag);box-shadow:0 0 0 2px color-mix(in srgb,var(--k-ag) 35%,transparent)}
++.agc-c.today .agc-n{background:var(--k-ag);color:var(--k-ag-on);border-radius:999px;padding:0 .4rem}
++.agc-n{font-family:var(--mono);font-size:.78rem;font-weight:700;align-self:flex-start}
++.agc-e{display:flex;align-items:center;gap:.3rem;font-size:.7rem;line-height:1.2;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:var(--ink)}
++.agc-e span{overflow:hidden;text-overflow:ellipsis}
++.agc-more{font-family:var(--mono);font-size:.66rem;color:var(--muted)}
++.agc-day:empty{display:none}
++.agc-day{border-top:1px solid var(--line);padding-top:.6rem;display:grid;gap:.45rem}
++.agc-day h4{margin:0;font-family:var(--display);font-size:1rem}
++.agc-day ul{list-style:none;margin:0;padding:0;display:grid;gap:.4rem}
++.agc-day li{display:grid;grid-template-columns:auto minmax(0,1fr);gap:.2rem .55rem;align-items:baseline}
++.agc-day li i{margin-top:.3rem}
++.agc-day small{grid-column:2;color:var(--muted);font-size:.82rem}
++@media (max-width:700px){.agc-c{min-height:3.2rem}.agc-e span{display:none}.agc-e{display:inline-flex}.agc-c{flex-direction:row;flex-wrap:wrap;align-content:flex-start}.agc-n{width:100%}.agc-leg{margin-left:0}}
++.lite .agc-c{transition:none}
+ .agp-cols{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr) minmax(0,1fr);gap:1rem;align-items:start}
+ .agp-col{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow);padding:1rem;display:grid;gap:.6rem}
+ .agp-h{margin:0;font-family:var(--display);font-size:1.15rem;font-weight:750;display:flex;align-items:center;gap:.5rem}
+@@ -2016,6 +2064,13 @@ section:has(>.pg-hero)>.content{position:relative;z-index:1}
+         <div class="agp-grp" role="group" aria-label="Area geografica"><span class="f-lab">Area</span><span id="agp-area"></span></div>
+         <div class="agp-grp" role="group" aria-label="Costo"><span class="f-lab">Costo</span><button type="button" data-pr="" aria-pressed="true">Tutti</button><button type="button" data-pr="free" aria-pressed="false">Gratuiti</button><button type="button" data-pr="paid" aria-pressed="false">A pagamento</button><button type="button" data-pr="verify" aria-pressed="false">Da verificare</button></div>
+       </div>
++      <div class="agc" id="agc" aria-label="Calendario degli appuntamenti">
++        <div class="agc-top"><button type="button" class="agc-nav" data-m="-1" aria-label="Mese precedente">‹</button><h3 class="agc-tit" id="agc-tit"></h3><button type="button" class="agc-nav" data-m="1" aria-label="Mese successivo">›</button><button type="button" class="agc-today" data-m="0">Oggi</button>
++          <span class="agc-leg"><span><i class="sc"></i>Scadenze</span><span><i class="ev"></i>Eventi</span><span><i class="wb"></i>Webinar</span><span><i class="td"></i>Giornate della tecnologia</span></span></div>
++        <div class="agc-dow" aria-hidden="true"><span>lun</span><span>mar</span><span>mer</span><span>gio</span><span>ven</span><span>sab</span><span>dom</span></div>
++        <div class="agc-grid" id="agc-grid"></div>
++        <div class="agc-day" id="agc-day" aria-live="polite"></div>
++      </div>
+       <div class="agp-cols">
+         <div class="agp-col" id="agp-sc-box"><h3 class="agp-h"><span class="agp-i sc" aria-hidden="true"></span>Scadenze normative</h3><p class="agp-sub">Obblighi BIM che entrano in vigore, paese per paese.</p><ol class="ag-list" id="agp-sc"></ol></div>
+         <div class="agp-col" id="agp-ev-box"><h3 class="agp-h"><span class="agp-i ev" aria-hidden="true"></span>Eventi</h3><p class="agp-sub">Fiere, congressi e conferenze in presenza.</p><ol class="ag-list" id="agp-ev"></ol></div>
+@@ -2078,11 +2133,20 @@ section:has(>.pg-hero)>.content{position:relative;z-index:1}
+     <div class="content">
+       <h2>BIM in breve</h2>
+       <p class="lead">Non sai cos'è il BIM? Parti da qui: cos'è, a cosa serve in uno studio, perché oggi non se ne può fare a meno, le norme e le sigle. L'essenziale in poche righe, il resto quando vuoi.</p>
+-      <nav class="b5-toc" aria-label="In questa pagina"><button type="button" data-go="b5-01">01 Che cos'è</button><button type="button" data-go="b5-02">02 Tutta la vita dell'opera</button><button type="button" data-go="b5-03">03 Cosa cambia</button><button type="button" data-go="b5-04">04 Perché adesso</button><button type="button" data-go="norme">05 Le norme</button><button type="button" data-go="b5-t2">05 Mondo e Italia</button><button type="button" data-go="b5-dim">06 Le dimensioni</button><button type="button" data-go="b5-sigle">07 Le sigle</button><button type="button" data-go="b5-risultati">08 Risultati concreti</button><button type="button" data-go="b5-cert">09 Certificazioni nel mondo</button></nav>
++      <nav class="b5-toc" aria-label="In questa pagina"><button type="button" data-go="b5-01">01 Che cos'è</button><button type="button" data-go="b5-02">02 Tutta la vita dell'opera</button><button type="button" data-go="b5-03">03 Cosa cambia</button><button type="button" data-go="b5-04">04 Perché adesso</button><button type="button" data-go="norme">05 Le norme</button><button type="button" data-go="b5-t2">05 Mondo e Italia</button><button type="button" data-go="b5-dim">06 Le dimensioni</button><button type="button" data-go="b5-sigle">07 Le sigle</button><button type="button" data-go="b5-risultati">08 Risultati concreti</button><button type="button" data-go="b5-cert">09 Certificazioni nel mondo</button><button type="button" data-go="b5-futuro">10 Il futuro</button></nav>
+ 
+       <div class="evo-wrap" id="b5-01">
+         <span class="label">01 · Che cos'è</span>
+         <p class="evo-def"><strong>BIM</strong> sta per <em>Building Information Modeling</em>, cioè «modellazione delle informazioni dell'edificio». Per capire che cosa cambia davvero, conviene guardare come si è sempre progettato.</p>
++        <ol class="evo-tl" aria-label="L'evoluzione del progetto in sei tappe">
++          <li class="h"><b>1570</b><span>Palladio pubblica <i>I quattro libri dell'architettura</i>: pianta, sezione e prospetto, disegnati a mano</span></li>
++          <li class="c"><b>1963</b><span>Ivan Sutherland scrive Sketchpad, il primo programma per disegnare al computer</span></li>
++          <li class="c"><b>1982</b><span>Esce AutoCAD: il CAD arriva sul personal computer e negli studi</span></li>
++          <li class="b"><b>1996</b><span>Nasce l'IFC 1.0, il formato aperto per scambiare modelli tra software diversi</span></li>
++          <li class="b"><b>2002</b><span>Si diffonde il nome <i>Building Information Modeling</i></span></li>
++          <li class="b now"><b>Oggi</b><span>Il modello diventa il centro del progetto, del cantiere e della gestione</span></li>
++        </ol>
++        <p class="evo-tl-src">Fonti delle date: Wikipedia in inglese, voci <a href="https://en.wikipedia.org/wiki/Sketchpad" target="_blank" rel="noopener">Sketchpad</a>, <a href="https://en.wikipedia.org/wiki/AutoCAD" target="_blank" rel="noopener">AutoCAD</a>, <a href="https://en.wikipedia.org/wiki/Industry_Foundation_Classes" target="_blank" rel="noopener">Industry Foundation Classes</a> e <a href="https://en.wikipedia.org/wiki/Building_information_modeling" target="_blank" rel="noopener">Building information modeling</a>.</p>
+         <ol class="evo">
+           <li class="evo-step">
+             <figure class="evo-fig evo-hand"><div class="evo-img" role="img" aria-label="Pianta e sezione della Villa Rotonda, incisione dai Quattro libri dell'architettura di Andrea Palladio, 1570"></div><figcaption>Andrea Palladio, Villa Rotonda: pianta e sezione, da <i>I quattro libri dell'architettura</i>, 1570. The Metropolitan Museum of Art, CC0.</figcaption></figure>
+@@ -2116,6 +2180,23 @@ section:has(>.pg-hero)>.content{position:relative;z-index:1}
+             <li><b>Un cambio vale per tutti.</b> Se cambi il materiale di un tipo di muro, cambiano tutti i muri di quel tipo, in tutto il progetto.</li>
+           </ul>
+           <p class="evo-diff"><b>Attributo o parametro?</b> L'attributo è un'informazione appoggiata a un elemento del disegno, come il layer o il colore di una linea: lo descrive, ma non lo governa. Il parametro invece governa l'oggetto: cambi il valore e cambia la forma, e con lei tutto ciò che ne dipende.</p>
++          <details class="ai-more evo-deep"><summary>Approfondimento: che cosa succede dentro il computer</summary><div class="ai-more-b">
++            <p><b>Nel CAD il dato è la geometria.</b> Per il computer una linea è una riga in un archivio: due punti e qualche attributo. Il muro non esiste: esistono quattro righe indipendenti, e il fatto che insieme siano «un muro» lo sa solo chi guarda.</p>
++            <pre class="evo-code"><code>LINE  da (0,00 ; 0,00)  a (5,00 ; 0,00)   layer=MURI  colore=1
++LINE  da (0,00 ; 0,30)  a (5,00 ; 0,30)   layer=MURI  colore=1
++LINE  da (0,00 ; 0,00)  a (0,00 ; 0,30)   layer=MURI  colore=1
++LINE  da (5,00 ; 0,00)  a (5,00 ; 0,30)   layer=MURI  colore=1</code></pre>
++            <p>L'area del muro non è scritta da nessuna parte: per saperla bisogna misurare e moltiplicare. Se il muro si allunga di un metro, bisogna spostare due linee e poi ricordarsi di correggere la sezione, il prospetto e il computo, che sono altri disegni e altri file.</p>
++            <p><b>Nel BIM il dato è l'oggetto, e la geometria si calcola.</b> Il muro è un oggetto con pochi valori indipendenti, i parametri; tutto il resto discende da formule, come le celle di un foglio di calcolo:</p>
++            <pre class="evo-code"><code>Muro  tipo = "Laterizio 30"
++  L = 5,00 m    H = 3,00 m    s = 0,30 m      ← parametri (si scelgono)
++  superficie = L × H         = 15,00 m²       ← calcolate (non si scrivono)
++  volume     = L × H × s     =  4,50 m³
++  pianta, sezione, prospetto = viste dello stesso oggetto</code></pre>
++            <p>Cambiando <i>L</i> da 5 a 6 metri il programma rifà i conti in cascata: la forma, la superficie (18 m²), il volume (5,4 m³), le viste e gli abachi. È un grafo di dipendenze: ogni valore sa da quali altri dipende, e quando uno cambia si aggiornano solo quelli a valle. Lo stesso vale per le relazioni tra oggetti: la finestra è ospitata dal muro e ne buca il volume, il solaio si appoggia al muro, il locale è delimitato dai muri che lo circondano.</p>
++            <p><b>E quando il modello esce dal software?</b> Nel formato aperto IFC il muro si scrive così, in forma semplificata: un <code>IfcWall</code>, cioè un muro e non un insieme di linee; la sua forma come <code>IfcExtrudedAreaSolid</code>, un profilo rettangolare estruso per l'altezza; le sue proprietà in insiemi come <code>Pset_WallCommon</code>, per esempio se è portante o esterno; e le aperture come relazioni (<code>IfcRelVoidsElement</code>). Chi riceve il file trova un muro con le sue regole, non quattro linee da interpretare.</p>
++            <p><b>Le conseguenze.</b> Le quantità diventano affidabili perché si calcolano invece di misurarsi; le modifiche costano meno perché si propagano da sole; le incoerenze tra le tavole spariscono, perché le tavole sono viste dello stesso dato. In cambio serve più disciplina all'inizio: scegliere bene i tipi, i parametri e le regole, perché un errore nel dato si propaga con la stessa velocità di una correzione.</p>
++          </div></details>
+         </div>
+       </div>
+ 
+@@ -2234,6 +2315,18 @@ section:has(>.pg-hero)>.content{position:relative;z-index:1}
+         </div>
+         <p class="ce-note">Fonti verificate a novembre 2026. Gli obblighi cambiano: prima di una gara controlla il bando e la norma in vigore. Altri paesi arriveranno con la ricerca a tappeto.</p>
+       </div>
++      <div class="fu-wrap" id="b5-futuro">
++        <span class="label">10 · Cosa ci riserva il futuro?</span>
++        <p class="tl-intro">Nessuno lo sa davvero, e diffidiamo di chi dice di saperlo. Però alcune strade sono già aperte, e le notizie di BIM News ne raccontano i primi passi. Qui le mettiamo in fila, separando quello che sta già succedendo da quello che, per ora, è solo una domanda.</p>
++        <div class="fu-grid">
++          <article class="fu-card"><span class="fu-k ok">Sta già succedendo</span><h4>Costruire senza tavole</h4><p>A Hong Kong il Construction Industry Council ha presentato il percorso verso cantieri guidati direttamente dal modello, senza le tavole tradizionali. Servono modelli affidabili, regole informative chiare e approvazioni adatte. <a href="#settimana-2026-08-03" data-art="n10">La notizia →</a></p></article>
++          <article class="fu-card"><span class="fu-k ok">Sta già succedendo</span><h4>Requisiti che si controllano da soli</h4><p>Con l'IDS 1.0 di buildingSMART (2024) le informazioni che un modello deve contenere si scrivono in un file leggibile dalle macchine, e il controllo diventa automatico. <a href="#settimana-2024-06-03" data-art="n100">La notizia →</a></p></article>
++          <article class="fu-card"><span class="fu-k ok">Sta già succedendo</span><h4>L'intelligenza artificiale nel modello</h4><p>I grandi software portano l'AI dentro l'ambiente di condivisione dei dati: opzioni progettuali dalle nuvole di punti, modelli strutturali chiesti a parole, ispezioni di cantiere dettate a voce. <a href="#settimana-2026-11-09" data-art="n36">La notizia →</a> E nella sezione <a href="#bim-ai">BIM &amp; AI</a> trovi le altre.</p></article>
++          <article class="fu-card"><span class="fu-k q">Domanda aperta</span><h4>Le tavole serviranno ancora?</h4><p>Se il cantiere legge il modello, la tavola stampata potrebbe diventare una vista tra le tante, utile per firmare e per archiviare più che per costruire. Ma la firma, la responsabilità e il valore legale degli elaborati oggi passano ancora dalla carta, o dal PDF.</p></article>
++          <article class="fu-card"><span class="fu-k q">Domanda aperta</span><h4>Robot in cantiere?</h4><p>Un modello preciso è proprio quello che serve a una macchina per tracciare, forare o posare. Quanto e quando i robot entreranno nei cantieri di tutti i giorni, e non solo nelle grandi opere, è ancora tutto da vedere.</p></article>
++          <article class="fu-card"><span class="fu-k q">Domanda aperta</span><h4>E noi?</h4><p>Se la macchina disegna, verifica e calcola, a chi progetta resta la parte più difficile: capire il problema, scegliere, rispondere delle scelte. Forse il mestiere non sparisce: cambia baricentro. Chissà.</p></article>
++        </div>
++      </div>
+ 
+       <a class="btn-next" href="#bim-news">Ora sei pronto per le novità: vai a BIM News →</a>
+     </div>
+@@ -3290,7 +3383,7 @@ new MutationObserver(function(){loadHeavy()}).observe(r,{attributes:true,attribu
+ 
+ latest();render();ranking();view();
+ // mappa del sito: albero apribile, collegamenti alle pagine, linee curve disegnate sul posto
+-var SITEMAP={"t":"Il sito","d":"BIM News, la rassegna sul BIM nel mondo, a cura di Marco Scigliuolo: un sito inclusivo, perché tutti adottino il BIM","h":"#home","c":[{"t":"BIM News","k":"k-news","d":"La rassegna settimanale dal mondo, con la mappa interattiva","h":"#bim-news","c":[{"t":"Ultimo aggiornamento","d":"Le notizie della settimana più recente","h":"#bim-news","e":"latest"},{"t":"Come scegliamo le notizie","d":"I criteri della selezione, a partire dall'inclusività","h":"#bim-news","e":"all-intro"},{"t":"Mappa del mondo","d":"Continenti, paesi e regioni con il numero di notizie","h":"#bim-news","e":"map"},{"t":"Archivio dal 2015","d":"Tutte le notizie per anno e mese, con filtri e ricerca","h":"#bim-news","e":"m-nav"},{"t":"Eventi e webinar","d":"I prossimi appuntamenti, accanto alle notizie","h":"#bim-news","e":"ag-side"}]},{"t":"BIM & AI","k":"k-ai","d":"Le notizie in cui il BIM incontra l'intelligenza artificiale","h":"#bim-ai"},{"t":"BIM Accademia","k":"k-acc","d":"Articoli scientifici sul BIM, con abstract tradotti in italiano","h":"#bim-accademia"},{"t":"BIM in breve","k":"k-b5","d":"Che cos'è il BIM, spiegato semplice: norme, dimensioni e sigle","h":"#bim-5-minuti","c":[{"t":"Le norme dal 2015 a oggi","d":"La timeline a spina di pesce, da sinistra a destra","h":"#bim-5-minuti","e":"norme"},{"t":"Le dimensioni del BIM","d":"Dal 3D al 10D, con grafiche e fonti","h":"#bim-5-minuti","e":"b5-dim"},{"t":"Le sigle in un minuto","d":"IFC, ACDat, CI, pGI, LOD, LOIN e le altre","h":"#bim-5-minuti","e":"b5-sigle"},{"t":"Risultati concreti","d":"Ore e soldi risparmiati secondo le ricerche, con il contatore del tuo studio","h":"#bim-5-minuti","e":"b5-risultati"},{"t":"Il BIM nel tempo: mondo e Italia","d":"Dal 1975 a oggi, le tappe internazionali e italiane a confronto","h":"#bim-5-minuti","e":"b5-t2"},{"t":"Certificazioni nel mondo","d":"Chi certifica le competenze BIM, dove è obbligatorio e con quale norma","h":"#bim-5-minuti","e":"b5-cert"}]},{"t":"Video","k":"k-vid","d":"Webinar registrati e canali gratuiti sul BIM","h":"#video","c":[{"t":"Webinar e conferenze","d":"Registrazioni gratuite in quattro lingue","h":"#video","e":"vd-list"},{"t":"Dalle università","d":"Lezioni di Stanford, Technion, TUM, Cambridge e atenei italiani","h":"#video","e":"vd-uni"},{"t":"Canali YouTube","d":"I canali che parlano di BIM","h":"#video","e":"ch-list"}]},{"t":"Agenda","k":"k-ag","d":"Scadenze normative, eventi e webinar in arrivo, filtrati per area","h":"#agenda","c":[{"t":"Scadenze normative","d":"Gli obblighi BIM che entrano in vigore, paese per paese","h":"#agenda","e":"agp-sc-box"},{"t":"Eventi","d":"Fiere, congressi e conferenze, mese per mese","h":"#agenda","e":"agp-ev-box"},{"t":"Webinar","d":"Appuntamenti online, gratuiti e a pagamento","h":"#agenda","e":"agp-wb-box"}]},{"t":"Il curatore","k":"k-cur","d":"Chi cura il sito: profilo, progetti, idee e passioni","h":"#chi-sono","c":[{"t":"Profilo","d":"Chi sono, percorso, competenze e strumenti","h":"#chi-sono"},{"t":"Portfolio","d":"I progetti a cui ho lavorato","h":"#portfolio"},{"t":"Nello studio","d":"Riflessioni, soluzioni e manuali per chi progetta","h":"#studio","c":[{"t":"Riflessioni","d":"Che cosa vuol dire essere ingegnere","h":"#studio","tab":0},{"t":"I problemi della progettazione","d":"Dodici problemi frequenti, da risolvere uno per uno","h":"#studio","tab":1},{"t":"Ottimizzazione per il BIM","d":"Script per ridurre il lavoro ripetitivo nella modellazione","h":"#studio","tab":2},{"t":"Ottimizzazione per AutoCAD","d":"Routine e script da copiare o scaricare","h":"#studio","tab":3},{"t":"I manuali di Claude","d":"Manuali professionali scritti con Claude su mie indicazioni, da leggere online o scaricare in PDF","h":"#studio","tab":4}]},{"t":"Le mie proposte","d":"Idee per il mondo del BIM","h":"#proposte"},{"t":"Work in progress","d":"I lavori in corso","h":"#wip"},{"t":"Fuori dallo studio","d":"Passioni, riflessioni e manuali non professionali","h":"#fuori","c":[{"t":"La musica","d":"Esplorazione e disciplina","h":"#fuori","e":"fuori-musica","box":"fuori","tab":0},{"t":"I miei libri","d":"I libri che mi hanno formato","h":"#fuori","e":"fuori-libri","box":"fuori","tab":0},{"t":"Essere ingegnere","d":"Come ci si vede e ci si sente","h":"#fuori","e":"fuori-ingegnere","box":"fuori","tab":0},{"t":"Lo scautismo","d":"Dall'AGESCI al CNGEI, gli scout laici","h":"#fuori","e":"fuori-scout","box":"fuori","tab":0},{"t":"Tai Chi e Kung Fu","d":"Le cinque virtù: saggezza, compassione, sincerità, coraggio, pazienza","h":"#fuori","e":"fuori-taichi","box":"fuori","tab":0},{"t":"I manuali di Claude","d":"Manuali non professionali: suono, chitarra, basso","h":"#fuori","box":"fuori","tab":1}]},{"t":"I miei libri","d":"Sei categorie di letture fondamentali","h":"#libri","c":[{"t":"Crescita personale e psicologia","d":"Capire le persone, a partire da sé","h":"#libri","e":"libri-01"},{"t":"Romanzi","d":"Le storie che restano","h":"#libri","e":"libri-02"},{"t":"Poesia","d":"Le raccolte a cui torno","h":"#libri","e":"libri-03"},{"t":"Saggistica","d":"I saggi che cambiano il modo di ragionare","h":"#libri","e":"libri-04"},{"t":"Arte e fotografia","d":"Imparare a guardare","h":"#libri","e":"libri-05"},{"t":"Economia","d":"Capire l'economia, oltre gli slogan","h":"#libri","e":"libri-06"}]}]},{"t":"FAQ","k":"k-faq","d":"Le domande frequenti di chi esplora il sito, con le lingue della ricerca","h":"#faq","c":[{"t":"Il sito","d":"Chi gestisce il sito, come si aggiornano le notizie, contatti e collaborazioni","h":"#faq"},{"t":"Le notizie","d":"Domande: Da dove arrivano le notizie, Come scegliete che cosa pubblicare…","h":"#faq"},{"t":"Le lingue della ricerca","d":"Domande: In che lingue cercate le notizie, Come avete scelto queste lingue…","h":"#faq"},{"t":"Le altre pagine","d":"Domande: Non conosco il BIM: da dove parto, Che cosa sono i manuali nella pagina del curatore…","h":"#faq"},{"t":"Usare il sito","d":"Domande: Che differenza c'è tra versione completa ed essenziale, Come passo dal tema scuro a quello chiaro…","h":"#faq"}]}]};
++var SITEMAP={"t":"Il sito","d":"BIM News, la rassegna sul BIM nel mondo, a cura di Marco Scigliuolo: un sito inclusivo, perché tutti adottino il BIM","h":"#home","c":[{"t":"BIM News","k":"k-news","d":"La rassegna settimanale dal mondo, con la mappa interattiva","h":"#bim-news","c":[{"t":"Ultimo aggiornamento","d":"Le notizie della settimana più recente","h":"#bim-news","e":"latest"},{"t":"Come scegliamo le notizie","d":"I criteri della selezione, a partire dall'inclusività","h":"#bim-news","e":"all-intro"},{"t":"Mappa del mondo","d":"Continenti, paesi e regioni con il numero di notizie","h":"#bim-news","e":"map"},{"t":"Archivio dal 2015","d":"Tutte le notizie per anno e mese, con filtri e ricerca","h":"#bim-news","e":"m-nav"},{"t":"Eventi e webinar","d":"I prossimi appuntamenti, accanto alle notizie","h":"#bim-news","e":"ag-side"}]},{"t":"BIM & AI","k":"k-ai","d":"Le notizie in cui il BIM incontra l'intelligenza artificiale","h":"#bim-ai"},{"t":"BIM Accademia","k":"k-acc","d":"Articoli scientifici sul BIM, con abstract tradotti in italiano","h":"#bim-accademia"},{"t":"BIM in breve","k":"k-b5","d":"Che cos'è il BIM, spiegato semplice: norme, dimensioni e sigle","h":"#bim-5-minuti","c":[{"t":"Le norme dal 2015 a oggi","d":"La timeline a spina di pesce, da sinistra a destra","h":"#bim-5-minuti","e":"norme"},{"t":"Le dimensioni del BIM","d":"Dal 3D al 10D, con grafiche e fonti","h":"#bim-5-minuti","e":"b5-dim"},{"t":"Le sigle in un minuto","d":"IFC, ACDat, CI, pGI, LOD, LOIN e le altre","h":"#bim-5-minuti","e":"b5-sigle"},{"t":"Risultati concreti","d":"Ore e soldi risparmiati secondo le ricerche, con il contatore del tuo studio","h":"#bim-5-minuti","e":"b5-risultati"},{"t":"Il BIM nel tempo: mondo e Italia","d":"Dal 1975 a oggi, le tappe internazionali e italiane a confronto","h":"#bim-5-minuti","e":"b5-t2"},{"t":"Certificazioni nel mondo","d":"Chi certifica le competenze BIM, dove è obbligatorio e con quale norma","h":"#bim-5-minuti","e":"b5-cert"},{"t":"Cosa ci riserva il futuro?","d":"Che cosa sta già cambiando e quali domande restano aperte","h":"#bim-5-minuti","e":"b5-futuro"}]},{"t":"Video","k":"k-vid","d":"Webinar registrati e canali gratuiti sul BIM","h":"#video","c":[{"t":"Webinar e conferenze","d":"Registrazioni gratuite in quattro lingue","h":"#video","e":"vd-list"},{"t":"Dalle università","d":"Lezioni di Stanford, Technion, TUM, Cambridge e atenei italiani","h":"#video","e":"vd-uni"},{"t":"Canali YouTube","d":"I canali che parlano di BIM","h":"#video","e":"ch-list"}]},{"t":"Agenda","k":"k-ag","d":"Scadenze normative, eventi e webinar in arrivo, filtrati per area","h":"#agenda","c":[{"t":"Scadenze normative","d":"Gli obblighi BIM che entrano in vigore, paese per paese","h":"#agenda","e":"agp-sc-box"},{"t":"Eventi","d":"Fiere, congressi e conferenze, mese per mese","h":"#agenda","e":"agp-ev-box"},{"t":"Webinar","d":"Appuntamenti online, gratuiti e a pagamento","h":"#agenda","e":"agp-wb-box"}]},{"t":"Il curatore","k":"k-cur","d":"Chi cura il sito: profilo, progetti, idee e passioni","h":"#chi-sono","c":[{"t":"Profilo","d":"Chi sono, percorso, competenze e strumenti","h":"#chi-sono"},{"t":"Portfolio","d":"I progetti a cui ho lavorato","h":"#portfolio"},{"t":"Nello studio","d":"Riflessioni, soluzioni e manuali per chi progetta","h":"#studio","c":[{"t":"Riflessioni","d":"Che cosa vuol dire essere ingegnere","h":"#studio","tab":0},{"t":"I problemi della progettazione","d":"Dodici problemi frequenti, da risolvere uno per uno","h":"#studio","tab":1},{"t":"Ottimizzazione per il BIM","d":"Script per ridurre il lavoro ripetitivo nella modellazione","h":"#studio","tab":2},{"t":"Ottimizzazione per AutoCAD","d":"Routine e script da copiare o scaricare","h":"#studio","tab":3},{"t":"I manuali di Claude","d":"Manuali professionali scritti con Claude su mie indicazioni, da leggere online o scaricare in PDF","h":"#studio","tab":4}]},{"t":"Le mie proposte","d":"Idee per il mondo del BIM","h":"#proposte"},{"t":"Work in progress","d":"I lavori in corso","h":"#wip"},{"t":"Fuori dallo studio","d":"Passioni, riflessioni e manuali non professionali","h":"#fuori","c":[{"t":"La musica","d":"Esplorazione e disciplina","h":"#fuori","e":"fuori-musica","box":"fuori","tab":0},{"t":"I miei libri","d":"I libri che mi hanno formato","h":"#fuori","e":"fuori-libri","box":"fuori","tab":0},{"t":"Essere ingegnere","d":"Come ci si vede e ci si sente","h":"#fuori","e":"fuori-ingegnere","box":"fuori","tab":0},{"t":"Lo scautismo","d":"Dall'AGESCI al CNGEI, gli scout laici","h":"#fuori","e":"fuori-scout","box":"fuori","tab":0},{"t":"Tai Chi e Kung Fu","d":"Le cinque virtù: saggezza, compassione, sincerità, coraggio, pazienza","h":"#fuori","e":"fuori-taichi","box":"fuori","tab":0},{"t":"I manuali di Claude","d":"Manuali non professionali: suono, chitarra, basso","h":"#fuori","box":"fuori","tab":1}]},{"t":"I miei libri","d":"Sei categorie di letture fondamentali","h":"#libri","c":[{"t":"Crescita personale e psicologia","d":"Capire le persone, a partire da sé","h":"#libri","e":"libri-01"},{"t":"Romanzi","d":"Le storie che restano","h":"#libri","e":"libri-02"},{"t":"Poesia","d":"Le raccolte a cui torno","h":"#libri","e":"libri-03"},{"t":"Saggistica","d":"I saggi che cambiano il modo di ragionare","h":"#libri","e":"libri-04"},{"t":"Arte e fotografia","d":"Imparare a guardare","h":"#libri","e":"libri-05"},{"t":"Economia","d":"Capire l'economia, oltre gli slogan","h":"#libri","e":"libri-06"}]}]},{"t":"FAQ","k":"k-faq","d":"Le domande frequenti di chi esplora il sito, con le lingue della ricerca","h":"#faq","c":[{"t":"Il sito","d":"Chi gestisce il sito, come si aggiornano le notizie, contatti e collaborazioni","h":"#faq"},{"t":"Le notizie","d":"Domande: Da dove arrivano le notizie, Come scegliete che cosa pubblicare…","h":"#faq"},{"t":"Le lingue della ricerca","d":"Domande: In che lingue cercate le notizie, Come avete scelto queste lingue…","h":"#faq"},{"t":"Le altre pagine","d":"Domande: Non conosco il BIM: da dove parto, Che cosa sono i manuali nella pagina del curatore…","h":"#faq"},{"t":"Usare il sito","d":"Domande: Che differenza c'è tra versione completa ed essenziale, Come passo dal tema scuro a quello chiaro…","h":"#faq"}]}]};
+ (function(){var root=$("mm"),svg=$("mm-lines"),wrap=$("mm-wrap");if(!root)return;var uid=0;
+ function esc(t){return String(t).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[c]})}
+ function build(n,depth,k){var li=document.createElement("li"),kids=n.c||[],cls=n.k||k||"";li.setAttribute("role","treeitem");if(cls)li.className=cls;
+@@ -3403,6 +3496,46 @@ function page(){if(!$("agp-ev"))return;
+   var wb=L.filter(function(a){return a.k==="wb"&&cost(a)});$("agp-wb").innerHTML=wb.length?wb.map(function(a){return item(a,false)}).join(""):'<li class="ag-w agp-none">Nessun webinar con questo costo per ora.</li>'}
+ document.addEventListener("click",function(e){var b=e.target.closest("#agenda [data-a]");if(b){setArea(b.dataset.a);return}
+   b=e.target.closest("#agenda [data-pr]");if(b){APR=b.dataset.pr;document.querySelectorAll("#agenda [data-pr]").forEach(function(x){x.setAttribute("aria-pressed",x===b)});page()}});
++// calendario: scadenze, eventi, webinar e giornate mondiali della tecnologia (date verificate sulle pagine ONU, UNESCO, ITU, WIPO e ISO/IEC/ITU)
++var TECH=[{m:2,d:11,t:"Giornata internazionale delle donne e delle ragazze nella scienza",o:"ONU",u:"https://www.un.org/en/observances/women-and-girls-in-science-day"},
++ {m:2,d:13,t:"Giornata mondiale della radio",o:"ONU e UNESCO",u:"https://www.un.org/en/observances/radio-day"},
++ {m:3,d:4,t:"Giornata mondiale dell'ingegneria per lo sviluppo sostenibile",o:"UNESCO",u:"https://www.wfeo.org/events/world-engineering-day-2025/"},
++ {m:3,d:14,t:"Giornata internazionale della matematica",o:"UNESCO",u:"https://www.unesco.org/en/days/mathematics"},
++ {m:4,d:12,t:"Giornata internazionale del volo spaziale umano",o:"ONU",u:"https://www.un.org/en/observances/human-spaceflight-day"},
++ {m:4,d:21,t:"Giornata mondiale della creatività e dell'innovazione",o:"ONU",u:"https://www.un.org/en/observances/creativity-and-innovation-day"},
++ {m:4,nth:[4,4],t:"Giornata internazionale delle ragazze nelle ICT",o:"ITU",u:"https://www.itu.int/women-and-girls/girls-in-ict/"},
++ {m:4,d:26,t:"Giornata mondiale della proprietà intellettuale",o:"WIPO",u:"https://www.wipo.int/en/web/ipday/"},
++ {m:5,d:16,t:"Giornata internazionale della luce",o:"UNESCO",u:"https://www.unesco.org/en/days/light"},
++ {m:5,d:17,t:"Giornata mondiale delle telecomunicazioni e della società dell'informazione",o:"ONU e ITU",u:"https://www.un.org/en/observances/telecommunication-day"},
++ {m:9,d:28,t:"Giornata internazionale per l'accesso universale all'informazione",o:"ONU e UNESCO",u:"https://www.un.org/en/observances/information-access-day"},
++ {m:10,nth:[1,1],t:"Giornata mondiale dell'habitat",o:"ONU",u:"https://www.un.org/en/observances/habitat-day"},
++ {m:10,d:14,t:"Giornata mondiale della normazione",o:"ISO, IEC e ITU",u:"https://www.itu.int/hub/2025/10/standards-capture-consensus-on-technologies-for-a-better-world/"},
++ {m:10,d:31,t:"Giornata mondiale delle città",o:"ONU",u:"https://www.un.org/en/observances/cities-day"},
++ {m:11,d:10,t:"Giornata mondiale della scienza per la pace e lo sviluppo",o:"UNESCO",u:"https://www.un.org/en/observances/world-science-day"}];
++window.TECH_DAYS=TECH;
++function techDate(x,y){if(x.d)return y+"-"+("0"+x.m).slice(-2)+"-"+("0"+x.d).slice(-2);var dow=x.nth[1],n=x.nth[0],f=new Date(y,x.m-1,1),off=(dow-f.getDay()+7)%7;return y+"-"+("0"+x.m).slice(-2)+"-"+("0"+(1+off+7*(n-1))).slice(-2)}
++var CM=null,CSEL=null,MESI=["gennaio","febbraio","marzo","aprile","maggio","giugno","luglio","agosto","settembre","ottobre","novembre","dicembre"];
++function calItems(ym){var y=+ym.slice(0,4),out={},add=function(d,o){(out[d]=out[d]||[]).push(o)};
++  var cost=function(a){return !APR||a.pr===APR};
++  AGENDA.forEach(function(a){if(a.k==="ev"&&!inArea(a))return;if(!cost(a))return;var d=new Date(a.d+"T12:00:00"),e=new Date((a.e||a.d)+"T12:00:00");
++    for(var k=0;d<=e&&k<60;k++,d.setDate(d.getDate()+1)){var s=d.getFullYear()+"-"+("0"+(d.getMonth()+1)).slice(-2)+"-"+("0"+d.getDate()).slice(-2);if(s.slice(0,7)===ym)add(s,{k:a.k,t:a.t,u:a.u,w:span(a)+" · "+(a.k==="ev"?a.city:"Online, "+a.lang),pr:a.pr})}});
++  (typeof SCADENZE!=="undefined"?SCADENZE:[]).forEach(function(a){if(a.when||!inArea(a))return;if(a.d.slice(0,7)===ym)add(a.d,{k:"sc",t:a.t,u:a.u,w:scWhen(a)+" · "+(a.n||"Globale")})});
++  TECH.forEach(function(x){var d=techDate(x,y);if(d.slice(0,7)===ym)add(d,{k:"td",t:x.t,u:x.u,w:x.o})});
++  return out}
++function cal(){var g=$("agc-grid");if(!g)return;var t=today();if(!CM)CM=t.slice(0,7);
++  var y=+CM.slice(0,4),m=+CM.slice(5,7),first=new Date(y,m-1,1),start=(first.getDay()+6)%7,days=new Date(y,m,0).getDate(),IT=calItems(CM),h="";
++  $("agc-tit").textContent=MESI[m-1]+" "+y;
++  for(var i=0;i<start;i++)h+='<div class="agc-c out empty" aria-hidden="true"></div>';
++  for(var d=1;d<=days;d++){var ds=CM+"-"+("0"+d).slice(-2),L=IT[ds]||[],cls="agc-c"+(L.length?" has":" empty")+(ds===t?" today":"")+(ds===CSEL?" sel":"");
++    h+='<button type="button" class="'+cls+'" data-day="'+ds+'"'+(L.length?'':' tabindex="-1"')+' aria-label="'+d+' '+MESI[m-1]+(L.length?": "+L.length+(L.length>1?" appuntamenti":" appuntamento"):"")+'"><span class="agc-n">'+d+'</span>'+
++      L.slice(0,3).map(function(o){return '<span class="agc-e"><i class="'+o.k+'"></i><span>'+esc(o.t)+'</span></span>'}).join("")+(L.length>3?'<span class="agc-more">+'+(L.length-3)+'</span>':'')+'</button>'}
++  var tail=(7-(start+days)%7)%7;for(i=0;i<tail;i++)h+='<div class="agc-c out empty" aria-hidden="true"></div>';
++  g.innerHTML=h;showDay(CSEL&&CSEL.slice(0,7)===CM?CSEL:null,IT)}
++function showDay(ds,IT){var box=$("agc-day");if(!ds){box.innerHTML="";return}var L=(IT||calItems(ds.slice(0,7)))[ds]||[],p=ds.split("-");
++  box.innerHTML='<h4>'+(+p[2])+' '+MESI[+p[1]-1]+' '+p[0]+'</h4><ul>'+L.map(function(o){return '<li><i class="'+o.k+'"></i><a href="'+esc(o.u)+'" target="_blank" rel="noopener">'+esc(o.t)+' ↗</a><small>'+esc(o.w)+(o.pr?' · '+PR[o.pr]:'')+'</small></li>'}).join("")+'</ul>'}
++document.addEventListener("click",function(e){var b=e.target.closest("#agc [data-m]");if(b){var n=+b.dataset.m;if(!n){CM=today().slice(0,7);CSEL=null}else{var y=+CM.slice(0,4),m=+CM.slice(5,7)+n;if(m<1){m=12;y--}if(m>12){m=1;y++}CM=y+"-"+("0"+m).slice(-2)}cal();return}
++  b=e.target.closest("#agc .agc-c.has");if(b){CSEL=CSEL===b.dataset.day?null:b.dataset.day;cal()}});
++var _page=page;page=function(){_page();cal()};
+ strip();page();
+ })();
+ 
