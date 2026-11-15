@@ -1,0 +1,17 @@
+v1182	gennaio
+v1183	luglio
+v1184	settembre
+v1185	ottobre
+v1186	novembre
+v1187	notizie
+v1188	notizia
+v1189	Ultimo aggiornamento:
+v1190	Globale
+v1191	lingue
+v1192	in verifica
+v1193	Lingue in cui cerchiamo
+v1194	Lingue in verifica
+v1195	voci
+v1196	voce
+v1197	schede
+v1198	scheda

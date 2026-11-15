@@ -1,0 +1,55 @@
+v0680	Manuali con immagini che parlano la tua lingua
+v0681	Arricchire i manuali con immagini «dinamiche», in cui le scritte cambiano con la lingua scelta per il sito.
+v0682	Immagini disegnate come SVG, con le scritte come testo e non come pixel
+v0683	Le scritte che seguono la lingua selezionata
+v0684	Prova sui primi manuali
+v0685	Fuori dallo studio
+v0686	Riflessioni su quello che mi appassiona e su come cambia il modo di lavorare. Opinioni mie, con lo stesso rigore che metto nei progetti.
+v0687	Passioni e riflessioni
+v0688	La musica
+v0689	Esplorazione e disciplina: cosa mi ha insegnato la musica, dentro e fuori dal lavoro.
+v0690	I miei libri
+v0691	I libri che sono stati fondamentali per la mia formazione. Hanno una scheda tutta loro: <a href="#libri">I miei libri →</a>
+v0692	Cosa vuol dire essere ingegnere · fuori dallo studio
+v0693	La stessa domanda vista da dentro: come ci si vede e come ci si sente a fare questo mestiere, tra dubbi, fatica e soddisfazioni. L'altra faccia è in <a href="#studio">Nello studio →</a>
+v0694	Lo scautismo
+v0695	Ho cominciato nell'AGESCI, l'associazione degli scout cattolici italiani. Con il tempo ho capito che non era la scelta giusta per me: nell'AGESCI si fa la «scelta di fede», e il mio percorso spirituale mi ha portato a riconoscere che non sono credente. Da quando vivo e lavoro a Bolzano sono nel <span translate="no">CNGEI</span>, gli scout laici, perché credo fermamente che l'educazione debba essere laica e mai orientata da principi religiosi.
+v0696	Che cosa do io? Le mie competenze, la mia passione, la voglia di dare una mano. Facciamo collette alimentari e aiutiamo la comunità per quanto possiamo.
+v0697	Che cosa mi dà lo scautismo? Soprattutto il senso di ciò su cui il <span translate="no">CNGEI</span> si fonda: l'educazione dei giovani. È il pilastro per costruire una società sana, con un'educazione laica che non trascura il lato spirituale di ciascuno e aiuta a diventare cittadini migliori del mondo. È così che si formano i cittadini di domani.
+v0698	«Lo scopo della formazione scout è migliorare la qualità dei cittadini di domani, soprattutto nel carattere e nella salute; sostituire l'io con il servizio.»
+v0699	Robert Baden-Powell, <i lang="en">Aids to Scoutmastership</i>, capitolo «The Aim of Scouting» (edizione 1930). Traduzione nostra dall'inglese: <span lang="en">«The aim of the Scout training is to improve the standard of our future citizenhood, especially in Character and Health; to replace Self with Service».</span> <a href="https://isf-world.org/pdf/A2SM-A5.pdf" target="_blank" rel="noopener">Testo originale ↗</a>
+v0700	Tai Chi e Kung Fu
+v0701	Alla base delle arti marziali ci sono le virtù: non regole da recitare, ma disposizioni d'animo, spunti per migliorare sé stessi davanti al maestro e nella vita di tutti i giorni. Dichiararle non vuol dire possederle: vuol dire avere la volontà di conquistarle. E con la crescita interiore ognuno trova il proprio significato.
+v0702	<span lang="zh-Hans">智</span> Saggezza <small lang="zh-Latn-pinyin">zhì</small>
+v0703	Equilibrio nel comportamento e nel consiglio, maturato con l'esperienza e con la voglia di guardare le cose da più punti di vista.
+v0704	<span lang="zh-Hans">仁</span> Compassione <small lang="zh-Latn-pinyin">rén</small>
+v0705	Essere comprensivi con gli altri, anche con l'avversario, e prima di tutto con sé stessi: accettare i propri limiti è il primo passo per superarli, e per aiutare chi ci sta accanto. «Se il nemico combatte con rabbia, non cedere all'ira: usa compassione».
+v0706	<span lang="zh-Hans">信</span> Sincerità <small lang="zh-Latn-pinyin">xìn</small>
+v0707	Agire e parlare secondo ciò che pensiamo davvero, senza lasciarci deviare. Vuol dire anche riconoscere onestamente i propri limiti e impegnarsi per superarli.
+v0708	<span lang="zh-Hans">勇</span> Coraggio <small lang="zh-Latn-pinyin">yǒng</small>
+v0709	Non è l'assenza di paura: è affrontare le difficoltà senza tradire i propri valori, perseverare nelle avversità, controllare la paura e sapere quando fermarsi.
+v0710	<span lang="zh-Hans">忍</span> Pazienza <small lang="zh-Latn-pinyin">rěn</small>
+v0711	La più astratta, ma la base di tutte le altre. Non è sopportazione: è accettare che ogni cosa ha il suo tempo, e impegnarsi sulla lunga via. «Mastica, inghiotti, digerisci. Poi chiedi altro riso».
+v0712	Le descrizioni riassumono, con parole nostre, la pagina <a href="https://www.kungfuetaichi.com/5-virt%C3%B9" target="_blank" rel="noopener">Le 5 Virtù · Kung Fu e Tai Chi ↗</a>, da cui vengono anche le due citazioni.
+v0713	Perché per me è importante
+v0714	Il Tai Chi e il Kung Fu stanno diventando sempre più importanti nella mia vita. Prima di tutto sono una valvola di sfogo: un modo per cercare un equilibrio interiore e per esprimere la mia aggressività in modo sano, trovando una dimensione tutta mia, dentro.
+v0715	Dal punto di vista spirituale mi portano a riflettere sul significato del bene e del male, e sul fatto che questi strumenti vanno usati solo ed esclusivamente nella peggiore delle ipotesi: per salvare la propria vita o quella di qualcun altro. Come insegna la prima virtù, la saggezza, bisogna imparare a scegliere le proprie battaglie.
+v0716	È un principio fondamentale per me anche nel lavoro, oltre che nella vita privata: è inutile perdere tempo in ciò che ci toglie energie, salute e serenità mentale. Ogni virtù del Kung Fu mi insegna qualcosa. La filosofia cinese che vive in queste discipline ti pervade dentro, e aiuta ad affrontare la vita di tutti i giorni con più consapevolezza.
+v0717	Manuali non professionali che ho creato io, chiedendo a Claude, l'assistente di intelligenza artificiale di Anthropic, di scriverli seguendo indicazioni precise: l'argomento, la struttura, il livello di dettaglio e gli esempi li ho scelti io. Per ora trovi i titoli: i testi arriveranno uno alla volta.
+v0718	Il suono: matematica, effetti e psicoacustica
+v0719	Che cos'è il suono, dalla matematica alla percezione.
+v0720	Libreria effetti per chitarra e basso
+v0721	Gli effetti per chitarra e basso, raccolti e spiegati.
+v0722	Suoni per chitarra con il modeler
+v0723	Sintesi della playlist di tutorial Fractal sui suoni di chitarra.
+v0724	I libri che sono stati fondamentali per la mia formazione. Per ognuno ci sarà un breve articolo su che cosa mi ha dato, raccolto per categorie.
+v0725	Crescita personale e psicologia
+v0726	I libri che mi hanno aiutato a capire come funzionano le persone, a partire da me stesso.<span class="acc-count">· 5 schede</span>
+v0727	Le vostre zone erronee
+v0728	Guida all'indipendenza dello spirito · Wayne W. Dyer · Rizzoli, BUR
+v0729	Il primo libro di crescita personale dello psicoterapeuta statunitense Wayne W. Dyer, uscito nel 1976 e diventato un best seller internazionale. Dyer chiama «zone erronee» le abitudini di pensiero che ci fanno del male senza che ce ne accorgiamo: il senso di colpa e la preoccupazione, il bisogno continuo di approvazione, le etichette con cui ci definiamo («sono fatto così»), la tendenza a rimandare. L'idea di fondo è che le emozioni dipendono in buona parte da come pensiamo, e che ognuno può scegliere di vivere nel presente e prendersi la responsabilità di sé.
+v0730	Posso dirlo con tranquillità: per me questo libro è l'anno zero, il punto da cui è partito tutto il mio interesse per la crescita personale e per la psicologia. Prima ero molto attratto dalla filosofia, ma non ci avevo trovato nulla di concreto da portare nella mia vita, e l'avevo un po' messa da parte. Qui invece ho trovato strumenti pratici.
+v0731	Da allora ho frequentato molti corsi di formazione e di crescita personale, e per tanto tempo questo libro è stato la mia guida: mi ha insegnato a non lasciarmi trascinare, senza spirito critico, dalle convinzioni profonde che il mondo ci consegna già pronte.
+v0732	I libri di Gabriella Tupini
+v0733	Otto libri di psicologia del profondo · Gabriella Tupini
+v0734	Gabriella Tupini è una psicologa e psicoterapeuta che lavora con l'analisi e l'interpretazione dei sogni, molto seguita come divulgatrice: sul suo canale YouTube parla di traumi, emozioni rimosse, consapevolezza e del peso degli schemi familiari e sociali. Nei libri porta lo stesso metodo: dal viaggio dentro le proprie paure di <i>Nella tana del lupo</i> al manuale sui sogni, scritto, come spiega lei stessa, per chi non può permettersi un'analisi, fino alla serie <i>Storia di un'analisi</i>, in cui ogni volume segue il percorso di una persona.

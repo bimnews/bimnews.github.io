@@ -1,0 +1,71 @@
+v0159	The other pages
+v0160	I don't know BIM: where do I start?
+v0161	From <a href="#bim-5-minuti">BIM in 5 minutes</a>: what it is, what it is for, the standards, the acronyms, the dimensions from 3D to 10D and the concrete results measured by research.
+v0162	What is BIM Academy? Who translates the abstracts?
+v0163	<a href="#bim-accademia">BIM Academy</a> collects open-access scientific articles on BIM under the Creative Commons BY licence, which allows the abstract to be reproduced and translated. The translations are ours and are marked as such; when citing an article, the original text, one click away, always prevails.
+v0164	Where can I find events, webinars and deadlines?
+v0165	In the <a href="#agenda">Agenda</a> and in the strip at the bottom of the home page. With «Your area», in the settings at the top, you see the dates on your continent first.
+v0166	What are the manuals on the curator's page?
+v0167	Practical guides for designers: Property Sets for IFC, Dynamo, AutoCAD, electrical design, programming languages. You will find them in <a href="#studio">In the studio</a>, to read online or download as PDF.
+v0168	Where can I find videos and university lectures?
+v0169	On the <a href="#video">Videos</a> page: recorded webinars and conferences, free channels and university lectures.
+v0170	Using the site
+v0171	What is the difference between the full and the essential version?
+v0172	The full version has the interactive map, photos, animations and the site's fonts. The essential version downloads only text and news: it is designed for slow connections and for those who prefer less movement. You switch with the button at the top right.
+v0173	How do I switch from the dark theme to the light one?
+v0174	With the «Light theme» or «Dark theme» button at the top right. The site remembers your choice.
+v0175	The site is very large: is there a guide?
+v0176	Yes, three. The <b>Site guide</b>, from the button at the top of the home page, shows the main parts step by step. The <a href="#mappa">Site map</a> lists all the pages with a short description. And this page answers the most frequent questions.
+v0177	How do I report an error or a news item?
+v0178	Write to the author on <a href="https://www.linkedin.com/in/marco-scigliuolo/" target="_blank" rel="noopener">LinkedIn ↗</a>, with the link to the source: every report is checked before being published.
+v0179	No questions found. Try another word, or open the
+v0180	Site map
+v0181	Everything you can visit, on one map: each entry has a short description and its name takes you straight to that part of the site.
+v0182	Click the <b>+</b> next to an entry to open its branch and see the sections it contains; click the <b>−</b> to close it again.
+v0183	With <b>Open all</b> you see the complete map, with every section of the site; with <b>Close all</b> you go back to the main branches.
+v0184	Click the <b>name</b> of an entry to go to that page: sub-tabs and categories open by themselves.
+v0185	Open all
+v0186	Close all
+v0187	Site visits
+v0188	We count visits with GoatCounter, without cookies and without personal data: here you find the same numbers, for everyone. The counts are updated about every four hours.
+v0189	Most visited pages
+v0190	Image and font credits
+v0191	The photographs on the pages come from Wikimedia Commons and are dedicated to the public domain under CC0 1.0: the authors have waived all rights. We credit them anyway, out of respect for their work. On the site the photos are tinted in each page's colour and appear only in the full version.
+v0192	<b>BIM in 5 minutes, «What it is»</b> · <a href="https://commons.wikimedia.org/wiki/File:Villa_Almerico_(Villa_Rotunda),_from_I_quattro_libri_dell%27architettura_di_Andrea_Palladio_(Book_2,_page_19)_MET_DP109542.jpg" target="_blank" rel="noopener">Villa Almerico (Villa Rotonda), from I quattro libri dell'architettura</a>, by Andrea Palladio, 1570 (The Metropolitan Museum of Art, CC0)
+v0193	<b>BIM News</b> · <a href="https://commons.wikimedia.org/wiki/File:Victoria_Harbour_skyscrapers.jpg" target="_blank" rel="noopener">Victoria Harbour skyscrapers</a>, by Wilfredor
+v0194	<b>BIM &amp; AI</b> · <a href="https://commons.wikimedia.org/wiki/File:Data_center_roof.jpg" target="_blank" rel="noopener">Data center roof</a>, by Rsparks3
+v0195	<b>BIM Academy</b> · <a href="https://commons.wikimedia.org/wiki/File:The_John_Rylands_Library_Reading_Room_Enclosure.jpg" target="_blank" rel="noopener">The John Rylands Library, Reading Room</a>, by Michael D Beckwith
+v0196	<b>BIM in 5 minutes</b> · <a href="https://commons.wikimedia.org/wiki/File:Steel_frame_structure.jpg" target="_blank" rel="noopener">Steel frame structure</a>, by Wikideas1
+v0197	<b>Videos</b> · <a href="https://commons.wikimedia.org/wiki/File:H%C3%B6rsaal_101_LMU.jpg" target="_blank" rel="noopener">Hörsaal 101, LMU</a>, by Slashme
+v0198	<b>Agenda</b> · <a href="https://commons.wikimedia.org/wiki/File:Six_workers_on_crane_in_Shibuya.jpg" target="_blank" rel="noopener">Six workers on crane in Shibuya</a>, by Syced
+v0199	<b>The curator</b> · <a href="https://commons.wikimedia.org/wiki/File:Rebar_combo.jpg" target="_blank" rel="noopener">Rebar combo</a>, by Henryeke
+v0200	<b>Portfolio</b> · <a href="https://commons.wikimedia.org/wiki/File:Steel_frame_building_under_construction_in_Taiwan.jpg" target="_blank" rel="noopener">Steel frame building under construction in Taiwan</a>, by SSJF01
+v0201	Fonts: Inter, Inter Tight and JetBrains Mono, under the SIL Open Font License 1.1 (the licence texts are in the site's <code>fonts</code> folder). The point cloud in the BIM News and BIM &amp; AI headers is drawn by the site's code.
+v0202	BIM in 5 minutes
+v0203	Don't know what BIM is? Start here: what it is, what it is for in a design office, why today you cannot do without it, the standards and the acronyms. Five minutes for the essentials, the rest whenever you like.
+v0204	01 What it is
+v0205	02 The whole life of the asset
+v0206	03 What changes
+v0207	04 Why now
+v0208	05 The standards
+v0209	05 World and Italy
+v0210	06 The dimensions
+v0211	07 The acronyms
+v0212	08 Concrete results
+v0213	09 Certifications around the world
+v0214	<strong>BIM</strong> stands for <em>Building Information Modeling</em>. To understand what really changes, it helps to look at how design has always been done.
+v0215	Andrea Palladio, Villa Rotonda: plan and section, from <i>I quattro libri dell'architettura</i>, 1570. The Metropolitan Museum of Art, CC0.
+v0216	<span>1</span> By hand, for centuries
+v0217	For centuries a design was a drawing made by hand: plans, sections and elevations, each drawn separately. Palladio's plate already contains all the ingredients we still use today. This approach stayed the same until the computer arrived: separate views, to be kept consistent by hand.
+v0218	To lengthen the wall you move the lines, one by one.
+v0219	<span>2</span> CAD: the same lines, on a computer
+v0220	CAD brings the drawing board into the computer. You still draw <b>lines</b>, more precise, easy to copy and correct. Each line can be given <b>attributes</b>: the layer, the colour, the line type, perhaps a text saying «brick wall». They are labels placed on the drawing that describe it but do not govern it. To lengthen a wall you have to move its lines, and then correct the section, the elevation and the bill of quantities by hand.
+v0221	Length
+v0222	Height
+v0223	Try moving the sliders: change the parameter and the wall, the area and the volume update by themselves. <span class="ex">Example values</span>
+v0224	<span>3</span> BIM: objects with parameters
+v0225	In BIM you no longer draw lines, but <b>three-dimensional objects</b>: a wall, a slab, a window. Each object is governed by <b>parameters</b>: values such as length, height and thickness, linked to one another by formulas. The volume is not redrawn, it is calculated. What we see on screen is no longer a drawing but a representation of the data: plans, sections and schedules all come from the same model.
+v0226	Why everything changes
+v0227	<b>Information can be extracted and added.</b> Quantities, areas, volumes and schedules come out of the model; and the data needed for calculations, tenders, construction and maintenance goes into it.
+v0228	<b>Changes are live.</b> If you raise a slab or widen a room, plan, sections, areas, volumes and schedules update together. In CAD the same work took hours.
+v0229	<b>One change applies to all.</b> If you change the material of a wall type, all the walls of that type change, throughout the project.

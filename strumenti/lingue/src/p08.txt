@@ -1,0 +1,79 @@
+v0601	Sostituire l'IFC collegato con Dynamo
+v0602	Quante volte abbiamo dovuto aggiornare l'IFC dell'architetto collegato in Revit, perdendo prese e apparecchi ospitati? Due grafi Dynamo risolvono il problema in pochi passi. Prima fotografano il collegamento: posizione, rotazione (decisiva con i modelli georeferenziati) ed elementi ospitati. Poi, dopo la ricarica del nuovo IFC, lo riallineano se serve e riassociano gli elementi. La guida ha lo schema delle azioni da seguire, spiega come caricare i file e come leggere il report.
+v0603	<span class="tag ok">Pubblicato</span><a class="man-btn" href="manuali/dynamo-sostituzione-ifc.html">Leggi online</a><a class="man-btn ghost" href="manuali/dynamo-sostituzione-ifc.pdf" download="">Scarica il PDF</a><span class="man-note">I file .dyn sono in arrivo.</span>
+v0604	AutoCAD 2026: xrif e stampa
+v0605	Due script AutoLISP pronti da usare. <b>SOSTXRIF</b> sostituisce l'xrif dell'architetto con la nuova versione e ti dice se è ancora allineato. <b>RETINITRASP</b> evita i retini neri pieni in stampa.
+v0606	<b>Dove metterli:</b> copia i due file in <code>%AppData%\Autodesk\AutoCAD 2026\R25.1\ita\Support</code>, poi caricali con <code>APPLOAD</code> e scrivi il nome del comando. La guida, ridotta all'essenziale, ha lo schema in cinque passi e il codice.
+v0607	<span class="tag">Da provare su una copia</span><a class="man-btn" href="manuali/autocad-2026-xrif-stampa.html">Leggi la guida</a><a class="man-btn ghost" href="manuali/autocad-2026-xrif-stampa.pdf" download="">PDF</a><a class="man-btn ghost" href="manuali/autocad/SOSTXRIF.lsp" download="">SOSTXRIF.lsp</a><a class="man-btn ghost" href="manuali/autocad/RETINITRASP.lsp" download="">RETINITRASP.lsp</a>
+v0608	Checklist BIM-MEP
+v0609	I controlli da fare su un modello degli impianti.
+v0610	Promemoria avvio progetto MEP
+v0611	Che cosa preparare all'inizio di un progetto impiantistico.
+v0612	Progettazione elettrica con i-project
+v0613	Il workflow completo per progettare un impianto elettrico con i-project di Schneider Electric, in nove fasi: i dati da chiedere prima di disegnare, il disegno in CAD, le impostazioni del programma, quadri e utenze, i calcoli con formule ed esempi numerici, che cosa fare quando una verifica non passa, schemi, computo con l'elenco prezzi provinciale e una checklist finale. Con schemi disegnati apposta, le norme di riferimento (CEI 64-8, 9ª edizione) e le fonti.
+v0614	<span class="tag ok">Pubblicato</span><a class="man-btn" href="manuali/progettazione-elettrica-iproject.html">Leggi online</a><a class="man-btn ghost" href="manuali/progettazione-elettrica-iproject.pdf" download="">Scarica il PDF · 30 pagine</a>
+v0615	Guida alla progettazione antincendio
+v0616	Un percorso guidato nella progettazione antincendio.
+v0617	Programma di studio: progettare un edificio in c.a.
+v0618	Un programma di studio per progettare un edificio in cemento armato.
+v0619	Linguaggi di programmazione per chi lavora nel BIM
+v0620	Una guida per chi ha già visto un po' di codice e vuole orientarsi: le famiglie dei linguaggi e dove si usano, con esempi in Python, C#, Dynamo, SQL e AutoLISP. Due capitoli spiegano che cosa succede nel computer, dal tasto premuto alla modifica del modello, e perché il GUID è l'identità di ogni oggetto BIM. Sedici capitoli, con grafiche disegnate apposta e le fonti.
+v0621	<span class="tag ok">Pubblicato</span><a class="man-btn" href="manuali/linguaggi-di-programmazione.html">Leggi online</a><a class="man-btn ghost" href="manuali/linguaggi-di-programmazione.pdf" download="">Scarica il PDF · 40 pagine</a>
+v0622	Le mie proposte per il mondo del BIM
+v0623	Idee concrete per migliorare il modo in cui si progetta, si costruisce e si gestisce con il BIM: proposte scritte da me, aperte al confronto con chi lavora nel settore.
+v0624	Work in progress: le prime proposte sono in preparazione. Per discuterne, ci si ritrova su <a href="https://www.linkedin.com/in/marco-scigliuolo/" target="_blank" rel="noopener">LinkedIn ↗</a>.
+v0625	Work in progress
+v0626	Quello su cui sto lavorando adesso, con la fase in cui si trova. Le schede si aggiornano man mano.
+v0627	Libreria di famiglie con struttura dati provinciale
+v0628	Famiglie con i parametri richiesti dalla Provincia di Bolzano, pronte da usare nei progetti.
+v0629	Idea
+v0630	Sviluppo
+v0631	Test
+v0632	Rilascio
+v0633	Automazione dei disegni
+v0634	Script per le operazioni ripetitive, a partire dalla gestione dei riferimenti esterni.
+v0635	Verifiche automatiche da checklist
+v0636	Dalla checklist di controllo a verifiche ripetibili sui progetti.
+v0637	Dalle superfici del disegno al calcolo CasaClima
+v0638	Estrarre le superfici dai DWG e portarle nel foglio di calcolo senza ricopiarle a mano.
+v0639	Articoli in preparazione
+v0640	Gli articoli a cui sto pensando, con la fase in cui si trovano. Per ora sono solo impostati: il testo arriverà uno alla volta.
+v0641	Lo script «Hoover»
+v0642	Uno script che legge un foglio Excel con materiali, parametri e informazioni di sistema, e li porta nel lavoro senza ricopiarli a mano. Il nome? Dare un nome a uno script fa figo.
+v0643	Cosa conterrà
+v0644	Che cosa legge dal foglio Excel: materiali, parametri, informazioni di sistema
+v0645	Come è fatto il foglio e come lo legge lo script
+v0646	Come provarlo sui propri progetti
+v0647	Bozza
+v0648	Revisione
+v0649	Pubblicato
+v0650	Come costruire un IFC da zero
+v0651	Come funziona davvero un file IFC, raccontato con un breve esperimento: costruirne uno da zero, riga per riga. L'esperimento funziona; mancano le considerazioni finali.
+v0652	Com'è fatto dentro un file IFC
+v0653	L'esperimento passo per passo
+v0654	Considerazioni finali
+v0655	Il legame con la riflessione <a href="#studio" data-goto-art="studio-oltre-noi">Il mondo oltre noi</a>: che cosa resterà dei nostri modelli tra 200 anni
+v0656	I 10 consigli per lavorare al meglio
+v0657	Piccole regole, prese dall'esperienza, per lavorare meglio in studio e da soli. Per ora ce ne sono sei, gli altri quattro arriveranno.
+v0658	<b>1. I salvataggi automatici.</b> Impostali in tutti i software. Se non l'hai mai fatto, fallo subito.
+v0659	<b>2. Gestione del tempo e produttività.</b> La regola dei 2 minuti, la matrice di Eisenhower e gli altri metodi: che cosa uso, che cosa no e perché.
+v0660	<b>3. Il template.</b> Se lavori in BIM «dovete mettervelo in quella f***a testa» (citazione inventata, da un film che non esiste): per lavorare bene servono i template. Ogni studio dovrebbe averne uno, con le viste impostate e le famiglie già caricate. Prendetevi il tempo per crearlo e aggiornatelo di tanto in tanto con il know-how dello studio. È vitale.
+v0661	<b>4. Il gruppo di continuità.</b> Come sceglierlo per la propria workstation, e con quali criteri. Ogni tanto la corrente salta, soprattutto d'estate. L'obiettivo non è continuare a lavorare, ma mettere al sicuro il lavoro senza file corrotti e senza perdere ore preziose.
+v0662	<b>5. Gli straordinari non sono un vanto.</b> Vogliono dire che qualcosa nell'organizzazione del lavoro non ha funzionato. Con la differenza tra lavoro dipendente e autonomo.
+v0663	<b>6. Il valore della riflessione.</b> Prendetevi del tempo, come studio o da soli, per riordinare i file e per lavorare a piccoli progetti che migliorano il materiale dello studio: ne gioveranno tutti. E ogni tanto mettete in discussione il vostro lavoro e la vostra organizzazione. «Ciò che cresce lentamente mette radici profonde» (proverbio attribuito alla tradizione africana).
+v0664	<b>7–10.</b> Da definire.
+v0665	La biblioteca IFC in Excel
+v0666	Un foglio Excel con le classi IFC e la loro descrizione: come usarlo, e dove.
+v0667	Che cosa contiene la biblioteca
+v0668	Come usarla nel lavoro di tutti i giorni
+v0669	Dove scaricarla
+v0670	Le versioni di esportazione IFC a confronto
+v0671	Che cosa conviene usare, e perché. In che senso una versione è «vecchia»? Il codice di riferimento è lo stesso? Come il vino, le versioni invecchiano bene o male, oppure la base resta sempre la stessa? Quanto possono davvero influire sul risultato?
+v0672	Le versioni a confronto: che cosa cambia davvero
+v0673	Che cosa conviene usare, e in quale caso
+v0674	Quanto la versione può influire sul risultato
+v0675	Come far dialogare i software tra loro
+v0676	Una guida all'esportazione IFC, software per software. Ipotesi di collegamento tra le esportazioni di più programmi: funzionerebbero insieme in un modello federato? E dove nascono i problemi?
+v0677	L'esportazione IFC, una guida per ogni software
+v0678	Più software nello stesso modello federato: le prove
+v0679	Dove nascono i problemi, e come evitarli

@@ -1,0 +1,190 @@
+v0917	09 · Certifications around the world
+v0918	Mandatory for public works
+v0919	Voluntary
+v0920	Training and experience requirements
+v0921	Voluntary, for organisations
+v0922	Profile
+v0923	Who I am, background, skills and tools
+v0924	The projects I have worked on
+v0925	Problems, solutions and manuals for designers
+v0926	My proposals
+v0927	Ideas for the BIM world
+v0928	Work in progress
+v0929	Passions, reflections and non-professional manuals
+v0930	The books that shaped me
+v0931	Read on Academia ↗
+v0932	Degree thesis · 2018
+v0933	Urban regeneration
+v0934	The curator · Portfolio
+v0935	Revit · data
+v0936	AutoCAD · AutoLISP
+v0937	Electrical systems
+v0938	Energy · CasaClima
+v0939	Script · Excel
+v0940	IFC · experiment
+v0941	Work · method
+v0942	IFC · tools
+v0943	IFC · versions
+v0944	IFC · interoperability
+v0945	Site · manuals
+v0946	Psychology · 1976
+v0947	Where to find it · IBS ↗
+v0948	Publisher's page · Rizzoli ↗
+v0949	Your Erroneous Zones · Wikipedia ↗
+v0950	Psychology · 2024–2026
+v0951	Where to find them · author's page ↗
+v0952	Gabriella Tupini Official · YouTube ↗
+v0953	List of books · Goodreads ↗
+v0954	Psychology · Brief strategic therapy
+v0955	Where to find them · IBS ↗
+v0956	Strategic Therapy Centre · Arezzo ↗
+v0957	Personal growth · 2000
+v0958	Psychology · 1995–1998
+v0959	Emotional Intelligence · IBS ↗
+v0960	Working with Emotional Intelligence · IBS ↗
+v0961	Daniel Goleman · author's website ↗
+v0962	Novel · 1906
+v0963	Free original text · Project Gutenberg ↗
+v0964	White Fang · Wikipedia ↗
+v0965	Novel · 1864
+v0966	Free text in Italian · Liber Liber ↗
+v0967	Journey to the Centre of the Earth · Wikipedia ↗
+v0968	Poetry · 1929–1938
+v0969	Antonia Pozzi · Wikipedia ↗
+v0970	«Desiderio di cose leggere» · analysis (in Italian) ↗
+v0973	1 February 1934
+v0974	Non-fiction · 2018
+v0975	Atomic Habits · author's website ↗
+v0976	Non-fiction · 2022
+v0977	Steve Magness · author's website ↗
+v0978	Non-fiction · 2016
+v0979	Cal Newport · author's website ↗
+v0980	Non-fiction · 1998
+v0981	Robert Greene · author's website ↗
+v0982	Non-fiction · Nutrition
+v0983	La dieta termodinamica · IBS ↗
+v0984	Gut (L'intestino felice) · IBS ↗
+v0985	Dario Bressanini · YouTube ↗
+v0986	Photography · 2017
+v0987	The exhibition in Bari · Giornale Armonia ↗
+v0988	The exhibition in Foggia · Il Mattino di Foggia ↗
+v0989	Photography · 2007
+v0990	Michael Freeman · Wikipedia ↗
+v0991	Economics · For Dummies
+v0992	Publisher's page · Hoepli ↗
+v0993	Economics · 2020
+v0994	Contact
+v0995	Privacy
+v0996	No cookies. <a href="#mappa" data-goto-art="visite">Anonymous statistics</a> with GoatCounter.
+v0997	Close the guide
+v0998	Previous step
+v0999	Site settings
+v1000	A guided tour of the home page
+v1001	Switch to the essential version: for slow connections, it downloads only text and news, without map, animations, illustrations and fonts
+v1002	Back to the home page
+v1003	Sections
+v1004	Today's date and time
+v1005	Search a country, region, city or topic…
+v1006	Search a country, region, city or topic
+v1007	Suggestions
+v1008	World map: tap a continent, a country and then a region or state to zoom in and filter the news
+v1009	Regions and states
+v1010	Map zoom
+v1011	Zoom in
+v1012	Zoom out
+v1013	Regions
+v1014	Upcoming dates
+v1022	BIM News views
+v1023	Illustration: a building under construction, with the lower floors already built and the upper ones still a BIM model, a crane and two tags with information about the elements
+v1024	What BIM News is and what it is not
+v1025	Filters, events and webinars
+v1026	e.g. IFC, Revit, specification
+v1027	Type
+v1028	Cost to be checked on the website
+v1029	Free
+v1030	Ticket price to be checked on the website
+v1031	Go to month
+v1032	Archive pages
+v1033	title, author, journal, word in the abstract
+v1034	Abstract language
+v1035	Cost to be checked: the page does not state it
+v1037	for example: languages, map, translations
+v1038	Open or close: The site
+v1039	Open or close: BIM News
+v1040	Open or close: BIM in 5 minutes
+v1041	Open or close: Videos
+v1042	Open or close: Agenda
+v1043	Open or close: The curator
+v1044	Open or close: In the studio
+v1045	Open or close: Outside the studio
+v1046	Open or close: My books
+v1047	Open or close: FAQ
+v1048	On this page
+v1049	Plan and section of Villa Rotonda, engraving from Andrea Palladio's Four Books of Architecture, 1570
+v1050	In CAD a wall is made of four lines; a line can be given attributes such as layer, colour and line type
+v1051	In BIM the wall is a 3D object governed by parameters: changing length and height updates area and volume
+v1052	The model accompanies the asset through every phase
+v1053	Document type
+v1054	Back in time
+v1055	Timeline of the standards, scrollable horizontally
+v1056	Forward in time
+v1057	Lines to show
+v1058	World and Italy timeline, scrollable horizontally
+v1069	Directive 2014/24/EU, art. 22(4)
+v1071	ISO 19650-1 and -2:2018
+v1072	ISO 19650-3 and -5:2020
+v1074	ISO 16739-1:2024 and ISO 7817-1:2024
+v1078	Legislative Decree 50/2016, art. 23(13)
+v1082	UNI EN ISO 19650-1 and -2:2019
+v1088	Legislative Decree 36/2023, art. 43 and Annex I.9
+v1091	Legislative Decree 209/2024 (corrective decree)
+v1092	Mandate in force
+v1094	MIT guidelines (Italian Ministry of Infrastructure)
+v1096	Go to a dimension
+v1097	Illustration of the 3D dimension: the geometric model
+v1098	Illustration of the 4D dimension: time
+v1099	Illustration of the 5D dimension: cost
+v1100	Illustration of the 6D dimension: asset management
+v1101	Illustration of the 7D dimension: sustainability
+v1102	Illustration of the 8D dimension: safety
+v1103	Illustration of the 9D dimension: lean construction
+v1104	Illustration of the 10D dimension: industrialisation
+v1105	The curator's subsections
+v1106	Type of step
+v1107	Close: Guide: AutoCAD 2026, xrefs and printing
+v1108	Close: Property Sets for IFC export from Revit
+v1109	Close: Replacing the linked IFC with Dynamo
+v1110	Animation: APPLOAD, choosing the .lsp file, Load, then the SOSTXRIF command
+v1111	Close: AutoCAD 2026: xrefs and printing
+v1112	Close: Electrical design with i-project
+v1113	Close: Programming languages for people working in BIM
+v1114	Current stage: development
+v1115	Current stage: idea
+v1116	Current stage: draft
+v1117	Close: Scouting
+v1118	The five virtues of Kung Fu
+v1119	Close: Tai Chi and Kung Fu
+v1120	Close: Your Erroneous Zones
+v1121	Close: The books of Gabriella Tupini
+v1122	Close: The books of Giorgio Nardone
+v1123	Close: The Five Wounds and How to Heal Them
+v1124	Close: Daniel Goleman's emotional intelligence
+v1125	Close: Personal growth and psychology
+v1126	Close: White Fang
+v1127	Close: Journey to the Centre of the Earth
+v1128	Close: Novels
+v1129	Close: Parole
+v1130	Close: Poetry
+v1131	Close: Atomic Habits
+v1132	Close: Do Hard Things
+v1133	Close: Deep Work
+v1134	Close: The 48 Laws of Power
+v1135	Close: Nutrition: physics and biology
+v1136	Close: Non-fiction
+v1137	Close: Il mio Regio Tratturo
+v1138	Close: The Photographer's Eye
+v1139	Close: Art and photography
+v1140	Close: Capire l'economia For Dummies
+v1141	Close: The Psychology of Money
+v1142	Close: Economics
+v1143	Other sections of the site

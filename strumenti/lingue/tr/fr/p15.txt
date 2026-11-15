@@ -1,0 +1,63 @@
+v1199	← Accueil · BIM News
+v1200	BIM News, la revue du BIM dans le monde, par Marco Scigliuolo : un site inclusif, pour que tout le monde adopte le BIM
+v1201	La revue hebdomadaire du monde, avec la carte interactive
+v1202	Les actualités de la semaine la plus récente
+v1203	Les critères de la sélection, à commencer par l'inclusion
+v1204	Carte du monde
+v1205	Continents, pays et régions avec le nombre d'actualités
+v1206	Archives depuis 2015
+v1207	Toutes les actualités par année et par mois, avec filtres et recherche
+v1208	Les prochains rendez-vous, à côté des actualités
+v1209	Les actualités où le BIM rencontre l'intelligence artificielle
+v1210	Articles scientifiques sur le BIM, avec les résumés originaux
+v1211	Ce qu'est le BIM, expliqué simplement : normes, dimensions et sigles
+v1212	Les normes de 2015 à aujourd'hui
+v1213	La chronologie en arête de poisson, de gauche à droite
+v1214	Les dimensions du BIM
+v1215	De la 3D à la 10D, avec graphiques et sources
+v1216	Les sigles en une minute
+v1217	IFC, CDE, LOD, LOIN et les autres
+v1218	Résultats concrets
+v1219	Heures et argent économisés selon les études, avec le compteur de votre bureau
+v1220	Le BIM dans le temps : monde et Italie
+v1221	De 1975 à aujourd'hui, les étapes internationales et italiennes comparées
+v1222	Les certifications dans le monde
+v1223	Qui certifie les compétences BIM, où c'est obligatoire et selon quelle règle
+v1224	Webinaires enregistrés et chaînes gratuites sur le BIM
+v1225	Webinaires et conférences
+v1226	Enregistrements gratuits en quatre langues
+v1227	Des universités
+v1228	Cours de Stanford, du Technion, de la TUM, de Cambridge et d'universités italiennes
+v1229	Chaînes YouTube
+v1230	Les chaînes qui parlent de BIM
+v1231	Échéances réglementaires, événements et webinaires à venir, filtrés par région
+v1232	Les obligations BIM qui entrent en vigueur, pays par pays
+v1233	Salons, congrès et conférences, mois par mois
+v1234	Rendez-vous en ligne, gratuits et payants
+v1235	Qui s'occupe du site : profil, projets, idées et passions
+v1236	Réflexions, solutions et manuels pour ceux qui conçoivent
+v1237	Ce que signifie être ingénieur
+v1238	Douze problèmes fréquents, à résoudre un par un
+v1239	Des scripts pour réduire le travail répétitif en modélisation
+v1240	Routines et scripts à copier ou télécharger
+v1241	Des manuels professionnels écrits avec Claude selon mes indications, à lire en ligne ou à télécharger en PDF
+v1242	Exploration et discipline
+v1243	Être ingénieur
+v1244	Comment on se voit et comment on se sent
+v1245	De l'AGESCI au CNGEI, les scouts laïques
+v1246	Les cinq vertus : sagesse, compassion, sincérité, courage, patience
+v1247	Manuels non professionnels : son, guitare, basse
+v1248	Six catégories de lectures fondamentales
+v1249	Comprendre les gens, à commencer par soi-même
+v1250	Les histoires qui restent
+v1251	Les recueils auxquels je reviens
+v1252	Les essais qui changent la façon de raisonner
+v1253	Apprendre à regarder
+v1254	Comprendre l'économie, au-delà des slogans
+v1255	Les questions fréquentes de ceux qui explorent le site, avec les langues de la recherche
+v1256	Qui gère le site, comment les actualités sont mises à jour, contacts et collaborations
+v1257	Questions : D'où viennent les actualités, Comment choisissez-vous ce que vous publiez…
+v1258	Questions : Dans quelles langues cherchez-vous les actualités, Comment avez-vous choisi ces langues…
+v1259	Questions : Je ne connais pas le BIM : par où commencer, Que sont les manuels de la page du curateur…
+v1260	Questions : Quelle différence entre la version complète et la version essentielle, Comment passer du thème sombre au thème clair…
+v1261	Ouvrir →

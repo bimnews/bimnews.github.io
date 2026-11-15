@@ -1,0 +1,8 @@
+§conteggio	{1} news items in {2} weeks, {3} months
+§pagina	Page {1} of {2}
+§articoli	{1} articles
+§anno	{1}: {2} articles, filter
+§vedi	See the news from {1} →
+§passo	Step {1} of {2}
+Ultimo aggiornamento	Latest update
+Prossimo evento · costo da verificare	Next event · cost to be checked

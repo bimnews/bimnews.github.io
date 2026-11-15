@@ -1,0 +1,61 @@
+v0098	The translations are ours: they are meant to bring the academic world closer to those who do not read English well, but when citing an article the original text always prevails. The Italian translation is offered to those who chose «Whole world» or «Europe» as their area; with another area you start from the original abstract. You can always switch language with the buttons above.
+v0099	Videos
+v0100	Recorded webinars and conferences, and channels about BIM: all free and available to everyone. We choose them with the same criteria as the review: rules, open standards, procurement, tools and artificial intelligence.
+v0101	All
+v0102	English
+v0103	German
+v0104	Spanish
+v0105	Recorded webinars and conferences
+v0106	From universities and research centres
+v0107	Lectures and talks by professors and researchers from Stanford, Technion, TU München, Cambridge, UCL, Penn State, Politecnico di Torino, Politecnico di Milano and Sapienza. From MIT and Harvard we have not found, so far, public videos dedicated to BIM on their channels.
+v0108	YouTube channels about BIM
+v0109	Videos open on YouTube: we do not embed them in the site, so no third-party cookies are loaded until you choose to watch them. The list grows every week along with the review; for subtitles in your language you can use YouTube's automatic translation.
+v0110	Agenda
+v0111	Everything coming up in the BIM world, in one place: regulatory deadlines, in-person events and online webinars. Each entry has a link to the official page, the date and the cost.
+v0112	Free
+v0113	Paid
+v0114	To be checked
+v0115	<span class="agp-i sc" aria-hidden="true"></span>Regulatory deadlines
+v0116	BIM mandates coming into force, country by country.
+v0117	Trade fairs, congresses and in-person conferences.
+v0118	Online: they can be followed from any country.
+v0119	Dates, venues and costs are checked on the official pages when we add them: always check them before registering. Deadlines include the source of the rule or the news. The area you choose here applies to the whole site: you also find it at the top, in the settings bar, and it is saved only in your browser.
+v0120	Frequently asked questions
+v0121	The questions people ask while exploring BIM News: what you find on the various pages, how we choose the news, which languages we search in, how to use the site.
+v0122	Search the questions
+v0123	The site
+v0124	Who runs this site?
+v0125	The site is run by engineer Marco Scigliuolo and is generated with Claude, Anthropic's artificial intelligence assistant. On the <a href="#chi-sono">The curator</a> page you will find his profile, portfolio, manuals and projects.
+v0126	How is the news updated, and how reliable is it?
+v0127	The news is updated every week, on Monday, fully automatically: the research is carried out by Claude following precise criteria set by the author, that is, which sources are accepted, which topics matter, which languages to search and what to check before publishing. You will find them in the answers below. Every item includes a link to the original source: for an important decision, always refer to it.
+v0128	How can I contact the author?
+v0129	Via <a href="https://www.linkedin.com/in/marco-scigliuolo/" target="_blank" rel="noopener">LinkedIn ↗</a>. <b>Please note:</b> the site is run by one person, so the author is not always able to reply quickly.
+v0130	Is the author open to collaborations?
+v0131	The author is currently working out how it might be possible, in the future, to collaborate with outside people. In any case the site is run entirely by him and is above all a passion, a small spare-time hobby.
+v0132	Who funds or sponsors the site?
+v0133	Nobody, for now. The site has no sponsors, advertising or funding: all costs are borne by the curator, namely the Claude Pro subscription used to generate and update the site, and the time the curator spends running it. The site is hosted free of charge on GitHub Pages. Sponsorships are welcome for one purpose only: moving to a Claude plan with more tokens, to expand the site. If you are interested, let's talk.
+v0134	What is BIM News?
+v0135	A weekly review of BIM (Building Information Modeling, the method of designing and managing buildings and infrastructure with a digital model made of objects that carry their own information). It collects news from all over the world, summarises it in Italian, places it on the map and always includes a link to the source. Alongside the news there is a guide for beginners, translated university research, videos, an agenda and manuals.
+v0136	Do I need to register or pay?
+v0137	No. The site is free and requires no registration.
+v0138	The news
+v0139	Where does the news come from?
+v0140	From three kinds of sources. <b>Institutional sources</b>: governments, ministries, official gazettes, standards bodies, national buildingSMART chapters, contracting authorities, universities, development banks; cities, regions and provinces only when they make a concrete contribution, such as a mandate, a regulation or a major project. <b>Reputable press</b>: trade publications with an editorial team, major national newspapers, news agencies. <b>Large companies</b>, only for facts of real weight and never for advertising. Personal blogs, websites of individual practices, resellers, local news and social media are excluded.
+v0141	How do you decide what to publish?
+v0142	We publish a fact when it changes something for those who design or build in that country: national strategies and mandates, adopted standards, major public works in BIM, first pilot projects, key events. The underlying principle is inclusiveness: when interest is equal, we choose the news that helps someone get started. Details are in the «How we choose the news» box in <a href="#bim-news">BIM News</a>.
+v0143	Why are some countries still empty on the map?
+v0144	Because BIM culture has not yet spread throughout the world. The curator would very much like this to change in the future: that is precisely the site's mission, to spread BIM culture everywhere. Meanwhile the search continues every week, in the language of each country, so that every step forward finds its place on the map.
+v0145	What do the numbers on the map mean?
+v0146	How many news items there are per continent, country or region. Tap a continent, then a country and a region to see the news from that place.
+v0147	Why do some items carry the «Archive» label?
+v0148	They are items we collected more than seven days after they were published, to complete the history of a country or a standard.
+v0149	Why is there no news before 2015?
+v0150	2015 is the year the first part of UNI 11337, the Italian series of BIM standards, was published. We use it as a common starting point for the whole world.
+v0151	What will I find in BIM & AI?
+v0152	The news in which the main topic is artificial intelligence applied to BIM and construction, with the same map and filters as BIM News.
+v0153	The research languages
+v0154	Which languages do you search the news in?
+v0155	We search for each item in the language of the country where it originates, not only in English. Below you will find the languages we search in and those we are reviewing.
+v0156	They are the national languages of countries where we expect BIM activity. We search them one by one: if after serious research we find no suitable sources, the language leaves the list; if we find them, it moves to the list above.
+v0157	How did you choose these languages?
+v0158	Around 7,100–7,200 languages are spoken in the world: that is the order of magnitude given by Ethnologue, the reference catalogue. Only a small share has digital content on technical topics. To measure this we used a public, verifiable indicator: the editions of Wikipedia. Wikipedia has 348 active language editions; the article on artificial intelligence exists in 185, the one on BIM in 38. The languages with an article on BIM (excluding Esperanto, which has no reference country) are the starting point of the research. To these we add, under review, the national languages of the countries where we expect activity. Data collected in November 2026.

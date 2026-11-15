@@ -1,0 +1,63 @@
+v1199	← Home · BIM News
+v1200	BIM News, the review of BIM around the world, curated by Marco Scigliuolo: an inclusive site, so that everyone adopts BIM
+v1201	The weekly review from around the world, with the interactive map
+v1202	The news of the most recent week
+v1203	The selection criteria, starting with inclusiveness
+v1204	World map
+v1205	Continents, countries and regions with the number of news items
+v1206	Archive since 2015
+v1207	All the news by year and month, with filters and search
+v1208	Upcoming dates, next to the news
+v1209	The news in which BIM meets artificial intelligence
+v1210	Scientific articles on BIM, with abstracts translated into Italian
+v1211	What BIM is, explained simply: standards, dimensions and acronyms
+v1212	The standards from 2015 to today
+v1213	The fishbone timeline, from left to right
+v1214	The dimensions of BIM
+v1215	From 3D to 10D, with graphics and sources
+v1216	The acronyms in a minute
+v1217	IFC, CDE, EIR, BEP, LOD, LOIN and the others
+v1218	Concrete results
+v1219	Hours and money saved according to research, with your practice's calculator
+v1220	BIM over time: world and Italy
+v1221	From 1975 to today, international and Italian milestones compared
+v1222	Certifications around the world
+v1223	Who certifies BIM skills, where it is mandatory and under which rule
+v1224	Recorded webinars and free channels about BIM
+v1225	Webinars and conferences
+v1226	Free recordings in four languages
+v1227	From universities
+v1228	Lectures from Stanford, Technion, TUM, Cambridge and Italian universities
+v1229	YouTube channels
+v1230	The channels that talk about BIM
+v1231	Upcoming regulatory deadlines, events and webinars, filtered by area
+v1232	BIM mandates coming into force, country by country
+v1233	Trade fairs, congresses and conferences, month by month
+v1234	Online appointments, free and paid
+v1235	Who runs the site: profile, projects, ideas and passions
+v1236	Reflections, solutions and manuals for designers
+v1237	What it means to be an engineer
+v1238	Twelve common problems, to be solved one by one
+v1239	Scripts to reduce repetitive work in modelling
+v1240	Routines and scripts to copy or download
+v1241	Professional manuals written with Claude following my instructions, to read online or download as PDF
+v1242	Exploration and discipline
+v1243	Being an engineer
+v1244	How you see yourself and how it feels
+v1245	From AGESCI to CNGEI, the secular scouts
+v1246	The five virtues: wisdom, compassion, sincerity, courage, patience
+v1247	Non-professional manuals: sound, guitar, bass
+v1248	Six categories of essential reading
+v1249	Understanding people, starting with oneself
+v1250	The stories that stay
+v1251	The collections I return to
+v1252	The essays that change the way you think
+v1253	Learning to look
+v1254	Understanding the economy, beyond the slogans
+v1255	The questions people ask while exploring the site, with the research languages
+v1256	Who runs the site, how the news is updated, contacts and collaborations
+v1257	Questions: Where does the news come from, How do you decide what to publish…
+v1258	Questions: Which languages do you search the news in, How did you choose these languages…
+v1259	Questions: I don't know BIM: where do I start, What are the manuals on the curator's page…
+v1260	Questions: What is the difference between the full and the essential version, How do I switch from the dark theme to the light one…
+v1261	Open →

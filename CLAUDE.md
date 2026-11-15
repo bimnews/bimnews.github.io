@@ -143,6 +143,41 @@ Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato co
 
 11. **BIM in 5 minuti, «01 · Che cos'è» riscritto: PUBBLICATO il 15/11/2026 (revisione 112).** Tre passi: a mano (Palladio, 1570, MET CC0, `assets/foto/palladio-rotonda.jpg`, con credito nella Mappa del sito), il CAD (linee con attributi) e il BIM (oggetti con parametri, muro interattivo `#bim-demo`); poi «Perché cambia tutto» e «Attributo o parametro?».
 
+12. **Traduzione di TUTTE le scritte fisse (richiesta del 15/11/2026, IN CORSO).**
+   - **Esclusi:** notizie, agenda, video e articoli di BIM Accademia, perché cambiano ogni settimana.
+   - **Estrazione:** `strumenti/lingue/extract.js` (Playwright su tutte le viste) → `strumenti/lingue/src/voci.json` (1198 voci, circa 105.000 caratteri) e 14 pacchetti `src/pNN.txt` («id<TAB>testo o HTML»).
+   - **Traduzioni:** `strumenti/lingue/tr/<lingua>/pNN.txt`, stesso formato. Nelle voci HTML si traducono solo i testi; tag e attributi restano identici, e `compila.py` scarta le righe in cui cambiano.
+   - **Compilazione:** `python3 strumenti/lingue/compila.py` → `assets/lingue/<lingua>.json` (`t` testi, `h` blocchi HTML, `a` attributi), con il vecchio `dizionario.py` come riserva.
+   - **Il motore** (in `index.html`, «lingue: traduce tutte le scritte fisse»):
+     - scarica il file della lingua scelta;
+     - traduce i blocchi interi, poi i testi sciolti, poi `placeholder`, `title` e `aria-label`;
+     - le parti che cambiano (mesi, «N notizie», «Ultimo aggiornamento») le traduce a pezzi;
+     - ritraduce le parti generate dal JS (MutationObserver, con `takeRecords` per non creare cicli);
+     - con l'italiano rimette i testi originali.
+   - **Pacchetti:** ora sono 16 (`p15` = voci della Mappa del sito, `p16` = la guida) e 1284 voci; in `tr/<lingua>/extra.txt` ci sono i modelli delle frasi con numeri (`§conteggio`, `§pagina`, `§articoli`, `§anno`, `§passo`, `§vedi`) e qualche voce fuori pacchetto.
+   - **Stato:** inglese e francese COMPLETI e PUBBLICATI (revisione 114). Restano de, es, pt, ru, ar, zh, ja, ko, in quest'ordine; salvare sul ramo dopo ogni pacchetto.
+   - **Nelle lingue diverse dall'italiano** BIM Accademia mostra l'abstract originale inglese e le scritte della scheda in inglese (`siteIt()`).
+   - **Se si cambiano testi del sito:** rilanciare `extract.js`, tradurre le voci nuove e ricompilare.
+
+13. **Appunti di Marco del 15/11/2026, da fare dopo le traduzioni** (riordinati per area):
+   - **Il curatore** (descrivilo come «blog personale e con articoli utili»):
+     - **Tai Chi:** aggiungere il link della scuola Mien Chuan (o una sua citazione), il maestro e i suoi libri. Da verificare sul sito della scuola.
+     - **Scautismo:** le Aquile Randagie come ispirazione, con il link al film; Marco era nell'AGESCI di Triggiano (BA).
+     - **«La musica»:** collegarla ai manuali di Claude sulla musica.
+     - **Nuova scheda «Ispirazioni»:** i canali YouTube che segue Marco. Serve l'elenco da lui.
+     - **Portfolio:** la grafica è rimasta quella vecchia, va resa coerente con il resto della sezione. Poi le anteprime dei progetti affrontati, poi l'elenco dei modelli fatti con Guadagnuolo. Servono materiali da Marco.
+     - **Tutti gli articoli:** i minuti di lettura alla fine.
+   - **BIM in 5 minuti:**
+     - rinominarlo in **«BIM in breve»** e sistemare la frase iniziale;
+     - approfondimento matematico e informatico: la differenza tra gli attributi del CAD e i parametri del BIM, che cosa succede al modello, il codice, le conseguenze;
+     - riunire i tre passi di «Che cos'è» in una specie di timeline visiva dell'evoluzione del progetto;
+     - nuova scheda «Cosa ci riserva il futuro?» (forse le tavole non serviranno più, con robot e AI; «chissà»).
+   - **Guida al sito:** una breve descrizione per ogni scheda (BIM News, AI ecc.).
+   - **Lingue:** nelle lingue diverse dall'italiano le notizie vanno mostrate in inglese (titolo e sintesi in inglese) e BIM Accademia con l'abstract originale inglese, per non sprecare token. Serve aggiungere i campi in inglese alle notizie e aggiornare il task del lunedì.
+   - **Festività della tecnologia:** un piccolo widget per le giornate mondiali legate alla tecnologia, riconosciute a livello mondiale (per esempio quelle ONU, ITU e UNESCO). Da verificare una per una.
+   - **Animazioni stagionali** (punto 2): mai fatte finora. Marco chiede un'anteprima.
+   - **Agenda:** grafica a calendario.
+
 ## Fatto di recente
 
 - **15/11/2026, revisione 100:**
@@ -168,4 +203,7 @@ Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato co
   - **BIM in 5 minuti:** «Che cos'è» riscritto.
   - **Le mie proposte:** la frase «aperte ai commenti» è sostituita dal rimando a LinkedIn, per coerenza con il disclaimer.
 - **15/11/2026, revisione 113:** selettore delle lingue (11 lingue) con le scritte principali tradotte.
+- **15/11/2026, revisione 114:** nuovo motore delle traduzioni, tutto il sito in inglese e francese; FAQ: riscritte «collaborazioni» e «paesi vuoti», tolte quattro domande (BIM & AI, BIM Accademia, eventi, video); la guida ha un passo per ogni scheda in alto (`nav:#…` in `STEPS`).
+- **Post LinkedIn:** testo preparato il 15/11/2026; consigliato martedì 17/11 alle 8:00–8:30. Marco vuole tutto pronto per martedì (traduzioni, ricerca a tappeto, appunti).
+- **«Ispirazioni»:** Marco ha mandato l'elenco dei suoi canali YouTube (screenshot, 34 canali): da verificare uno per uno e trasformare in un articolo nel curatore.
 - **15/11/2026:** il sito passa all'organizzazione «bimnews» e all'indirizzo https://bimnews.github.io/; aggiornati README, CLAUDE.md, i percorsi negli script di `strumenti/` e i testi dei due task. Niente pagina di rinvio dal vecchio indirizzo: Marco non la vuole, perché il sito l'hanno visto ancora in pochi. Prossimo passo: Marco fa un controllo finale, dice che cosa aggiungere, poi diffonde il sito.
