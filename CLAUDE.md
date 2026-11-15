@@ -123,8 +123,22 @@ Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato co
    - **Prima serve un'azione di Marco:** attivare in GoatCounter «Allow adding visitor counts on your website». Oggi l'endpoint risponde 403.
    - **Alternativa:** dashboard pubblica incorporata in un frame. GoatCounter ha una pagina di aiuto apposita, da verificare.
 
+8. **Timeline doppia «Il BIM nel tempo: il mondo e l'Italia» (anteprima del 15/11/2026, non pubblicare prima del sì).**
+   - **Cosa è:** due linee sullo stesso asse dal 1975 a oggi, il mondo sopra e l'Italia sotto. I collegamenti gialli uniscono una norma italiana a quella internazionale che recepisce; quelli tratteggiati uniscono BS 1192 e PAS 1192-2 alla ISO 19650. Ci sono i filtri Entrambe, Solo mondo e Solo Italia e un dettaglio con le fonti.
+   - **Dove andrà:** in BIM in 5 minuti, dopo la lisca delle norme (id `b5-t2`).
+   - **Il codice:** `strumenti/timeline/tl2.py`, da lanciare sulla `index.html` di main dopo aver corretto i percorsi. Inserisce HTML, CSS e JS e la voce dell'indice. Ritocchi già fatti a mano dopo lo script: corsia con `LW`/`LI` a ±40 px dall'asse, etichette Mondo/Italia in `.t2-box` fuori dallo scorrimento, `.t2-box{min-width:0}`.
+   - **Dati:** la linea italiana è `UNI 11337:2009` + l'array `NORME`. La linea del mondo ha 18 tappe, tutte verificate: Eastman 1975 (AIA Journal), van Nederveen e Tolman 1992, IAI 1995, IFC 1.0 1996, buildingSMART 2005, ISO/PAS 16739:2005, BS 1192:2007, ISO 29481-1:2010, Government Construction Strategy 31/05/2011, ISO 16739:2013, PAS 1192-2:2013, Dir. 2014/24/UE art. 22 par. 4, EU BIM Handbook 06/07/2017, ISO 19650-1/2 07/12/2018, ISO 19650-3/-5 2020, -4 2022, 16739-1 e 7817-1 2024, 19650-6 2025.
+9. **Selettore delle lingue in alto (richiesta del 15/11/2026).**
+   - **Lingue:** quelle della proposta multilingue (it, en, de, fr, es, zh, ja) più l'**arabo standard** (fuṣḥā), con `dir="rtl"`.
+   - **Scopo:** Marco vuole controllare che le scritte principali del sito siano tradotte.
+   - Fa parte del punto 4.
+
 ## Fatto di recente
 
 - **15/11/2026, revisione 100:**
   - **BIM in 5 minuti:** sezione «09 · Le certificazioni nel mondo» (`#b5-cert`) con 6 schede verificate: Hong Kong (obbligatoria, DEVB TC(W) 2/2021), Italia (volontaria, All. I.9 art. 1 c. 3 D.Lgs. 36/2023, UNI 11337-7, UNI/PdR 78:2020), Spagna (Plan BIM 2023), Regno Unito (BRE e UKAS, ISO 19650-2), Germania (VDI/bS 2552 Blatt 8.1), buildingSMART. Altri paesi da aggiungere con la ricerca a tappeto: Cina, Corea, Singapore, Francia, paesi nordici…
   - **Scautismo** (`#fuori-scout`): testo di Marco (dall'AGESCI al CNGEI, scout laici, a Bolzano) e citazione di Baden-Powell da *Aids to Scoutmastership*, ed. 1930, «The Aim of Scouting», tradotta da noi. Marco aveva scritto «CNGI»: il nome corretto è CNGEI. Niente articoli: solo questa descrizione.
+- **15/11/2026, revisione 101:**
+  - **FAQ:** la policy di Marco. Niente collaborazioni economiche né esterne sul sito (gestito con il suo piano Pro di Claude); sì a sponsorizzazioni per passare a un piano con più token, «parliamone». Aggiornato anche `strumenti/faq.py`.
+  - **BIM News:** il riquadro «Tutte le notizie» è su una colonna da bordo a bordo; criterio, scelta delle notizie, fonti e lingue sono in un `<details class="ai-more">` richiudibile.
+  - **BIM News:** il disclaimer «Che cos'è BIM News, e che cosa non è» (`.bn-what`), sempre aperto, da non chiudere mai: è una richiesta esplicita di Marco.
