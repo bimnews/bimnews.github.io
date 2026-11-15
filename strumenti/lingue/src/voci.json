@@ -8825,5 +8825,166 @@
 "h": "Apri →",
 "tag": "#rest",
 "id": "v1261"
+},
+{
+"k": "Le pagine del sito",
+"m": "text",
+"h": "Le pagine del sito",
+"tag": "#tour",
+"id": "v1262"
+},
+{
+"k": "Dal menu in alto raggiungi tutte le pagine del sito: adesso le vediamo una per una. Il bottone «BIM News» in alto a sinistra ti riporta sempre qui.",
+"m": "text",
+"h": "Dal menu in alto raggiungi tutte le pagine del sito: adesso le vediamo una per una. Il bottone «BIM News» in alto a sinistra ti riporta sempre qui.",
+"tag": "#tour",
+"id": "v1263"
+},
+{
+"k": "La rassegna settimanale: le notizie sul BIM da tutto il mondo, riassunte in italiano, collocate sulla mappa e sempre con il link alla fonte.",
+"m": "text",
+"h": "La rassegna settimanale: le notizie sul BIM da tutto il mondo, riassunte in italiano, collocate sulla mappa e sempre con il link alla fonte.",
+"tag": "#tour",
+"id": "v1264"
+},
+{
+"k": "Solo le notizie in cui l'intelligenza artificiale incontra il BIM, con la stessa mappa, gli stessi filtri e lo stesso archivio.",
+"m": "text",
+"h": "Solo le notizie in cui l'intelligenza artificiale incontra il BIM, con la stessa mappa, gli stessi filtri e lo stesso archivio.",
+"tag": "#tour",
+"id": "v1265"
+},
+{
+"k": "Articoli scientifici sul BIM in accesso aperto: titolo e abstract tradotti in italiano, l'originale a un clic e il link alla pubblicazione.",
+"m": "text",
+"h": "Articoli scientifici sul BIM in accesso aperto: titolo e abstract tradotti in italiano, l'originale a un clic e il link alla pubblicazione.",
+"tag": "#tour",
+"id": "v1266"
+},
+{
+"k": "Per chi comincia: che cos'è il BIM, le norme dal 2015 a oggi, le dimensioni, le sigle, i risultati concreti e le certificazioni nel mondo.",
+"m": "text",
+"h": "Per chi comincia: che cos'è il BIM, le norme dal 2015 a oggi, le dimensioni, le sigle, i risultati concreti e le certificazioni nel mondo.",
+"tag": "#tour",
+"id": "v1267"
+},
+{
+"k": "Webinar, conferenze e lezioni universitarie sul BIM, tutti gratuiti, e i canali YouTube da seguire.",
+"m": "text",
+"h": "Webinar, conferenze e lezioni universitarie sul BIM, tutti gratuiti, e i canali YouTube da seguire.",
+"tag": "#tour",
+"id": "v1268"
+},
+{
+"k": "Il blog personale di chi cura il sito, con articoli utili: profilo, portfolio, soluzioni e manuali per chi progetta, lavori in corso e passioni.",
+"m": "text",
+"h": "Il blog personale di chi cura il sito, con articoli utili: profilo, portfolio, soluzioni e manuali per chi progetta, lavori in corso e passioni.",
+"tag": "#tour",
+"id": "v1269"
+},
+{
+"k": "Scadenze normative, eventi e webinar in arrivo, con data, costo e link alla pagina ufficiale, filtrati per la tua area.",
+"m": "text",
+"h": "Scadenze normative, eventi e webinar in arrivo, con data, costo e link alla pagina ufficiale, filtrati per la tua area.",
+"tag": "#tour",
+"id": "v1270"
+},
+{
+"k": "Tutte le pagine del sito in un albero, ognuna con una breve descrizione. In fondo trovi anche le visite del sito e i crediti delle immagini.",
+"m": "text",
+"h": "Tutte le pagine del sito in un albero, ognuna con una breve descrizione. In fondo trovi anche le visite del sito e i crediti delle immagini.",
+"tag": "#tour",
+"id": "v1271"
+},
+{
+"k": "La mappa del mondo",
+"m": "text",
+"h": "La mappa del mondo",
+"tag": "#tour",
+"id": "v1272"
+},
+{
+"k": "Al centro c'è la mappa con tutte le notizie che arrivano dal mondo. Scrivi un paese, una regione, una città o un tema nella barra di ricerca, oppure tocca la mappa: i numeri dicono quante notizie ci sono, e con un tocco entri nel continente, nel paese e nella regione.",
+"m": "text",
+"h": "Al centro c'è la mappa con tutte le notizie che arrivano dal mondo. Scrivi un paese, una regione, una città o un tema nella barra di ricerca, oppure tocca la mappa: i numeri dicono quante notizie ci sono, e con un tocco entri nel continente, nel paese e nella regione.",
+"tag": "#tour",
+"id": "v1273"
+},
+{
+"k": "Eventi e agenda",
+"m": "text",
+"h": "Eventi e agenda",
+"tag": "#tour",
+"id": "v1274"
+},
+{
+"k": "Questa è la barra degli eventi e dell'agenda: il prossimo evento gratuito e quello a pagamento, il prossimo webinar e la prossima scadenza normativa. Con «Tutti gli appuntamenti» apri l'agenda completa.",
+"m": "text",
+"h": "Questa è la barra degli eventi e dell'agenda: il prossimo evento gratuito e quello a pagamento, il prossimo webinar e la prossima scadenza normativa. Con «Tutti gli appuntamenti» apri l'agenda completa.",
+"tag": "#tour",
+"id": "v1275"
+},
+{
+"k": "Le impostazioni",
+"m": "text",
+"h": "Le impostazioni",
+"tag": "#tour",
+"id": "v1276"
+},
+{
+"k": "Qui scegli la lingua del sito, la tua area geografica, che filtra eventi e scadenze, il tema chiaro o scuro e la versione essenziale, più leggera per le connessioni lente.",
+"m": "text",
+"h": "Qui scegli la lingua del sito, la tua area geografica, che filtra eventi e scadenze, il tema chiaro o scuro e la versione essenziale, più leggera per le connessioni lente.",
+"tag": "#tour",
+"id": "v1277"
+},
+{
+"k": "Le domande frequenti",
+"m": "text",
+"h": "Le domande frequenti",
+"tag": "#tour",
+"id": "v1278"
+},
+{
+"k": "Il sito è grande e cresce ogni settimana. Nelle FAQ trovi le risposte alle domande che ci si pone esplorandolo: che cosa c'è nelle varie pagine, come scegliamo le notizie, in che lingue cerchiamo e come si usa il sito.",
+"m": "text",
+"h": "Il sito è grande e cresce ogni settimana. Nelle FAQ trovi le risposte alle domande che ci si pone esplorandolo: che cosa c'è nelle varie pagine, come scegliamo le notizie, in che lingue cerchiamo e come si usa il sito.",
+"tag": "#tour",
+"id": "v1279"
+},
+{
+"k": "Avanti ›",
+"m": "text",
+"h": "Avanti ›",
+"tag": "#tour",
+"id": "v1280"
+},
+{
+"k": "Avanti",
+"m": "text",
+"h": "Avanti",
+"tag": "#tour",
+"id": "v1281"
+},
+{
+"k": "Fine",
+"m": "text",
+"h": "Fine",
+"tag": "#tour",
+"id": "v1282"
+},
+{
+"k": "‹ Indietro",
+"m": "text",
+"h": "‹ Indietro",
+"tag": "#tour",
+"id": "v1283"
+},
+{
+"k": "Indietro",
+"m": "text",
+"h": "Indietro",
+"tag": "#tour",
+"id": "v1284"
 }
 ]

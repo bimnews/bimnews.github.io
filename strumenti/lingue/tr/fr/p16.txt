@@ -1,0 +1,23 @@
+v1262	Les pages du site
+v1263	Depuis le menu en haut, vous accédez à toutes les pages du site : voyons-les maintenant une par une. Le bouton « BIM News » en haut à gauche vous ramène toujours ici.
+v1264	La revue hebdomadaire : les actualités du BIM du monde entier, résumées en italien, placées sur la carte et toujours avec le lien vers la source.
+v1265	Seulement les actualités où l'intelligence artificielle rencontre le BIM, avec la même carte, les mêmes filtres et les mêmes archives.
+v1266	Des articles scientifiques sur le BIM en libre accès : le titre et le résumé originaux, et le lien vers la publication.
+v1267	Pour débuter : ce qu'est le BIM, les normes de 2015 à aujourd'hui, les dimensions, les sigles, les résultats concrets et les certifications dans le monde.
+v1268	Webinaires, conférences et cours universitaires sur le BIM, tous gratuits, et les chaînes YouTube à suivre.
+v1269	Le blog personnel de celui qui s'occupe du site, avec des articles utiles : profil, portfolio, solutions et manuels pour ceux qui conçoivent, travaux en cours et passions.
+v1270	Échéances réglementaires, événements et webinaires à venir, avec la date, le coût et le lien vers la page officielle, filtrés selon votre région.
+v1271	Toutes les pages du site dans une arborescence, chacune avec une brève description. En bas, vous trouverez aussi les visites du site et les crédits des images.
+v1272	La carte du monde
+v1273	Au centre se trouve la carte avec toutes les actualités qui arrivent du monde entier. Tapez un pays, une région, une ville ou un thème dans la barre de recherche, ou touchez la carte : les chiffres indiquent combien d'actualités il y a, et d'une touche vous entrez dans le continent, le pays et la région.
+v1274	Événements et agenda
+v1275	Voici la bande des événements et de l'agenda : le prochain événement gratuit et le prochain payant, le prochain webinaire et la prochaine échéance réglementaire. « Tous les rendez-vous » ouvre l'agenda complet.
+v1276	Les paramètres
+v1277	Ici, vous choisissez la langue du site, votre région géographique, qui filtre les événements et les échéances, le thème clair ou sombre et la version essentielle, plus légère pour les connexions lentes.
+v1278	Les questions fréquentes
+v1279	Le site est grand et s'enrichit chaque semaine. Dans la FAQ, vous trouverez les réponses aux questions que l'on se pose en l'explorant : ce qu'il y a dans les différentes pages, comment nous choisissons les actualités, dans quelles langues nous cherchons et comment utiliser le site.
+v1280	Suivant ›
+v1281	Suivant
+v1282	Terminer
+v1283	‹ Retour
+v1284	Retour

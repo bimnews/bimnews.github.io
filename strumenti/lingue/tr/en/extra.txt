@@ -3,3 +3,4 @@
 §articoli	{1} articles
 §anno	{1}: {2} articles, filter
 §vedi	See the news from {1} →
+§passo	Step {1} of {2}

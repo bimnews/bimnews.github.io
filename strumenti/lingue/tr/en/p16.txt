@@ -1,0 +1,23 @@
+v1262	The site's pages
+v1263	From the menu at the top you reach every page of the site: now let's look at them one by one. The «BIM News» button at the top left always brings you back here.
+v1264	The weekly review: BIM news from all over the world, summarised in Italian, placed on the map and always with a link to the source.
+v1265	Only the news in which artificial intelligence meets BIM, with the same map, filters and archive.
+v1266	Open-access scientific articles on BIM: the original title and abstract, and the link to the publication.
+v1267	For beginners: what BIM is, the standards from 2015 to today, the dimensions, the acronyms, the concrete results and certifications around the world.
+v1268	Webinars, conferences and university lectures on BIM, all free, and the YouTube channels worth following.
+v1269	The personal blog of the site's curator, with useful articles: profile, portfolio, solutions and manuals for designers, work in progress and passions.
+v1270	Upcoming regulatory deadlines, events and webinars, with date, cost and link to the official page, filtered by your area.
+v1271	All the pages of the site in a tree, each with a short description. At the bottom you will also find the site visits and the image credits.
+v1272	The world map
+v1273	In the middle is the map with all the news coming from around the world. Type a country, region, city or topic in the search bar, or tap the map: the numbers show how many news items there are, and one tap takes you into the continent, the country and the region.
+v1274	Events and agenda
+v1275	This is the events and agenda strip: the next free event and the next paid one, the next webinar and the next regulatory deadline. «All dates» opens the full agenda.
+v1276	Settings
+v1277	Here you choose the site language, your geographic area, which filters events and deadlines, the light or dark theme and the essential version, lighter for slow connections.
+v1278	Frequently asked questions
+v1279	The site is large and grows every week. In the FAQ you will find answers to the questions people ask while exploring it: what is on the various pages, how we choose the news, which languages we search in and how to use the site.
+v1280	Next ›
+v1281	Next
+v1282	Finish
+v1283	‹ Back
+v1284	Back

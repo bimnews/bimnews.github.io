@@ -3575,6 +3575,7 @@ function pattern(v,d){var t=v,m=d.t;
   if(r=v.match(/^(\d+) notizie in (\d+) settimane, (\d+) mesi$/))return f("§conteggio",r)||t;
   if(r=v.match(/^Pagina (\d+) di (\d+)$/))return f("§pagina",r)||t;
   if(r=v.match(/^(\d+) articoli$/))return f("§articoli",r)||t;
+  if(r=v.match(/^Passo (\d+) di (\d+)$/))return f("§passo",r)||t;
   if(r=v.match(/^Vedi le notizie di (.+) →$/))return f("§vedi",[r[0],m[r[1]]||r[1]])||t;
   if(r=v.match(/^(\d{4}): (\d+) articoli, filtra$/))return f("§anno",r)||t;
   return t}
