@@ -40,8 +40,6 @@ v0718	Sound: mathematics, effects and psychoacoustics
 v0719	What sound is, from mathematics to perception.
 v0720	Effects library for guitar and bass
 v0721	Effects for guitar and bass, collected and explained.
-v0722	Guitar tones with a modeler
-v0723	A summary of the Fractal tutorial playlist on guitar tones.
 v0724	The books that were fundamental to my education. For each one there will be a short article on what it gave me, grouped by category.
 v0725	Personal growth and psychology
 v0726	The books that helped me understand how people work, starting with myself.<span class="acc-count">· 5 entries</span>

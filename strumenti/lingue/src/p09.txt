@@ -40,8 +40,6 @@ v0718	Il suono: matematica, effetti e psicoacustica
 v0719	Che cos'è il suono, dalla matematica alla percezione.
 v0720	Libreria effetti per chitarra e basso
 v0721	Gli effetti per chitarra e basso, raccolti e spiegati.
-v0722	Suoni per chitarra con il modeler
-v0723	Sintesi della playlist di tutorial Fractal sui suoni di chitarra.
 v0724	I libri che sono stati fondamentali per la mia formazione. Per ognuno ci sarà un breve articolo su che cosa mi ha dato, raccolto per categorie.
 v0725	Crescita personale e psicologia
 v0726	I libri che mi hanno aiutato a capire come funzionano le persone, a partire da me stesso.<span class="acc-count">· 5 schede</span>

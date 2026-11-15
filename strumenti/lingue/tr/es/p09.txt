@@ -40,8 +40,6 @@ v0718	El sonido: matemáticas, efectos y psicoacústica
 v0719	Qué es el sonido, de las matemáticas a la percepción.
 v0720	Biblioteca de efectos para guitarra y bajo
 v0721	Los efectos para guitarra y bajo, recopilados y explicados.
-v0722	Sonidos de guitarra con el modelador
-v0723	Síntesis de la lista de tutoriales de Fractal sobre los sonidos de guitarra.
 v0724	Los libros que han sido fundamentales para mi formación. Para cada uno habrá un breve artículo sobre lo que me ha dado, organizado por categorías.
 v0725	Crecimiento personal y psicología
 v0726	Los libros que me han ayudado a entender cómo funcionan las personas, empezando por mí mismo.<span class="acc-count">· 5 fichas</span>

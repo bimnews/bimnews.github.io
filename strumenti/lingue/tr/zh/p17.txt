@@ -10,7 +10,7 @@ v1293	<a href="manuali/effetti-chitarra-basso.pdf" target="_blank" rel="noopener
 v1294	我最早加入的是巴里省特里贾诺的 AGESCI，即意大利天主教童子军协会。后来我明白这并不是适合我的选择：在 AGESCI 要做「信仰的选择」，而我的精神之路让我认识到自己并不信教。自从在博尔扎诺生活和工作以来，我加入了 <span translate="no">CNGEI</span>，也就是世俗的童子军，因为我坚信教育必须是世俗的，绝不能由宗教原则来引导。
 v1295	一个榜样：<a href="https://it.wikipedia.org/wiki/Aquile_randagie" target="_blank" rel="noopener">Aquile Randagie ↗</a>（「流浪之鹰」），米兰、蒙扎、帕尔马和贝加莫的童子军。1927 年起法西斯政权解散了童子军组织，他们仍然秘密地继续活动。他们的故事被拍成了电影<a href="https://it.wikipedia.org/wiki/Aquile_randagie_(film)" target="_blank" rel="noopener"><i>Aquile randagie</i> ↗</a>，导演 Gianni Aureli（2019）。他们提醒我们：教育有时也意味着要有勇气不服从不公正的事。
 v1296	我练习的地方：博尔扎诺的 <span translate="no">Scuola di Kung-fu Mien Ch'uan</span>（<a href="https://www.coni.it/it/registro-societa-sportive/home/registro-2-0/RegistroDettaglio.html?id_societa=99695" target="_blank" rel="noopener">CONI 登记信息 ↗</a>）。
-v1297	这些是非专业手册，由我请 Anthropic 的人工智能助手 Claude 按照明确的要求撰写：主题、结构、详细程度和示例都由我选定。前两本已经可以下载 PDF，其余的会陆续推出。
+v1297	这些是非专业手册，由我请 Anthropic 的人工智能助手 Claude 按照明确的要求撰写：主题、结构、详细程度和示例都由我选定。可以下载 PDF。
 v1298	声波与分贝、傅里叶与音色；滤波器、延迟、混响、失真和压缩到底做了什么；还有心理声学：为什么有些声音让人喜欢、有些让人烦躁，并区分了实验结果与假说。
 v1299	<a href="manuali/il-suono.pdf" target="_blank" rel="noopener">下载 PDF（15 页，意大利语）↗</a>
 v1300	所有效果器类别：每一类的作用、常见旋钮、在效果链中的推荐位置以及最常见的改装，并附有一份适用于所有踏板的旋钮术语表。

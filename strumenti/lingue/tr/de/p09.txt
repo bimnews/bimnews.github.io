@@ -40,8 +40,6 @@ v0718	Der Klang: Mathematik, Effekte und Psychoakustik
 v0719	Was Klang ist, von der Mathematik bis zur Wahrnehmung.
 v0720	Effektbibliothek für Gitarre und Bass
 v0721	Die Effekte für Gitarre und Bass, gesammelt und erklärt.
-v0722	Gitarrensounds mit dem Modeler
-v0723	Zusammenfassung der Fractal-Tutorial-Playlist zu Gitarrensounds.
 v0724	Die Bücher, die für meine Bildung grundlegend waren. Zu jedem wird es einen kurzen Artikel darüber geben, was es mir gegeben hat, nach Kategorien geordnet.
 v0725	Persönliche Entwicklung und Psychologie
 v0726	Die Bücher, die mir geholfen haben zu verstehen, wie Menschen funktionieren, angefangen bei mir selbst.<span class="acc-count">· 5 Karten</span>

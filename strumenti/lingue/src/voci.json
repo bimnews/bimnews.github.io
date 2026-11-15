@@ -5047,20 +5047,6 @@
 "id": "v0721"
 },
 {
-"k": "Suoni per chitarra con il modeler",
-"m": "text",
-"h": "Suoni per chitarra con il modeler",
-"tag": "H4",
-"id": "v0722"
-},
-{
-"k": "Sintesi della playlist di tutorial Fractal sui suoni di chitarra.",
-"m": "text",
-"h": "Sintesi della playlist di tutorial Fractal sui suoni di chitarra.",
-"tag": "P",
-"id": "v0723"
-},
-{
 "k": "I libri che sono stati fondamentali per la mia formazione. Per ognuno ci sarà un breve articolo su che cosa mi ha dato, raccolto per categorie.",
 "m": "text",
 "h": "I libri che sono stati fondamentali per la mia formazione. Per ognuno ci sarà un breve articolo su che cosa mi ha dato, raccolto per categorie.",
@@ -9072,9 +9058,9 @@
 "id": "v1296"
 },
 {
-"k": "Manuali non professionali che ho creato io, chiedendo a Claude, l'assistente di intelligenza artificiale di Anthropic, di scriverli seguendo indicazioni precise: l'argomento, la struttura, il livello di dettaglio e gli esempi li ho scelti io. I primi due si scaricano già in PDF; gli altri arriveranno uno alla volta.",
+"k": "Manuali non professionali che ho creato io, chiedendo a Claude, l'assistente di intelligenza artificiale di Anthropic, di scriverli seguendo indicazioni precise: l'argomento, la struttura, il livello di dettaglio e gli esempi li ho scelti io. Si scaricano in PDF.",
 "m": "text",
-"h": "Manuali non professionali che ho creato io, chiedendo a Claude, l'assistente di intelligenza artificiale di Anthropic, di scriverli seguendo indicazioni precise: l'argomento, la struttura, il livello di dettaglio e gli esempi li ho scelti io. I primi due si scaricano già in PDF; gli altri arriveranno uno alla volta.",
+"h": "Manuali non professionali che ho creato io, chiedendo a Claude, l'assistente di intelligenza artificiale di Anthropic, di scriverli seguendo indicazioni precise: l'argomento, la struttura, il livello di dettaglio e gli esempi li ho scelti io. Si scaricano in PDF.",
 "tag": "P",
 "id": "v1297"
 },

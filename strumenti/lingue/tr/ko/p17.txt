@@ -10,7 +10,7 @@ v1293	<a href="manuali/effetti-chitarra-basso.pdf" target="_blank" rel="noopener
 v1294	저는 바리 주 트리자노의 AGESCI, 즉 이탈리아 가톨릭 스카우트 연맹에서 시작했습니다. 시간이 지나면서 그것이 제게 맞는 선택이 아니라는 걸 알게 됐습니다. AGESCI에서는 「신앙의 선택」을 하는데, 제 영적인 여정은 제가 신앙인이 아니라는 걸 인정하게 했습니다. 볼차노에서 살며 일한 뒤로는 종교와 무관한 스카우트인 <span translate="no">CNGEI</span>에 있습니다. 교육은 세속적이어야 하고 종교적 원칙에 이끌려서는 안 된다고 굳게 믿기 때문입니다.
 v1295	하나의 영감: <a href="https://it.wikipedia.org/wiki/Aquile_randagie" target="_blank" rel="noopener">Aquile Randagie ↗</a>(「떠도는 독수리들」). 1927년부터 파시즘이 스카우트 단체를 해산했을 때 몰래 활동을 이어 간 밀라노, 몬차, 파르마, 베르가모의 스카우트들입니다. 그들의 이야기는 Gianni Aureli 감독의 영화 <a href="https://it.wikipedia.org/wiki/Aquile_randagie_(film)" target="_blank" rel="noopener"><i>Aquile randagie</i> ↗</a>(2019)에 담겨 있습니다. 교육이란 때로는 부당한 것에 따르지 않을 용기를 갖는 것이기도 하다는 걸 일깨워 줍니다.
 v1296	제가 수련하는 곳: 볼차노의 <span translate="no">Scuola di Kung-fu Mien Ch'uan</span>(<a href="https://www.coni.it/it/registro-societa-sportive/home/registro-2-0/RegistroDettaglio.html?id_societa=99695" target="_blank" rel="noopener">CONI 등록부 정보 ↗</a>).
-v1297	업무와 관계없는 매뉴얼로, Anthropic의 인공지능 어시스턴트 Claude에게 정확한 지시에 따라 쓰도록 부탁해 직접 만든 것입니다. 주제, 구성, 상세함의 정도, 예시는 제가 골랐습니다. 처음 두 권은 이미 PDF로 내려받을 수 있고, 나머지는 하나씩 공개됩니다.
+v1297	업무와 관계없는 매뉴얼로, Anthropic의 인공지능 어시스턴트 Claude에게 정확한 지시에 따라 쓰도록 부탁해 직접 만든 것입니다. 주제, 구성, 상세함의 정도, 예시는 제가 골랐습니다. PDF로 내려받을 수 있습니다.
 v1298	음파와 데시벨, 푸리에와 음색. 필터, 딜레이, 리버브, 디스토션, 컴프레션이 실제로 하는 일. 그리고 심리음향: 어떤 소리는 좋고 어떤 소리는 거슬리는 이유를, 실험 결과와 가설을 구분해 설명합니다.
 v1299	<a href="manuali/il-suono.pdf" target="_blank" rel="noopener">PDF 내려받기(15쪽, 이탈리아어) ↗</a>
 v1300	모든 이펙트 종류에 대해 하는 일, 대표적인 노브, 체인에서 권장되는 위치, 널리 쓰이는 개조를 정리했고, 모든 페달에 통하는 노브 용어집도 담았습니다.
