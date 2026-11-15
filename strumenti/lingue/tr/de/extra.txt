@@ -1,0 +1,8 @@
+§conteggio	{1} Nachrichten in {2} Wochen, {3} Monaten
+§pagina	Seite {1} von {2}
+§articoli	{1} Artikel
+§anno	{1}: {2} Artikel, filtern
+§vedi	Die Nachrichten aus {1} ansehen →
+§passo	Schritt {1} von {2}
+Ultimo aggiornamento	Letzte Aktualisierung
+Prossimo evento · costo da verificare	Nächste Veranstaltung · Kosten zu prüfen

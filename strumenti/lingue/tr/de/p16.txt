@@ -1,0 +1,23 @@
+v1262	Die Seiten der Website
+v1263	Über das Menü oben erreichst du alle Seiten der Website: Jetzt sehen wir sie uns eine nach der anderen an. Die Schaltfläche „BIM News“ oben links bringt dich immer hierher zurück.
+v1264	Die wöchentliche Übersicht: BIM-Nachrichten aus aller Welt, auf Italienisch zusammengefasst, auf der Karte verortet und immer mit dem Link zur Quelle.
+v1265	Nur die Nachrichten, in denen künstliche Intelligenz auf BIM trifft, mit derselben Karte, denselben Filtern und demselben Archiv.
+v1266	Frei zugängliche wissenschaftliche Artikel zum BIM: Originaltitel und Abstract und der Link zur Veröffentlichung.
+v1267	Für Einsteiger: was BIM ist, die Normen von 2015 bis heute, die Dimensionen, die Abkürzungen, konkrete Ergebnisse und Zertifizierungen weltweit.
+v1268	Webinare, Konferenzen und Vorlesungen zum BIM, alle kostenlos, und die YouTube-Kanäle zum Folgen.
+v1269	Der persönliche Blog des Kurators, mit nützlichen Artikeln: Profil, Portfolio, Lösungen und Handbücher für Planende, laufende Arbeiten und Leidenschaften.
+v1270	Gesetzliche Fristen, Veranstaltungen und Webinare, mit Datum, Kosten und Link zur offiziellen Seite, gefiltert nach deiner Region.
+v1271	Alle Seiten der Website als Baum, jede mit einer kurzen Beschreibung. Ganz unten findest du auch die Besuche der Website und die Bildnachweise.
+v1272	Die Weltkarte
+v1273	In der Mitte ist die Karte mit allen Nachrichten aus der Welt. Gib in der Suchleiste ein Land, eine Region, eine Stadt oder ein Thema ein oder tippe auf die Karte: Die Zahlen zeigen, wie viele Nachrichten es gibt, und mit einem Tippen gelangst du in den Kontinent, das Land und die Region.
+v1274	Veranstaltungen und Agenda
+v1275	Das ist die Leiste der Veranstaltungen und der Agenda: die nächste kostenlose und die nächste kostenpflichtige Veranstaltung, das nächste Webinar und die nächste gesetzliche Frist. Mit „Alle Termine“ öffnest du die vollständige Agenda.
+v1276	Die Einstellungen
+v1277	Hier wählst du die Sprache der Website, deine Region, die Veranstaltungen und Fristen filtert, das helle oder dunkle Design und die einfache Version, leichter für langsame Verbindungen.
+v1278	Die häufigen Fragen
+v1279	Die Website ist groß und wächst jede Woche. In den FAQ findest du Antworten auf die Fragen, die beim Erkunden aufkommen: was auf den einzelnen Seiten steht, wie wir die Nachrichten auswählen, in welchen Sprachen wir suchen und wie man die Website benutzt.
+v1280	Weiter ›
+v1281	Weiter
+v1282	Fertig
+v1283	‹ Zurück
+v1284	Zurück

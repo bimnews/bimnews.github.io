@@ -1,0 +1,41 @@
+v1144	Februar
+v1145	März
+v1146	April
+v1147	Mai
+v1148	Juni
+v1149	August
+v1150	Dezember
+v1153	BIM-Einführung
+v1154	Kulturerbe (HBIM)
+v1155	Kosten (5D)
+v1156	GIS
+v1157	Digitaler Zwilling und IoT
+v1158	Betrieb und Facility Management
+v1159	Künstliche Intelligenz
+v1160	Interoperabilität und IFC
+v1161	Lean Construction
+v1162	Vorfertigung und Offsite
+v1163	Literaturüberblick
+v1164	Sicherheit
+v1165	Nachhaltigkeit und Energie
+v1166	Tragwerke
+v1167	Zeit (4D)
+v1168	Normprüfung
+v1170	Artikel nach Erscheinungsjahr · tippe auf einen Balken zum Filtern, noch einmal zum Aufheben
+v1182	Januar
+v1183	Juli
+v1184	September
+v1185	Oktober
+v1186	November
+v1187	Nachrichten
+v1188	Nachricht
+v1189	Letzte Aktualisierung:
+v1190	Weltweit
+v1191	Sprachen
+v1192	in Prüfung
+v1193	Sprachen, in denen wir suchen
+v1194	Sprachen in Prüfung
+v1195	Einträge
+v1196	Eintrag
+v1197	Karten
+v1198	Karte

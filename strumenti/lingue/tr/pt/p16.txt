@@ -1,0 +1,23 @@
+v1262	As páginas do site
+v1263	No menu de cima chega a todas as páginas do site: agora vamos vê-las uma a uma. O botão «BIM News» no canto superior esquerdo traz sempre de volta aqui.
+v1264	A resenha semanal: as notícias sobre o BIM de todo o mundo, resumidas em italiano, colocadas no mapa e sempre com a ligação para a fonte.
+v1265	Só as notícias em que a inteligência artificial encontra o BIM, com o mesmo mapa, os mesmos filtros e o mesmo arquivo.
+v1266	Artigos científicos sobre o BIM em acesso aberto: título e resumo originais e a ligação para a publicação.
+v1267	Para quem começa: o que é o BIM, as normas de 2015 até hoje, as dimensões, as siglas, os resultados concretos e as certificações no mundo.
+v1268	Webinars, conferências e aulas universitárias sobre o BIM, todos gratuitos, e os canais do YouTube a seguir.
+v1269	O blogue pessoal de quem cuida do site, com artigos úteis: perfil, portfólio, soluções e manuais para quem projeta, trabalhos em curso e paixões.
+v1270	Prazos regulamentares, eventos e webinars a chegar, com data, custo e ligação para a página oficial, filtrados pela sua região.
+v1271	Todas as páginas do site numa árvore, cada uma com uma breve descrição. No fim encontra também as visitas do site e os créditos das imagens.
+v1272	O mapa do mundo
+v1273	Ao centro está o mapa com todas as notícias que chegam do mundo. Escreva um país, uma região, uma cidade ou um tema na barra de pesquisa, ou toque no mapa: os números dizem quantas notícias há, e com um toque entra no continente, no país e na região.
+v1274	Eventos e agenda
+v1275	Esta é a barra dos eventos e da agenda: o próximo evento gratuito e o pago, o próximo webinar e o próximo prazo regulamentar. Com «Todos os compromissos» abre a agenda completa.
+v1276	As definições
+v1277	Aqui escolhe a língua do site, a sua área geográfica, que filtra eventos e prazos, o tema claro ou escuro e a versão essencial, mais leve para ligações lentas.
+v1278	As perguntas frequentes
+v1279	O site é grande e cresce todas as semanas. Nas FAQ encontra as respostas às perguntas que surgem ao explorá-lo: o que há nas várias páginas, como escolhemos as notícias, em que línguas procuramos e como se usa o site.
+v1280	Seguinte ›
+v1281	Seguinte
+v1282	Fim
+v1283	‹ Anterior
+v1284	Anterior

@@ -1,0 +1,8 @@
+§conteggio	{1} خبرًا في {2} أسبوعًا، {3} شهرًا
+§pagina	الصفحة {1} من {2}
+§articoli	{1} مقالًا
+§anno	{1}: {2} مقالًا، تصفية
+§vedi	أخبار {1} ←
+§passo	الخطوة {1} من {2}
+Ultimo aggiornamento	آخر تحديث
+Prossimo evento · costo da verificare	الفعالية القادمة · التكلفة بحاجة إلى تحقق

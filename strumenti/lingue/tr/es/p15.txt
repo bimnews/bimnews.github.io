@@ -1,0 +1,63 @@
+v1199	← Portada · BIM News
+v1200	BIM News, la reseña del BIM en el mundo, a cargo de Marco Scigliuolo: un sitio inclusivo, para que todos adopten el BIM
+v1201	La reseña semanal del mundo, con el mapa interactivo
+v1202	Las noticias de la semana más reciente
+v1203	Los criterios de la selección, empezando por la inclusión
+v1204	Mapa del mundo
+v1205	Continentes, países y regiones con el número de noticias
+v1206	Archivo desde 2015
+v1207	Todas las noticias por año y mes, con filtros y búsqueda
+v1208	Las próximas citas, junto a las noticias
+v1209	Las noticias en las que el BIM se encuentra con la inteligencia artificial
+v1210	Artículos científicos sobre el BIM, con los resúmenes originales
+v1211	Qué es el BIM, explicado de forma sencilla: normas, dimensiones y siglas
+v1212	Las normas de 2015 a hoy
+v1213	La cronología en espina de pescado, de izquierda a derecha
+v1214	Las dimensiones del BIM
+v1215	Del 3D al 10D, con gráficos y fuentes
+v1216	Las siglas en un minuto
+v1217	IFC, CDE, LOD, LOIN y las demás
+v1218	Resultados concretos
+v1219	Horas y dinero ahorrados según las investigaciones, con el contador de tu estudio
+v1220	El BIM en el tiempo: mundo e Italia
+v1221	De 1975 a hoy, las etapas internacionales e italianas comparadas
+v1222	Certificaciones en el mundo
+v1223	Quién certifica las competencias BIM, dónde es obligatorio y con qué norma
+v1224	Webinars grabados y canales gratuitos sobre el BIM
+v1225	Webinars y conferencias
+v1226	Grabaciones gratuitas en cuatro idiomas
+v1227	De las universidades
+v1228	Clases de Stanford, el Technion, la TUM, Cambridge y universidades italianas
+v1229	Canales de YouTube
+v1230	Los canales que hablan de BIM
+v1231	Plazos normativos, eventos y webinars próximos, filtrados por zona
+v1232	Las obligaciones BIM que entran en vigor, país por país
+v1233	Ferias, congresos y conferencias, mes a mes
+v1234	Citas en línea, gratuitas y de pago
+v1235	Quién cuida el sitio: perfil, proyectos, ideas y pasiones
+v1236	Reflexiones, soluciones y manuales para quien proyecta
+v1237	Qué significa ser ingeniero
+v1238	Doce problemas frecuentes, para resolver uno a uno
+v1239	Scripts para reducir el trabajo repetitivo en el modelado
+v1240	Rutinas y scripts para copiar o descargar
+v1241	Manuales profesionales escritos con Claude según mis indicaciones, para leer en línea o descargar en PDF
+v1242	Exploración y disciplina
+v1243	Ser ingeniero
+v1244	Cómo se ve uno y cómo se siente
+v1245	De la AGESCI al CNGEI, los scouts laicos
+v1246	Las cinco virtudes: sabiduría, compasión, sinceridad, valor, paciencia
+v1247	Manuales no profesionales: sonido, guitarra, bajo
+v1248	Seis categorías de lecturas fundamentales
+v1249	Entender a las personas, empezando por uno mismo
+v1250	Las historias que quedan
+v1251	Los poemarios a los que vuelvo
+v1252	Los ensayos que cambian la forma de razonar
+v1253	Aprender a mirar
+v1254	Entender la economía, más allá de los eslóganes
+v1255	Las preguntas frecuentes de quien explora el sitio, con los idiomas de la búsqueda
+v1256	Quién gestiona el sitio, cómo se actualizan las noticias, contactos y colaboraciones
+v1257	Preguntas: De dónde vienen las noticias, Cómo decidís qué publicar…
+v1258	Preguntas: En qué idiomas buscáis las noticias, Cómo elegisteis estos idiomas…
+v1259	Preguntas: No conozco el BIM: por dónde empiezo, Qué son los manuales de la página del curador…
+v1260	Preguntas: Qué diferencia hay entre la versión completa y la esencial, Cómo paso del tema oscuro al claro…
+v1261	Abrir →

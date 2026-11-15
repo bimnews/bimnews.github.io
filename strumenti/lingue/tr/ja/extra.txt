@@ -1,0 +1,8 @@
+§conteggio	{2} 週間・{3} か月で {1} 件のニュース
+§pagina	{1} / {2} ページ
+§articoli	{1} 件の論文
+§anno	{1} 年：{2} 件の論文、絞り込み
+§vedi	{1} のニュースを見る →
+§passo	ステップ {1} / {2}
+Ultimo aggiornamento	最終更新
+Prossimo evento · costo da verificare	次のイベント · 費用は要確認

@@ -1,0 +1,23 @@
+v1262	Las páginas del sitio
+v1263	Desde el menú de arriba llegas a todas las páginas del sitio: ahora las vemos una a una. El botón «BIM News» de arriba a la izquierda siempre te trae de vuelta aquí.
+v1264	La reseña semanal: las noticias sobre el BIM de todo el mundo, resumidas en italiano, situadas en el mapa y siempre con el enlace a la fuente.
+v1265	Solo las noticias en las que la inteligencia artificial se encuentra con el BIM, con el mismo mapa, los mismos filtros y el mismo archivo.
+v1266	Artículos científicos sobre el BIM en acceso abierto: título y resumen originales y el enlace a la publicación.
+v1267	Para quien empieza: qué es el BIM, las normas de 2015 a hoy, las dimensiones, las siglas, los resultados concretos y las certificaciones en el mundo.
+v1268	Webinars, conferencias y clases universitarias sobre el BIM, todos gratuitos, y los canales de YouTube que seguir.
+v1269	El blog personal de quien cuida el sitio, con artículos útiles: perfil, portfolio, soluciones y manuales para quien proyecta, trabajos en curso y pasiones.
+v1270	Plazos normativos, eventos y webinars próximos, con fecha, coste y enlace a la página oficial, filtrados por tu zona.
+v1271	Todas las páginas del sitio en un árbol, cada una con una breve descripción. Al final encontrarás también las visitas del sitio y los créditos de las imágenes.
+v1272	El mapa del mundo
+v1273	En el centro está el mapa con todas las noticias que llegan del mundo. Escribe un país, una región, una ciudad o un tema en la barra de búsqueda, o toca el mapa: los números dicen cuántas noticias hay, y con un toque entras en el continente, el país y la región.
+v1274	Eventos y agenda
+v1275	Esta es la barra de eventos y agenda: el próximo evento gratuito y el de pago, el próximo webinar y el próximo plazo normativo. Con «Todas las citas» abres la agenda completa.
+v1276	Los ajustes
+v1277	Aquí eliges el idioma del sitio, tu zona geográfica, que filtra eventos y plazos, el tema claro u oscuro y la versión esencial, más ligera para conexiones lentas.
+v1278	Las preguntas frecuentes
+v1279	El sitio es grande y crece cada semana. En las FAQ encontrarás las respuestas a las preguntas que surgen al explorarlo: qué hay en las distintas páginas, cómo elegimos las noticias, en qué idiomas buscamos y cómo se usa el sitio.
+v1280	Siguiente ›
+v1281	Siguiente
+v1282	Fin
+v1283	‹ Atrás
+v1284	Atrás
