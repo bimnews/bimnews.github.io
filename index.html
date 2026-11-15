@@ -3654,7 +3654,7 @@ var saved=load("lingua");if(saved&&saved!=="it"&&sel.querySelector('option[value
   var LANGS=["it","en","fr","de","es","pt","ru","ar","zh","ja","ko"],COS="Che cos'è|What is it|Qu'est-ce que c'est|Was ist das|Qué es|O que é|Что это|ما هذا|了解更多|詳しく|알아보기".split("|");
   var oggi=new Date(),m=/[?&]stagione=(\w+)/.exec(location.search),attive=[];
   // feste approvate da Marco: le altre si vedono solo in anteprima con ?stagione=
-  var OK=["natale"];
+  var OK=["natale","hanukkah","lunare","ramadan","eid","adha","vesak","diwali"];
   if(m&&F[m[1]])attive=[m[1]];else for(var k in F)if(OK.indexOf(k)>=0&&F[k](oggi))attive.push(k);
   if(!attive.length)return;
   // più feste insieme: si alternano un giorno l'una e un giorno l'altra
@@ -3663,7 +3663,7 @@ var saved=load("lingua");if(saved&&saved!=="it"&&sel.querySelector('option[value
     hanukkah:'<g stroke="#d9b45a" stroke-width="3" fill="none" stroke-linecap="round"><path d="M32 22v30M14 52h36"/><path d="M8 22c0 16 48 16 48 0M16 22c0 10 32 10 32 0M24 22c0 5 16 5 16 0"/></g><g fill="#ffcf5a">'+[8,16,24,32,40,48,56].map(function(x){return '<path d="M'+x+' 20c-2-3 0-6 0-8c0 2 2 5 0 8z"/>'}).join("")+'</g>',
     lunare:'<path d="M32 6v6" stroke="#d9b45a" stroke-width="2"/><ellipse cx="32" cy="30" rx="18" ry="16" fill="#d42a2a"/><path d="M20 30h24M32 14v32" stroke="#a51b1b" stroke-width="2"/><rect x="24" y="12" width="16" height="4" rx="1" fill="#d9b45a"/><rect x="24" y="44" width="16" height="4" rx="1" fill="#d9b45a"/><path d="M32 48v12" stroke="#d9b45a" stroke-width="2"/>',
     ramadan:'<path d="M40 8a24 24 0 1 0 14 40A20 20 0 1 1 40 8z" fill="#f2d27a"/><path d="M52 14l1.6 4.4 4.4 1.6-4.4 1.6-1.6 4.4-1.6-4.4-4.4-1.6 4.4-1.6z" fill="#f2d27a"/>',
-    pasqua:'<ellipse cx="32" cy="34" rx="18" ry="24" fill="#f2c6d6"/><path d="M15 30c6-4 11 4 17 0s11 4 17 0M15 40c6 4 11-4 17 0s11-4 17 0" stroke="#7fb3e0" stroke-width="3" fill="none"/>',
+    pasqua:'<path d="M8 56C20 44 34 30 56 10" stroke="#8a7a4a" stroke-width="2.5" fill="none" stroke-linecap="round"/><g fill="#9bb06a"><ellipse cx="18" cy="40" rx="9" ry="3.4" transform="rotate(-60 18 40)"/><ellipse cx="22" cy="50" rx="9" ry="3.4" transform="rotate(20 22 50)"/><ellipse cx="32" cy="28" rx="9" ry="3.4" transform="rotate(-70 32 28)"/><ellipse cx="38" cy="36" rx="9" ry="3.4" transform="rotate(10 38 36)"/><ellipse cx="46" cy="16" rx="9" ry="3.4" transform="rotate(-80 46 16)"/><ellipse cx="52" cy="24" rx="8" ry="3.2" transform="rotate(0 52 24)"/></g><g fill="#5b6b3a"><ellipse cx="28" cy="40" rx="3" ry="4"/><ellipse cx="44" cy="26" rx="3" ry="4"/></g>',
     vesak:'<g fill="#f3b6c8"><path d="M32 14c8 10 8 22 0 32c-8-10-8-22 0-32z"/><path d="M32 46c-4-12-14-18-24-18c2 10 12 18 24 18zM32 46c4-12 14-18 24-18c-2 10-12 18-24 18z" opacity=".85"/></g><path d="M8 50h48" stroke="#7fc7a0" stroke-width="3" stroke-linecap="round"/>',
     diwali:'<path d="M10 40h44c-2 10-12 16-22 16S12 50 10 40z" fill="#c9783a"/><path d="M32 38c-6-8 0-18 0-26c0 8 7 16 0 26z" fill="#ffcf5a"/><path d="M32 36c-3-5 0-10 0-14c0 4 3 9 0 14z" fill="#fff3c4"/>'};
   ORN.eid=ORN.ramadan;ORN.adha=ORN.ramadan;
@@ -3693,7 +3693,33 @@ var saved=load("lingua");if(saved&&saved!=="it"&&sel.querySelector('option[value
     else{x.fillStyle="#c9a24a";x.beginPath();x.moveTo(-s*.5,-s);x.lineTo(s*.5,-s);x.lineTo(s*.8,-s*.4);x.lineTo(-s*.8,-s*.4);x.fill();x.fillStyle="rgba(255,214,130,.9)";x.beginPath();x.moveTo(-s*.8,-s*.4);x.lineTo(s*.8,-s*.4);x.lineTo(s*.6,s*.7);x.lineTo(-s*.6,s*.7);x.fill();x.strokeStyle="#8a6a24";x.lineWidth=1.2;x.beginPath();x.moveTo(0,-s*.4);x.lineTo(0,s*.7);x.moveTo(-s*.7,s*.15);x.lineTo(s*.7,s*.15);x.stroke();x.fillStyle="#c9a24a";x.beginPath();x.moveTo(-s*.6,s*.7);x.lineTo(s*.6,s*.7);x.lineTo(0,s*1.3);x.fill()}
     x.restore()}
   function star(px,py,r,al){x.globalAlpha=al;x.fillStyle="#fff1c2";x.beginPath();for(var i=0;i<8;i++){var a=i*Math.PI/4,rr=i%2?r*.35:r;x.lineTo(px+Math.cos(a)*rr,py+Math.sin(a)*rr)}x.fill();x.globalAlpha=1}
-  function init(){P=[];var n=festa==="natale"?46:festa==="pasqua"?34:28;for(var i=0;i<n;i++)P.push(part(true));
+  var EGG=["#f28aa8","#8ec5f2","#f7d36b","#a7dc8f","#c9a6f0"];
+  function egg(ex,ey,s,col,a){x.save();x.translate(ex,ey);x.rotate(a||0);x.fillStyle=col;x.beginPath();x.ellipse(0,0,s*.72,s,0,0,7);x.fill();x.strokeStyle="rgba(255,255,255,.75)";x.lineWidth=s*.16;x.beginPath();x.moveTo(-s*.6,-s*.15);x.quadraticCurveTo(0,s*.15,s*.6,-s*.15);x.stroke();x.fillStyle="rgba(255,255,255,.7)";x.beginPath();x.arc(-s*.25,s*.4,s*.1,0,7);x.arc(s*.25,s*.4,s*.1,0,7);x.fill();x.restore()}
+  function bunny(bx,by,dir,carry){x.save();x.translate(bx,by);x.scale(dir*1.5,1.5);x.fillStyle="#e9e4dc";
+    x.beginPath();x.ellipse(0,-14,17,13,0,0,7);x.fill();x.beginPath();x.arc(15,-27,9,0,7);x.fill();
+    x.save();x.translate(14,-34);x.rotate(-.25+Math.sin(t*.15)*.06);x.beginPath();x.ellipse(-3,-11,3.4,11,-.15,0,7);x.fill();x.fillStyle="#f2b8c6";x.beginPath();x.ellipse(-3,-11,1.6,8,-.15,0,7);x.fill();x.restore();
+    x.save();x.translate(18,-34);x.rotate(.15);x.fillStyle="#e9e4dc";x.beginPath();x.ellipse(2,-11,3.4,11,.15,0,7);x.fill();x.restore();
+    x.fillStyle="#fff";x.beginPath();x.arc(-17,-16,5,0,7);x.fill();x.fillStyle="#2a2a2a";x.beginPath();x.arc(19,-29,1.6,0,7);x.fill();x.fillStyle="#f2a0b4";x.beginPath();x.arc(24,-26,1.5,0,7);x.fill();
+    x.fillStyle="#d8d2c8";x.beginPath();x.ellipse(6,-2,7,3,0,0,7);x.fill();
+    if(carry)egg(26,-14,7,carry,.4);x.restore()}
+  function easter_scene(){var gy=H*.9,bx=Math.max(70,W*.09),cyc=720,k=still?300:t%cyc,ph=k/cyc,n=5,bxr,dir,hop=0,carry=null;
+    var stol=ph>.42&&ph<.98;
+    // il cestino
+    x.save();x.translate(bx,gy);x.scale(1.35,1.35);x.translate(-bx,-gy);
+    x.fillStyle="#9a6a3a";x.beginPath();x.moveTo(bx-38,gy-26);x.lineTo(bx+38,gy-26);x.lineTo(bx+30,gy);x.lineTo(bx-30,gy);x.closePath();x.fill();
+    x.strokeStyle="#6e4826";x.lineWidth=1.5;for(var i=1;i<4;i++){x.beginPath();x.moveTo(bx-38+i*2,gy-26+i*6.5);x.lineTo(bx+38-i*2,gy-26+i*6.5);x.stroke()}
+    for(var j=-3;j<=3;j++){x.beginPath();x.moveTo(bx+j*11,gy-26);x.lineTo(bx+j*9,gy);x.stroke()}
+    var ex=[[-22,-30,-.3],[-8,-34,.1],[8,-33,-.15],[22,-30,.3],[0,-28,0]];
+    for(var e=0;e<n;e++){if(stol&&e===2)continue;egg(bx+ex[e][0],gy+ex[e][1],9,EGG[e],ex[e][2])}
+    x.strokeStyle="#9a6a3a";x.lineWidth=4;x.beginPath();x.arc(bx,gy-26,32,Math.PI,0);x.stroke();x.restore();
+    // il coniglio: arriva da destra, ruba l'uovo, scappa
+    var stop=bx+92;
+    if(ph<.38){var u=ph/.38;bxr=W+50-(W+50-stop)*u;dir=-1;hop=Math.abs(Math.sin(u*Math.PI*9))*16}
+    else if(ph<.46){bxr=stop;dir=-1;if(ph>.42)carry=EGG[2]}
+    else if(ph<.9){var v=(ph-.46)/.44;bxr=stop+(W+60-stop)*v;dir=1;hop=Math.abs(Math.sin(v*Math.PI*10))*18;carry=EGG[2]}
+    else bxr=W+80;
+    bunny(bxr,gy-hop,dir,carry)}
+  function init(){P=[];var n=festa==="natale"?46:festa==="pasqua"?0:28;for(var i=0;i<n;i++)P.push(part(true));
     if(festa==="lunare"||festa==="ramadan"||festa==="eid"||festa==="adha"){x.L=[];var k=Math.max(5,Math.round(W/170));for(var j=0;j<k;j++)x.L.push({x:(j+.5)*W/k+rnd(-30,30),y:rnd(H*.25,H*.6),s:rnd(9,14)})}}
   function part(s){var p={x:rnd(0,W),y:s?rnd(0,H):-10,r:rnd(5,13),v:rnd(.25,.7),w:rnd(0,6.28),a:rnd(0,6.28),sp:rnd(-.01,.01),c:["#f6c8d8","#fbe3a6","#cfe8c4","#cfe0fb"][Math.floor(Math.random()*4)]};
     if(festa==="vesak"||festa==="diwali"||festa==="hanukkah"){p.y=s?rnd(0,H):H+10;p.v=-rnd(.2,.5)}if(festa==="lunare"){p.r=rnd(1.5,3);p.v=rnd(.3,.8)}if(festa==="ramadan"||festa==="eid"||festa==="adha"){p.r=rnd(1.5,4);p.v=0;p.y=rnd(0,H*.8)}return p}
@@ -3702,6 +3728,7 @@ var saved=load("lingua");if(saved&&saved!=="it"&&sel.querySelector('option[value
     if(festa==="hanukkah"){var bx=W*.12,by=H*.82,sp=Math.min(22,W/60);x.strokeStyle="#d9b45a";x.lineWidth=3;x.lineCap="round";x.beginPath();x.moveTo(bx,by);x.lineTo(bx,by+30);x.moveTo(bx-30,by+30);x.lineTo(bx+30,by+30);for(var a=1;a<=4;a++){x.moveTo(bx-a*sp,by);x.quadraticCurveTo(bx-a*sp,by+a*6+8,bx,by+a*6+8);x.quadraticCurveTo(bx+a*sp,by+a*6+8,bx+a*sp,by)}x.stroke();for(var q=-4;q<=4;q++)flame(bx+q*sp,by-(q===0?8:0),5)}
     if(festa==="diwali"){var nd=Math.max(6,Math.round(W/120));for(var e=0;e<nd;e++){var dx=(e+.5)*W/nd,dy=H*.9;x.fillStyle="#c9783a";x.beginPath();x.moveTo(dx-14,dy-4);x.quadraticCurveTo(dx,dy+12,dx+14,dy-4);x.fill();flame(dx,dy-4,6)}}
     if(x.L)x.L.forEach(function(l){lantern(l.x,l.y,l.s,.06,"#d42a2a",festa==="lunare"?"red":"gold")});
+    if(festa==="pasqua")easter_scene();
     P.forEach(function(p,i){if(!still){p.y+=p.v;p.w+=.012;p.x+=Math.sin(p.w)*.35;p.a+=p.sp}
       if(festa==="natale"){var al=fade(p.y);if(p.y>H)P[i]=part(false);flake(p,al*.9)}
       else if(festa==="pasqua"){var al2=fade(p.y);if(p.y>H)P[i]=part(false);x.save();x.translate(p.x,p.y);x.rotate(p.a);x.globalAlpha=al2*.85;x.fillStyle=p.c;x.beginPath();x.ellipse(0,0,p.r*.55,p.r*.32,0,0,7);x.fill();x.restore();x.globalAlpha=1}
