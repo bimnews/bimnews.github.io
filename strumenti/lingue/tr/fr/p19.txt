@@ -1,0 +1,46 @@
+v1304	<b>1570</b><span>Palladio publie <i>Les Quatre Livres de l'architecture</i> : plan, coupe et élévation, dessinés à la main</span>
+v1305	<b>1963</b><span>Ivan Sutherland écrit Sketchpad, le premier programme pour dessiner sur ordinateur</span>
+v1306	<b>1982</b><span>Sortie d'AutoCAD : la CAO arrive sur l'ordinateur personnel et dans les bureaux d'études</span>
+v1307	<b>1996</b><span>Naissance de l'IFC 1.0, le format ouvert pour échanger des maquettes entre logiciels différents</span>
+v1308	<b>2002</b><span>Le nom <i>Building Information Modeling</i> se diffuse</span>
+v1309	<b>Aujourd'hui</b><span>La maquette devient le centre du projet, du chantier et de l'exploitation</span>
+v1310	Sources des dates : Wikipédia en anglais, articles <a href="https://en.wikipedia.org/wiki/Sketchpad" target="_blank" rel="noopener">Sketchpad</a>, <a href="https://en.wikipedia.org/wiki/AutoCAD" target="_blank" rel="noopener">AutoCAD</a>, <a href="https://en.wikipedia.org/wiki/Industry_Foundation_Classes" target="_blank" rel="noopener">Industry Foundation Classes</a> et <a href="https://en.wikipedia.org/wiki/Building_information_modeling" target="_blank" rel="noopener">Building information modeling</a>.
+v1311	Pour aller plus loin : ce qui se passe dans l'ordinateur
+v1312	<b>En CAO, la donnée, c'est la géométrie.</b> Pour l'ordinateur, une ligne est une entrée dans une archive : deux points et quelques attributs. Le mur n'existe pas : il y a quatre entrées indépendantes, et le fait qu'ensemble elles forment « un mur », seul celui qui regarde le sait.
+v1313	La surface du mur n'est écrite nulle part : pour la connaître, il faut mesurer et multiplier. Si le mur s'allonge d'un mètre, il faut déplacer deux lignes puis penser à corriger la coupe, l'élévation et le métré, qui sont d'autres dessins et d'autres fichiers.
+v1314	<b>En BIM, la donnée, c'est l'objet, et la géométrie se calcule.</b> Le mur est un objet avec quelques valeurs indépendantes, les paramètres ; tout le reste découle de formules, comme les cellules d'un tableur :
+v1315	En faisant passer <i>L</i> de 5 à 6 mètres, le logiciel refait les calculs en cascade : la forme, la surface (18 m²), le volume (5,4 m³), les vues et les nomenclatures. C'est un graphe de dépendances : chaque valeur sait de quelles autres elle dépend, et quand l'une change, seules celles en aval sont mises à jour. Il en va de même pour les relations entre objets : la fenêtre est hébergée par le mur et en perce le volume, la dalle repose sur le mur, le local est délimité par les murs qui l'entourent.
+v1316	<b>Et quand la maquette sort du logiciel ?</b> Dans le format ouvert IFC, le mur s'écrit ainsi, sous forme simplifiée : un <code>IfcWall</code>, c'est-à-dire un mur et non un ensemble de lignes ; sa forme comme <code>IfcExtrudedAreaSolid</code>, un profil rectangulaire extrudé sur la hauteur ; ses propriétés dans des ensembles comme <code>Pset_WallCommon</code>, par exemple s'il est porteur ou extérieur ; et les ouvertures comme des relations (<code>IfcRelVoidsElement</code>). Celui qui reçoit le fichier trouve un mur avec ses règles, pas quatre lignes à interpréter.
+v1317	<b>Les conséquences.</b> Les quantités deviennent fiables parce qu'elles se calculent au lieu de se mesurer ; les modifications coûtent moins parce qu'elles se propagent d'elles-mêmes ; les incohérences entre les plans disparaissent, parce que les plans sont des vues de la même donnée. En échange, il faut plus de rigueur au départ : bien choisir les types, les paramètres et les règles, car une erreur dans la donnée se propage aussi vite qu'une correction.
+v1318	Personne ne le sait vraiment, et nous nous méfions de ceux qui prétendent le savoir. Mais certaines voies sont déjà ouvertes, et les actualités de BIM News en racontent les premiers pas. Ici, nous les mettons en ordre, en séparant ce qui se passe déjà de ce qui, pour l'instant, n'est qu'une question.
+v1319	Construire sans plans
+v1320	À Hong Kong, le Construction Industry Council a présenté le chemin vers des chantiers pilotés directement par la maquette, sans les plans traditionnels. Il faut des maquettes fiables, des règles d'information claires et des validations adaptées. <a href="#settimana-2026-08-03" data-art="n10">L'actualité →</a>
+v1321	Des exigences qui se vérifient toutes seules
+v1322	Avec l'IDS 1.0 de buildingSMART (2024), les informations qu'une maquette doit contenir s'écrivent dans un fichier lisible par les machines, et le contrôle devient automatique. <a href="#settimana-2024-06-03" data-art="n100">L'actualité →</a>
+v1323	L'intelligence artificielle dans la maquette
+v1324	Les grands éditeurs intègrent l'IA dans l'environnement commun de données : options de conception à partir de nuages de points, modèles structurels demandés en langage naturel, inspections de chantier dictées à voix haute. <a href="#settimana-2026-11-09" data-art="n36">L'actualité →</a> Et dans la rubrique <a href="#bim-ai">BIM &amp; AI</a>, vous trouverez les autres.
+v1325	Les plans serviront-ils encore ?
+v1326	Si le chantier lit la maquette, le plan imprimé pourrait devenir une vue parmi d'autres, utile pour signer et archiver plus que pour construire. Mais la signature, la responsabilité et la valeur juridique des documents passent encore aujourd'hui par le papier, ou par le PDF.
+v1327	Des robots sur le chantier ?
+v1328	Une maquette précise, c'est exactement ce dont une machine a besoin pour implanter, percer ou poser. Dans quelle mesure et quand les robots entreront dans les chantiers de tous les jours, et pas seulement dans les grands ouvrages, reste à voir.
+v1329	Et nous ?
+v1330	Si la machine dessine, vérifie et calcule, il reste au concepteur la partie la plus difficile : comprendre le problème, choisir, répondre de ses choix. Peut-être que le métier ne disparaît pas : il change de centre de gravité. Qui sait.
+v1331	lun
+v1332	mar
+v1333	mer
+v1334	jeu
+v1335	ven
+v1336	sam
+v1337	dim
+v1338	Déjà en cours
+v1339	Question ouverte
+v1340	Calendrier des rendez-vous
+v1341	Mois précédent
+v1342	Mois suivant
+v1343	L'évolution du projet en six étapes
+v1344	Que nous réserve l'avenir ?
+v1345	Ce qui change déjà et les questions qui restent ouvertes
+v1346	Échéances
+v1347	Journées de la technologie
+v1348	10 · Que nous réserve l'avenir ?
+v1349	10 L'avenir

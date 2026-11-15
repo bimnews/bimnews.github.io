@@ -9119,5 +9119,327 @@
 "h": "Il maestro dei miei maestri è <span translate=\"no\">Shin Dae Woung</span>, scomparso nel 2016, arrivato dalla Corea in Italia nel 1975: un pioniere del Kung Fu nel nostro paese, maestro di cinque stili tradizionali tra cui il Tai Chi, fondatore della Scuola di Kung Fu e Tai Chi Dae Woung (<a href=\"http://shindaewoung.com/il-maestro-shin-dae-woung/\" target=\"_blank\" rel=\"noopener\">sito ufficiale ↗</a>). Ha scritto <i>Scuola di kung fu</i>, in due volumi (Edizioni Mediterranee, vol. 1 1988, vol. 2 1997).",
 "tag": "P",
 "id": "v1303"
+},
+{
+"k": "1570Palladio pubblica I quattro libri dell'architettura: pianta, sezione e prospetto, disegnati a mano",
+"m": "html",
+"h": "<b>1570</b><span>Palladio pubblica <i>I quattro libri dell'architettura</i>: pianta, sezione e prospetto, disegnati a mano</span>",
+"tag": "LI",
+"id": "v1304"
+},
+{
+"k": "1963Ivan Sutherland scrive Sketchpad, il primo programma per disegnare al computer",
+"m": "html",
+"h": "<b>1963</b><span>Ivan Sutherland scrive Sketchpad, il primo programma per disegnare al computer</span>",
+"tag": "LI",
+"id": "v1305"
+},
+{
+"k": "1982Esce AutoCAD: il CAD arriva sul personal computer e negli studi",
+"m": "html",
+"h": "<b>1982</b><span>Esce AutoCAD: il CAD arriva sul personal computer e negli studi</span>",
+"tag": "LI",
+"id": "v1306"
+},
+{
+"k": "1996Nasce l'IFC 1.0, il formato aperto per scambiare modelli tra software diversi",
+"m": "html",
+"h": "<b>1996</b><span>Nasce l'IFC 1.0, il formato aperto per scambiare modelli tra software diversi</span>",
+"tag": "LI",
+"id": "v1307"
+},
+{
+"k": "2002Si diffonde il nome Building Information Modeling",
+"m": "html",
+"h": "<b>2002</b><span>Si diffonde il nome <i>Building Information Modeling</i></span>",
+"tag": "LI",
+"id": "v1308"
+},
+{
+"k": "OggiIl modello diventa il centro del progetto, del cantiere e della gestione",
+"m": "html",
+"h": "<b>Oggi</b><span>Il modello diventa il centro del progetto, del cantiere e della gestione</span>",
+"tag": "LI",
+"id": "v1309"
+},
+{
+"k": "Fonti delle date: Wikipedia in inglese, voci Sketchpad, AutoCAD, Industry Foundation Classes e Building information modeling.",
+"m": "html",
+"h": "Fonti delle date: Wikipedia in inglese, voci <a href=\"https://en.wikipedia.org/wiki/Sketchpad\" target=\"_blank\" rel=\"noopener\">Sketchpad</a>, <a href=\"https://en.wikipedia.org/wiki/AutoCAD\" target=\"_blank\" rel=\"noopener\">AutoCAD</a>, <a href=\"https://en.wikipedia.org/wiki/Industry_Foundation_Classes\" target=\"_blank\" rel=\"noopener\">Industry Foundation Classes</a> e <a href=\"https://en.wikipedia.org/wiki/Building_information_modeling\" target=\"_blank\" rel=\"noopener\">Building information modeling</a>.",
+"tag": "P",
+"id": "v1310"
+},
+{
+"k": "Approfondimento: che cosa succede dentro il computer",
+"m": "text",
+"h": "Approfondimento: che cosa succede dentro il computer",
+"tag": "SUMMARY",
+"id": "v1311"
+},
+{
+"k": "Nel CAD il dato è la geometria. Per il computer una linea è una riga in un archivio: due punti e qualche attributo. Il muro non esiste: esistono quattro righe indipendenti, e il fatto che insieme siano «un muro» lo sa solo chi guarda.",
+"m": "html",
+"h": "<b>Nel CAD il dato è la geometria.</b> Per il computer una linea è una riga in un archivio: due punti e qualche attributo. Il muro non esiste: esistono quattro righe indipendenti, e il fatto che insieme siano «un muro» lo sa solo chi guarda.",
+"tag": "P",
+"id": "v1312"
+},
+{
+"k": "L'area del muro non è scritta da nessuna parte: per saperla bisogna misurare e moltiplicare. Se il muro si allunga di un metro, bisogna spostare due linee e poi ricordarsi di correggere la sezione, il prospetto e il computo, che sono altri disegni e altri file.",
+"m": "text",
+"h": "L'area del muro non è scritta da nessuna parte: per saperla bisogna misurare e moltiplicare. Se il muro si allunga di un metro, bisogna spostare due linee e poi ricordarsi di correggere la sezione, il prospetto e il computo, che sono altri disegni e altri file.",
+"tag": "P",
+"id": "v1313"
+},
+{
+"k": "Nel BIM il dato è l'oggetto, e la geometria si calcola. Il muro è un oggetto con pochi valori indipendenti, i parametri; tutto il resto discende da formule, come le celle di un foglio di calcolo:",
+"m": "html",
+"h": "<b>Nel BIM il dato è l'oggetto, e la geometria si calcola.</b> Il muro è un oggetto con pochi valori indipendenti, i parametri; tutto il resto discende da formule, come le celle di un foglio di calcolo:",
+"tag": "P",
+"id": "v1314"
+},
+{
+"k": "Cambiando L da 5 a 6 metri il programma rifà i conti in cascata: la forma, la superficie (18 m²), il volume (5,4 m³), le viste e gli abachi. È un grafo di dipendenze: ogni valore sa da quali altri dipende, e quando uno cambia si aggiornano solo quelli a valle. Lo stesso vale per le relazioni tra oggetti: la finestra è ospitata dal muro e ne buca il volume, il solaio si appoggia al muro, il locale è delimitato dai muri che lo circondano.",
+"m": "html",
+"h": "Cambiando <i>L</i> da 5 a 6 metri il programma rifà i conti in cascata: la forma, la superficie (18 m²), il volume (5,4 m³), le viste e gli abachi. È un grafo di dipendenze: ogni valore sa da quali altri dipende, e quando uno cambia si aggiornano solo quelli a valle. Lo stesso vale per le relazioni tra oggetti: la finestra è ospitata dal muro e ne buca il volume, il solaio si appoggia al muro, il locale è delimitato dai muri che lo circondano.",
+"tag": "P",
+"id": "v1315"
+},
+{
+"k": "E quando il modello esce dal software? Nel formato aperto IFC il muro si scrive così, in forma semplificata: un IfcWall, cioè un muro e non un insieme di linee; la sua forma come IfcExtrudedAreaSolid, un profilo rettangolare estruso per l'altezza; le sue proprietà in insiemi come Pset_WallCommon, per esempio se è portante o esterno; e le aperture come relazioni (IfcRelVoidsElement). Chi riceve il file trova un muro con le sue regole, non quattro linee da interpretare.",
+"m": "html",
+"h": "<b>E quando il modello esce dal software?</b> Nel formato aperto IFC il muro si scrive così, in forma semplificata: un <code>IfcWall</code>, cioè un muro e non un insieme di linee; la sua forma come <code>IfcExtrudedAreaSolid</code>, un profilo rettangolare estruso per l'altezza; le sue proprietà in insiemi come <code>Pset_WallCommon</code>, per esempio se è portante o esterno; e le aperture come relazioni (<code>IfcRelVoidsElement</code>). Chi riceve il file trova un muro con le sue regole, non quattro linee da interpretare.",
+"tag": "P",
+"id": "v1316"
+},
+{
+"k": "Le conseguenze. Le quantità diventano affidabili perché si calcolano invece di misurarsi; le modifiche costano meno perché si propagano da sole; le incoerenze tra le tavole spariscono, perché le tavole sono viste dello stesso dato. In cambio serve più disciplina all'inizio: scegliere bene i tipi, i parametri e le regole, perché un errore nel dato si propaga con la stessa velocità di una correzione.",
+"m": "html",
+"h": "<b>Le conseguenze.</b> Le quantità diventano affidabili perché si calcolano invece di misurarsi; le modifiche costano meno perché si propagano da sole; le incoerenze tra le tavole spariscono, perché le tavole sono viste dello stesso dato. In cambio serve più disciplina all'inizio: scegliere bene i tipi, i parametri e le regole, perché un errore nel dato si propaga con la stessa velocità di una correzione.",
+"tag": "P",
+"id": "v1317"
+},
+{
+"k": "Nessuno lo sa davvero, e diffidiamo di chi dice di saperlo. Però alcune strade sono già aperte, e le notizie di BIM News ne raccontano i primi passi. Qui le mettiamo in fila, separando quello che sta già succedendo da quello che, per ora, è solo una domanda.",
+"m": "text",
+"h": "Nessuno lo sa davvero, e diffidiamo di chi dice di saperlo. Però alcune strade sono già aperte, e le notizie di BIM News ne raccontano i primi passi. Qui le mettiamo in fila, separando quello che sta già succedendo da quello che, per ora, è solo una domanda.",
+"tag": "P",
+"id": "v1318"
+},
+{
+"k": "Costruire senza tavole",
+"m": "text",
+"h": "Costruire senza tavole",
+"tag": "H4",
+"id": "v1319"
+},
+{
+"k": "A Hong Kong il Construction Industry Council ha presentato il percorso verso cantieri guidati direttamente dal modello, senza le tavole tradizionali. Servono modelli affidabili, regole informative chiare e approvazioni adatte. La notizia →",
+"m": "html",
+"h": "A Hong Kong il Construction Industry Council ha presentato il percorso verso cantieri guidati direttamente dal modello, senza le tavole tradizionali. Servono modelli affidabili, regole informative chiare e approvazioni adatte. <a href=\"#settimana-2026-08-03\" data-art=\"n10\">La notizia →</a>",
+"tag": "P",
+"id": "v1320"
+},
+{
+"k": "Requisiti che si controllano da soli",
+"m": "text",
+"h": "Requisiti che si controllano da soli",
+"tag": "H4",
+"id": "v1321"
+},
+{
+"k": "Con l'IDS 1.0 di buildingSMART (2024) le informazioni che un modello deve contenere si scrivono in un file leggibile dalle macchine, e il controllo diventa automatico. La notizia →",
+"m": "html",
+"h": "Con l'IDS 1.0 di buildingSMART (2024) le informazioni che un modello deve contenere si scrivono in un file leggibile dalle macchine, e il controllo diventa automatico. <a href=\"#settimana-2024-06-03\" data-art=\"n100\">La notizia →</a>",
+"tag": "P",
+"id": "v1322"
+},
+{
+"k": "L'intelligenza artificiale nel modello",
+"m": "text",
+"h": "L'intelligenza artificiale nel modello",
+"tag": "H4",
+"id": "v1323"
+},
+{
+"k": "I grandi software portano l'AI dentro l'ambiente di condivisione dei dati: opzioni progettuali dalle nuvole di punti, modelli strutturali chiesti a parole, ispezioni di cantiere dettate a voce. La notizia → E nella sezione BIM & AI trovi le altre.",
+"m": "html",
+"h": "I grandi software portano l'AI dentro l'ambiente di condivisione dei dati: opzioni progettuali dalle nuvole di punti, modelli strutturali chiesti a parole, ispezioni di cantiere dettate a voce. <a href=\"#settimana-2026-11-09\" data-art=\"n36\">La notizia →</a> E nella sezione <a href=\"#bim-ai\">BIM &amp; AI</a> trovi le altre.",
+"tag": "P",
+"id": "v1324"
+},
+{
+"k": "Le tavole serviranno ancora?",
+"m": "text",
+"h": "Le tavole serviranno ancora?",
+"tag": "H4",
+"id": "v1325"
+},
+{
+"k": "Se il cantiere legge il modello, la tavola stampata potrebbe diventare una vista tra le tante, utile per firmare e per archiviare più che per costruire. Ma la firma, la responsabilità e il valore legale degli elaborati oggi passano ancora dalla carta, o dal PDF.",
+"m": "text",
+"h": "Se il cantiere legge il modello, la tavola stampata potrebbe diventare una vista tra le tante, utile per firmare e per archiviare più che per costruire. Ma la firma, la responsabilità e il valore legale degli elaborati oggi passano ancora dalla carta, o dal PDF.",
+"tag": "P",
+"id": "v1326"
+},
+{
+"k": "Robot in cantiere?",
+"m": "text",
+"h": "Robot in cantiere?",
+"tag": "H4",
+"id": "v1327"
+},
+{
+"k": "Un modello preciso è proprio quello che serve a una macchina per tracciare, forare o posare. Quanto e quando i robot entreranno nei cantieri di tutti i giorni, e non solo nelle grandi opere, è ancora tutto da vedere.",
+"m": "text",
+"h": "Un modello preciso è proprio quello che serve a una macchina per tracciare, forare o posare. Quanto e quando i robot entreranno nei cantieri di tutti i giorni, e non solo nelle grandi opere, è ancora tutto da vedere.",
+"tag": "P",
+"id": "v1328"
+},
+{
+"k": "E noi?",
+"m": "text",
+"h": "E noi?",
+"tag": "H4",
+"id": "v1329"
+},
+{
+"k": "Se la macchina disegna, verifica e calcola, a chi progetta resta la parte più difficile: capire il problema, scegliere, rispondere delle scelte. Forse il mestiere non sparisce: cambia baricentro. Chissà.",
+"m": "text",
+"h": "Se la macchina disegna, verifica e calcola, a chi progetta resta la parte più difficile: capire il problema, scegliere, rispondere delle scelte. Forse il mestiere non sparisce: cambia baricentro. Chissà.",
+"tag": "P",
+"id": "v1330"
+},
+{
+"k": "Lun",
+"m": "text",
+"h": "Lun",
+"tag": "SPAN",
+"id": "v1331"
+},
+{
+"k": "Mar",
+"m": "text",
+"h": "Mar",
+"tag": "SPAN",
+"id": "v1332"
+},
+{
+"k": "Mer",
+"m": "text",
+"h": "Mer",
+"tag": "SPAN",
+"id": "v1333"
+},
+{
+"k": "Gio",
+"m": "text",
+"h": "Gio",
+"tag": "SPAN",
+"id": "v1334"
+},
+{
+"k": "Ven",
+"m": "text",
+"h": "Ven",
+"tag": "SPAN",
+"id": "v1335"
+},
+{
+"k": "Sab",
+"m": "text",
+"h": "Sab",
+"tag": "SPAN",
+"id": "v1336"
+},
+{
+"k": "Dom",
+"m": "text",
+"h": "Dom",
+"tag": "SPAN",
+"id": "v1337"
+},
+{
+"k": "Sta già succedendo",
+"m": "text",
+"h": "Sta già succedendo",
+"tag": "SPAN",
+"id": "v1338"
+},
+{
+"k": "Domanda aperta",
+"m": "text",
+"h": "Domanda aperta",
+"tag": "SPAN",
+"id": "v1339"
+},
+{
+"k": "Calendario degli appuntamenti",
+"m": "attr",
+"h": "Calendario degli appuntamenti",
+"tag": "@aria-label",
+"id": "v1340"
+},
+{
+"k": "Mese precedente",
+"m": "attr",
+"h": "Mese precedente",
+"tag": "@aria-label",
+"id": "v1341"
+},
+{
+"k": "Mese successivo",
+"m": "attr",
+"h": "Mese successivo",
+"tag": "@aria-label",
+"id": "v1342"
+},
+{
+"k": "L'evoluzione del progetto in sei tappe",
+"m": "attr",
+"h": "L'evoluzione del progetto in sei tappe",
+"tag": "@aria-label",
+"id": "v1343"
+},
+{
+"k": "Cosa ci riserva il futuro?",
+"m": "text",
+"h": "Cosa ci riserva il futuro?",
+"tag": "#rest",
+"id": "v1344"
+},
+{
+"k": "Che cosa sta già cambiando e quali domande restano aperte",
+"m": "text",
+"h": "Che cosa sta già cambiando e quali domande restano aperte",
+"tag": "#rest",
+"id": "v1345"
+},
+{
+"k": "Scadenze",
+"m": "text",
+"h": "Scadenze",
+"tag": "#node",
+"id": "v1346"
+},
+{
+"k": "Giornate della tecnologia",
+"m": "text",
+"h": "Giornate della tecnologia",
+"tag": "#node",
+"id": "v1347"
+},
+{
+"k": "10 · Cosa ci riserva il futuro?",
+"m": "text",
+"h": "10 · Cosa ci riserva il futuro?",
+"tag": "#node",
+"id": "v1348"
+},
+{
+"k": "10 Il futuro",
+"m": "text",
+"h": "10 Il futuro",
+"tag": "#node",
+"id": "v1349"
 }
 ]

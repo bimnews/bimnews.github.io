@@ -1,0 +1,46 @@
+v1304	<b>1570</b><span>Palladio publishes <i>The Four Books of Architecture</i>: plan, section and elevation, drawn by hand</span>
+v1305	<b>1963</b><span>Ivan Sutherland writes Sketchpad, the first program for drawing on a computer</span>
+v1306	<b>1982</b><span>AutoCAD is released: CAD reaches the personal computer and design offices</span>
+v1307	<b>1996</b><span>IFC 1.0 is born, the open format for exchanging models between different software</span>
+v1308	<b>2002</b><span>The name <i>Building Information Modeling</i> spreads</span>
+v1309	<b>Today</b><span>The model becomes the centre of design, construction and management</span>
+v1310	Sources of the dates: English Wikipedia, articles <a href="https://en.wikipedia.org/wiki/Sketchpad" target="_blank" rel="noopener">Sketchpad</a>, <a href="https://en.wikipedia.org/wiki/AutoCAD" target="_blank" rel="noopener">AutoCAD</a>, <a href="https://en.wikipedia.org/wiki/Industry_Foundation_Classes" target="_blank" rel="noopener">Industry Foundation Classes</a> and <a href="https://en.wikipedia.org/wiki/Building_information_modeling" target="_blank" rel="noopener">Building information modeling</a>.
+v1311	In depth: what happens inside the computer
+v1312	<b>In CAD the data is the geometry.</b> For the computer a line is a row in an archive: two points and a few attributes. The wall does not exist: there are four independent rows, and the fact that together they are "a wall" is known only to whoever looks at them.
+v1313	The area of the wall is not written anywhere: to know it you have to measure and multiply. If the wall gets one metre longer, you have to move two lines and then remember to correct the section, the elevation and the bill of quantities, which are other drawings and other files.
+v1314	<b>In BIM the data is the object, and the geometry is calculated.</b> The wall is an object with a few independent values, the parameters; everything else follows from formulas, like the cells of a spreadsheet:
+v1315	If you change <i>L</i> from 5 to 6 metres, the program redoes the calculations in cascade: the shape, the area (18 m²), the volume (5.4 m³), the views and the schedules. It is a dependency graph: each value knows which others it depends on, and when one changes only those downstream are updated. The same goes for relations between objects: the window is hosted by the wall and cuts its volume, the slab rests on the wall, the room is bounded by the walls around it.
+v1316	<b>And when the model leaves the software?</b> In the open IFC format the wall is written like this, in simplified form: an <code>IfcWall</code>, that is a wall and not a set of lines; its shape as an <code>IfcExtrudedAreaSolid</code>, a rectangular profile extruded by the height; its properties in sets such as <code>Pset_WallCommon</code>, for example whether it is load-bearing or external; and the openings as relations (<code>IfcRelVoidsElement</code>). Whoever receives the file finds a wall with its rules, not four lines to interpret.
+v1317	<b>The consequences.</b> Quantities become reliable because they are calculated instead of measured; changes cost less because they propagate by themselves; inconsistencies between drawings disappear, because the drawings are views of the same data. In exchange, more discipline is needed at the start: choosing the types, parameters and rules well, because an error in the data spreads as fast as a correction.
+v1318	Nobody really knows, and we distrust anyone who claims to. But some paths are already open, and BIM News reports their first steps. Here we line them up, separating what is already happening from what, for now, is only a question.
+v1319	Building without drawings
+v1320	In Hong Kong the Construction Industry Council presented the path towards construction sites driven directly by the model, without traditional drawings. It takes reliable models, clear information rules and suitable approvals. <a href="#settimana-2026-08-03" data-art="n10">The news →</a>
+v1321	Requirements that check themselves
+v1322	With buildingSMART's IDS 1.0 (2024), the information a model must contain is written in a machine-readable file, and checking becomes automatic. <a href="#settimana-2024-06-03" data-art="n100">The news →</a>
+v1323	Artificial intelligence in the model
+v1324	The big software vendors bring AI into the common data environment: design options from point clouds, structural models requested in words, site inspections dictated by voice. <a href="#settimana-2026-11-09" data-art="n36">The news →</a> And in the <a href="#bim-ai">BIM &amp; AI</a> section you will find the others.
+v1325	Will drawings still be needed?
+v1326	If the site reads the model, the printed drawing could become one view among many, useful for signing and archiving more than for building. But signatures, responsibility and the legal value of documents still go through paper, or PDF, today.
+v1327	Robots on site?
+v1328	A precise model is exactly what a machine needs to set out, drill or install. How much and when robots will enter everyday sites, and not only large projects, remains to be seen.
+v1329	And us?
+v1330	If the machine draws, checks and calculates, designers are left with the hardest part: understanding the problem, choosing, being accountable for the choices. Perhaps the profession does not disappear: its centre of gravity shifts. Who knows.
+v1331	Mon
+v1332	Tue
+v1333	Wed
+v1334	Thu
+v1335	Fri
+v1336	Sat
+v1337	Sun
+v1338	Already happening
+v1339	Open question
+v1340	Calendar of events
+v1341	Previous month
+v1342	Next month
+v1343	The evolution of design in six steps
+v1344	What does the future hold?
+v1345	What is already changing and which questions remain open
+v1346	Deadlines
+v1347	Technology days
+v1348	10 · What does the future hold?
+v1349	10 The future
