@@ -25,6 +25,11 @@ for(const v of V){await p.goto('http://localhost:8765/#'+v);await p.waitForTimeo
       else if(n.nodeType===1&&['SPAN','A','SMALL','B','STRONG','EM','I','TIME'].includes(n.tagName)&&!n.closest(BL)&&!n.querySelector('p,li,div')){const t=norm(n.textContent);if(t&&/[a-zàèéìòù]{2}/i.test(t)){if(n.querySelector('svg,img,[id]')||n.id&&n.children.length){tnodes(n)}else{const rich=n.children.length?'html':'text';out.push({k:t,m:rich,h:rich==='html'?clean(n):t,tag:n.tagName})}}}})});
   // attributi visibili
   document.querySelectorAll('[placeholder],[title],[aria-label]').forEach(e=>{if(e.closest('script,style,.art,.ac-card,.ag-item,.vd-card'))return;['placeholder','title','aria-label'].forEach(a=>{const v=e.getAttribute(a);if(v&&/[a-zàèéìòù]{3}/i.test(v)&&!/^https?:/.test(v))out.push({k:norm(v),m:'attr',h:norm(v),tag:'@'+a})})});
+  // tutto il resto: ogni testo visibile non ancora raccolto (per esempio le voci della Mappa del sito)
+  const seen=new Set(out.map(o=>o.k));const w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);let x;
+  while(x=w.nextNode()){const e=x.parentElement;if(!e||e.closest(EX))continue;const t=norm(x.nodeValue);if(!t||!/[a-zàèéìòù]{2}/i.test(t)||seen.has(t))continue;
+    let inBlock=false;for(let q=e;q&&q!==document.body;q=q.parentElement){const k=norm(q.textContent);if(seen.has(k)){inBlock=true;break}}
+    if(!inBlock){seen.add(t);out.push({k:t,m:'text',h:t,tag:'#rest'})}}
   return out});
  r.forEach(o=>{if(!all.has(o.k))all.set(o.k,o)})}
 const arr=[...all.values()];let w=0;arr.forEach(o=>w+=o.k.split(' ').length);

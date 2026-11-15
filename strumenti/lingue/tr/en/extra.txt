@@ -1,0 +1,4 @@
+§conteggio	{1} news items in {2} weeks, {3} months
+§pagina	Page {1} of {2}
+§articoli	{1} articles
+§anno	{1}: {2} articles, filter

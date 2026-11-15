@@ -910,9 +910,9 @@
 "id": "v0130"
 },
 {
-"k": "Per ora no. In questo momento l'autore non accetta collaborazioni di tipo economico, perché il sito è gestito principalmente con il suo piano Pro di Claude, e non cerca collaborazioni esterne sul sito. Accetta invece sponsorizzazioni che servano a passare a un piano con più token, se si vuole aiutare ad ampliare il sito: in quel caso, parliamone su LinkedIn ↗. Il sito è una passione, un piccolo hobby: andrà avanti finché sarà sostenibile, sia economicamente sia per il tempo che il curatore può dedicargli.",
-"m": "html",
-"h": "Per ora no. In questo momento l'autore non accetta collaborazioni di tipo economico, perché il sito è gestito principalmente con il suo piano Pro di Claude, e non cerca collaborazioni esterne sul sito. Accetta invece sponsorizzazioni che servano a passare a un piano con più token, se si vuole aiutare ad ampliare il sito: in quel caso, parliamone su <a href=\"https://www.linkedin.com/in/marco-scigliuolo/\" target=\"_blank\" rel=\"noopener\">LinkedIn ↗</a>. Il sito è una passione, un piccolo hobby: andrà avanti finché sarà sostenibile, sia economicamente sia per il tempo che il curatore può dedicargli.",
+"k": "Attualmente l'autore sta capendo come si possa, in futuro, collaborare con persone esterne. In ogni caso il sito è gestito interamente da lui ed è soprattutto una passione, un piccolo hobby per il tempo libero.",
+"m": "text",
+"h": "Attualmente l'autore sta capendo come si possa, in futuro, collaborare con persone esterne. In ogni caso il sito è gestito interamente da lui ed è soprattutto una passione, un piccolo hobby per il tempo libero.",
 "tag": "P",
 "id": "v0131"
 },
@@ -1001,9 +1001,9 @@
 "id": "v0143"
 },
 {
-"k": "Perché la ricerca non li ha ancora raggiunti, non perché lì il BIM manchi. È in corso una ricerca a tappeto, area per area, nella lingua di ogni paese; ogni settimana una parte del lavoro va ai paesi ancora vuoti.",
+"k": "Perché la cultura del BIM non è ancora diffusa in tutto il mondo. Al curatore piacerebbe molto che in futuro questo cambiasse: è proprio la missione del sito, diffondere la cultura del BIM ovunque. Intanto la ricerca continua ogni settimana, nella lingua di ogni paese, così ogni passo avanti trova posto sulla mappa.",
 "m": "text",
-"h": "Perché la ricerca non li ha ancora raggiunti, non perché lì il BIM manchi. È in corso una ricerca a tappeto, area per area, nella lingua di ogni paese; ogni settimana una parte del lavoro va ai paesi ancora vuoti.",
+"h": "Perché la cultura del BIM non è ancora diffusa in tutto il mondo. Al curatore piacerebbe molto che in futuro questo cambiasse: è proprio la missione del sito, diffondere la cultura del BIM ovunque. Intanto la ricerca continua ogni settimana, nella lingua di ogni paese, così ogni passo avanti trova posto sulla mappa.",
 "tag": "P",
 "id": "v0144"
 },
@@ -8384,5 +8384,446 @@
 "h": "scheda",
 "tag": "#pattern",
 "id": "v1198"
+},
+{
+"k": "← Home · BIM News",
+"m": "text",
+"h": "← Home · BIM News",
+"tag": "#rest",
+"id": "v1199"
+},
+{
+"k": "BIM News, la rassegna sul BIM nel mondo, a cura di Marco Scigliuolo: un sito inclusivo, perché tutti adottino il BIM",
+"m": "text",
+"h": "BIM News, la rassegna sul BIM nel mondo, a cura di Marco Scigliuolo: un sito inclusivo, perché tutti adottino il BIM",
+"tag": "#rest",
+"id": "v1200"
+},
+{
+"k": "La rassegna settimanale dal mondo, con la mappa interattiva",
+"m": "text",
+"h": "La rassegna settimanale dal mondo, con la mappa interattiva",
+"tag": "#rest",
+"id": "v1201"
+},
+{
+"k": "Le notizie della settimana più recente",
+"m": "text",
+"h": "Le notizie della settimana più recente",
+"tag": "#rest",
+"id": "v1202"
+},
+{
+"k": "I criteri della selezione, a partire dall'inclusività",
+"m": "text",
+"h": "I criteri della selezione, a partire dall'inclusività",
+"tag": "#rest",
+"id": "v1203"
+},
+{
+"k": "Mappa del mondo",
+"m": "text",
+"h": "Mappa del mondo",
+"tag": "#rest",
+"id": "v1204"
+},
+{
+"k": "Continenti, paesi e regioni con il numero di notizie",
+"m": "text",
+"h": "Continenti, paesi e regioni con il numero di notizie",
+"tag": "#rest",
+"id": "v1205"
+},
+{
+"k": "Archivio dal 2015",
+"m": "text",
+"h": "Archivio dal 2015",
+"tag": "#rest",
+"id": "v1206"
+},
+{
+"k": "Tutte le notizie per anno e mese, con filtri e ricerca",
+"m": "text",
+"h": "Tutte le notizie per anno e mese, con filtri e ricerca",
+"tag": "#rest",
+"id": "v1207"
+},
+{
+"k": "I prossimi appuntamenti, accanto alle notizie",
+"m": "text",
+"h": "I prossimi appuntamenti, accanto alle notizie",
+"tag": "#rest",
+"id": "v1208"
+},
+{
+"k": "Le notizie in cui il BIM incontra l'intelligenza artificiale",
+"m": "text",
+"h": "Le notizie in cui il BIM incontra l'intelligenza artificiale",
+"tag": "#rest",
+"id": "v1209"
+},
+{
+"k": "Articoli scientifici sul BIM, con abstract tradotti in italiano",
+"m": "text",
+"h": "Articoli scientifici sul BIM, con abstract tradotti in italiano",
+"tag": "#rest",
+"id": "v1210"
+},
+{
+"k": "Che cos'è il BIM, spiegato semplice: norme, dimensioni e sigle",
+"m": "text",
+"h": "Che cos'è il BIM, spiegato semplice: norme, dimensioni e sigle",
+"tag": "#rest",
+"id": "v1211"
+},
+{
+"k": "Le norme dal 2015 a oggi",
+"m": "text",
+"h": "Le norme dal 2015 a oggi",
+"tag": "#rest",
+"id": "v1212"
+},
+{
+"k": "La timeline a spina di pesce, da sinistra a destra",
+"m": "text",
+"h": "La timeline a spina di pesce, da sinistra a destra",
+"tag": "#rest",
+"id": "v1213"
+},
+{
+"k": "Le dimensioni del BIM",
+"m": "text",
+"h": "Le dimensioni del BIM",
+"tag": "#rest",
+"id": "v1214"
+},
+{
+"k": "Dal 3D al 10D, con grafiche e fonti",
+"m": "text",
+"h": "Dal 3D al 10D, con grafiche e fonti",
+"tag": "#rest",
+"id": "v1215"
+},
+{
+"k": "Le sigle in un minuto",
+"m": "text",
+"h": "Le sigle in un minuto",
+"tag": "#rest",
+"id": "v1216"
+},
+{
+"k": "IFC, ACDat, CI, pGI, LOD, LOIN e le altre",
+"m": "text",
+"h": "IFC, ACDat, CI, pGI, LOD, LOIN e le altre",
+"tag": "#rest",
+"id": "v1217"
+},
+{
+"k": "Risultati concreti",
+"m": "text",
+"h": "Risultati concreti",
+"tag": "#rest",
+"id": "v1218"
+},
+{
+"k": "Ore e soldi risparmiati secondo le ricerche, con il contatore del tuo studio",
+"m": "text",
+"h": "Ore e soldi risparmiati secondo le ricerche, con il contatore del tuo studio",
+"tag": "#rest",
+"id": "v1219"
+},
+{
+"k": "Il BIM nel tempo: mondo e Italia",
+"m": "text",
+"h": "Il BIM nel tempo: mondo e Italia",
+"tag": "#rest",
+"id": "v1220"
+},
+{
+"k": "Dal 1975 a oggi, le tappe internazionali e italiane a confronto",
+"m": "text",
+"h": "Dal 1975 a oggi, le tappe internazionali e italiane a confronto",
+"tag": "#rest",
+"id": "v1221"
+},
+{
+"k": "Certificazioni nel mondo",
+"m": "text",
+"h": "Certificazioni nel mondo",
+"tag": "#rest",
+"id": "v1222"
+},
+{
+"k": "Chi certifica le competenze BIM, dove è obbligatorio e con quale norma",
+"m": "text",
+"h": "Chi certifica le competenze BIM, dove è obbligatorio e con quale norma",
+"tag": "#rest",
+"id": "v1223"
+},
+{
+"k": "Webinar registrati e canali gratuiti sul BIM",
+"m": "text",
+"h": "Webinar registrati e canali gratuiti sul BIM",
+"tag": "#rest",
+"id": "v1224"
+},
+{
+"k": "Webinar e conferenze",
+"m": "text",
+"h": "Webinar e conferenze",
+"tag": "#rest",
+"id": "v1225"
+},
+{
+"k": "Registrazioni gratuite in quattro lingue",
+"m": "text",
+"h": "Registrazioni gratuite in quattro lingue",
+"tag": "#rest",
+"id": "v1226"
+},
+{
+"k": "Dalle università",
+"m": "text",
+"h": "Dalle università",
+"tag": "#rest",
+"id": "v1227"
+},
+{
+"k": "Lezioni di Stanford, Technion, TUM, Cambridge e atenei italiani",
+"m": "text",
+"h": "Lezioni di Stanford, Technion, TUM, Cambridge e atenei italiani",
+"tag": "#rest",
+"id": "v1228"
+},
+{
+"k": "Canali YouTube",
+"m": "text",
+"h": "Canali YouTube",
+"tag": "#rest",
+"id": "v1229"
+},
+{
+"k": "I canali che parlano di BIM",
+"m": "text",
+"h": "I canali che parlano di BIM",
+"tag": "#rest",
+"id": "v1230"
+},
+{
+"k": "Scadenze normative, eventi e webinar in arrivo, filtrati per area",
+"m": "text",
+"h": "Scadenze normative, eventi e webinar in arrivo, filtrati per area",
+"tag": "#rest",
+"id": "v1231"
+},
+{
+"k": "Gli obblighi BIM che entrano in vigore, paese per paese",
+"m": "text",
+"h": "Gli obblighi BIM che entrano in vigore, paese per paese",
+"tag": "#rest",
+"id": "v1232"
+},
+{
+"k": "Fiere, congressi e conferenze, mese per mese",
+"m": "text",
+"h": "Fiere, congressi e conferenze, mese per mese",
+"tag": "#rest",
+"id": "v1233"
+},
+{
+"k": "Appuntamenti online, gratuiti e a pagamento",
+"m": "text",
+"h": "Appuntamenti online, gratuiti e a pagamento",
+"tag": "#rest",
+"id": "v1234"
+},
+{
+"k": "Chi cura il sito: profilo, progetti, idee e passioni",
+"m": "text",
+"h": "Chi cura il sito: profilo, progetti, idee e passioni",
+"tag": "#rest",
+"id": "v1235"
+},
+{
+"k": "Riflessioni, soluzioni e manuali per chi progetta",
+"m": "text",
+"h": "Riflessioni, soluzioni e manuali per chi progetta",
+"tag": "#rest",
+"id": "v1236"
+},
+{
+"k": "Che cosa vuol dire essere ingegnere",
+"m": "text",
+"h": "Che cosa vuol dire essere ingegnere",
+"tag": "#rest",
+"id": "v1237"
+},
+{
+"k": "Dodici problemi frequenti, da risolvere uno per uno",
+"m": "text",
+"h": "Dodici problemi frequenti, da risolvere uno per uno",
+"tag": "#rest",
+"id": "v1238"
+},
+{
+"k": "Script per ridurre il lavoro ripetitivo nella modellazione",
+"m": "text",
+"h": "Script per ridurre il lavoro ripetitivo nella modellazione",
+"tag": "#rest",
+"id": "v1239"
+},
+{
+"k": "Routine e script da copiare o scaricare",
+"m": "text",
+"h": "Routine e script da copiare o scaricare",
+"tag": "#rest",
+"id": "v1240"
+},
+{
+"k": "Manuali professionali scritti con Claude su mie indicazioni, da leggere online o scaricare in PDF",
+"m": "text",
+"h": "Manuali professionali scritti con Claude su mie indicazioni, da leggere online o scaricare in PDF",
+"tag": "#rest",
+"id": "v1241"
+},
+{
+"k": "Esplorazione e disciplina",
+"m": "text",
+"h": "Esplorazione e disciplina",
+"tag": "#rest",
+"id": "v1242"
+},
+{
+"k": "Essere ingegnere",
+"m": "text",
+"h": "Essere ingegnere",
+"tag": "#rest",
+"id": "v1243"
+},
+{
+"k": "Come ci si vede e ci si sente",
+"m": "text",
+"h": "Come ci si vede e ci si sente",
+"tag": "#rest",
+"id": "v1244"
+},
+{
+"k": "Dall'AGESCI al CNGEI, gli scout laici",
+"m": "text",
+"h": "Dall'AGESCI al CNGEI, gli scout laici",
+"tag": "#rest",
+"id": "v1245"
+},
+{
+"k": "Le cinque virtù: saggezza, compassione, sincerità, coraggio, pazienza",
+"m": "text",
+"h": "Le cinque virtù: saggezza, compassione, sincerità, coraggio, pazienza",
+"tag": "#rest",
+"id": "v1246"
+},
+{
+"k": "Manuali non professionali: suono, chitarra, basso",
+"m": "text",
+"h": "Manuali non professionali: suono, chitarra, basso",
+"tag": "#rest",
+"id": "v1247"
+},
+{
+"k": "Sei categorie di letture fondamentali",
+"m": "text",
+"h": "Sei categorie di letture fondamentali",
+"tag": "#rest",
+"id": "v1248"
+},
+{
+"k": "Capire le persone, a partire da sé",
+"m": "text",
+"h": "Capire le persone, a partire da sé",
+"tag": "#rest",
+"id": "v1249"
+},
+{
+"k": "Le storie che restano",
+"m": "text",
+"h": "Le storie che restano",
+"tag": "#rest",
+"id": "v1250"
+},
+{
+"k": "Le raccolte a cui torno",
+"m": "text",
+"h": "Le raccolte a cui torno",
+"tag": "#rest",
+"id": "v1251"
+},
+{
+"k": "I saggi che cambiano il modo di ragionare",
+"m": "text",
+"h": "I saggi che cambiano il modo di ragionare",
+"tag": "#rest",
+"id": "v1252"
+},
+{
+"k": "Imparare a guardare",
+"m": "text",
+"h": "Imparare a guardare",
+"tag": "#rest",
+"id": "v1253"
+},
+{
+"k": "Capire l'economia, oltre gli slogan",
+"m": "text",
+"h": "Capire l'economia, oltre gli slogan",
+"tag": "#rest",
+"id": "v1254"
+},
+{
+"k": "Le domande frequenti di chi esplora il sito, con le lingue della ricerca",
+"m": "text",
+"h": "Le domande frequenti di chi esplora il sito, con le lingue della ricerca",
+"tag": "#rest",
+"id": "v1255"
+},
+{
+"k": "Chi gestisce il sito, come si aggiornano le notizie, contatti e collaborazioni",
+"m": "text",
+"h": "Chi gestisce il sito, come si aggiornano le notizie, contatti e collaborazioni",
+"tag": "#rest",
+"id": "v1256"
+},
+{
+"k": "Domande: Da dove arrivano le notizie, Come scegliete che cosa pubblicare…",
+"m": "text",
+"h": "Domande: Da dove arrivano le notizie, Come scegliete che cosa pubblicare…",
+"tag": "#rest",
+"id": "v1257"
+},
+{
+"k": "Domande: In che lingue cercate le notizie, Come avete scelto queste lingue…",
+"m": "text",
+"h": "Domande: In che lingue cercate le notizie, Come avete scelto queste lingue…",
+"tag": "#rest",
+"id": "v1258"
+},
+{
+"k": "Domande: Non conosco il BIM: da dove parto, Che cos'è BIM Accademia Chi traduce gli abstract…",
+"m": "text",
+"h": "Domande: Non conosco il BIM: da dove parto, Che cos'è BIM Accademia Chi traduce gli abstract…",
+"tag": "#rest",
+"id": "v1259"
+},
+{
+"k": "Domande: Che differenza c'è tra versione completa ed essenziale, Come passo dal tema scuro a quello chiaro…",
+"m": "text",
+"h": "Domande: Che differenza c'è tra versione completa ed essenziale, Come passo dal tema scuro a quello chiaro…",
+"tag": "#rest",
+"id": "v1260"
+},
+{
+"k": "Apri →",
+"m": "text",
+"h": "Apri →",
+"tag": "#rest",
+"id": "v1261"
 }
 ]

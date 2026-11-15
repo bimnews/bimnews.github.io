@@ -31,7 +31,7 @@ v0127	The news is updated every week, on Monday, fully automatically: the resear
 v0128	How can I contact the author?
 v0129	Via <a href="https://www.linkedin.com/in/marco-scigliuolo/" target="_blank" rel="noopener">LinkedIn ↗</a>. <b>Please note:</b> the site is run by one person, so the author is not always able to reply quickly.
 v0130	Is the author open to collaborations?
-v0131	Not for now. At the moment the author does not accept paid collaborations, because the site is run mainly with his Claude Pro plan, and he is not looking for external collaborations on the site. He does, however, accept sponsorships to move to a plan with more tokens, if you want to help expand the site: in that case, let's talk on <a href="https://www.linkedin.com/in/marco-scigliuolo/" target="_blank" rel="noopener">LinkedIn ↗</a>. The site is a passion, a small hobby: it will continue as long as it is sustainable, both financially and in terms of the time the curator can devote to it.
+v0131	The author is currently working out how it might be possible, in the future, to collaborate with outside people. In any case the site is run entirely by him and is above all a passion, a small spare-time hobby.
 v0132	Who funds or sponsors the site?
 v0133	Nobody, for now. The site has no sponsors, advertising or funding: all costs are borne by the curator, namely the Claude Pro subscription used to generate and update the site, and the time the curator spends running it. The site is hosted free of charge on GitHub Pages. Sponsorships are welcome for one purpose only: moving to a Claude plan with more tokens, to expand the site. If you are interested, let's talk.
 v0134	What is BIM News?
@@ -44,7 +44,7 @@ v0140	From three kinds of sources. <b>Institutional sources</b>: governments, mi
 v0141	How do you decide what to publish?
 v0142	We publish a fact when it changes something for those who design or build in that country: national strategies and mandates, adopted standards, major public works in BIM, first pilot projects, key events. The underlying principle is inclusiveness: when interest is equal, we choose the news that helps someone get started. Details are in the «How we choose the news» box in <a href="#bim-news">BIM News</a>.
 v0143	Why are some countries still empty on the map?
-v0144	Because the research has not reached them yet, not because BIM is missing there. A systematic search is under way, area by area, in the language of each country; every week part of the work goes to the countries that are still empty.
+v0144	Because BIM culture has not yet spread throughout the world. The curator would very much like this to change in the future: that is precisely the site's mission, to spread BIM culture everywhere. Meanwhile the search continues every week, in the language of each country, so that every step forward finds its place on the map.
 v0145	What do the numbers on the map mean?
 v0146	How many news items there are per continent, country or region. Tap a continent, then a country and a region to see the news from that place.
 v0147	Why do some items carry the «Archive» label?

@@ -1,0 +1,41 @@
+v1144	February
+v1145	March
+v1146	April
+v1147	May
+v1148	June
+v1149	August
+v1150	December
+v1153	BIM adoption
+v1154	Cultural heritage (HBIM)
+v1155	Cost (5D)
+v1156	GIS
+v1157	Digital twin and IoT
+v1158	Operation and facility management
+v1159	Artificial intelligence
+v1160	Interoperability and IFC
+v1161	Lean construction
+v1162	Prefabrication and offsite
+v1163	Literature review
+v1164	Safety
+v1165	Sustainability and energy
+v1166	Structures
+v1167	Time (4D)
+v1168	Code checking
+v1170	Articles by year of publication · tap a bar to filter, tap again to remove the filter
+v1182	January
+v1183	July
+v1184	September
+v1185	October
+v1186	November
+v1187	news items
+v1188	news item
+v1189	Last updated:
+v1190	Global
+v1191	languages
+v1192	under review
+v1193	Languages we search in
+v1194	Languages under review
+v1195	entries
+v1196	entry
+v1197	entries
+v1198	entry

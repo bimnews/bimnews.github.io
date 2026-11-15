@@ -24,6 +24,11 @@ for lang in old.L:
         H[o['k']]=tr
       elif o['m']=='attr':A[o['k']]=tr
       else:T[o['k']]=tr
+  ex=B+'/tr/%s/extra.txt'%lang
+  if os.path.exists(ex):
+    for line in open(ex,encoding='utf-8'):
+      k,_,v=line.rstrip('\n').partition('\t')
+      if k and v:T[k]=v
   done={o['k'] for o in V.values()}&(set(T)|set(H)|set(A))
   report[lang]='%d/%d'%(len(done),len(V))+(' · tag diversi: '+','.join(bad) if bad else '')
   json.dump({'t':T,'h':H,'a':A},open(R+'/assets/lingue/%s.json'%lang,'w',encoding='utf-8'),ensure_ascii=False,separators=(',',':'))
