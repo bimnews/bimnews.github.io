@@ -68,24 +68,10 @@ Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato co
 
 ## Lavori in sospeso, in ordine di priorità
 
-1. **Globo 3D: anteprima fatta e inviata il 15/11/2026, si aspetta il sì di Marco. Non pubblicare prima.**
-   - **Dove sta il codice:** `strumenti/globo/anteprima/`, con `globo.js`, `mondo.json` (world-atlas 110m con i nomi italiani nella proprietà `it`), `citta.json` (5479 città di Natural Earth, terne lon, lat, luminosità 0–9), le librerie d3-array, d3-geo e topojson-client, e `LICENZE.txt`. Le modifiche a `index.html` sono in `integrazione-index.patch`: CSS `.globe`, `loadGlobe()` chiamata dopo `loadMap()` e i crediti nel figcaption.
-   - **Per pubblicare:**
-     - spostare i file in `assets/globo/`;
-     - applicare la patch, a mano se il contesto è cambiato;
-     - aumentare la revisione.
-   - **Cosa fa:**
-     - canvas ortografico sopra `.map-wrap` solo in home e nella versione completa, con sfondo di stelle, alone e galleggiamento;
-     - rotazione lenta, trascinabile con il mouse;
-     - asse inclinato di 23,44°;
-     - giorno e notte reali calcolati dalla data e dall'ora (declinazione ed equazione del tempo), con il crepuscolo;
-     - luci delle città nella parte in ombra;
-     - un punto blu sui paesi con notizie.
-   - **Orientamento iniziale:** sul continente di chi guarda, dedotto dal fuso orario del browser (nessuna geolocalizzazione); il paese di chi guarda resta un po' sotto il centro, per non finire sotto la barra di ricerca.
-   - **Clic su un paese:** lancia due clic su `#ctrs .ctry` come la ricerca; un MutationObserver su `#map-where` fa volare il globo sul paese, con zoom fino a vederlo intero (parte principale, senza territori lontani), poi lo dissolve sulla mappa piatta. Con «← Mondo» il globo torna.
-   - **Già pubblicato da questa anteprima:** `.fc-search` ha `pointer-events:none` (solo box e lista restano cliccabili), perché il blocco «Dove andiamo oggi?» copriva i clic sulla mappa.
-   - **Abbinamenti corretti:** Figi, Russia e Francia; Stati Uniti e Norvegia erano già giusti.
-   - **Scelta da confermare con Marco:** la rotazione è continua, partendo dal suo continente; in alternativa si può fare un'oscillazione attorno al suo continente.
+1. **Globo 3D: PUBBLICATO il 15/11/2026 (revisione 106) dopo il sì di Marco.**
+   - **Codice:** `assets/globo/` (`globo.js`, `mondo.json`, `citta.json`, le librerie, `LICENZE.txt`); `loadGlobe()` parte dopo `loadMap()`, solo nella versione completa.
+   - **Cosa fa:** orientamento iniziale dal fuso orario; asse inclinato di 23,44°; giorno e notte reali; luci delle città; clic su un paese → volo sul paese, poi passaggio alla mappa piatta; «← Mondo» → torna il globo.
+   - **Scelta ancora aperta:** rotazione continua (attuale) oppure oscillazione attorno al continente di chi guarda.
 2. **Animazioni stagionali (solo anteprime per ora):** effetti leggeri e trasparenti sulla fascia della ricerca, attivati da soli nel periodo giusto.
    - **Natale:** neve e simboli natalizi dall'8 dicembre al 6 gennaio (Marco ha scritto «6 dicembre», ma intende la Befana).
    - **Altre grandi religioni**, ciascuna con un tema suo:
@@ -161,3 +147,4 @@ Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato co
   - **Missioni nel disclaimer:** quella del sito è far conoscere la cultura del BIM al mondo intero; quella personale di Marco è diffonderla in Italia, perché il BIM non sia solo un «certificato» per le gare ma uno strumento legato al metodo di progettazione.
 - **15/11/2026, revisione 104:** nella FAQ sulle collaborazioni Marco aggiunge che il sito è una passione, un piccolo hobby, e va avanti finché è sostenibile in soldi e tempo.
 - **15/11/2026, revisione 105:** il tasto Home ricarica tutto il sito.
+- **15/11/2026, revisione 106:** pubblicato il globo 3D della home.
