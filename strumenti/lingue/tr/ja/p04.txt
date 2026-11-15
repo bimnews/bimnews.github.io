@@ -1,0 +1,102 @@
+v0230	<b>属性かパラメーターか？</b>属性とは、線の画層や色のように図面の要素に添えられた情報です。要素を説明はしますが、制御はしません。パラメーターはオブジェクトを制御します。値を変えると形が変わり、それに依存するものもすべて変わります。
+v0231	<b>設計</b><span>意匠、構造、設備が同じモデルで作業する</span>
+v0232	<b>入札</b><span>数量と積算はモデルから取り出し、手で数え直さない</span>
+v0233	<b>施工</b><span>施工者はすでに調整済みのモデルをもとに建てる</span>
+v0234	<b>維持管理</b><span>発注者は情報つきの建物を受け取る</span>
+v0235	<b>干渉が事前に見える。</b>梁を貫通するダクトは、現場ではなくモデルの中で見つかります。
+v0236	<b>図面が常に整合する。</b>平面図、断面図、集計表は同じモデルから生まれます。一か所を変えればすべてが更新されます。
+v0237	<b>分野どうしが会話できる。</b>オープンフォーマットの IFC を通じて、異なるソフトを使っていても。
+v0238	イタリアでは <strong>2025 年 1 月 1 日</strong>から、推定工事費が <strong>200 万ユーロを超える</strong><strong>新築</strong>および<strong>既存建物の改修</strong>の設計と施工において、公共発注機関はデジタル情報管理の手法とツールを使わなければなりません。
+v0239	委任立法令 36/2023 第 43 条第 1 項（委任立法令 209/2024 による改正後）
+v0240	10 年分の規格を魚の骨の形で。左から右へ、2015 年から現在まで読みます。項目をタップすると何が変わったかがわかります。UNI と ISO の規格は公式サイトで購入でき、ここに直接のリンクがあります。
+v0241	すべて
+v0242	UNI 規格
+v0243	ISO 規格
+v0244	法律、政令、ガイドライン
+v0245	BIM はどこで生まれ、どのようにイタリアに届いたのか。上は世界、1975 年の最初のアイデアから ISO 規格まで。下はイタリア、2009 年のコード化に関する最初の規格から現在の義務化まで。線は、イタリアの規格とそれが取り入れた国際規格を結んでいます。項目をタップすると詳細と情報源が見られます。
+v0246	両方
+v0247	世界のみ
+v0248	イタリアのみ
+v0249	つながりを表示
+v0250	「次元」は、形状のほかにどんな情報をモデルに加えるかを示します。3D の前には CAD の二次元図面（2D）があります。5D までは各国で合意がありますが、6D からは定義が国によって異なり、8D、9D、10D はまだ議論中の提案で、規格ではありません。そのため仕様書では、ラベルだけでなく、どんな用途とどんな情報が必要かを書くのがよいでしょう。
+v0251	<b>3D</b><span>形状モデル</span>
+v0252	<b>4D</b><span>工程</span>
+v0253	<b>5D</b><span>コスト</span>
+v0254	<b>6D</b><span>建物の維持管理</span>
+v0255	<b>7D</b><span>サステナビリティ</span>
+v0256	<b>8D</b><span>安全</span>
+v0257	<b>9D</b><span>リーン建設</span>
+v0258	<b>10D</b><span>工業化</span>
+v0259	形状モデル
+v0260	出発点となるのは、オブジェクト（壁、床スラブ、梁、配管）でできた三次元モデルです。それぞれが独自の形状と情報を持っています。ほかのすべての次元はここに乗っています。
+v0261	Revit
+v0262	Archicad
+v0263	Allplan
+v0264	Tekla Structures
+v0265	Vectorworks
+v0266	Bonsai（オープンソース、旧 BlenderBIM）
+v0267	調整用に Navisworks、Solibri
+v0268	詳しく見る
+v0269	各オブジェクトの形状、位置、材料、分類を含みます。
+v0270	平面図、断面図、集計表が同じモデルから生まれ、整合を保ちます。
+v0271	分野間で調整し、施工前に干渉を見つけます。
+v0272	<b>例。</b>梁を貫通する空調ダクトは、工事中ではなく干渉チェックで見つかります。
+v0273	情報源：<a href="https://www.designingbuildings.co.uk/wiki/BIM_dimensions" target="_blank" rel="noopener">Designing Buildings Wiki「BIM dimensions」（英語）↗</a>
+v0274	工程
+v0275	モデルのオブジェクトを工程表の作業に結びつけます。建物が時間とともに段階的に立ち上がっていく様子が見えます。
+v0276	Navisworks (TimeLiner)
+v0277	Synchro 4D
+v0278	Fuzor
+v0279	結びつける工程表には Microsoft Project や Primavera P6
+v0280	施工手順と作業段階をシミュレーションします。
+v0281	現場の計画に役立ちます：クレーン、資材置き場、動線、作業エリア。
+v0282	計画と実績を比べます。
+v0283	<b>例。</b>着工前に、週ごとにクレーンと資材の位置や、同じ場所で作業する班がわかります。
+v0284	情報源：<a href="https://www.designingbuildings.co.uk/wiki/BIM_dimensions" target="_blank" rel="noopener">Designing Buildings Wiki「BIM dimensions」（英語）↗</a>、<a href="https://aifos.org/home/news/int/interventi_commenti/bim-bum-bam---bit" target="_blank" rel="noopener">AiFOS「BIM BUM BAM… bit」（イタリア語）↗</a>
+v0285	コスト
+v0286	オブジェクトで測った数量に単価表の項目を結びつけます。積算はモデルから生まれ、モデルとともに更新されます。
+v0287	PriMus-IFC
+v0288	CostX
+v0289	RIB iTWO
+v0290	Navisworks (Quantification)
+v0291	TeamSystem CPM
+v0292	まとめにはまだこのテーマのニュースがありません。届いたら追加します。
+v0293	数量を自動で取り出し、手で数え直さない。
+v0294	設計の選択が変わったときにすばやく見積もれる。
+v0295	設計変更や出来高払いの根拠になる。
+v0296	<b>例。</b>床スラブの層構成を変えると積算が更新され、コストの差額もすでに計算されています。
+v0297	情報源：<a href="https://biblus.acca.it/modellazione-bim-5d/" target="_blank" rel="noopener">BibLus（ACCA）「Modellazione BIM 5D」（イタリア語）、2026 ↗</a>、<a href="https://www.designingbuildings.co.uk/wiki/BIM_dimensions" target="_blank" rel="noopener">Designing Buildings Wiki「BIM dimensions」（英語）↗</a>
+v0298	建物の維持管理
+v0299	BibLus が紹介する UNI 11337 の用語では、6D は完成した建物の維持管理、つまり使用、保守、ファシリティマネジメントです。注意：国際的には 6D はしばしばサステナビリティを指します。
+v0300	Autodesk Tandem
+v0301	Archibus
+v0302	Planon
+v0303	Dalux FM
+v0304	発注者は情報つきの建物を受け取ります：部材、保証、取扱説明書。
+v0305	モデルのオブジェクトをもとにした計画保全。
+v0306	運用段階を扱う ISO 19650-3 とつながります。
+v0307	<b>例。</b>自治体の技術者がモデルでボイラーの情報カードを開くと、型式、設置日、保守の期限がわかります。
+v0308	情報源：<a href="https://biblus.acca.it/modellazione-bim-5d/" target="_blank" rel="noopener">BibLus（ACCA）「Modellazione BIM 5D」（イタリア語）、2026 ↗</a>、<a href="https://aifos.org/home/news/int/interventi_commenti/bim-bum-bam---bit" target="_blank" rel="noopener">AiFOS「BIM BUM BAM… bit」（イタリア語）↗</a>、<a href="https://www.designingbuildings.co.uk/wiki/BIM_dimensions" target="_blank" rel="noopener">Designing Buildings Wiki「BIM dimensions」（英語）↗</a>
+v0309	サステナビリティ
+v0310	イタリアの用語では、7D は環境、経済、社会の持続可能性の評価です。一方、海外では 7D はしばしばファシリティマネジメントを指します。
+v0311	One Click LCA
+v0312	Tally
+v0313	Autodesk Insight
+v0314	IES VE
+v0315	DesignBuilder
+v0316	Termus
+v0317	モデルをもとにしたエネルギー解析。
+v0318	材料の数量から環境影響とライフサイクルを評価。
+v0319	設計案を環境面でも比較。
+v0320	<b>例。</b>二つのファサード案を、コストだけでなくエネルギー消費と使う材料でも比べます。
+v0321	情報源：<a href="https://biblus.acca.it/modellazione-bim-5d/" target="_blank" rel="noopener">BibLus（ACCA）「Modellazione BIM 5D」（イタリア語）、2026 ↗</a>、<a href="https://aifos.org/home/news/int/interventi_commenti/bim-bum-bam---bit" target="_blank" rel="noopener">AiFOS「BIM BUM BAM… bit」（イタリア語）↗</a>
+v0322	安全
+v0323	8D という言葉は、Imriyas Kamardeen（2010）が、設計段階から労働災害の防止に役立つ BIM（「設計による予防」prevention through design）を指して初めて使いました。今では建物の一生を通じた安全について語られています。
+v0324	段階のシミュレーションに Synchro 4D と Navisworks
+v0325	ルールによるチェックに Solibri
+v0326	安全計画に CerTus
+v0327	設計段階でリスクを見つけ、設計で取り除く。
+v0328	防護、動線、作業エリアをモデル上で計画する。
+v0329	現場だけでなく、使用中の建物のリスクも検討する。
+v0330	<b>例。</b>開口部の上にスラブを打設するまさにその週に、仮設の手すりが 4D モデルに現れます。
+v0331	情報源：<a href="https://www.ingenio-web.it/articoli/l-ottava-dimensione-del-bim-sicurezza-e-prevenzione-in-cantiere/" target="_blank" rel="noopener">Ingenio「L'ottava dimensione del BIM」（イタリア語）、2022 ↗</a>、<a href="https://aifos.org/home/news/int/interventi_commenti/bim-bum-bam---bit" target="_blank" rel="noopener">AiFOS「BIM BUM BAM… bit」（イタリア語）↗</a>
