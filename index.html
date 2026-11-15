@@ -1072,6 +1072,35 @@ body{transition:background-color .3s}
 .agp-grp button,.agp-world{font-family:var(--mono);font-size:.74rem;border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:.32rem .75rem;border-radius:999px;cursor:pointer}
 .agp-grp button[aria-pressed="true"]{background:var(--accent);color:var(--on-accent);border-color:var(--accent)}
 .agp-grp button:hover,.agp-world:hover{border-color:var(--accent)}
+/* agenda a calendario */
+.agc{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow);padding:1rem;margin:0 0 1rem;display:grid;gap:.55rem}
+.agc-top{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem}
+.agc-tit{margin:0 .3rem;font-family:var(--display);font-size:1.25rem;font-weight:750;min-width:9.5rem;text-align:center;text-transform:capitalize}
+.agc-nav,.agc-today{font:600 .9rem/1 var(--sans,system-ui);border:1px solid var(--line);background:var(--paper);color:var(--ink);border-radius:999px;min-width:2rem;height:2rem;padding:0 .7rem;cursor:pointer}
+.agc-nav:hover,.agc-today:hover{border-color:var(--k-ag)}
+.agc-leg{margin-left:auto;display:flex;flex-wrap:wrap;gap:.35rem .9rem;font-family:var(--mono);font-size:.74rem;color:var(--muted)}
+.agc-leg span{display:inline-flex;align-items:center;gap:.35rem}
+.agc i,.agc-day i{display:inline-block;width:.6rem;height:.6rem;border-radius:50%;flex:none}
+.agc .ev,.agc-day .ev{background:var(--k-ag)}.agc .wb,.agc-day .wb{background:#8a5cd6}.agc .sc,.agc-day .sc{background:var(--k-news);border-radius:2px}.agc .td,.agc-day .td{background:#2bb3a3;border-radius:2px;transform:rotate(45deg) scale(.85)}
+.agc-dow,.agc-grid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:4px}
+.agc-dow span{font-family:var(--mono);font-size:.72rem;color:var(--muted);text-align:center;text-transform:uppercase}
+.agc-c{min-height:5.6rem;border:1px solid var(--line);border-radius:8px;background:var(--paper);padding:.3rem .35rem;display:flex;flex-direction:column;gap:3px;text-align:left;font:inherit;color:inherit;cursor:pointer;overflow:hidden}
+.agc-c.out{opacity:.35}.agc-c.empty{cursor:default}
+.agc-c.has:hover,.agc-c.sel{border-color:var(--k-ag);box-shadow:0 0 0 2px color-mix(in srgb,var(--k-ag) 35%,transparent)}
+.agc-c.today .agc-n{background:var(--k-ag);color:var(--k-ag-on);border-radius:999px;padding:0 .4rem}
+.agc-n{font-family:var(--mono);font-size:.78rem;font-weight:700;align-self:flex-start}
+.agc-e{display:flex;align-items:center;gap:.3rem;font-size:.7rem;line-height:1.2;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:var(--ink)}
+.agc-e span{overflow:hidden;text-overflow:ellipsis}
+.agc-more{font-family:var(--mono);font-size:.66rem;color:var(--muted)}
+.agc-day:empty{display:none}
+.agc-day{border-top:1px solid var(--line);padding-top:.6rem;display:grid;gap:.45rem}
+.agc-day h4{margin:0;font-family:var(--display);font-size:1rem}
+.agc-day ul{list-style:none;margin:0;padding:0;display:grid;gap:.4rem}
+.agc-day li{display:grid;grid-template-columns:auto minmax(0,1fr);gap:.2rem .55rem;align-items:baseline}
+.agc-day li i{margin-top:.3rem}
+.agc-day small{grid-column:2;color:var(--muted);font-size:.82rem}
+@media (max-width:700px){.agc-c{min-height:3.2rem}.agc-e span{display:none}.agc-e{display:inline-flex}.agc-c{flex-direction:row;flex-wrap:wrap;align-content:flex-start}.agc-n{width:100%}.agc-leg{margin-left:0}}
+.lite .agc-c{transition:none}
 .agp-cols{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr) minmax(0,1fr);gap:1rem;align-items:start}
 .agp-col{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow);padding:1rem;display:grid;gap:.6rem}
 .agp-h{margin:0;font-family:var(--display);font-size:1.15rem;font-weight:750;display:flex;align-items:center;gap:.5rem}
@@ -2015,6 +2044,13 @@ section:has(>.pg-hero)>.content{position:relative;z-index:1}
       <div class="agp-bar">
         <div class="agp-grp" role="group" aria-label="Area geografica"><span class="f-lab">Area</span><span id="agp-area"></span></div>
         <div class="agp-grp" role="group" aria-label="Costo"><span class="f-lab">Costo</span><button type="button" data-pr="" aria-pressed="true">Tutti</button><button type="button" data-pr="free" aria-pressed="false">Gratuiti</button><button type="button" data-pr="paid" aria-pressed="false">A pagamento</button><button type="button" data-pr="verify" aria-pressed="false">Da verificare</button></div>
+      </div>
+      <div class="agc" id="agc" aria-label="Calendario degli appuntamenti">
+        <div class="agc-top"><button type="button" class="agc-nav" data-m="-1" aria-label="Mese precedente">‹</button><h3 class="agc-tit" id="agc-tit"></h3><button type="button" class="agc-nav" data-m="1" aria-label="Mese successivo">›</button><button type="button" class="agc-today" data-m="0">Oggi</button>
+          <span class="agc-leg"><span><i class="sc"></i>Scadenze</span><span><i class="ev"></i>Eventi</span><span><i class="wb"></i>Webinar</span><span><i class="td"></i>Giornate della tecnologia</span></span></div>
+        <div class="agc-dow" aria-hidden="true"><span>lun</span><span>mar</span><span>mer</span><span>gio</span><span>ven</span><span>sab</span><span>dom</span></div>
+        <div class="agc-grid" id="agc-grid"></div>
+        <div class="agc-day" id="agc-day" aria-live="polite"></div>
       </div>
       <div class="agp-cols">
         <div class="agp-col" id="agp-sc-box"><h3 class="agp-h"><span class="agp-i sc" aria-hidden="true"></span>Scadenze normative</h3><p class="agp-sub">Obblighi BIM che entrano in vigore, paese per paese.</p><ol class="ag-list" id="agp-sc"></ol></div>
@@ -3403,6 +3439,46 @@ function page(){if(!$("agp-ev"))return;
   var wb=L.filter(function(a){return a.k==="wb"&&cost(a)});$("agp-wb").innerHTML=wb.length?wb.map(function(a){return item(a,false)}).join(""):'<li class="ag-w agp-none">Nessun webinar con questo costo per ora.</li>'}
 document.addEventListener("click",function(e){var b=e.target.closest("#agenda [data-a]");if(b){setArea(b.dataset.a);return}
   b=e.target.closest("#agenda [data-pr]");if(b){APR=b.dataset.pr;document.querySelectorAll("#agenda [data-pr]").forEach(function(x){x.setAttribute("aria-pressed",x===b)});page()}});
+// calendario: scadenze, eventi, webinar e giornate mondiali della tecnologia (date verificate sulle pagine ONU, UNESCO, ITU, WIPO e ISO/IEC/ITU)
+var TECH=[{m:2,d:11,t:"Giornata internazionale delle donne e delle ragazze nella scienza",o:"ONU",u:"https://www.un.org/en/observances/women-and-girls-in-science-day"},
+ {m:2,d:13,t:"Giornata mondiale della radio",o:"ONU e UNESCO",u:"https://www.un.org/en/observances/radio-day"},
+ {m:3,d:4,t:"Giornata mondiale dell'ingegneria per lo sviluppo sostenibile",o:"UNESCO",u:"https://www.wfeo.org/events/world-engineering-day-2025/"},
+ {m:3,d:14,t:"Giornata internazionale della matematica",o:"UNESCO",u:"https://www.unesco.org/en/days/mathematics"},
+ {m:4,d:12,t:"Giornata internazionale del volo spaziale umano",o:"ONU",u:"https://www.un.org/en/observances/human-spaceflight-day"},
+ {m:4,d:21,t:"Giornata mondiale della creatività e dell'innovazione",o:"ONU",u:"https://www.un.org/en/observances/creativity-and-innovation-day"},
+ {m:4,nth:[4,4],t:"Giornata internazionale delle ragazze nelle ICT",o:"ITU",u:"https://www.itu.int/women-and-girls/girls-in-ict/"},
+ {m:4,d:26,t:"Giornata mondiale della proprietà intellettuale",o:"WIPO",u:"https://www.wipo.int/en/web/ipday/"},
+ {m:5,d:16,t:"Giornata internazionale della luce",o:"UNESCO",u:"https://www.unesco.org/en/days/light"},
+ {m:5,d:17,t:"Giornata mondiale delle telecomunicazioni e della società dell'informazione",o:"ONU e ITU",u:"https://www.un.org/en/observances/telecommunication-day"},
+ {m:9,d:28,t:"Giornata internazionale per l'accesso universale all'informazione",o:"ONU e UNESCO",u:"https://www.un.org/en/observances/information-access-day"},
+ {m:10,nth:[1,1],t:"Giornata mondiale dell'habitat",o:"ONU",u:"https://www.un.org/en/observances/habitat-day"},
+ {m:10,d:14,t:"Giornata mondiale della normazione",o:"ISO, IEC e ITU",u:"https://www.itu.int/hub/2025/10/standards-capture-consensus-on-technologies-for-a-better-world/"},
+ {m:10,d:31,t:"Giornata mondiale delle città",o:"ONU",u:"https://www.un.org/en/observances/cities-day"},
+ {m:11,d:10,t:"Giornata mondiale della scienza per la pace e lo sviluppo",o:"UNESCO",u:"https://www.un.org/en/observances/world-science-day"}];
+window.TECH_DAYS=TECH;
+function techDate(x,y){if(x.d)return y+"-"+("0"+x.m).slice(-2)+"-"+("0"+x.d).slice(-2);var dow=x.nth[1],n=x.nth[0],f=new Date(y,x.m-1,1),off=(dow-f.getDay()+7)%7;return y+"-"+("0"+x.m).slice(-2)+"-"+("0"+(1+off+7*(n-1))).slice(-2)}
+var CM=null,CSEL=null,MESI=["gennaio","febbraio","marzo","aprile","maggio","giugno","luglio","agosto","settembre","ottobre","novembre","dicembre"];
+function calItems(ym){var y=+ym.slice(0,4),out={},add=function(d,o){(out[d]=out[d]||[]).push(o)};
+  var cost=function(a){return !APR||a.pr===APR};
+  AGENDA.forEach(function(a){if(a.k==="ev"&&!inArea(a))return;if(!cost(a))return;var d=new Date(a.d+"T12:00:00"),e=new Date((a.e||a.d)+"T12:00:00");
+    for(var k=0;d<=e&&k<60;k++,d.setDate(d.getDate()+1)){var s=d.getFullYear()+"-"+("0"+(d.getMonth()+1)).slice(-2)+"-"+("0"+d.getDate()).slice(-2);if(s.slice(0,7)===ym)add(s,{k:a.k,t:a.t,u:a.u,w:span(a)+" · "+(a.k==="ev"?a.city:"Online, "+a.lang),pr:a.pr})}});
+  (typeof SCADENZE!=="undefined"?SCADENZE:[]).forEach(function(a){if(a.when||!inArea(a))return;if(a.d.slice(0,7)===ym)add(a.d,{k:"sc",t:a.t,u:a.u,w:scWhen(a)+" · "+(a.n||"Globale")})});
+  TECH.forEach(function(x){var d=techDate(x,y);if(d.slice(0,7)===ym)add(d,{k:"td",t:x.t,u:x.u,w:x.o})});
+  return out}
+function cal(){var g=$("agc-grid");if(!g)return;var t=today();if(!CM)CM=t.slice(0,7);
+  var y=+CM.slice(0,4),m=+CM.slice(5,7),first=new Date(y,m-1,1),start=(first.getDay()+6)%7,days=new Date(y,m,0).getDate(),IT=calItems(CM),h="";
+  $("agc-tit").textContent=MESI[m-1]+" "+y;
+  for(var i=0;i<start;i++)h+='<div class="agc-c out empty" aria-hidden="true"></div>';
+  for(var d=1;d<=days;d++){var ds=CM+"-"+("0"+d).slice(-2),L=IT[ds]||[],cls="agc-c"+(L.length?" has":" empty")+(ds===t?" today":"")+(ds===CSEL?" sel":"");
+    h+='<button type="button" class="'+cls+'" data-day="'+ds+'"'+(L.length?'':' tabindex="-1"')+' aria-label="'+d+' '+MESI[m-1]+(L.length?": "+L.length+(L.length>1?" appuntamenti":" appuntamento"):"")+'"><span class="agc-n">'+d+'</span>'+
+      L.slice(0,3).map(function(o){return '<span class="agc-e"><i class="'+o.k+'"></i><span>'+esc(o.t)+'</span></span>'}).join("")+(L.length>3?'<span class="agc-more">+'+(L.length-3)+'</span>':'')+'</button>'}
+  var tail=(7-(start+days)%7)%7;for(i=0;i<tail;i++)h+='<div class="agc-c out empty" aria-hidden="true"></div>';
+  g.innerHTML=h;showDay(CSEL&&CSEL.slice(0,7)===CM?CSEL:null,IT)}
+function showDay(ds,IT){var box=$("agc-day");if(!ds){box.innerHTML="";return}var L=(IT||calItems(ds.slice(0,7)))[ds]||[],p=ds.split("-");
+  box.innerHTML='<h4>'+(+p[2])+' '+MESI[+p[1]-1]+' '+p[0]+'</h4><ul>'+L.map(function(o){return '<li><i class="'+o.k+'"></i><a href="'+esc(o.u)+'" target="_blank" rel="noopener">'+esc(o.t)+' ↗</a><small>'+esc(o.w)+(o.pr?' · '+PR[o.pr]:'')+'</small></li>'}).join("")+'</ul>'}
+document.addEventListener("click",function(e){var b=e.target.closest("#agc [data-m]");if(b){var n=+b.dataset.m;if(!n){CM=today().slice(0,7);CSEL=null}else{var y=+CM.slice(0,4),m=+CM.slice(5,7)+n;if(m<1){m=12;y--}if(m>12){m=1;y++}CM=y+"-"+("0"+m).slice(-2)}cal();return}
+  b=e.target.closest("#agc .agc-c.has");if(b){CSEL=CSEL===b.dataset.day?null:b.dataset.day;cal()}});
+var _page=page;page=function(){_page();cal()};
 strip();page();
 })();
 
