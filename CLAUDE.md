@@ -74,7 +74,7 @@ Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato co
    - **Codice:** `assets/globo/` (`globo.js`, `mondo.json`, `citta.json`, le librerie, `LICENZE.txt`); `loadGlobe()` parte dopo `loadMap()`, solo nella versione completa.
    - **Cosa fa:** orientamento iniziale dal fuso orario; asse inclinato di 23,44°; giorno e notte reali; luci delle città; clic su un paese → volo sul paese, poi passaggio alla mappa piatta; «← Mondo» → torna il globo.
    - **Movimento:** il globo ruota soltanto, senza oscillare in su e in giù: Marco l'ha trovato brutto (15/11/2026). Rotazione continua.
-2. **Feste (animazioni stagionali): approvate da Marco il 15/11/2026, sul ramo, da pubblicare con la prossima revisione.**
+2. **Feste (animazioni stagionali): PUBBLICATE il 15/11/2026 (revisione 115) dopo il sì di Marco; la Pasqua nuova (cestino e coniglio) attende il suo sì.**
    - **Codice:** in fondo a `index.html`, blocco «feste» (CSS `.fest-*` e script). Canvas `.fest-cv` nella fascia alta della mappa della home (non nella versione essenziale), simbolo `.fest-orn` sulla «B» di `.fc-h`, pulsante `.fest-chip` in alto a destra con «Nome · Che cos'è ↗» che porta a Wikipedia nella lingua del sito (`Special:Search`).
    - **Per tutti, ovunque:** Marco ha deciso di non legarle all'area geografica né alla religione (discorso inclusivo). Se due feste coincidono si alternano un giorno l'una e un giorno l'altra.
    - **Periodi (calcolati da soli):** Natale 8/12–6/1 (neve geometrica, cappellino); Hanukkah 24 Kislev + 8 giorni (menorah, `Intl` calendario `hebrew`); Capodanno lunare dalla vigilia al 15° giorno (lanterne rosse, calendario `chinese`); Ramadan (mese 9), Eid al-Fitr (1–3 Shawwal), Eid al-Adha (10–13 Dhu al-Hijja) con mezzaluna e lanterne (`islamic-umalqura`); Pasqua cattolica e ortodossa, dalla Domenica delle Palme al Lunedì dell'Angelo (computo nel codice; rametto d'ulivo sulla «B», cestino di uova e coniglietto che ruba un uovo, richiesta di Marco).
@@ -138,7 +138,7 @@ Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato co
 
 11. **BIM in 5 minuti, «01 · Che cos'è» riscritto: PUBBLICATO il 15/11/2026 (revisione 112).** Tre passi: a mano (Palladio, 1570, MET CC0, `assets/foto/palladio-rotonda.jpg`, con credito nella Mappa del sito), il CAD (linee con attributi) e il BIM (oggetti con parametri, muro interattivo `#bim-demo`); poi «Perché cambia tutto» e «Attributo o parametro?».
 
-12. **Traduzione di TUTTE le scritte fisse (richiesta del 15/11/2026, IN CORSO).**
+12. **Traduzione di TUTTE le scritte fisse: COMPLETA in 11 lingue (revisione 115, 15/11/2026).**
    - **Esclusi:** notizie, agenda, video e articoli di BIM Accademia, perché cambiano ogni settimana.
    - **Estrazione:** `strumenti/lingue/extract.js` (Playwright su tutte le viste) → `strumenti/lingue/src/voci.json` (1198 voci, circa 105.000 caratteri) e 14 pacchetti `src/pNN.txt` («id<TAB>testo o HTML»).
    - **Traduzioni:** `strumenti/lingue/tr/<lingua>/pNN.txt`, stesso formato. Nelle voci HTML si traducono solo i testi; tag e attributi restano identici, e `compila.py` scarta le righe in cui cambiano.
@@ -150,7 +150,7 @@ Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato co
      - ritraduce le parti generate dal JS (MutationObserver, con `takeRecords` per non creare cicli);
      - con l'italiano rimette i testi originali.
    - **Pacchetti:** ora sono 16 (`p15` = voci della Mappa del sito, `p16` = la guida) e 1284 voci; in `tr/<lingua>/extra.txt` ci sono i modelli delle frasi con numeri (`§conteggio`, `§pagina`, `§articoli`, `§anno`, `§passo`, `§vedi`) e qualche voce fuori pacchetto.
-   - **Stato:** inglese e francese COMPLETI e PUBBLICATI (revisione 114). Restano de, es, pt, ru, ar, zh, ja, ko, in quest'ordine; salvare sul ramo dopo ogni pacchetto.
+   - **Stato:** tutte le 11 lingue complete (en e fr in revisione 114; de, es, pt, ru, ar, zh, ja, ko in revisione 115). Le 8 voci in meno (1221/1284) sono le domande FAQ tolte. I titoli dei libri: originali o titoli pubblicati noti; quando non ero sicuro del titolo tradotto ho lasciato l'originale. Serve comunque una revisione di madrelingua.
    - **Nelle lingue diverse dall'italiano** BIM Accademia mostra l'abstract originale inglese e le scritte della scheda in inglese (`siteIt()`).
    - **Se si cambiano testi del sito:** rilanciare `extract.js`, tradurre le voci nuove e ricompilare.
 
@@ -197,6 +197,7 @@ Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato co
   - **BIM in 5 minuti:** «Che cos'è» riscritto.
   - **Le mie proposte:** la frase «aperte ai commenti» è sostituita dal rimando a LinkedIn, per coerenza con il disclaimer.
 - **15/11/2026, revisione 113:** selettore delle lingue (11 lingue) con le scritte principali tradotte.
+- **15/11/2026, revisione 115:** sito tradotto in tutte le 11 lingue; feste stagionali (Natale, Hanukkah, Capodanno lunare, Ramadan, Eid, Vesak, Diwali) con link a Wikipedia.
 - **15/11/2026, revisione 114:** nuovo motore delle traduzioni, tutto il sito in inglese e francese; FAQ: riscritte «collaborazioni» e «paesi vuoti», tolte quattro domande (BIM & AI, BIM Accademia, eventi, video); la guida ha un passo per ogni scheda in alto (`nav:#…` in `STEPS`).
 - **Post LinkedIn:** testo preparato il 15/11/2026; consigliato martedì 17/11 alle 8:00–8:30. Marco vuole tutto pronto per martedì (traduzioni, ricerca a tappeto, appunti).
 - **«Ispirazioni»:** Marco ha mandato l'elenco dei suoi canali YouTube (screenshot, 34 canali): da verificare uno per uno e trasformare in un articolo nel curatore.
