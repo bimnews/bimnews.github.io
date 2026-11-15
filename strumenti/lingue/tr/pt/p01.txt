@@ -47,7 +47,7 @@ v0046	De que fontes, por ordem de fiabilidade
 v0047	<b>Fontes institucionais</b>, sempre admitidas: governos, ministérios, jornais oficiais, organismos de normalização (ISO, CEN, UNI, DIN e os equivalentes nacionais), secções nacionais da buildingSMART, entidades adjudicantes públicas, universidades e bancos de desenvolvimento. Cidades, regiões e províncias só contam quando dão um contributo concreto para o BIM: uma obrigação, um regulamento, uma licença de construção baseada no modelo, um programa, uma grande obra.
 v0048	<b>Imprensa de referência</b>: publicações do setor com redação, grandes jornais nacionais, agências noticiosas.
 v0049	<b>Grandes empresas</b>, só para factos de peso real, como uma grande obra entregue em BIM; nunca para apresentar um produto.
-v0050	Ficam sempre de fora blogues pessoais, sites de gabinetes ou consultores individuais, revendedores, notícias locais, publicações nas redes sociais e sites sem autor nem data. Cada notícia é verificada abrindo a sua fonte, e nada anterior a 2015 é publicado.
+v0050	Ficam sempre de fora blogues pessoais, sites de gabinetes ou consultores individuais, revendedores, notícias locais, publicações nas redes sociais e sites sem autor nem data. Cada notícia é verificada abrindo a sua fonte. As notícias começam em 2015; antes disso entram apenas os marcos fundadores dos países pioneiros, ou seja, as primeiras obrigações e normas nacionais sobre BIM, com a etiqueta «Histórico».
 v0051	As línguas em que procuramos as notícias
 v0052	Cada notícia é procurada na língua do país onde nasce, não só em inglês.
 v0053	<b>Em verificação</b>: línguas nacionais de países onde esperamos atividade BIM. Ficam na lista se trouxerem fontes válidas; caso contrário, saem.
@@ -81,7 +81,7 @@ v0080	Webinars
 v0081	O mais perto de mim
 v0082	Datas e custos verificados nas páginas dos organizadores quando os inserimos: confirme-os sempre antes de se inscrever. A sua localização fica no seu navegador e não é enviada a ninguém.
 v0083	<strong>Língua.</strong> Nas línguas diferentes do italiano, cada notícia aparece na língua da sua fonte quando coincide com a que escolheu; caso contrário, em inglês, sempre com a ligação para a fonte original.
-v0084	Arquivo: de 2015 até hoje, por ano e mês
+v0084	Arquivo: de 2015 até hoje, por ano e mês, mais os marcos históricos
 v0085	← Mais recentes
 v0086	Anteriores →
 v0087	Nenhuma notícia corresponde aos filtros. Tente outra palavra ou limpe os filtros.

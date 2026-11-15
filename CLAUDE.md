@@ -56,7 +56,7 @@ Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato co
 
 - **Principi etici NON negoziabili (Marco, 15/11/2026):** tutto deve essere gratis per chi visita il sito; nessun cookie di tracciamento (GoatCounter va bene perché non usa cookie). Gli eventi a pagamento si segnalano come tali, senza assumersene la responsabilità. Sono scritti nel riquadro `.bn-rules` di BIM News.
 - **Notizie:**
-  - solo dal 2015 in poi;
+  - dal 2015 in poi, con UNA eccezione decisa da Marco il 15/11/2026: le tappe fondative dei paesi pionieri (primi obblighi e prime norme nazionali sul BIM), con il campo `"st":1` e l'etichetta «Storico · tappa fondativa» (`STORICO` e `arch()` in index.html, tradotta nelle 11 lingue). Testi aggiornati: criteri di BIM News (v0050), titolo dell'archivio (v0084), FAQ «Perché non ci sono notizie prima del 2015?» (v0150 e `strumenti/faq.py`);
   - la mappa resta neutra;
   - nessun logo o immagine protetta: foto solo CC0 (Wikimedia Commons), icone disegnate da noi.
 - **Accesso e dati:**
@@ -193,6 +193,7 @@ Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato co
   - **BIM in breve:** «Che cos'è» riscritto.
   - **Le mie proposte:** la frase «aperte ai commenti» è sostituita dal rimando a LinkedIn, per coerenza con il disclaimer.
 - **15/11/2026, revisione 113:** selettore delle lingue (11 lingue) con le scritte principali tradotte.
+- **15/11/2026, revisione 123:** tappe fondative prima del 2015 (opzione 2 scelta da Marco): Danimarca (BEK 118/2013, BIM e IFC obbligatori nelle opere pubbliche), Finlandia (Senaatti-kiinteistöt, requisiti BIM 2007), Regno Unito (Government Construction Strategy, 31/5/2011), Stati Uniti (programma GSA 3D-4D-BIM, 2003). Le date del 1° gennaio di Finlandia e Stati Uniti sono convenzionali (spiegato nel memo). Da cercare ancora: Norvegia (Statsbygg, non verificato), Paesi Bassi (IFC nella lista «applica o spiega», data da verificare), Corea del Sud, Singapore, Svezia.
 - **15/11/2026, revisione 122:** ricerca a tappeto, primo giro sull'Europa vuota: 11 notizie (Svizzera 7, Paesi Bassi 1, Lituania 1, Estonia 2), tutte con fonte aperta e verificata.
 - **15/11/2026, revisione 121:** eliminato del tutto l'articolo «Suoni per chitarra con il modeler» (playlist Fractal): resta solo a Marco, non va mai pubblicato. Avviso «tradotto con AI, può contenere imprecisioni» nelle 10 lingue diverse dall'italiano (`#ai-tr` sopra il `main`, script in fondo alla pagina; in home da 900 px in su è sovrapposto a destra, per non spingere fuori la striscia degli eventi a 1280×650). Il task del lunedì ora cerca solo le notizie della settimana passata.
 - **15/11/2026, revisione 120:** pubblicate le anteprime approvate da Marco: agenda a calendario con 15 giornate mondiali della tecnologia; BIM in breve con linea del tempo, approfondimento su attributi e parametri e «Cosa ci riserva il futuro?». Traduzioni nel pacchetto `p19` (giorni della settimana con l'iniziale maiuscola per non confonderli con «mar» = marzo). Tolta la patch da `strumenti/anteprime/`.
