@@ -97,9 +97,11 @@ Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato co
    - **Fatto:**
      - America Latina: Messico, Costa Rica (3), Uruguay, Colombia (3), Perù (2);
      - Africa: Etiopia e Sudafrica.
+     - Europa (15/11/2026, revisione 122): Svizzera (7: KBOB 2018, piano d'azione «Svizzera digitale» con BIM obbligatorio 2021/2025, strategia BLO/ASTRA 2021 e 2024, dati nel BIM 2022, ISO 19650 2023, passaporto digitale dei prodotti 2025), Paesi Bassi (NLCS e COINS obbligatori, 2018), Lituania (BIM obbligatorio a tappe dal 2021), Estonia (requisiti BIM di RKAS 2018 e 2020). Danimarca: la norma sull'IKT è del 2013, prima del 2015, quindi esclusa; da cercare notizie successive.
    - **Cercati senza fonti istituzionali valide:** Ruanda, Nigeria, Ghana, Kenya (solo un discorso), Marocco, Algeria e Tunisia (nessun obbligo BIM), Egitto (il codice BIM esiste ma la fonte non era raggiungibile).
-   - **Restano:** Africa francofona ed Egitto in arabo; poi l'Europa scoperta (prima la Svizzera, poi Paesi Bassi, nordici, Belgio, Grecia, Romania…); poi Asia e Medio Oriente (con Singapore, India, Arabia Saudita, Turchia, Vietnam, Taiwan) e Oceania (Nuova Zelanda); infine l'approfondimento dei paesi già presenti.
-   - **Strumenti:** `strumenti/ver.py` (scarica una pagina e mostra le frasi con le parole chiave) e `strumenti/add_news.py` (aggiunge le notizie calcolando id e settimana).
+   - **Restano:** l'Europa ancora vuota (Belgio, Danimarca dopo il 2015, Svezia, Finlandia, Grecia, Romania, Lettonia, Slovacchia, Slovenia, Croazia, Bulgaria, Lussemburgo, Islanda, Serbia), poi Africa francofona ed Egitto in arabo; poi Asia e Medio Oriente (con Singapore, India, Arabia Saudita, Turchia, Vietnam, Taiwan) e Oceania (Nuova Zelanda); infine l'approfondimento dei paesi già presenti.
+   - **Notizia fuori mappa da sistemare:** n87 ha `n` = «Singapore», che non è sulla mappa (andrebbe `n` vuoto e il paese in `p`).
+   - **Strumenti:** `strumenti/sweep_add.py` (aggiunge notizie complete di te/xe/lo/tl/xl, data di raccolta 15/11/2026: aggiornala), `strumenti/ver.py` (scarica una pagina e mostra le frasi con le parole chiave) e `strumenti/add_news.py` (aggiunge le notizie calcolando id e settimana).
 6. **Tai Chi e Kung Fu: PUBBLICATO il 15/11/2026 (revisione 107), `#fuori-taichi` in Fuori dallo studio.**
    - **Immagine:** le cinque virtù (智 仁 信 勇 忍) ricostruite in HTML e CSS (`.kf-fig`), con caratteri veri in font kaishu di sistema, non come immagine.
    - **Testi:** riassunti con parole nostre dalla pagina https://www.kungfuetaichi.com/5-virt%C3%B9, con due brevi citazioni.
@@ -191,6 +193,7 @@ Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato co
   - **BIM in breve:** «Che cos'è» riscritto.
   - **Le mie proposte:** la frase «aperte ai commenti» è sostituita dal rimando a LinkedIn, per coerenza con il disclaimer.
 - **15/11/2026, revisione 113:** selettore delle lingue (11 lingue) con le scritte principali tradotte.
+- **15/11/2026, revisione 122:** ricerca a tappeto, primo giro sull'Europa vuota: 11 notizie (Svizzera 7, Paesi Bassi 1, Lituania 1, Estonia 2), tutte con fonte aperta e verificata.
 - **15/11/2026, revisione 121:** eliminato del tutto l'articolo «Suoni per chitarra con il modeler» (playlist Fractal): resta solo a Marco, non va mai pubblicato. Avviso «tradotto con AI, può contenere imprecisioni» nelle 10 lingue diverse dall'italiano (`#ai-tr` sopra il `main`, script in fondo alla pagina; in home da 900 px in su è sovrapposto a destra, per non spingere fuori la striscia degli eventi a 1280×650). Il task del lunedì ora cerca solo le notizie della settimana passata.
 - **15/11/2026, revisione 120:** pubblicate le anteprime approvate da Marco: agenda a calendario con 15 giornate mondiali della tecnologia; BIM in breve con linea del tempo, approfondimento su attributi e parametri e «Cosa ci riserva il futuro?». Traduzioni nel pacchetto `p19` (giorni della settimana con l'iniziale maiuscola per non confonderli con «mar» = marzo). Tolta la patch da `strumenti/anteprime/`.
 - **15/11/2026, revisione 119:** Tai Chi: il maestro dei maestri di Marco, Shin Dae Woung, con il sito ufficiale e i due volumi di *Scuola di kung fu*; traduzione nel pacchetto `p18`.
