@@ -1,0 +1,61 @@
+v0098	Le traduzioni sono nostre: servono ad avvicinare al mondo accademico anche chi non legge bene l'inglese, ma per citare un articolo vale sempre il testo originale. La traduzione italiana è proposta per chi ha scelto come area «Tutto il mondo» o «Europa»; con un'altra area si parte dall'abstract originale. Puoi sempre cambiare lingua con i tasti qui sopra.
+v0099	Video
+v0100	Webinar e conferenze registrati e canali che parlano di BIM: tutto gratuito e a disposizione di tutti. Li scegliamo con gli stessi criteri della rassegna: norme, standard aperti, appalti, strumenti e intelligenza artificiale.
+v0101	Tutte
+v0102	Inglese
+v0103	Tedesco
+v0104	Spagnolo
+v0105	Webinar e conferenze registrati
+v0106	Dalle università e dai centri di ricerca
+v0107	Lezioni e conferenze di professori e ricercatori di Stanford, Technion, TU München, Cambridge, UCL, Penn State, Politecnico di Torino, Politecnico di Milano e Sapienza. Dal MIT e da Harvard non abbiamo trovato, per ora, video pubblici dedicati al BIM sui loro canali.
+v0108	Canali YouTube sul BIM
+v0109	I video si aprono su YouTube: non li incorporiamo nel sito, così nessun cookie di terze parti viene caricato finché non scegli tu di guardarli. L'elenco cresce ogni settimana insieme alla rassegna; per i sottotitoli in italiano puoi usare la traduzione automatica di YouTube.
+v0110	Agenda
+v0111	Tutto quello che sta per arrivare nel mondo del BIM, in un posto solo: le scadenze delle norme, gli eventi in presenza e i webinar online. Ogni appuntamento ha il link alla pagina ufficiale, la data e il costo.
+v0112	Gratuiti
+v0113	A pagamento
+v0114	Da verificare
+v0115	<span class="agp-i sc" aria-hidden="true"></span>Scadenze normative
+v0116	Obblighi BIM che entrano in vigore, paese per paese.
+v0117	Fiere, congressi e conferenze in presenza.
+v0118	Online: si seguono da qualunque paese.
+v0119	Date, luoghi e costi sono verificati sulle pagine ufficiali quando li inseriamo: controllali sempre prima di iscriverti. Le scadenze riportano la fonte della norma o della notizia. L'area che scegli qui vale per tutto il sito: la trovi anche in alto, nella barra delle impostazioni, e resta salvata solo nel tuo browser.
+v0120	Domande frequenti
+v0121	Le domande che ci si pone esplorando BIM News: che cosa trovi nelle varie pagine, come scegliamo le notizie, in che lingue cerchiamo, come si usa il sito.
+v0122	Cerca tra le domande
+v0123	Il sito
+v0124	Chi gestisce questo sito?
+v0125	Il sito è gestito dall'ingegner Marco Scigliuolo ed è generato tramite Claude, l'assistente di intelligenza artificiale di Anthropic. Nella pagina <a href="#chi-sono">Il curatore</a> trovi profilo, portfolio, manuali e progetti.
+v0126	Come vengono aggiornate le notizie e quanto sono attendibili?
+v0127	Le notizie vengono aggiornate ogni settimana, il lunedì, in modo completamente automatico: la ricerca la svolge Claude seguendo criteri precisi stabiliti dall'autore, cioè quali fonti sono ammesse, quali temi contano, in quali lingue cercare e che cosa verificare prima di pubblicare. Li trovi nelle risposte qui sotto. Ogni notizia riporta il link alla fonte originale: per una decisione importante, fai sempre riferimento a quella.
+v0128	Come posso contattare l'autore?
+v0129	Tramite <a href="https://www.linkedin.com/in/marco-scigliuolo/" target="_blank" rel="noopener">LinkedIn ↗</a>. <b>Nota bene:</b> il sito è curato da una sola persona, quindi l'autore non sempre riesce a rispondere subito alle domande.
+v0130	L'autore è aperto a collaborazioni?
+v0131	Per ora no. In questo momento l'autore non accetta collaborazioni di tipo economico, perché il sito è gestito principalmente con il suo piano Pro di Claude, e non cerca collaborazioni esterne sul sito. Accetta invece sponsorizzazioni che servano a passare a un piano con più token, se si vuole aiutare ad ampliare il sito: in quel caso, parliamone su <a href="https://www.linkedin.com/in/marco-scigliuolo/" target="_blank" rel="noopener">LinkedIn ↗</a>. Il sito è una passione, un piccolo hobby: andrà avanti finché sarà sostenibile, sia economicamente sia per il tempo che il curatore può dedicargli.
+v0132	Chi sovvenziona o sponsorizza il sito?
+v0133	Per ora nessuno. Il sito non ha sponsor, pubblicità né finanziamenti: tutte le spese sono a carico del curatore, cioè l'abbonamento al piano Pro di Claude con cui il sito viene generato e aggiornato, e il tempo che il curatore dedica a gestirlo. Il sito è ospitato gratuitamente su GitHub Pages. Le sponsorizzazioni sono benvenute per un solo scopo: passare a un piano di Claude con più token, per ampliare il sito. Se ti interessa, parliamone.
+v0134	Che cos'è BIM News?
+v0135	Una rassegna settimanale sul BIM (Building Information Modeling, il metodo di progettare e gestire le opere con un modello digitale fatto di oggetti che portano con sé le loro informazioni). Raccoglie le notizie da tutto il mondo, le riassume in italiano, le colloca sulla mappa e mette sempre il link alla fonte. Accanto alle notizie ci sono una guida per chi comincia, le ricerche universitarie tradotte, video, agenda e manuali.
+v0136	Devo registrarmi o pagare?
+v0137	No. Il sito è gratuito e senza registrazione.
+v0138	Le notizie
+v0139	Da dove arrivano le notizie?
+v0140	Da tre tipi di fonti. Le <b>fonti istituzionali</b>: governi, ministeri, gazzette ufficiali, enti normativi, sezioni nazionali di buildingSMART, stazioni appaltanti, università, banche di sviluppo; città, regioni e province solo quando danno un contributo concreto, come un obbligo, un regolamento o una grande opera. La <b>stampa autorevole</b>: testate di settore con redazione, grandi quotidiani nazionali, agenzie di stampa. Le <b>grandi aziende</b>, solo per fatti di peso reale e mai per pubblicità. Restano fuori blog personali, siti di singoli studi, rivenditori, cronaca locale e social.
+v0141	Come scegliete che cosa pubblicare?
+v0142	Pubblichiamo un fatto quando cambia qualcosa per chi progetta o costruisce in quel paese: strategie nazionali e obblighi, norme adottate, grandi opere pubbliche in BIM, primi progetti pilota, eventi di riferimento. Il criterio di fondo è l'inclusività: a parità di interesse scegliamo la notizia che aiuta qualcuno a cominciare. I dettagli sono nel riquadro «Come scegliamo le notizie» di <a href="#bim-news">BIM News</a>.
+v0143	Perché sulla mappa alcuni paesi sono ancora vuoti?
+v0144	Perché la ricerca non li ha ancora raggiunti, non perché lì il BIM manchi. È in corso una ricerca a tappeto, area per area, nella lingua di ogni paese; ogni settimana una parte del lavoro va ai paesi ancora vuoti.
+v0145	Che cosa indicano i numeri sulla mappa?
+v0146	Quante notizie ci sono per continente, paese o regione. Tocca un continente, poi un paese e una regione per vedere le notizie di quel luogo.
+v0147	Perché alcune notizie hanno l'etichetta «Archivio»?
+v0148	Sono notizie che abbiamo raccolto più di sette giorni dopo la loro uscita, per completare la storia di un paese o di una norma.
+v0149	Perché non ci sono notizie prima del 2015?
+v0150	Il 2015 è l'anno in cui è uscita la prima parte della UNI 11337, la serie di norme italiane sul BIM. Lo usiamo come punto di partenza comune per tutto il mondo.
+v0151	Che cosa trovo in BIM & AI?
+v0152	Le notizie in cui il tema principale è l'intelligenza artificiale applicata al BIM e alle costruzioni, con la stessa mappa e gli stessi filtri di BIM News.
+v0153	Le lingue della ricerca
+v0154	In che lingue cercate le notizie?
+v0155	Cerchiamo ogni notizia nella lingua del paese in cui nasce, non solo in inglese. Qui sotto trovi le lingue in cui cerchiamo e quelle che stiamo verificando.
+v0156	Sono le lingue nazionali di paesi in cui ci aspettiamo attività sul BIM. Le cerchiamo una per una: se dopo ricerche serie non troviamo fonti adatte, la lingua esce dall'elenco; se le troviamo, passa tra quelle qui sopra.
+v0157	Come avete scelto queste lingue?
+v0158	Nel mondo si parlano circa 7.100–7.200 lingue: è l'ordine di grandezza indicato da Ethnologue, il catalogo di riferimento. Solo una piccola parte ha contenuti digitali su temi tecnici. Per misurarlo abbiamo usato un indicatore pubblico e verificabile: le edizioni di Wikipedia. Wikipedia ha 348 edizioni linguistiche attive; la voce sull'intelligenza artificiale c'è in 185, quella sul BIM in 38. Le lingue con la voce sul BIM (tolto l'esperanto, che non ha un paese di riferimento) sono il punto di partenza della ricerca. A queste aggiungiamo, in verifica, le lingue nazionali dei paesi dove ci aspettiamo attività. Dati rilevati a novembre 2026.

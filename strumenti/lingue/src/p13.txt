@@ -1,0 +1,265 @@
+v0917	09 · Le certificazioni nel mondo
+v0918	Obbligatoria nelle opere pubbliche
+v0919	Volontaria
+v0920	Requisiti di formazione ed esperienza
+v0921	Volontaria, per le organizzazioni
+v0922	Profilo
+v0923	Chi sono, percorso, competenze e strumenti
+v0924	I progetti a cui ho lavorato
+v0925	Problemi, soluzioni e manuali per chi progetta
+v0926	Le mie proposte
+v0927	Idee per il mondo del BIM
+v0928	I lavori in corso
+v0929	Passioni, riflessioni e manuali non professionali
+v0930	I libri che mi hanno formato
+v0931	Leggi su Academia ↗
+v0932	Tesi di laurea · 2018
+v0933	Rigenerazione urbana
+v0934	Il curatore · Portfolio
+v0935	Revit · dati
+v0936	AutoCAD · AutoLISP
+v0937	Impianti elettrici
+v0938	Energia · CasaClima
+v0939	Script · Excel
+v0940	IFC · esperimento
+v0941	Lavoro · metodo
+v0942	IFC · strumenti
+v0943	IFC · versioni
+v0944	IFC · interoperabilità
+v0945	Sito · manuali
+v0946	Psicologia · 1976
+v0947	Dove trovarlo · IBS ↗
+v0948	Scheda dell'editore · Rizzoli ↗
+v0949	Your Erroneous Zones · Wikipedia ↗
+v0950	Psicologia · 2024–2026
+v0951	Dove trovarli · pagina dell'autrice ↗
+v0952	Gabriella Tupini Official · YouTube ↗
+v0953	Elenco dei libri · Goodreads ↗
+v0954	Psicologia · Terapia breve strategica
+v0955	Dove trovarli · IBS ↗
+v0956	Centro di Terapia Strategica · Arezzo ↗
+v0957	Crescita personale · 2000
+v0958	Psicologia · 1995–1998
+v0959	Intelligenza emotiva · IBS ↗
+v0960	Lavorare con intelligenza emotiva · IBS ↗
+v0961	Daniel Goleman · sito dell'autore ↗
+v0962	Romanzo · 1906
+v0963	Testo originale gratuito · Project Gutenberg ↗
+v0964	Zanna Bianca · Wikipedia ↗
+v0965	Romanzo · 1864
+v0966	Testo gratuito in italiano · Liber Liber ↗
+v0967	Viaggio al centro della Terra · Wikipedia ↗
+v0968	Poesia · 1929–1938
+v0969	Antonia Pozzi · Wikipedia ↗
+v0970	«Desiderio di cose leggere» · analisi ↗
+v0971	Desiderio di cose leggere
+v0972	Giuncheto lieve biondo come un campo di spighe presso il lago celeste e le case di un’isola lontana color di vela pronte a salpare – Desiderio di cose leggere nel cuore che pesa come pietra dentro una barca – Ma giungerà una sera a queste rive l’anima liberata: senza piegare i giunchi senza muovere l’acqua o l’aria salperà – con le case dell’isola lontana, per un’alta scogliera di stelle –
+v0973	1° febbraio 1934
+v0974	Saggistica · 2018
+v0975	Atomic Habits · sito dell'autore ↗
+v0976	Saggistica · 2022
+v0977	Steve Magness · sito dell'autore ↗
+v0978	Saggistica · 2016
+v0979	Cal Newport · sito dell'autore ↗
+v0980	Saggistica · 1998
+v0981	Robert Greene · sito dell'autore ↗
+v0982	Saggistica · Alimentazione
+v0983	La dieta termodinamica · IBS ↗
+v0984	L'intestino felice · IBS ↗
+v0985	Dario Bressanini · YouTube ↗
+v0986	Fotografia · 2017
+v0987	La mostra a Bari · Giornale Armonia ↗
+v0988	La mostra a Foggia · Il Mattino di Foggia ↗
+v0989	Fotografia · 2007
+v0990	Michael Freeman · Wikipedia ↗
+v0991	Economia · For Dummies
+v0992	Scheda dell'editore · Hoepli ↗
+v0993	Economia · 2020
+v0994	Contatti
+v0995	Privacy
+v0996	Nessun cookie. <a href="#mappa" data-goto-art="visite">Statistiche anonime</a> con GoatCounter.
+v0997	Chiudi la guida
+v0998	Passo precedente
+v0999	Impostazioni del sito
+v1000	Una visita guidata della pagina iniziale
+v1001	Passa alla versione essenziale: per connessioni lente, scarica solo testi e notizie, senza mappa, animazioni, illustrazioni e font
+v1002	Torna alla home
+v1003	Sezioni
+v1004	Data e ora di oggi
+v1005	Cerca un paese, una regione, una città o un tema…
+v1006	Cerca un paese, una regione, una città o un tema
+v1007	Suggerimenti
+v1008	Mappa del mondo: tocca un continente, una nazione e poi una regione o uno stato per avvicinarti e filtrare le notizie
+v1009	Regioni e stati
+v1010	Zoom della mappa
+v1011	Avvicina
+v1012	Allontana
+v1013	Regioni
+v1014	Prossimi appuntamenti
+v1015	BIM World Munich 2026
+v1016	Biglietto gratuito con il codice di un partner (ad es. Bayern Innovativ)
+v1017	Big 5 Global 2026
+v1018	Biglietto a pagamento; gratuito con l'invito di un espositore
+v1019	BIMbrunch online · Archicad
+v1020	Gratuito, con prenotazione
+v1021	Repubblica Ceca: BIM obbligatorio nei grandi progetti pubblici
+v1022	Viste di BIM News
+v1023	Illustrazione: un edificio in costruzione, con i piani bassi già realizzati e quelli alti ancora come modello BIM, una gru e due cartellini con le informazioni degli elementi
+v1024	Che cos'è BIM News e che cosa non è
+v1025	Filtri, eventi e webinar
+v1026	es. IFC, Revit, capitolato
+v1027	Tipo
+v1028	Costo da verificare sul sito
+v1029	Gratuita
+v1030	Costo del biglietto da verificare sul sito
+v1031	Vai al mese
+v1032	Pagine dell'archivio
+v1033	titolo, autore, rivista, parola dell'abstract
+v1034	Lingua dell'abstract
+v1035	Costo da verificare: la pagina non lo indica
+v1036	A pagamento: 1.695 $ per i soci, 2.075 $ per gli altri
+v1037	per esempio: lingue, mappa, traduzioni
+v1038	Apri o chiudi: Il sito
+v1039	Apri o chiudi: BIM News
+v1040	Apri o chiudi: BIM in 5 minuti
+v1041	Apri o chiudi: Video
+v1042	Apri o chiudi: Agenda
+v1043	Apri o chiudi: Il curatore
+v1044	Apri o chiudi: Nello studio
+v1045	Apri o chiudi: Fuori dallo studio
+v1046	Apri o chiudi: I miei libri
+v1047	Apri o chiudi: FAQ
+v1048	In questa pagina
+v1049	Pianta e sezione della Villa Rotonda, incisione dai Quattro libri dell'architettura di Andrea Palladio, 1570
+v1050	Nel CAD una parete è fatta di quattro linee; a una linea si possono dare attributi come layer, colore e tipo di linea
+v1051	Nel BIM la parete è un oggetto 3D governato da parametri: cambiando lunghezza e altezza si aggiornano superficie e volume
+v1052	Il modello accompagna l'opera in tutte le fasi
+v1053	Tipo di documento
+v1054	Indietro nel tempo
+v1055	Timeline delle norme, scorrevole in orizzontale
+v1056	Avanti nel tempo
+v1057	Linee da mostrare
+v1058	Timeline mondo e Italia, scorrevole in orizzontale
+v1059	Charles M. Eastman, «The Use of Computers Instead of Drawings in Building Design»
+v1060	G.A. van Nederveen, F.P. Tolman, «Modelling multiple views on buildings»
+v1061	Industry Alliance for Interoperability
+v1062	IFC 1.0
+v1063	buildingSMART
+v1064	ISO/PAS 16739:2005
+v1065	ISO 29481-1:2010
+v1066	Government Construction Strategy
+v1067	ISO 16739:2013
+v1068	PAS 1192-2:2013
+v1069	Direttiva 2014/24/UE, art. 22, par. 4
+v1070	EU BIM Task Group, Handbook
+v1071	ISO 19650-1 e -2:2018
+v1072	ISO 19650-3 e -5:2020
+v1073	ISO 19650-4:2022
+v1074	ISO 16739-1:2024 e ISO 7817-1:2024
+v1075	ISO 19650-6:2025
+v1076	UNI 11337:2009
+v1077	UNI/TS 11337-3:2015
+v1078	D.Lgs. 50/2016, art. 23, c. 13
+v1079	UNI 11337-1, -4, -5:2017
+v1080	UNI/TR 11337-6:2017
+v1081	UNI 11337-7:2018
+v1082	UNI EN ISO 19650-1 e -2:2019
+v1083	UNI/PdR 78:2020
+v1084	UNI EN ISO 19650-5:2020
+v1085	UNI EN ISO 19650-3:2021
+v1086	UNI/TR 11337-2:2021
+v1087	UNI EN ISO 19650-4:2022
+v1088	D.Lgs. 36/2023, art. 43 e Allegato I.9
+v1089	UNI EN ISO 16739-1:2024
+v1090	UNI EN ISO 7817-1:2024
+v1091	D.Lgs. 209/2024 (correttivo)
+v1092	Obbligo in vigore
+v1093	UNI EN ISO 19650-6:2025
+v1094	Linee guida MIT
+v1095	UNI 11337-8:2026
+v1096	Vai a una dimensione
+v1097	Illustrazione della dimensione 3D: il modello geometrico
+v1098	Illustrazione della dimensione 4D: i tempi
+v1099	Illustrazione della dimensione 5D: i costi
+v1100	Illustrazione della dimensione 6D: la gestione dell'opera
+v1101	Illustrazione della dimensione 7D: la sostenibilità
+v1102	Illustrazione della dimensione 8D: la sicurezza
+v1103	Illustrazione della dimensione 9D: la costruzione snella
+v1104	Illustrazione della dimensione 10D: l'industrializzazione
+v1105	Sottosezioni del curatore
+v1106	Tipo di tappa
+v1107	Chiudi: Guida: AutoCAD 2026, xrif e stampa
+v1108	Chiudi: Property Set per l'export IFC da Revit
+v1109	Chiudi: Sostituire l'IFC collegato con Dynamo
+v1110	Animazione: APPLOAD, scelta del file .lsp, Carica, poi il comando SOSTXRIF
+v1111	Chiudi: AutoCAD 2026: xrif e stampa
+v1112	Chiudi: Progettazione elettrica con i-project
+v1113	Chiudi: Linguaggi di programmazione per chi lavora nel BIM
+v1114	Fase attuale: sviluppo
+v1115	Fase attuale: idea
+v1116	Fase attuale: bozza
+v1117	Chiudi: Lo scautismo
+v1118	Le cinque virtù del Kung Fu
+v1119	Chiudi: Tai Chi e Kung Fu
+v1120	Chiudi: Le vostre zone erronee
+v1121	Chiudi: I libri di Gabriella Tupini
+v1122	Chiudi: I libri di Giorgio Nardone
+v1123	Chiudi: Le 5 ferite e come guarirle
+v1124	Chiudi: L'intelligenza emotiva di Daniel Goleman
+v1125	Chiudi: Crescita personale e psicologia
+v1126	Chiudi: Zanna Bianca
+v1127	Chiudi: Viaggio al centro della Terra
+v1128	Chiudi: Romanzi
+v1129	Chiudi: Parole
+v1130	Chiudi: Poesia
+v1131	Chiudi: Atomic Habits
+v1132	Chiudi: Do Hard Things
+v1133	Chiudi: Deep Work
+v1134	Chiudi: Le 48 leggi del potere
+v1135	Chiudi: Alimentazione: la fisica e la biologia
+v1136	Chiudi: Saggistica
+v1137	Chiudi: Il mio Regio Tratturo
+v1138	Chiudi: L'occhio del fotografo
+v1139	Chiudi: Arte e fotografia
+v1140	Chiudi: Capire l'economia For Dummies
+v1141	Chiudi: La psicologia dei soldi
+v1142	Chiudi: Economia
+v1143	Altre sezioni del sito
+v1144	febbraio
+v1145	marzo
+v1146	aprile
+v1147	maggio
+v1148	giugno
+v1149	agosto
+v1150	dicembre
+v1151	12 notizie in 10 settimane, 7 mesi
+v1152	Pagina 1 di 3
+v1153	Adozione del BIM
+v1154	Beni culturali (HBIM)
+v1155	Costi (5D)
+v1156	GIS
+v1157	Gemello digitale e IoT
+v1158	Gestione e facility management
+v1159	Intelligenza artificiale
+v1160	Interoperabilità e IFC
+v1161	Lean construction
+v1162	Prefabbricazione e offsite
+v1163	Revisione della letteratura
+v1164	Sicurezza
+v1165	Sostenibilità ed energia
+v1166	Strutture
+v1167	Tempi (4D)
+v1168	Verifica normativa
+v1169	59 articoli
+v1170	Articoli per anno di pubblicazione · tocca una barra per filtrare, di nuovo per togliere il filtro
+v1171	2015: 2 articoli, filtra
+v1172	2016: 3 articoli, filtra
+v1173	2017: 2 articoli, filtra
+v1174	2018: 2 articoli, filtra
+v1175	2019: 4 articoli, filtra
+v1176	2020: 8 articoli, filtra
+v1177	2021: 10 articoli, filtra
+v1178	2022: 8 articoli, filtra
+v1179	2023: 10 articoli, filtra
+v1180	2024: 6 articoli, filtra
+v1181	2025: 4 articoli, filtra
