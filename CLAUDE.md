@@ -168,4 +168,4 @@ Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato co
   - **BIM in 5 minuti:** «Che cos'è» riscritto.
   - **Le mie proposte:** la frase «aperte ai commenti» è sostituita dal rimando a LinkedIn, per coerenza con il disclaimer.
 - **15/11/2026, revisione 113:** selettore delle lingue (11 lingue) con le scritte principali tradotte.
-- **15/11/2026:** il sito passa all'organizzazione «bimnews» e all'indirizzo https://bimnews.github.io/; aggiornati README, CLAUDE.md, i percorsi negli script di `strumenti/` e i testi dei due task. Da fare, se Marco lo vuole: un repository `mscigliuolo/mscigliuolo.github.io` con una sola pagina che rimanda a bimnews.github.io, per i link già condivisi.
+- **15/11/2026:** il sito passa all'organizzazione «bimnews» e all'indirizzo https://bimnews.github.io/; aggiornati README, CLAUDE.md, i percorsi negli script di `strumenti/` e i testi dei due task. Niente pagina di rinvio dal vecchio indirizzo: Marco non la vuole, perché il sito l'hanno visto ancora in pochi. Prossimo passo: Marco fa un controllo finale, dice che cosa aggiungere, poi diffonde il sito.
