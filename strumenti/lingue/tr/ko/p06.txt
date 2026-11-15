@@ -1,0 +1,85 @@
+v0406	스페인
+v0407	2023년 6월 27일 각료회의가 승인한 BIM 계획(Plan BIM)은 국가 행정기관에 의무이며, 2024년부터 2030년까지 단계적으로 도입됩니다. 개인 자격증은 요구하지 않습니다. 가장 높은 단계에서는 계약에 참여하는 모든 인원이 UNE-EN ISO 19650에 따른 교육을 받아야 하고, BIM 계약 경력이 3년 이상인 BIM 책임자가 필요합니다.
+v0408	Plan de Incorporación de la Metodología BIM en la contratación pública (CIBIM, 2023)
+v0409	<a href="https://public-buyers-community.ec.europa.eu/system/files/2024-02/Executive%20Summary%20_EN%20A4%20web.pdf" target="_blank" rel="noopener">Plan BIM 요약(유럽연합 집행위원회, 영어) ↗</a>
+v0410	영국
+v0411	이곳에서는 주로 조직, 즉 기업이 ISO 19650-2에 따라 정보를 관리하는 능력을 인증합니다. BRE의 제도는 2022년부터 UKAS로부터 ISO/IEC 17065에 따라 인정받았으며, 세계에서 가장 먼저 이 인정을 받은 BIM 제도 가운데 하나입니다. BSI는 BIM 카이트마크를 발급합니다.
+v0412	ISO 19650-2:2018 · ISO/IEC 17065:2012
+v0413	<a href="https://bregroup.com/press-releases/bre-bim-certification-ukas-accreditation" target="_blank" rel="noopener">BRE, UKAS 인정(영어) ↗</a>
+v0414	독일
+v0415	지침 VDI/bS 2552 Blatt 8.1이 BIM 기초 지식을 정합니다. buildingSMART Deutschland와 VDI가 이를 따르는 과정을 인정하며, 최종 시험은 buildingSMART International의 온라인 시험입니다.
+v0416	VDI/bS 2552 Blatt 8.1(BIM, 자격, 기초 지식)
+v0417	<a href="https://www.baulinks.de/bausoftware/2018/0092.php4" target="_blank" rel="noopener">자격 제도 출범, 2018년(독일어) ↗</a>
+v0418	국제 · buildingSMART
+v0419	buildingSMART International의 Professional Certification은 openBIM 지식을 인증합니다. 기초 단계(Foundation)와 심화 단계(Practitioner)가 있습니다. 운영은 각국 지부가 맡으며, 다른 단계를 더할 수도 있습니다. 캐나다에는 네 단계가 있습니다.
+v0420	buildingSMART Professional Certification
+v0421	<a href="https://buildingsmartcanada.ca/certification/" target="_blank" rel="noopener">buildingSMART Canada, 단계(영어) ↗</a>
+v0422	출처는 2026년 11월에 확인했습니다. 의무는 바뀝니다. 입찰 전에 공고와 현행 규정을 확인하세요. 다른 나라는 전수 조사를 통해 추가됩니다.
+v0423	운영자
+v0424	BIM News를 운영하는 사람. 여기서는 한발 물러나 프로필, 포트폴리오, 일에 대한 생각, BIM 분야를 위한 제안, 진행 중인 작업, 그리고 몇 가지 개인적인 생각을 소개합니다.
+v0425	저는 Marco Scigliuolo, 자격을 갖춘 토목 엔지니어입니다. 바리 공과대학교에서 공부했고 한동안 교사로 일한 뒤 엔지니어 일에 전념했습니다. 예전에는 업계 기업에서 대형 인프라를 다뤘습니다. 지금은 주로 학교와 공공 청사의 설비 설계를 하고 있습니다(현재 남티롤의 한 사무소).
+v0426	인증받은 BIM 코디네이터이자 설계 및 시공 단계 안전 코디네이터(CSP/CSE)이며, 최근 ISO 9001 선임 심사원이 되었습니다.
+v0427	제 목표는 BIM 매니저가 되어 모델의 정보 관리 전체를 맡는 것입니다.
+v0428	BIM News를 운영합니다. 뉴스를 찾고, 출처에서 확인하고, 요약을 씁니다.
+v0429	간단히
+v0430	현재
+v0431	설비 설계자 · BIM 코디네이터 및 MEP 스페셜리스트<br><small>Baubüro · 볼차노, 2026년부터</small>
+v0432	자격
+v0433	건축공학·건축학 석사<br><small>바리 공과대학교</small>
+v0434	자격 등록
+v0435	목표
+v0436	BIM 매니저
+v0437	이력서
+v0438	자격을 갖춘 토목 엔지니어로서 전기, 냉난방·위생, 소방 설비의 설계와 BIM 모델링, 그리고 설계에 적용되는 디지털 프로세스를 다룹니다. Revit의 MEP 모델, 파라메트릭 패밀리, Dynamo 자동화, IFC 상호운용, 물량 산출과 설계 문서. 설비 설계, 공사 기성 관리, 조명 계산, CasaClima 방식의 에너지 효율 분야로 역량을 넓히고 있으며, BIM 조율과 프로세스 최적화를 목표로 합니다.
+v0439	가장 최근 단계부터 본 제 경력. 단계를 누르면 자세한 내용을 읽을 수 있습니다.
+v0440	일
+v0441	교육
+v0442	2026/02 – 현재
+v0443	설비 설계자 · BIM 코디네이터/MEP 스페셜리스트
+v0444	Baubüro · 볼차노
+v0445	<span class="tl-date">2026/02 – 현재</span><span class="tl-name"><b>설비 설계자 · BIM 코디네이터/MEP 스페셜리스트</b><span>Baubüro · 볼차노</span></span><span class="tl-kind">일</span>
+v0446	ICMQ 인증 BIM 코디네이터
+v0447	인증 번호 26-01646 · UNI 11337-7, UNI/PdR 78:2020
+v0448	자격
+v0449	<span class="tl-date">2026/06</span><span class="tl-name"><b>ICMQ 인증 BIM 코디네이터</b><span>인증 번호 26-01646 · UNI 11337-7, UNI/PdR 78:2020</span></span><span class="tl-kind">자격</span>
+v0450	교육 과정
+v0451	<span class="tl-date">2026</span><span class="tl-name"><b>BIM Manager</b><span>교육 과정</span></span><span class="tl-kind">연수</span>
+v0452	ISO 9001 선임 심사원
+v0453	품질경영시스템
+v0454	<span class="tl-date">2026</span><span class="tl-name"><b>ISO 9001 선임 심사원</b><span>품질경영시스템</span></span><span class="tl-kind">자격</span>
+v0455	안전 코디네이터(CSP/CSE)
+v0456	자격 과정 · 입법령 81/2008
+v0457	<span class="tl-date">2025</span><span class="tl-name"><b>안전 코디네이터(CSP/CSE)</b><span>자격 과정 · 입법령 81/2008</span></span><span class="tl-kind">자격</span>
+v0458	BIM MEP
+v0459	<span class="tl-date">2025</span><span class="tl-name"><b>BIM MEP</b><span>교육 과정</span></span><span class="tl-kind">연수</span>
+v0460	품질 책임자 · 현장 기술자
+v0461	Strabag SpA · 볼차노
+v0462	<span class="tl-date">2024/09 – 2026/01</span><span class="tl-name"><b>품질 책임자 · 현장 기술자</b><span>Strabag SpA · 볼차노</span></span><span class="tl-kind">일</span>
+v0463	ICMQ 인증 BIM 스페셜리스트 · 건축 분야
+v0464	인증 번호 24-01010 · UNI 11337-7, UNI/PdR 78:2020
+v0465	<span class="tl-date">2024</span><span class="tl-name"><b>ICMQ 인증 BIM 스페셜리스트 · 건축 분야</b><span>인증 번호 24-01010 · UNI 11337-7, UNI/PdR 78:2020</span></span><span class="tl-kind">자격</span>
+v0466	Autodesk Civil 3D
+v0467	<span class="tl-date">2024</span><span class="tl-name"><b>Autodesk Civil 3D</b><span>교육 과정</span></span><span class="tl-kind">연수</span>
+v0468	BIM Coordinator
+v0469	<span class="tl-date">2023</span><span class="tl-name"><b>BIM Coordinator</b><span>교육 과정</span></span><span class="tl-kind">연수</span>
+v0470	고등학교 교사
+v0471	IISS Galilei, ITE Battisti, ITE Walther, ITCAT Delai · 볼차노
+v0472	<span class="tl-date">2019/09 – 2024/08</span><span class="tl-name"><b>고등학교 교사</b><span>IISS Galilei, ITE Battisti, ITE Walther, ITCAT Delai · 볼차노</span></span><span class="tl-kind">교육</span>
+v0473	BIM 스페셜리스트 마스터 과정
+v0474	전문 연수 마스터 과정
+v0475	<span class="tl-date">2020</span><span class="tl-name"><b>BIM 스페셜리스트 마스터 과정</b><span>전문 연수 마스터 과정</span></span><span class="tl-kind">연수</span>
+v0476	엔지니어 자격 등록
+v0477	국가시험 · 토목·환경 분야
+v0478	<span class="tl-date">2019</span><span class="tl-name"><b>엔지니어 자격 등록</b><span>국가시험 · 토목·환경 분야</span></span><span class="tl-kind">자격</span>
+v0479	BIM 스페셜리스트
+v0480	IG&P · 바리
+v0481	<span class="tl-date">2019/01 – 2019/09</span><span class="tl-name"><b>BIM 스페셜리스트</b><span>IG&amp;P · 바리</span></span><span class="tl-kind">일</span>
+v0482	ECDL CAD 2D·3D
+v0483	AICA 인증
+v0484	<span class="tl-date">2018</span><span class="tl-name"><b>ECDL CAD 2D·3D</b><span>AICA 인증</span></span><span class="tl-kind">자격</span>
+v0485	건축공학·건축학 석사
+v0486	바리 공과대학교
+v0487	<span class="tl-date">2009 – 2018/12</span><span class="tl-name"><b>건축공학·건축학 석사</b><span>바리 공과대학교</span></span><span class="tl-kind">연수</span>
+v0488	측량건축기사(geometra) 자격 등록
+v0489	국가시험
+v0490	<span class="tl-date">2011</span><span class="tl-name"><b>측량건축기사(geometra) 자격 등록</b><span>국가시험</span></span><span class="tl-kind">자격</span>

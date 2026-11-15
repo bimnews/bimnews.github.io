@@ -1,0 +1,85 @@
+v0406	Espanha
+v0407	O Plan BIM, aprovado pelo Conselho de Ministros a 27 de junho de 2023, é obrigatório para a administração do Estado e chega por níveis de 2024 a 2030. Não exige certificados pessoais: nos níveis mais altos todo o pessoal do contrato tem de ter formação segundo a UNE-EN ISO 19650 e é preciso um responsável BIM com pelo menos 3 anos de experiência em contratos BIM.
+v0408	Plan de Incorporación de la Metodología BIM en la contratación pública (CIBIM, 2023)
+v0409	<a href="https://public-buyers-community.ec.europa.eu/system/files/2024-02/Executive%20Summary%20_EN%20A4%20web.pdf" target="_blank" rel="noopener">Resumo do Plan BIM (Comissão Europeia, em inglês) ↗</a>
+v0410	Reino Unido
+v0411	Aqui certificam-se sobretudo as organizações, ou seja, a capacidade de uma empresa gerir a informação segundo a ISO 19650-2. O esquema da BRE está acreditado pelo UKAS desde 2022 segundo a ISO/IEC 17065, um dos primeiros esquemas BIM do mundo a tê-lo; a BSI atribui o seu Kitemark para o BIM.
+v0412	ISO 19650-2:2018 · ISO/IEC 17065:2012
+v0413	<a href="https://bregroup.com/press-releases/bre-bim-certification-ukas-accreditation" target="_blank" rel="noopener">BRE, acreditação UKAS (em inglês) ↗</a>
+v0414	Alemanha
+v0415	A diretriz VDI/bS 2552 Blatt 8.1 fixa os conhecimentos básicos sobre o BIM. A buildingSMART Deutschland e a VDI reconhecem os cursos que a respeitam, e o exame final é o exame online da buildingSMART International.
+v0416	VDI/bS 2552 Blatt 8.1 (BIM, qualificações, conhecimentos básicos)
+v0417	<a href="https://www.baulinks.de/bausoftware/2018/0092.php4" target="_blank" rel="noopener">Lançamento do certificado, 2018 (em alemão) ↗</a>
+v0418	Internacional · buildingSMART
+v0419	A Professional Certification da buildingSMART International certifica os conhecimentos openBIM: um nível básico (Foundation) e um avançado (Practitioner). É gerida pelas secções nacionais, que podem acrescentar outros níveis: no Canadá há quatro.
+v0420	buildingSMART Professional Certification
+v0421	<a href="https://buildingsmartcanada.ca/certification/" target="_blank" rel="noopener">buildingSMART Canada, níveis (em inglês) ↗</a>
+v0422	Fontes verificadas em novembro de 2026. As obrigações mudam: antes de um concurso confirme o anúncio e a norma em vigor. Outros países chegarão com a pesquisa exaustiva.
+v0423	O curador
+v0424	Quem cuida do BIM News. Aqui, em segundo plano, o perfil, o portfólio, as reflexões sobre o trabalho, as propostas para o mundo do BIM, os trabalhos em curso e alguns pensamentos pessoais.
+v0425	Sou Marco Scigliuolo, engenheiro civil habilitado para exercer. Estudei no Politecnico di Bari e durante um período fui professor; depois dediquei-me à profissão de engenheiro. No passado trabalhei em grandes infraestruturas, numa empresa do setor. Hoje trato do projeto de instalações, sobretudo para escolas e serviços públicos (atualmente num gabinete do Alto Ádige).
+v0426	Sou BIM Coordinator certificado, coordenador de segurança em fase de projeto e de execução (CSP/CSE) e, há pouco tempo, Lead Auditor ISO 9001.
+v0427	O meu objetivo é tornar-me BIM Manager e cuidar de toda a gestão da informação dos modelos.
+v0428	Cuido do BIM News: procuro as notícias, verifico-as nas fontes e escrevo o resumo.
+v0429	Em resumo
+v0430	Hoje
+v0431	Projetista de instalações · BIM Coordinator e Specialist MEP<br><small>Baubüro · Bolzano, desde 2026</small>
+v0432	Certificações
+v0433	Mestrado em Engenharia Civil-Arquitetura<br><small>Politecnico di Bari</small>
+v0434	Habilitação
+v0435	Objetivo
+v0436	BIM Manager
+v0437	CV
+v0438	Engenheiro civil habilitado, trato do projeto e da modelação BIM de instalações elétricas, de climatização, hidráulicas e de segurança contra incêndio, e dos processos digitais aplicados ao projeto: modelos MEP em Revit, famílias paramétricas, automatizações com Dynamo, interoperabilidade IFC, medições e documentação de projeto. Estou a alargar as competências em projeto de instalações, contabilidade de obra, cálculos luminotécnicos e eficiência energética segundo o método CasaClima, com o objetivo da coordenação BIM e da otimização dos processos.
+v0439	O meu percurso profissional, a partir da etapa mais recente. Toque numa etapa para ler os pormenores.
+v0440	Trabalho
+v0441	Ensino
+v0442	02/2026 – hoje
+v0443	Projetista de instalações · BIM Coordinator/Specialist MEP
+v0444	Baubüro · Bolzano
+v0445	<span class="tl-date">02/2026 – hoje</span><span class="tl-name"><b>Projetista de instalações · BIM Coordinator/Specialist MEP</b><span>Baubüro · Bolzano</span></span><span class="tl-kind">Trabalho</span>
+v0446	BIM Coordinator certificado pela ICMQ
+v0447	Certificado n.º 26-01646 · UNI 11337-7, UNI/PdR 78:2020
+v0448	Certificação
+v0449	<span class="tl-date">06/2026</span><span class="tl-name"><b>BIM Coordinator certificado pela ICMQ</b><span>Certificado n.º 26-01646 · UNI 11337-7, UNI/PdR 78:2020</span></span><span class="tl-kind">Certificação</span>
+v0450	Curso de formação
+v0451	<span class="tl-date">2026</span><span class="tl-name"><b>BIM Manager</b><span>Curso de formação</span></span><span class="tl-kind">Formação</span>
+v0452	Lead Auditor ISO 9001
+v0453	Sistemas de gestão da qualidade
+v0454	<span class="tl-date">2026</span><span class="tl-name"><b>Lead Auditor ISO 9001</b><span>Sistemas de gestão da qualidade</span></span><span class="tl-kind">Certificação</span>
+v0455	Coordenador de segurança (CSP/CSE)
+v0456	Curso habilitante · Decreto Legislativo 81/2008
+v0457	<span class="tl-date">2025</span><span class="tl-name"><b>Coordenador de segurança (CSP/CSE)</b><span>Curso habilitante · Decreto Legislativo 81/2008</span></span><span class="tl-kind">Certificação</span>
+v0458	BIM MEP
+v0459	<span class="tl-date">2025</span><span class="tl-name"><b>BIM MEP</b><span>Curso de formação</span></span><span class="tl-kind">Formação</span>
+v0460	Responsável da qualidade · técnico de obra
+v0461	Strabag SpA · Bolzano
+v0462	<span class="tl-date">09/2024 – 01/2026</span><span class="tl-name"><b>Responsável da qualidade · técnico de obra</b><span>Strabag SpA · Bolzano</span></span><span class="tl-kind">Trabalho</span>
+v0463	BIM Specialist certificado pela ICMQ · especialidade Arquitetura
+v0464	Certificado n.º 24-01010 · UNI 11337-7, UNI/PdR 78:2020
+v0465	<span class="tl-date">2024</span><span class="tl-name"><b>BIM Specialist certificado pela ICMQ · especialidade Arquitetura</b><span>Certificado n.º 24-01010 · UNI 11337-7, UNI/PdR 78:2020</span></span><span class="tl-kind">Certificação</span>
+v0466	Autodesk Civil 3D
+v0467	<span class="tl-date">2024</span><span class="tl-name"><b>Autodesk Civil 3D</b><span>Curso de formação</span></span><span class="tl-kind">Formação</span>
+v0468	BIM Coordinator
+v0469	<span class="tl-date">2023</span><span class="tl-name"><b>BIM Coordinator</b><span>Curso de formação</span></span><span class="tl-kind">Formação</span>
+v0470	Professor do ensino secundário
+v0471	IISS Galilei, ITE Battisti, ITE Walther, ITCAT Delai · Bolzano
+v0472	<span class="tl-date">09/2019 – 08/2024</span><span class="tl-name"><b>Professor do ensino secundário</b><span>IISS Galilei, ITE Battisti, ITE Walther, ITCAT Delai · Bolzano</span></span><span class="tl-kind">Ensino</span>
+v0473	Master BIM Specialist
+v0474	Master de formação
+v0475	<span class="tl-date">2020</span><span class="tl-name"><b>Master BIM Specialist</b><span>Master de formação</span></span><span class="tl-kind">Formação</span>
+v0476	Habilitação para a profissão de engenheiro
+v0477	Exame de Estado · setor civil e ambiental
+v0478	<span class="tl-date">2019</span><span class="tl-name"><b>Habilitação para a profissão de engenheiro</b><span>Exame de Estado · setor civil e ambiental</span></span><span class="tl-kind">Certificação</span>
+v0479	BIM Specialist
+v0480	IG&P · Bari
+v0481	<span class="tl-date">01/2019 – 09/2019</span><span class="tl-name"><b>BIM Specialist</b><span>IG&amp;P · Bari</span></span><span class="tl-kind">Trabalho</span>
+v0482	ECDL CAD 2D e 3D
+v0483	Certificação AICA
+v0484	<span class="tl-date">2018</span><span class="tl-name"><b>ECDL CAD 2D e 3D</b><span>Certificação AICA</span></span><span class="tl-kind">Certificação</span>
+v0485	Mestrado em Engenharia Civil-Arquitetura
+v0486	Politecnico di Bari
+v0487	<span class="tl-date">2009 – 12/2018</span><span class="tl-name"><b>Mestrado em Engenharia Civil-Arquitetura</b><span>Politecnico di Bari</span></span><span class="tl-kind">Formação</span>
+v0488	Habilitação para a profissão de «geometra» (técnico de construção)
+v0489	Exame de Estado
+v0490	<span class="tl-date">2011</span><span class="tl-name"><b>Habilitação para a profissão de «geometra» (técnico de construção)</b><span>Exame de Estado</span></span><span class="tl-kind">Certificação</span>

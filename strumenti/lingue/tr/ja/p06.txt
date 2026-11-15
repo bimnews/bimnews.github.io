@@ -1,0 +1,85 @@
+v0406	スペイン
+v0407	2023 年 6 月 27 日に閣議で承認された BIM 計画（Plan BIM）は、国の行政機関に義務づけられ、2024 年から 2030 年にかけて段階的に導入されます。個人の資格証明は求めていません。最も高いレベルでは、契約に関わる全員が UNE-EN ISO 19650 にもとづく研修を受け、BIM 契約で 3 年以上の経験を持つ BIM 責任者が必要です。
+v0408	Plan de Incorporación de la Metodología BIM en la contratación pública (CIBIM, 2023)
+v0409	<a href="https://public-buyers-community.ec.europa.eu/system/files/2024-02/Executive%20Summary%20_EN%20A4%20web.pdf" target="_blank" rel="noopener">Plan BIM の概要（欧州委員会、英語）↗</a>
+v0410	イギリス
+v0411	ここでは主に組織、つまり企業が ISO 19650-2 に沿って情報を管理する能力を認証します。BRE の制度は 2022 年から UKAS により ISO/IEC 17065 にもとづいて認定されており、世界で最初期にこの認定を受けた BIM 制度の一つです。BSI は BIM のカイトマークを発行しています。
+v0412	ISO 19650-2:2018 · ISO/IEC 17065:2012
+v0413	<a href="https://bregroup.com/press-releases/bre-bim-certification-ukas-accreditation" target="_blank" rel="noopener">BRE、UKAS の認定（英語）↗</a>
+v0414	ドイツ
+v0415	指針 VDI/bS 2552 Blatt 8.1 が BIM の基礎知識を定めています。buildingSMART Deutschland と VDI がこれに沿った講座を認定し、修了試験は buildingSMART International のオンライン試験です。
+v0416	VDI/bS 2552 Blatt 8.1（BIM、資格、基礎知識）
+v0417	<a href="https://www.baulinks.de/bausoftware/2018/0092.php4" target="_blank" rel="noopener">資格制度の開始、2018 年（ドイツ語）↗</a>
+v0418	国際 · buildingSMART
+v0419	buildingSMART International の Professional Certification は openBIM の知識を認証します。基礎レベル（Foundation）と上級レベル（Practitioner）があります。運営は各国支部で、ほかのレベルを追加することもできます。カナダには四つあります。
+v0420	buildingSMART Professional Certification
+v0421	<a href="https://buildingsmartcanada.ca/certification/" target="_blank" rel="noopener">buildingSMART Canada、レベル（英語）↗</a>
+v0422	情報源は 2026 年 11 月に確認しました。義務は変わります。入札の前に公告と現行の規格を確認してください。ほかの国は網羅的な調査で追加していきます。
+v0423	運営者
+v0424	BIM News を運営している人。ここでは控えめに、プロフィール、ポートフォリオ、仕事についての考え、BIM の世界への提案、進行中の作業、いくつかの個人的な思いを紹介します。
+v0425	Marco Scigliuolo です。資格を持つ土木エンジニアです。バーリ工科大学で学び、しばらく教師をしたあと、エンジニアの仕事に専念しました。以前は業界の企業で大規模インフラに携わっていました。現在は設備設計を担当しており、主に学校や公共施設を手がけています（現在は南チロルの事務所に勤務）。
+v0426	認証を受けた BIM コーディネーターで、設計段階と施工段階の安全コーディネーター（CSP/CSE）、そして最近 ISO 9001 の主任審査員になりました。
+v0427	目標は BIM マネージャーになり、モデルの情報管理全体を担当することです。
+v0428	BIM News を運営しています。ニュースを探し、情報源で確認し、要約を書いています。
+v0429	概要
+v0430	現在
+v0431	設備設計者 · BIM コーディネーター／MEP スペシャリスト<br><small>Baubüro · ボルツァーノ、2026 年から</small>
+v0432	資格
+v0433	建築工学・建築学修士<br><small>バーリ工科大学</small>
+v0434	資格登録
+v0435	目標
+v0436	BIM マネージャー
+v0437	履歴書
+v0438	資格を持つ土木エンジニアとして、電気、空調・給排水、防災設備の設計と BIM モデリング、そして設計に応用するデジタルプロセスを担当しています。Revit の MEP モデル、パラメトリックファミリ、Dynamo による自動化、IFC による相互運用、数量算出、設計図書。設備設計、工事の出来高管理、照明計算、CasaClima 方式による省エネルギーの分野で能力を広げており、BIM の調整とプロセスの最適化を目指しています。
+v0439	私の職歴を、最新のものから順に。項目をタップすると詳細が読めます。
+v0440	仕事
+v0441	教育
+v0442	2026/02 – 現在
+v0443	設備設計者 · BIM コーディネーター／MEP スペシャリスト
+v0444	Baubüro · ボルツァーノ
+v0445	<span class="tl-date">2026/02 – 現在</span><span class="tl-name"><b>設備設計者 · BIM コーディネーター／MEP スペシャリスト</b><span>Baubüro · ボルツァーノ</span></span><span class="tl-kind">仕事</span>
+v0446	ICMQ 認証 BIM コーディネーター
+v0447	認証番号 26-01646 · UNI 11337-7、UNI/PdR 78:2020
+v0448	資格
+v0449	<span class="tl-date">2026/06</span><span class="tl-name"><b>ICMQ 認証 BIM コーディネーター</b><span>認証番号 26-01646 · UNI 11337-7、UNI/PdR 78:2020</span></span><span class="tl-kind">資格</span>
+v0450	研修コース
+v0451	<span class="tl-date">2026</span><span class="tl-name"><b>BIM Manager</b><span>研修コース</span></span><span class="tl-kind">研修</span>
+v0452	ISO 9001 主任審査員
+v0453	品質マネジメントシステム
+v0454	<span class="tl-date">2026</span><span class="tl-name"><b>ISO 9001 主任審査員</b><span>品質マネジメントシステム</span></span><span class="tl-kind">資格</span>
+v0455	安全コーディネーター（CSP/CSE）
+v0456	資格取得講座 · 委任立法令 81/2008
+v0457	<span class="tl-date">2025</span><span class="tl-name"><b>安全コーディネーター（CSP/CSE）</b><span>資格取得講座 · 委任立法令 81/2008</span></span><span class="tl-kind">資格</span>
+v0458	BIM MEP
+v0459	<span class="tl-date">2025</span><span class="tl-name"><b>BIM MEP</b><span>研修コース</span></span><span class="tl-kind">研修</span>
+v0460	品質責任者 · 現場技術者
+v0461	Strabag SpA · ボルツァーノ
+v0462	<span class="tl-date">2024/09 – 2026/01</span><span class="tl-name"><b>品質責任者 · 現場技術者</b><span>Strabag SpA · ボルツァーノ</span></span><span class="tl-kind">仕事</span>
+v0463	ICMQ 認証 BIM スペシャリスト · 意匠分野
+v0464	認証番号 24-01010 · UNI 11337-7、UNI/PdR 78:2020
+v0465	<span class="tl-date">2024</span><span class="tl-name"><b>ICMQ 認証 BIM スペシャリスト · 意匠分野</b><span>認証番号 24-01010 · UNI 11337-7、UNI/PdR 78:2020</span></span><span class="tl-kind">資格</span>
+v0466	Autodesk Civil 3D
+v0467	<span class="tl-date">2024</span><span class="tl-name"><b>Autodesk Civil 3D</b><span>研修コース</span></span><span class="tl-kind">研修</span>
+v0468	BIM Coordinator
+v0469	<span class="tl-date">2023</span><span class="tl-name"><b>BIM Coordinator</b><span>研修コース</span></span><span class="tl-kind">研修</span>
+v0470	高等学校教員
+v0471	IISS Galilei、ITE Battisti、ITE Walther、ITCAT Delai · ボルツァーノ
+v0472	<span class="tl-date">2019/09 – 2024/08</span><span class="tl-name"><b>高等学校教員</b><span>IISS Galilei、ITE Battisti、ITE Walther、ITCAT Delai · ボルツァーノ</span></span><span class="tl-kind">教育</span>
+v0473	BIM スペシャリスト・マスターコース
+v0474	専門研修マスターコース
+v0475	<span class="tl-date">2020</span><span class="tl-name"><b>BIM スペシャリスト・マスターコース</b><span>専門研修マスターコース</span></span><span class="tl-kind">研修</span>
+v0476	エンジニアの資格登録
+v0477	国家試験 · 土木・環境分野
+v0478	<span class="tl-date">2019</span><span class="tl-name"><b>エンジニアの資格登録</b><span>国家試験 · 土木・環境分野</span></span><span class="tl-kind">資格</span>
+v0479	BIM スペシャリスト
+v0480	IG&P · バーリ
+v0481	<span class="tl-date">2019/01 – 2019/09</span><span class="tl-name"><b>BIM スペシャリスト</b><span>IG&amp;P · バーリ</span></span><span class="tl-kind">仕事</span>
+v0482	ECDL CAD 2D・3D
+v0483	AICA 認定
+v0484	<span class="tl-date">2018</span><span class="tl-name"><b>ECDL CAD 2D・3D</b><span>AICA 認定</span></span><span class="tl-kind">資格</span>
+v0485	建築工学・建築学修士
+v0486	バーリ工科大学
+v0487	<span class="tl-date">2009 – 2018/12</span><span class="tl-name"><b>建築工学・建築学修士</b><span>バーリ工科大学</span></span><span class="tl-kind">研修</span>
+v0488	測量建築技師（geometra）の資格登録
+v0489	国家試験
+v0490	<span class="tl-date">2011</span><span class="tl-name"><b>測量建築技師（geometra）の資格登録</b><span>国家試験</span></span><span class="tl-kind">資格</span>

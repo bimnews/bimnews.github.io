@@ -1,0 +1,85 @@
+v0406	西班牙
+v0407	西班牙部长会议于 2023 年 6 月 27 日批准的 BIM 计划（Plan BIM）对国家行政部门具有强制性，从 2024 年到 2030 年分级推行。它不要求个人证书：在最高级别上，合同的全体人员都须接受 UNE-EN ISO 19650 培训，并需要一名至少有 3 年 BIM 合同经验的 BIM 负责人。
+v0408	Plan de Incorporación de la Metodología BIM en la contratación pública (CIBIM, 2023)
+v0409	<a href="https://public-buyers-community.ec.europa.eu/system/files/2024-02/Executive%20Summary%20_EN%20A4%20web.pdf" target="_blank" rel="noopener">Plan BIM 摘要（欧盟委员会，英文）↗</a>
+v0410	英国
+v0411	这里主要认证的是组织，也就是一家企业按照 ISO 19650-2 管理信息的能力。BRE 的认证方案自 2022 年起获得 UKAS 依据 ISO/IEC 17065 的认可，是世界上最早获得此认可的 BIM 方案之一；BSI 则颁发其 BIM 风筝标志（Kitemark）。
+v0412	ISO 19650-2:2018 · ISO/IEC 17065:2012
+v0413	<a href="https://bregroup.com/press-releases/bre-bim-certification-ukas-accreditation" target="_blank" rel="noopener">BRE，UKAS 认可（英文）↗</a>
+v0414	德国
+v0415	VDI/bS 2552 第 8.1 部分准则规定了 BIM 基础知识。buildingSMART Deutschland 和 VDI 认可符合该准则的课程，期末考试则是 buildingSMART International 的在线考试。
+v0416	VDI/bS 2552 Blatt 8.1（BIM、资质、基础知识）
+v0417	<a href="https://www.baulinks.de/bausoftware/2018/0092.php4" target="_blank" rel="noopener">证书启动，2018（德文）↗</a>
+v0418	国际 · buildingSMART
+v0419	buildingSMART International 的专业认证（Professional Certification）认证 openBIM 知识：分为基础级（Foundation）和进阶级（Practitioner）。由各国分会负责实施，各分会还可以增设其他级别：加拿大有四级。
+v0420	buildingSMART Professional Certification
+v0421	<a href="https://buildingsmartcanada.ca/certification/" target="_blank" rel="noopener">buildingSMART Canada，级别（英文）↗</a>
+v0422	来源核实于 2026 年 11 月。强制要求会变化：参加招标前请查看招标公告和现行规范。更多国家将在全面检索后陆续加入。
+v0423	策划人
+v0424	BIM News 的策划人。这里放在次要位置的是个人简介、作品集、关于工作的思考、给 BIM 界的建议、正在进行的工作和一些个人想法。
+v0425	我是 Marco Scigliuolo，持证执业的土木工程师。我毕业于巴里理工大学，曾经当过一段时间老师，之后投身工程师职业。过去我在一家行业企业从事大型基础设施工作。如今我主要做机电系统设计，尤其是学校和公共办公楼（目前在南蒂罗尔的一家事务所）。
+v0426	我是持证的 BIM 协调员，设计和施工阶段的安全协调员（CSP/CSE），最近还取得了 ISO 9001 首席审核员资格。
+v0427	我的目标是成为 BIM 经理，负责模型的全部信息管理。
+v0428	我负责 BIM News：搜索新闻，对照来源核实，并撰写摘要。
+v0429	简介
+v0430	现在
+v0431	机电设计师 · BIM 协调员和 MEP 专员<br><small>Baubüro · 博尔扎诺，2026 年起</small>
+v0432	证书
+v0433	建筑工程与建筑学硕士<br><small>巴里理工大学</small>
+v0434	执业资格
+v0435	目标
+v0436	BIM 经理
+v0437	简历
+v0438	我是持证执业的土木工程师，从事电气、暖通给排水和消防系统的设计与 BIM 建模，以及应用于设计的数字化流程：Revit 中的 MEP 模型、参数化族、Dynamo 自动化、IFC 互操作、工程量计算和设计文件。我正在拓展机电设计、工程计量、照明计算以及按 CasaClima 方法的能效方面的能力，目标是 BIM 协调和流程优化。
+v0439	我的职业经历，从最近的一站开始。点击某一站阅读详情。
+v0440	工作
+v0441	教学
+v0442	2026/02 – 至今
+v0443	机电设计师 · BIM 协调员/MEP 专员
+v0444	Baubüro · 博尔扎诺
+v0445	<span class="tl-date">2026/02 – 至今</span><span class="tl-name"><b>机电设计师 · BIM 协调员/MEP 专员</b><span>Baubüro · 博尔扎诺</span></span><span class="tl-kind">工作</span>
+v0446	ICMQ 认证 BIM 协调员
+v0447	证书编号 26-01646 · UNI 11337-7、UNI/PdR 78:2020
+v0448	认证
+v0449	<span class="tl-date">2026/06</span><span class="tl-name"><b>ICMQ 认证 BIM 协调员</b><span>证书编号 26-01646 · UNI 11337-7、UNI/PdR 78:2020</span></span><span class="tl-kind">认证</span>
+v0450	培训课程
+v0451	<span class="tl-date">2026</span><span class="tl-name"><b>BIM Manager</b><span>培训课程</span></span><span class="tl-kind">培训</span>
+v0452	ISO 9001 首席审核员
+v0453	质量管理体系
+v0454	<span class="tl-date">2026</span><span class="tl-name"><b>ISO 9001 首席审核员</b><span>质量管理体系</span></span><span class="tl-kind">认证</span>
+v0455	安全协调员（CSP/CSE）
+v0456	资格课程 · 第 81/2008 号立法令
+v0457	<span class="tl-date">2025</span><span class="tl-name"><b>安全协调员（CSP/CSE）</b><span>资格课程 · 第 81/2008 号立法令</span></span><span class="tl-kind">认证</span>
+v0458	BIM MEP
+v0459	<span class="tl-date">2025</span><span class="tl-name"><b>BIM MEP</b><span>培训课程</span></span><span class="tl-kind">培训</span>
+v0460	质量负责人 · 现场技术员
+v0461	Strabag SpA · 博尔扎诺
+v0462	<span class="tl-date">2024/09 – 2026/01</span><span class="tl-name"><b>质量负责人 · 现场技术员</b><span>Strabag SpA · 博尔扎诺</span></span><span class="tl-kind">工作</span>
+v0463	ICMQ 认证 BIM 专员 · 建筑专业
+v0464	证书编号 24-01010 · UNI 11337-7、UNI/PdR 78:2020
+v0465	<span class="tl-date">2024</span><span class="tl-name"><b>ICMQ 认证 BIM 专员 · 建筑专业</b><span>证书编号 24-01010 · UNI 11337-7、UNI/PdR 78:2020</span></span><span class="tl-kind">认证</span>
+v0466	Autodesk Civil 3D
+v0467	<span class="tl-date">2024</span><span class="tl-name"><b>Autodesk Civil 3D</b><span>培训课程</span></span><span class="tl-kind">培训</span>
+v0468	BIM Coordinator
+v0469	<span class="tl-date">2023</span><span class="tl-name"><b>BIM Coordinator</b><span>培训课程</span></span><span class="tl-kind">培训</span>
+v0470	高中教师
+v0471	IISS Galilei、ITE Battisti、ITE Walther、ITCAT Delai · 博尔扎诺
+v0472	<span class="tl-date">2019/09 – 2024/08</span><span class="tl-name"><b>高中教师</b><span>IISS Galilei、ITE Battisti、ITE Walther、ITCAT Delai · 博尔扎诺</span></span><span class="tl-kind">教学</span>
+v0473	BIM 专员硕士课程
+v0474	进修硕士课程
+v0475	<span class="tl-date">2020</span><span class="tl-name"><b>BIM 专员硕士课程</b><span>进修硕士课程</span></span><span class="tl-kind">培训</span>
+v0476	工程师执业资格
+v0477	国家考试 · 土木与环境类
+v0478	<span class="tl-date">2019</span><span class="tl-name"><b>工程师执业资格</b><span>国家考试 · 土木与环境类</span></span><span class="tl-kind">认证</span>
+v0479	BIM 专员
+v0480	IG&P · 巴里
+v0481	<span class="tl-date">2019/01 – 2019/09</span><span class="tl-name"><b>BIM 专员</b><span>IG&amp;P · 巴里</span></span><span class="tl-kind">工作</span>
+v0482	ECDL CAD 二维和三维
+v0483	AICA 认证
+v0484	<span class="tl-date">2018</span><span class="tl-name"><b>ECDL CAD 二维和三维</b><span>AICA 认证</span></span><span class="tl-kind">认证</span>
+v0485	建筑工程与建筑学硕士
+v0486	巴里理工大学
+v0487	<span class="tl-date">2009 – 2018/12</span><span class="tl-name"><b>建筑工程与建筑学硕士</b><span>巴里理工大学</span></span><span class="tl-kind">培训</span>
+v0488	测量技师（geometra）执业资格
+v0489	国家考试
+v0490	<span class="tl-date">2011</span><span class="tl-name"><b>测量技师（geometra）执业资格</b><span>国家考试</span></span><span class="tl-kind">认证</span>
