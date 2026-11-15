@@ -3599,5 +3599,40 @@ var tm=0,mo=new MutationObserver(function(){if(cur==="it")return;if(busy){pend=t
 sel.addEventListener("change",function(){store("lingua",sel.value);apply(sel.value)});
 var saved=load("lingua");if(saved&&saved!=="it"&&sel.querySelector('option[value="'+saved+'"]'))setTimeout(function(){apply(saved)},0)})();
 </script>
+<style>
+/* stagioni: Natale (8 dicembre – 6 gennaio) */
+.xmas-snow{position:absolute;left:0;top:0;width:100%;height:58%;pointer-events:none;z-index:6;border-radius:22px 22px 0 0}
+.fc-h.xmas-on{position:relative}
+.xmas-hat{position:absolute;left:-.36em;top:-.5em;width:.9em;height:.9em;transform:rotate(-24deg);pointer-events:none;filter:drop-shadow(0 2px 3px rgba(0,0,0,.35))}
+.lite .xmas-snow{display:none}
+#fc-map .fc-search{z-index:7}
+</style>
+<script>
+// stagioni: Natale, dall'8 dicembre al 6 gennaio (anteprima con ?stagione=natale)
+(function(){
+  var d=new Date(),m=d.getMonth()+1,g=d.getDate(),q=/[?&]stagione=natale/.test(location.search);
+  if(!(q||(m===12&&g>=8)||(m===1&&g<=6)))return;
+  var h=document.querySelector(".fc-h");
+  if(h){h.classList.add("xmas-on");h.insertAdjacentHTML("afterbegin",'<svg class="xmas-hat" viewBox="0 0 64 64" aria-hidden="true"><path d="M10 46 C18 26 30 10 46 8 C54 7 58 14 54 22 C50 18 46 18 44 22 C40 30 42 40 44 46 Z" fill="#c8202f"/><path d="M14 44 C24 30 34 18 46 12" stroke="#e8424f" stroke-width="3" fill="none" stroke-linecap="round" opacity=".55"/><rect x="6" y="42" width="44" height="12" rx="6" fill="#f4f4f2"/><circle cx="55" cy="24" r="7" fill="#f4f4f2"/></svg>')}
+  if(document.documentElement.classList.contains("lite"))return;
+  var host=document.querySelector("#fc-map .map-wrap")||document.getElementById("fc-map");if(!host)return;
+  if(getComputedStyle(host).position==="static")host.style.position="relative";
+  var c=document.createElement("canvas");c.className="xmas-snow";c.setAttribute("aria-hidden","true");host.appendChild(c);
+  var x=c.getContext("2d"),W=0,H=0,R=Math.min(2,window.devicePixelRatio||1),F=[];
+  function size(){W=c.clientWidth;H=c.clientHeight;c.width=W*R;c.height=H*R;x.setTransform(R,0,0,R,0,0)}
+  function flake(s){var f={x:Math.random()*W,y:s?Math.random()*H:-10,r:5+Math.random()*8,v:.25+Math.random()*.45,w:Math.random()*6.28,a:Math.random()*6.28,s:(Math.random()-.5)*.01};f.v*=f.r/8;return f}
+  function star(f,al){x.save();x.translate(f.x,f.y);x.rotate(f.a);x.globalAlpha=al;x.strokeStyle="#e9f3ff";x.lineWidth=Math.max(.8,f.r/7);x.lineCap="round";x.beginPath();
+    for(var i=0;i<6;i++){x.rotate(Math.PI/3);x.moveTo(0,0);x.lineTo(0,-f.r);x.moveTo(0,-f.r*.55);x.lineTo(f.r*.25,-f.r*.78);x.moveTo(0,-f.r*.55);x.lineTo(-f.r*.25,-f.r*.78)}
+    x.stroke();x.restore()}
+  size();for(var i=0;i<42;i++)F.push(flake(true));
+  addEventListener("resize",size);
+  var still=matchMedia("(prefers-reduced-motion: reduce)").matches;
+  function draw(){if(c.clientWidth&&(c.clientWidth!==W||c.clientHeight!==H)){size();F=[];for(var k=0;k<46;k++)F.push(flake(true))}x.clearRect(0,0,W,H);F.forEach(function(f,i){
+    if(!still){f.y+=f.v;f.w+=.012;f.x+=Math.sin(f.w)*.35;f.a+=f.s}
+    var t=f.y/H,al=t<.08?t/.08:Math.max(0,1-(t-.35)/.65);if(f.y>H||al<=0&&t>.5)F[i]=flake(false);
+    star(f,al*.9)});requestAnimationFrame(draw)}
+  draw();
+})();
+</script>
 </body>
 </html>
