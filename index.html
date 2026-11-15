@@ -1529,6 +1529,15 @@ section:has(>.pg-hero)>.content{position:relative;z-index:1}
 :root[data-view="home"] #fc-map .rg-list{display:none!important}
 .fa-a .fc-head{order:-2}
 .fa-a .fc-center>.fc-right{order:0}
+/* globo della home (solo versione completa) */
+.globe{position:absolute;inset:0;width:100%;height:100%;z-index:2;display:none;cursor:grab;touch-action:pan-y;transition:opacity .6s ease}
+:root[data-view="home"]:not(.lite) .fc-map .globe{display:block}
+.globe.off{opacity:0;pointer-events:none}
+.fc-search{pointer-events:none}.fc-search .fs-box,.fc-search .fs-list{pointer-events:auto}
+:root[data-view="home"] .fc-map .map-wrap.has-globe .map-hud,:root[data-view="home"] .fc-map .map-wrap.has-globe .map-zoom{z-index:3}
+.globe-tip{position:absolute;z-index:4;pointer-events:none;transform:translate(12px,-130%);font:600 .74rem var(--mono);letter-spacing:.06em;color:#e7ebf1;background:rgba(10,16,28,.82);border:1px solid rgba(127,176,236,.5);border-radius:6px;padding:.2rem .45rem;white-space:nowrap}
+.globe-tip:empty,:root:not([data-view="home"]) .globe-tip{display:none}
+@media (prefers-reduced-motion:reduce){.globe{transition:none}}
 /* la ricerca sulla mappa */
 #fc-map{position:relative}
 .fc-search{position:absolute;left:50%;top:34%;transform:translate(-50%,-50%);z-index:6;display:grid;justify-items:center;gap:.6rem;width:min(33rem,82%);transition:top .45s cubic-bezier(.2,.7,.2,1)}
@@ -1753,7 +1762,7 @@ section:has(>.pg-hero)>.content{position:relative;z-index:1}
           <div class="map-hud"><button type="button" class="map-back" id="map-back" hidden>← Mondo</button><span class="map-where" id="map-where">Mondo</span><span class="map-hover" id="map-hover" aria-hidden="true"></span></div>
         </div>
         <div class="rg-list" id="rg-list" role="group" aria-label="Regioni" hidden></div>
-        <figcaption class="map-credit">Confini: Natural Earth (pubblico dominio); regioni italiane: ISTAT, elaborazione openpolis (CC BY).</figcaption>
+        <figcaption class="map-credit">Confini: Natural Earth (pubblico dominio); regioni italiane: ISTAT, elaborazione openpolis (CC BY); globo: world-atlas e d3-geo (licenza ISC), città da Natural Earth.</figcaption>
       </figure>
           <div class="langnote" lang="it">
             <p><strong>Lingua.</strong> Le notizie sono scritte in italiano, con il link alla fonte originale. Per il testo completo in un'altra lingua, usa la traduzione integrata nel tuo browser.</p>
@@ -2895,8 +2904,14 @@ addEventListener("resize",function(){if(!T.hidden)draw()})})();
 function loadMap(){if(mapDone)return;mapDone=true;$("map-lite").hidden=true;if(wrap)wrap.classList.add("loading");
   fetch("assets/mappa.svg").then(function(x){return x.text()}).then(function(t){var tmp=document.createElementNS("http://www.w3.org/2000/svg","svg");tmp.innerHTML=t.replace(/^<svg[^>]*>|<\/svg>\s*$/g,"");
     [["ctrs","#ctrs"],["rgs","#rgs"]].forEach(function(q){var src=tmp.querySelector(q[1]),dst=$(q[0]);while(src&&src.firstChild)dst.appendChild(src.firstChild)});
-    document.querySelectorAll("#rgs .rgc").forEach(function(g){SUBREG[g.dataset.p]=g});if(wrap){wrap.classList.remove("loading");wrap.classList.add("has-map")}render()})
+    document.querySelectorAll("#rgs .rgc").forEach(function(g){SUBREG[g.dataset.p]=g});if(wrap){wrap.classList.remove("loading");wrap.classList.add("has-map")}render();loadGlobe()})
   .catch(function(){mapDone=false;if(wrap)wrap.classList.remove("loading");$("map-lite").hidden=false})}
+// globo della home: librerie e dati scaricati solo nella versione completa, dopo la mappa
+var globeDone=false;function loadGlobe(){if(globeDone||r.classList.contains("lite")||!wrap||!window.ResizeObserver)return;globeDone=true;
+  function js(u){return new Promise(function(ok,ko){var e=document.createElement("script");e.src=u;e.onload=ok;e.onerror=ko;document.head.appendChild(e)})}
+  js("assets/globo/d3-array.min.js").then(function(){return Promise.all([js("assets/globo/d3-geo.min.js"),js("assets/globo/topojson-client.min.js"),js("assets/globo/globo.js")])})
+  .then(function(){return Promise.all([fetch("assets/globo/mondo.json").then(function(x){return x.json()}),fetch("assets/globo/citta.json").then(function(x){return x.json()})])})
+  .then(function(d){window.globe=GLOBO(wrap,d[0],d[1])}).catch(function(){})}
 function loadBuild(){if(buildDone)return;buildDone=true;fetch("assets/edificio.svg").then(function(x){return x.text()}).then(function(t){var slot=$("build-slot");slot.outerHTML=t.replace(/^<svg xmlns="[^"]*" /,"<svg ");if(window.initBuild)initBuild()}).catch(function(){buildDone=false})}
 window.loadHeavy=function(){if(r.classList.contains("lite")){if(!mapDone)$("map-lite").hidden=false;return}loadMap()};
 $("map-load").addEventListener("click",loadMap);
