@@ -98,13 +98,10 @@ Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato co
    - **Cercati senza fonti istituzionali valide:** Ruanda, Nigeria, Ghana, Kenya (solo un discorso), Marocco, Algeria e Tunisia (nessun obbligo BIM), Egitto (il codice BIM esiste ma la fonte non era raggiungibile).
    - **Restano:** Africa francofona ed Egitto in arabo; poi l'Europa scoperta (prima la Svizzera, poi Paesi Bassi, nordici, Belgio, Grecia, Romania…); poi Asia e Medio Oriente (con Singapore, India, Arabia Saudita, Turchia, Vietnam, Taiwan) e Oceania (Nuova Zelanda); infine l'approfondimento dei paesi già presenti.
    - **Strumenti:** `strumenti/ver.py` (scarica una pagina e mostra le frasi con le parole chiave) e `strumenti/add_news.py` (aggiunge le notizie calcolando id e settimana).
-6. **Tai Chi e Kung Fu (nuova scheda in «Fuori dallo studio», `#fuori`).**
-   - **Cosa vuole Marco:**
-     - le immagini dell'artefatto sul Tai Chi con le 5 virtù del Kung Fu, creato in un'altra conversazione;
-     - la descrizione delle 5 virtù secondo il sito che aveva dato in quella conversazione;
-     - perché per lui è diventata una cosa importante.
-   - **Bloccato:** l'artefatto non compare nell'elenco degli artefatti di Marco e il sito non lo conosciamo. Bisogna chiedergli il link dell'artefatto (o le immagini) e l'indirizzo del sito.
-
+6. **Tai Chi e Kung Fu: PUBBLICATO il 15/11/2026 (revisione 107), `#fuori-taichi` in Fuori dallo studio.**
+   - **Immagine:** le cinque virtù (智 仁 信 勇 忍) ricostruite in HTML e CSS (`.kf-fig`), con caratteri veri in font kaishu di sistema, non come immagine.
+   - **Testi:** riassunti con parole nostre dalla pagina https://www.kungfuetaichi.com/5-virt%C3%B9, con due brevi citazioni.
+   - **Da fare:** il paragrafo «Perché per me è importante». Lo deve raccontare Marco: non inventarlo.
 7. **Statistiche delle visite dentro il sito (domanda di Marco del 15/11/2026, in attesa della sua scelta).**
    - Il sito usa già GoatCounter (`mscigliuolo.goatcounter.com`).
    - **Strada proposta:** contatore con `goatcounter.visit_count` o con `/counter/TOTAL.json`.
@@ -148,3 +145,4 @@ Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato co
 - **15/11/2026, revisione 104:** nella FAQ sulle collaborazioni Marco aggiunge che il sito è una passione, un piccolo hobby, e va avanti finché è sostenibile in soldi e tempo.
 - **15/11/2026, revisione 105:** il tasto Home ricarica tutto il sito.
 - **15/11/2026, revisione 106:** pubblicato il globo 3D della home.
+- **15/11/2026, revisione 107:** scheda Tai Chi e Kung Fu con le cinque virtù.
