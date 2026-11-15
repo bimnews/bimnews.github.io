@@ -19,7 +19,7 @@ v0018	The news could not be loaded. Check your connection and reload the page.
 v0019	BIM News
 v0020	BIM news collected every week, each with a summary in Italian and a link to the source. A site curated by <a href="#chi-sono">Marco Scigliuolo</a>, always a work in progress: the curator updates and expands it whenever needed.
 v0021	curated by engineer <a href="#chi-sono">Marco Scigliuolo</a>
-v0022	BIM from around the world, summarised in Italian with the source. For everyone, from large public bodies to small practices.
+v0022	BIM from around the world, with the source. For everyone, from large public bodies to small practices.
 v0023	Where shall we go today?
 v0024	Pick a country on the map or type it above
 v0025	<b>Essential version:</b> the interactive map (about 380 KB) is not downloaded. You can filter the news with «Geographic area», or
@@ -80,7 +80,7 @@ v0079	Events and webinars
 v0080	Webinars
 v0081	Nearest to me
 v0082	Dates and costs were checked on the organisers' pages when we added them: always check them before registering. Your location stays in your browser and is not sent to anyone.
-v0083	<strong>Language.</strong> The news is written in Italian, with a link to the original source. To read the full text in another language, use your browser's built-in translation.
+v0083	<strong>Language.</strong> In languages other than Italian, the news is shown in English, with the link to the original source. For the full text in another language, use your browser's built-in translation.
 v0084	Archive: from 2015 to today, by year and month
 v0085	← More recent
 v0086	Earlier →

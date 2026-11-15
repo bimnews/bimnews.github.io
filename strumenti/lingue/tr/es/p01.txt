@@ -19,7 +19,7 @@ v0018	No se pueden cargar las noticias. Comprueba la conexión y vuelve a cargar
 v0019	BIM News
 v0020	Las novedades sobre el BIM recogidas cada semana, cada una con un resumen en italiano y el enlace a la fuente. Un sitio a cargo de <a href="#chi-sono">Marco Scigliuolo</a>, siempre en construcción: el curador lo actualiza y lo amplía cada vez que hace falta.
 v0021	a cargo del Ing. <a href="#chi-sono">Marco Scigliuolo</a>
-v0022	El BIM del mundo, en italiano y con la fuente. Para todos, del gran organismo público al pequeño estudio.
+v0022	El BIM del mundo, con la fuente. Para todos, del gran organismo público al pequeño estudio.
 v0023	¿Adónde vamos hoy?
 v0024	Elige un país en el mapa o escríbelo arriba
 v0025	<b>Versión esencial:</b> el mapa interactivo (unos 380 KB) no se descarga. Puedes filtrar las noticias con «Zona geográfica», o bien
@@ -80,7 +80,7 @@ v0079	Eventos y webinars
 v0080	Webinars
 v0081	El más cercano a mí
 v0082	Fechas y costes verificados en las páginas de los organizadores cuando los añadimos: compruébalos siempre antes de inscribirte. Tu ubicación se queda en tu navegador y no se envía a nadie.
-v0083	<strong>Idioma.</strong> Las noticias están escritas en italiano, con el enlace a la fuente original. Para el texto completo en otro idioma, usa la traducción integrada de tu navegador.
+v0083	<strong>Idioma.</strong> En los idiomas distintos del italiano, las noticias se muestran en inglés, con el enlace a la fuente original. Para el texto completo en otro idioma, usa la traducción integrada de tu navegador.
 v0084	Archivo: de 2015 a hoy, por año y mes
 v0085	← Más recientes
 v0086	Anteriores →
