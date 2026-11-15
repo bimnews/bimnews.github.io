@@ -5,7 +5,7 @@ const all=new Map();
 for(const v of V){await p.goto('http://localhost:8765/#'+v);await p.waitForTimeout(1600);
  await p.evaluate(()=>{document.querySelectorAll('details').forEach(d=>d.open=true);document.querySelectorAll('.acc-tri').forEach(b=>{if(b.getAttribute('aria-expanded')==='false')b.click()});const a=document.getElementById('mm-all');if(a)a.click()});await p.waitForTimeout(400);
  const r=await p.evaluate(()=>{
-  const EX='.art,.latest,#ac-list,.ac-card,.ag-list,.ag-item,.fs-it,.vd-card,.vd-grid,.vu-grid,.ch-grid,.fb-track,.fb-det,#t2,#t2-det,script,style,#oggi,#reader,#tour,.kf-row,.lg-list,#vis-list,.map-hud,#map-where,.cad-card,.bim-card,svg';
+  const EX='.art,.latest,#ac-list,.ac-card,.ag-list,.ag-item,.fs-it,.vd-card,.vd-grid,.vu-grid,.ch-grid,.fb-track,.fb-det,#t2,#t2-det,script,style,#oggi,#reader,#tour,.kf-row,.lg-list,#vis-list,.map-hud,#map-where,.cad-card,.bim-card,.st-rt,svg';
   const BL='P,LI,H1,H2,H3,H4,H5,H6,DT,DD,SUMMARY,FIGCAPTION,TH,TD,BUTTON,LABEL,OPTION,CITE,LEGEND';
   const INL='SPAN,A,SMALL,B,I,STRONG,EM,KBD,CODE,TIME';
   const norm=s=>s.replace(/\s+/g,' ').trim();

@@ -1,6 +1,6 @@
 v0159	Другие страницы
 v0160	Я не знаю BIM: с чего начать?
-v0161	С раздела <a href="#bim-5-minuti">BIM за 5 минут</a>: что это такое, зачем он нужен, нормы, сокращения, измерения от 3D до 10D и конкретные результаты, измеренные исследованиями.
+v0161	С раздела <a href="#bim-5-minuti">BIM вкратце</a>: что это такое, зачем он нужен, нормы, сокращения, измерения от 3D до 10D и конкретные результаты, измеренные исследованиями.
 v0166	Что за руководства на странице куратора?
 v0167	Практические руководства для проектировщиков: Property Sets для IFC, Dynamo, AutoCAD, электропроектирование, языки программирования. Они находятся в разделе <a href="#studio">В бюро</a>, их можно читать онлайн или скачать в PDF.
 v0170	Как пользоваться сайтом
@@ -25,18 +25,18 @@ v0188	Мы считаем посещения с помощью GoatCounter, бе
 v0189	Самые посещаемые страницы
 v0190	Авторы изображений и шрифтов
 v0191	Фотографии на страницах взяты с Wikimedia Commons и переданы в общественное достояние по CC0 1.0: авторы отказались от всех прав. Мы всё равно их указываем, из уважения к их работе. На сайте фотографии окрашены в цвет каждой страницы и появляются только в полной версии.
-v0192	<b>BIM за 5 минут, «Что это такое»</b> · <a href="https://commons.wikimedia.org/wiki/File:Villa_Almerico_(Villa_Rotunda),_from_I_quattro_libri_dell%27architettura_di_Andrea_Palladio_(Book_2,_page_19)_MET_DP109542.jpg" target="_blank" rel="noopener">Вилла Альмерико (Вилла Ротонда), из «Четырёх книг об архитектуре»</a>, Андреа Палладио, 1570 (The Metropolitan Museum of Art, CC0)
+v0192	<b>BIM вкратце, «Что это такое»</b> · <a href="https://commons.wikimedia.org/wiki/File:Villa_Almerico_(Villa_Rotunda),_from_I_quattro_libri_dell%27architettura_di_Andrea_Palladio_(Book_2,_page_19)_MET_DP109542.jpg" target="_blank" rel="noopener">Вилла Альмерико (Вилла Ротонда), из «Четырёх книг об архитектуре»</a>, Андреа Палладио, 1570 (The Metropolitan Museum of Art, CC0)
 v0193	<b>BIM News</b> · <a href="https://commons.wikimedia.org/wiki/File:Victoria_Harbour_skyscrapers.jpg" target="_blank" rel="noopener">Victoria Harbour skyscrapers</a>, автор Wilfredor
 v0194	<b>BIM &amp; AI</b> · <a href="https://commons.wikimedia.org/wiki/File:Data_center_roof.jpg" target="_blank" rel="noopener">Data center roof</a>, автор Rsparks3
 v0195	<b>BIM Академия</b> · <a href="https://commons.wikimedia.org/wiki/File:The_John_Rylands_Library_Reading_Room_Enclosure.jpg" target="_blank" rel="noopener">The John Rylands Library, Reading Room</a>, автор Michael D Beckwith
-v0196	<b>BIM за 5 минут</b> · <a href="https://commons.wikimedia.org/wiki/File:Steel_frame_structure.jpg" target="_blank" rel="noopener">Steel frame structure</a>, автор Wikideas1
+v0196	<b>BIM вкратце</b> · <a href="https://commons.wikimedia.org/wiki/File:Steel_frame_structure.jpg" target="_blank" rel="noopener">Steel frame structure</a>, автор Wikideas1
 v0197	<b>Видео</b> · <a href="https://commons.wikimedia.org/wiki/File:H%C3%B6rsaal_101_LMU.jpg" target="_blank" rel="noopener">Hörsaal 101, LMU</a>, автор Slashme
 v0198	<b>Календарь</b> · <a href="https://commons.wikimedia.org/wiki/File:Six_workers_on_crane_in_Shibuya.jpg" target="_blank" rel="noopener">Six workers on crane in Shibuya</a>, автор Syced
 v0199	<b>Куратор</b> · <a href="https://commons.wikimedia.org/wiki/File:Rebar_combo.jpg" target="_blank" rel="noopener">Rebar combo</a>, автор Henryeke
 v0200	<b>Портфолио</b> · <a href="https://commons.wikimedia.org/wiki/File:Steel_frame_building_under_construction_in_Taiwan.jpg" target="_blank" rel="noopener">Steel frame building under construction in Taiwan</a>, автор SSJF01
 v0201	Шрифты: Inter, Inter Tight и JetBrains Mono по лицензии SIL Open Font License 1.1 (тексты лицензий лежат в папке <code>fonts</code> сайта). Облако точек в шапках BIM News и BIM &amp; AI рисует код сайта.
-v0202	BIM за 5 минут
-v0203	Не знаете, что такое BIM? Начните здесь: что это, зачем он нужен в бюро, почему сегодня без него не обойтись, нормы и сокращения. Пять минут на главное, остальное — когда захотите.
+v0202	BIM вкратце
+v0203	Не знаете, что такое BIM? Начните здесь: что это, зачем он нужен в бюро, почему сегодня без него не обойтись, нормы и сокращения. Главное в нескольких строках, остальное — когда захотите.
 v0204	01 Что это такое
 v0205	02 Вся жизнь объекта
 v0206	03 Что меняется

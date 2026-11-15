@@ -111,7 +111,7 @@ v1035	Kosten prüfen: Die Seite gibt sie nicht an
 v1037	zum Beispiel: Sprachen, Karte, Übersetzungen
 v1038	Öffnen oder schließen: Die Website
 v1039	Öffnen oder schließen: BIM News
-v1040	Öffnen oder schließen: BIM in 5 Minuten
+v1040	Öffnen oder schließen: BIM in Kürze
 v1041	Öffnen oder schließen: Videos
 v1042	Öffnen oder schließen: Agenda
 v1043	Öffnen oder schließen: Der Kurator

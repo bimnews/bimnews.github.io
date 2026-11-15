@@ -1,0 +1,18 @@
+v1285	BIM News 策划人的个人博客，收录对设计人员有用的文章：个人简介、作品集、对职业的思考、对 BIM 世界的建议、进行中的工作以及一些个人感想。
+v1286	BIM Coordinator ICMQ (2026)<br>BIM Specialist ICMQ (2024)<br>Lead Auditor ISO 9001 (2026)<br>安全协调员 CSP/CSE（2025）
+v1287	工程师，土木与环境领域（2019）
+v1288	EIPASS – European Informatics Passport (2021)
+v1289	高风险消防负责人，博尔扎诺自治省（2022）
+v1290	急救员（2025）
+v1291	另外，还有两本我和 Claude 一起写的手册，帮助我更好地理解自己演奏的声音（也可以在<a href="#fuori" data-goto-art="man-pers-01">Claude 的手册</a>中找到）：
+v1292	<a href="manuali/il-suono.pdf" target="_blank" rel="noopener">声音：数学、效果与心理声学</a>（PDF，15 页，意大利语）：声波，滤波器、延迟、失真和压缩到底做了什么，以及为什么有些声音让人喜欢、有些却不。
+v1293	<a href="manuali/effetti-chitarra-basso.pdf" target="_blank" rel="noopener">吉他与贝斯效果器手册</a>（PDF，21 页，意大利语）：效果器的各个类别、旋钮、在效果链中的位置以及最常见的改装。
+v1294	我最早加入的是巴里省特里贾诺的 AGESCI，即意大利天主教童子军协会。后来我明白这并不是适合我的选择：在 AGESCI 要做「信仰的选择」，而我的精神之路让我认识到自己并不信教。自从在博尔扎诺生活和工作以来，我加入了 <span translate="no">CNGEI</span>，也就是世俗的童子军，因为我坚信教育必须是世俗的，绝不能由宗教原则来引导。
+v1295	一个榜样：<a href="https://it.wikipedia.org/wiki/Aquile_randagie" target="_blank" rel="noopener">Aquile Randagie ↗</a>（「流浪之鹰」），米兰、蒙扎、帕尔马和贝加莫的童子军。1927 年起法西斯政权解散了童子军组织，他们仍然秘密地继续活动。他们的故事被拍成了电影<a href="https://it.wikipedia.org/wiki/Aquile_randagie_(film)" target="_blank" rel="noopener"><i>Aquile randagie</i> ↗</a>，导演 Gianni Aureli（2019）。他们提醒我们：教育有时也意味着要有勇气不服从不公正的事。
+v1296	我练习的地方：博尔扎诺的 <span translate="no">Scuola di Kung-fu Mien Ch'uan</span>（<a href="https://www.coni.it/it/registro-societa-sportive/home/registro-2-0/RegistroDettaglio.html?id_societa=99695" target="_blank" rel="noopener">CONI 登记信息 ↗</a>）。
+v1297	这些是非专业手册，由我请 Anthropic 的人工智能助手 Claude 按照明确的要求撰写：主题、结构、详细程度和示例都由我选定。前两本已经可以下载 PDF，其余的会陆续推出。
+v1298	声波与分贝、傅里叶与音色；滤波器、延迟、混响、失真和压缩到底做了什么；还有心理声学：为什么有些声音让人喜欢、有些让人烦躁，并区分了实验结果与假说。
+v1299	<a href="manuali/il-suono.pdf" target="_blank" rel="noopener">下载 PDF（15 页，意大利语）↗</a>
+v1300	所有效果器类别：每一类的作用、常见旋钮、在效果链中的推荐位置以及最常见的改装，并附有一份适用于所有踏板的旋钮术语表。
+v1301	<a href="manuali/effetti-chitarra-basso.pdf" target="_blank" rel="noopener">下载 PDF（21 页，意大利语）↗</a>
+v1302	网站策划人的个人博客，收录有用的文章：个人简介、作品集、深度内容、对 BIM 世界的建议和个人感想。

@@ -1,0 +1,18 @@
+v1285	BIM News 運営者の個人ブログ。設計者に役立つ記事を集めています：プロフィール、ポートフォリオ、仕事についての考察、BIM の世界への提案、進行中の仕事、そして少しの個人的な思い。
+v1286	BIM Coordinator ICMQ (2026)<br>BIM Specialist ICMQ (2024)<br>Lead Auditor ISO 9001 (2026)<br>安全衛生コーディネーター CSP/CSE（2025）
+v1287	エンジニア、土木・環境分野（2019）
+v1288	EIPASS – European Informatics Passport (2021)
+v1289	高リスク防火管理者、ボルツァーノ自治県（2022）
+v1290	応急手当担当者（2025）
+v1291	それまでの間に、自分が弾いている音をよりよく理解するために Claude と一緒に書いたマニュアルを 2 冊（<a href="#fuori" data-goto-art="man-pers-01">Claude のマニュアル</a>にもあります）：
+v1292	<a href="manuali/il-suono.pdf" target="_blank" rel="noopener">音：数学、エフェクト、心理音響</a>（PDF、15 ページ、イタリア語）：音波、フィルター・ディレイ・ディストーション・コンプレッションが実際に何をしているのか、そしてなぜ好きな音とそうでない音があるのか。
+v1293	<a href="manuali/effetti-chitarra-basso.pdf" target="_blank" rel="noopener">ギターとベースのエフェクト・ライブラリー</a>（PDF、21 ページ、イタリア語）：エフェクトの種類、ノブ、チェーン内の位置、よく知られた改造。
+v1294	最初はバーリ県トリッジャーノの AGESCI、つまりイタリアのカトリック系スカウト連盟に入っていました。やがて、それが自分にとって正しい選択ではないとわかりました。AGESCI では「信仰の選択」をしますが、私の精神的な歩みは、自分が信仰を持たないと認めることへと導いたのです。ボルツァーノで暮らし働くようになってからは、宗教色のないスカウト <span translate="no">CNGEI</span> に入っています。教育は世俗的であるべきで、宗教的な原則に左右されてはならないと強く信じているからです。
+v1295	ひとつのインスピレーション：<a href="https://it.wikipedia.org/wiki/Aquile_randagie" target="_blank" rel="noopener">Aquile Randagie ↗</a>（「さすらいの鷲」）。1927 年からファシズムがスカウト団体を解散させたとき、ひそかに活動を続けたミラノ、モンツァ、パルマ、ベルガモのスカウトたちです。その物語は Gianni Aureli 監督の映画<a href="https://it.wikipedia.org/wiki/Aquile_randagie_(film)" target="_blank" rel="noopener"><i>Aquile randagie</i> ↗</a>（2019）で描かれています。教育とは、ときに不正なことに従わない勇気を持つことでもある、と思い出させてくれます。
+v1296	練習している場所：ボルツァーノの <span translate="no">Scuola di Kung-fu Mien Ch'uan</span>（<a href="https://www.coni.it/it/registro-societa-sportive/home/registro-2-0/RegistroDettaglio.html?id_societa=99695" target="_blank" rel="noopener">CONI 登録簿の情報 ↗</a>）。
+v1297	仕事とは関係のないマニュアルで、Anthropic の AI アシスタント Claude に、明確な指示に沿って書いてもらったものです。テーマ、構成、詳しさ、例は私が選びました。最初の 2 冊はすでに PDF でダウンロードでき、残りは順次公開します。
+v1298	音波とデシベル、フーリエと音色。フィルター、ディレイ、リバーブ、ディストーション、コンプレッションが実際に何をしているのか。そして心理音響：なぜある音は好まれ、ある音は不快なのかを、実験結果と仮説を区別しながら。
+v1299	<a href="manuali/il-suono.pdf" target="_blank" rel="noopener">PDF をダウンロード（15 ページ、イタリア語）↗</a>
+v1300	すべてのエフェクトの種類について、何をするのか、典型的なノブ、チェーン内の推奨位置、よく知られた改造を紹介。すべてのペダルに共通するノブの用語集つき。
+v1301	<a href="manuali/effetti-chitarra-basso.pdf" target="_blank" rel="noopener">PDF をダウンロード（21 ページ、イタリア語）↗</a>
+v1302	サイト運営者の個人ブログ。役に立つ記事を集めています：プロフィール、ポートフォリオ、解説記事、BIM の世界への提案、個人的な考察。

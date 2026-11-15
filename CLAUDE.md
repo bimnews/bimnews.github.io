@@ -108,7 +108,7 @@ Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato co
    - **Quando si carica:** solo quando si apre la vista `mappa`. Nel piè di pagina, «Statistiche anonime» porta lì.
    - **Contatore pubblico:** Marco l'ha acceso il 15/11/2026 («Allow adding visitor counts» in GoatCounter); i numeri arrivano. `TOTAL` comprende anche gli eventi, come i clic sulle fonti, quindi è più alto della somma delle pagine.
 8. **Timeline doppia «Il BIM nel tempo: il mondo e l'Italia»: PUBBLICATA il 15/11/2026 (revisione 109) dopo il sì di Marco.**
-   - **Dove:** in BIM in 5 minuti, `#b5-t2`, dopo la lisca; c'è anche la voce «05 Mondo e Italia» nell'indice e nella mappa del sito.
+   - **Dove:** in BIM in breve, `#b5-t2`, dopo la lisca; c'è anche la voce «05 Mondo e Italia» nell'indice e nella mappa del sito.
    - **Codice:** HTML, CSS (`.t2-*`) e JS (IIFE dopo il filtro `.tl-filter`) dentro `index.html`.
    - **Linea italiana:** `UNI 11337:2009` + l'array `NORME`. Una nuova norma aggiunta a `NORME` compare da sola.
    - **Linea del mondo:** sta nell'array `W` dentro la IIFE, con le fonti verificate.
@@ -136,7 +136,7 @@ Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato co
    - **Collegamenti tra sottopagine:** usare `data-goto-art="id"`.
    - **Da verificare:** il proverbio «Ciò che cresce lentamente mette radici profonde» è indicato come «attribuito alla tradizione africana»; l'origine non è verificata.
 
-11. **BIM in 5 minuti, «01 · Che cos'è» riscritto: PUBBLICATO il 15/11/2026 (revisione 112).** Tre passi: a mano (Palladio, 1570, MET CC0, `assets/foto/palladio-rotonda.jpg`, con credito nella Mappa del sito), il CAD (linee con attributi) e il BIM (oggetti con parametri, muro interattivo `#bim-demo`); poi «Perché cambia tutto» e «Attributo o parametro?».
+11. **BIM in breve, «01 · Che cos'è» riscritto: PUBBLICATO il 15/11/2026 (revisione 112).** Tre passi: a mano (Palladio, 1570, MET CC0, `assets/foto/palladio-rotonda.jpg`, con credito nella Mappa del sito), il CAD (linee con attributi) e il BIM (oggetti con parametri, muro interattivo `#bim-demo`); poi «Perché cambia tutto» e «Attributo o parametro?».
 
 12. **Traduzione di TUTTE le scritte fisse: COMPLETA in 11 lingue (revisione 115, 15/11/2026).**
    - **Esclusi:** notizie, agenda, video e articoli di BIM Accademia, perché cambiano ogni settimana.
@@ -155,26 +155,21 @@ Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato co
    - **Se si cambiano testi del sito:** rilanciare `extract.js`, tradurre le voci nuove e ricompilare.
 
 13. **Appunti di Marco del 15/11/2026, da fare dopo le traduzioni** (riordinati per area):
-   - **Il curatore** (descrivilo come «blog personale e con articoli utili»):
-     - **Tai Chi:** aggiungere il link della scuola Mien Chuan (o una sua citazione), il maestro e i suoi libri. Da verificare sul sito della scuola.
-     - **Scautismo:** le Aquile Randagie come ispirazione, con il link al film; Marco era nell'AGESCI di Triggiano (BA).
-     - **«La musica»:** collegarla ai manuali di Claude sulla musica.
-     - **Nuova scheda «Ispirazioni»:** i canali YouTube che segue Marco. Serve l'elenco da lui.
+   - **Il curatore:**
+     - **Tai Chi:** manca il nome del maestro e i suoi libri: chiederli a Marco. La scuola (Scuola di Kung-fu Mien Ch'uan, Bolzano) è citata con la scheda del Registro CONI; non ha un sito proprio trovato in rete. Nel registro il legale rappresentante è Ugo Lazzara, ma non risulta che sia il maestro: non scriverlo.
+     - **Nuova scheda «Ispirazioni»:** i canali YouTube che segue Marco. Lo screenshot con i 34 canali non è più leggibile nella sessione: Marco deve rimandarlo.
      - **Portfolio:** la grafica è rimasta quella vecchia, va resa coerente con il resto della sezione. Poi le anteprime dei progetti affrontati, poi l'elenco dei modelli fatti con Guadagnuolo. Servono materiali da Marco.
-     - **Tutti gli articoli:** i minuti di lettura alla fine.
-   - **BIM in 5 minuti:**
-     - rinominarlo in **«BIM in breve»** e sistemare la frase iniziale;
+     - Il manuale «Suoni per chitarra con il modeler» (man-pers-03) non è pubblicato: è la sintesi di una playlist di terzi, valutare con Marco.
+   - **BIM in breve** (nome già cambiato in revisione 118; l'hash resta `#bim-5-minuti`):
      - approfondimento matematico e informatico: la differenza tra gli attributi del CAD e i parametri del BIM, che cosa succede al modello, il codice, le conseguenze;
      - riunire i tre passi di «Che cos'è» in una specie di timeline visiva dell'evoluzione del progetto;
      - nuova scheda «Cosa ci riserva il futuro?» (forse le tavole non serviranno più, con robot e AI; «chissà»).
-   - **Guida al sito:** una breve descrizione per ogni scheda (BIM News, AI ecc.).
-   - **Festività della tecnologia:** un piccolo widget per le giornate mondiali legate alla tecnologia, riconosciute a livello mondiale (per esempio quelle ONU, ITU e UNESCO). Da verificare una per una.
-   - **Agenda:** grafica a calendario.
+   - **Giornate mondiali della tecnologia** e **Agenda a calendario:** in preparazione come anteprima per Marco (date verificate: 11/2 donne e ragazze nella scienza, 13/2 radio, 4/3 ingegneria UNESCO, 14/3 matematica UNESCO, 12/4 volo spaziale umano, 21/4 creatività e innovazione, 4° giovedì di aprile Girls in ICT ITU, 26/4 proprietà intellettuale WIPO, 16/5 luce UNESCO, 17/5 telecomunicazioni e società dell'informazione, 28/9 accesso universale all'informazione, 1° lunedì di ottobre Habitat, 14/10 normazione ISO/IEC/ITU, 31/10 città, 10/11 scienza per la pace e lo sviluppo UNESCO).
 
 ## Fatto di recente
 
 - **15/11/2026, revisione 100:**
-  - **BIM in 5 minuti:** sezione «09 · Le certificazioni nel mondo» (`#b5-cert`) con 6 schede verificate: Hong Kong (obbligatoria, DEVB TC(W) 2/2021), Italia (volontaria, All. I.9 art. 1 c. 3 D.Lgs. 36/2023, UNI 11337-7, UNI/PdR 78:2020), Spagna (Plan BIM 2023), Regno Unito (BRE e UKAS, ISO 19650-2), Germania (VDI/bS 2552 Blatt 8.1), buildingSMART. Altri paesi da aggiungere con la ricerca a tappeto: Cina, Corea, Singapore, Francia, paesi nordici…
+  - **BIM in breve:** sezione «09 · Le certificazioni nel mondo» (`#b5-cert`) con 6 schede verificate: Hong Kong (obbligatoria, DEVB TC(W) 2/2021), Italia (volontaria, All. I.9 art. 1 c. 3 D.Lgs. 36/2023, UNI 11337-7, UNI/PdR 78:2020), Spagna (Plan BIM 2023), Regno Unito (BRE e UKAS, ISO 19650-2), Germania (VDI/bS 2552 Blatt 8.1), buildingSMART. Altri paesi da aggiungere con la ricerca a tappeto: Cina, Corea, Singapore, Francia, paesi nordici…
   - **Scautismo** (`#fuori-scout`): testo di Marco (dall'AGESCI al CNGEI, scout laici, a Bolzano) e citazione di Baden-Powell da *Aids to Scoutmastership*, ed. 1930, «The Aim of Scouting», tradotta da noi. Marco aveva scritto «CNGI»: il nome corretto è CNGEI. Niente articoli: solo questa descrizione.
 - **15/11/2026, revisione 101:**
   - **FAQ:** la policy di Marco. Niente collaborazioni economiche né esterne sul sito (gestito con il suo piano Pro di Claude); sì a sponsorizzazioni per passare a un piano con più token, «parliamone». Aggiornato anche `strumenti/faq.py`.
@@ -193,9 +188,10 @@ Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato co
 - **15/11/2026, revisione 112:**
   - **Il curatore:** tutti gli articoli si aprono e si chiudono.
   - **Tai Chi e Kung Fu:** il racconto di Marco.
-  - **BIM in 5 minuti:** «Che cos'è» riscritto.
+  - **BIM in breve:** «Che cos'è» riscritto.
   - **Le mie proposte:** la frase «aperte ai commenti» è sostituita dal rimando a LinkedIn, per coerenza con il disclaimer.
 - **15/11/2026, revisione 113:** selettore delle lingue (11 lingue) con le scritte principali tradotte.
+- **15/11/2026, revisione 118:** «BIM in 5 minuti» diventa «BIM in breve» (11 lingue, nuova frase iniziale); minuti di lettura in fondo a ogni articolo del curatore (`.st-rt`, circa 200 parole al minuto, etichetta nelle 11 lingue in `rtLabel()`); il curatore descritto come «blog personale con articoli utili»; scautismo con AGESCI di Triggiano e Aquile Randagie (film di Gianni Aureli, 2019); Tai Chi con la Scuola di Kung-fu Mien Ch'uan di Bolzano; pubblicati in PDF i manuali «Il suono» e «Libreria effetti per chitarra e basso» (`manuali/il-suono.pdf`, `manuali/effetti-chitarra-basso.pdf`, esportati dai documenti di Marco) e collegati alla scheda «La musica». Traduzioni nuove nel pacchetto `p17`.
 - **15/11/2026, revisione 117:** regola di Marco sulla lingua delle notizie: sito in italiano → `t`/`x`; sito nella stessa lingua della fonte principale (`lo`) → `tl`/`xl` scritti in quella lingua (oppure `te`/`xe` se la fonte è inglese); altrimenti inglese `te`/`xe`. Dati in `strumenti/notizie_lo_*.tsv`, script `strumenti/add_lo.py`; al cambio di lingua la pagina si ricarica (`NEWS_L`). Attivata anche la Pasqua (sì di Marco). Il testo del task del lunedì è aggiornato: `lo` sempre, `tl`/`xl` solo se la fonte è in fr, de, es, pt, ru, ar, zh, ja o ko.
 - **15/11/2026, revisione 116:** notizie in inglese nelle lingue diverse dall'italiano: campi `te` (titolo) e `xe` (sintesi) in `assets/notizie.json`, aggiunti con `strumenti/add_en.py` dai file `strumenti/notizie_en_*.tsv`; al cambio tra italiano e un'altra lingua la pagina si ricarica (`NEWS_EN`). Il task del lunedì ora scrive anche `te` e `xe`. Frasi «in italiano» corrette nelle traduzioni (v0022, v0083).
 - **15/11/2026, revisione 115:** sito tradotto in tutte le 11 lingue; feste stagionali (Natale, Hanukkah, Capodanno lunare, Ramadan, Eid, Vesak, Diwali) con link a Wikipedia.

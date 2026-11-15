@@ -111,7 +111,7 @@ v1035	Cost to be checked: the page does not state it
 v1037	for example: languages, map, translations
 v1038	Open or close: The site
 v1039	Open or close: BIM News
-v1040	Open or close: BIM in 5 minutes
+v1040	Open or close: BIM in brief
 v1041	Open or close: Videos
 v1042	Open or close: Agenda
 v1043	Open or close: The curator

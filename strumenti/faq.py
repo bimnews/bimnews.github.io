@@ -33,7 +33,7 @@ Q=[
  ("Come avete scelto queste lingue?","Nel mondo si parlano circa 7.100–7.200 lingue: è l'ordine di grandezza indicato da Ethnologue, il catalogo di riferimento. Solo una piccola parte ha contenuti digitali su temi tecnici. Per misurarlo abbiamo usato un indicatore pubblico e verificabile: le edizioni di Wikipedia. Wikipedia ha 348 edizioni linguistiche attive; la voce sull'intelligenza artificiale c'è in 185, quella sul BIM in 38. Le lingue con la voce sul BIM (tolto l'esperanto, che non ha un paese di riferimento) sono il punto di partenza della ricerca. A queste aggiungiamo, in verifica, le lingue nazionali dei paesi dove ci aspettiamo attività. Dati rilevati a novembre 2026."),
 ]),
 ("Le altre pagine",[
- ("Non conosco il BIM: da dove parto?","Da <a href=\"#bim-5-minuti\">BIM in 5 minuti</a>: che cos'è, a che cosa serve, le norme, le sigle, le dimensioni dal 3D al 10D e i risultati concreti misurati dalle ricerche."),
+ ("Non conosco il BIM: da dove parto?","Da <a href=\"#bim-5-minuti\">BIM in breve</a>: che cos'è, a che cosa serve, le norme, le sigle, le dimensioni dal 3D al 10D e i risultati concreti misurati dalle ricerche."),
  ("Che cosa sono i manuali nella pagina del curatore?","Guide pratiche per chi progetta: Property Set per l'IFC, Dynamo, AutoCAD, progettazione elettrica, linguaggi di programmazione. Le trovi in <a href=\"#studio\">Nello studio</a>, da leggere online o scaricare in PDF."),
 ]),
 ("Usare il sito",[

@@ -1,0 +1,18 @@
+v1285	The personal blog of the curator of BIM News, with useful articles for designers: the profile, the portfolio, reflections on the job, proposals for the BIM world, work in progress and a few personal thoughts.
+v1286	BIM Coordinator ICMQ (2026)<br>BIM Specialist ICMQ (2024)<br>Lead Auditor ISO 9001 (2026)<br>Health and safety coordinator CSP/CSE (2025)
+v1287	Engineer, civil and environmental sector (2019)
+v1288	EIPASS – European Informatics Passport (2021)
+v1289	High-risk fire warden, Autonomous Province of Bolzano (2022)
+v1290	First aid officer (2025)
+v1291	Meanwhile, two manuals I wrote with Claude to better understand what I play (you can also find them in <a href="#fuori" data-goto-art="man-pers-01">Claude's manuals</a>):
+v1292	<a href="manuali/il-suono.pdf" target="_blank" rel="noopener">Sound: mathematics, effects and psychoacoustics</a> (PDF, 15 pages, in Italian): the sound wave, what filters, delay, distortion and compression really do, and why we like some sounds and not others.
+v1293	<a href="manuali/effetti-chitarra-basso.pdf" target="_blank" rel="noopener">Effects library for guitar and bass</a> (PDF, 21 pages, in Italian): the families of effects, the knobs, the position in the chain and the most common mods.
+v1294	I started in AGESCI in Triggiano, in the province of Bari: the association of Italian Catholic scouts. Over time I realised it was not the right choice for me: in AGESCI you make the "choice of faith", and my spiritual path led me to recognise that I am not a believer. Since I have been living and working in Bolzano I have been in <span translate="no">CNGEI</span>, the secular scouts, because I firmly believe that education must be secular and never guided by religious principles.
+v1295	An inspiration: the <a href="https://it.wikipedia.org/wiki/Aquile_randagie" target="_blank" rel="noopener">Aquile Randagie ↗</a> ("Stray Eagles"), the scouts of Milan, Monza, Parma and Bergamo who carried on their activities in secret when fascism, from 1927, dissolved the scout associations. Their story is told in the film <a href="https://it.wikipedia.org/wiki/Aquile_randagie_(film)" target="_blank" rel="noopener"><i>Aquile randagie</i> ↗</a> by Gianni Aureli (2019). They remind us that educating sometimes also means having the courage not to obey what is unjust.
+v1296	Where I train: the <span translate="no">Scuola di Kung-fu Mien Ch'uan</span> in Bolzano (<a href="https://www.coni.it/it/registro-societa-sportive/home/registro-2-0/RegistroDettaglio.html?id_societa=99695" target="_blank" rel="noopener">entry in the CONI register ↗</a>).
+v1297	Non-professional manuals that I created myself by asking Claude, Anthropic's artificial intelligence assistant, to write them following precise instructions: I chose the topic, the structure, the level of detail and the examples. The first two can already be downloaded as PDFs; the others will follow one at a time.
+v1298	The sound wave and decibels, Fourier and timbre; what filters, delay, reverb, distortion and compression really do; and psychoacoustics: why we like some sounds and others annoy us, separating experimental results from hypotheses.
+v1299	<a href="manuali/il-suono.pdf" target="_blank" rel="noopener">Download the PDF (15 pages, in Italian) ↗</a>
+v1300	All the families of effects: for each one what it does, the typical knobs, the recommended position in the chain and the most common mods, with a glossary of knobs that applies to every pedal.
+v1301	<a href="manuali/effetti-chitarra-basso.pdf" target="_blank" rel="noopener">Download the PDF (21 pages, in Italian) ↗</a>
+v1302	The personal blog of the site's curator, with useful articles: profile, portfolio, in-depth pieces, proposals for the BIM world and personal reflections.

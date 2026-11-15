@@ -1,6 +1,6 @@
 v0159	다른 페이지
 v0160	BIM을 모릅니다. 어디서 시작하면 되나요?
-v0161	<a href="#bim-5-minuti">5분 만에 보는 BIM</a>에서 시작하세요. BIM이 무엇인지, 무엇에 쓰이는지, 규정, 약어, 3D부터 10D까지의 차원, 연구로 측정된 구체적인 성과.
+v0161	<a href="#bim-5-minuti">BIM 한눈에 보기</a>에서 시작하세요. BIM이 무엇인지, 무엇에 쓰이는지, 규정, 약어, 3D부터 10D까지의 차원, 연구로 측정된 구체적인 성과.
 v0166	운영자 페이지의 매뉴얼은 무엇인가요?
 v0167	설계자를 위한 실용 가이드입니다. IFC용 Property Sets, Dynamo, AutoCAD, 전기 설계, 프로그래밍 언어. <a href="#studio">사무소에서</a>에 있으며, 온라인으로 읽거나 PDF로 내려받을 수 있습니다.
 v0170	사이트 사용법
@@ -25,18 +25,18 @@ v0188	방문 수는 GoatCounter로 셉니다. 쿠키도 개인 정보도 쓰지 
 v0189	가장 많이 방문한 페이지
 v0190	이미지와 글꼴 출처
 v0191	페이지의 사진은 위키미디어 공용에서 가져왔으며 CC0 1.0으로 퍼블릭 도메인에 기증된 것입니다. 저작자들은 모든 권리를 포기했지만, 그들의 작업을 존중하는 뜻에서 출처를 밝힙니다. 사이트에서 사진은 각 페이지의 색으로 물들여져 있으며 전체 버전에서만 보입니다.
-v0192	<b>5분 만에 보는 BIM, 「BIM이란」</b> · <a href="https://commons.wikimedia.org/wiki/File:Villa_Almerico_(Villa_Rotunda),_from_I_quattro_libri_dell%27architettura_di_Andrea_Palladio_(Book_2,_page_19)_MET_DP109542.jpg" target="_blank" rel="noopener">빌라 알메리코(빌라 로톤다), 『건축 4서』에서</a>, 안드레아 팔라디오, 1570년(The Metropolitan Museum of Art, CC0)
+v0192	<b>BIM 한눈에 보기, 「BIM이란」</b> · <a href="https://commons.wikimedia.org/wiki/File:Villa_Almerico_(Villa_Rotunda),_from_I_quattro_libri_dell%27architettura_di_Andrea_Palladio_(Book_2,_page_19)_MET_DP109542.jpg" target="_blank" rel="noopener">빌라 알메리코(빌라 로톤다), 『건축 4서』에서</a>, 안드레아 팔라디오, 1570년(The Metropolitan Museum of Art, CC0)
 v0193	<b>BIM News</b> · <a href="https://commons.wikimedia.org/wiki/File:Victoria_Harbour_skyscrapers.jpg" target="_blank" rel="noopener">Victoria Harbour skyscrapers</a>, 촬영 Wilfredor
 v0194	<b>BIM &amp; AI</b> · <a href="https://commons.wikimedia.org/wiki/File:Data_center_roof.jpg" target="_blank" rel="noopener">Data center roof</a>, 촬영 Rsparks3
 v0195	<b>BIM 아카데미</b> · <a href="https://commons.wikimedia.org/wiki/File:The_John_Rylands_Library_Reading_Room_Enclosure.jpg" target="_blank" rel="noopener">The John Rylands Library, Reading Room</a>, 촬영 Michael D Beckwith
-v0196	<b>5분 만에 보는 BIM</b> · <a href="https://commons.wikimedia.org/wiki/File:Steel_frame_structure.jpg" target="_blank" rel="noopener">Steel frame structure</a>, 촬영 Wikideas1
+v0196	<b>BIM 한눈에 보기</b> · <a href="https://commons.wikimedia.org/wiki/File:Steel_frame_structure.jpg" target="_blank" rel="noopener">Steel frame structure</a>, 촬영 Wikideas1
 v0197	<b>동영상</b> · <a href="https://commons.wikimedia.org/wiki/File:H%C3%B6rsaal_101_LMU.jpg" target="_blank" rel="noopener">Hörsaal 101, LMU</a>, 촬영 Slashme
 v0198	<b>일정</b> · <a href="https://commons.wikimedia.org/wiki/File:Six_workers_on_crane_in_Shibuya.jpg" target="_blank" rel="noopener">Six workers on crane in Shibuya</a>, 촬영 Syced
 v0199	<b>운영자</b> · <a href="https://commons.wikimedia.org/wiki/File:Rebar_combo.jpg" target="_blank" rel="noopener">Rebar combo</a>, 촬영 Henryeke
 v0200	<b>포트폴리오</b> · <a href="https://commons.wikimedia.org/wiki/File:Steel_frame_building_under_construction_in_Taiwan.jpg" target="_blank" rel="noopener">Steel frame building under construction in Taiwan</a>, 촬영 SSJF01
 v0201	글꼴: Inter, Inter Tight, JetBrains Mono, SIL Open Font License 1.1(라이선스 전문은 사이트의 <code>fonts</code> 폴더에 있습니다). BIM News와 BIM &amp; AI 머리글의 점구름은 사이트 코드가 그립니다.
-v0202	5분 만에 보는 BIM
-v0203	BIM이 무엇인지 모르나요? 여기서 시작하세요. BIM이 무엇인지, 사무소에서 무엇에 쓰이는지, 왜 오늘날 없어서는 안 되는지, 규정과 약어까지. 핵심은 5분이면 되고, 나머지는 원할 때 보세요.
+v0202	BIM 한눈에 보기
+v0203	BIM이 무엇인지 모르나요? 여기서 시작하세요. BIM이 무엇인지, 사무소에서 무엇에 쓰이는지, 왜 오늘날 없어서는 안 되는지, 규정과 약어까지. 핵심은 몇 줄로, 나머지는 원할 때 보세요.
 v0204	01 BIM이란
 v0205	02 건축물의 전 생애
 v0206	03 무엇이 바뀌나

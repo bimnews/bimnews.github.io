@@ -121,7 +121,7 @@ v1036	A pagamento: 1.695 $ per i soci, 2.075 $ per gli altri
 v1037	per esempio: lingue, mappa, traduzioni
 v1038	Apri o chiudi: Il sito
 v1039	Apri o chiudi: BIM News
-v1040	Apri o chiudi: BIM in 5 minuti
+v1040	Apri o chiudi: BIM in breve
 v1041	Apri o chiudi: Video
 v1042	Apri o chiudi: Agenda
 v1043	Apri o chiudi: Il curatore
