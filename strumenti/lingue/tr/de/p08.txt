@@ -1,0 +1,79 @@
+v0601	Die verknüpfte IFC mit Dynamo ersetzen
+v0602	Wie oft mussten wir die in Revit verknüpfte IFC des Architekten aktualisieren und dabei aufgesetzte Steckdosen und Geräte verlieren? Zwei Dynamo-Graphen lösen das Problem in wenigen Schritten. Zuerst halten sie die Verknüpfung fest: Lage, Drehung (entscheidend bei georeferenzierten Modellen) und aufgesetzte Elemente. Dann, nach dem Neuladen der neuen IFC, richten sie sie bei Bedarf neu aus und ordnen die Elemente wieder zu. Der Leitfaden enthält das Schema der Schritte, erklärt, wie man die Dateien lädt und wie man den Bericht liest.
+v0603	<span class="tag ok">Veröffentlicht</span><a class="man-btn" href="manuali/dynamo-sostituzione-ifc.html">Online lesen</a><a class="man-btn ghost" href="manuali/dynamo-sostituzione-ifc.pdf" download="">PDF herunterladen</a><span class="man-note">Die .dyn-Dateien folgen in Kürze.</span>
+v0604	AutoCAD 2026: XRefs und Plotten
+v0605	Zwei sofort einsetzbare AutoLISP-Skripte. <b>SOSTXRIF</b> ersetzt die XRef des Architekten durch die neue Version und sagt dir, ob sie noch ausgerichtet ist. <b>RETINITRASP</b> vermeidet vollflächig schwarze Schraffuren beim Plotten.
+v0606	<b>Wohin damit:</b> Kopiere die beiden Dateien nach <code>%AppData%\Autodesk\AutoCAD 2026\R25.1\ita\Support</code>, lade sie dann mit <code>APPLOAD</code> und gib den Befehlsnamen ein. Der auf das Wesentliche gekürzte Leitfaden enthält das Schema in fünf Schritten und den Code.
+v0607	<span class="tag">An einer Kopie testen</span><a class="man-btn" href="manuali/autocad-2026-xrif-stampa.html">Leitfaden lesen</a><a class="man-btn ghost" href="manuali/autocad-2026-xrif-stampa.pdf" download="">PDF</a><a class="man-btn ghost" href="manuali/autocad/SOSTXRIF.lsp" download="">SOSTXRIF.lsp</a><a class="man-btn ghost" href="manuali/autocad/RETINITRASP.lsp" download="">RETINITRASP.lsp</a>
+v0608	Checkliste BIM-MEP
+v0609	Die Prüfungen an einem Haustechnikmodell.
+v0610	Merkblatt zum Start eines MEP-Projekts
+v0611	Was man zu Beginn einer Haustechnikplanung vorbereitet.
+v0612	Elektroplanung mit i-project
+v0613	Der vollständige Ablauf, um eine Elektroanlage mit i-project von Schneider Electric zu planen, in neun Phasen: die Daten, die man vor dem Zeichnen erfragt, die Zeichnung im CAD, die Programmeinstellungen, Verteiler und Verbraucher, die Berechnungen mit Formeln und Zahlenbeispielen, was zu tun ist, wenn ein Nachweis nicht besteht, Schaltpläne, Kostenermittlung mit dem Preisverzeichnis der Provinz und eine abschließende Checkliste. Mit eigens gezeichneten Schemata, den Bezugsnormen (CEI 64-8, 9. Ausgabe) und den Quellen.
+v0614	<span class="tag ok">Veröffentlicht</span><a class="man-btn" href="manuali/progettazione-elettrica-iproject.html">Online lesen</a><a class="man-btn ghost" href="manuali/progettazione-elettrica-iproject.pdf" download="">PDF herunterladen · 30 Seiten</a>
+v0615	Leitfaden zur Brandschutzplanung
+v0616	Ein geführter Weg durch die Brandschutzplanung.
+v0617	Lernprogramm: ein Stahlbetongebäude planen
+v0618	Ein Lernprogramm, um ein Gebäude aus Stahlbeton zu planen.
+v0619	Programmiersprachen für alle, die im BIM arbeiten
+v0620	Ein Leitfaden für alle, die schon ein wenig Code gesehen haben und sich orientieren wollen: die Sprachfamilien und wo sie eingesetzt werden, mit Beispielen in Python, C#, Dynamo, SQL und AutoLISP. Zwei Kapitel erklären, was im Computer passiert, vom Tastendruck bis zur Änderung des Modells, und warum die GUID die Identität jedes BIM-Objekts ist. Sechzehn Kapitel, mit eigens gezeichneten Grafiken und den Quellen.
+v0621	<span class="tag ok">Veröffentlicht</span><a class="man-btn" href="manuali/linguaggi-di-programmazione.html">Online lesen</a><a class="man-btn ghost" href="manuali/linguaggi-di-programmazione.pdf" download="">PDF herunterladen · 40 Seiten</a>
+v0622	Meine Vorschläge für die BIM-Welt
+v0623	Konkrete Ideen, um die Art zu verbessern, wie man mit BIM plant, baut und bewirtschaftet: von mir geschriebene Vorschläge, offen für den Austausch mit Fachleuten der Branche.
+v0624	Work in progress: Die ersten Vorschläge sind in Vorbereitung. Zur Diskussion trifft man sich auf <a href="https://www.linkedin.com/in/marco-scigliuolo/" target="_blank" rel="noopener">LinkedIn ↗</a>.
+v0625	Work in progress
+v0626	Woran ich gerade arbeite, mit der jeweiligen Phase. Die Karten werden laufend aktualisiert.
+v0627	Familienbibliothek mit der Datenstruktur der Provinz
+v0628	Familien mit den von der Provinz Bozen verlangten Parametern, bereit für den Einsatz in Projekten.
+v0629	Idee
+v0630	Entwicklung
+v0631	Test
+v0632	Freigabe
+v0633	Automatisierung der Zeichnungen
+v0634	Skripte für wiederkehrende Vorgänge, angefangen bei der Verwaltung externer Referenzen.
+v0635	Automatische Prüfungen aus der Checkliste
+v0636	Von der Prüfliste zu wiederholbaren Prüfungen an den Projekten.
+v0637	Von den Flächen der Zeichnung zur KlimaHaus-Berechnung
+v0638	Die Flächen aus den DWG entnehmen und in die Tabelle übertragen, ohne sie von Hand abzuschreiben.
+v0639	Artikel in Vorbereitung
+v0640	Die Artikel, an die ich denke, mit der jeweiligen Phase. Vorerst sind sie nur angelegt: Die Texte kommen nach und nach.
+v0641	Das Skript „Hoover“
+v0642	Ein Skript, das eine Excel-Tabelle mit Materialien, Parametern und Systeminformationen liest und sie in die Arbeit überträgt, ohne sie von Hand abzuschreiben. Der Name? Einem Skript einen Namen zu geben, ist einfach cool.
+v0643	Was es enthalten wird
+v0644	Was es aus der Excel-Tabelle liest: Materialien, Parameter, Systeminformationen
+v0645	Wie die Tabelle aufgebaut ist und wie das Skript sie liest
+v0646	Wie man es an eigenen Projekten ausprobiert
+v0647	Entwurf
+v0648	Überarbeitung
+v0649	Veröffentlicht
+v0650	Wie man eine IFC-Datei von Grund auf baut
+v0651	Wie eine IFC-Datei wirklich funktioniert, erzählt mit einem kurzen Experiment: eine von Grund auf bauen, Zeile für Zeile. Das Experiment funktioniert; es fehlen die abschließenden Überlegungen.
+v0652	Wie eine IFC-Datei innen aufgebaut ist
+v0653	Das Experiment Schritt für Schritt
+v0654	Abschließende Überlegungen
+v0655	Die Verbindung zum Gedanken <a href="#studio" data-goto-art="studio-oltre-noi">Die Welt nach uns</a>: Was wird in 200 Jahren von unseren Modellen bleiben
+v0656	10 Tipps, um gut zu arbeiten
+v0657	Kleine Regeln aus der Erfahrung, um im Büro und allein besser zu arbeiten. Bisher sind es sechs, die anderen vier folgen.
+v0658	<b>1. Automatisches Speichern.</b> Richte es in allen Programmen ein. Wenn du es noch nie gemacht hast, tu es sofort.
+v0659	<b>2. Zeitmanagement und Produktivität.</b> Die 2-Minuten-Regel, die Eisenhower-Matrix und die anderen Methoden: was ich nutze, was nicht und warum.
+v0660	<b>3. Die Vorlage.</b> Wenn du in BIM arbeitest, „müsst ihr euch das in euren verd***ten Schädel hämmern“ (erfundenes Zitat aus einem Film, den es nicht gibt): Um gut zu arbeiten, braucht man Vorlagen. Jedes Büro sollte eine haben, mit eingerichteten Ansichten und bereits geladenen Familien. Nehmt euch die Zeit, sie zu erstellen, und aktualisiert sie ab und zu mit dem Know-how des Büros. Das ist lebenswichtig.
+v0661	<b>4. Die unterbrechungsfreie Stromversorgung (USV).</b> Wie man sie für den eigenen Arbeitsplatz auswählt und nach welchen Kriterien. Ab und zu fällt der Strom aus, vor allem im Sommer. Das Ziel ist nicht, weiterzuarbeiten, sondern die Arbeit zu sichern, ohne beschädigte Dateien und ohne kostbare Stunden zu verlieren.
+v0662	<b>5. Überstunden sind kein Grund zum Stolz.</b> Sie bedeuten, dass in der Arbeitsorganisation etwas nicht funktioniert hat. Mit dem Unterschied zwischen angestellter und selbstständiger Arbeit.
+v0663	<b>6. Der Wert des Nachdenkens.</b> Nehmt euch Zeit, als Büro oder allein, um die Dateien zu ordnen und an kleinen Projekten zu arbeiten, die das Material des Büros verbessern: Alle werden davon profitieren. Und stellt ab und zu eure Arbeit und eure Organisation infrage. „Was langsam wächst, schlägt tiefe Wurzeln“ (Sprichwort, das der afrikanischen Tradition zugeschrieben wird).
+v0664	<b>7–10.</b> Noch festzulegen.
+v0665	Die IFC-Bibliothek in Excel
+v0666	Eine Excel-Tabelle mit den IFC-Klassen und ihrer Beschreibung: wie man sie nutzt, und wo.
+v0667	Was die Bibliothek enthält
+v0668	Wie man sie im Arbeitsalltag nutzt
+v0669	Wo man sie herunterlädt
+v0670	Die IFC-Exportversionen im Vergleich
+v0671	Was man am besten verwendet, und warum. In welchem Sinn ist eine Version „alt“? Ist der zugrunde liegende Code derselbe? Altern die Versionen wie Wein gut oder schlecht, oder bleibt die Basis immer gleich? Wie stark können sie das Ergebnis wirklich beeinflussen?
+v0672	Die Versionen im Vergleich: was sich wirklich ändert
+v0673	Was man am besten verwendet, und in welchem Fall
+v0674	Wie stark die Version das Ergebnis beeinflussen kann
+v0675	Wie man Programme miteinander sprechen lässt
+v0676	Ein Leitfaden zum IFC-Export, Programm für Programm. Hypothesen zur Verbindung der Exporte mehrerer Programme: Würden sie in einem föderierten Modell zusammen funktionieren? Und wo entstehen die Probleme?
+v0677	Der IFC-Export, ein Leitfaden für jedes Programm
+v0678	Mehrere Programme im selben föderierten Modell: die Tests
+v0679	Wo die Probleme entstehen und wie man sie vermeidet

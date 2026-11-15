@@ -1,0 +1,79 @@
+v0601	用 Dynamo 替换链接的 IFC
+v0602	有多少次，我们不得不更新 Revit 中链接的建筑师 IFC，结果丢失了以它为主体的插座和设备？两个 Dynamo 图只需几步就能解决这个问题。先给链接「拍照」：位置、旋转（对地理参照模型至关重要）以及以它为主体的图元。然后，在重新载入新的 IFC 之后，必要时重新对齐，并重新关联这些图元。指南包含要执行的操作流程图，说明如何载入文件以及如何阅读报告。
+v0603	<span class="tag ok">已发布</span><a class="man-btn" href="manuali/dynamo-sostituzione-ifc.html">在线阅读</a><a class="man-btn ghost" href="manuali/dynamo-sostituzione-ifc.pdf" download="">下载 PDF</a><span class="man-note">.dyn 文件即将提供。</span>
+v0604	AutoCAD 2026：外部参照与打印
+v0605	两个可直接使用的 AutoLISP 脚本。<b>SOSTXRIF</b> 用新版本替换建筑师的外部参照，并告诉你它是否仍然对齐。<b>RETINITRASP</b> 避免打印时出现实心黑色填充。
+v0606	<b>放在哪里：</b>把这两个文件复制到 <code>%AppData%\Autodesk\AutoCAD 2026\R25.1\ita\Support</code>，然后用 <code>APPLOAD</code> 加载，再输入命令名称。精简到要点的指南包含五步流程图和代码。
+v0607	<span class="tag">请先在副本上试用</span><a class="man-btn" href="manuali/autocad-2026-xrif-stampa.html">阅读指南</a><a class="man-btn ghost" href="manuali/autocad-2026-xrif-stampa.pdf" download="">PDF</a><a class="man-btn ghost" href="manuali/autocad/SOSTXRIF.lsp" download="">SOSTXRIF.lsp</a><a class="man-btn ghost" href="manuali/autocad/RETINITRASP.lsp" download="">RETINITRASP.lsp</a>
+v0608	BIM-MEP 检查清单
+v0609	对机电模型要做的检查。
+v0610	MEP 项目启动备忘
+v0611	机电项目开始时要准备的内容。
+v0612	用 i-project 进行电气设计
+v0613	用施耐德电气的 i-project 设计电气系统的完整流程，分为九个阶段：绘图前要索取的数据、CAD 绘图、软件设置、配电箱与负荷、带公式和数值示例的计算、校核不通过时该怎么办、系统图、按省级价格表编制预算，以及最终检查清单。配有专门绘制的示意图、参考规范（CEI 64-8 第 9 版）和来源。
+v0614	<span class="tag ok">已发布</span><a class="man-btn" href="manuali/progettazione-elettrica-iproject.html">在线阅读</a><a class="man-btn ghost" href="manuali/progettazione-elettrica-iproject.pdf" download="">下载 PDF · 30 页</a>
+v0615	消防设计指南
+v0616	消防设计的引导式学习路径。
+v0617	学习计划：设计一栋钢筋混凝土建筑
+v0618	设计钢筋混凝土建筑的学习计划。
+v0619	面向 BIM 从业者的编程语言
+v0620	一份写给已经接触过一点代码、想要理清方向的人的指南：编程语言的家族及其用途，附 Python、C#、Dynamo、SQL 和 AutoLISP 示例。其中两章解释了从按下按键到模型发生改变，计算机里发生了什么，以及为什么 GUID 是每个 BIM 对象的身份。共十六章，配有专门绘制的图示和来源。
+v0621	<span class="tag ok">已发布</span><a class="man-btn" href="manuali/linguaggi-di-programmazione.html">在线阅读</a><a class="man-btn ghost" href="manuali/linguaggi-di-programmazione.pdf" download="">下载 PDF · 40 页</a>
+v0622	我对 BIM 界的建议
+v0623	改进 BIM 设计、施工和运维方式的具体想法：由我撰写的建议，欢迎业内人士交流讨论。
+v0624	正在制作中：第一批建议正在准备。讨论请到 <a href="https://www.linkedin.com/in/marco-scigliuolo/" target="_blank" rel="noopener">LinkedIn ↗</a>。
+v0625	进行中的工作
+v0626	我目前正在做的事情，以及所处的阶段。卡片会随时更新。
+v0627	符合省级数据结构的族库
+v0628	带有博尔扎诺省所要求参数的族，可直接用于项目。
+v0629	构思
+v0630	开发
+v0631	测试
+v0632	发布
+v0633	图纸自动化
+v0634	用于重复操作的脚本，从外部参照的管理开始。
+v0635	基于检查清单的自动校核
+v0636	从检查清单到可重复执行的项目校核。
+v0637	从图纸面积到 CasaClima 计算
+v0638	从 DWG 中提取面积并导入电子表格，无需手工抄写。
+v0639	准备中的文章
+v0640	我正在构思的文章，以及所处的阶段。目前只是搭好了框架：正文会陆续发布。
+v0641	「Hoover」脚本
+v0642	一个读取 Excel 表格（包含材料、参数和系统信息）并把它们带入工作中、无需手工抄写的脚本。名字？给脚本起个名字很酷。
+v0643	将包含的内容
+v0644	它从 Excel 表格中读取什么：材料、参数、系统信息
+v0645	表格的结构以及脚本如何读取它
+v0646	如何在自己的项目中试用
+v0647	草稿
+v0648	修订
+v0649	已发布
+v0650	如何从零构建一个 IFC
+v0651	通过一个小实验讲述 IFC 文件究竟是如何工作的：从零开始，一行一行地构建一个。实验成功了；还缺最后的总结。
+v0652	IFC 文件的内部结构
+v0653	一步一步的实验
+v0654	最后的总结
+v0655	与思考<a href="#studio" data-goto-art="studio-oltre-noi">我们之后的世界</a>的联系：200 年后，我们的模型还会留下什么
+v0656	把工作做好的 10 条建议
+v0657	从经验中总结的小规则，帮助在事务所和独自工作时都做得更好。目前有六条，另外四条之后补上。
+v0658	<b>1. 自动保存。</b>在所有软件中都设置好。如果从来没设置过，马上去做。
+v0659	<b>2. 时间管理与效率。</b>两分钟法则、艾森豪威尔矩阵以及其他方法：我用什么、不用什么，以及为什么。
+v0660	<b>3. 样板。</b>如果你用 BIM 工作，「你们得把这个塞进你们那该死的脑袋里」（编造的引语，出自一部不存在的电影）：要把工作做好，就需要样板。每个事务所都应该有一个，视图设置好、族已经载入。花时间把它建起来，并时不时用事务所的经验去更新它。这至关重要。
+v0661	<b>4. 不间断电源（UPS）。</b>如何为自己的工作站挑选，以及按什么标准。时不时会停电，尤其是在夏天。目标不是继续工作，而是在文件不损坏、不浪费宝贵时间的情况下保住工作成果。
+v0662	<b>5. 加班不值得炫耀。</b>它意味着工作组织中有什么地方出了问题。还要区分受雇工作和自由职业。
+v0663	<b>6. 反思的价值。</b>无论是整个事务所还是个人，都要留出时间整理文件，做一些能改进事务所资料的小项目：大家都会受益。时不时也要对自己的工作和组织方式提出质疑。「生长缓慢的东西根扎得深」（据说是非洲的传统谚语）。
+v0664	<b>7–10.</b> 待定。
+v0665	Excel 中的 IFC 资料库
+v0666	一份包含 IFC 类及其说明的 Excel 表格：如何使用，在哪里使用。
+v0667	资料库包含什么
+v0668	如何在日常工作中使用
+v0669	在哪里下载
+v0670	IFC 导出版本比较
+v0671	用哪个更合适，为什么。一个版本「旧」是什么意思？参照的代码是一样的吗？版本像葡萄酒一样会陈得好或不好，还是基础始终不变？它们对结果到底能有多大影响？
+v0672	版本比较：到底有什么变化
+v0673	用哪个更合适，在什么情况下
+v0674	版本对结果能有多大影响
+v0675	如何让软件之间互相对话
+v0676	逐个软件的 IFC 导出指南。关于多个软件导出结果之间如何衔接的假设：它们能在联合模型中一起工作吗？问题又出在哪里？
+v0677	IFC 导出：每个软件一份指南
+v0678	多个软件在同一个联合模型中：测试
+v0679	问题出在哪里，如何避免
