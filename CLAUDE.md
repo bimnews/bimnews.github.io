@@ -31,6 +31,7 @@ Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato co
   - tema scuro predefinito, con chiave `tema-2026` in localStorage;
   - un colore per ogni scheda (`--k-news`, `--k-ai`, `--k-acc`, `--k-b5`, `--k-vid`, `--k-cur`, `--k-ag`, `--k-pf`, `--k-faq`).
 - **Home versione B:** titolo, mappa a tutta larghezza con la ricerca «Dove andiamo oggi?» (`#fc-search`) e la striscia degli eventi `#fc-strip`. La striscia deve restare intera nello schermo da 1280×650 in su: controlla con `strumenti/fit.js`.
+- **Il curatore, regola di Marco:** ogni articolo della pagina «Il curatore» è una finestra che si apre e si chiude (triangolo ▶ a destra, script «I miei libri: categorie e schede a scomparsa», esteso a `#chi-sono .st-item`). Si vedono il titolo e la prima riga; le schede con solo «Work in progress» restano aperte perché non c'è altro. I link con la classe `hl` aprono da soli l'articolo. Ogni nuovo articolo segue questa struttura: `h4`, prima riga `p`, poi il resto.
 - **Inoltre:** la guida al sito (array `STEPS`), la FAQ (`#faq`, generabile con `strumenti/faq.py`) e i crediti delle foto in fondo alla Mappa del sito.
 
 ## Come si pubblica
@@ -105,7 +106,7 @@ Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato co
 6. **Tai Chi e Kung Fu: PUBBLICATO il 15/11/2026 (revisione 107), `#fuori-taichi` in Fuori dallo studio.**
    - **Immagine:** le cinque virtù (智 仁 信 勇 忍) ricostruite in HTML e CSS (`.kf-fig`), con caratteri veri in font kaishu di sistema, non come immagine.
    - **Testi:** riassunti con parole nostre dalla pagina https://www.kungfuetaichi.com/5-virt%C3%B9, con due brevi citazioni.
-   - **Da fare:** il paragrafo «Perché per me è importante». Lo deve raccontare Marco: non inventarlo.
+   - **«Perché per me è importante»:** scritto il 15/11/2026 dal racconto di Marco (valvola di sfogo, equilibrio, bene e male, «scegliere le proprie battaglie» anche nel lavoro).
 7. **Statistiche delle visite: sezione PUBBLICATA il 15/11/2026 (revisione 110), «Le visite del sito» (`#visite`) nella pagina Mappa del sito.**
    - **Cosa mostra:** il totale, gli ultimi 30 giorni e le 10 pagine più visitate. Legge `https://mscigliuolo.goatcounter.com/counter/<path>.json`, dove i path sono `/`, `/bim-news` e così via, come in `count()`; `TOTAL` dà il totale del sito.
    - **Quando si carica:** solo quando si apre la vista `mappa`. Nel piè di pagina, «Statistiche anonime» porta lì.
@@ -133,10 +134,7 @@ Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato co
    - **Collegamenti tra sottopagine:** usare `data-goto-art="id"`.
    - **Da verificare:** il proverbio «Ciò che cresce lentamente mette radici profonde» è indicato come «attribuito alla tradizione africana»; l'origine non è verificata.
 
-11. **BIM in 5 minuti, «01 · Che cos'è» riscritto: anteprima del 15/11/2026, in attesa del sì.**
-   - **Il codice:** la patch è in `strumenti/anteprime/che-cose.patch` (`git apply`; contiene anche `assets/foto/palladio-rotonda.jpg`).
-   - **Struttura:** tre passi. Il disegno a mano, con la tavola di Palladio del 1570 (MET, CC0); il CAD, con le linee e gli attributi; il BIM, con oggetti, parametri e un muro interattivo. Seguono «Perché cambia tutto» e la differenza tra attributo e parametro.
-   - **Altro da aggiungere:** il credito della foto nella Mappa del sito.
+11. **BIM in 5 minuti, «01 · Che cos'è» riscritto: PUBBLICATO il 15/11/2026 (revisione 112).** Tre passi: a mano (Palladio, 1570, MET CC0, `assets/foto/palladio-rotonda.jpg`, con credito nella Mappa del sito), il CAD (linee con attributi) e il BIM (oggetti con parametri, muro interattivo `#bim-demo`); poi «Perché cambia tutto» e «Attributo o parametro?».
 
 ## Fatto di recente
 
@@ -157,3 +155,8 @@ Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato co
 - **15/11/2026, revisione 109:** pubblicata la timeline doppia mondo e Italia.
 - **15/11/2026, revisione 110:** la sezione «Le visite del sito» nella Mappa del sito.
 - **15/11/2026, revisione 111:** pulsanti 3D a LED incassati.
+- **15/11/2026, revisione 112:**
+  - **Il curatore:** tutti gli articoli si aprono e si chiudono.
+  - **Tai Chi e Kung Fu:** il racconto di Marco.
+  - **BIM in 5 minuti:** «Che cos'è» riscritto.
+  - **Le mie proposte:** la frase «aperte ai commenti» è sostituita dal rimando a LinkedIn, per coerenza con il disclaimer.
