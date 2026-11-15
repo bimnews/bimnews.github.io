@@ -117,10 +117,16 @@ Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato co
    - **Linea italiana:** `UNI 11337:2009` + l'array `NORME`. Una nuova norma aggiunta a `NORME` compare da sola.
    - **Linea del mondo:** sta nell'array `W` dentro la IIFE, con le fonti verificate.
    - **Collegamenti Italia → mondo:** sono nell'oggetto `LINK`, con chiave il campo `n` della norma italiana.
-9. **Selettore delle lingue in alto: lingue CONFERMATE da Marco il 15/11/2026, da fare.**
-   - **Le 11 lingue:** italiano (base), inglese, francese, tedesco, spagnolo, portoghese, russo, arabo standard (fuṣḥā, `dir="rtl"`), cinese mandarino in caratteri semplificati, giapponese, coreano.
-   - **Che cosa si traduce:** menu, pulsanti, titoli, disclaimer, principi e FAQ, poi i titoli delle notizie (sintesi in inglese).
-   - **Prima:** anteprima, poi pubblicazione dopo il sì.
+9. **Selettore delle lingue: PUBBLICATO il 15/11/2026 (revisione 113), in alto a sinistra nella barra `.util`, prima di «La tua area».**
+   - **Lingue:** 11 (it, en, fr, de, es, pt, ru, ar, zh in caratteri semplificati, ja, ko). La scelta resta nel browser (`localStorage` «lingua»).
+   - **Come traduce:** sul posto, senza ricaricare la pagina.
+     - Scritte brevi: il dizionario `D` (chiave = testo italiano esatto) sui nodi di testo di `.util`, `.top`, `.facade`, `.bn-hero`, `.bn-what` e `footer`. Un MutationObserver ritraduce le scritte che cambiano da sole (tema, versione, striscia degli eventi).
+     - Blocchi con markup: `data-tr="chiave"` e il dizionario `B` (il disclaimer di BIM News).
+     - Arabo: `dir="rtl"` sui testi tradotti, ma l'impaginazione resta da sinistra a destra.
+   - **I file:** il dizionario sta in `strumenti/lingue/dizionario.py`; per aggiornarlo dentro `index.html` si sostituisce l'oggetto `D`/`B` (vedi `applica.py`, che serve per il primo inserimento).
+   - **Non tradotti per ora:** notizie, sintesi, articoli, FAQ, l'etichetta «Mondo» della mappa (il codice confronta il testo «Mondo») e «Ultimo aggiornamento».
+   - **Prossimi passi possibili:** pagine separate per lingua (`/en/`…) con `hreflang` per i motori di ricerca, la FAQ tradotta, i titoli delle notizie.
+   - **Revisione delle traduzioni:** le ha scritte Claude; serve la revisione di un madrelingua, soprattutto per arabo, cinese, giapponese e coreano.
 10. **Articoli da scrivere con Marco (impostati il 15/11/2026; testi da fare insieme):**
    - **In `#wip` → «Articoli in preparazione»** (`.wip-art`), ogni scheda con «Cosa conterrà»:
      - `art-hoover`: lo script «Hoover», che legge un Excel con materiali, parametri e informazioni di sistema;
@@ -160,3 +166,4 @@ Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato co
   - **Tai Chi e Kung Fu:** il racconto di Marco.
   - **BIM in 5 minuti:** «Che cos'è» riscritto.
   - **Le mie proposte:** la frase «aperte ai commenti» è sostituita dal rimando a LinkedIn, per coerenza con il disclaimer.
+- **15/11/2026, revisione 113:** selettore delle lingue (11 lingue) con le scritte principali tradotte.
