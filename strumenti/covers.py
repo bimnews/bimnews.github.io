@@ -1,7 +1,7 @@
 import math,os
 from PIL import Image,ImageDraw,ImageFont
 F='/root/.claude/skills/synced/bbb5bd2f-7dc1-479e-935c-6bde90469bb2_c4d8bf62-0236-4cd2-a06c-5eb4266d5188/canvas-design/canvas-fonts/'
-OUT='/home/user/mscigliuolo.github.io/assets/copertine/';os.makedirs(OUT,exist_ok=True)
+OUT='/home/user/bimnews.github.io/assets/copertine/';os.makedirs(OUT,exist_ok=True)
 S=2;W,H=600*S,400*S
 BG=(13,17,21);ACC=(231,154,120);INK=(232,236,239);MUT=(141,152,163)
 def a(c,al):return c+(int(255*al),)

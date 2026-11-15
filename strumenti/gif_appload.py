@@ -54,7 +54,7 @@ b=GIFBuilder(width=W,height=H,fps=10)
 for step,n in [(0,16),(1,20),(2,20),(3,26)]:
     for i in range(n):b.add_frame(frame(step,i/(n-1)))
 for i in range(8):b.add_frame(frame(3,1))
-out='/home/user/mscigliuolo.github.io/assets/gif/appload.gif';os.makedirs(os.path.dirname(out),exist_ok=True)
+out='/home/user/bimnews.github.io/assets/gif/appload.gif';os.makedirs(os.path.dirname(out),exist_ok=True)
 b.save(out,num_colors=48,remove_duplicates=True)
 print(os.path.getsize(out)//1024,'KB')
 frame(2,.8).save('/tmp/claude-0/-home-user-mscigliuolo-github-io/3bbcc406-91d1-5415-a43b-de0ade14353b/scratchpad/img/gif-f2.png')

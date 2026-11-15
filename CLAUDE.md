@@ -1,6 +1,6 @@
 # BIM News: istruzioni per Claude
 
-Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato con GitHub Pages dal branch `main` su https://mscigliuolo.github.io/. Rassegna mondiale sul BIM, in italiano, con la fonte di ogni notizia.
+Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato con GitHub Pages dal branch `main` su **https://bimnews.github.io/**. Il repository è `bimnews/bimnews.github.io`, nell'organizzazione GitHub «bimnews» di Marco (trasferito il 15/11/2026 da `mscigliuolo/mscigliuolo.github.io`, per avere un indirizzo senza nome personale e senza comprare un dominio). Il vecchio indirizzo `mscigliuolo.github.io` non risponde più. Rassegna mondiale sul BIM, in italiano, con la fonte di ogni notizia.
 
 **Alla fine di ogni richiesta** aggiorna questo file (stato dei lavori, decisioni, dove sta il codice) e pubblicalo su main, così una nuova sessione riparte da qui senza ricominciare da zero.
 
@@ -48,6 +48,7 @@ Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato co
   - notizie, agenda, scadenze, video e circa 20 articoli di BIM Accademia;
   - fonti in tre livelli (istituzionali, stampa autorevole, grandi aziende);
   - lingue della ricerca: 36 lingue più 40 in verifica, elencate nella FAQ, che è la fonte unica: la tendina di BIM News le copia da lì.
+- **I due task puntano a `bimnews/bimnews.github.io`** (testi aggiornati il 15/11/2026).
 - **Backup mensile** `trig_01JYeJLDBXhzrernU5qSRte7`, il 1° del mese alle 19:23: invia a Marco uno zip con il sito, la cronologia (git bundle) e il testo del task settimanale.
 - **Se cambi la struttura dei dati, aggiorna il testo dei task con `update_trigger`.**
 
@@ -167,3 +168,4 @@ Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato co
   - **BIM in 5 minuti:** «Che cos'è» riscritto.
   - **Le mie proposte:** la frase «aperte ai commenti» è sostituita dal rimando a LinkedIn, per coerenza con il disclaimer.
 - **15/11/2026, revisione 113:** selettore delle lingue (11 lingue) con le scritte principali tradotte.
+- **15/11/2026:** il sito passa all'organizzazione «bimnews» e all'indirizzo https://bimnews.github.io/; aggiornati README, CLAUDE.md, i percorsi negli script di `strumenti/` e i testi dei due task. Da fare, se Marco lo vuole: un repository `mscigliuolo/mscigliuolo.github.io` con una sola pagina che rimanda a bimnews.github.io, per i link già condivisi.
