@@ -1,6 +1,6 @@
 # Aggiunge notizie verificate ad assets/notizie.json (una per riga), calcolando id, settimana ISO e voci di "weeks"
 import json,sys,datetime,runpy
-P='/home/user/mscigliuolo.github.io/assets/notizie.json'
+P='/home/user/bimnews.github.io/assets/notizie.json'
 NEW=runpy.run_path(sys.argv[1])['NEW']
 d=json.load(open(P,encoding='utf-8'))
 have={(a['n'],a['t']) for a in d['arts']};srcs={s[1] for a in d['arts'] for s in a['src']}

@@ -1,5 +1,5 @@
 import re,json,html
-p='/home/user/mscigliuolo.github.io/index.html'
+p='/home/user/bimnews.github.io/index.html'
 s=open(p,encoding='utf-8').read()
 def rep(a,b,c=1):
     global s

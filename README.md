@@ -1,4 +1,4 @@
-# mscigliuolo.github.io
+# BIM News · bimnews.github.io
 
 BIM News, rassegna settimanale sul BIM a cura di Marco Scigliuolo: notizie con mappa e archivio, BIM in 5 minuti, lavori in corso, il curatore.
 
@@ -6,4 +6,4 @@ BIM News, rassegna settimanale sul BIM a cura di Marco Scigliuolo: notizie con m
 - `privacy.html` – informativa privacy
 - `fonts/` – caratteri ospitati sul sito (SIL Open Font License, licenze incluse)
 
-Pubblicato con GitHub Pages. Nessun cookie, nessun tracciamento.
+Pubblicato con GitHub Pages su https://bimnews.github.io/. Nessun cookie, nessun tracciamento.

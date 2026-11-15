@@ -4,7 +4,7 @@ const ctx={};ctx.globalThis=ctx;ctx.self=ctx;vm.createContext(ctx);
 for(const f of ["d3-array.min.js","d3-geo.min.js","topojson-client.min.js"])vm.runInContext(fs.readFileSync(D+f,"utf8"),ctx);
 const d3=ctx.d3,topo=ctx.topojson;
 const world=JSON.parse(fs.readFileSync(D+"countries-110m.json"));const feats=topo.feature(world,world.objects.countries).features;
-const svg=fs.readFileSync("/home/user/mscigliuolo.github.io/assets/mappa.svg","utf8");
+const svg=fs.readFileSync("/home/user/bimnews.github.io/assets/mappa.svg","utf8");
 const S=[...svg.matchAll(/data-c="([a-z]+)" data-n="([^"]+)" data-b="([^"]+)"/g)].map(m=>({c:m[1],n:m[2].replace(/&#x27;/g,"'"),b:m[3].split(",").map(Number)}));
 function test(proj){let err=0;const P=feats.map(f=>{const b=d3.geoPath(proj).bounds(f);return{f,b}});
   const out=[];for(const s of S){let best=null,bd=1e9;for(const p of P){const d=Math.abs(p.b[0][0]-s.b[0])+Math.abs(p.b[0][1]-s.b[1])+Math.abs(p.b[1][0]-s.b[2])+Math.abs(p.b[1][1]-s.b[3]);if(d<bd){bd=d;best=p}}out.push([s.n,best.f.properties.name,best.f.id,+bd.toFixed(1),s.c]);err+=Math.min(bd,40)}return{err,out}}
