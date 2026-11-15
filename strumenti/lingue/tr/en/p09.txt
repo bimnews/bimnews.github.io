@@ -1,0 +1,55 @@
+v0680	Manuals with images that speak your language
+v0681	Enriching the manuals with «dynamic» images, in which the labels change with the language chosen for the site.
+v0682	Images drawn as SVG, with the labels as text rather than pixels
+v0683	Labels that follow the selected language
+v0684	A trial on the first manuals
+v0685	Outside the studio
+v0686	Reflections on what I am passionate about and on how the way we work is changing. My own opinions, with the same rigour I put into projects.
+v0687	Passions and reflections
+v0688	Music
+v0689	Exploration and discipline: what music has taught me, at work and beyond.
+v0690	My books
+v0691	The books that were fundamental to my education. They have a page of their own: <a href="#libri">My books →</a>
+v0692	What it means to be an engineer · outside the studio
+v0693	The same question seen from the inside: how you see yourself and how it feels to do this job, between doubts, hard work and satisfaction. The other side is in <a href="#studio">In the studio →</a>
+v0694	Scouting
+v0695	I started in AGESCI, the Italian Catholic scout association. Over time I realised it was not the right choice for me: in AGESCI you make the «choice of faith», and my spiritual path led me to recognise that I am not a believer. Since I have been living and working in Bolzano I have been in the <span translate="no">CNGEI</span>, the secular scouts, because I firmly believe that education should be secular and never guided by religious principles.
+v0696	What do I give? My skills, my passion, my wish to lend a hand. We run food collections and help the community as much as we can.
+v0697	What does scouting give me? Above all, the sense of what the <span translate="no">CNGEI</span> is founded on: the education of young people. It is the pillar for building a healthy society, with a secular education that does not neglect each person's spiritual side and helps them become better citizens of the world. That is how tomorrow's citizens are formed.
+v0698	«The aim of the Scout training is to improve the standard of our future citizenhood, especially in Character and Health; to replace Self with Service.»
+v0699	Robert Baden-Powell, <i lang="en">Aids to Scoutmastership</i>, chapter «The Aim of Scouting» (1930 edition). The Italian page shows our translation of the original: <span lang="en">«The aim of the Scout training is to improve the standard of our future citizenhood, especially in Character and Health; to replace Self with Service».</span> <a href="https://isf-world.org/pdf/A2SM-A5.pdf" target="_blank" rel="noopener">Original text ↗</a>
+v0700	Tai Chi and Kung Fu
+v0701	At the root of the martial arts are the virtues: not rules to recite, but dispositions of the mind, prompts for improving oneself in front of the master and in everyday life. Declaring them does not mean possessing them: it means having the will to acquire them. And with inner growth, each person finds their own meaning.
+v0702	<span lang="zh-Hans">智</span> Wisdom <small lang="zh-Latn-pinyin">zhì</small>
+v0703	Balance in behaviour and in advice, gained through experience and the wish to look at things from several points of view.
+v0704	<span lang="zh-Hans">仁</span> Compassion <small lang="zh-Latn-pinyin">rén</small>
+v0705	Being understanding towards others, even towards the opponent, and first of all towards oneself: accepting one's limits is the first step to overcoming them, and to helping those around us. «If the enemy fights with anger, do not give in to rage: use compassion».
+v0706	<span lang="zh-Hans">信</span> Sincerity <small lang="zh-Latn-pinyin">xìn</small>
+v0707	Acting and speaking according to what we really think, without being led astray. It also means honestly recognising one's limits and working to overcome them.
+v0708	<span lang="zh-Hans">勇</span> Courage <small lang="zh-Latn-pinyin">yǒng</small>
+v0709	It is not the absence of fear: it is facing difficulties without betraying one's values, persevering in adversity, controlling fear and knowing when to stop.
+v0710	<span lang="zh-Hans">忍</span> Patience <small lang="zh-Latn-pinyin">rěn</small>
+v0711	The most abstract, yet the foundation of all the others. It is not endurance: it is accepting that everything has its time, and committing to the long road. «Chew, swallow, digest. Then ask for more rice».
+v0712	The descriptions summarise, in our own words, the page <a href="https://www.kungfuetaichi.com/5-virt%C3%B9" target="_blank" rel="noopener">Le 5 Virtù · Kung Fu e Tai Chi (in Italian) ↗</a>, which is also the source of the two quotations.
+v0713	Why it matters to me
+v0714	Tai Chi and Kung Fu are becoming more and more important in my life. First of all they are an outlet: a way to seek inner balance and to express my aggression in a healthy way, finding a space entirely my own, inside.
+v0715	On a spiritual level they lead me to reflect on the meaning of good and evil, and on the fact that these tools are to be used only and exclusively in the worst case: to save one's own life or someone else's. As the first virtue, wisdom, teaches, you have to learn to choose your battles.
+v0716	It is a fundamental principle for me at work too, as well as in private life: there is no point wasting time on what drains our energy, health and peace of mind. Every virtue of Kung Fu teaches me something. The Chinese philosophy that lives in these disciplines pervades you, and helps you face everyday life with greater awareness.
+v0717	Non-professional manuals I created myself, asking Claude, Anthropic's artificial intelligence assistant, to write them following precise instructions: I chose the topic, the structure, the level of detail and the examples. For now you will find the titles: the texts will arrive one at a time.
+v0718	Sound: mathematics, effects and psychoacoustics
+v0719	What sound is, from mathematics to perception.
+v0720	Effects library for guitar and bass
+v0721	Effects for guitar and bass, collected and explained.
+v0722	Guitar tones with a modeler
+v0723	A summary of the Fractal tutorial playlist on guitar tones.
+v0724	The books that were fundamental to my education. For each one there will be a short article on what it gave me, grouped by category.
+v0725	Personal growth and psychology
+v0726	The books that helped me understand how people work, starting with myself.<span class="acc-count">· 5 entries</span>
+v0727	Your Erroneous Zones
+v0728	Italian edition «Le vostre zone erronee. Guida all'indipendenza dello spirito» · Wayne W. Dyer · Rizzoli, BUR
+v0729	The first personal-growth book by the American psychotherapist Wayne W. Dyer, published in 1976 and an international bestseller. Dyer calls «erroneous zones» the thinking habits that harm us without our noticing: guilt and worry, the constant need for approval, the labels with which we define ourselves («that's just the way I am»), the tendency to procrastinate. The underlying idea is that emotions depend to a large extent on how we think, and that each of us can choose to live in the present and take responsibility for ourselves.
+v0730	I can say it calmly: for me this book is year zero, the point from which all my interest in personal growth and psychology started. Before, I was very drawn to philosophy, but I had not found anything concrete in it to bring into my life, and I had set it aside somewhat. Here, instead, I found practical tools.
+v0731	Since then I have attended many training and personal-growth courses, and for a long time this book was my guide: it taught me not to let myself be carried along, without a critical spirit, by the deep beliefs the world hands us ready-made.
+v0732	The books of Gabriella Tupini
+v0733	Eight books of depth psychology · Gabriella Tupini
+v0734	Gabriella Tupini is a psychologist and psychotherapist who works with the analysis and interpretation of dreams, widely followed as a popular communicator: on her YouTube channel she talks about trauma, repressed emotions, awareness and the weight of family and social patterns. In her books she applies the same method: from the journey into one's own fears in <i>Nella tana del lupo</i> to the manual on dreams, written, as she herself explains, for those who cannot afford an analysis, up to the series <i>Storia di un'analisi</i>, in which each volume follows one person's journey.
