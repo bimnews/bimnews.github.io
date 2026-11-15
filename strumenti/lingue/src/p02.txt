@@ -50,7 +50,7 @@ v0146	Quante notizie ci sono per continente, paese o regione. Tocca un continent
 v0147	Perché alcune notizie hanno l'etichetta «Archivio»?
 v0148	Sono notizie che abbiamo raccolto più di sette giorni dopo la loro uscita, per completare la storia di un paese o di una norma.
 v0149	Perché non ci sono notizie prima del 2015?
-v0150	Il 2015 è l'anno in cui è uscita la prima parte della UNI 11337, la serie di norme italiane sul BIM. Lo usiamo come punto di partenza comune per tutto il mondo.
+v0150	Il 2015 è l'anno in cui è uscita la prima parte della UNI 11337, la serie di norme italiane sul BIM. Lo usiamo come punto di partenza comune per tutto il mondo. C'è una sola eccezione: le tappe fondative dei paesi pionieri, cioè i primi obblighi e le prime norme nazionali sul BIM, come in Danimarca, Finlandia, Regno Unito e Stati Uniti. Senza di loro la mappa direbbe che quei paesi sono arrivati tardi, mentre sono arrivati per primi. Le trovi con l'etichetta «Storico».
 v0151	Che cosa trovo in BIM & AI?
 v0152	Le notizie in cui il tema principale è l'intelligenza artificiale applicata al BIM e alle costruzioni, con la stessa mappa e gli stessi filtri di BIM News.
 v0153	Le lingue della ricerca

@@ -50,7 +50,7 @@ v0146	Wie viele Nachrichten es pro Kontinent, Land oder Region gibt. Tippe auf e
 v0147	Warum tragen manche Nachrichten das Etikett „Archiv“?
 v0148	Es sind Nachrichten, die wir mehr als sieben Tage nach ihrem Erscheinen gesammelt haben, um die Geschichte eines Landes oder einer Norm zu vervollständigen.
 v0149	Warum gibt es keine Nachrichten vor 2015?
-v0150	2015 erschien der erste Teil der UNI 11337, der italienischen Normenreihe zum BIM. Wir nutzen dieses Jahr als gemeinsamen Ausgangspunkt für die ganze Welt.
+v0150	2015 erschien der erste Teil der UNI 11337, der italienischen Normenreihe zum BIM. Wir nutzen dieses Jahr als gemeinsamen Ausgangspunkt für die ganze Welt. Es gibt nur eine Ausnahme: die grundlegenden Meilensteine der Pionierländer, also die ersten nationalen BIM-Pflichten und -Normen, etwa in Dänemark, Finnland, dem Vereinigten Königreich und den Vereinigten Staaten. Ohne sie würde die Karte nahelegen, dass diese Länder spät dran waren, obwohl sie die ersten waren. Du findest sie mit der Kennzeichnung „Historisch“.
 v0153	Die Sprachen der Suche
 v0154	In welchen Sprachen sucht ihr die Nachrichten?
 v0155	Wir suchen jede Nachricht in der Sprache des Landes, in dem sie entsteht, nicht nur auf Englisch. Unten findest du die Sprachen, in denen wir suchen, und die, die wir gerade prüfen.

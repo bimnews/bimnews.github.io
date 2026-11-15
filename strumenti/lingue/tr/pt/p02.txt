@@ -50,7 +50,7 @@ v0146	Quantas notícias há por continente, país ou região. Toque num continen
 v0147	Porque é que algumas notícias têm a etiqueta «Arquivo»?
 v0148	São notícias que recolhemos mais de sete dias depois da sua publicação, para completar a história de um país ou de uma norma.
 v0149	Porque não há notícias anteriores a 2015?
-v0150	2015 é o ano em que saiu a primeira parte da UNI 11337, a série de normas italianas sobre o BIM. Usamo-lo como ponto de partida comum para todo o mundo.
+v0150	2015 é o ano em que saiu a primeira parte da UNI 11337, a série de normas italianas sobre o BIM. Usamo-lo como ponto de partida comum para todo o mundo. Há uma única exceção: os marcos fundadores dos países pioneiros, ou seja, as primeiras obrigações e normas nacionais sobre BIM, como na Dinamarca, na Finlândia, no Reino Unido e nos Estados Unidos. Sem eles, o mapa daria a entender que esses países chegaram tarde, quando foram os primeiros. Encontra-os com a etiqueta «Histórico».
 v0153	As línguas da pesquisa
 v0154	Em que línguas procuram as notícias?
 v0155	Procuramos cada notícia na língua do país onde nasce, não só em inglês. Abaixo encontra as línguas em que procuramos e as que estamos a verificar.

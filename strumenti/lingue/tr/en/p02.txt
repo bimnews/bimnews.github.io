@@ -50,7 +50,7 @@ v0146	How many news items there are per continent, country or region. Tap a cont
 v0147	Why do some items carry the «Archive» label?
 v0148	They are items we collected more than seven days after they were published, to complete the history of a country or a standard.
 v0149	Why is there no news before 2015?
-v0150	2015 is the year the first part of UNI 11337, the Italian series of BIM standards, was published. We use it as a common starting point for the whole world.
+v0150	2015 is the year the first part of UNI 11337, the Italian series of BIM standards, was published. We use it as a common starting point for the whole world. There is one exception: the founding milestones of pioneer countries, i.e. the first national BIM mandates and standards, as in Denmark, Finland, the United Kingdom and the United States. Without them the map would suggest those countries arrived late, when they were the first. You will find them labelled “Historical”.
 v0151	What will I find in BIM & AI?
 v0152	The news in which the main topic is artificial intelligence applied to BIM and construction, with the same map and filters as BIM News.
 v0153	The research languages
