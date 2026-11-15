@@ -83,7 +83,11 @@ Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato co
      - Pasqua.
    - **Calcolo delle date:** usare `Intl.DateTimeFormat` con i calendari `islamic-umalqura`, `hebrew` e `chinese`, così le date si calcolano da sole. Diwali e Vesak vanno in una tabella verificata anno per anno.
    - **Anteprime:** GIF da mostrare a Marco prima di pubblicare.
-3. **Pulsanti 3D «a LED incassati»: anteprima inviata il 15/11/2026 (GIF e foto nei due temi), si aspetta il sì.** CSS pronto in `strumenti/led/led.css` (da incollare in fondo allo `<style>`); `strumenti/led/rec.js` registra i fotogrammi. Riguarda la barra in alto, le schede di BIM News, i pulsanti delle impostazioni, «Vedi le notizie» e «Tutti gli appuntamenti». Richiesta originale (richiesta del 15/11/2026: anche le scritte dei pulsanti devono accendersi come LED al passaggio del cursore e al clic): pulsanti in rilievo con un LED luminoso, eleganti. Fare un'anteprima.
+3. **Pulsanti 3D «a LED incassati»: PUBBLICATI il 15/11/2026 (revisione 111) dopo il sì di Marco.**
+   - **Dove si applicano:** barra in alto, schede di BIM News, impostazioni, «Vedi le notizie», «Tutti gli appuntamenti».
+   - **Il codice:** il CSS è in fondo allo `<style>`, blocco «pulsanti 3D a LED incassati».
+   - **Come funziona:** il LED, del colore della sezione (`--led`), è spento a riposo; si accende con la scritta al passaggio del cursore; al clic il pulsante scende; nella pagina attuale resta acceso.
+   - **Ingombro:** tra 901 e 1420 px i pulsanti sono più stretti, così la barra resta su una riga e la striscia `#fc-strip` entra a 1280×650 (verificato con `fit.js`).
 4. **Sito multilingue, proposta 2, scelta da Marco.**
    - Interfaccia in 7 lingue: it, en, de, fr, es, zh (semplificato), ja.
    - Pagine separate per lingua (`/en/`, `/de/`…) con `hreflang`.
@@ -112,11 +116,10 @@ Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato co
    - **Linea italiana:** `UNI 11337:2009` + l'array `NORME`. Una nuova norma aggiunta a `NORME` compare da sola.
    - **Linea del mondo:** sta nell'array `W` dentro la IIFE, con le fonti verificate.
    - **Collegamenti Italia → mondo:** sono nell'oggetto `LINK`, con chiave il campo `n` della norma italiana.
-9. **Selettore delle lingue in alto (richiesta del 15/11/2026).**
-   - **Lingue:** quelle della proposta multilingue (it, en, de, fr, es, zh, ja) più l'**arabo standard** (fuṣḥā), con `dir="rtl"`.
-   - **Scopo:** Marco vuole controllare che le scritte principali del sito siano tradotte.
-   - Fa parte del punto 4.
-
+9. **Selettore delle lingue in alto: lingue CONFERMATE da Marco il 15/11/2026, da fare.**
+   - **Le 11 lingue:** italiano (base), inglese, francese, tedesco, spagnolo, portoghese, russo, arabo standard (fuṣḥā, `dir="rtl"`), cinese mandarino in caratteri semplificati, giapponese, coreano.
+   - **Che cosa si traduce:** menu, pulsanti, titoli, disclaimer, principi e FAQ, poi i titoli delle notizie (sintesi in inglese).
+   - **Prima:** anteprima, poi pubblicazione dopo il sì.
 10. **Articoli da scrivere con Marco (impostati il 15/11/2026; testi da fare insieme):**
    - **In `#wip` → «Articoli in preparazione»** (`.wip-art`), ogni scheda con «Cosa conterrà»:
      - `art-hoover`: lo script «Hoover», che legge un Excel con materiali, parametri e informazioni di sistema;
@@ -129,6 +132,11 @@ Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato co
    - **In `#studio` → Riflessioni:** `studio-oltre-noi`, «Il mondo oltre noi» (che ne sarà dei nostri modelli tra 200 anni; da fare una ricerca sul più antico disegno di progetto arrivato fino a noi).
    - **Collegamenti tra sottopagine:** usare `data-goto-art="id"`.
    - **Da verificare:** il proverbio «Ciò che cresce lentamente mette radici profonde» è indicato come «attribuito alla tradizione africana»; l'origine non è verificata.
+
+11. **BIM in 5 minuti, «01 · Che cos'è» riscritto: anteprima del 15/11/2026, in attesa del sì.**
+   - **Il codice:** la patch è in `strumenti/anteprime/che-cose.patch` (`git apply`; contiene anche `assets/foto/palladio-rotonda.jpg`).
+   - **Struttura:** tre passi. Il disegno a mano, con la tavola di Palladio del 1570 (MET, CC0); il CAD, con le linee e gli attributi; il BIM, con oggetti, parametri e un muro interattivo. Seguono «Perché cambia tutto» e la differenza tra attributo e parametro.
+   - **Altro da aggiungere:** il credito della foto nella Mappa del sito.
 
 ## Fatto di recente
 
@@ -148,3 +156,4 @@ Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato co
 - **15/11/2026, revisione 108:** il globo non oscilla più, ruota soltanto.
 - **15/11/2026, revisione 109:** pubblicata la timeline doppia mondo e Italia.
 - **15/11/2026, revisione 110:** la sezione «Le visite del sito» nella Mappa del sito.
+- **15/11/2026, revisione 111:** pulsanti 3D a LED incassati.
