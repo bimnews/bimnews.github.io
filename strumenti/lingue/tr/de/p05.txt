@@ -1,0 +1,74 @@
+v0332	Schlankes Bauen
+v0333	9D bringt das „Lean Construction“ ins Modell: weniger Verschwendung von Zeit, Material und Arbeit, mit einem stetigeren Arbeitsfluss, den die Bauenden gemeinsam planen.
+v0334	Touchplan (Last Planner)
+v0335	Procore
+v0336	Autodesk Build
+v0337	Dalux Field
+v0338	Genaue Mengen, um das richtige Material zur richtigen Zeit zu bestellen.
+v0339	Gemeinsame Planung der Arbeiten zwischen Unternehmen und Planenden.
+v0340	Weniger Wartezeiten, weniger Nacharbeit, weniger Abfall.
+v0341	<b>Beispiel.</b> Das Material kommt auf die Baustelle, wenn es gebraucht wird, in der am Modell gemessenen Menge, ohne störende Zwischenlager.
+v0342	Quellen: <a href="https://aifos.org/home/news/int/interventi_commenti/bim-bum-bam---bit" target="_blank" rel="noopener">AiFOS, „BIM BUM BAM… bit“ (auf Italienisch) ↗</a>
+v0343	Die Industrialisierung
+v0344	10D blickt auf die Industrialisierung des Bauens: das Gebäude wie ein Industrieprodukt planen und herstellen, mit Bauteilen, die außerhalb der Baustelle vorgefertigt und vor Ort montiert werden.
+v0345	Allplan Precast
+v0346	Planbar
+v0347	hsbcad
+v0348	cadwork
+v0349	Das Modell wird zur Datenquelle für die Fertigung im Werk.
+v0350	Vorfertigung und „Offsite“-Produktion, mit Qualitätskontrolle.
+v0351	Die Baustelle wird vor allem zur Montage.
+v0352	<b>Beispiel.</b> Aus dem Modell einer Stahldachkonstruktion kommen alle Details für die Fertigung und Montage der Teile.
+v0353	Die Programme sind verbreitete Beispiele, keine vollständige Liste und keine Empfehlung: Viele decken mehrere Dimensionen ab. Konventionen im Vergleich. <b>Italien (UNI 11337, wie BibLus sie wiedergibt):</b> 6D Betrieb, 7D Nachhaltigkeit. <b>Überwiegender internationaler Gebrauch:</b> 6D Nachhaltigkeit, 7D Facility Management. Die Illustrationen wurden für diese Website gezeichnet. Für eine kritische Einführung in die Etiketten: <a href="https://www.shelidon.it/bimpill-le-dimensioni-e-gli-usi" target="_blank" rel="noopener">Shelidon, „#BIMpill – Le dimensioni e gli usi“ (auf Italienisch) ↗</a>.
+v0354	IFC
+v0355	<i>Industry Foundation Classes</i>: das offene Format, mit dem verschiedene Programme Modelle austauschen. Es ist die Norm ISO 16739-1.
+v0356	Mit offenen Formaten und Standards arbeiten, ohne von einer einzigen Software abzuhängen.
+v0357	ACDat · CDE
+v0358	Gemeinsame Datenumgebung (englisch <i>Common Data Environment</i>): wo Modelle und Dokumente des Projekts abgelegt, geteilt und freigegeben werden.
+v0359	CI · AIA
+v0360	Auftraggeber-Informationsanforderungen (ital. „Capitolato informativo“): was der Bauherr verlangt, welche Informationen, in welchem Format und wann (UNI 11337-5).
+v0361	oGI · pGI · BAP
+v0362	Angebot und Plan für das Informationsmanagement: wie der Auftragnehmer auf die Anforderungen antwortet, zuerst im Wettbewerb, dann während des Vertrags. International spricht man vom BEP, <i>BIM Execution Plan</i>.
+v0363	LOD
+v0364	Entwicklungsgrad der Objekte, von A bis G in der UNI 11337-4: wie weit ein Objekt in dieser Phase definiert ist.
+v0365	LOIN
+v0366	<i>Level of information need</i>, Informationsbedarfstiefe: wie viele und welche Informationen wirklich nötig sind (ISO 7817-1).
+v0367	Clash detection
+v0368	Automatische Kollisionsprüfung zwischen den Modellen der verschiedenen Fachbereiche.
+v0369	BIM-Rollen
+v0370	BIM Manager, BIM Coordinator, BIM Specialist und CDE Manager: die in der UNI 11337-7 definierten Rollen.
+v0371	Wie viel spart BIM wirklich? Unten die Zahlen aus Studien, die wir prüfen konnten, jeweils mit Quelle, und dann ein Zähler, der sie auf dein Büro anwendet. Die Zahlen schwanken stark von Projekt zu Projekt: Sie sind als Größenordnungen zu lesen, nicht als Versprechen.
+v0372	weniger Zeit, um eine Kostenermittlung aus dem Modell zu erstellen, mit Schätzungen auf 3 % genau
+v0373	Daten des Stanford CIFE zu 32 Projekten, wiedergegeben von <a href="https://doi.org/10.5130/ajceb.v12i4.3032" target="_blank" rel="noopener">Azhar, Khalfan, Maqsood, „Building information modelling (BIM): now and beyond“, 2012/2015, CC BY ↗</a>
+v0374	der nicht budgetierten Änderungen vermieden
+v0375	Daten des Stanford CIFE, wiedergegeben von <a href="https://doi.org/10.1061/(ASCE)LM.1943-5630.0000127" target="_blank" rel="noopener">Azhar, „BIM: Trends, Benefits, Risks, and Challenges for the AEC Industry“, 2011 ↗</a>
+v0376	des Auftragswerts dank Kollisionsprüfung eingespart
+v0377	Daten des Stanford CIFE, wiedergegeben von <a href="https://doi.org/10.1061/(ASCE)LM.1943-5630.0000127" target="_blank" rel="noopener">Azhar, „BIM: Trends, Benefits, Risks, and Challenges for the AEC Industry“, 2011 ↗</a>. Für ein großes Infrastrukturprojekt schätzt die Studie von <a href="https://doi.org/10.1080/01446193.2020.1802768" target="_blank" rel="noopener">Chahrour u. a., „Cost-benefit analysis of BIM-enabled design clash detection and resolution“, 2021 ↗</a> 20 %
+v0378	eingespart durch Kollisionsprüfung vor Baubeginn, bei einem Universitätsgebäude für 35 Millionen Dollar
+v0379	Fallstudie Holder Construction in <a href="https://doi.org/10.5130/ajceb.v12i4.3032" target="_blank" rel="noopener">Azhar, Khalfan, Maqsood, „Building information modelling (BIM): now and beyond“, 2012/2015, CC BY ↗</a>
+v0380	pro Woche und Person auf der Baustelle verloren durch Konflikte, Nacharbeit und Informationssuche
+v0381	<a href="https://www.prnewswire.com/news-releases/new-research-from-plangrid-and-fmi-identifies-factors-costing-the-construction-industry-more-than-177-billion-annually-300689826.html" target="_blank" rel="noopener">PlanGrid und FMI, „Construction Disconnected“, 2018 ↗</a>: Umfrage unter 600 Fachleuten in den USA
+v0382	der Nacharbeit auf US-Baustellen entsteht durch mangelhafte Kommunikation und falsche Projektdaten
+v0383	<a href="https://www.prnewswire.com/news-releases/new-research-from-plangrid-and-fmi-identifies-factors-costing-the-construction-industry-more-than-177-billion-annually-300689826.html" target="_blank" rel="noopener">PlanGrid und FMI, „Construction Disconnected“, 2018 ↗</a>
+v0384	Der Zähler für dein Büro
+v0385	Planende Personen
+v0386	Wert der in einem Jahr geplanten Bauwerke
+v0387	5 Mio. $
+v0388	Anteil der verlorenen Zeit, den BIM zurückholt
+v0389	Einsparung am Wert der Bauwerke
+v0390	So rechnen wir: Stunden = Personen × 14 Stunden pro Woche × 46 Wochen × zurückgeholter Anteil; Einsparung = Wert der Bauwerke × Prozentsatz. Die Startwerte sind bewusst vorsichtig, unter den 10 % von Stanford: Es sind unsere Annahmen, ändere sie mit deinen.
+v0391	Und zum Schmunzeln
+v0392	Kaffee und schlaflose Nächte sind ein Spiel, keine Statistik: Keine Studie hat sie gemessen. Der Rest des Abschnitts stammt dagegen aus den genannten Quellen.
+v0393	Pflicht zur BIM-Nutzung heißt nicht Pflicht zur Zertifizierung. Fast überall ist die Zertifizierung freiwillig: Sie dient dazu, einem Bauherrn mit dem Urteil einer dritten Stelle zu zeigen, dass du kannst, was du angibst. So funktioniert es in den Ländern, die wir geprüft haben, mit der regelnden Norm und der Quelle.
+v0394	Personen
+v0395	Zertifiziert werden die Kompetenzen einer Rolle, etwa BIM Manager oder BIM Coordinator: eine Prüfung und die Aufrechterhaltung über die Jahre. Stellen, die Personen zertifizieren, werden nach ISO/IEC 17024 akkreditiert.
+v0396	Organisationen
+v0397	Zertifiziert wird, dass ein Büro oder Unternehmen Informationen so verwaltet, wie es die ISO 19650 verlangt: ein Audit der Prozesse und Projekte, jedes Jahr wiederholt.
+v0398	Hongkong
+v0399	Bei öffentlichen Bauten über 30 Millionen Hongkong-Dollar muss das BIM-Team des Auftragnehmers von einem vom Construction Industry Council (CIC) zertifizierten BIM Manager geleitet werden. Bei Ausschreibungen ab dem 1. Januar 2024 müssen auch die BIM Coordinator zertifiziert sein (mindestens die Hälfte auf voller Stufe).
+v0400	DEVB Technical Circular (Works) Nr. 2/2021 und Aktualisierung vom 13.06.2023
+v0401	<a href="https://devb.gov.hk/filemanager/technicalcirculars/en/upload/387/1/C-2021-02-02.pdf" target="_blank" rel="noopener">DEVB-Rundschreiben, Text mit Aktualisierungen (Englisch) ↗</a>
+v0402	Italien
+v0403	Das italienische Vergabegesetz verlangt von öffentlichen Auftraggebern, einen Verwalter der gemeinsamen Datenumgebung, mindestens einen Verwalter der digitalen Prozesse und für jedes Vorhaben einen Koordinator der Informationsflüsse zu ernennen, mit „angemessener Kompetenz“ aus der Berufspraxis oder aus erfolgreich abgeschlossenen Kursen. Eine Zertifizierung wird nicht verlangt: Sie ist ein Weg, die Kompetenz nachzuweisen. Die Rollen sind die der UNI 11337-7:2018; die Anforderungen für ihre Zertifizierung stehen in der UNI/PdR 78:2020, in Kraft seit dem 2. März 2020.
+v0404	Gesetzesvertretendes Dekret 36/2023, Anhang I.9, Art. 1, Abs. 3 · UNI 11337-7:2018 · UNI/PdR 78:2020
+v0405	<a href="https://www.codiceappalti.it/DLGS_36_2023/Allegato_I_9_Metodi_e_strumenti_di_gestione_informativa_digitale_delle_costruzioni_/12885" target="_blank" rel="noopener">Anhang I.9, geltender Text (Italienisch) ↗</a> · <a href="https://www.certifico.com/normazione/news-normazione/uni-pdr-78-2020-requisiti-valutazione-di-conformita-uni-11337-7-2018" target="_blank" rel="noopener">UNI/PdR 78:2020, Übersicht (Italienisch) ↗</a>

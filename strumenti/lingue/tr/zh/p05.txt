@@ -1,0 +1,74 @@
+v0332	精益建造
+v0333	9D 把「精益建造」（lean construction）带入模型：减少时间、材料和人工的浪费，让工作流程更连续，并由参建各方共同计划。
+v0334	Touchplan (Last Planner)
+v0335	Procore
+v0336	Autodesk Build
+v0337	Dalux Field
+v0338	精确的工程量，在正确的时间订购正确的材料。
+v0339	施工单位与设计人员共同计划各项工作。
+v0340	更少等待、更少返工、更少浪费。
+v0341	<b>示例。</b>材料在需要时才运到工地，数量就是在模型上量出的数量，不会有碍事的堆放。
+v0342	来源：<a href="https://aifos.org/home/news/int/interventi_commenti/bim-bum-bam---bit" target="_blank" rel="noopener">AiFOS，「BIM BUM BAM… bit」（意大利文）↗</a>
+v0343	工业化
+v0344	10D 着眼于建筑工业化：像工业产品一样设计和生产建筑，构件在工地外预制，在现场安装。
+v0345	Allplan Precast
+v0346	Planbar
+v0347	hsbcad
+v0348	cadwork
+v0349	模型成为工厂生产的数据来源。
+v0350	预制和「场外」生产，并进行质量控制。
+v0351	工地主要变成安装现场。
+v0352	<b>示例。</b>从钢结构屋顶的模型中可以导出构件生产和安装所需的全部详图。
+v0353	这些软件只是常见的例子，既不是完整清单，也不是推荐：很多软件覆盖多个维度。不同约定的对比。<b>意大利（BibLus 引述的 UNI 11337）：</b>6D 运维，7D 可持续性。<b>国际上的主流用法：</b>6D 可持续性，7D 设施管理。插图为本网站绘制。关于这些标签的批判性介绍：<a href="https://www.shelidon.it/bimpill-le-dimensioni-e-gli-usi" target="_blank" rel="noopener">Shelidon，「#BIMpill – Le dimensioni e gli usi」（意大利文）↗</a>。
+v0354	IFC
+v0355	<i>Industry Foundation Classes</i>：不同软件之间交换模型所用的开放格式，即 ISO 16739-1 标准。
+v0356	使用开放格式和开放标准，不依赖单一软件。
+v0357	ACDat · CDE
+v0358	公共数据环境（英文 <i>Common Data Environment</i>）：项目模型和文档在这里存档、共享和审批。
+v0359	CI · EIR
+v0360	业主信息要求（意大利语「Capitolato informativo」）：业主要求什么、哪些信息、什么格式、什么时候提交（UNI 11337-5）。
+v0361	oGI · pGI · BEP
+v0362	信息管理报价与计划：承包方如何回应信息要求，先在招标阶段，然后在合同执行期间。在意大利以外通常称为 BEP，即 <i>BIM Execution Plan</i>（BIM 执行计划）。
+v0363	LOD
+v0364	对象的发展程度，UNI 11337-4 中分为 A 到 G：表示一个对象在该阶段的明确程度。
+v0365	LOIN
+v0366	<i>Level of information need</i>，信息需求等级：真正需要多少信息、哪些信息（ISO 7817-1）。
+v0367	Clash detection
+v0368	对不同专业模型之间的碰撞进行自动检查。
+v0369	BIM 岗位
+v0370	BIM 经理、BIM 协调员、BIM 专员和 CDE 经理：UNI 11337-7 定义的岗位。
+v0371	BIM 到底能节省多少？下面是我们能够核实的研究数据，每项都注明来源，然后是一个把这些数据套用到你事务所的计算器。数字因项目而差异很大：应视为数量级，而不是承诺。
+v0372	从模型编制预算所需的时间减少，估算精度在 3% 以内
+v0373	斯坦福 CIFE 对 32 个项目的数据，引自 <a href="https://doi.org/10.5130/ajceb.v12i4.3032" target="_blank" rel="noopener">Azhar、Khalfan、Maqsood，「Building information modelling (BIM): now and beyond」，2012/2015，CC BY ↗</a>
+v0374	的预算外变更得以消除
+v0375	斯坦福 CIFE 数据，引自 <a href="https://doi.org/10.1061/(ASCE)LM.1943-5630.0000127" target="_blank" rel="noopener">Azhar，「BIM: Trends, Benefits, Risks, and Challenges for the AEC Industry」，2011 ↗</a>
+v0376	的合同金额因碰撞检查而节省
+v0377	斯坦福 CIFE 数据，引自 <a href="https://doi.org/10.1061/(ASCE)LM.1943-5630.0000127" target="_blank" rel="noopener">Azhar，「BIM: Trends, Benefits, Risks, and Challenges for the AEC Industry」，2011 ↗</a>。在一个大型基础设施项目中，<a href="https://doi.org/10.1080/01446193.2020.1802768" target="_blank" rel="noopener">Chahrour 等人，「Cost-benefit analysis of BIM-enabled design clash detection and resolution」，2021 ↗</a> 的研究估计为 20%
+v0378	在一栋造价 3500 万美元的大学建筑中，通过开工前的碰撞检查节省下来
+v0379	Holder Construction 案例，见 <a href="https://doi.org/10.5130/ajceb.v12i4.3032" target="_blank" rel="noopener">Azhar、Khalfan、Maqsood，「Building information modelling (BIM): now and beyond」，2012/2015，CC BY ↗</a>
+v0380	每人每周在工地上因冲突、返工和查找信息而浪费的时间
+v0381	<a href="https://www.prnewswire.com/news-releases/new-research-from-plangrid-and-fmi-identifies-factors-costing-the-construction-industry-more-than-177-billion-annually-300689826.html" target="_blank" rel="noopener">PlanGrid 和 FMI，「Construction Disconnected」，2018 ↗</a>：对美国 600 名专业人士的调查
+v0382	的美国工地返工源于沟通不畅和错误的项目数据
+v0383	<a href="https://www.prnewswire.com/news-releases/new-research-from-plangrid-and-fmi-identifies-factors-costing-the-construction-industry-more-than-177-billion-annually-300689826.html" target="_blank" rel="noopener">PlanGrid 和 FMI，「Construction Disconnected」，2018 ↗</a>
+v0384	你事务所的计算器
+v0385	设计人员人数
+v0386	一年内设计工程的总值
+v0387	500 万美元
+v0388	BIM 能挽回的浪费时间比例
+v0389	在工程总值上的节省
+v0390	计算方法：小时数 = 人数 × 每周 14 小时 × 46 周 × 挽回比例；节省 = 工程总值 × 百分比。初始值有意取得保守，低于斯坦福给出的 10%：这些是我们的假设，请换成你自己的数值。
+v0391	再来点轻松的
+v0392	咖啡和熬夜只是个玩笑，不是统计数据：没有任何研究测量过它们。本节其余内容则来自所引用的来源。
+v0393	强制使用 BIM 并不意味着强制取得认证。几乎在所有地方，认证都是自愿的：它的作用是借助第三方机构的评判，向业主证明你确实能做到你所声称的。以下是我们核实过的国家的做法，附上相关规范和来源。
+v0394	个人
+v0395	认证的是某个岗位的能力，例如 BIM 经理或 BIM 协调员：一次考试，加上多年的持续维护。认证人员的机构按照 ISO/IEC 17024 获得认可。
+v0396	组织
+v0397	认证的是一家事务所或企业按照 ISO 19650 的要求管理信息：对流程和项目进行审核，每年重复一次。
+v0398	香港
+v0399	对于超过 3000 万港元的公共工程，承包方的 BIM 团队必须由建造业议会（CIC）认证的 BIM 经理领导。自 2024 年 1 月 1 日起招标的项目，BIM 协调员也必须获得认证（至少一半须达到完全级别）。
+v0400	发展局技术通告（工务）第 2/2021 号及 2023 年 6 月 13 日更新
+v0401	<a href="https://devb.gov.hk/filemanager/technicalcirculars/en/upload/387/1/C-2021-02-02.pdf" target="_blank" rel="noopener">发展局通告，含更新内容的文本（英文）↗</a>
+v0402	意大利
+v0403	意大利《公共合同法》要求采购单位任命一名公共数据环境管理员、至少一名数字流程管理员，并为每个项目任命一名信息流协调员，他们须具备通过职业实践或顺利结业的课程获得的「适当能力」。认证并非必需：它是证明能力的一种方式。这些岗位由 UNI 11337-7:2018 规定；认证要求见 UNI/PdR 78:2020 实施规程，自 2020 年 3 月 2 日起生效。
+v0404	第 36/2023 号立法令附件 I.9 第 1 条第 3 款 · UNI 11337-7:2018 · UNI/PdR 78:2020
+v0405	<a href="https://www.codiceappalti.it/DLGS_36_2023/Allegato_I_9_Metodi_e_strumenti_di_gestione_informativa_digitale_delle_costruzioni_/12885" target="_blank" rel="noopener">附件 I.9，现行文本（意大利文）↗</a> · <a href="https://www.certifico.com/normazione/news-normazione/uni-pdr-78-2020-requisiti-valutazione-di-conformita-uni-11337-7-2018" target="_blank" rel="noopener">UNI/PdR 78:2020 简介（意大利文）↗</a>

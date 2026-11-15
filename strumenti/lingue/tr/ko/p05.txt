@@ -1,0 +1,74 @@
+v0332	린 건설
+v0333	9D는 모델에 「린 건설」(lean construction)을 가져옵니다. 시간, 자재, 노동의 낭비를 줄이고, 작업 흐름을 더 끊김 없이 만들어 시공자들이 함께 계획합니다.
+v0334	Touchplan (Last Planner)
+v0335	Procore
+v0336	Autodesk Build
+v0337	Dalux Field
+v0338	정확한 물량으로 알맞은 자재를 알맞은 때에 주문합니다.
+v0339	시공사와 설계자가 작업 계획을 함께 세웁니다.
+v0340	대기, 재작업, 폐기물이 줄어듭니다.
+v0341	<b>예.</b> 자재가 필요할 때, 모델에서 잰 양만큼 현장에 도착하고, 걸리적거리는 적치장이 없습니다.
+v0342	출처: <a href="https://aifos.org/home/news/int/interventi_commenti/bim-bum-bam---bit" target="_blank" rel="noopener">AiFOS, 「BIM BUM BAM… bit」(이탈리아어) ↗</a>
+v0343	산업화
+v0344	10D는 건설의 산업화를 바라봅니다. 건물을 공산품처럼 설계하고 생산하며, 부재를 현장 밖에서 미리 만들어 현장에서 조립합니다.
+v0345	Allplan Precast
+v0346	Planbar
+v0347	hsbcad
+v0348	cadwork
+v0349	모델이 공장 생산의 데이터 원천이 됩니다.
+v0350	품질 관리를 갖춘 프리패브와 「탈현장」 생산.
+v0351	현장은 주로 조립하는 곳이 됩니다.
+v0352	<b>예.</b> 철골 지붕 모델에서 부재의 제작과 조립에 필요한 모든 상세가 나옵니다.
+v0353	소프트웨어는 널리 쓰이는 예시일 뿐, 완전한 목록도 추천도 아닙니다. 상당수가 여러 차원을 다룹니다. 관례 비교. <b>이탈리아(BibLus가 소개하는 UNI 11337):</b> 6D 운영, 7D 지속가능성. <b>국제적으로 우세한 용법:</b> 6D 지속가능성, 7D 시설 관리. 그림은 이 사이트를 위해 그렸습니다. 이 꼬리표에 대한 비판적 입문: <a href="https://www.shelidon.it/bimpill-le-dimensioni-e-gli-usi" target="_blank" rel="noopener">Shelidon, 「#BIMpill – Le dimensioni e gli usi」(이탈리아어) ↗</a>.
+v0354	IFC
+v0355	<i>Industry Foundation Classes</i>: 서로 다른 소프트웨어가 모델을 주고받는 개방형 포맷. ISO 16739-1 규격입니다.
+v0356	한 소프트웨어에 매이지 않고, 개방형 포맷과 표준으로 일하기.
+v0357	ACDat · CDE
+v0358	공통 데이터 환경(영어로 <i>Common Data Environment</i>): 프로젝트의 모델과 문서를 보관하고, 공유하고, 승인하는 곳.
+v0359	CI · EIR
+v0360	발주자 정보 요구사항(이탈리아어 「Capitolato informativo」): 발주처가 무엇을, 어떤 정보를, 어떤 형식으로, 언제 요구하는가(UNI 11337-5).
+v0361	oGI · pGI · BEP
+v0362	정보 관리 제안서와 계획서: 수급인이 요구사항에 어떻게 답하는가. 먼저 입찰에서, 그다음 계약 기간 동안. 이탈리아 밖에서는 BEP, 즉 <i>BIM Execution Plan</i>이라고 합니다.
+v0363	LOD
+v0364	객체의 개발 수준. UNI 11337-4에서는 A부터 G까지: 그 단계에서 객체가 얼마나 정해져 있는가.
+v0365	LOIN
+v0366	<i>Level of information need</i>, 정보 요구 수준: 정말 필요한 정보가 얼마나, 무엇인가(ISO 7817-1).
+v0367	Clash detection
+v0368	여러 분야 모델 사이의 간섭을 자동으로 검토하는 일.
+v0369	BIM 역할
+v0370	BIM 매니저, BIM 코디네이터, BIM 스페셜리스트, CDE 매니저: UNI 11337-7이 정한 역할.
+v0371	BIM은 정말 얼마나 절약해 줄까요? 아래는 저희가 확인할 수 있었던 연구 수치로, 각각 출처가 있습니다. 이어서 이를 여러분의 사무소에 적용하는 계산기가 있습니다. 수치는 프로젝트마다 크게 다르니, 약속이 아니라 규모의 감으로 읽어 주세요.
+v0372	모델로 내역서를 만드는 시간 단축, 추정 오차는 3% 이내
+v0373	32개 프로젝트에 대한 스탠퍼드 CIFE 자료, 출처: <a href="https://doi.org/10.5130/ajceb.v12i4.3032" target="_blank" rel="noopener">Azhar, Khalfan, Maqsood, 「Building information modelling (BIM): now and beyond」, 2012/2015, CC BY ↗</a>
+v0374	예산에 없던 설계 변경 제거
+v0375	스탠퍼드 CIFE 자료, 출처: <a href="https://doi.org/10.1061/(ASCE)LM.1943-5630.0000127" target="_blank" rel="noopener">Azhar, 「BIM: Trends, Benefits, Risks, and Challenges for the AEC Industry」, 2011 ↗</a>
+v0376	간섭 검토 덕분에 절약한 계약 금액의 비율
+v0377	스탠퍼드 CIFE 자료, 출처: <a href="https://doi.org/10.1061/(ASCE)LM.1943-5630.0000127" target="_blank" rel="noopener">Azhar, 「BIM: Trends, Benefits, Risks, and Challenges for the AEC Industry」, 2011 ↗</a>. 한 대형 인프라 프로젝트에서 <a href="https://doi.org/10.1080/01446193.2020.1802768" target="_blank" rel="noopener">Chahrour 외, 「Cost-benefit analysis of BIM-enabled design clash detection and resolution」, 2021 ↗</a> 연구는 20%로 추정합니다
+v0378	3,500만 달러 규모 대학 건물에서 착공 전 간섭 검토로 절약
+v0379	Holder Construction 사례, 출처: <a href="https://doi.org/10.5130/ajceb.v12i4.3032" target="_blank" rel="noopener">Azhar, Khalfan, Maqsood, 「Building information modelling (BIM): now and beyond」, 2012/2015, CC BY ↗</a>
+v0380	1인당 매주 현장에서 갈등, 재작업, 정보 찾기로 잃는 시간
+v0381	<a href="https://www.prnewswire.com/news-releases/new-research-from-plangrid-and-fmi-identifies-factors-costing-the-construction-industry-more-than-177-billion-annually-300689826.html" target="_blank" rel="noopener">PlanGrid와 FMI, 「Construction Disconnected」, 2018 ↗</a>: 미국 전문가 600명 대상 조사
+v0382	미국 현장 재작업 가운데 의사소통 부족과 잘못된 설계 데이터에서 비롯된 비율
+v0383	<a href="https://www.prnewswire.com/news-releases/new-research-from-plangrid-and-fmi-identifies-factors-costing-the-construction-industry-more-than-177-billion-annually-300689826.html" target="_blank" rel="noopener">PlanGrid와 FMI, 「Construction Disconnected」, 2018 ↗</a>
+v0384	여러분 사무소의 계산기
+v0385	설계 인원
+v0386	1년 동안 설계한 공사 금액
+v0387	500만 달러
+v0388	잃어버린 시간 가운데 BIM이 되찾아 주는 비율
+v0389	공사 금액 대비 절약
+v0390	계산 방법: 시간 = 인원 × 주 14시간 × 46주 × 되찾는 비율, 절약액 = 공사 금액 × 비율. 초기값은 스탠퍼드가 제시한 10%보다 낮게, 일부러 보수적으로 잡았습니다. 저희의 가정이니 여러분의 수치로 바꿔 보세요.
+v0391	그리고 잠깐 웃어 보자면
+v0392	커피와 잠 못 이룬 밤은 놀이일 뿐 통계가 아닙니다. 어떤 연구도 그것을 재지 않았습니다. 이 섹션의 나머지는 인용한 출처에서 온 것입니다.
+v0393	BIM 사용 의무가 인증 취득 의무를 뜻하지는 않습니다. 거의 모든 곳에서 인증은 자율입니다. 제3의 기관의 평가로, 내가 밝힌 것을 할 줄 안다는 것을 발주처에 보여 주기 위한 것입니다. 저희가 확인한 나라들에서 어떻게 운영되는지, 규정하는 규격과 출처와 함께 소개합니다.
+v0394	개인
+v0395	BIM 매니저나 BIM 코디네이터처럼 한 역할의 역량을 인증합니다. 시험을 보고, 이후 여러 해에 걸쳐 유지합니다. 개인을 인증하는 기관은 ISO/IEC 17024에 따라 인정받습니다.
+v0396	조직
+v0397	사무소나 기업이 ISO 19650이 요구하는 대로 정보를 관리하는지 인증합니다. 프로세스와 프로젝트에 대한 심사를 매년 반복합니다.
+v0398	홍콩
+v0399	3,000만 홍콩달러가 넘는 공공 공사에서는 수급인의 BIM 팀을 건설업의회(CIC)가 인증한 BIM 매니저가 이끌어야 합니다. 2024년 1월 1일 이후 입찰에서는 BIM 코디네이터도 인증을 받아야 합니다(최소 절반은 정식 등급).
+v0400	DEVB Technical Circular (Works) 제2/2021호 및 2023년 6월 13일 개정
+v0401	<a href="https://devb.gov.hk/filemanager/technicalcirculars/en/upload/387/1/C-2021-02-02.pdf" target="_blank" rel="noopener">DEVB 통첩, 개정 내용 포함 본문(영어) ↗</a>
+v0402	이탈리아
+v0403	이탈리아 공공계약법은 공공 발주기관에 공통 데이터 환경 관리자, 최소 한 명의 디지털 프로세스 관리자, 그리고 공사마다 정보 흐름 코디네이터를 임명하도록 요구합니다. 이들은 실무 경험이나 수료한 교육으로 얻은 「적절한 역량」을 갖춰야 합니다. 인증은 필수가 아니며, 역량을 증명하는 한 방법입니다. 역할은 UNI 11337-7:2018에 따른 것이고, 인증 요건은 2020년 3월 2일부터 시행된 UNI/PdR 78:2020에 있습니다.
+v0404	입법령 36/2023 부속서 I.9 제1조 제3항 · UNI 11337-7:2018 · UNI/PdR 78:2020
+v0405	<a href="https://www.codiceappalti.it/DLGS_36_2023/Allegato_I_9_Metodi_e_strumenti_di_gestione_informativa_digitale_delle_costruzioni_/12885" target="_blank" rel="noopener">부속서 I.9, 현행 조문(이탈리아어) ↗</a> · <a href="https://www.certifico.com/normazione/news-normazione/uni-pdr-78-2020-requisiti-valutazione-di-conformita-uni-11337-7-2018" target="_blank" rel="noopener">UNI/PdR 78:2020 개요(이탈리아어) ↗</a>
