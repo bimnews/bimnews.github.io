@@ -2,6 +2,8 @@
 
 Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato con GitHub Pages dal branch `main` su https://mscigliuolo.github.io/. Rassegna mondiale sul BIM, in italiano, con la fonte di ogni notizia.
 
+**Alla fine di ogni richiesta** aggiorna questo file (stato dei lavori, decisioni, dove sta il codice) e pubblicalo su main, così una nuova sessione riparte da qui senza ricominciare da zero.
+
 **Con Marco:** scrivi in italiano e dagli del tu. Parti dalla risposta, senza premesse né complimenti. Non inventare mai fatti: ogni notizia, data, numero o link va verificato aprendo la pagina. Prima di cambiamenti grandi alla grafica mostragli un'anteprima (screenshot o GIF) e pubblica solo dopo il suo sì.
 
 ## Com'è fatto il sito
@@ -64,16 +66,24 @@ Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato co
 
 ## Lavori in sospeso, in ordine di priorità
 
-1. **Globo 3D (anteprima richiesta, non pubblicare prima del sì).**
-   - **Cosa vuole Marco:**
-     - nella home, al posto della mappa piatta, un globo stilizzato che galleggia e ruota, su uno sfondo di stelle;
-     - quando si sceglie un paese, uno zoom dinamico fino a vederlo intero.
-   - **Piano:**
-     - d3-geo con proiezione ortografica su canvas, confini `world-atlas@2.0.2/countries-110m.json` (licenza ISC; d3-geo ISC; topojson-client);
-     - salvare le librerie in `assets/` e caricarle solo nella versione completa;
-     - fermare la rotazione con `prefers-reduced-motion`.
-   - **Abbinamento ai nomi italiani della mappa:** è in `strumenti/globo/abbinamenti.json`, calcolato da `strumenti/globo/match.js`. Da correggere a mano: Figi, Stati Uniti, Russia, Norvegia e Francia, abbinati male per isole e territori lontani.
-   - **Collegamento con la mappa attuale:** il clic sul globo può lanciare il clic sul paese corrispondente in `#ctrs` (come fa la ricerca), così filtri, numeri e regioni restano quelli della mappa piatta. Dopo lo zoom si può passare alla mappa piatta per vedere le regioni.
+1. **Globo 3D: anteprima fatta e inviata il 15/11/2026, si aspetta il sì di Marco. Non pubblicare prima.**
+   - **Dove sta il codice:** `strumenti/globo/anteprima/`, con `globo.js`, `mondo.json` (world-atlas 110m con i nomi italiani nella proprietà `it`), `citta.json` (5479 città di Natural Earth, terne lon, lat, luminosità 0–9), le librerie d3-array, d3-geo e topojson-client, e `LICENZE.txt`. Le modifiche a `index.html` sono in `integrazione-index.patch`: CSS `.globe`, `loadGlobe()` chiamata dopo `loadMap()` e i crediti nel figcaption.
+   - **Per pubblicare:**
+     - spostare i file in `assets/globo/`;
+     - applicare la patch, a mano se il contesto è cambiato;
+     - aumentare la revisione.
+   - **Cosa fa:**
+     - canvas ortografico sopra `.map-wrap` solo in home e nella versione completa, con sfondo di stelle, alone e galleggiamento;
+     - rotazione lenta, trascinabile con il mouse;
+     - asse inclinato di 23,44°;
+     - giorno e notte reali calcolati dalla data e dall'ora (declinazione ed equazione del tempo), con il crepuscolo;
+     - luci delle città nella parte in ombra;
+     - un punto blu sui paesi con notizie.
+   - **Orientamento iniziale:** sul continente di chi guarda, dedotto dal fuso orario del browser (nessuna geolocalizzazione); il paese di chi guarda resta un po' sotto il centro, per non finire sotto la barra di ricerca.
+   - **Clic su un paese:** lancia due clic su `#ctrs .ctry` come la ricerca; un MutationObserver su `#map-where` fa volare il globo sul paese, con zoom fino a vederlo intero (parte principale, senza territori lontani), poi lo dissolve sulla mappa piatta. Con «← Mondo» il globo torna.
+   - **Già pubblicato da questa anteprima:** `.fc-search` ha `pointer-events:none` (solo box e lista restano cliccabili), perché il blocco «Dove andiamo oggi?» copriva i clic sulla mappa.
+   - **Abbinamenti corretti:** Figi, Russia e Francia; Stati Uniti e Norvegia erano già giusti.
+   - **Scelta da confermare con Marco:** la rotazione è continua, partendo dal suo continente; in alternativa si può fare un'oscillazione attorno al suo continente.
 2. **Animazioni stagionali (solo anteprime per ora):** effetti leggeri e trasparenti sulla fascia della ricerca, attivati da soli nel periodo giusto.
    - **Natale:** neve e simboli natalizi dall'8 dicembre al 6 gennaio (Marco ha scritto «6 dicembre», ma intende la Befana).
    - **Altre grandi religioni**, ciascuna con un tema suo:
@@ -85,7 +95,7 @@ Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato co
      - Pasqua.
    - **Calcolo delle date:** usare `Intl.DateTimeFormat` con i calendari `islamic-umalqura`, `hebrew` e `chinese`, così le date si calcolano da sole. Diwali e Vesak vanno in una tabella verificata anno per anno.
    - **Anteprime:** GIF da mostrare a Marco prima di pubblicare.
-3. **Pulsanti 3D «a LED incassati»:** pulsanti in rilievo con un LED luminoso, eleganti. Fare un'anteprima.
+3. **Pulsanti 3D «a LED incassati»** (richiesta del 15/11/2026: anche le scritte dei pulsanti devono accendersi come LED al passaggio del cursore e al clic): pulsanti in rilievo con un LED luminoso, eleganti. Fare un'anteprima.
 4. **Sito multilingue, proposta 2, scelta da Marco.**
    - Interfaccia in 7 lingue: it, en, de, fr, es, zh (semplificato), ja.
    - Pagine separate per lingua (`/en/`, `/de/`…) con `hreflang`.
@@ -100,3 +110,15 @@ Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato co
    - **Cercati senza fonti istituzionali valide:** Ruanda, Nigeria, Ghana, Kenya (solo un discorso), Marocco, Algeria e Tunisia (nessun obbligo BIM), Egitto (il codice BIM esiste ma la fonte non era raggiungibile).
    - **Restano:** Africa francofona ed Egitto in arabo; poi l'Europa scoperta (prima la Svizzera, poi Paesi Bassi, nordici, Belgio, Grecia, Romania…); poi Asia e Medio Oriente (con Singapore, India, Arabia Saudita, Turchia, Vietnam, Taiwan) e Oceania (Nuova Zelanda); infine l'approfondimento dei paesi già presenti.
    - **Strumenti:** `strumenti/ver.py` (scarica una pagina e mostra le frasi con le parole chiave) e `strumenti/add_news.py` (aggiunge le notizie calcolando id e settimana).
+6. **Tai Chi e Kung Fu (nuova scheda in «Fuori dallo studio», `#fuori`).**
+   - **Cosa vuole Marco:**
+     - le immagini dell'artefatto sul Tai Chi con le 5 virtù del Kung Fu, creato in un'altra conversazione;
+     - la descrizione delle 5 virtù secondo il sito che aveva dato in quella conversazione;
+     - perché per lui è diventata una cosa importante.
+   - **Bloccato:** l'artefatto non compare nell'elenco degli artefatti di Marco e il sito non lo conosciamo. Bisogna chiedergli il link dell'artefatto (o le immagini) e l'indirizzo del sito.
+
+## Fatto di recente
+
+- **15/11/2026, revisione 100:**
+  - **BIM in 5 minuti:** sezione «09 · Le certificazioni nel mondo» (`#b5-cert`) con 6 schede verificate: Hong Kong (obbligatoria, DEVB TC(W) 2/2021), Italia (volontaria, All. I.9 art. 1 c. 3 D.Lgs. 36/2023, UNI 11337-7, UNI/PdR 78:2020), Spagna (Plan BIM 2023), Regno Unito (BRE e UKAS, ISO 19650-2), Germania (VDI/bS 2552 Blatt 8.1), buildingSMART. Altri paesi da aggiungere con la ricerca a tappeto: Cina, Corea, Singapore, Francia, paesi nordici…
+  - **Scautismo** (`#fuori-scout`): testo di Marco (dall'AGESCI al CNGEI, scout laici, a Bolzano) e citazione di Baden-Powell da *Aids to Scoutmastership*, ed. 1930, «The Aim of Scouting», tradotta da noi. Marco aveva scritto «CNGI»: il nome corretto è CNGEI. Niente articoli: solo questa descrizione.
