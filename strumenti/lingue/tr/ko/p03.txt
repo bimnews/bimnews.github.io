@@ -1,0 +1,65 @@
+v0159	다른 페이지
+v0160	BIM을 모릅니다. 어디서 시작하면 되나요?
+v0161	<a href="#bim-5-minuti">5분 만에 보는 BIM</a>에서 시작하세요. BIM이 무엇인지, 무엇에 쓰이는지, 규정, 약어, 3D부터 10D까지의 차원, 연구로 측정된 구체적인 성과.
+v0166	운영자 페이지의 매뉴얼은 무엇인가요?
+v0167	설계자를 위한 실용 가이드입니다. IFC용 Property Sets, Dynamo, AutoCAD, 전기 설계, 프로그래밍 언어. <a href="#studio">사무소에서</a>에 있으며, 온라인으로 읽거나 PDF로 내려받을 수 있습니다.
+v0170	사이트 사용법
+v0171	전체 버전과 간편 버전은 무엇이 다른가요?
+v0172	전체 버전에는 인터랙티브 지도, 사진, 애니메이션, 사이트 글꼴이 있습니다. 간편 버전은 텍스트와 뉴스만 내려받습니다. 느린 연결이나 움직임이 적은 화면을 원하는 분을 위한 것입니다. 오른쪽 위 버튼으로 바꿉니다.
+v0173	어두운 테마에서 밝은 테마로 어떻게 바꾸나요?
+v0174	오른쪽 위의 「밝은 테마」 또는 「어두운 테마」 버튼으로 바꿉니다. 사이트가 선택을 기억합니다.
+v0175	사이트가 아주 큰데, 안내가 있나요?
+v0176	네, 세 가지가 있습니다. 홈 위쪽 버튼으로 여는 <b>사이트 안내</b>는 주요 부분을 단계별로 보여 줍니다. <a href="#mappa">사이트맵</a>은 모든 페이지를 짧은 설명과 함께 나열합니다. 그리고 이 페이지는 가장 자주 묻는 질문에 답합니다.
+v0177	오류나 뉴스를 어떻게 알리나요?
+v0178	출처 링크와 함께 <a href="https://www.linkedin.com/in/marco-scigliuolo/" target="_blank" rel="noopener">LinkedIn ↗</a>으로 저자에게 알려 주세요. 모든 제보는 게시 전에 확인합니다.
+v0179	질문을 찾지 못했습니다. 다른 단어를 써 보거나 다음을 여세요:
+v0180	사이트맵
+v0181	둘러볼 수 있는 모든 것을 한 장의 지도에. 항목마다 짧은 설명이 있고, 이름을 누르면 사이트의 그 부분으로 바로 갑니다.
+v0182	항목 옆의 <b>+</b>를 누르면 가지가 열려 안에 있는 섹션이 보이고, <b>−</b>를 누르면 닫힙니다.
+v0183	<b>모두 열기</b>로 사이트의 모든 섹션이 담긴 전체 지도를 보고, <b>모두 닫기</b>로 주요 가지로 돌아갑니다.
+v0184	항목의 <b>이름</b>을 누르면 그 페이지로 갑니다. 하위 탭과 분류는 자동으로 열립니다.
+v0185	모두 열기
+v0186	모두 닫기
+v0187	사이트 방문 수
+v0188	방문 수는 GoatCounter로 셉니다. 쿠키도 개인 정보도 쓰지 않습니다. 여기서 같은 숫자를 누구나 볼 수 있습니다. 수치는 약 4시간마다 업데이트됩니다.
+v0189	가장 많이 방문한 페이지
+v0190	이미지와 글꼴 출처
+v0191	페이지의 사진은 위키미디어 공용에서 가져왔으며 CC0 1.0으로 퍼블릭 도메인에 기증된 것입니다. 저작자들은 모든 권리를 포기했지만, 그들의 작업을 존중하는 뜻에서 출처를 밝힙니다. 사이트에서 사진은 각 페이지의 색으로 물들여져 있으며 전체 버전에서만 보입니다.
+v0192	<b>5분 만에 보는 BIM, 「BIM이란」</b> · <a href="https://commons.wikimedia.org/wiki/File:Villa_Almerico_(Villa_Rotunda),_from_I_quattro_libri_dell%27architettura_di_Andrea_Palladio_(Book_2,_page_19)_MET_DP109542.jpg" target="_blank" rel="noopener">빌라 알메리코(빌라 로톤다), 『건축 4서』에서</a>, 안드레아 팔라디오, 1570년(The Metropolitan Museum of Art, CC0)
+v0193	<b>BIM News</b> · <a href="https://commons.wikimedia.org/wiki/File:Victoria_Harbour_skyscrapers.jpg" target="_blank" rel="noopener">Victoria Harbour skyscrapers</a>, 촬영 Wilfredor
+v0194	<b>BIM &amp; AI</b> · <a href="https://commons.wikimedia.org/wiki/File:Data_center_roof.jpg" target="_blank" rel="noopener">Data center roof</a>, 촬영 Rsparks3
+v0195	<b>BIM 아카데미</b> · <a href="https://commons.wikimedia.org/wiki/File:The_John_Rylands_Library_Reading_Room_Enclosure.jpg" target="_blank" rel="noopener">The John Rylands Library, Reading Room</a>, 촬영 Michael D Beckwith
+v0196	<b>5분 만에 보는 BIM</b> · <a href="https://commons.wikimedia.org/wiki/File:Steel_frame_structure.jpg" target="_blank" rel="noopener">Steel frame structure</a>, 촬영 Wikideas1
+v0197	<b>동영상</b> · <a href="https://commons.wikimedia.org/wiki/File:H%C3%B6rsaal_101_LMU.jpg" target="_blank" rel="noopener">Hörsaal 101, LMU</a>, 촬영 Slashme
+v0198	<b>일정</b> · <a href="https://commons.wikimedia.org/wiki/File:Six_workers_on_crane_in_Shibuya.jpg" target="_blank" rel="noopener">Six workers on crane in Shibuya</a>, 촬영 Syced
+v0199	<b>운영자</b> · <a href="https://commons.wikimedia.org/wiki/File:Rebar_combo.jpg" target="_blank" rel="noopener">Rebar combo</a>, 촬영 Henryeke
+v0200	<b>포트폴리오</b> · <a href="https://commons.wikimedia.org/wiki/File:Steel_frame_building_under_construction_in_Taiwan.jpg" target="_blank" rel="noopener">Steel frame building under construction in Taiwan</a>, 촬영 SSJF01
+v0201	글꼴: Inter, Inter Tight, JetBrains Mono, SIL Open Font License 1.1(라이선스 전문은 사이트의 <code>fonts</code> 폴더에 있습니다). BIM News와 BIM &amp; AI 머리글의 점구름은 사이트 코드가 그립니다.
+v0202	5분 만에 보는 BIM
+v0203	BIM이 무엇인지 모르나요? 여기서 시작하세요. BIM이 무엇인지, 사무소에서 무엇에 쓰이는지, 왜 오늘날 없어서는 안 되는지, 규정과 약어까지. 핵심은 5분이면 되고, 나머지는 원할 때 보세요.
+v0204	01 BIM이란
+v0205	02 건축물의 전 생애
+v0206	03 무엇이 바뀌나
+v0207	04 왜 지금인가
+v0208	05 규정
+v0209	05 세계와 이탈리아
+v0210	06 차원
+v0211	07 약어
+v0212	08 구체적인 성과
+v0213	09 세계의 인증 제도
+v0214	<strong>BIM</strong>은 <em>Building Information Modeling</em>의 약자로, 「건물 정보 모델링」이라는 뜻입니다. 무엇이 정말로 바뀌는지 이해하려면, 지금까지 어떻게 설계해 왔는지 보는 것이 좋습니다.
+v0215	안드레아 팔라디오, 빌라 로톤다: 평면도와 단면도, <i>『건축 4서』</i>에서, 1570년. The Metropolitan Museum of Art, CC0.
+v0216	<span>1</span> 수백 년 동안, 손으로
+v0217	수백 년 동안 설계는 손으로 그린 도면이었습니다. 평면도, 단면도, 입면도를 각각 따로 그렸습니다. 팔라디오의 도판에는 오늘날에도 쓰는 요소가 이미 다 들어 있습니다. 이 방식은 컴퓨터가 등장할 때까지 그대로였습니다. 서로 떨어진 도면들을 손으로 맞춰야 했습니다.
+v0218	벽을 늘리려면 선을 하나씩 옮깁니다.
+v0219	<span>2</span> CAD: 같은 선을 컴퓨터로
+v0220	CAD는 제도판을 컴퓨터 안으로 옮겼습니다. 여전히 <b>선</b>을 그리지만, 더 정확하고 복사와 수정이 쉽습니다. 선마다 <b>속성</b>을 줄 수 있습니다. 도면층, 색, 선 종류, 어쩌면 「벽돌 벽」이라고 적은 문자. 도면에 붙인 꼬리표일 뿐이라 도면을 설명하지만 제어하지는 않습니다. 벽을 늘리려면 선을 옮기고, 그다음 단면도, 입면도, 물량을 손으로 고쳐야 합니다.
+v0221	길이
+v0222	높이
+v0223	슬라이더를 움직여 보세요. 매개변수를 바꾸면 벽, 면적, 부피가 저절로 업데이트됩니다. <span class="ex">예시 값</span>
+v0224	<span>3</span> BIM: 매개변수를 가진 객체
+v0225	BIM에서는 더 이상 선을 그리지 않고 <b>3차원 객체</b>를 만듭니다. 벽, 슬래브, 창. 각 객체는 <b>매개변수</b>로 제어됩니다. 길이, 높이, 두께 같은 값이 수식으로 서로 연결되어 있습니다. 부피는 다시 그리는 것이 아니라 계산됩니다. 화면에 보이는 것은 더 이상 도면이 아니라 데이터의 표현입니다. 평면도, 단면도, 목록이 모두 같은 모델에서 나옵니다.
+v0226	왜 모든 것이 바뀌나
+v0227	<b>정보를 꺼내고 넣을 수 있습니다.</b> 물량, 면적, 부피, 일람표가 모델에서 나오고, 계산, 입찰, 시공, 유지관리에 필요한 데이터는 모델에 넣습니다.
+v0228	<b>변경이 살아 있습니다.</b> 슬래브를 올리거나 방을 넓히면 평면도, 단면도, 면적, 부피, 목록이 함께 업데이트됩니다. CAD에서는 같은 작업에 몇 시간이 걸렸습니다.
+v0229	<b>한 번의 변경이 모두에 적용됩니다.</b> 어떤 벽 유형의 재료를 바꾸면, 프로젝트 전체에서 그 유형의 벽이 모두 바뀝니다.

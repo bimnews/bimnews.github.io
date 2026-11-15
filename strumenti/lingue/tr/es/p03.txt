@@ -1,0 +1,65 @@
+v0159	Las demás páginas
+v0160	No conozco el BIM: ¿por dónde empiezo?
+v0161	Por <a href="#bim-5-minuti">El BIM en 5 minutos</a>: qué es, para qué sirve, las normas, las siglas, las dimensiones del 3D al 10D y los resultados concretos medidos por la investigación.
+v0166	¿Qué son los manuales de la página del curador?
+v0167	Guías prácticas para quien proyecta: Property Sets para IFC, Dynamo, AutoCAD, diseño eléctrico, lenguajes de programación. Las encontrarás en <a href="#studio">En el estudio</a>, para leer en línea o descargar en PDF.
+v0170	Usar el sitio
+v0171	¿Qué diferencia hay entre la versión completa y la esencial?
+v0172	La versión completa tiene el mapa interactivo, fotos, animaciones y las fuentes del sitio. La esencial solo descarga textos y noticias: está pensada para conexiones lentas y para quien prefiere menos movimiento. Se cambia con el botón de arriba a la derecha.
+v0173	¿Cómo paso del tema oscuro al claro?
+v0174	Con el botón «Tema claro» o «Tema oscuro» de arriba a la derecha. El sitio recuerda la elección.
+v0175	El sitio es muy grande: ¿hay una guía?
+v0176	Sí, tres. La <b>Guía del sitio</b>, desde el botón de arriba en la portada, muestra paso a paso las partes principales. El <a href="#mappa">Mapa del sitio</a> enumera todas las páginas con una breve descripción. Y esta página responde a las preguntas más frecuentes.
+v0177	¿Cómo señalo un error o una noticia?
+v0178	Escribe al autor en <a href="https://www.linkedin.com/in/marco-scigliuolo/" target="_blank" rel="noopener">LinkedIn ↗</a>, con el enlace a la fuente: cada aviso se verifica antes de publicarse.
+v0179	No se ha encontrado ninguna pregunta. Prueba con otra palabra o abre el
+v0180	Mapa del sitio
+v0181	Todo lo que se puede visitar, en un mapa: cada entrada tiene una breve descripción y su nombre lleva directamente a esa parte del sitio.
+v0182	Haz clic en el <b>+</b> junto a una entrada para abrir su rama y ver las secciones que contiene; en el <b>−</b> para cerrarla.
+v0183	Con <b>Abrir todo</b> ves el mapa completo, con todas las secciones del sitio; con <b>Cerrar todo</b> vuelves a las ramas principales.
+v0184	Haz clic en el <b>nombre</b> de una entrada para ir a esa página: las subpestañas y las categorías se abren solas.
+v0185	Abrir todo
+v0186	Cerrar todo
+v0187	Las visitas del sitio
+v0188	Contamos las visitas con GoatCounter, sin cookies y sin datos personales: aquí tienes los mismos números, para todos. Los recuentos se actualizan aproximadamente cada cuatro horas.
+v0189	Las páginas más visitadas
+v0190	Créditos de imágenes y fuentes
+v0191	Las fotografías de las páginas proceden de Wikimedia Commons y están dedicadas al dominio público con CC0 1.0: los autores han renunciado a todo derecho. Las citamos igualmente, por respeto a su trabajo. En el sitio, las fotos están teñidas del color de cada página y solo aparecen en la versión completa.
+v0192	<b>El BIM en 5 minutos, «Qué es»</b> · <a href="https://commons.wikimedia.org/wiki/File:Villa_Almerico_(Villa_Rotunda),_from_I_quattro_libri_dell%27architettura_di_Andrea_Palladio_(Book_2,_page_19)_MET_DP109542.jpg" target="_blank" rel="noopener">Villa Almerico (Villa Rotonda), de I quattro libri dell'architettura</a>, de Andrea Palladio, 1570 (The Metropolitan Museum of Art, CC0)
+v0193	<b>BIM News</b> · <a href="https://commons.wikimedia.org/wiki/File:Victoria_Harbour_skyscrapers.jpg" target="_blank" rel="noopener">Victoria Harbour skyscrapers</a>, de Wilfredor
+v0194	<b>BIM &amp; AI</b> · <a href="https://commons.wikimedia.org/wiki/File:Data_center_roof.jpg" target="_blank" rel="noopener">Data center roof</a>, de Rsparks3
+v0195	<b>BIM Academia</b> · <a href="https://commons.wikimedia.org/wiki/File:The_John_Rylands_Library_Reading_Room_Enclosure.jpg" target="_blank" rel="noopener">The John Rylands Library, Reading Room</a>, de Michael D Beckwith
+v0196	<b>El BIM en 5 minutos</b> · <a href="https://commons.wikimedia.org/wiki/File:Steel_frame_structure.jpg" target="_blank" rel="noopener">Steel frame structure</a>, de Wikideas1
+v0197	<b>Vídeos</b> · <a href="https://commons.wikimedia.org/wiki/File:H%C3%B6rsaal_101_LMU.jpg" target="_blank" rel="noopener">Hörsaal 101, LMU</a>, de Slashme
+v0198	<b>Agenda</b> · <a href="https://commons.wikimedia.org/wiki/File:Six_workers_on_crane_in_Shibuya.jpg" target="_blank" rel="noopener">Six workers on crane in Shibuya</a>, de Syced
+v0199	<b>El curador</b> · <a href="https://commons.wikimedia.org/wiki/File:Rebar_combo.jpg" target="_blank" rel="noopener">Rebar combo</a>, de Henryeke
+v0200	<b>Portfolio</b> · <a href="https://commons.wikimedia.org/wiki/File:Steel_frame_building_under_construction_in_Taiwan.jpg" target="_blank" rel="noopener">Steel frame building under construction in Taiwan</a>, de SSJF01
+v0201	Fuentes tipográficas: Inter, Inter Tight y JetBrains Mono, con licencia SIL Open Font License 1.1 (los textos de las licencias están en la carpeta <code>fonts</code> del sitio). La nube de puntos de las cabeceras de BIM News y BIM &amp; AI la dibuja el código del sitio.
+v0202	El BIM en 5 minutos
+v0203	¿No sabes qué es el BIM? Empieza aquí: qué es, para qué sirve en un estudio, por qué hoy no se puede prescindir de él, las normas y las siglas. Cinco minutos para lo esencial, el resto cuando quieras.
+v0204	01 Qué es
+v0205	02 Toda la vida de la obra
+v0206	03 Qué cambia
+v0207	04 Por qué ahora
+v0208	05 Las normas
+v0209	05 Mundo e Italia
+v0210	06 Las dimensiones
+v0211	07 Las siglas
+v0212	08 Resultados concretos
+v0213	09 Certificaciones en el mundo
+v0214	<strong>BIM</strong> significa <em>Building Information Modeling</em>, es decir, «modelado de la información del edificio». Para entender qué cambia de verdad, conviene mirar cómo se ha proyectado siempre.
+v0215	Andrea Palladio, Villa Rotonda: planta y sección, de <i>I quattro libri dell'architettura</i>, 1570. The Metropolitan Museum of Art, CC0.
+v0216	<span>1</span> A mano, durante siglos
+v0217	Durante siglos el proyecto fue un dibujo hecho a mano: plantas, secciones y alzados, cada uno trazado por separado. En la lámina de Palladio ya están todos los ingredientes que seguimos usando hoy. Es un planteamiento que siguió igual hasta la llegada del ordenador: vistas separadas, que había que mantener coherentes a mano.
+v0218	Para alargar el muro se mueven las líneas, una a una.
+v0219	<span>2</span> El CAD: las mismas líneas, en el ordenador
+v0220	El CAD lleva la mesa de dibujo al ordenador. Se siguen dibujando <b>líneas</b>, más precisas, fáciles de copiar y corregir. A cada línea se le pueden dar <b>atributos</b>: la capa, el color, el tipo de línea, quizá un texto que dice «muro de ladrillo». Son etiquetas apoyadas sobre el dibujo, que lo describen pero no lo gobiernan. Para alargar un muro hay que mover sus líneas y luego corregir a mano la sección, el alzado y la medición.
+v0221	Longitud
+v0222	Altura
+v0223	Mueve los controles: cambia el parámetro y el muro, la superficie y el volumen se actualizan solos. <span class="ex">Valores de ejemplo</span>
+v0224	<span>3</span> El BIM: objetos con parámetros
+v0225	En el BIM ya no se dibujan líneas, sino <b>objetos tridimensionales</b>: un muro, un forjado, una ventana. Cada objeto está gobernado por <b>parámetros</b>: valores como longitud, altura y espesor, ligados entre sí por fórmulas. El volumen no se redibuja, se calcula. Lo que vemos en la pantalla ya no es un dibujo, sino una representación de los datos: plantas, secciones y listas nacen todas del mismo modelo.
+v0226	Por qué lo cambia todo
+v0227	<b>La información se extrae y se introduce.</b> Cantidades, superficies, volúmenes y tablas salen del modelo; y en el modelo se introducen los datos que sirven para cálculos, licitaciones, obra y mantenimiento.
+v0228	<b>Los cambios están vivos.</b> Si subes un forjado o amplías una habitación, se actualizan a la vez la planta, las secciones, las superficies, los volúmenes y las listas. En CAD el mismo trabajo requería horas.
+v0229	<b>Un cambio vale para todos.</b> Si cambias el material de un tipo de muro, cambian todos los muros de ese tipo, en todo el proyecto.
