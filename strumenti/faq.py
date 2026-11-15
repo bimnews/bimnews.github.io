@@ -27,7 +27,6 @@ Q=[
  ("Che cosa indicano i numeri sulla mappa?","Quante notizie ci sono per continente, paese o regione. Tocca un continente, poi un paese e una regione per vedere le notizie di quel luogo."),
  ("Perché alcune notizie hanno l'etichetta «Archivio»?","Sono notizie che abbiamo raccolto più di sette giorni dopo la loro uscita, per completare la storia di un paese o di una norma."),
  ("Perché non ci sono notizie prima del 2015?","Il 2015 è l'anno in cui è uscita la prima parte della UNI 11337, la serie di norme italiane sul BIM. Lo usiamo come punto di partenza comune per tutto il mondo."),
- ("Che cosa trovo in BIM & AI?","Le notizie in cui il tema principale è l'intelligenza artificiale applicata al BIM e alle costruzioni, con la stessa mappa e gli stessi filtri di BIM News."),
 ]),
 ("Le lingue della ricerca",[
  ("In che lingue cercate le notizie?","Cerchiamo ogni notizia nella lingua del paese in cui nasce, non solo in inglese. Qui sotto trovi le lingue in cui cerchiamo e quelle che stiamo verificando.<h4 class=\"lg-h\">Lingue in cui cerchiamo ("+str(len(MISURATE))+")</h4>"+chips(MISURATE,"lg-yes")+"<h4 class=\"lg-h\">Lingue in verifica ("+str(len(IN_VERIFICA))+")</h4><p>Sono le lingue nazionali di paesi in cui ci aspettiamo attività sul BIM. Le cerchiamo una per una: se dopo ricerche serie non troviamo fonti adatte, la lingua esce dall'elenco; se le troviamo, passa tra quelle qui sopra.</p>"+chips(IN_VERIFICA,"lg-test")),
@@ -35,10 +34,7 @@ Q=[
 ]),
 ("Le altre pagine",[
  ("Non conosco il BIM: da dove parto?","Da <a href=\"#bim-5-minuti\">BIM in 5 minuti</a>: che cos'è, a che cosa serve, le norme, le sigle, le dimensioni dal 3D al 10D e i risultati concreti misurati dalle ricerche."),
- ("Che cos'è BIM Accademia? Chi traduce gli abstract?","<a href=\"#bim-accademia\">BIM Accademia</a> raccoglie articoli scientifici sul BIM in accesso aperto, con licenza Creative Commons BY, che permette di riprodurre e tradurre l'abstract. Le traduzioni sono nostre e sono indicate come tali; per citare un articolo vale sempre il testo originale, a un clic."),
- ("Dove trovo eventi, webinar e scadenze?","Nell'<a href=\"#agenda\">Agenda</a> e nella striscia in fondo alla home. Con «La tua area», nelle impostazioni in alto, vedi prima gli appuntamenti del tuo continente."),
  ("Che cosa sono i manuali nella pagina del curatore?","Guide pratiche per chi progetta: Property Set per l'IFC, Dynamo, AutoCAD, progettazione elettrica, linguaggi di programmazione. Le trovi in <a href=\"#studio\">Nello studio</a>, da leggere online o scaricare in PDF."),
- ("Dove trovo video e lezioni universitarie?","Nella pagina <a href=\"#video\">Video</a>: webinar e conferenze registrati, canali gratuiti e lezioni di università."),
 ]),
 ("Usare il sito",[
  ("Che differenza c'è tra versione completa ed essenziale?","La versione completa ha mappa interattiva, foto, animazioni e caratteri del sito. L'essenziale scarica solo testi e notizie: è pensata per connessioni lente e per chi preferisce meno movimento. Si cambia con il tasto in alto a destra."),
