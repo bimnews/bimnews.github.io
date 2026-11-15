@@ -168,7 +168,6 @@ Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato co
      - riunire i tre passi di «Che cos'è» in una specie di timeline visiva dell'evoluzione del progetto;
      - nuova scheda «Cosa ci riserva il futuro?» (forse le tavole non serviranno più, con robot e AI; «chissà»).
    - **Guida al sito:** una breve descrizione per ogni scheda (BIM News, AI ecc.).
-   - **Lingue:** nelle lingue diverse dall'italiano le notizie vanno mostrate in inglese (titolo e sintesi in inglese) e BIM Accademia con l'abstract originale inglese, per non sprecare token. Serve aggiungere i campi in inglese alle notizie e aggiornare il task del lunedì.
    - **Festività della tecnologia:** un piccolo widget per le giornate mondiali legate alla tecnologia, riconosciute a livello mondiale (per esempio quelle ONU, ITU e UNESCO). Da verificare una per una.
    - **Agenda:** grafica a calendario.
 
@@ -197,6 +196,7 @@ Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato co
   - **BIM in 5 minuti:** «Che cos'è» riscritto.
   - **Le mie proposte:** la frase «aperte ai commenti» è sostituita dal rimando a LinkedIn, per coerenza con il disclaimer.
 - **15/11/2026, revisione 113:** selettore delle lingue (11 lingue) con le scritte principali tradotte.
+- **15/11/2026, revisione 116:** notizie in inglese nelle lingue diverse dall'italiano: campi `te` (titolo) e `xe` (sintesi) in `assets/notizie.json`, aggiunti con `strumenti/add_en.py` dai file `strumenti/notizie_en_*.tsv`; al cambio tra italiano e un'altra lingua la pagina si ricarica (`NEWS_EN`). Il task del lunedì ora scrive anche `te` e `xe`. Frasi «in italiano» corrette nelle traduzioni (v0022, v0083).
 - **15/11/2026, revisione 115:** sito tradotto in tutte le 11 lingue; feste stagionali (Natale, Hanukkah, Capodanno lunare, Ramadan, Eid, Vesak, Diwali) con link a Wikipedia.
 - **15/11/2026, revisione 114:** nuovo motore delle traduzioni, tutto il sito in inglese e francese; FAQ: riscritte «collaborazioni» e «paesi vuoti», tolte quattro domande (BIM & AI, BIM Accademia, eventi, video); la guida ha un passo per ogni scheda in alto (`nav:#…` in `STEPS`).
 - **Post LinkedIn:** testo preparato il 15/11/2026; consigliato martedì 17/11 alle 8:00–8:30. Marco vuole tutto pronto per martedì (traduzioni, ricerca a tappeto, appunti).

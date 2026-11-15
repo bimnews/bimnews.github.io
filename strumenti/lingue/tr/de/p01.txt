@@ -19,7 +19,7 @@ v0018	Die Nachrichten können nicht geladen werden. Prüfe die Verbindung und la
 v0019	BIM News
 v0020	Neuigkeiten zum BIM, jede Woche gesammelt, jeweils mit einer Zusammenfassung auf Italienisch und dem Link zur Quelle. Eine Website von <a href="#chi-sono">Marco Scigliuolo</a>, immer in Arbeit: Der Kurator aktualisiert und erweitert sie, wann immer es nötig ist.
 v0021	kuratiert von Ing. <a href="#chi-sono">Marco Scigliuolo</a>
-v0022	BIM aus aller Welt, auf Italienisch und mit Quelle. Für alle, von der großen Behörde bis zum kleinen Büro.
+v0022	BIM aus aller Welt, mit Quelle. Für alle, von der großen Behörde bis zum kleinen Büro.
 v0023	Wohin geht es heute?
 v0024	Wähle ein Land auf der Karte oder gib es oben ein
 v0025	<b>Einfache Version:</b> Die interaktive Karte (etwa 380 KB) wird nicht geladen. Du kannst die Nachrichten mit „Region“ filtern oder
@@ -80,7 +80,7 @@ v0079	Veranstaltungen und Webinare
 v0080	Webinare
 v0081	Am nächsten bei mir
 v0082	Daten und Kosten wurden beim Eintragen auf den Seiten der Veranstalter geprüft: Kontrolliere sie immer, bevor du dich anmeldest. Dein Standort bleibt in deinem Browser und wird an niemanden gesendet.
-v0083	<strong>Sprache.</strong> Die Nachrichten sind auf Italienisch geschrieben, mit dem Link zur Originalquelle. Für den vollständigen Text in einer anderen Sprache nutze die Übersetzungsfunktion deines Browsers.
+v0083	<strong>Sprache.</strong> In anderen Sprachen als Italienisch werden die Nachrichten auf Englisch angezeigt, mit dem Link zur Originalquelle. Für den vollständigen Text in einer anderen Sprache nutze die Übersetzungsfunktion deines Browsers.
 v0084	Archiv: von 2015 bis heute, nach Jahr und Monat
 v0085	← Neuere
 v0086	Ältere →
