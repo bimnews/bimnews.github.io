@@ -1,0 +1,110 @@
+v0491	Surveyor (geometra) diploma
+v0492	Vivante Pitagora technical institute for surveyors · Bari
+v0493	<span class="tl-date">2004 – 2009</span><span class="tl-name"><b>Surveyor (geometra) diploma</b><span>Vivante Pitagora technical institute for surveyors · Bari</span></span><span class="tl-kind">Training</span>
+v0494	Work in progress: the timeline is being prepared.
+v0495	Skills
+v0496	BIM MEP modelling in Revit
+v0497	Electrical, plumbing/HVAC and fire-protection systems
+v0498	Multidisciplinary coordination and IFC interoperability
+v0499	Revit parametric families
+v0500	Automation with Dynamo
+v0501	Management of models and information data
+v0502	Bills of quantities, progress valuations and price analysis
+v0503	Technical project documentation
+v0504	Lighting calculations
+v0505	CasaClima energy design
+v0506	Laser scanning and point clouds
+v0507	Quality and site inspections
+v0508	Health and safety coordination
+v0509	Problem solving and a systems approach
+v0510	Organisation, precision and method
+v0511	Continuous learning and adaptability
+v0512	Other licences
+v0513	Driving licence A2, A, B
+v0514	Tools
+v0515	The software and tools I use at work, with a link to the official website.
+v0516	BIM modelling · architecture, structures, MEP
+v0517	Dynamo for Revit
+v0518	Visual programming and automation
+v0519	Navisworks
+v0520	Coordination and clash detection
+v0521	AutoCAD
+v0522	2D and 3D CAD · automation with AutoLISP
+v0523	Civil 3D
+v0524	Infrastructure design
+v0525	InfraWorks
+v0526	Context and infrastructure models
+v0527	ReCap
+v0528	Point clouds from laser scanners
+v0529	PriMus
+v0530	DIALux evo
+v0531	Microsoft Office
+v0532	Documents and spreadsheets
+v0533	Software names are trademarks of their respective owners; their use here only indicates the tools I use. The icons are generic, by category.
+v0534	Publications
+v0535	The urban regeneration of disused military areas
+v0536	Brownfields' urban regeneration process. Problems and future perspectives
+v0537	The barracks and military areas abandoned after the end of the Cold War mark the fabric of many Italian and European cities. The thesis traces how the problem of their disposal arose and how it has been tackled over time, to derive a guideline useful for new redevelopment projects.
+v0538	Politecnico di Bari · Building Engineering and Architecture
+v0539	Portfolio
+v0540	Projects
+v0541	The projects I have worked on, told one by one: the problem, the choices, the model and what I learned.
+v0542	<span class="tag">Work in progress</span> The project pages are being prepared.
+v0543	In the studio
+v0544	Reflections and solutions for design work. The real problem, in drawing and design, is the time lost on everything that repeats itself: here I try to reduce it. I test every problem case by case, with trials on real situations, and propose a solution. It is my personal contribution: it won't solve everything for everyone, but it aims to give designers a few more ideas.
+v0545	<span class="f-lab">Article status</span><span><span class="tag">Work in progress</span> being prepared</span><span><span class="tag ok">Published and verified</span> tested on real cases, with code to copy or download</span>
+v0546	Reflections
+v0547	Design problems
+v0548	Optimisation for BIM
+v0549	Optimisation for AutoCAD
+v0550	Claude's manuals
+v0551	4 published · 11 entries
+v0552	What it means to be an engineer · in the studio
+v0553	The profession as the world sees it: what is expected of an engineer, between responsibilities, skills and relationships with clients, contractors and colleagues. The other side is in <a href="#fuori">Outside the studio →</a>
+v0554	<span class="tag">Work in progress</span> Article being prepared.
+v0555	The world beyond us
+v0556	What will become of our models, and our efforts, in 200 years? A drawing by Michelangelo can still be looked at today: will one of our files still open? I will start from research on the oldest design drawing that has come down to us, and on how it has really aged. It is linked to the article <a href="#wip" data-goto-art="art-ifc-zero">How to build an IFC from scratch →</a>
+v0557	Each problem will become an article with a concrete proposal, tested on real cases.
+v0558	Coordination between disciplines
+v0559	Architecture, structures and building services designed in parallel but checked together too late: clashes emerge on site, when they cost the most.
+v0560	Vague or changing client requirements
+v0561	Generic information requirements, unwritten objectives and requests that change when the design is well advanced: the cause of many variations.
+v0562	Compressed schedules
+v0563	Tender and funding deadlines that shorten the design phases: you deliver on time, but quality control is postponed.
+v0564	Designing on existing buildings
+v0565	Incomplete or outdated surveys in refurbishment projects: you design on what you think is there, not on what is there.
+v0566	Interoperability and lost data
+v0567	Models passed between different software that lose information along the way: badly exported IFC files, missing properties, geometry to be redone.
+v0568	Common data environment
+v0569	The CDE used like a shared folder: versions multiply, statuses are unclear, nobody knows which file is the right one.
+v0570	Beautiful but empty models
+v0571	Lots of geometry and little useful information: undefined levels of information need and data that nobody will use.
+v0572	Fragmented code checks
+v0573	Fire safety, energy, acoustics and building services checked by hand and separately, at every design revision.
+v0574	Quantities and costs disconnected from the model
+v0575	Quantities recalculated separately and estimates that don't follow the changes: the cost of the works remains unknown until the tender.
+v0576	Safety disconnected from design
+v0577	The safety plan written afterwards, without dialogue with design choices and without using the model to plan the site.
+v0578	From design to construction and operation
+v0579	Information is lost at every hand-over: the contractor redraws, the as-built is unreliable, the facility manager receives paper instead of data.
+v0580	Skills, roles and responsibilities
+v0581	BIM roles provided on paper but not in practice, discontinuous training and doubts about who is responsible for the digital data.
+v0582	Scripts and procedures to automate repetitive operations in BIM modelling, for example with Python and Dynamo for Revit: the complete code to copy or download, with a short explanation of what it does, how to use it and how much time it saves.
+v0583	The first scripts
+v0584	The first solutions are being tested on real cases: they will be published only after verification.
+v0585	Routines and scripts for AutoCAD, for example in AutoLISP or Python, to eliminate repetitive drawing steps: ready-to-use code to copy or download and essential instructions for using it.
+v0586	Guide: AutoCAD 2026, xrefs and printing
+v0587	To replace the architect's xrefs without losing alignment and to avoid black hatches when printing: two downloadable AutoLISP scripts, where to put them and how to load them. The full explanation is in Claude's manuals.
+v0588	<a class="man-btn" href="manuali/autocad-2026-xrif-stampa.html">Open the guide</a><a class="man-btn ghost" href="#studio" data-goto-man="man-pro-05">Go to Claude's manuals</a>
+v0589	The first routine: setting up the drawing properly
+v0590	The reference point common to all floor plans, sheets that don't move, clean-up before delivery and closed polylines so that the plans can also be read by artificial intelligence.
+v0591	<span class="tag">Work in progress</span> Article under review.
+v0592	Manuals I created myself, asking Claude, Anthropic's artificial intelligence assistant, to write them following precise instructions: I chose the topic, the structure, the level of detail and the examples. For now you will find the titles: the texts will arrive one at a time.
+v0593	Revit 2026 families manual
+v0594	How to create and manage families in Revit 2026.
+v0595	<span class="tag">Work in progress</span> Publication being prepared.
+v0596	Revit parameters manual: identification, classification and BIM dimensions
+v0597	The parameters for identifying, classifying and sizing BIM objects in Revit.
+v0598	Property Sets for IFC export from Revit
+v0599	How to bring the parameters required by the client into the IFC, for example those of the provincial data structure: the syntax of the Property Set file, an example with just three parameters and Revit's export configuration step by step, with a final checklist.
+v0600	<span class="tag ok">Published</span><a class="man-btn" href="manuali/property-set-ifc-revit.html">Read online</a><a class="man-btn ghost" href="manuali/property-set-ifc-revit.pdf" download="">PDF</a><a class="man-btn ghost" href="manuali/revit/Pset_esempio.txt" download="">Sample .txt file</a>
