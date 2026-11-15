@@ -28,7 +28,7 @@ v0358	<i>Common Data Environment</i> (in Italian ACDat): where the project's mod
 v0359	EIR
 v0360	Exchange information requirements (in Italian «capitolato informativo», CI): what the client asks for, which information, in what format and when (UNI 11337-5).
 v0361	BEP
-v0362	BIM execution plan (in Italian oGI and pGI): how the appointed party responds to the requirements, first in the tender and then during the contract.
+v0362	<i>BIM Execution Plan</i> (in Italian oGI and pGI): how the appointed party responds to the requirements, first in the tender and then during the contract.
 v0363	LOD
 v0364	Level of development of the objects, from A to G in UNI 11337-4: how fully an object is defined at that stage.
 v0365	LOIN
