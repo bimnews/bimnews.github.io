@@ -1,0 +1,46 @@
+v1304	<b>1570</b><span>Palladio publica <i>Os quatro livros da arquitetura</i>: planta, corte e alçado, desenhados à mão</span>
+v1305	<b>1963</b><span>Ivan Sutherland escreve o Sketchpad, o primeiro programa para desenhar no computador</span>
+v1306	<b>1982</b><span>Sai o AutoCAD: o CAD chega ao computador pessoal e aos gabinetes</span>
+v1307	<b>1996</b><span>Nasce o IFC 1.0, o formato aberto para trocar modelos entre programas diferentes</span>
+v1308	<b>2002</b><span>Difunde-se o nome <i>Building Information Modeling</i></span>
+v1309	<b>Hoje</b><span>O modelo torna-se o centro do projeto, da obra e da gestão</span>
+v1310	Fontes das datas: Wikipédia em inglês, artigos <a href="https://en.wikipedia.org/wiki/Sketchpad" target="_blank" rel="noopener">Sketchpad</a>, <a href="https://en.wikipedia.org/wiki/AutoCAD" target="_blank" rel="noopener">AutoCAD</a>, <a href="https://en.wikipedia.org/wiki/Industry_Foundation_Classes" target="_blank" rel="noopener">Industry Foundation Classes</a> e <a href="https://en.wikipedia.org/wiki/Building_information_modeling" target="_blank" rel="noopener">Building information modeling</a>.
+v1311	Aprofundamento: o que acontece dentro do computador
+v1312	<b>No CAD o dado é a geometria.</b> Para o computador, uma linha é um registo num arquivo: dois pontos e alguns atributos. A parede não existe: existem quatro registos independentes, e o facto de juntos serem «uma parede» só o sabe quem olha.
+v1313	A área da parede não está escrita em lado nenhum: para a saber é preciso medir e multiplicar. Se a parede ficar um metro mais comprida, é preciso deslocar duas linhas e depois lembrar-se de corrigir o corte, o alçado e as medições, que são outros desenhos e outros ficheiros.
+v1314	<b>No BIM o dado é o objeto, e a geometria calcula-se.</b> A parede é um objeto com poucos valores independentes, os parâmetros; tudo o resto decorre de fórmulas, como as células de uma folha de cálculo:
+v1315	Mudando <i>L</i> de 5 para 6 metros, o programa refaz as contas em cascata: a forma, a área (18 m²), o volume (5,4 m³), as vistas e as tabelas. É um grafo de dependências: cada valor sabe de quais depende, e quando um muda só se atualizam os que estão a jusante. O mesmo vale para as relações entre objetos: a janela está alojada na parede e fura o seu volume, a laje apoia-se na parede, o compartimento é delimitado pelas paredes que o rodeiam.
+v1316	<b>E quando o modelo sai do programa?</b> No formato aberto IFC a parede escreve-se assim, de forma simplificada: um <code>IfcWall</code>, ou seja, uma parede e não um conjunto de linhas; a sua forma como <code>IfcExtrudedAreaSolid</code>, um perfil retangular extrudido na altura; as suas propriedades em conjuntos como <code>Pset_WallCommon</code>, por exemplo se é resistente ou exterior; e as aberturas como relações (<code>IfcRelVoidsElement</code>). Quem recebe o ficheiro encontra uma parede com as suas regras, não quatro linhas para interpretar.
+v1317	<b>As consequências.</b> As quantidades tornam-se fiáveis porque se calculam em vez de se medirem; as alterações custam menos porque se propagam sozinhas; as incoerências entre desenhos desaparecem, porque os desenhos são vistas do mesmo dado. Em troca, é precisa mais disciplina no início: escolher bem os tipos, os parâmetros e as regras, porque um erro no dado propaga-se tão depressa como uma correção.
+v1318	Ninguém sabe realmente, e desconfiamos de quem diz saber. Mas alguns caminhos já estão abertos, e as notícias do BIM News contam os primeiros passos. Aqui pomo-los em fila, separando o que já está a acontecer do que, por agora, é apenas uma pergunta.
+v1319	Construir sem desenhos
+v1320	Em Hong Kong, o Construction Industry Council apresentou o caminho para obras guiadas diretamente pelo modelo, sem os desenhos tradicionais. São precisos modelos fiáveis, regras de informação claras e aprovações adequadas. <a href="#settimana-2026-08-03" data-art="n10">A notícia →</a>
+v1321	Requisitos que se verificam sozinhos
+v1322	Com o IDS 1.0 da buildingSMART (2024), a informação que um modelo deve conter escreve-se num ficheiro legível por máquinas, e a verificação torna-se automática. <a href="#settimana-2024-06-03" data-art="n100">A notícia →</a>
+v1323	A inteligência artificial no modelo
+v1324	Os grandes programas levam a IA para o ambiente comum de dados: opções de projeto a partir de nuvens de pontos, modelos estruturais pedidos por palavras, inspeções de obra ditadas por voz. <a href="#settimana-2026-11-09" data-art="n36">A notícia →</a> E na secção <a href="#bim-ai">BIM &amp; AI</a> encontra as outras.
+v1325	Ainda vão ser precisos desenhos?
+v1326	Se a obra lê o modelo, o desenho impresso pode tornar-se uma vista entre muitas, útil para assinar e arquivar mais do que para construir. Mas a assinatura, a responsabilidade e o valor legal dos documentos ainda passam hoje pelo papel, ou pelo PDF.
+v1327	Robôs em obra?
+v1328	Um modelo preciso é exatamente o que uma máquina precisa para implantar, furar ou assentar. Quanto e quando os robôs vão entrar nas obras do dia a dia, e não só nas grandes, ainda está por ver.
+v1329	E nós?
+v1330	Se a máquina desenha, verifica e calcula, a quem projeta fica a parte mais difícil: perceber o problema, escolher, responder pelas escolhas. Talvez a profissão não desapareça: muda de centro de gravidade. Quem sabe.
+v1331	seg
+v1332	ter
+v1333	qua
+v1334	qui
+v1335	sex
+v1336	sáb
+v1337	dom
+v1338	Já está a acontecer
+v1339	Pergunta em aberto
+v1340	Calendário de compromissos
+v1341	Mês anterior
+v1342	Mês seguinte
+v1343	A evolução do projeto em seis etapas
+v1344	O que nos reserva o futuro?
+v1345	O que já está a mudar e que perguntas continuam em aberto
+v1346	Prazos
+v1347	Dias da tecnologia
+v1348	10 · O que nos reserva o futuro?
+v1349	10 O futuro

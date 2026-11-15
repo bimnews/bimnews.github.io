@@ -1,0 +1,46 @@
+v1304	<b>1570</b><span>Palladio veröffentlicht <i>Die vier Bücher zur Architektur</i>: Grundriss, Schnitt und Ansicht, von Hand gezeichnet</span>
+v1305	<b>1963</b><span>Ivan Sutherland schreibt Sketchpad, das erste Programm zum Zeichnen am Computer</span>
+v1306	<b>1982</b><span>AutoCAD erscheint: CAD kommt auf den PC und in die Büros</span>
+v1307	<b>1996</b><span>IFC 1.0 entsteht, das offene Format zum Austausch von Modellen zwischen verschiedenen Programmen</span>
+v1308	<b>2002</b><span>Der Name <i>Building Information Modeling</i> verbreitet sich</span>
+v1309	<b>Heute</b><span>Das Modell wird zum Mittelpunkt von Planung, Bau und Betrieb</span>
+v1310	Quellen der Daten: englische Wikipedia, Artikel <a href="https://en.wikipedia.org/wiki/Sketchpad" target="_blank" rel="noopener">Sketchpad</a>, <a href="https://en.wikipedia.org/wiki/AutoCAD" target="_blank" rel="noopener">AutoCAD</a>, <a href="https://en.wikipedia.org/wiki/Industry_Foundation_Classes" target="_blank" rel="noopener">Industry Foundation Classes</a> und <a href="https://en.wikipedia.org/wiki/Building_information_modeling" target="_blank" rel="noopener">Building information modeling</a>.
+v1311	Vertiefung: was im Computer passiert
+v1312	<b>Im CAD sind die Daten die Geometrie.</b> Für den Computer ist eine Linie ein Eintrag in einem Archiv: zwei Punkte und ein paar Attribute. Die Wand gibt es nicht: Es gibt vier unabhängige Einträge, und dass sie zusammen „eine Wand“ sind, weiß nur, wer sie ansieht.
+v1313	Die Fläche der Wand steht nirgends: Um sie zu kennen, muss man messen und multiplizieren. Wird die Wand einen Meter länger, muss man zwei Linien verschieben und dann daran denken, Schnitt, Ansicht und Massenermittlung zu korrigieren, die andere Zeichnungen und andere Dateien sind.
+v1314	<b>Im BIM sind die Daten das Objekt, und die Geometrie wird berechnet.</b> Die Wand ist ein Objekt mit wenigen unabhängigen Werten, den Parametern; alles andere folgt aus Formeln, wie die Zellen einer Tabellenkalkulation:
+v1315	Ändert man <i>L</i> von 5 auf 6 Meter, rechnet das Programm alles in Kaskade neu: die Form, die Fläche (18 m²), das Volumen (5,4 m³), die Ansichten und die Bauteillisten. Es ist ein Abhängigkeitsgraph: Jeder Wert weiß, von welchen anderen er abhängt, und wenn sich einer ändert, werden nur die nachgelagerten aktualisiert. Dasselbe gilt für die Beziehungen zwischen Objekten: Das Fenster wird von der Wand aufgenommen und durchbricht ihr Volumen, die Decke liegt auf der Wand auf, der Raum wird von den Wänden um ihn herum begrenzt.
+v1316	<b>Und wenn das Modell die Software verlässt?</b> Im offenen IFC-Format wird die Wand so geschrieben, vereinfacht: ein <code>IfcWall</code>, also eine Wand und keine Menge von Linien; ihre Form als <code>IfcExtrudedAreaSolid</code>, ein Rechteckprofil, um die Höhe extrudiert; ihre Eigenschaften in Gruppen wie <code>Pset_WallCommon</code>, zum Beispiel ob sie tragend oder außenliegend ist; und die Öffnungen als Beziehungen (<code>IfcRelVoidsElement</code>). Wer die Datei erhält, findet eine Wand mit ihren Regeln, nicht vier Linien zum Deuten.
+v1317	<b>Die Folgen.</b> Mengen werden zuverlässig, weil sie berechnet statt gemessen werden; Änderungen kosten weniger, weil sie sich von selbst fortpflanzen; Widersprüche zwischen den Plänen verschwinden, weil die Pläne Ansichten derselben Daten sind. Im Gegenzug braucht es am Anfang mehr Disziplin: Typen, Parameter und Regeln gut wählen, denn ein Fehler in den Daten verbreitet sich genauso schnell wie eine Korrektur.
+v1318	Niemand weiß es wirklich, und wir misstrauen allen, die behaupten, es zu wissen. Doch einige Wege sind schon offen, und die Nachrichten von BIM News erzählen ihre ersten Schritte. Hier ordnen wir sie, und trennen, was schon geschieht, von dem, was vorerst nur eine Frage ist.
+v1319	Bauen ohne Pläne
+v1320	In Hongkong hat der Construction Industry Council den Weg zu Baustellen vorgestellt, die direkt vom Modell gesteuert werden, ohne herkömmliche Pläne. Dafür braucht es verlässliche Modelle, klare Informationsregeln und passende Genehmigungen. <a href="#settimana-2026-08-03" data-art="n10">Die Nachricht →</a>
+v1321	Anforderungen, die sich selbst prüfen
+v1322	Mit IDS 1.0 von buildingSMART (2024) werden die Informationen, die ein Modell enthalten muss, in einer maschinenlesbaren Datei beschrieben, und die Prüfung wird automatisch. <a href="#settimana-2024-06-03" data-art="n100">Die Nachricht →</a>
+v1323	Künstliche Intelligenz im Modell
+v1324	Die großen Softwarehersteller bringen KI in die gemeinsame Datenumgebung: Entwurfsvarianten aus Punktwolken, Tragwerksmodelle auf Zuruf, Baustellenbegehungen per Sprache. <a href="#settimana-2026-11-09" data-art="n36">Die Nachricht →</a> Und im Bereich <a href="#bim-ai">BIM &amp; AI</a> findest du die anderen.
+v1325	Braucht es noch Pläne?
+v1326	Wenn die Baustelle das Modell liest, könnte der gedruckte Plan eine Ansicht unter vielen werden, eher zum Unterschreiben und Archivieren als zum Bauen. Doch Unterschrift, Verantwortung und Rechtswert der Unterlagen laufen heute noch über Papier oder PDF.
+v1327	Roboter auf der Baustelle?
+v1328	Ein genaues Modell ist genau das, was eine Maschine zum Abstecken, Bohren oder Verlegen braucht. Wie weit und wann Roboter auf alltägliche Baustellen kommen, und nicht nur auf Großprojekte, bleibt abzuwarten.
+v1329	Und wir?
+v1330	Wenn die Maschine zeichnet, prüft und rechnet, bleibt den Planenden der schwierigste Teil: das Problem verstehen, entscheiden, für die Entscheidungen einstehen. Vielleicht verschwindet der Beruf nicht: Er verlagert seinen Schwerpunkt. Wer weiß.
+v1331	Mo
+v1332	Di
+v1333	Mi
+v1334	Do
+v1335	Fr
+v1336	Sa
+v1337	So
+v1338	Geschieht schon
+v1339	Offene Frage
+v1340	Terminkalender
+v1341	Vorheriger Monat
+v1342	Nächster Monat
+v1343	Die Entwicklung der Planung in sechs Etappen
+v1344	Was bringt die Zukunft?
+v1345	Was sich schon ändert und welche Fragen offen bleiben
+v1346	Fristen
+v1347	Technologietage
+v1348	10 · Was bringt die Zukunft?
+v1349	10 Die Zukunft
