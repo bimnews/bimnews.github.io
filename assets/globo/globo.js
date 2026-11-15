@@ -37,7 +37,7 @@ function size(){var b=wrap.getBoundingClientRect();W=b.width;H=b.height;DPR=Math
 function css(n,d){var v=getComputedStyle(R).getPropertyValue(n).trim();return v||d}
 function has(){var o={};document.querySelectorAll("#ctrs .ctry.has").forEach(function(p){o[p.dataset.n]=1});return o}
 var HAS={},SEL="";
-function float(t){return still()?0:Math.sin(t/1700)*Math.min(6,H*.02)}
+function float(t){return 0} // niente oscillazione: il globo resta fermo e ruota soltanto (richiesta di Marco)
 function draw(t){
   var dark=R.dataset.theme!=="light",acc=css("--accent","#7fb0ec");
   cx.setTransform(DPR,0,0,DPR,0,0);cx.clearRect(0,0,W,H);

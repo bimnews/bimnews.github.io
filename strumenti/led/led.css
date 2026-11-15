@@ -1,0 +1,37 @@
+/* pulsanti 3D a LED incassati (anteprima) */
+:root{--led-off:#2a3240;--led-bg1:#1c2330;--led-bg2:#121721;--led-edge:#2c3544}
+:root[data-theme="light"]{--led-off:#c9d0da;--led-bg1:#ffffff;--led-bg2:#e9edf2;--led-edge:#c9d1dc}
+.top nav a,.news-tabs a,.settings .set,.fc-open,.fs-all{
+  --led:var(--dotc,var(--accent));position:relative;display:inline-flex;align-items:center;gap:.5rem;
+  padding:.3rem .58rem;border-radius:8px;border:1px solid var(--led-edge)!important;
+  background:linear-gradient(180deg,var(--led-bg1),var(--led-bg2))!important;
+  color:var(--muted)!important;text-decoration:none!important;font-weight:600;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.07),inset 0 -2px 0 rgba(0,0,0,.35),0 2px 0 rgba(0,0,0,.55),0 8px 16px -10px rgba(0,0,0,.9)!important;
+  transition:color .15s,text-shadow .15s,transform .08s,box-shadow .08s}
+.news-tabs a[data-ai="0"]{--led:var(--k-news)}.news-tabs a[data-ai="1"]{--led:var(--k-ai)}.news-tabs a[href="#bim-accademia"]{--led:var(--k-acc)}
+.fc-open,.fs-all{--led:var(--k-news)}
+/* il LED: spento */
+.top nav a::before,.news-tabs a::after,.settings .set::after,.fc-open::after,.fs-all::after{
+  content:"";flex:none;width:.5rem;height:.5rem;border-radius:50%;opacity:1!important;
+  background:radial-gradient(circle at 35% 35%,color-mix(in srgb,var(--led) 35%,#000) 0,var(--led-off) 70%)!important;
+  box-shadow:inset 0 1px 2px rgba(0,0,0,.7),0 0 0 2px rgba(0,0,0,.25);transition:background .15s,box-shadow .15s}
+.news-tabs a::after,.settings .set::after,.fc-open::after,.fs-all::after{order:-1}
+.news-tabs .ico,.news-tabs svg{display:none}
+/* acceso: passaggio del cursore, tastiera, pagina attuale */
+.top nav a:is(:hover,:focus-visible,[aria-current="page"]),.news-tabs a:is(:hover,:focus-visible,[aria-current="page"]),.settings .set:is(:hover,:focus-visible),.fc-open:is(:hover,:focus-visible),.fs-all:is(:hover,:focus-visible){
+  color:color-mix(in srgb,var(--led) 80%,#fff)!important;
+  text-shadow:0 0 4px color-mix(in srgb,var(--led) 85%,transparent),0 0 12px color-mix(in srgb,var(--led) 55%,transparent)}
+.top nav a:is(:hover,:focus-visible,[aria-current="page"])::before,.news-tabs a:is(:hover,:focus-visible,[aria-current="page"])::after,.settings .set:is(:hover,:focus-visible)::after,.fc-open:is(:hover,:focus-visible)::after,.fs-all:is(:hover,:focus-visible)::after{
+  background:radial-gradient(circle at 35% 35%,#fff 0,var(--led) 45%,color-mix(in srgb,var(--led) 70%,#000) 100%)!important;
+  box-shadow:0 0 4px var(--led),0 0 10px var(--led),0 0 18px color-mix(in srgb,var(--led) 60%,transparent)}
+/* premuto: il pulsante scende nel pannello e il LED si accende al massimo */
+.top nav a:active,.news-tabs a:active,.settings .set:active,.fc-open:active,.fs-all:active{transform:translateY(2px);
+  box-shadow:inset 0 2px 5px rgba(0,0,0,.6),inset 0 0 0 1px rgba(0,0,0,.3),0 0 0 rgba(0,0,0,0)!important;
+  color:#fff!important;text-shadow:0 0 6px var(--led),0 0 16px var(--led),0 0 28px var(--led)}
+@media (prefers-reduced-motion:reduce){.top nav a,.news-tabs a,.settings .set,.fc-open,.fs-all{transition:none}}
+.top nav{gap:.35rem!important}
+.top nav a{gap:.38rem}
+/* tema chiaro: LED acceso ma scritte nitide */
+:root[data-theme="light"] :is(.top nav a,.news-tabs a,.settings .set,.fc-open,.fs-all){box-shadow:inset 0 1px 0 #fff,inset 0 -2px 0 rgba(20,30,50,.08),0 2px 0 rgba(20,30,50,.18),0 6px 12px -8px rgba(20,30,50,.35)!important}
+:root[data-theme="light"] .top nav a:is(:hover,:focus-visible,[aria-current="page"]),:root[data-theme="light"] .news-tabs a:is(:hover,:focus-visible,[aria-current="page"]),:root[data-theme="light"] :is(.settings .set,.fc-open,.fs-all):is(:hover,:focus-visible){color:color-mix(in srgb,var(--led) 85%,#000)!important;text-shadow:0 0 8px color-mix(in srgb,var(--led) 35%,transparent)}
+:root[data-theme="light"] :is(.top nav a,.news-tabs a,.settings .set,.fc-open,.fs-all):active{color:color-mix(in srgb,var(--led) 70%,#000)!important;text-shadow:0 0 10px color-mix(in srgb,var(--led) 50%,transparent)}
