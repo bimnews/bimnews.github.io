@@ -102,12 +102,10 @@ Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato co
    - **Immagine:** le cinque virtù (智 仁 信 勇 忍) ricostruite in HTML e CSS (`.kf-fig`), con caratteri veri in font kaishu di sistema, non come immagine.
    - **Testi:** riassunti con parole nostre dalla pagina https://www.kungfuetaichi.com/5-virt%C3%B9, con due brevi citazioni.
    - **Da fare:** il paragrafo «Perché per me è importante». Lo deve raccontare Marco: non inventarlo.
-7. **Statistiche delle visite dentro il sito (domanda di Marco del 15/11/2026, in attesa della sua scelta).**
-   - Il sito usa già GoatCounter (`mscigliuolo.goatcounter.com`).
-   - **Strada proposta:** contatore con `goatcounter.visit_count` o con `/counter/TOTAL.json`.
-   - **Prima serve un'azione di Marco:** attivare in GoatCounter «Allow adding visitor counts on your website». Oggi l'endpoint risponde 403.
-   - **Alternativa:** dashboard pubblica incorporata in un frame. GoatCounter ha una pagina di aiuto apposita, da verificare.
-
+7. **Statistiche delle visite: sezione PUBBLICATA il 15/11/2026 (revisione 110), «Le visite del sito» (`#visite`) nella pagina Mappa del sito.**
+   - **Cosa mostra:** il totale, gli ultimi 30 giorni e le 10 pagine più visitate. Legge `https://mscigliuolo.goatcounter.com/counter/<path>.json`, dove i path sono `/`, `/bim-news` e così via, come in `count()`; `TOTAL` dà il totale del sito.
+   - **Quando si carica:** solo quando si apre la vista `mappa`. Nel piè di pagina, «Statistiche anonime» porta lì.
+   - **Per accenderla serve Marco:** deve attivare in GoatCounter (Settings) «Allow adding visitor counts on your website». Finché è spento compare il messaggio «Il contatore pubblico non è ancora attivo».
 8. **Timeline doppia «Il BIM nel tempo: il mondo e l'Italia»: PUBBLICATA il 15/11/2026 (revisione 109) dopo il sì di Marco.**
    - **Dove:** in BIM in 5 minuti, `#b5-t2`, dopo la lisca; c'è anche la voce «05 Mondo e Italia» nell'indice e nella mappa del sito.
    - **Codice:** HTML, CSS (`.t2-*`) e JS (IIFE dopo il filtro `.tl-filter`) dentro `index.html`.
@@ -149,3 +147,4 @@ Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato co
 - **15/11/2026, revisione 107:** scheda Tai Chi e Kung Fu con le cinque virtù.
 - **15/11/2026, revisione 108:** il globo non oscilla più, ruota soltanto.
 - **15/11/2026, revisione 109:** pubblicata la timeline doppia mondo e Italia.
+- **15/11/2026, revisione 110:** la sezione «Le visite del sito» nella Mappa del sito.
