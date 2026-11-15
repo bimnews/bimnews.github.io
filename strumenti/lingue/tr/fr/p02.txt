@@ -13,7 +13,7 @@ v0109	Les vidéos s'ouvrent sur YouTube : nous ne les intégrons pas au site, ai
 v0110	Agenda
 v0111	Tout ce qui va arriver dans le monde du BIM, en un seul endroit : les échéances des normes, les événements en présentiel et les webinaires en ligne. Chaque rendez-vous a le lien vers la page officielle, la date et le coût.
 v0112	Gratuits
-v0113	Payants
+v0113	Payant
 v0114	À vérifier
 v0115	<span class="agp-i sc" aria-hidden="true"></span>Échéances réglementaires
 v0116	Obligations BIM qui entrent en vigueur, pays par pays.

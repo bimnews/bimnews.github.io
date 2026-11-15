@@ -4,3 +4,5 @@
 §anno	{1}: {2} articles, filter
 §vedi	See the news from {1} →
 §passo	Step {1} of {2}
+Ultimo aggiornamento	Latest update
+Prossimo evento · costo da verificare	Next event · cost to be checked

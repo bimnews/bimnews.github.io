@@ -4,3 +4,5 @@
 §anno	{1} : {2} articles, filtrer
 §vedi	Voir les actualités : {1} →
 §passo	Étape {1} sur {2}
+Ultimo aggiornamento	Dernière mise à jour
+Prossimo evento · costo da verificare	Prochain événement · coût à vérifier

@@ -154,7 +154,9 @@ Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato co
      - le parti che cambiano (mesi, «N notizie», «Ultimo aggiornamento») le traduce a pezzi;
      - ritraduce le parti generate dal JS (MutationObserver, con `takeRecords` per non creare cicli);
      - con l'italiano rimette i testi originali.
-   - **Ordine di lavoro:** inglese p01–p14, poi fr, de, es, pt, ru, ar, zh, ja, ko. Salvare sul ramo dopo ogni pacchetto. Pubblicare quando tutte le lingue sono complete (o con l'ok di Marco per lingue parziali).
+   - **Pacchetti:** ora sono 16 (`p15` = voci della Mappa del sito, `p16` = la guida) e 1284 voci; in `tr/<lingua>/extra.txt` ci sono i modelli delle frasi con numeri (`§conteggio`, `§pagina`, `§articoli`, `§anno`, `§passo`, `§vedi`) e qualche voce fuori pacchetto.
+   - **Stato:** inglese e francese COMPLETI e PUBBLICATI (revisione 114). Restano de, es, pt, ru, ar, zh, ja, ko, in quest'ordine; salvare sul ramo dopo ogni pacchetto.
+   - **Nelle lingue diverse dall'italiano** BIM Accademia mostra l'abstract originale inglese e le scritte della scheda in inglese (`siteIt()`).
    - **Se si cambiano testi del sito:** rilanciare `extract.js`, tradurre le voci nuove e ricompilare.
 
 13. **Appunti di Marco del 15/11/2026, da fare dopo le traduzioni** (riordinati per area):
@@ -201,4 +203,7 @@ Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato co
   - **BIM in 5 minuti:** «Che cos'è» riscritto.
   - **Le mie proposte:** la frase «aperte ai commenti» è sostituita dal rimando a LinkedIn, per coerenza con il disclaimer.
 - **15/11/2026, revisione 113:** selettore delle lingue (11 lingue) con le scritte principali tradotte.
+- **15/11/2026, revisione 114:** nuovo motore delle traduzioni, tutto il sito in inglese e francese; FAQ: riscritte «collaborazioni» e «paesi vuoti», tolte quattro domande (BIM & AI, BIM Accademia, eventi, video); la guida ha un passo per ogni scheda in alto (`nav:#…` in `STEPS`).
+- **Post LinkedIn:** testo preparato il 15/11/2026; consigliato martedì 17/11 alle 8:00–8:30. Marco vuole tutto pronto per martedì (traduzioni, ricerca a tappeto, appunti).
+- **«Ispirazioni»:** Marco ha mandato l'elenco dei suoi canali YouTube (screenshot, 34 canali): da verificare uno per uno e trasformare in un articolo nel curatore.
 - **15/11/2026:** il sito passa all'organizzazione «bimnews» e all'indirizzo https://bimnews.github.io/; aggiornati README, CLAUDE.md, i percorsi negli script di `strumenti/` e i testi dei due task. Niente pagina di rinvio dal vecchio indirizzo: Marco non la vuole, perché il sito l'hanno visto ancora in pochi. Prossimo passo: Marco fa un controllo finale, dice che cosa aggiungere, poi diffonde il sito.
