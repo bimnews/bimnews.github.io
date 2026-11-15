@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>BIM News · Un sito a cura di Marco Scigliuolo</title>
 <meta name="description" content="BIM News: le novità sul BIM dall'Alto Adige al resto del mondo, ogni settimana, con sintesi in italiano e link alle fonti. Mappa, filtri, archivio per mese, BIM in breve e timeline delle norme. A cura di Marco Scigliuolo.">
-<meta name="revisione" content="120 · 15/11/2026">
+<meta name="revisione" content="121 · 15/11/2026">
 <meta name="color-scheme" content="dark light">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='none' stroke='%232f6db5' stroke-width='3'/%3E%3Ctext x='16' y='22' font-family='Arial' font-weight='700' font-size='16' text-anchor='middle' fill='%232f6db5'%3EM%3C/text%3E%3C/svg%3E">
 <script>(function(){try{document.documentElement.dataset.theme=localStorage.getItem("tema-2026")||"dark"}catch(e){document.documentElement.dataset.theme="dark"}})();</script>
@@ -1820,6 +1820,10 @@ section:has(>.pg-hero)>.content{position:relative;z-index:1}
 :root[data-theme="light"] :is(.top nav a,.news-tabs a,.settings .set,.fc-open,.fs-all){box-shadow:inset 0 1px 0 #fff,inset 0 -2px 0 rgba(20,30,50,.08),0 2px 0 rgba(20,30,50,.18),0 6px 12px -8px rgba(20,30,50,.35)!important}
 :root[data-theme="light"] .top nav a:is(:hover,:focus-visible,[aria-current="page"]),:root[data-theme="light"] .news-tabs a:is(:hover,:focus-visible,[aria-current="page"]),:root[data-theme="light"] :is(.settings .set,.fc-open,.fs-all):is(:hover,:focus-visible){color:color-mix(in srgb,var(--led) 85%,#000)!important;text-shadow:0 0 8px color-mix(in srgb,var(--led) 35%,transparent)}
 :root[data-theme="light"] :is(.top nav a,.news-tabs a,.settings .set,.fc-open,.fs-all):active{color:color-mix(in srgb,var(--led) 70%,#000)!important;text-shadow:0 0 10px color-mix(in srgb,var(--led) 50%,transparent)}
+/* avviso: traduzione fatta con AI (solo nelle lingue diverse dall'italiano) */
+.ai-tr{max-width:var(--maxw,1280px);margin:.5rem auto 0;padding:.35rem 1rem;font:500 .8rem/1.35 var(--sans,system-ui);color:var(--muted);text-align:center;border:1px dashed var(--line);border-radius:999px;width:fit-content}
+.ai-tr::before{content:"ⓘ ";opacity:.8}
+@media (min-width:900px){html[data-view="home"] .ai-tr{position:absolute;right:1rem;margin:.45rem 0 0;z-index:6;background:var(--paper)}}
 </style>
 </head>
 <body>
@@ -1858,6 +1862,7 @@ section:has(>.pg-hero)>.content{position:relative;z-index:1}
   </div>
 </header>
 
+<div class="ai-tr" id="ai-tr" translate="no" role="note" hidden></div>
 <main class="wrap" id="top">
   <div class="hero">
     <div class="hero-text">
@@ -2530,11 +2535,10 @@ LINE  da (5,00 ; 0,00)  a (5,00 ; 0,30)   layer=MURI  colore=1</code></pre>
           </div></article>
         </div>
         <h4 class="cv-h">I manuali di Claude</h4>
-        <p class="st-intro">Manuali non professionali che ho creato io, chiedendo a Claude, l'assistente di intelligenza artificiale di Anthropic, di scriverli seguendo indicazioni precise: l'argomento, la struttura, il livello di dettaglio e gli esempi li ho scelti io. I primi due si scaricano già in PDF; gli altri arriveranno uno alla volta.</p>
+        <p class="st-intro">Manuali non professionali che ho creato io, chiedendo a Claude, l'assistente di intelligenza artificiale di Anthropic, di scriverli seguendo indicazioni precise: l'argomento, la struttura, il livello di dettaglio e gli esempi li ho scelti io. Si scaricano in PDF.</p>
         <div class="st-list">
           <article class="st-item" id="man-pers-01"><span class="st-n">01</span><div><h4>Il suono: matematica, effetti e psicoacustica</h4><p>Che cos'è il suono, dalla matematica alla percezione.</p><p>L'onda sonora e i decibel, Fourier e il timbro; che cosa fanno davvero filtri, delay, riverbero, distorsione e compressione; e la psicoacustica: perché certi suoni ci piacciono e altri ci danno fastidio, distinguendo i risultati sperimentali dalle ipotesi.</p><p><a href="manuali/il-suono.pdf" target="_blank" rel="noopener">Scarica il PDF (15 pagine) ↗</a></p></div></article>
           <article class="st-item" id="man-pers-02"><span class="st-n">02</span><div><h4>Libreria effetti per chitarra e basso</h4><p>Gli effetti per chitarra e basso, raccolti e spiegati.</p><p>Tutte le famiglie di effetti: per ognuna che cosa fa, le manopole tipiche, la posizione consigliata nella catena e le modifiche più diffuse, con un glossario delle manopole che vale per tutti i pedali.</p><p><a href="manuali/effetti-chitarra-basso.pdf" target="_blank" rel="noopener">Scarica il PDF (21 pagine) ↗</a></p></div></article>
-          <article class="st-item" id="man-pers-03"><span class="st-n">03</span><div><h4>Suoni per chitarra con il modeler</h4><p>Sintesi della playlist di tutorial Fractal sui suoni di chitarra.</p><p class="st-wip"><span class="tag">Work in progress</span> Pubblicazione in preparazione.</p></div></article>
         </div>
       </div>
       <div class="sub" id="libri">
@@ -3881,6 +3885,12 @@ var saved=load("lingua");if(saved&&saved!=="it"&&sel.querySelector('option[value
     });requestAnimationFrame(frame)}
   frame();
 })();
+</script>
+<script>
+// avviso «traduzione fatta con AI»: richiesta di Marco del 15/11/2026 (le traduzioni non sono riviste da madrelingua)
+(function(){var M={en:"Translated with AI: it may contain inaccuracies.",fr:"Traduction faite avec l'IA : elle peut contenir des imprécisions.",de:"Mit KI übersetzt: kann Ungenauigkeiten enthalten.",es:"Traducción hecha con IA: puede contener imprecisiones.",pt:"Tradução feita com IA: pode conter imprecisões.",ru:"Перевод выполнен с помощью ИИ и может содержать неточности.",ar:"ترجمة مُنجزة بالذكاء الاصطناعي، وقد تحتوي على أخطاء.",zh:"本页由 AI 翻译，可能有不准确之处。",ja:"AI による翻訳です。不正確な箇所があるかもしれません。",ko:"AI로 번역했습니다. 부정확한 부분이 있을 수 있습니다."};
+function upd(){var b=document.getElementById("ai-tr");if(!b)return;var l=(document.documentElement.lang||"it").slice(0,2),t=M[l];b.hidden=!t;if(t){b.textContent=t;b.lang=l;b.dir=l==="ar"?"rtl":"ltr"}}
+addEventListener("lingua",upd);upd()})();
 </script>
 </body>
 </html>

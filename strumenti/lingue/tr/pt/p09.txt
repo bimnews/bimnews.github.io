@@ -40,8 +40,6 @@ v0718	O som: matemática, efeitos e psicoacústica
 v0719	O que é o som, da matemática à perceção.
 v0720	Biblioteca de efeitos para guitarra e baixo
 v0721	Os efeitos para guitarra e baixo, reunidos e explicados.
-v0722	Sons de guitarra com o modelador
-v0723	Síntese da playlist de tutoriais da Fractal sobre os sons de guitarra.
 v0724	Os livros que foram fundamentais para a minha formação. Para cada um haverá um breve artigo sobre o que me deu, organizado por categorias.
 v0725	Crescimento pessoal e psicologia
 v0726	Os livros que me ajudaram a perceber como funcionam as pessoas, a começar por mim.<span class="acc-count">· 5 fichas</span>

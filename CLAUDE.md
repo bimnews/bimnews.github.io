@@ -45,7 +45,7 @@ Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato co
 ## Attività programmate (account di Marco)
 
 - **Task settimanale** `trig_015jCaF6QnEXfgYXfYEkz2L5`, ogni lunedì alle 7:41 (ora di Roma):
-  - notizie, agenda, scadenze, video e circa 20 articoli di BIM Accademia;
+  - SOLO le notizie della settimana passata (decisione di Marco del 15/11/2026: niente ricerca storica il lunedì), più agenda, scadenze, video e circa 20 articoli di BIM Accademia;
   - fonti in tre livelli (istituzionali, stampa autorevole, grandi aziende);
   - lingue della ricerca: 36 lingue più 40 in verifica, elencate nella FAQ, che è la fonte unica: la tendina di BIM News le copia da lì.
 - **I due task puntano a `bimnews/bimnews.github.io`** (testi aggiornati il 15/11/2026).
@@ -65,6 +65,7 @@ Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato co
 - **Fonti:**
   - città, regioni e province valgono come fonti solo se danno un contributo concreto al BIM;
   - mai lanci di prodotti, blog, social o cronaca locale.
+- **Mai pubblicare:** l'articolo «Suoni per chitarra con il modeler» (sintesi della playlist Fractal) resta privato di Marco (15/11/2026).
 - **Bozze:** la bozza «La prima routine» per AutoCAD è in attesa di revisione da parte di Marco e non va pubblicata. Una copia è nel backup zip.
 - **File che Marco deve ancora mandare:** gli originali di `SOSTXRIF.lsp` e `RETINITRASP.lsp` (quelli nel sito sono riscritti e «da provare») e i file `.dyn` di Dynamo.
 
@@ -92,7 +93,7 @@ Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato co
    - BIM Accademia: abstract tradotto in italiano solo nella versione italiana; altrove abstract inglese con `lang="en"`, così il browser propone la traduzione nella lingua del lettore.
    - Segnare con `translate="no"` i nomi propri e le sigle.
    - Il widget di Google Traduttore non è più disponibile: non usarlo.
-5. **Ricerca a tappeto per paesi.**
+5. **Ricerca a tappeto per paesi e per anni: la fa Claude nelle sessioni con Marco, non il task del lunedì.**
    - **Fatto:**
      - America Latina: Messico, Costa Rica (3), Uruguay, Colombia (3), Perù (2);
      - Africa: Etiopia e Sudafrica.
@@ -122,7 +123,7 @@ Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato co
    - **I file:** il dizionario sta in `strumenti/lingue/dizionario.py`; per aggiornarlo dentro `index.html` si sostituisce l'oggetto `D`/`B` (vedi `applica.py`, che serve per il primo inserimento).
    - **Non tradotti per ora:** notizie, sintesi, articoli, FAQ, l'etichetta «Mondo» della mappa (il codice confronta il testo «Mondo») e «Ultimo aggiornamento».
    - **Prossimi passi possibili:** pagine separate per lingua (`/en/`…) con `hreflang` per i motori di ricerca, la FAQ tradotta, i titoli delle notizie.
-   - **Revisione delle traduzioni:** le ha scritte Claude; serve la revisione di un madrelingua, soprattutto per arabo, cinese, giapponese e coreano.
+   - **Revisione delle traduzioni:** non ci sarà (Marco non può farla). Al suo posto c'è l'avviso «tradotto con AI, può contenere imprecisioni» (`#ai-tr`, revisione 121). Task chiuso.
 10. **Articoli da scrivere con Marco (impostati il 15/11/2026; testi da fare insieme):**
    - **In `#wip` → «Articoli in preparazione»** (`.wip-art`), ogni scheda con «Cosa conterrà»:
      - `art-hoover`: lo script «Hoover», che legge un Excel con materiali, parametri e informazioni di sistema;
@@ -159,7 +160,6 @@ Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato co
      - **Tai Chi:** fatto in revisione 119. Il «maestro dei maestri» di Marco è Shin Dae Woung (Marco l'aveva scritto «Schin Dae wuong»; grafia corretta dal sito ufficiale shindaewoung.com): scomparso nel 2016, in Italia dal 1975, libri *Scuola di kung fu* vol. 1 (1988) e vol. 2 (1997), Edizioni Mediterranee (verificati su Libraccio). Nessun link a librerie: si cita solo il titolo. La scuola di Bolzano è citata con la scheda del Registro CONI; il legale rappresentante del registro non va scritto come maestro.
      - **Nuova scheda «Ispirazioni»:** i canali YouTube che segue Marco. Lo screenshot con i 34 canali non è più leggibile nella sessione: Marco deve rimandarlo.
      - **Portfolio:** la grafica è rimasta quella vecchia, va resa coerente con il resto della sezione. Poi le anteprime dei progetti affrontati, poi l'elenco dei modelli fatti con Guadagnuolo. Servono materiali da Marco.
-     - Il manuale «Suoni per chitarra con il modeler» (man-pers-03) non è pubblicato: è la sintesi di una playlist di terzi, valutare con Marco.
    - **BIM in breve, agenda a calendario e giornate della tecnologia: PUBBLICATI in revisione 120** dopo il sì di Marco (15/11/2026).
      - **BIM in breve** (`#bim-5-minuti`): linea del tempo `.evo-tl` sopra i tre passi (1570, 1963, 1982, 1996, 2002, oggi; fonti Wikipedia in inglese), approfondimento `.evo-deep` su attributi e parametri (codice CAD/BIM, grafo delle dipendenze, IfcWall/IfcExtrudedAreaSolid/Pset_WallCommon/IfcRelVoidsElement), sezione `#b5-futuro` «10 · Cosa ci riserva il futuro?» (3 schede «sta già succedendo» legate alle notizie n10, n100, n36 e 3 «domande aperte»). I due blocchi di codice `.evo-code` restano in italiano in tutte le lingue.
      - **Agenda a calendario** `#agc` in `#agenda`, sopra le tre colonne: griglia del mese con scadenze, eventi (filtri area e costo), webinar e giornate della tecnologia (array `TECH`, `window.TECH_DAYS`, `techDate()` per il 4° giovedì di aprile e il 1° lunedì di ottobre). Clic su un giorno → elenco con i link. I nomi delle giornate e degli appuntamenti restano in italiano, come il resto dell'agenda.
@@ -191,6 +191,7 @@ Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato co
   - **BIM in breve:** «Che cos'è» riscritto.
   - **Le mie proposte:** la frase «aperte ai commenti» è sostituita dal rimando a LinkedIn, per coerenza con il disclaimer.
 - **15/11/2026, revisione 113:** selettore delle lingue (11 lingue) con le scritte principali tradotte.
+- **15/11/2026, revisione 121:** eliminato del tutto l'articolo «Suoni per chitarra con il modeler» (playlist Fractal): resta solo a Marco, non va mai pubblicato. Avviso «tradotto con AI, può contenere imprecisioni» nelle 10 lingue diverse dall'italiano (`#ai-tr` sopra il `main`, script in fondo alla pagina; in home da 900 px in su è sovrapposto a destra, per non spingere fuori la striscia degli eventi a 1280×650). Il task del lunedì ora cerca solo le notizie della settimana passata.
 - **15/11/2026, revisione 120:** pubblicate le anteprime approvate da Marco: agenda a calendario con 15 giornate mondiali della tecnologia; BIM in breve con linea del tempo, approfondimento su attributi e parametri e «Cosa ci riserva il futuro?». Traduzioni nel pacchetto `p19` (giorni della settimana con l'iniziale maiuscola per non confonderli con «mar» = marzo). Tolta la patch da `strumenti/anteprime/`.
 - **15/11/2026, revisione 119:** Tai Chi: il maestro dei maestri di Marco, Shin Dae Woung, con il sito ufficiale e i due volumi di *Scuola di kung fu*; traduzione nel pacchetto `p18`.
 - **15/11/2026, revisione 118:** «BIM in 5 minuti» diventa «BIM in breve» (11 lingue, nuova frase iniziale); minuti di lettura in fondo a ogni articolo del curatore (`.st-rt`, circa 200 parole al minuto, etichetta nelle 11 lingue in `rtLabel()`); il curatore descritto come «blog personale con articoli utili»; scautismo con AGESCI di Triggiano e Aquile Randagie (film di Gianni Aureli, 2019); Tai Chi con la Scuola di Kung-fu Mien Ch'uan di Bolzano; pubblicati in PDF i manuali «Il suono» e «Libreria effetti per chitarra e basso» (`manuali/il-suono.pdf`, `manuali/effetti-chitarra-basso.pdf`, esportati dai documenti di Marco) e collegati alla scheda «La musica». Traduzioni nuove nel pacchetto `p17`.
