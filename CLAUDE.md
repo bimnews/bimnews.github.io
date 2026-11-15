@@ -109,7 +109,7 @@ Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato co
 7. **Statistiche delle visite: sezione PUBBLICATA il 15/11/2026 (revisione 110), «Le visite del sito» (`#visite`) nella pagina Mappa del sito.**
    - **Cosa mostra:** il totale, gli ultimi 30 giorni e le 10 pagine più visitate. Legge `https://mscigliuolo.goatcounter.com/counter/<path>.json`, dove i path sono `/`, `/bim-news` e così via, come in `count()`; `TOTAL` dà il totale del sito.
    - **Quando si carica:** solo quando si apre la vista `mappa`. Nel piè di pagina, «Statistiche anonime» porta lì.
-   - **Per accenderla serve Marco:** deve attivare in GoatCounter (Settings) «Allow adding visitor counts on your website». Finché è spento compare il messaggio «Il contatore pubblico non è ancora attivo».
+   - **Contatore pubblico:** Marco l'ha acceso il 15/11/2026 («Allow adding visitor counts» in GoatCounter); i numeri arrivano. `TOTAL` comprende anche gli eventi, come i clic sulle fonti, quindi è più alto della somma delle pagine.
 8. **Timeline doppia «Il BIM nel tempo: il mondo e l'Italia»: PUBBLICATA il 15/11/2026 (revisione 109) dopo il sì di Marco.**
    - **Dove:** in BIM in 5 minuti, `#b5-t2`, dopo la lisca; c'è anche la voce «05 Mondo e Italia» nell'indice e nella mappa del sito.
    - **Codice:** HTML, CSS (`.t2-*`) e JS (IIFE dopo il filtro `.tl-filter`) dentro `index.html`.
