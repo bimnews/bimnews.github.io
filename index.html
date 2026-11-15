@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>BIM News · Un sito a cura di Marco Scigliuolo</title>
 <meta name="description" content="BIM News: le novità sul BIM dall'Alto Adige al resto del mondo, ogni settimana, con sintesi in italiano e link alle fonti. Mappa, filtri, archivio per mese, BIM in 5 minuti e timeline delle norme. A cura di Marco Scigliuolo.">
-<meta name="revisione" content="110 · 15/11/2026">
+<meta name="revisione" content="111 · 15/11/2026">
 <meta name="color-scheme" content="dark light">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='none' stroke='%232f6db5' stroke-width='3'/%3E%3Ctext x='16' y='22' font-family='Arial' font-weight='700' font-size='16' text-anchor='middle' fill='%232f6db5'%3EM%3C/text%3E%3C/svg%3E">
 <script>(function(){try{document.documentElement.dataset.theme=localStorage.getItem("tema-2026")||"dark"}catch(e){document.documentElement.dataset.theme="dark"}})();</script>
@@ -956,6 +956,37 @@ body{transition:background-color .3s}
 .vis-bar{height:.55rem;border-radius:999px;background:var(--line);overflow:hidden}.vis-bar i{display:block;height:100%;background:var(--accent);border-radius:999px}
 .vis-list b{font-family:var(--mono);font-size:.8rem;text-align:right;font-variant-numeric:tabular-nums}
 @media (max-width:560px){.vis-list li{grid-template-columns:minmax(0,1fr) 4rem}.vis-bar{grid-column:1/-1;order:3}}
+/* 01 · che cos'è: dal disegno a mano al BIM */
+.evo-wrap{display:grid;gap:1rem}
+.evo-def{margin:0;font-size:1.12rem;max-width:62rem}
+.evo{list-style:none;margin:0;padding:0;display:grid;gap:1rem}
+.evo-step{display:grid;grid-template-columns:minmax(0,26rem) minmax(0,1fr);gap:1.4rem;align-items:center;padding:1rem;border:1px solid var(--line);border-radius:var(--r);background:var(--surface)}
+.evo-step h4{margin:0 0 .4rem;font-family:var(--display);font-size:1.15rem;display:flex;align-items:center;gap:.55rem}
+.evo-step h4 span{display:inline-grid;place-items:center;width:1.7rem;height:1.7rem;border-radius:50%;background:var(--k-b5);color:var(--k-b5-on);font:700 .85rem var(--mono)}
+.evo-step p{margin:0;font-size:1rem}
+.evo-fig{margin:0;display:grid;gap:.4rem}
+.evo-fig figcaption{font-size:.78rem;color:var(--muted)}
+.evo-img{aspect-ratio:640/950;max-height:26rem;border-radius:8px;border:1px solid var(--line);background:#efe9dc center/contain no-repeat}
+:root:not(.lite) .evo-img{background-image:url(assets/foto/palladio-rotonda.jpg)}
+.lite .evo-img{display:none}
+.evo-fig svg{width:100%;height:auto;display:block;background:var(--bg);border:1px solid var(--line);border-radius:8px}
+.cad-lines path{stroke:var(--ink);stroke-width:2;fill:none}.cad-lines .cad-sel{stroke:var(--k-b5);stroke-width:3}
+.cad-grip rect{fill:var(--k-b5)}
+.cad-t{font:600 11px var(--mono);fill:var(--muted)}
+.cad-lead{stroke:var(--k-b5);stroke-dasharray:3 3;fill:none}
+.cad-card rect,.bim-card rect{fill:var(--surface);stroke:var(--k-b5)}
+.cad-card text,.bim-card text{font:10.5px var(--mono);fill:var(--ink)}
+.cad-card text.h{font-weight:700;fill:var(--k-b5)}
+.bim-card text.h{font-weight:700;fill:var(--k-b5)}.bim-card text.f{fill:var(--mark);font-weight:700}
+#bim-wall .top{fill:color-mix(in srgb,var(--k-b5) 45%,var(--surface))}#bim-wall .front{fill:color-mix(in srgb,var(--k-b5) 25%,var(--surface))}#bim-wall .side{fill:color-mix(in srgb,var(--k-b5) 35%,var(--bg))}
+#bim-wall path{stroke:var(--k-b5);stroke-width:1.2;stroke-linejoin:round}
+.bim-ctl{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.6rem;font:600 .72rem var(--mono);color:var(--muted)}
+.bim-ctl label{display:grid;gap:.2rem}.bim-ctl input{width:100%;accent-color:var(--k-b5)}
+.evo-why{padding:1rem 1.2rem;border-left:4px solid var(--k-b5);background:var(--k-b5-s);border-radius:0 var(--r) var(--r) 0;display:grid;gap:.5rem}
+.evo-why h4{margin:0;font-family:var(--display);font-size:1.1rem}
+.evo-why ul{margin:0;padding-left:1.1rem;display:grid;gap:.35rem}
+.evo-diff{margin:.2rem 0 0}
+@media (max-width:800px){.evo-step{grid-template-columns:minmax(0,1fr)}.evo-img{max-height:16rem}}
 /* disclaimer di BIM News, sempre visibile */
 .bn-what{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.5rem 2rem;padding:.9rem 1.3rem;border:1px solid var(--line);border-radius:var(--r);background:color-mix(in srgb,var(--k-news) 7%,var(--surface))}
 .bn-what p{margin:0;font-size:.98rem}
@@ -1979,6 +2010,7 @@ section:has(>.pg-hero)>.content{position:relative;z-index:1}
         <h3>Crediti delle immagini e dei caratteri</h3>
         <p>Le fotografie delle pagine vengono da Wikimedia Commons e sono dedicate al pubblico dominio con CC0 1.0: gli autori hanno rinunciato a ogni diritto. Le citiamo lo stesso, per rispetto del loro lavoro. Sul sito le foto sono tinte nel colore di ogni pagina e compaiono solo nella versione completa.</p>
         <ul>
+          <li><b>BIM in 5 minuti, «Che cos'è»</b> · <a href="https://commons.wikimedia.org/wiki/File:Villa_Almerico_(Villa_Rotunda),_from_I_quattro_libri_dell%27architettura_di_Andrea_Palladio_(Book_2,_page_19)_MET_DP109542.jpg" target="_blank" rel="noopener">Villa Almerico (Villa Rotonda), da I quattro libri dell'architettura</a>, di Andrea Palladio, 1570 (The Metropolitan Museum of Art, CC0)</li>
           <li><b>BIM News</b> · <a href="https://commons.wikimedia.org/wiki/File:Victoria_Harbour_skyscrapers.jpg" target="_blank" rel="noopener">Victoria Harbour skyscrapers</a>, di Wilfredor</li>
           <li><b>BIM &amp; AI</b> · <a href="https://commons.wikimedia.org/wiki/File:Data_center_roof.jpg" target="_blank" rel="noopener">Data center roof</a>, di Rsparks3</li>
           <li><b>BIM Accademia</b> · <a href="https://commons.wikimedia.org/wiki/File:The_John_Rylands_Library_Reading_Room_Enclosure.jpg" target="_blank" rel="noopener">The John Rylands Library, Reading Room</a>, di Michael D Beckwith</li>
@@ -2000,27 +2032,43 @@ section:has(>.pg-hero)>.content{position:relative;z-index:1}
       <p class="lead">Non sai cos'è il BIM? Parti da qui: cos'è, a cosa serve in uno studio, perché oggi non se ne può fare a meno, le norme e le sigle. Cinque minuti per l'essenziale, il resto quando vuoi.</p>
       <nav class="b5-toc" aria-label="In questa pagina"><button type="button" data-go="b5-01">01 Che cos'è</button><button type="button" data-go="b5-02">02 Tutta la vita dell'opera</button><button type="button" data-go="b5-03">03 Cosa cambia</button><button type="button" data-go="b5-04">04 Perché adesso</button><button type="button" data-go="norme">05 Le norme</button><button type="button" data-go="b5-t2">05 Mondo e Italia</button><button type="button" data-go="b5-dim">06 Le dimensioni</button><button type="button" data-go="b5-sigle">07 Le sigle</button><button type="button" data-go="b5-risultati">08 Risultati concreti</button><button type="button" data-go="b5-cert">09 Certificazioni nel mondo</button></nav>
 
-      <div class="b5-grid" id="b5-01">
-        <div class="b5-text">
-          <span class="label">01 · Che cos'è</span>
-          <p><strong>BIM</strong> sta per <em>Building Information Modeling</em>. Invece di disegnare linee, si costruisce un modello digitale dell'edificio fatto di oggetti: muri, solai, tubazioni, quadri elettrici. Ogni oggetto sa cosa è e porta con sé le sue informazioni: materiale, dimensioni, prestazioni, costo, manutenzione.</p>
+      <div class="evo-wrap" id="b5-01">
+        <span class="label">01 · Che cos'è</span>
+        <p class="evo-def"><strong>BIM</strong> sta per <em>Building Information Modeling</em>, cioè «modellazione delle informazioni dell'edificio». Per capire che cosa cambia davvero, conviene guardare come si è sempre progettato.</p>
+        <ol class="evo">
+          <li class="evo-step">
+            <figure class="evo-fig evo-hand"><div class="evo-img" role="img" aria-label="Pianta e sezione della Villa Rotonda, incisione dai Quattro libri dell'architettura di Andrea Palladio, 1570"></div><figcaption>Andrea Palladio, Villa Rotonda: pianta e sezione, da <i>I quattro libri dell'architettura</i>, 1570. The Metropolitan Museum of Art, CC0.</figcaption></figure>
+            <div><h4><span>1</span> A mano, per secoli</h4><p>Per secoli il progetto è stato un disegno fatto a mano: piante, sezioni e prospetti, ognuno tracciato a parte. Nella tavola di Palladio ci sono già tutti gli ingredienti che usiamo ancora oggi. È un'impostazione che è rimasta la stessa fino all'arrivo del computer: viste separate, da tenere coerenti a mano.</p></div>
+          </li>
+          <li class="evo-step">
+            <figure class="evo-fig"><svg viewBox="0 0 320 190" role="img" aria-label="Nel CAD una parete è fatta di quattro linee; a una linea si possono dare attributi come layer, colore e tipo di linea">
+              <g class="cad-lines"><path d="M40 70H230"/><path d="M40 98H230"/><path d="M40 70V98"/><path class="cad-sel" d="M230 70V98"/></g>
+              <g class="cad-grip"><rect x="226" y="66" width="8" height="8"/><rect x="226" y="94" width="8" height="8"/></g>
+              <text x="40" y="58" class="cad-t">4 linee indipendenti</text>
+              <path class="cad-lead" d="M234 84h20v26"/>
+              <g class="cad-card"><rect x="128" y="108" width="184" height="74" rx="3"/><text x="138" y="126" class="h">Linea · attributi</text><text x="138" y="142">Layer: MURI</text><text x="138" y="157">Colore: 1 · Tipo: continua</text><text x="138" y="172">Spessore linea: 0,35</text></g>
+            </svg><figcaption>Per allungare il muro si spostano le linee, una per una.</figcaption></figure>
+            <div><h4><span>2</span> Il CAD: le stesse linee, al computer</h4><p>Il CAD porta il tavolo da disegno nel computer. Si disegnano ancora <b>linee</b>, più precise, facili da copiare e da correggere. A ogni linea si possono dare degli <b>attributi</b>: il layer, il colore, il tipo di linea, magari un testo che dice «muro in laterizio». Sono etichette appoggiate sul disegno, che lo descrivono ma non lo governano. Per allungare un muro bisogna spostarne le linee, e poi correggere a mano la sezione, il prospetto e il computo.</p></div>
+          </li>
+          <li class="evo-step">
+            <figure class="evo-fig"><svg viewBox="0 0 320 190" id="bim-demo" role="img" aria-label="Nel BIM la parete è un oggetto 3D governato da parametri: cambiando lunghezza e altezza si aggiornano superficie e volume">
+              <g id="bim-wall"></g>
+              <g class="bim-card"><rect x="172" y="12" width="142" height="110" rx="3"/><text x="180" y="36" class="h">Muro · IfcWall</text><text x="180" y="54">Lunghezza <tspan id="bd-l">5,00</tspan> m</text><text x="180" y="70">Altezza <tspan id="bd-h">3,00</tspan> m</text><text x="180" y="86">Spessore 0,30 m</text><text x="180" y="102" class="f">Superficie <tspan id="bd-a">15,00</tspan> m²</text><text x="180" y="117" class="f">Volume <tspan id="bd-v">4,50</tspan> m³</text></g>
+            </svg>
+            <div class="bim-ctl"><label>Lunghezza <input type="range" id="bd-rl" min="2" max="8" step=".5" value="5"></label><label>Altezza <input type="range" id="bd-rh" min="2.5" max="4" step=".25" value="3"></label></div>
+            <figcaption>Prova a muovere i cursori: cambia il parametro e il muro, la superficie e il volume si aggiornano da soli. <span class="ex">Valori di esempio</span></figcaption></figure>
+            <div><h4><span>3</span> Il BIM: oggetti con parametri</h4><p>Nel BIM non si disegnano più linee, ma <b>oggetti tridimensionali</b>: un muro, un solaio, una finestra. Ogni oggetto è governato da <b>parametri</b>: valori come lunghezza, altezza e spessore, legati tra loro da formule. Il volume non si ridisegna, si calcola. Quello che vediamo sullo schermo non è più un disegno, ma una rappresentazione dei dati: piante, sezioni e liste nascono tutte dallo stesso modello.</p></div>
+          </li>
+        </ol>
+        <div class="evo-why">
+          <h4>Perché cambia tutto</h4>
+          <ul>
+            <li><b>Le informazioni si estraggono e si inseriscono.</b> Quantità, superfici, volumi e abachi escono dal modello; e nel modello si inseriscono i dati che servono a calcoli, gare, cantiere e manutenzione.</li>
+            <li><b>Le modifiche sono vive.</b> Se alzi un solaio o allarghi una stanza, si aggiornano insieme pianta, sezioni, superfici, volumi e liste. Nel CAD lo stesso lavoro richiedeva ore.</li>
+            <li><b>Un cambio vale per tutti.</b> Se cambi il materiale di un tipo di muro, cambiano tutti i muri di quel tipo, in tutto il progetto.</li>
+          </ul>
+          <p class="evo-diff"><b>Attributo o parametro?</b> L'attributo è un'informazione appoggiata a un elemento del disegno, come il layer o il colore di una linea: lo descrive, ma non lo governa. Il parametro invece governa l'oggetto: cambi il valore e cambia la forma, e con lei tutto ciò che ne dipende.</p>
         </div>
-        <figure class="b5-fig" aria-label="Confronto: nel CAD una parete è fatta di linee, nel BIM è un oggetto con le sue informazioni">
-          <svg viewBox="0 0 420 190" role="img">
-            <text x="10" y="18" class="t-lab">CAD</text>
-            <path class="t-line" d="M20 50 H180 M20 70 H180 M20 50 V70 M180 50 V70"/>
-            <text x="20" y="96" class="t-small">4 linee</text>
-            <text x="230" y="18" class="t-lab">BIM</text>
-            <path class="t-obj" d="M240 50 L380 50 L400 38 L260 38 Z M240 50 V72 H380 V50 M380 72 L400 60 V38"/>
-            <g class="t-card"><rect x="230" y="96" width="180" height="84" rx="2"/>
-              <text x="240" y="114">Parete · IfcWall</text>
-              <text x="240" y="132">Spessore 30 cm</text>
-              <text x="240" y="150">EI 60 · U 0,24 W/m²K</text>
-              <text x="240" y="168">Fase: esecutivo</text></g>
-            <path class="t-dash" d="M320 72 V96"/>
-          </svg>
-          <figcaption>Nel CAD una parete è fatta di linee; nel BIM è un oggetto che sa cos'è. <span class="ex">Valori di esempio</span></figcaption>
-        </figure>
       </div>
 
       <div class="b5-life" id="b5-02" aria-label="Il modello accompagna l'opera in tutte le fasi">
@@ -3050,6 +3098,15 @@ function load(){if(done)return;done=true;
   .catch(function(){done=false;$("vis-all").textContent="–";$("vis-30").textContent="–";var no=$("vis-note");no.hidden=false;$("vis-h").hidden=true;no.textContent="Il contatore pubblico non è ancora attivo: le statistiche compariranno qui appena il curatore lo accende in GoatCounter."})}
 function check(){if((document.documentElement.dataset.view||"")==="mappa")load()}
 new MutationObserver(check).observe(document.documentElement,{attributes:true,attributeFilter:["data-view"]});check()})();
+// 01 · il muro BIM: lunghezza e altezza sono parametri, superficie e volume si calcolano
+(function(){var g=$("bim-wall");if(!g)return;var rl=$("bd-rl"),rh=$("bd-rh"),S=.3;
+function f(v){return v.toFixed(2).replace(".",",")}
+function draw(){var L=+rl.value,H=+rh.value,k=16,x0=12,y0=172,w=L*k,h=H*k*1.7,d=30,dx=d*.85,dy=-d*.55;
+  var A=[x0,y0],B=[x0+w,y0],C=[x0+w,y0-h],D=[x0,y0-h];function m(p,q){return[p[0]+q[0],p[1]+q[1]]}var o=[dx,dy];
+  function P(a){return"M"+a.map(function(p){return p[0].toFixed(1)+" "+p[1].toFixed(1)}).join("L")+"Z"}
+  g.innerHTML='<path class="side" d="'+P([B,m(B,o),m(C,o),C])+'"/><path class="top" d="'+P([D,C,m(C,o),m(D,o)])+'"/><path class="front" d="'+P([A,B,C,D])+'"/>';
+  $("bd-l").textContent=f(L);$("bd-h").textContent=f(H);$("bd-a").textContent=f(L*H);$("bd-v").textContent=f(L*H*S)}
+rl.addEventListener("input",draw);rh.addEventListener("input",draw);draw()})();
 document.addEventListener("click",function(e){var a=e.target.closest(".src-btn");if(!a||!window.goatcounter||!goatcounter.count)return;
   goatcounter.count({path:"fonte-"+(a.dataset.id||"altro"),title:a.textContent.replace(" ↗",""),event:true})});
 if(document.readyState==="complete")setTimeout(count,0);else window.addEventListener("load",function(){setTimeout(count,0)});

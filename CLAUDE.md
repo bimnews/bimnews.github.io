@@ -130,6 +130,10 @@ Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato co
    - **Collegamenti tra sottopagine:** usare `data-goto-art="id"`.
    - **Da verificare:** il proverbio «Ciò che cresce lentamente mette radici profonde» è indicato come «attribuito alla tradizione africana»; l'origine non è verificata.
 
+11. **BIM in 5 minuti, «01 · Che cos'è» riscritto (anteprima del 15/11/2026, in attesa del sì).**
+   - **Struttura:** tre passi. 1) A mano, con la tavola di Palladio della Villa Rotonda, 1570, MET CC0, `assets/foto/palladio-rotonda.jpg`, non caricata nella versione essenziale. 2) Il CAD, con le linee e i loro attributi. 3) Il BIM, con oggetti e parametri e un muro interattivo: i cursori di lunghezza e altezza aggiornano superficie e volume. Seguono «Perché cambia tutto» e la differenza tra attributo e parametro.
+   - **Dov'è il codice:** sul ramo della sessione, non ancora su main.
+
 ## Fatto di recente
 
 - **15/11/2026, revisione 100:**
