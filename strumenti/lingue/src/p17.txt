@@ -1,0 +1,18 @@
+v1285	Il blog personale di chi cura BIM News, con articoli utili per chi progetta: il profilo, il portfolio, le riflessioni sul lavoro, le proposte per il mondo del BIM, i lavori in corso e qualche pensiero personale.
+v1286	BIM Coordinator ICMQ (2026)<br>BIM Specialist ICMQ (2024)<br>Lead Auditor ISO 9001 (2026)<br>Coordinatore per la sicurezza CSP/CSE (2025)
+v1287	Ingegnere, settore civile e ambientale (2019)
+v1288	EIPASS – European Informatics Passport (2021)
+v1289	Addetto antincendio rischio alto, Provincia autonoma di Bolzano (2022)
+v1290	Addetto al primo soccorso (2025)
+v1291	Intanto, due manuali che ho scritto con Claude per capire meglio quello che suono (li trovi anche in <a href="#fuori" data-goto-art="man-pers-01">I manuali di Claude</a>):
+v1292	<a href="manuali/il-suono.pdf" target="_blank" rel="noopener">Il suono: matematica, effetti e psicoacustica</a> (PDF, 15 pagine): l'onda sonora, che cosa fanno davvero filtri, delay, distorsione e compressione, e perché certi suoni ci piacciono e altri no.
+v1293	<a href="manuali/effetti-chitarra-basso.pdf" target="_blank" rel="noopener">Libreria effetti per chitarra e basso</a> (PDF, 21 pagine): le famiglie di effetti, le manopole, la posizione nella catena e le modifiche più diffuse.
+v1294	Ho cominciato nell'AGESCI di Triggiano, in provincia di Bari: l'associazione degli scout cattolici italiani. Con il tempo ho capito che non era la scelta giusta per me: nell'AGESCI si fa la «scelta di fede», e il mio percorso spirituale mi ha portato a riconoscere che non sono credente. Da quando vivo e lavoro a Bolzano sono nel <span translate="no">CNGEI</span>, gli scout laici, perché credo fermamente che l'educazione debba essere laica e mai orientata da principi religiosi.
+v1295	Un'ispirazione: le <a href="https://it.wikipedia.org/wiki/Aquile_randagie" target="_blank" rel="noopener">Aquile Randagie ↗</a>, gli scout di Milano, Monza, Parma e Bergamo che continuarono le attività di nascosto quando il fascismo, dal 1927, sciolse le associazioni scout. La loro storia è raccontata nel film <a href="https://it.wikipedia.org/wiki/Aquile_randagie_(film)" target="_blank" rel="noopener"><i>Aquile randagie</i> ↗</a> di Gianni Aureli (2019). Ricordano che educare, a volte, vuol dire anche avere il coraggio di non obbedire a ciò che è ingiusto.
+v1296	Dove pratico: la <span translate="no">Scuola di Kung-fu Mien Ch'uan</span> di Bolzano (<a href="https://www.coni.it/it/registro-societa-sportive/home/registro-2-0/RegistroDettaglio.html?id_societa=99695" target="_blank" rel="noopener">scheda nel Registro CONI ↗</a>).
+v1297	Manuali non professionali che ho creato io, chiedendo a Claude, l'assistente di intelligenza artificiale di Anthropic, di scriverli seguendo indicazioni precise: l'argomento, la struttura, il livello di dettaglio e gli esempi li ho scelti io. I primi due si scaricano già in PDF; gli altri arriveranno uno alla volta.
+v1298	L'onda sonora e i decibel, Fourier e il timbro; che cosa fanno davvero filtri, delay, riverbero, distorsione e compressione; e la psicoacustica: perché certi suoni ci piacciono e altri ci danno fastidio, distinguendo i risultati sperimentali dalle ipotesi.
+v1299	<a href="manuali/il-suono.pdf" target="_blank" rel="noopener">Scarica il PDF (15 pagine) ↗</a>
+v1300	Tutte le famiglie di effetti: per ognuna che cosa fa, le manopole tipiche, la posizione consigliata nella catena e le modifiche più diffuse, con un glossario delle manopole che vale per tutti i pedali.
+v1301	<a href="manuali/effetti-chitarra-basso.pdf" target="_blank" rel="noopener">Scarica il PDF (21 pagine) ↗</a>
+v1302	Il blog personale di chi cura il sito, con articoli utili: profilo, portfolio, approfondimenti, proposte per il mondo del BIM e riflessioni personali.

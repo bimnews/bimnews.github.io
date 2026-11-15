@@ -1,6 +1,6 @@
 v0159	Le altre pagine
 v0160	Non conosco il BIM: da dove parto?
-v0161	Da <a href="#bim-5-minuti">BIM in 5 minuti</a>: che cos'è, a che cosa serve, le norme, le sigle, le dimensioni dal 3D al 10D e i risultati concreti misurati dalle ricerche.
+v0161	Da <a href="#bim-5-minuti">BIM in breve</a>: che cos'è, a che cosa serve, le norme, le sigle, le dimensioni dal 3D al 10D e i risultati concreti misurati dalle ricerche.
 v0162	Che cos'è BIM Accademia? Chi traduce gli abstract?
 v0163	<a href="#bim-accademia">BIM Accademia</a> raccoglie articoli scientifici sul BIM in accesso aperto, con licenza Creative Commons BY, che permette di riprodurre e tradurre l'abstract. Le traduzioni sono nostre e sono indicate come tali; per citare un articolo vale sempre il testo originale, a un clic.
 v0164	Dove trovo eventi, webinar e scadenze?
@@ -31,18 +31,18 @@ v0188	Contiamo le visite con GoatCounter, senza cookie e senza dati personali: q
 v0189	Le pagine più visitate
 v0190	Crediti delle immagini e dei caratteri
 v0191	Le fotografie delle pagine vengono da Wikimedia Commons e sono dedicate al pubblico dominio con CC0 1.0: gli autori hanno rinunciato a ogni diritto. Le citiamo lo stesso, per rispetto del loro lavoro. Sul sito le foto sono tinte nel colore di ogni pagina e compaiono solo nella versione completa.
-v0192	<b>BIM in 5 minuti, «Che cos'è»</b> · <a href="https://commons.wikimedia.org/wiki/File:Villa_Almerico_(Villa_Rotunda),_from_I_quattro_libri_dell%27architettura_di_Andrea_Palladio_(Book_2,_page_19)_MET_DP109542.jpg" target="_blank" rel="noopener">Villa Almerico (Villa Rotonda), da I quattro libri dell'architettura</a>, di Andrea Palladio, 1570 (The Metropolitan Museum of Art, CC0)
+v0192	<b>BIM in breve, «Che cos'è»</b> · <a href="https://commons.wikimedia.org/wiki/File:Villa_Almerico_(Villa_Rotunda),_from_I_quattro_libri_dell%27architettura_di_Andrea_Palladio_(Book_2,_page_19)_MET_DP109542.jpg" target="_blank" rel="noopener">Villa Almerico (Villa Rotonda), da I quattro libri dell'architettura</a>, di Andrea Palladio, 1570 (The Metropolitan Museum of Art, CC0)
 v0193	<b>BIM News</b> · <a href="https://commons.wikimedia.org/wiki/File:Victoria_Harbour_skyscrapers.jpg" target="_blank" rel="noopener">Victoria Harbour skyscrapers</a>, di Wilfredor
 v0194	<b>BIM &amp; AI</b> · <a href="https://commons.wikimedia.org/wiki/File:Data_center_roof.jpg" target="_blank" rel="noopener">Data center roof</a>, di Rsparks3
 v0195	<b>BIM Accademia</b> · <a href="https://commons.wikimedia.org/wiki/File:The_John_Rylands_Library_Reading_Room_Enclosure.jpg" target="_blank" rel="noopener">The John Rylands Library, Reading Room</a>, di Michael D Beckwith
-v0196	<b>BIM in 5 minuti</b> · <a href="https://commons.wikimedia.org/wiki/File:Steel_frame_structure.jpg" target="_blank" rel="noopener">Steel frame structure</a>, di Wikideas1
+v0196	<b>BIM in breve</b> · <a href="https://commons.wikimedia.org/wiki/File:Steel_frame_structure.jpg" target="_blank" rel="noopener">Steel frame structure</a>, di Wikideas1
 v0197	<b>Video</b> · <a href="https://commons.wikimedia.org/wiki/File:H%C3%B6rsaal_101_LMU.jpg" target="_blank" rel="noopener">Hörsaal 101, LMU</a>, di Slashme
 v0198	<b>Agenda</b> · <a href="https://commons.wikimedia.org/wiki/File:Six_workers_on_crane_in_Shibuya.jpg" target="_blank" rel="noopener">Six workers on crane in Shibuya</a>, di Syced
 v0199	<b>Il curatore</b> · <a href="https://commons.wikimedia.org/wiki/File:Rebar_combo.jpg" target="_blank" rel="noopener">Rebar combo</a>, di Henryeke
 v0200	<b>Portfolio</b> · <a href="https://commons.wikimedia.org/wiki/File:Steel_frame_building_under_construction_in_Taiwan.jpg" target="_blank" rel="noopener">Steel frame building under construction in Taiwan</a>, di SSJF01
 v0201	Caratteri: Inter, Inter Tight e JetBrains Mono, con licenza SIL Open Font License 1.1 (i testi delle licenze sono nella cartella <code>fonts</code> del sito). La nuvola di punti nelle testate di BIM News e BIM &amp; AI è disegnata dal codice del sito.
-v0202	BIM in 5 minuti
-v0203	Non sai cos'è il BIM? Parti da qui: cos'è, a cosa serve in uno studio, perché oggi non se ne può fare a meno, le norme e le sigle. Cinque minuti per l'essenziale, il resto quando vuoi.
+v0202	BIM in breve
+v0203	Non sai cos'è il BIM? Parti da qui: cos'è, a cosa serve in uno studio, perché oggi non se ne può fare a meno, le norme e le sigle. L'essenziale in poche righe, il resto quando vuoi.
 v0204	01 Che cos'è
 v0205	02 Tutta la vita dell'opera
 v0206	03 Cosa cambia

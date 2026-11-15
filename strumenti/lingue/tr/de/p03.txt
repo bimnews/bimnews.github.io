@@ -1,6 +1,6 @@
 v0159	Die anderen Seiten
 v0160	Ich kenne BIM nicht: Wo fange ich an?
-v0161	Bei <a href="#bim-5-minuti">BIM in 5 Minuten</a>: was es ist, wozu es dient, die Normen, die Abkürzungen, die Dimensionen von 3D bis 10D und die konkreten Ergebnisse, die die Forschung gemessen hat.
+v0161	Bei <a href="#bim-5-minuti">BIM in Kürze</a>: was es ist, wozu es dient, die Normen, die Abkürzungen, die Dimensionen von 3D bis 10D und die konkreten Ergebnisse, die die Forschung gemessen hat.
 v0166	Was sind die Handbücher auf der Seite des Kurators?
 v0167	Praktische Leitfäden für Planende: Property Sets für IFC, Dynamo, AutoCAD, Elektroplanung, Programmiersprachen. Du findest sie unter <a href="#studio">Im Büro</a>, online zu lesen oder als PDF herunterzuladen.
 v0170	Die Website benutzen
@@ -25,18 +25,18 @@ v0188	Wir zählen die Besuche mit GoatCounter, ohne Cookies und ohne personenbez
 v0189	Die meistbesuchten Seiten
 v0190	Bild- und Schriftnachweise
 v0191	Die Fotos der Seiten stammen aus Wikimedia Commons und sind mit CC0 1.0 gemeinfrei: Die Urheber haben auf alle Rechte verzichtet. Wir nennen sie trotzdem, aus Respekt vor ihrer Arbeit. Auf der Website sind die Fotos in der Farbe der jeweiligen Seite eingefärbt und erscheinen nur in der vollständigen Version.
-v0192	<b>BIM in 5 Minuten, „Was es ist“</b> · <a href="https://commons.wikimedia.org/wiki/File:Villa_Almerico_(Villa_Rotunda),_from_I_quattro_libri_dell%27architettura_di_Andrea_Palladio_(Book_2,_page_19)_MET_DP109542.jpg" target="_blank" rel="noopener">Villa Almerico (Villa Rotonda), aus I quattro libri dell'architettura</a>, von Andrea Palladio, 1570 (The Metropolitan Museum of Art, CC0)
+v0192	<b>BIM in Kürze, „Was es ist“</b> · <a href="https://commons.wikimedia.org/wiki/File:Villa_Almerico_(Villa_Rotunda),_from_I_quattro_libri_dell%27architettura_di_Andrea_Palladio_(Book_2,_page_19)_MET_DP109542.jpg" target="_blank" rel="noopener">Villa Almerico (Villa Rotonda), aus I quattro libri dell'architettura</a>, von Andrea Palladio, 1570 (The Metropolitan Museum of Art, CC0)
 v0193	<b>BIM News</b> · <a href="https://commons.wikimedia.org/wiki/File:Victoria_Harbour_skyscrapers.jpg" target="_blank" rel="noopener">Victoria Harbour skyscrapers</a>, von Wilfredor
 v0194	<b>BIM &amp; AI</b> · <a href="https://commons.wikimedia.org/wiki/File:Data_center_roof.jpg" target="_blank" rel="noopener">Data center roof</a>, von Rsparks3
 v0195	<b>BIM Akademie</b> · <a href="https://commons.wikimedia.org/wiki/File:The_John_Rylands_Library_Reading_Room_Enclosure.jpg" target="_blank" rel="noopener">The John Rylands Library, Reading Room</a>, von Michael D Beckwith
-v0196	<b>BIM in 5 Minuten</b> · <a href="https://commons.wikimedia.org/wiki/File:Steel_frame_structure.jpg" target="_blank" rel="noopener">Steel frame structure</a>, von Wikideas1
+v0196	<b>BIM in Kürze</b> · <a href="https://commons.wikimedia.org/wiki/File:Steel_frame_structure.jpg" target="_blank" rel="noopener">Steel frame structure</a>, von Wikideas1
 v0197	<b>Videos</b> · <a href="https://commons.wikimedia.org/wiki/File:H%C3%B6rsaal_101_LMU.jpg" target="_blank" rel="noopener">Hörsaal 101, LMU</a>, von Slashme
 v0198	<b>Agenda</b> · <a href="https://commons.wikimedia.org/wiki/File:Six_workers_on_crane_in_Shibuya.jpg" target="_blank" rel="noopener">Six workers on crane in Shibuya</a>, von Syced
 v0199	<b>Der Kurator</b> · <a href="https://commons.wikimedia.org/wiki/File:Rebar_combo.jpg" target="_blank" rel="noopener">Rebar combo</a>, von Henryeke
 v0200	<b>Portfolio</b> · <a href="https://commons.wikimedia.org/wiki/File:Steel_frame_building_under_construction_in_Taiwan.jpg" target="_blank" rel="noopener">Steel frame building under construction in Taiwan</a>, von SSJF01
 v0201	Schriften: Inter, Inter Tight und JetBrains Mono, unter der SIL Open Font License 1.1 (die Lizenztexte liegen im Ordner <code>fonts</code> der Website). Die Punktwolke in den Kopfbereichen von BIM News und BIM &amp; AI wird vom Code der Website gezeichnet.
-v0202	BIM in 5 Minuten
-v0203	Du weißt nicht, was BIM ist? Fang hier an: was es ist, wozu es in einem Büro dient, warum man heute nicht mehr darauf verzichten kann, die Normen und die Abkürzungen. Fünf Minuten für das Wesentliche, der Rest, wann du willst.
+v0202	BIM in Kürze
+v0203	Du weißt nicht, was BIM ist? Fang hier an: was es ist, wozu es in einem Büro dient, warum man heute nicht mehr darauf verzichten kann, die Normen und die Abkürzungen. Das Wesentliche in wenigen Zeilen, der Rest, wann du willst.
 v0204	01 Was es ist
 v0205	02 Der ganze Lebenszyklus
 v0206	03 Was sich ändert

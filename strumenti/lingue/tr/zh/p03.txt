@@ -1,6 +1,6 @@
 v0159	其他页面
 v0160	我不了解 BIM：从哪里开始？
-v0161	从<a href="#bim-5-minuti">5 分钟了解 BIM</a>开始：它是什么、有什么用、相关规范、缩写、从 3D 到 10D 的维度，以及研究测得的实际成效。
+v0161	从<a href="#bim-5-minuti">BIM 简介</a>开始：它是什么、有什么用、相关规范、缩写、从 3D 到 10D 的维度，以及研究测得的实际成效。
 v0166	策划人页面上的手册是什么？
 v0167	面向设计人员的实用指南：IFC 的 Property Sets、Dynamo、AutoCAD、电气设计、编程语言。可以在<a href="#studio">工作室里</a>找到，可在线阅读或下载 PDF。
 v0170	使用网站
@@ -25,18 +25,18 @@ v0188	我们用 GoatCounter 统计访问量，不使用 Cookie，也不收集个
 v0189	访问最多的页面
 v0190	图片和字体来源
 v0191	各页面的照片来自维基共享资源，并以 CC0 1.0 贡献到公共领域：作者放弃了所有权利。出于对他们工作的尊重，我们仍然注明出处。网站上的照片按每个页面的颜色着色，只在完整版中显示。
-v0192	<b>5 分钟了解 BIM，「它是什么」</b> · <a href="https://commons.wikimedia.org/wiki/File:Villa_Almerico_(Villa_Rotunda),_from_I_quattro_libri_dell%27architettura_di_Andrea_Palladio_(Book_2,_page_19)_MET_DP109542.jpg" target="_blank" rel="noopener">阿尔梅里科别墅（圆厅别墅），选自《建筑四书》</a>，安德烈亚·帕拉第奥，1570 年（The Metropolitan Museum of Art，CC0）
+v0192	<b>BIM 简介，「它是什么」</b> · <a href="https://commons.wikimedia.org/wiki/File:Villa_Almerico_(Villa_Rotunda),_from_I_quattro_libri_dell%27architettura_di_Andrea_Palladio_(Book_2,_page_19)_MET_DP109542.jpg" target="_blank" rel="noopener">阿尔梅里科别墅（圆厅别墅），选自《建筑四书》</a>，安德烈亚·帕拉第奥，1570 年（The Metropolitan Museum of Art，CC0）
 v0193	<b>BIM News</b> · <a href="https://commons.wikimedia.org/wiki/File:Victoria_Harbour_skyscrapers.jpg" target="_blank" rel="noopener">Victoria Harbour skyscrapers</a>，作者 Wilfredor
 v0194	<b>BIM &amp; AI</b> · <a href="https://commons.wikimedia.org/wiki/File:Data_center_roof.jpg" target="_blank" rel="noopener">Data center roof</a>，作者 Rsparks3
 v0195	<b>BIM 学术</b> · <a href="https://commons.wikimedia.org/wiki/File:The_John_Rylands_Library_Reading_Room_Enclosure.jpg" target="_blank" rel="noopener">The John Rylands Library, Reading Room</a>，作者 Michael D Beckwith
-v0196	<b>5 分钟了解 BIM</b> · <a href="https://commons.wikimedia.org/wiki/File:Steel_frame_structure.jpg" target="_blank" rel="noopener">Steel frame structure</a>，作者 Wikideas1
+v0196	<b>BIM 简介</b> · <a href="https://commons.wikimedia.org/wiki/File:Steel_frame_structure.jpg" target="_blank" rel="noopener">Steel frame structure</a>，作者 Wikideas1
 v0197	<b>视频</b> · <a href="https://commons.wikimedia.org/wiki/File:H%C3%B6rsaal_101_LMU.jpg" target="_blank" rel="noopener">Hörsaal 101, LMU</a>，作者 Slashme
 v0198	<b>日程</b> · <a href="https://commons.wikimedia.org/wiki/File:Six_workers_on_crane_in_Shibuya.jpg" target="_blank" rel="noopener">Six workers on crane in Shibuya</a>，作者 Syced
 v0199	<b>策划人</b> · <a href="https://commons.wikimedia.org/wiki/File:Rebar_combo.jpg" target="_blank" rel="noopener">Rebar combo</a>，作者 Henryeke
 v0200	<b>作品集</b> · <a href="https://commons.wikimedia.org/wiki/File:Steel_frame_building_under_construction_in_Taiwan.jpg" target="_blank" rel="noopener">Steel frame building under construction in Taiwan</a>，作者 SSJF01
 v0201	字体：Inter、Inter Tight 和 JetBrains Mono，采用 SIL Open Font License 1.1 许可（许可文本在网站的 <code>fonts</code> 文件夹中）。BIM News 和 BIM &amp; AI 页头的点云由网站代码绘制。
-v0202	5 分钟了解 BIM
-v0203	不知道 BIM 是什么？从这里开始：它是什么、在事务所里有什么用、为什么今天离不开它、相关规范和缩写。五分钟了解要点，其余内容随时再看。
+v0202	BIM 简介
+v0203	不知道 BIM 是什么？从这里开始：它是什么、在事务所里有什么用、为什么今天离不开它、相关规范和缩写。几行文字了解要点，其余内容随时再看。
 v0204	01 它是什么
 v0205	02 工程的整个生命周期
 v0206	03 有什么变化

@@ -111,7 +111,7 @@ v1035	Coste por verificar: la página no lo indica
 v1037	por ejemplo: idiomas, mapa, traducciones
 v1038	Abrir o cerrar: El sitio
 v1039	Abrir o cerrar: BIM News
-v1040	Abrir o cerrar: El BIM en 5 minutos
+v1040	Abrir o cerrar: El BIM en breve
 v1041	Abrir o cerrar: Vídeos
 v1042	Abrir o cerrar: Agenda
 v1043	Abrir o cerrar: El curador

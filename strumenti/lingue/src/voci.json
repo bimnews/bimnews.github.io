@@ -1120,9 +1120,9 @@
 "id": "v0160"
 },
 {
-"k": "Da BIM in 5 minuti: che cos'è, a che cosa serve, le norme, le sigle, le dimensioni dal 3D al 10D e i risultati concreti misurati dalle ricerche.",
+"k": "Da BIM in breve: che cos'è, a che cosa serve, le norme, le sigle, le dimensioni dal 3D al 10D e i risultati concreti misurati dalle ricerche.",
 "m": "html",
-"h": "Da <a href=\"#bim-5-minuti\">BIM in 5 minuti</a>: che cos'è, a che cosa serve, le norme, le sigle, le dimensioni dal 3D al 10D e i risultati concreti misurati dalle ricerche.",
+"h": "Da <a href=\"#bim-5-minuti\">BIM in breve</a>: che cos'è, a che cosa serve, le norme, le sigle, le dimensioni dal 3D al 10D e i risultati concreti misurati dalle ricerche.",
 "tag": "P",
 "id": "v0161"
 },
@@ -1337,9 +1337,9 @@
 "id": "v0191"
 },
 {
-"k": "BIM in 5 minuti, «Che cos'è» · Villa Almerico (Villa Rotonda), da I quattro libri dell'architettura, di Andrea Palladio, 1570 (The Metropolitan Museum of Art, CC0)",
+"k": "BIM in breve, «Che cos'è» · Villa Almerico (Villa Rotonda), da I quattro libri dell'architettura, di Andrea Palladio, 1570 (The Metropolitan Museum of Art, CC0)",
 "m": "html",
-"h": "<b>BIM in 5 minuti, «Che cos'è»</b> · <a href=\"https://commons.wikimedia.org/wiki/File:Villa_Almerico_(Villa_Rotunda),_from_I_quattro_libri_dell%27architettura_di_Andrea_Palladio_(Book_2,_page_19)_MET_DP109542.jpg\" target=\"_blank\" rel=\"noopener\">Villa Almerico (Villa Rotonda), da I quattro libri dell'architettura</a>, di Andrea Palladio, 1570 (The Metropolitan Museum of Art, CC0)",
+"h": "<b>BIM in breve, «Che cos'è»</b> · <a href=\"https://commons.wikimedia.org/wiki/File:Villa_Almerico_(Villa_Rotunda),_from_I_quattro_libri_dell%27architettura_di_Andrea_Palladio_(Book_2,_page_19)_MET_DP109542.jpg\" target=\"_blank\" rel=\"noopener\">Villa Almerico (Villa Rotonda), da I quattro libri dell'architettura</a>, di Andrea Palladio, 1570 (The Metropolitan Museum of Art, CC0)",
 "tag": "LI",
 "id": "v0192"
 },
@@ -1365,9 +1365,9 @@
 "id": "v0195"
 },
 {
-"k": "BIM in 5 minuti · Steel frame structure, di Wikideas1",
+"k": "BIM in breve · Steel frame structure, di Wikideas1",
 "m": "html",
-"h": "<b>BIM in 5 minuti</b> · <a href=\"https://commons.wikimedia.org/wiki/File:Steel_frame_structure.jpg\" target=\"_blank\" rel=\"noopener\">Steel frame structure</a>, di Wikideas1",
+"h": "<b>BIM in breve</b> · <a href=\"https://commons.wikimedia.org/wiki/File:Steel_frame_structure.jpg\" target=\"_blank\" rel=\"noopener\">Steel frame structure</a>, di Wikideas1",
 "tag": "LI",
 "id": "v0196"
 },
@@ -1407,16 +1407,16 @@
 "id": "v0201"
 },
 {
-"k": "BIM in 5 minuti",
+"k": "BIM in breve",
 "m": "text",
-"h": "BIM in 5 minuti",
+"h": "BIM in breve",
 "tag": "H2",
 "id": "v0202"
 },
 {
-"k": "Non sai cos'è il BIM? Parti da qui: cos'è, a cosa serve in uno studio, perché oggi non se ne può fare a meno, le norme e le sigle. Cinque minuti per l'essenziale, il resto quando vuoi.",
+"k": "Non sai cos'è il BIM? Parti da qui: cos'è, a cosa serve in uno studio, perché oggi non se ne può fare a meno, le norme e le sigle. L'essenziale in poche righe, il resto quando vuoi.",
 "m": "text",
-"h": "Non sai cos'è il BIM? Parti da qui: cos'è, a cosa serve in uno studio, perché oggi non se ne può fare a meno, le norme e le sigle. Cinque minuti per l'essenziale, il resto quando vuoi.",
+"h": "Non sai cos'è il BIM? Parti da qui: cos'è, a cosa serve in uno studio, perché oggi non se ne può fare a meno, le norme e le sigle. L'essenziale in poche righe, il resto quando vuoi.",
 "tag": "P",
 "id": "v0203"
 },
@@ -7273,9 +7273,9 @@
 "id": "v1039"
 },
 {
-"k": "Apri o chiudi: BIM in 5 minuti",
+"k": "Apri o chiudi: BIM in breve",
 "m": "attr",
-"h": "Apri o chiudi: BIM in 5 minuti",
+"h": "Apri o chiudi: BIM in breve",
 "tag": "@aria-label",
 "id": "v1040"
 },
@@ -8986,5 +8986,131 @@
 "h": "Indietro",
 "tag": "#tour",
 "id": "v1284"
+},
+{
+"k": "Il blog personale di chi cura BIM News, con articoli utili per chi progetta: il profilo, il portfolio, le riflessioni sul lavoro, le proposte per il mondo del BIM, i lavori in corso e qualche pensiero personale.",
+"m": "text",
+"h": "Il blog personale di chi cura BIM News, con articoli utili per chi progetta: il profilo, il portfolio, le riflessioni sul lavoro, le proposte per il mondo del BIM, i lavori in corso e qualche pensiero personale.",
+"tag": "P",
+"id": "v1285"
+},
+{
+"k": "BIM Coordinator ICMQ (2026)BIM Specialist ICMQ (2024)Lead Auditor ISO 9001 (2026)Coordinatore per la sicurezza CSP/CSE (2025)",
+"m": "html",
+"h": "BIM Coordinator ICMQ (2026)<br>BIM Specialist ICMQ (2024)<br>Lead Auditor ISO 9001 (2026)<br>Coordinatore per la sicurezza CSP/CSE (2025)",
+"tag": "DD",
+"id": "v1286"
+},
+{
+"k": "Ingegnere, settore civile e ambientale (2019)",
+"m": "text",
+"h": "Ingegnere, settore civile e ambientale (2019)",
+"tag": "DD",
+"id": "v1287"
+},
+{
+"k": "EIPASS – European Informatics Passport (2021)",
+"m": "text",
+"h": "EIPASS – European Informatics Passport (2021)",
+"tag": "LI",
+"id": "v1288"
+},
+{
+"k": "Addetto antincendio rischio alto, Provincia autonoma di Bolzano (2022)",
+"m": "text",
+"h": "Addetto antincendio rischio alto, Provincia autonoma di Bolzano (2022)",
+"tag": "LI",
+"id": "v1289"
+},
+{
+"k": "Addetto al primo soccorso (2025)",
+"m": "text",
+"h": "Addetto al primo soccorso (2025)",
+"tag": "LI",
+"id": "v1290"
+},
+{
+"k": "Intanto, due manuali che ho scritto con Claude per capire meglio quello che suono (li trovi anche in I manuali di Claude):",
+"m": "html",
+"h": "Intanto, due manuali che ho scritto con Claude per capire meglio quello che suono (li trovi anche in <a href=\"#fuori\" data-goto-art=\"man-pers-01\">I manuali di Claude</a>):",
+"tag": "P",
+"id": "v1291"
+},
+{
+"k": "Il suono: matematica, effetti e psicoacustica (PDF, 15 pagine): l'onda sonora, che cosa fanno davvero filtri, delay, distorsione e compressione, e perché certi suoni ci piacciono e altri no.",
+"m": "html",
+"h": "<a href=\"manuali/il-suono.pdf\" target=\"_blank\" rel=\"noopener\">Il suono: matematica, effetti e psicoacustica</a> (PDF, 15 pagine): l'onda sonora, che cosa fanno davvero filtri, delay, distorsione e compressione, e perché certi suoni ci piacciono e altri no.",
+"tag": "LI",
+"id": "v1292"
+},
+{
+"k": "Libreria effetti per chitarra e basso (PDF, 21 pagine): le famiglie di effetti, le manopole, la posizione nella catena e le modifiche più diffuse.",
+"m": "html",
+"h": "<a href=\"manuali/effetti-chitarra-basso.pdf\" target=\"_blank\" rel=\"noopener\">Libreria effetti per chitarra e basso</a> (PDF, 21 pagine): le famiglie di effetti, le manopole, la posizione nella catena e le modifiche più diffuse.",
+"tag": "LI",
+"id": "v1293"
+},
+{
+"k": "Ho cominciato nell'AGESCI di Triggiano, in provincia di Bari: l'associazione degli scout cattolici italiani. Con il tempo ho capito che non era la scelta giusta per me: nell'AGESCI si fa la «scelta di fede», e il mio percorso spirituale mi ha portato a riconoscere che non sono credente. Da quando vivo e lavoro a Bolzano sono nel CNGEI, gli scout laici, perché credo fermamente che l'educazione debba essere laica e mai orientata da principi religiosi.",
+"m": "html",
+"h": "Ho cominciato nell'AGESCI di Triggiano, in provincia di Bari: l'associazione degli scout cattolici italiani. Con il tempo ho capito che non era la scelta giusta per me: nell'AGESCI si fa la «scelta di fede», e il mio percorso spirituale mi ha portato a riconoscere che non sono credente. Da quando vivo e lavoro a Bolzano sono nel <span translate=\"no\">CNGEI</span>, gli scout laici, perché credo fermamente che l'educazione debba essere laica e mai orientata da principi religiosi.",
+"tag": "P",
+"id": "v1294"
+},
+{
+"k": "Un'ispirazione: le Aquile Randagie ↗, gli scout di Milano, Monza, Parma e Bergamo che continuarono le attività di nascosto quando il fascismo, dal 1927, sciolse le associazioni scout. La loro storia è raccontata nel film Aquile randagie ↗ di Gianni Aureli (2019). Ricordano che educare, a volte, vuol dire anche avere il coraggio di non obbedire a ciò che è ingiusto.",
+"m": "html",
+"h": "Un'ispirazione: le <a href=\"https://it.wikipedia.org/wiki/Aquile_randagie\" target=\"_blank\" rel=\"noopener\">Aquile Randagie ↗</a>, gli scout di Milano, Monza, Parma e Bergamo che continuarono le attività di nascosto quando il fascismo, dal 1927, sciolse le associazioni scout. La loro storia è raccontata nel film <a href=\"https://it.wikipedia.org/wiki/Aquile_randagie_(film)\" target=\"_blank\" rel=\"noopener\"><i>Aquile randagie</i> ↗</a> di Gianni Aureli (2019). Ricordano che educare, a volte, vuol dire anche avere il coraggio di non obbedire a ciò che è ingiusto.",
+"tag": "P",
+"id": "v1295"
+},
+{
+"k": "Dove pratico: la Scuola di Kung-fu Mien Ch'uan di Bolzano (scheda nel Registro CONI ↗).",
+"m": "html",
+"h": "Dove pratico: la <span translate=\"no\">Scuola di Kung-fu Mien Ch'uan</span> di Bolzano (<a href=\"https://www.coni.it/it/registro-societa-sportive/home/registro-2-0/RegistroDettaglio.html?id_societa=99695\" target=\"_blank\" rel=\"noopener\">scheda nel Registro CONI ↗</a>).",
+"tag": "P",
+"id": "v1296"
+},
+{
+"k": "Manuali non professionali che ho creato io, chiedendo a Claude, l'assistente di intelligenza artificiale di Anthropic, di scriverli seguendo indicazioni precise: l'argomento, la struttura, il livello di dettaglio e gli esempi li ho scelti io. I primi due si scaricano già in PDF; gli altri arriveranno uno alla volta.",
+"m": "text",
+"h": "Manuali non professionali che ho creato io, chiedendo a Claude, l'assistente di intelligenza artificiale di Anthropic, di scriverli seguendo indicazioni precise: l'argomento, la struttura, il livello di dettaglio e gli esempi li ho scelti io. I primi due si scaricano già in PDF; gli altri arriveranno uno alla volta.",
+"tag": "P",
+"id": "v1297"
+},
+{
+"k": "L'onda sonora e i decibel, Fourier e il timbro; che cosa fanno davvero filtri, delay, riverbero, distorsione e compressione; e la psicoacustica: perché certi suoni ci piacciono e altri ci danno fastidio, distinguendo i risultati sperimentali dalle ipotesi.",
+"m": "text",
+"h": "L'onda sonora e i decibel, Fourier e il timbro; che cosa fanno davvero filtri, delay, riverbero, distorsione e compressione; e la psicoacustica: perché certi suoni ci piacciono e altri ci danno fastidio, distinguendo i risultati sperimentali dalle ipotesi.",
+"tag": "P",
+"id": "v1298"
+},
+{
+"k": "Scarica il PDF (15 pagine) ↗",
+"m": "html",
+"h": "<a href=\"manuali/il-suono.pdf\" target=\"_blank\" rel=\"noopener\">Scarica il PDF (15 pagine) ↗</a>",
+"tag": "P",
+"id": "v1299"
+},
+{
+"k": "Tutte le famiglie di effetti: per ognuna che cosa fa, le manopole tipiche, la posizione consigliata nella catena e le modifiche più diffuse, con un glossario delle manopole che vale per tutti i pedali.",
+"m": "text",
+"h": "Tutte le famiglie di effetti: per ognuna che cosa fa, le manopole tipiche, la posizione consigliata nella catena e le modifiche più diffuse, con un glossario delle manopole che vale per tutti i pedali.",
+"tag": "P",
+"id": "v1300"
+},
+{
+"k": "Scarica il PDF (21 pagine) ↗",
+"m": "html",
+"h": "<a href=\"manuali/effetti-chitarra-basso.pdf\" target=\"_blank\" rel=\"noopener\">Scarica il PDF (21 pagine) ↗</a>",
+"tag": "P",
+"id": "v1301"
+},
+{
+"k": "Il blog personale di chi cura il sito, con articoli utili: profilo, portfolio, approfondimenti, proposte per il mondo del BIM e riflessioni personali.",
+"m": "text",
+"h": "Il blog personale di chi cura il sito, con articoli utili: profilo, portfolio, approfondimenti, proposte per il mondo del BIM e riflessioni personali.",
+"tag": "P",
+"id": "v1302"
 }
 ]

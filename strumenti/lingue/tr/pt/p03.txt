@@ -1,6 +1,6 @@
 v0159	As outras páginas
 v0160	Não conheço o BIM: por onde começo?
-v0161	Por <a href="#bim-5-minuti">O BIM em 5 minutos</a>: o que é, para que serve, as normas, as siglas, as dimensões do 3D ao 10D e os resultados concretos medidos pela investigação.
+v0161	Por <a href="#bim-5-minuti">O BIM em resumo</a>: o que é, para que serve, as normas, as siglas, as dimensões do 3D ao 10D e os resultados concretos medidos pela investigação.
 v0166	O que são os manuais na página do curador?
 v0167	Guias práticos para quem projeta: Property Sets para IFC, Dynamo, AutoCAD, projeto elétrico, linguagens de programação. Encontra-os em <a href="#studio">No gabinete</a>, para ler online ou descarregar em PDF.
 v0170	Usar o site
@@ -25,18 +25,18 @@ v0188	Contamos as visitas com o GoatCounter, sem cookies e sem dados pessoais: a
 v0189	As páginas mais visitadas
 v0190	Créditos das imagens e dos tipos de letra
 v0191	As fotografias das páginas vêm da Wikimedia Commons e estão dedicadas ao domínio público com CC0 1.0: os autores renunciaram a todos os direitos. Citamo-los na mesma, por respeito ao seu trabalho. No site, as fotos são tingidas com a cor de cada página e aparecem apenas na versão completa.
-v0192	<b>O BIM em 5 minutos, «O que é»</b> · <a href="https://commons.wikimedia.org/wiki/File:Villa_Almerico_(Villa_Rotunda),_from_I_quattro_libri_dell%27architettura_di_Andrea_Palladio_(Book_2,_page_19)_MET_DP109542.jpg" target="_blank" rel="noopener">Villa Almerico (Villa Rotonda), de I quattro libri dell'architettura</a>, de Andrea Palladio, 1570 (The Metropolitan Museum of Art, CC0)
+v0192	<b>O BIM em resumo, «O que é»</b> · <a href="https://commons.wikimedia.org/wiki/File:Villa_Almerico_(Villa_Rotunda),_from_I_quattro_libri_dell%27architettura_di_Andrea_Palladio_(Book_2,_page_19)_MET_DP109542.jpg" target="_blank" rel="noopener">Villa Almerico (Villa Rotonda), de I quattro libri dell'architettura</a>, de Andrea Palladio, 1570 (The Metropolitan Museum of Art, CC0)
 v0193	<b>BIM News</b> · <a href="https://commons.wikimedia.org/wiki/File:Victoria_Harbour_skyscrapers.jpg" target="_blank" rel="noopener">Victoria Harbour skyscrapers</a>, de Wilfredor
 v0194	<b>BIM &amp; AI</b> · <a href="https://commons.wikimedia.org/wiki/File:Data_center_roof.jpg" target="_blank" rel="noopener">Data center roof</a>, de Rsparks3
 v0195	<b>BIM Academia</b> · <a href="https://commons.wikimedia.org/wiki/File:The_John_Rylands_Library_Reading_Room_Enclosure.jpg" target="_blank" rel="noopener">The John Rylands Library, Reading Room</a>, de Michael D Beckwith
-v0196	<b>O BIM em 5 minutos</b> · <a href="https://commons.wikimedia.org/wiki/File:Steel_frame_structure.jpg" target="_blank" rel="noopener">Steel frame structure</a>, de Wikideas1
+v0196	<b>O BIM em resumo</b> · <a href="https://commons.wikimedia.org/wiki/File:Steel_frame_structure.jpg" target="_blank" rel="noopener">Steel frame structure</a>, de Wikideas1
 v0197	<b>Vídeos</b> · <a href="https://commons.wikimedia.org/wiki/File:H%C3%B6rsaal_101_LMU.jpg" target="_blank" rel="noopener">Hörsaal 101, LMU</a>, de Slashme
 v0198	<b>Agenda</b> · <a href="https://commons.wikimedia.org/wiki/File:Six_workers_on_crane_in_Shibuya.jpg" target="_blank" rel="noopener">Six workers on crane in Shibuya</a>, de Syced
 v0199	<b>O curador</b> · <a href="https://commons.wikimedia.org/wiki/File:Rebar_combo.jpg" target="_blank" rel="noopener">Rebar combo</a>, de Henryeke
 v0200	<b>Portfólio</b> · <a href="https://commons.wikimedia.org/wiki/File:Steel_frame_building_under_construction_in_Taiwan.jpg" target="_blank" rel="noopener">Steel frame building under construction in Taiwan</a>, de SSJF01
 v0201	Tipos de letra: Inter, Inter Tight e JetBrains Mono, com licença SIL Open Font License 1.1 (os textos das licenças estão na pasta <code>fonts</code> do site). A nuvem de pontos nos cabeçalhos do BIM News e do BIM &amp; AI é desenhada pelo código do site.
-v0202	O BIM em 5 minutos
-v0203	Não sabe o que é o BIM? Comece aqui: o que é, para que serve num gabinete, porque hoje não se pode passar sem ele, as normas e as siglas. Cinco minutos para o essencial, o resto quando quiser.
+v0202	O BIM em resumo
+v0203	Não sabe o que é o BIM? Comece aqui: o que é, para que serve num gabinete, porque hoje não se pode passar sem ele, as normas e as siglas. O essencial em poucas linhas, o resto quando quiser.
 v0204	01 O que é
 v0205	02 Toda a vida da obra
 v0206	03 O que muda
