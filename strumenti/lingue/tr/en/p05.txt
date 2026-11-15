@@ -1,0 +1,74 @@
+v0332	Lean construction
+v0333	9D brings «lean construction» into the model: less waste of time, materials and labour, with a more continuous flow of activities planned together by those who build.
+v0334	Touchplan (Last Planner)
+v0335	Procore
+v0336	Autodesk Build
+v0337	Dalux Field
+v0338	Precise quantities to order the right material at the right time.
+v0339	Shared planning of activities between contractors and designers.
+v0340	Less waiting, less rework, less waste.
+v0341	<b>Example.</b> Material arrives on site when it is needed, in the quantity measured on the model, with no stockpiles getting in the way.
+v0342	Sources: <a href="https://aifos.org/home/news/int/interventi_commenti/bim-bum-bam---bit" target="_blank" rel="noopener">AiFOS, «BIM BUM BAM… bit» (in Italian) ↗</a>
+v0343	Industrialisation
+v0344	10D looks at the industrialisation of construction: designing and producing the building like an industrial product, with components prefabricated off site and assembled in place.
+v0345	Allplan Precast
+v0346	Planbar
+v0347	hsbcad
+v0348	cadwork
+v0349	The model becomes the data source for workshop production.
+v0350	Prefabrication and «offsite» production, with quality control.
+v0351	The site becomes mainly assembly.
+v0352	<b>Example.</b> From the model of a steel roof come all the details for producing and assembling the parts.
+v0353	The software listed are common examples, not a complete list or a recommendation: many cover several dimensions. Conventions compared. <b>Italy (UNI 11337, as reported by BibLus):</b> 6D management, 7D sustainability. <b>Prevailing international use:</b> 6D sustainability, 7D facility management. The illustrations are drawn for this site. For a critical introduction to the labels: <a href="https://www.shelidon.it/bimpill-le-dimensioni-e-gli-usi" target="_blank" rel="noopener">Shelidon, «#BIMpill – Le dimensioni e gli usi» (in Italian) ↗</a>.
+v0354	IFC
+v0355	<i>Industry Foundation Classes</i>: the open format through which different software exchange models. It is the ISO 16739-1 standard.
+v0356	Working with open formats and standards, without depending on a single software.
+v0357	CDE
+v0358	<i>Common Data Environment</i> (in Italian ACDat): where the project's models and documents are stored, shared and approved.
+v0359	EIR
+v0360	Exchange information requirements (in Italian «capitolato informativo», CI): what the client asks for, which information, in what format and when (UNI 11337-5).
+v0361	BEP
+v0362	BIM execution plan (in Italian oGI and pGI): how the appointed party responds to the requirements, first in the tender and then during the contract.
+v0363	LOD
+v0364	Level of development of the objects, from A to G in UNI 11337-4: how fully an object is defined at that stage.
+v0365	LOIN
+v0366	<i>Level of information need</i>: how much information, and which, is really needed (ISO 7817-1).
+v0367	Clash detection
+v0368	Automatic check of clashes between the models of the different disciplines.
+v0369	BIM roles
+v0370	BIM Manager, BIM Coordinator, BIM Specialist and CDE Manager: the roles defined by UNI 11337-7.
+v0371	How much does BIM really save? Below are the figures from the research we were able to check, each with its source, then a calculator that applies them to your practice. The numbers vary greatly from project to project: read them as orders of magnitude, not as promises.
+v0372	less time to prepare a cost estimate from the model, with estimates accurate to within 3%
+v0373	Stanford CIFE data on 32 projects, reported by <a href="https://doi.org/10.5130/ajceb.v12i4.3032" target="_blank" rel="noopener">Azhar, Khalfan, Maqsood, «Building information modelling (BIM): now and beyond», 2012/2015, CC BY ↗</a>
+v0374	of unbudgeted change orders eliminated
+v0375	Stanford CIFE data reported by <a href="https://doi.org/10.1061/(ASCE)LM.1943-5630.0000127" target="_blank" rel="noopener">Azhar, «BIM: Trends, Benefits, Risks, and Challenges for the AEC Industry», 2011 ↗</a>
+v0376	of contract value saved thanks to clash detection
+v0377	Stanford CIFE data reported by <a href="https://doi.org/10.1061/(ASCE)LM.1943-5630.0000127" target="_blank" rel="noopener">Azhar, «BIM: Trends, Benefits, Risks, and Challenges for the AEC Industry», 2011 ↗</a>. On a large infrastructure project, the study by <a href="https://doi.org/10.1080/01446193.2020.1802768" target="_blank" rel="noopener">Chahrour et al., «Cost-benefit analysis of BIM-enabled design clash detection and resolution», 2021 ↗</a> estimates 20%
+v0378	saved through clash detection before construction, on a 35-million-dollar university building
+v0379	Holder Construction case study in <a href="https://doi.org/10.5130/ajceb.v12i4.3032" target="_blank" rel="noopener">Azhar, Khalfan, Maqsood, «Building information modelling (BIM): now and beyond», 2012/2015, CC BY ↗</a>
+v0380	per week, per person, lost on site to conflicts, rework and searching for information
+v0381	<a href="https://www.prnewswire.com/news-releases/new-research-from-plangrid-and-fmi-identifies-factors-costing-the-construction-industry-more-than-177-billion-annually-300689826.html" target="_blank" rel="noopener">PlanGrid and FMI, «Construction Disconnected», 2018 ↗</a>: survey of 600 professionals in the United States
+v0382	of rework on US construction sites stems from poor communication and wrong project data
+v0383	<a href="https://www.prnewswire.com/news-releases/new-research-from-plangrid-and-fmi-identifies-factors-costing-the-construction-industry-more-than-177-billion-annually-300689826.html" target="_blank" rel="noopener">PlanGrid and FMI, «Construction Disconnected», 2018 ↗</a>
+v0384	Your practice's calculator
+v0385	People who design
+v0386	Value of works designed in a year
+v0387	$5 million
+v0388	Share of lost time that BIM recovers
+v0389	Saving on the value of the works
+v0390	How we calculate: hours = people × 14 hours a week × 46 weeks × share recovered; saving = value of works × percentage. The initial values are deliberately cautious, below the 10% indicated by Stanford: they are our assumptions, change them with yours.
+v0391	And for a smile
+v0392	Coffee and sleepless nights are a game, not a statistic: no study has measured them. The rest of the section, however, comes from the sources cited.
+v0393	A mandate to use BIM does not mean a mandate to be certified. Almost everywhere certification is voluntary: it serves to show a client, through the judgement of a third party, that you can do what you claim. Here is how it works in the countries we have checked, with the rule that governs it and the source.
+v0394	People
+v0395	The skills of a role are certified, for example BIM Manager or BIM Coordinator: an exam and maintenance over the years. Bodies that certify people are accredited under ISO/IEC 17024.
+v0396	Organisations
+v0397	It is certified that a practice or a company manages information as required by ISO 19650: an audit of processes and projects, repeated every year.
+v0398	Hong Kong
+v0399	For public works above 30 million Hong Kong dollars, the appointed party's BIM team must be led by a BIM Manager certified by the Construction Industry Council (CIC). For tenders from 1 January 2024, BIM Coordinators must also be certified (at least half at full level).
+v0400	DEVB Technical Circular (Works) No. 2/2021 and update of 13/06/2023
+v0401	<a href="https://devb.gov.hk/filemanager/technicalcirculars/en/upload/387/1/C-2021-02-02.pdf" target="_blank" rel="noopener">DEVB circular, text with updates ↗</a>
+v0402	Italy
+v0403	The Public Contracts Code requires contracting authorities to appoint a common data environment manager, at least one digital process manager and, for each project, an information coordinator, with «adequate competence» acquired through professional practice or courses passed successfully. Certification is not required: it is one way to document competence. The roles are those of UNI 11337-7:2018; the requirements for certifying them are in the reference practice UNI/PdR 78:2020, in force since 2 March 2020.
+v0404	Legislative Decree 36/2023, Annex I.9, art. 1(3) · UNI 11337-7:2018 · UNI/PdR 78:2020
+v0405	<a href="https://www.codiceappalti.it/DLGS_36_2023/Allegato_I_9_Metodi_e_strumenti_di_gestione_informativa_digitale_delle_costruzioni_/12885" target="_blank" rel="noopener">Annex I.9, current text (in Italian) ↗</a> · <a href="https://www.certifico.com/normazione/news-normazione/uni-pdr-78-2020-requisiti-valutazione-di-conformita-uni-11337-7-2018" target="_blank" rel="noopener">UNI/PdR 78:2020, summary (in Italian) ↗</a>
