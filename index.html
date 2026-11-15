@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>BIM News · Un sito a cura di Marco Scigliuolo</title>
 <meta name="description" content="BIM News: le novità sul BIM dall'Alto Adige al resto del mondo, ogni settimana, con sintesi in italiano e link alle fonti. Mappa, filtri, archivio per mese, BIM in 5 minuti e timeline delle norme. A cura di Marco Scigliuolo.">
-<meta name="revisione" content="102 · 15/11/2026">
+<meta name="revisione" content="103 · 15/11/2026">
 <meta name="color-scheme" content="dark light">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='none' stroke='%232f6db5' stroke-width='3'/%3E%3Ctext x='16' y='22' font-family='Arial' font-weight='700' font-size='16' text-anchor='middle' fill='%232f6db5'%3EM%3C/text%3E%3C/svg%3E">
 <script>(function(){try{document.documentElement.dataset.theme=localStorage.getItem("tema-2026")||"dark"}catch(e){document.documentElement.dataset.theme="dark"}})();</script>
@@ -923,6 +923,10 @@ body{transition:background-color .3s}
   .ai-intro{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:2.6rem;padding:1.3rem 1.8rem}
   .ai-intro>.f-lab,.ai-intro>h3,.ai-intro>.ai-crit{grid-column:1/-1}
 }
+.wip-notes summary{cursor:pointer;font:600 .74rem var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--accent)}
+.wip-notes ul{margin:.5rem 0 0;padding-left:1.1rem;display:grid;gap:.35rem;font-size:.92rem}
+.wip-lead{margin-top:0}
+.wip-art{align-items:start}
 /* disclaimer di BIM News, sempre visibile */
 .bn-what{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.5rem 2rem;padding:.9rem 1.3rem;border:1px solid var(--line);border-radius:var(--r);background:color-mix(in srgb,var(--k-news) 7%,var(--surface))}
 .bn-what p{margin:0;font-size:.98rem}
@@ -1138,7 +1142,7 @@ body{transition:background-color .3s}
 .brand-by{font-family:var(--mono);font-size:.7rem;color:var(--muted)}
 @media (max-width:640px){.brand-by{display:none}}
 
-.st-item.hl{box-shadow:0 0 0 4px var(--accent-soft);border-color:var(--accent);transition:box-shadow .3s}
+.st-item.hl,.job.hl{box-shadow:0 0 0 4px var(--accent-soft);border-color:var(--accent);transition:box-shadow .3s}
 
 /* guida al sito: visita guidata della home */
 .tour-btn{border-color:var(--k-news);color:var(--k-news);font-weight:700}
@@ -2149,6 +2153,7 @@ section:has(>.pg-hero)>.content{position:relative;z-index:1}
         <h4 class="cv-h">Riflessioni</h4>
         <div class="st-list">
           <article class="st-item" id="studio-ingegnere"><span class="st-n">◆</span><div><h4>Cosa vuol dire essere ingegnere · nello studio</h4><p>La professione vista dal mondo: che cosa ci si aspetta da un ingegnere, tra responsabilità, competenze e rapporti con committenti, imprese e colleghi. L'altra faccia è in <a href="#fuori">Fuori dallo studio →</a></p><p class="st-wip"><span class="tag">Work in progress</span> Articolo in preparazione.</p></div></article>
+          <article class="st-item" id="studio-oltre-noi"><span class="st-n">◆</span><div><h4>Il mondo oltre noi</h4><p>Che ne sarà dei nostri modelli, e dei nostri sforzi, tra 200 anni? Un disegno di Michelangelo si guarda ancora oggi: un nostro file si potrà ancora aprire? Partirò da una ricerca sul più antico disegno di progetto arrivato fino a noi, e su come è davvero invecchiato. Si lega all'articolo <a href="#wip" data-goto-art="art-ifc-zero">Come costruire un IFC da zero →</a></p><p class="st-wip"><span class="tag">Work in progress</span> Articolo in preparazione.</p></div></article>
         </div>
         <h4 class="cv-h">I problemi della progettazione</h4>
         <p class="st-intro">Ogni problema diventerà un articolo con una proposta concreta, verificata su casi reali.</p>
@@ -2210,6 +2215,24 @@ section:has(>.pg-hero)>.content{position:relative;z-index:1}
           <ol class="phases" aria-label="Fase attuale: idea"><li class="now">Idea</li><li>Sviluppo</li><li>Test</li><li>Rilascio</li></ol></article>
         <article class="job"><span class="label">Energia · CasaClima</span><h3>Dalle superfici del disegno al calcolo CasaClima</h3><p>Estrarre le superfici dai DWG e portarle nel foglio di calcolo senza ricopiarle a mano.</p>
           <ol class="phases" aria-label="Fase attuale: idea"><li class="now">Idea</li><li>Sviluppo</li><li>Test</li><li>Rilascio</li></ol></article>
+      </div>
+      <h4 class="cv-h">Articoli in preparazione</h4>
+      <p class="lead wip-lead">Gli articoli a cui sto pensando, con la fase in cui si trovano. Per ora sono solo impostati: il testo arriverà uno alla volta.</p>
+      <div class="wip wip-art">
+        <article class="job" id="art-hoover"><span class="label">Script · Excel</span><h3>Lo script «Hoover»</h3><p>Uno script che legge un foglio Excel con materiali, parametri e informazioni di sistema, e li porta nel lavoro senza ricopiarli a mano. Il nome? Dare un nome a uno script fa figo.</p><details class="wip-notes"><summary>Cosa conterrà</summary><ul><li>Che cosa legge dal foglio Excel: materiali, parametri, informazioni di sistema</li><li>Come è fatto il foglio e come lo legge lo script</li><li>Come provarlo sui propri progetti</li></ul></details>
+          <ol class="phases" aria-label="Fase attuale: idea"><li class="now">Idea</li><li>Bozza</li><li>Revisione</li><li>Pubblicato</li></ol></article>
+        <article class="job" id="art-ifc-zero"><span class="label">IFC · esperimento</span><h3>Come costruire un IFC da zero</h3><p>Come funziona davvero un file IFC, raccontato con un breve esperimento: costruirne uno da zero, riga per riga. L'esperimento funziona; mancano le considerazioni finali.</p><details class="wip-notes"><summary>Cosa conterrà</summary><ul><li>Com'è fatto dentro un file IFC</li><li>L'esperimento passo per passo</li><li>Considerazioni finali</li><li>Il legame con la riflessione <a href="#studio" data-goto-art="studio-oltre-noi">Il mondo oltre noi</a>: che cosa resterà dei nostri modelli tra 200 anni</li></ul></details>
+          <ol class="phases" aria-label="Fase attuale: bozza"><li class="done">Idea</li><li class="now">Bozza</li><li>Revisione</li><li>Pubblicato</li></ol></article>
+        <article class="job" id="art-10-tips"><span class="label">Lavoro · metodo</span><h3>I 10 consigli per lavorare al meglio</h3><p>Piccole regole, prese dall'esperienza, per lavorare meglio in studio e da soli. Per ora ce ne sono sei, gli altri quattro arriveranno.</p><details class="wip-notes"><summary>Cosa conterrà</summary><ul><li><b>1. I salvataggi automatici.</b> Impostali in tutti i software. Se non l'hai mai fatto, fallo subito.</li><li><b>2. Gestione del tempo e produttività.</b> La regola dei 2 minuti, la matrice di Eisenhower e gli altri metodi: che cosa uso, che cosa no e perché.</li><li><b>3. Il template.</b> Se lavori in BIM «dovete mettervelo in quella f***a testa» (citazione inventata, da un film che non esiste): per lavorare bene servono i template. Ogni studio dovrebbe averne uno, con le viste impostate e le famiglie già caricate. Prendetevi il tempo per crearlo e aggiornatelo di tanto in tanto con il know-how dello studio. È vitale.</li><li><b>4. Il gruppo di continuità.</b> Come sceglierlo per la propria workstation, e con quali criteri. Ogni tanto la corrente salta, soprattutto d'estate. L'obiettivo non è continuare a lavorare, ma mettere al sicuro il lavoro senza file corrotti e senza perdere ore preziose.</li><li><b>5. Gli straordinari non sono un vanto.</b> Vogliono dire che qualcosa nell'organizzazione del lavoro non ha funzionato. Con la differenza tra lavoro dipendente e autonomo.</li><li><b>6. Il valore della riflessione.</b> Prendetevi del tempo, come studio o da soli, per riordinare i file e per lavorare a piccoli progetti che migliorano il materiale dello studio: ne gioveranno tutti. E ogni tanto mettete in discussione il vostro lavoro e la vostra organizzazione. «Ciò che cresce lentamente mette radici profonde» (proverbio attribuito alla tradizione africana).</li><li><b>7–10.</b> Da definire.</li></ul></details>
+          <ol class="phases" aria-label="Fase attuale: idea"><li class="now">Idea</li><li>Bozza</li><li>Revisione</li><li>Pubblicato</li></ol></article>
+        <article class="job" id="art-ifc-excel"><span class="label">IFC · strumenti</span><h3>La biblioteca IFC in Excel</h3><p>Un foglio Excel con le classi IFC e la loro descrizione: come usarlo, e dove.</p><details class="wip-notes"><summary>Cosa conterrà</summary><ul><li>Che cosa contiene la biblioteca</li><li>Come usarla nel lavoro di tutti i giorni</li><li>Dove scaricarla</li></ul></details>
+          <ol class="phases" aria-label="Fase attuale: idea"><li class="now">Idea</li><li>Bozza</li><li>Revisione</li><li>Pubblicato</li></ol></article>
+        <article class="job" id="art-ifc-versioni"><span class="label">IFC · versioni</span><h3>Le versioni di esportazione IFC a confronto</h3><p>Che cosa conviene usare, e perché. In che senso una versione è «vecchia»? Il codice di riferimento è lo stesso? Come il vino, le versioni invecchiano bene o male, oppure la base resta sempre la stessa? Quanto possono davvero influire sul risultato?</p><details class="wip-notes"><summary>Cosa conterrà</summary><ul><li>Le versioni a confronto: che cosa cambia davvero</li><li>Che cosa conviene usare, e in quale caso</li><li>Quanto la versione può influire sul risultato</li></ul></details>
+          <ol class="phases" aria-label="Fase attuale: idea"><li class="now">Idea</li><li>Bozza</li><li>Revisione</li><li>Pubblicato</li></ol></article>
+        <article class="job" id="art-ifc-dialogo"><span class="label">IFC · interoperabilità</span><h3>Come far dialogare i software tra loro</h3><p>Una guida all'esportazione IFC, software per software. Ipotesi di collegamento tra le esportazioni di più programmi: funzionerebbero insieme in un modello federato? E dove nascono i problemi?</p><details class="wip-notes"><summary>Cosa conterrà</summary><ul><li>L'esportazione IFC, una guida per ogni software</li><li>Più software nello stesso modello federato: le prove</li><li>Dove nascono i problemi, e come evitarli</li></ul></details>
+          <ol class="phases" aria-label="Fase attuale: idea"><li class="now">Idea</li><li>Bozza</li><li>Revisione</li><li>Pubblicato</li></ol></article>
+        <article class="job" id="art-img-lingua"><span class="label">Sito · manuali</span><h3>Manuali con immagini che parlano la tua lingua</h3><p>Arricchire i manuali con immagini «dinamiche», in cui le scritte cambiano con la lingua scelta per il sito.</p><details class="wip-notes"><summary>Cosa conterrà</summary><ul><li>Immagini disegnate come SVG, con le scritte come testo e non come pixel</li><li>Le scritte che seguono la lingua selezionata</li><li>Prova sui primi manuali</li></ul></details>
+          <ol class="phases" aria-label="Fase attuale: idea"><li class="now">Idea</li><li>Bozza</li><li>Revisione</li><li>Pubblicato</li></ol></article>
       </div>
           </div>
       <div class="sub" id="fuori">
@@ -2588,6 +2611,7 @@ document.addEventListener("click",function(e){var a=e.target.closest("[data-goto
   setTimeout(function(){var el=document.getElementById(k);if(el){el.scrollIntoView({behavior:"smooth",block:"center"});el.classList.add("hl");setTimeout(function(){el.classList.remove("hl")},1600)}},120)});
 
 document.addEventListener("click",function(e){var a=e.target.closest("a[data-art]");if(a)window.__art=a.dataset.art},true);
+document.addEventListener("click",function(e){var a=e.target.closest("[data-goto-art]");if(!a)return;var k=a.dataset.gotoArt;setTimeout(function(){var el=document.getElementById(k);if(el){el.scrollIntoView({behavior:"smooth",block:"center"});el.classList.add("hl");setTimeout(function(){el.classList.remove("hl")},2200)}},350)});
 window.initAcc=function(){
 // BIM Accademia: archivio per anno e mese, ricerca, filtri, abstract tradotto o originale
 (function(){var box=$("ac-list");if(!box)return;var MM=["Gennaio","Febbraio","Marzo","Aprile","Maggio","Giugno","Luglio","Agosto","Settembre","Ottobre","Novembre","Dicembre"],LANG=null,OPEN={};

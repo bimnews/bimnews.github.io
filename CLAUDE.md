@@ -134,6 +134,19 @@ Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato co
    - **Scopo:** Marco vuole controllare che le scritte principali del sito siano tradotte.
    - Fa parte del punto 4.
 
+10. **Articoli da scrivere con Marco (impostati il 15/11/2026; testi da fare insieme):**
+   - **In `#wip` → «Articoli in preparazione»** (`.wip-art`), ogni scheda con «Cosa conterrà»:
+     - `art-hoover`: lo script «Hoover», che legge un Excel con materiali, parametri e informazioni di sistema;
+     - `art-ifc-zero`: come costruire un IFC da zero (esperimento riuscito, mancano le considerazioni finali; si lega a «Il mondo oltre noi»);
+     - `art-10-tips`: i 10 consigli, di cui 6 scritti (salvataggi automatici, gestione del tempo, template, gruppo di continuità, straordinari, riflessione) e 4 da definire;
+     - `art-ifc-excel`: la biblioteca IFC in Excel;
+     - `art-ifc-versioni`: le versioni di esportazione IFC a confronto;
+     - `art-ifc-dialogo`: far dialogare i software con l'IFC e il modello federato;
+     - `art-img-lingua`: manuali con immagini SVG, con le scritte che seguono la lingua.
+   - **In `#studio` → Riflessioni:** `studio-oltre-noi`, «Il mondo oltre noi» (che ne sarà dei nostri modelli tra 200 anni; da fare una ricerca sul più antico disegno di progetto arrivato fino a noi).
+   - **Collegamenti tra sottopagine:** usare `data-goto-art="id"`.
+   - **Da verificare:** il proverbio «Ciò che cresce lentamente mette radici profonde» è indicato come «attribuito alla tradizione africana»; l'origine non è verificata.
+
 ## Fatto di recente
 
 - **15/11/2026, revisione 100:**
