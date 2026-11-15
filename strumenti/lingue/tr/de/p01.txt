@@ -80,7 +80,7 @@ v0079	Veranstaltungen und Webinare
 v0080	Webinare
 v0081	Am nächsten bei mir
 v0082	Daten und Kosten wurden beim Eintragen auf den Seiten der Veranstalter geprüft: Kontrolliere sie immer, bevor du dich anmeldest. Dein Standort bleibt in deinem Browser und wird an niemanden gesendet.
-v0083	<strong>Sprache.</strong> In anderen Sprachen als Italienisch werden die Nachrichten auf Englisch angezeigt, mit dem Link zur Originalquelle. Für den vollständigen Text in einer anderen Sprache nutze die Übersetzungsfunktion deines Browsers.
+v0083	<strong>Sprache.</strong> In anderen Sprachen als Italienisch wird jede Nachricht in der Sprache ihrer Quelle angezeigt, wenn sie mit der gewählten übereinstimmt, sonst auf Englisch, immer mit dem Link zur Originalquelle.
 v0084	Archiv: von 2015 bis heute, nach Jahr und Monat
 v0085	← Neuere
 v0086	Ältere →

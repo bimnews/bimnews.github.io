@@ -80,7 +80,7 @@ v0079	Eventos y webinars
 v0080	Webinars
 v0081	El más cercano a mí
 v0082	Fechas y costes verificados en las páginas de los organizadores cuando los añadimos: compruébalos siempre antes de inscribirte. Tu ubicación se queda en tu navegador y no se envía a nadie.
-v0083	<strong>Idioma.</strong> En los idiomas distintos del italiano, las noticias se muestran en inglés, con el enlace a la fuente original. Para el texto completo en otro idioma, usa la traducción integrada de tu navegador.
+v0083	<strong>Idioma.</strong> En los idiomas distintos del italiano, cada noticia se muestra en el idioma de su fuente cuando coincide con el que has elegido; si no, en inglés, siempre con el enlace a la fuente original.
 v0084	Archivo: de 2015 a hoy, por año y mes
 v0085	← Más recientes
 v0086	Anteriores →
