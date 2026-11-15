@@ -1,0 +1,65 @@
+v0159	ほかのページ
+v0160	BIM を知りません。どこから始めればいいですか？
+v0161	<a href="#bim-5-minuti">5 分でわかる BIM</a> からどうぞ。BIM とは何か、何に役立つか、規格、略語、3D から 10D までの次元、研究で測られた具体的な成果。
+v0166	運営者のページにあるマニュアルとは？
+v0167	設計者のための実用ガイドです。IFC の Property Sets、Dynamo、AutoCAD、電気設計、プログラミング言語。<a href="#studio">事務所で</a>にあり、オンラインで読むか PDF でダウンロードできます。
+v0170	サイトの使い方
+v0171	完全版と軽量版の違いは？
+v0172	完全版にはインタラクティブ地図、写真、アニメーション、サイトのフォントがあります。軽量版はテキストとニュースだけをダウンロードします。回線が遅い場合や、動きが少ないほうがよい人向けです。右上のボタンで切り替えます。
+v0173	ダークテーマからライトテーマに切り替えるには？
+v0174	右上の「ライトテーマ」または「ダークテーマ」ボタンで。サイトは選択を覚えています。
+v0175	サイトがとても大きいのですが、ガイドはありますか？
+v0176	はい、三つあります。ホームの上にあるボタンから開く<b>サイトガイド</b>は、主な部分を一歩ずつ紹介します。<a href="#mappa">サイトマップ</a>はすべてのページを短い説明つきで一覧にしています。そしてこのページがよくある質問に答えます。
+v0177	誤りやニュースを知らせるには？
+v0178	情報源へのリンクを添えて、<a href="https://www.linkedin.com/in/marco-scigliuolo/" target="_blank" rel="noopener">LinkedIn ↗</a> で著者に連絡してください。いただいた情報はすべて確認してから掲載します。
+v0179	質問が見つかりません。別の言葉を試すか、次を開いてください：
+v0180	サイトマップ
+v0181	見られるものすべてを一枚の地図に。各項目には短い説明があり、名前をクリックするとサイトのその部分に直接移動します。
+v0182	項目の横の <b>+</b> をクリックすると枝が開き、含まれるセクションが見られます。<b>−</b> で閉じます。
+v0183	<b>すべて開く</b>でサイトのすべてのセクションを含む地図全体を表示し、<b>すべて閉じる</b>で主な枝に戻ります。
+v0184	項目の<b>名前</b>をクリックするとそのページに移動します。サブタブとカテゴリーは自動で開きます。
+v0185	すべて開く
+v0186	すべて閉じる
+v0187	サイトの訪問数
+v0188	訪問数は GoatCounter で数えています。Cookie も個人データも使いません。ここでは同じ数字を誰でも見られます。数値はおよそ 4 時間ごとに更新されます。
+v0189	よく訪問されているページ
+v0190	画像とフォントのクレジット
+v0191	ページの写真は Wikimedia Commons のもので、CC0 1.0 でパブリックドメインに提供されています。作者はすべての権利を放棄していますが、その仕事への敬意からクレジットを記しています。サイト上の写真は各ページの色に着色され、完全版でのみ表示されます。
+v0192	<b>5 分でわかる BIM「BIM とは」</b> · <a href="https://commons.wikimedia.org/wiki/File:Villa_Almerico_(Villa_Rotunda),_from_I_quattro_libri_dell%27architettura_di_Andrea_Palladio_(Book_2,_page_19)_MET_DP109542.jpg" target="_blank" rel="noopener">ヴィラ・アルメリコ（ヴィラ・ロトンダ）、『建築四書』より</a>、アンドレア・パラディオ、1570 年（The Metropolitan Museum of Art、CC0）
+v0193	<b>BIM News</b> · <a href="https://commons.wikimedia.org/wiki/File:Victoria_Harbour_skyscrapers.jpg" target="_blank" rel="noopener">Victoria Harbour skyscrapers</a>、撮影 Wilfredor
+v0194	<b>BIM &amp; AI</b> · <a href="https://commons.wikimedia.org/wiki/File:Data_center_roof.jpg" target="_blank" rel="noopener">Data center roof</a>、撮影 Rsparks3
+v0195	<b>BIM アカデミー</b> · <a href="https://commons.wikimedia.org/wiki/File:The_John_Rylands_Library_Reading_Room_Enclosure.jpg" target="_blank" rel="noopener">The John Rylands Library, Reading Room</a>、撮影 Michael D Beckwith
+v0196	<b>5 分でわかる BIM</b> · <a href="https://commons.wikimedia.org/wiki/File:Steel_frame_structure.jpg" target="_blank" rel="noopener">Steel frame structure</a>、撮影 Wikideas1
+v0197	<b>動画</b> · <a href="https://commons.wikimedia.org/wiki/File:H%C3%B6rsaal_101_LMU.jpg" target="_blank" rel="noopener">Hörsaal 101, LMU</a>、撮影 Slashme
+v0198	<b>アジェンダ</b> · <a href="https://commons.wikimedia.org/wiki/File:Six_workers_on_crane_in_Shibuya.jpg" target="_blank" rel="noopener">Six workers on crane in Shibuya</a>、撮影 Syced
+v0199	<b>運営者</b> · <a href="https://commons.wikimedia.org/wiki/File:Rebar_combo.jpg" target="_blank" rel="noopener">Rebar combo</a>、撮影 Henryeke
+v0200	<b>ポートフォリオ</b> · <a href="https://commons.wikimedia.org/wiki/File:Steel_frame_building_under_construction_in_Taiwan.jpg" target="_blank" rel="noopener">Steel frame building under construction in Taiwan</a>、撮影 SSJF01
+v0201	フォント：Inter、Inter Tight、JetBrains Mono、SIL Open Font License 1.1（ライセンス文はサイトの <code>fonts</code> フォルダにあります）。BIM News と BIM &amp; AI の見出しの点群は、サイトのコードが描いています。
+v0202	5 分でわかる BIM
+v0203	BIM が何か知らない？ ここから始めましょう。BIM とは何か、事務所で何に役立つか、なぜ今は欠かせないのか、規格と略語。要点は 5 分で、残りは好きなときに。
+v0204	01 BIM とは
+v0205	02 建物の一生
+v0206	03 何が変わるか
+v0207	04 なぜ今か
+v0208	05 規格
+v0209	05 世界とイタリア
+v0210	06 次元
+v0211	07 略語
+v0212	08 具体的な成果
+v0213	09 世界の認証制度
+v0214	<strong>BIM</strong> は <em>Building Information Modeling</em> の略で、「建物情報のモデリング」という意味です。本当に何が変わるのかを理解するには、これまでどのように設計してきたかを見るのが近道です。
+v0215	アンドレア・パラディオ、ヴィラ・ロトンダ：平面図と断面図、<i>『建築四書』</i>より、1570 年。The Metropolitan Museum of Art、CC0。
+v0216	<span>1</span> 何世紀も手描きで
+v0217	何世紀ものあいだ、設計とは手で描く図面でした。平面図、断面図、立面図を、それぞれ別々に描きます。パラディオの図版には、今も使われている要素がすでにそろっています。このやり方はコンピューターが登場するまで変わりませんでした。別々の図を、手作業で整合させなければならなかったのです。
+v0218	壁を長くするには、線を一本ずつ動かします。
+v0219	<span>2</span> CAD：同じ線を、コンピューターで
+v0220	CAD は製図台をコンピューターの中に持ち込みました。描くのは相変わらず<b>線</b>ですが、より正確で、コピーや修正が簡単です。それぞれの線には<b>属性</b>を与えられます。画層、色、線種、あるいは「れんが壁」というテキスト。図面に貼られたラベルのようなもので、図面を説明はしても制御はしません。壁を長くするには線を動かし、そのあと断面図、立面図、数量を手で直す必要があります。
+v0221	長さ
+v0222	高さ
+v0223	スライダーを動かしてみてください。パラメーターを変えると、壁、面積、体積が自動で更新されます。<span class="ex">例の値</span>
+v0224	<span>3</span> BIM：パラメーターを持つオブジェクト
+v0225	BIM ではもう線を描きません。描くのは<b>三次元のオブジェクト</b>です。壁、床スラブ、窓。各オブジェクトは<b>パラメーター</b>で制御されます。長さ、高さ、厚さといった値が、数式で互いに結びついています。体積は描き直すのではなく、計算されます。画面に見えているのはもう図面ではなく、データの表現です。平面図も断面図も一覧表も、すべて同じモデルから生まれます。
+v0226	なぜすべてが変わるのか
+v0227	<b>情報を取り出し、入力できる。</b>数量、面積、体積、集計表はモデルから出てきます。そして計算、入札、施工、維持管理に必要なデータはモデルに入力されます。
+v0228	<b>変更が連動する。</b>床スラブを上げたり部屋を広げたりすると、平面図、断面図、面積、体積、一覧表が一緒に更新されます。CAD では同じ作業に何時間もかかりました。
+v0229	<b>一つの変更がすべてに及ぶ。</b>ある壁タイプの材料を変えると、プロジェクト全体でそのタイプの壁がすべて変わります。

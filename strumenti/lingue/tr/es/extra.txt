@@ -1,0 +1,8 @@
+§conteggio	{1} noticias en {2} semanas, {3} meses
+§pagina	Página {1} de {2}
+§articoli	{1} artículos
+§anno	{1}: {2} artículos, filtrar
+§vedi	Ver las noticias de {1} →
+§passo	Paso {1} de {2}
+Ultimo aggiornamento	Última actualización
+Prossimo evento · costo da verificare	Próximo evento · coste por verificar

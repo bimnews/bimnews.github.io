@@ -1,0 +1,74 @@
+v0332	リーン建設
+v0333	9D はモデルに「リーン建設」（lean construction）を持ち込みます。時間、材料、労力のムダを減らし、作業の流れをより途切れないものにして、施工者が一緒に計画します。
+v0334	Touchplan (Last Planner)
+v0335	Procore
+v0336	Autodesk Build
+v0337	Dalux Field
+v0338	正確な数量で、必要な材料を必要なときに発注する。
+v0339	施工者と設計者が作業計画を共有する。
+v0340	待ち時間、手戻り、廃棄物を減らす。
+v0341	<b>例。</b>材料は必要なときに、モデルで測った量だけ現場に届き、邪魔な仮置きがありません。
+v0342	情報源：<a href="https://aifos.org/home/news/int/interventi_commenti/bim-bum-bam---bit" target="_blank" rel="noopener">AiFOS「BIM BUM BAM… bit」（イタリア語）↗</a>
+v0343	工業化
+v0344	10D は建設の工業化を見据えています。建物を工業製品のように設計・生産し、部材を現場外でプレハブ化して現地で組み立てます。
+v0345	Allplan Precast
+v0346	Planbar
+v0347	hsbcad
+v0348	cadwork
+v0349	モデルが工場生産のデータ源になります。
+v0350	品質管理を伴うプレハブ化と「オフサイト」生産。
+v0351	現場は主に組み立ての場になります。
+v0352	<b>例。</b>鉄骨屋根のモデルから、部材の製作と組み立てに必要な詳細がすべて出てきます。
+v0353	ソフトウェアはよく使われている例で、網羅的なリストでも推奨でもありません。多くは複数の次元をカバーしています。慣例の比較。<b>イタリア（BibLus が紹介する UNI 11337）：</b>6D 維持管理、7D サステナビリティ。<b>国際的に主流の用法：</b>6D サステナビリティ、7D ファシリティマネジメント。イラストはこのサイトのために描いたものです。ラベルについての批判的な入門：<a href="https://www.shelidon.it/bimpill-le-dimensioni-e-gli-usi" target="_blank" rel="noopener">Shelidon「#BIMpill – Le dimensioni e gli usi」（イタリア語）↗</a>。
+v0354	IFC
+v0355	<i>Industry Foundation Classes</i>：異なるソフトウェア間でモデルをやりとりするためのオープンフォーマット。規格 ISO 16739-1 です。
+v0356	一つのソフトに依存せず、オープンなフォーマットと標準で仕事をする。
+v0357	ACDat · CDE
+v0358	共通データ環境（英語で <i>Common Data Environment</i>）：プロジェクトのモデルと文書を保管し、共有し、承認する場所。
+v0359	CI · EIR
+v0360	発注者情報要件（イタリア語で「Capitolato informativo」）：発注者が何を、どんな情報を、どの形式で、いつ求めるか（UNI 11337-5）。
+v0361	oGI · pGI · BEP
+v0362	情報管理の提案書と計画書：受注者が要件にどう応えるか。まず入札で、次に契約期間中に。海外では BEP（<i>BIM Execution Plan</i>）と呼ばれます。
+v0363	LOD
+v0364	オブジェクトの詳細度。UNI 11337-4 では A から G まで：その段階でオブジェクトがどこまで決まっているか。
+v0365	LOIN
+v0366	<i>Level of information need</i>、情報要求度：本当に必要な情報の量と種類（ISO 7817-1）。
+v0367	Clash detection
+v0368	異なる分野のモデル間の干渉を自動でチェックすること。
+v0369	BIM の役割
+v0370	BIM マネージャー、BIM コーディネーター、BIM スペシャリスト、CDE マネージャー：UNI 11337-7 が定める役割。
+v0371	BIM で本当にどれだけ節約できるのか？ 以下は私たちが確認できた研究の数字で、それぞれに情報源があります。そのあとに、それをあなたの事務所に当てはめるカウンターがあります。数字はプロジェクトによって大きく変わるので、約束ではなく桁の目安として読んでください。
+v0372	モデルから積算を作る時間の短縮。見積もりの精度は 3% 以内
+v0373	32 プロジェクトに関するスタンフォード CIFE のデータ。出典：<a href="https://doi.org/10.5130/ajceb.v12i4.3032" target="_blank" rel="noopener">Azhar, Khalfan, Maqsood「Building information modelling (BIM): now and beyond」2012/2015、CC BY ↗</a>
+v0374	予算外の変更を削減
+v0375	スタンフォード CIFE のデータ。出典：<a href="https://doi.org/10.1061/(ASCE)LM.1943-5630.0000127" target="_blank" rel="noopener">Azhar「BIM: Trends, Benefits, Risks, and Challenges for the AEC Industry」2011 ↗</a>
+v0376	干渉チェックによって節約できた契約金額の割合
+v0377	スタンフォード CIFE のデータ。出典：<a href="https://doi.org/10.1061/(ASCE)LM.1943-5630.0000127" target="_blank" rel="noopener">Azhar「BIM: Trends, Benefits, Risks, and Challenges for the AEC Industry」2011 ↗</a>。大規模インフラプロジェクトでは、<a href="https://doi.org/10.1080/01446193.2020.1802768" target="_blank" rel="noopener">Chahrour ほか「Cost-benefit analysis of BIM-enabled design clash detection and resolution」2021 ↗</a> の研究が 20% と推定しています
+v0378	3,500 万ドルの大学の建物で、着工前の干渉チェックにより節約
+v0379	Holder Construction の事例。出典：<a href="https://doi.org/10.5130/ajceb.v12i4.3032" target="_blank" rel="noopener">Azhar, Khalfan, Maqsood「Building information modelling (BIM): now and beyond」2012/2015、CC BY ↗</a>
+v0380	一人あたり毎週、現場で衝突、手戻り、情報探しに失われる時間
+v0381	<a href="https://www.prnewswire.com/news-releases/new-research-from-plangrid-and-fmi-identifies-factors-costing-the-construction-industry-more-than-177-billion-annually-300689826.html" target="_blank" rel="noopener">PlanGrid と FMI「Construction Disconnected」2018 ↗</a>：米国の専門家 600 人への調査
+v0382	米国の現場の手戻りのうち、コミュニケーション不足と誤った設計データが原因のもの
+v0383	<a href="https://www.prnewswire.com/news-releases/new-research-from-plangrid-and-fmi-identifies-factors-costing-the-construction-industry-more-than-177-billion-annually-300689826.html" target="_blank" rel="noopener">PlanGrid と FMI「Construction Disconnected」2018 ↗</a>
+v0384	あなたの事務所のカウンター
+v0385	設計する人の数
+v0386	1 年間に設計する工事の金額
+v0387	500 万ドル
+v0388	失われた時間のうち BIM が取り戻す割合
+v0389	工事金額に対する節約
+v0390	計算方法：時間 = 人数 × 週 14 時間 × 46 週 × 取り戻す割合、節約額 = 工事金額 × パーセント。初期値は、スタンフォードが示す 10% より低く、あえて控えめにしています。これは私たちの仮定なので、ご自分の数字に変えてください。
+v0391	そして、ちょっと笑うために
+v0392	コーヒーと眠れない夜は遊びで、統計ではありません。どの研究もそれを測ってはいません。このセクションのほかの部分は、引用した情報源にもとづいています。
+v0393	BIM の使用義務は、認証取得の義務という意味ではありません。ほとんどの国で認証は任意です。第三者機関の評価によって、申告したことができると発注者に示すためのものです。私たちが確認した国での仕組みを、規定する規格と情報源とともに紹介します。
+v0394	個人
+v0395	BIM マネージャーや BIM コーディネーターなど、ある役割の能力を認証します。試験と、その後の維持です。個人を認証する機関は ISO/IEC 17024 にもとづいて認定されます。
+v0396	組織
+v0397	事務所や企業が ISO 19650 の求めるとおりに情報を管理していることを認証します。プロセスとプロジェクトの監査を毎年繰り返します。
+v0398	香港
+v0399	3,000 万香港ドルを超える公共工事では、受注者の BIM チームは建造業議会（CIC）が認証した BIM マネージャーが率いなければなりません。2024 年 1 月 1 日以降の入札では、BIM コーディネーターも認証が必要です（少なくとも半数はフルレベル）。
+v0400	DEVB Technical Circular (Works) No. 2/2021 および 2023 年 6 月 13 日の改訂
+v0401	<a href="https://devb.gov.hk/filemanager/technicalcirculars/en/upload/387/1/C-2021-02-02.pdf" target="_blank" rel="noopener">DEVB 通達、改訂を含む本文（英語）↗</a>
+v0402	イタリア
+v0403	イタリアの公共契約法典は、公共発注機関に、共通データ環境の管理者、少なくとも一人のデジタルプロセス管理者、そして各工事に情報フローのコーディネーターを任命するよう求めています。いずれも実務経験や修了した講座によって得た「適切な能力」が必要です。認証は必須ではなく、能力を証明する一つの方法です。役割は UNI 11337-7:2018 によるもので、認証の要件は 2020 年 3 月 2 日から有効な UNI/PdR 78:2020 にあります。
+v0404	委任立法令 36/2023 附属書 I.9 第 1 条第 3 項 · UNI 11337-7:2018 · UNI/PdR 78:2020
+v0405	<a href="https://www.codiceappalti.it/DLGS_36_2023/Allegato_I_9_Metodi_e_strumenti_di_gestione_informativa_digitale_delle_costruzioni_/12885" target="_blank" rel="noopener">附属書 I.9、現行条文（イタリア語）↗</a> · <a href="https://www.certifico.com/normazione/news-normazione/uni-pdr-78-2020-requisiti-valutazione-di-conformita-uni-11337-7-2018" target="_blank" rel="noopener">UNI/PdR 78:2020 の概要（イタリア語）↗</a>

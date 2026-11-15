@@ -1,0 +1,65 @@
+v0159	Die anderen Seiten
+v0160	Ich kenne BIM nicht: Wo fange ich an?
+v0161	Bei <a href="#bim-5-minuti">BIM in 5 Minuten</a>: was es ist, wozu es dient, die Normen, die Abkürzungen, die Dimensionen von 3D bis 10D und die konkreten Ergebnisse, die die Forschung gemessen hat.
+v0166	Was sind die Handbücher auf der Seite des Kurators?
+v0167	Praktische Leitfäden für Planende: Property Sets für IFC, Dynamo, AutoCAD, Elektroplanung, Programmiersprachen. Du findest sie unter <a href="#studio">Im Büro</a>, online zu lesen oder als PDF herunterzuladen.
+v0170	Die Website benutzen
+v0171	Was ist der Unterschied zwischen der vollständigen und der einfachen Version?
+v0172	Die vollständige Version hat die interaktive Karte, Fotos, Animationen und die Schriften der Website. Die einfache lädt nur Texte und Nachrichten: Sie ist für langsame Verbindungen gedacht und für alle, die weniger Bewegung mögen. Man wechselt mit der Schaltfläche oben rechts.
+v0173	Wie wechsle ich vom dunklen zum hellen Design?
+v0174	Mit der Schaltfläche „Helles Design“ oder „Dunkles Design“ oben rechts. Die Website merkt sich die Wahl.
+v0175	Die Website ist sehr groß: Gibt es eine Hilfe?
+v0176	Ja, drei. Die <b>Hilfe zur Website</b>, über die Schaltfläche oben auf der Startseite, zeigt Schritt für Schritt die wichtigsten Teile. Die <a href="#mappa">Sitemap</a> listet alle Seiten mit einer kurzen Beschreibung auf. Und diese Seite beantwortet die häufigsten Fragen.
+v0177	Wie melde ich einen Fehler oder eine Nachricht?
+v0178	Schreib dem Autor auf <a href="https://www.linkedin.com/in/marco-scigliuolo/" target="_blank" rel="noopener">LinkedIn ↗</a>, mit dem Link zur Quelle: Jeder Hinweis wird geprüft, bevor er veröffentlicht wird.
+v0179	Keine Frage gefunden. Versuche es mit einem anderen Wort oder öffne die
+v0180	Sitemap
+v0181	Alles, was man besuchen kann, auf einer Karte: Jeder Eintrag hat eine kurze Beschreibung, und sein Name führt direkt zu diesem Teil der Website.
+v0182	Klicke auf das <b>+</b> neben einem Eintrag, um seinen Zweig zu öffnen und die enthaltenen Abschnitte zu sehen; auf das <b>−</b>, um ihn wieder zu schließen.
+v0183	Mit <b>Alle öffnen</b> siehst du die vollständige Karte mit allen Abschnitten der Website; mit <b>Alle schließen</b> kehrst du zu den Hauptzweigen zurück.
+v0184	Klicke auf den <b>Namen</b> eines Eintrags, um zu dieser Seite zu gehen: Unterreiter und Kategorien öffnen sich von selbst.
+v0185	Alle öffnen
+v0186	Alle schließen
+v0187	Die Besuche der Website
+v0188	Wir zählen die Besuche mit GoatCounter, ohne Cookies und ohne personenbezogene Daten: Hier findest du dieselben Zahlen, für alle. Die Zählungen werden etwa alle vier Stunden aktualisiert.
+v0189	Die meistbesuchten Seiten
+v0190	Bild- und Schriftnachweise
+v0191	Die Fotos der Seiten stammen aus Wikimedia Commons und sind mit CC0 1.0 gemeinfrei: Die Urheber haben auf alle Rechte verzichtet. Wir nennen sie trotzdem, aus Respekt vor ihrer Arbeit. Auf der Website sind die Fotos in der Farbe der jeweiligen Seite eingefärbt und erscheinen nur in der vollständigen Version.
+v0192	<b>BIM in 5 Minuten, „Was es ist“</b> · <a href="https://commons.wikimedia.org/wiki/File:Villa_Almerico_(Villa_Rotunda),_from_I_quattro_libri_dell%27architettura_di_Andrea_Palladio_(Book_2,_page_19)_MET_DP109542.jpg" target="_blank" rel="noopener">Villa Almerico (Villa Rotonda), aus I quattro libri dell'architettura</a>, von Andrea Palladio, 1570 (The Metropolitan Museum of Art, CC0)
+v0193	<b>BIM News</b> · <a href="https://commons.wikimedia.org/wiki/File:Victoria_Harbour_skyscrapers.jpg" target="_blank" rel="noopener">Victoria Harbour skyscrapers</a>, von Wilfredor
+v0194	<b>BIM &amp; AI</b> · <a href="https://commons.wikimedia.org/wiki/File:Data_center_roof.jpg" target="_blank" rel="noopener">Data center roof</a>, von Rsparks3
+v0195	<b>BIM Akademie</b> · <a href="https://commons.wikimedia.org/wiki/File:The_John_Rylands_Library_Reading_Room_Enclosure.jpg" target="_blank" rel="noopener">The John Rylands Library, Reading Room</a>, von Michael D Beckwith
+v0196	<b>BIM in 5 Minuten</b> · <a href="https://commons.wikimedia.org/wiki/File:Steel_frame_structure.jpg" target="_blank" rel="noopener">Steel frame structure</a>, von Wikideas1
+v0197	<b>Videos</b> · <a href="https://commons.wikimedia.org/wiki/File:H%C3%B6rsaal_101_LMU.jpg" target="_blank" rel="noopener">Hörsaal 101, LMU</a>, von Slashme
+v0198	<b>Agenda</b> · <a href="https://commons.wikimedia.org/wiki/File:Six_workers_on_crane_in_Shibuya.jpg" target="_blank" rel="noopener">Six workers on crane in Shibuya</a>, von Syced
+v0199	<b>Der Kurator</b> · <a href="https://commons.wikimedia.org/wiki/File:Rebar_combo.jpg" target="_blank" rel="noopener">Rebar combo</a>, von Henryeke
+v0200	<b>Portfolio</b> · <a href="https://commons.wikimedia.org/wiki/File:Steel_frame_building_under_construction_in_Taiwan.jpg" target="_blank" rel="noopener">Steel frame building under construction in Taiwan</a>, von SSJF01
+v0201	Schriften: Inter, Inter Tight und JetBrains Mono, unter der SIL Open Font License 1.1 (die Lizenztexte liegen im Ordner <code>fonts</code> der Website). Die Punktwolke in den Kopfbereichen von BIM News und BIM &amp; AI wird vom Code der Website gezeichnet.
+v0202	BIM in 5 Minuten
+v0203	Du weißt nicht, was BIM ist? Fang hier an: was es ist, wozu es in einem Büro dient, warum man heute nicht mehr darauf verzichten kann, die Normen und die Abkürzungen. Fünf Minuten für das Wesentliche, der Rest, wann du willst.
+v0204	01 Was es ist
+v0205	02 Der ganze Lebenszyklus
+v0206	03 Was sich ändert
+v0207	04 Warum jetzt
+v0208	05 Die Normen
+v0209	05 Welt und Italien
+v0210	06 Die Dimensionen
+v0211	07 Die Abkürzungen
+v0212	08 Konkrete Ergebnisse
+v0213	09 Zertifizierungen weltweit
+v0214	<strong>BIM</strong> steht für <em>Building Information Modeling</em>, also „Modellierung der Gebäudeinformationen“. Um zu verstehen, was sich wirklich ändert, lohnt ein Blick darauf, wie schon immer geplant wurde.
+v0215	Andrea Palladio, Villa Rotonda: Grundriss und Schnitt, aus <i>I quattro libri dell'architettura</i>, 1570. The Metropolitan Museum of Art, CC0.
+v0216	<span>1</span> Von Hand, über Jahrhunderte
+v0217	Über Jahrhunderte war ein Entwurf eine Handzeichnung: Grundrisse, Schnitte und Ansichten, jede für sich gezeichnet. Auf Palladios Tafel sind schon alle Zutaten zu sehen, die wir noch heute verwenden. Diese Arbeitsweise blieb bis zur Ankunft des Computers gleich: getrennte Ansichten, die von Hand stimmig gehalten werden mussten.
+v0218	Um die Wand zu verlängern, verschiebt man die Linien, eine nach der anderen.
+v0219	<span>2</span> CAD: dieselben Linien, am Computer
+v0220	CAD bringt das Zeichenbrett in den Computer. Man zeichnet weiterhin <b>Linien</b>, genauer, leicht zu kopieren und zu korrigieren. Jeder Linie kann man <b>Attribute</b> geben: den Layer, die Farbe, den Linientyp, vielleicht einen Text „Ziegelwand“. Es sind Etiketten auf der Zeichnung, die sie beschreiben, aber nicht steuern. Um eine Wand zu verlängern, muss man ihre Linien verschieben und dann Schnitt, Ansicht und Mengenermittlung von Hand korrigieren.
+v0221	Länge
+v0222	Höhe
+v0223	Bewege die Schieberegler: Ändere den Parameter, und Wand, Fläche und Volumen aktualisieren sich von selbst. <span class="ex">Beispielwerte</span>
+v0224	<span>3</span> BIM: Objekte mit Parametern
+v0225	Im BIM zeichnet man keine Linien mehr, sondern <b>dreidimensionale Objekte</b>: eine Wand, eine Decke, ein Fenster. Jedes Objekt wird von <b>Parametern</b> gesteuert: Werten wie Länge, Höhe und Dicke, die durch Formeln miteinander verknüpft sind. Das Volumen wird nicht neu gezeichnet, sondern berechnet. Was wir auf dem Bildschirm sehen, ist keine Zeichnung mehr, sondern eine Darstellung der Daten: Grundrisse, Schnitte und Listen entstehen alle aus demselben Modell.
+v0226	Warum sich alles ändert
+v0227	<b>Informationen werden entnommen und eingefügt.</b> Mengen, Flächen, Volumen und Bauteillisten kommen aus dem Modell; und in das Modell kommen die Daten, die für Berechnungen, Ausschreibungen, Baustelle und Instandhaltung nötig sind.
+v0228	<b>Änderungen sind lebendig.</b> Hebst du eine Decke an oder vergrößerst einen Raum, aktualisieren sich Grundriss, Schnitte, Flächen, Volumen und Listen zusammen. Im CAD kostete dieselbe Arbeit Stunden.
+v0229	<b>Eine Änderung gilt für alle.</b> Änderst du das Material eines Wandtyps, ändern sich alle Wände dieses Typs im ganzen Projekt.

@@ -1,0 +1,102 @@
+v0230	<b>属性还是参数？</b>属性是附加在图纸元素上的信息，例如线条的图层或颜色：它描述元素，但不控制元素。参数则控制对象：改变数值，形状就随之改变，所有依赖它的内容也一起改变。
+v0231	<b>设计</b><span>建筑、结构和机电在同一个模型上工作</span>
+v0232	<b>招标</b><span>工程量和造价从模型中提取，不再手工重算</span>
+v0233	<b>施工</b><span>施工单位依据已经协调好的模型施工</span>
+v0234	<b>运维</b><span>业主接收的是一座带有完整信息的建筑</span>
+v0235	<b>碰撞提前发现。</b>穿过梁的管道在模型中就会暴露出来，而不是在工地上。
+v0236	<b>图纸始终一致。</b>平面、剖面和明细表都来自同一个模型：改一处，处处更新。
+v0237	<b>各专业互相沟通。</b>通过开放格式 IFC，即使使用不同的软件也能协同。
+v0238	自 <strong>2025 年 1 月 1 日</strong>起，意大利的公共采购单位在设计和建造<strong>新建工程</strong>以及<strong>既有建筑改造工程</strong>时，凡估算工程额<strong>超过 200 万欧元</strong>，必须采用数字化信息管理的方法和工具。
+v0239	第 36/2023 号立法令第 43 条第 1 款，经第 209/2024 号立法令修订
+v0240	十年规范，画成一副鱼骨：从左往右读，从 2015 年到今天。点击某个节点，看看它带来了什么变化；UNI 和 ISO 标准需在官方网站购买，这里提供直接链接。
+v0241	全部
+v0242	UNI 标准
+v0243	ISO 标准
+v0244	法律、法令、指南
+v0245	BIM 从哪里诞生、又如何来到意大利。上方是世界，从 1975 年的最初构想到 ISO 标准；下方是意大利，从 2009 年第一部编码标准到今天的强制要求。连线把意大利标准与其所采纳的国际标准连接起来。点击节点查看详情和来源。
+v0246	两者
+v0247	仅世界
+v0248	仅意大利
+v0249	显示连线
+v0250	「维度」表示在几何之外向模型添加了哪些信息。3D 之前是 CAD 的二维图纸（2D）。到 5D 为止各地看法一致；从 6D 开始，各国定义不同，而 8D、9D 和 10D 仍是讨论中的提议，并非标准。因此在招标技术文件中，最好写明需要哪些用途和哪些信息，而不只是一个标签。
+v0251	<b>3D</b><span>几何模型</span>
+v0252	<b>4D</b><span>进度</span>
+v0253	<b>5D</b><span>造价</span>
+v0254	<b>6D</b><span>工程运维</span>
+v0255	<b>7D</b><span>可持续性</span>
+v0256	<b>8D</b><span>安全</span>
+v0257	<b>9D</b><span>精益建造</span>
+v0258	<b>10D</b><span>工业化</span>
+v0259	几何模型
+v0260	起点：由对象（墙、楼板、梁、管道）组成的三维模型，每个对象都有自己的几何和信息。所有其他维度都以此为基础。
+v0261	Revit
+v0262	Archicad
+v0263	Allplan
+v0264	Tekla Structures
+v0265	Vectorworks
+v0266	Bonsai（开源，原 BlenderBIM）
+v0267	Navisworks、Solibri 用于协调
+v0268	深入了解
+v0269	包含每个对象的几何、位置、材料和分类。
+v0270	平面、剖面和明细表都来自同一个模型，并保持一致。
+v0271	各专业相互协调，碰撞在施工前就被发现。
+v0272	<b>示例。</b>穿过梁的风管在碰撞检查中暴露出来，而不是在施工过程中。
+v0273	来源：<a href="https://www.designingbuildings.co.uk/wiki/BIM_dimensions" target="_blank" rel="noopener">Designing Buildings Wiki，「BIM dimensions」（英文）↗</a>
+v0274	进度
+v0275	模型中的对象与进度计划中的任务相关联：可以看到工程随时间一步步建起来。
+v0276	Navisworks (TimeLiner)
+v0277	Synchro 4D
+v0278	Fuzor
+v0279	Microsoft Project 和 Primavera P6 用于编制要关联的进度计划
+v0280	模拟施工顺序和各个工作阶段。
+v0281	帮助组织工地：塔吊、堆场、通道、作业区。
+v0282	对比计划与实际完成情况。
+v0283	<b>示例。</b>开工前就能逐周看到塔吊和材料的位置，以及哪些班组在同一个地方作业。
+v0284	来源：<a href="https://www.designingbuildings.co.uk/wiki/BIM_dimensions" target="_blank" rel="noopener">Designing Buildings Wiki，「BIM dimensions」（英文）↗</a>；<a href="https://aifos.org/home/news/int/interventi_commenti/bim-bum-bam---bit" target="_blank" rel="noopener">AiFOS，「BIM BUM BAM… bit」（意大利文）↗</a>
+v0285	造价
+v0286	把在对象上测得的工程量与价格库中的条目关联起来：工程预算从模型中生成，并随模型更新。
+v0287	PriMus-IFC
+v0288	CostX
+v0289	RIB iTWO
+v0290	Navisworks (Quantification)
+v0291	TeamSystem CPM
+v0292	资讯中暂时还没有专门的新闻：有了就会添加。
+v0293	工程量自动提取，不再手工重算。
+v0294	设计方案变化时可快速估算。
+v0295	作为变更和进度结算的依据。
+v0296	<b>示例。</b>改变楼板的构造层次，预算随即更新，造价差额也已算好。
+v0297	来源：<a href="https://biblus.acca.it/modellazione-bim-5d/" target="_blank" rel="noopener">BibLus（ACCA），「Modellazione BIM 5D」（意大利文），2026 ↗</a>；<a href="https://www.designingbuildings.co.uk/wiki/BIM_dimensions" target="_blank" rel="noopener">Designing Buildings Wiki，「BIM dimensions」（英文）↗</a>
+v0298	工程运维
+v0299	根据 BibLus 引述的 UNI 11337 命名，6D 是建成工程的运维：使用、维护和设施管理。注意：在国际上，6D 常常指可持续性。
+v0300	Autodesk Tandem
+v0301	Archibus
+v0302	Planon
+v0303	Dalux FM
+v0304	业主接收的是一座带有完整信息的建筑：构件、保修和使用手册。
+v0305	以模型对象为基础制定维护计划。
+v0306	与 ISO 19650-3（运维阶段）相衔接。
+v0307	<b>示例。</b>市政技术人员在模型中打开锅炉的信息卡，就能看到型号、安装日期和维护期限。
+v0308	来源：<a href="https://biblus.acca.it/modellazione-bim-5d/" target="_blank" rel="noopener">BibLus（ACCA），「Modellazione BIM 5D」（意大利文），2026 ↗</a>；<a href="https://aifos.org/home/news/int/interventi_commenti/bim-bum-bam---bit" target="_blank" rel="noopener">AiFOS，「BIM BUM BAM… bit」（意大利文）↗</a>；<a href="https://www.designingbuildings.co.uk/wiki/BIM_dimensions" target="_blank" rel="noopener">Designing Buildings Wiki，「BIM dimensions」（英文）↗</a>
+v0309	可持续性
+v0310	在意大利的命名中，7D 是对环境、经济和社会可持续性的评估。而在国外，7D 常常指设施管理。
+v0311	One Click LCA
+v0312	Tally
+v0313	Autodesk Insight
+v0314	IES VE
+v0315	DesignBuilder
+v0316	Termus
+v0317	基于模型进行能耗分析。
+v0318	利用材料用量评估环境影响和生命周期。
+v0319	在环境层面比较不同设计方案。
+v0320	<b>示例。</b>两种立面方案不仅比较造价，还比较能耗和所用材料。
+v0321	来源：<a href="https://biblus.acca.it/modellazione-bim-5d/" target="_blank" rel="noopener">BibLus（ACCA），「Modellazione BIM 5D」（意大利文），2026 ↗</a>；<a href="https://aifos.org/home/news/int/interventi_commenti/bim-bum-bam---bit" target="_blank" rel="noopener">AiFOS，「BIM BUM BAM… bit」（意大利文）↗</a>
+v0322	安全
+v0323	8D 一词最早由 Imriyas Kamardeen（2010）提出，指从设计阶段就服务于事故预防的 BIM（「通过设计预防」，prevention through design）。如今人们谈论的是贯穿工程全生命周期的安全。
+v0324	Synchro 4D 和 Navisworks 用于模拟施工阶段
+v0325	Solibri 用于基于规则的检查
+v0326	CerTus 用于安全计划
+v0327	在设计阶段就识别风险，并通过设计消除风险。
+v0328	在模型上规划防护设施、通道和施工区域。
+v0329	不仅研究工地的风险，也研究建筑使用期间的风险。
+v0330	<b>示例。</b>临时护栏恰好出现在 4D 模型中浇筑悬空楼板的那一周。
+v0331	来源：<a href="https://www.ingenio-web.it/articoli/l-ottava-dimensione-del-bim-sicurezza-e-prevenzione-in-cantiere/" target="_blank" rel="noopener">Ingenio，「L'ottava dimensione del BIM」（意大利文），2022 ↗</a>；<a href="https://aifos.org/home/news/int/interventi_commenti/bim-bum-bam---bit" target="_blank" rel="noopener">AiFOS，「BIM BUM BAM… bit」（意大利文）↗</a>

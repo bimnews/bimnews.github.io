@@ -1,0 +1,102 @@
+v0230	<b>Attribut oder Parameter?</b> Ein Attribut ist eine Information, die an einem Element der Zeichnung hängt, etwa der Layer oder die Farbe einer Linie: Es beschreibt das Element, steuert es aber nicht. Der Parameter dagegen steuert das Objekt: Du änderst den Wert, und die Form ändert sich, mit ihr alles, was davon abhängt.
+v0231	<b>Planung</b><span>Architektur, Tragwerk und Haustechnik arbeiten am selben Modell</span>
+v0232	<b>Ausschreibung</b><span>Mengen und Kosten aus dem Modell, nicht von Hand nachgezählt</span>
+v0233	<b>Baustelle</b><span>Das Bauunternehmen baut auf einem bereits koordinierten Modell</span>
+v0234	<b>Betrieb</b><span>Der Bauherr erhält ein Gebäude mit seinen Informationen</span>
+v0235	<b>Kollisionen sieht man früher.</b> Die Leitung, die den Träger kreuzt, zeigt sich im Modell, nicht auf der Baustelle.
+v0236	<b>Pläne immer stimmig.</b> Grundrisse, Schnitte und Bauteillisten entstehen aus demselben Modell: Du änderst etwas, und es wird überall aktualisiert.
+v0237	<b>Die Fachbereiche verstehen sich.</b> Über das offene Format IFC, auch wenn sie unterschiedliche Software nutzen.
+v0238	Seit dem <strong>1. Januar 2025</strong> müssen öffentliche Auftraggeber in Italien Methoden und Werkzeuge des digitalen Informationsmanagements bei Planung und Ausführung von <strong>Neubauten</strong> und <strong>Eingriffen in bestehende Bauten</strong> mit geschätzten Baukosten <strong>über 2 Millionen Euro</strong> einsetzen.
+v0239	Gesetzesvertretendes Dekret 36/2023, Art. 43, Abs. 1, geändert durch Gesetzesvertretendes Dekret 209/2024
+v0240	Zehn Jahre Normen als Fischgräte: Man liest von links nach rechts, von 2015 bis heute. Tippe auf eine Etappe, um zu sehen, was sie geändert hat; UNI- und ISO-Normen kauft man auf den offiziellen Websites, hier findest du den direkten Link.
+v0241	Alles
+v0242	UNI-Normen
+v0243	ISO-Normen
+v0244	Gesetze, Dekrete, Leitlinien
+v0245	Wo BIM entsteht und wie es zu uns kommt. Oben die Welt, von der ersten Idee 1975 bis zu den ISO-Normen; unten Italien, von der ersten Norm zur Codierung 2009 bis zur heutigen Pflicht. Die Linien verbinden eine italienische Norm mit der internationalen, die sie übernimmt. Tippe auf eine Etappe für Details und Quellen.
+v0246	Beide
+v0247	Nur Welt
+v0248	Nur Italien
+v0249	Verbindungen zeigen
+v0250	Die „Dimensionen“ sagen, welche Informationen dem Modell über die Geometrie hinaus hinzugefügt werden. Vor 3D steht die zweidimensionale CAD-Zeichnung (2D). Bis 5D herrscht überall Einigkeit; ab 6D ändern sich die Definitionen von Land zu Land, und 8D, 9D und 10D sind noch diskutierte Vorschläge, keine Normen. Deshalb sollte man in einer Leistungsbeschreibung sagen, welche Anwendungen und welche Informationen nötig sind, nicht nur ein Etikett.
+v0251	<b>3D</b><span>Das geometrische Modell</span>
+v0252	<b>4D</b><span>Die Zeit</span>
+v0253	<b>5D</b><span>Die Kosten</span>
+v0254	<b>6D</b><span>Der Betrieb des Bauwerks</span>
+v0255	<b>7D</b><span>Die Nachhaltigkeit</span>
+v0256	<b>8D</b><span>Die Sicherheit</span>
+v0257	<b>9D</b><span>Schlankes Bauen</span>
+v0258	<b>10D</b><span>Die Industrialisierung</span>
+v0259	Das geometrische Modell
+v0260	Der Ausgangspunkt: ein dreidimensionales Modell aus Objekten (Wände, Decken, Träger, Rohrleitungen), jedes mit seiner Geometrie und seinen Informationen. Alle anderen Dimensionen bauen darauf auf.
+v0261	Revit
+v0262	Archicad
+v0263	Allplan
+v0264	Tekla Structures
+v0265	Vectorworks
+v0266	Bonsai (Open Source, früher BlenderBIM)
+v0267	Navisworks, Solibri für die Koordination
+v0268	Mehr erfahren
+v0269	Enthält Geometrie, Lage, Materialien und Klassifizierung jedes Objekts.
+v0270	Grundrisse, Schnitte und Bauteillisten entstehen aus demselben Modell und bleiben stimmig.
+v0271	Die Fachbereiche koordinieren sich, und Kollisionen werden vor der Baustelle gefunden.
+v0272	<b>Beispiel.</b> Der Luftkanal, der einen Träger kreuzt, zeigt sich in der Kollisionsprüfung, nicht während der Arbeiten.
+v0273	Quellen: <a href="https://www.designingbuildings.co.uk/wiki/BIM_dimensions" target="_blank" rel="noopener">Designing Buildings Wiki, „BIM dimensions“ (auf Englisch) ↗</a>
+v0274	Die Zeit
+v0275	Die Objekte des Modells werden mit den Vorgängen des Bauzeitenplans verknüpft: Man sieht, wie das Bauwerk mit der Zeit wächst, Phase für Phase.
+v0276	Navisworks (TimeLiner)
+v0277	Synchro 4D
+v0278	Fuzor
+v0279	Microsoft Project und Primavera P6 für den zu verknüpfenden Bauzeitenplan
+v0280	Simuliert den Bauablauf und die Arbeitsphasen.
+v0281	Hilft, die Baustelle zu organisieren: Kräne, Lager, Wege, Arbeitsbereiche.
+v0282	Vergleicht Geplantes mit Ausgeführtem.
+v0283	<b>Beispiel.</b> Vor dem Start sieht man Woche für Woche, wo Kran und Material stehen und welche Kolonnen an derselben Stelle arbeiten.
+v0284	Quellen: <a href="https://www.designingbuildings.co.uk/wiki/BIM_dimensions" target="_blank" rel="noopener">Designing Buildings Wiki, „BIM dimensions“ (auf Englisch) ↗</a>; <a href="https://aifos.org/home/news/int/interventi_commenti/bim-bum-bam---bit" target="_blank" rel="noopener">AiFOS, „BIM BUM BAM… bit“ (auf Italienisch) ↗</a>
+v0285	Die Kosten
+v0286	Den an den Objekten gemessenen Mengen werden die Positionen des Preisverzeichnisses zugeordnet: Die Kostenermittlung entsteht aus dem Modell und wird mit ihm aktualisiert.
+v0287	PriMus-IFC
+v0288	CostX
+v0289	RIB iTWO
+v0290	Navisworks (Quantification)
+v0291	TeamSystem CPM
+v0292	Noch keine eigene Nachricht in der Übersicht: Wir ergänzen sie, sobald es eine gibt.
+v0293	Automatisch ermittelte Mengen, nicht von Hand nachgezählt.
+v0294	Schnelle Schätzungen, wenn sich Planungsentscheidungen ändern.
+v0295	Grundlage für Nachträge und Abschlagsrechnungen.
+v0296	<b>Beispiel.</b> Du änderst den Schichtaufbau einer Decke, und die Kostenermittlung aktualisiert sich, mit der bereits berechneten Kostendifferenz.
+v0297	Quellen: <a href="https://biblus.acca.it/modellazione-bim-5d/" target="_blank" rel="noopener">BibLus (ACCA), „Modellazione BIM 5D“ (auf Italienisch), 2026 ↗</a>; <a href="https://www.designingbuildings.co.uk/wiki/BIM_dimensions" target="_blank" rel="noopener">Designing Buildings Wiki, „BIM dimensions“ (auf Englisch) ↗</a>
+v0298	Der Betrieb des Bauwerks
+v0299	Nach der Nomenklatur der UNI 11337, wie BibLus sie wiedergibt, ist 6D der Betrieb des fertigen Bauwerks: Nutzung, Instandhaltung, Facility Management. Achtung: International bezeichnet 6D oft die Nachhaltigkeit.
+v0300	Autodesk Tandem
+v0301	Archibus
+v0302	Planon
+v0303	Dalux FM
+v0304	Der Bauherr erhält ein Gebäude mit seinen Informationen: Bauteile, Garantien, Handbücher.
+v0305	Geplante Instandhaltung auf Grundlage der Objekte des Modells.
+v0306	Verbindung zur ISO 19650-3, der Betriebsphase.
+v0307	<b>Beispiel.</b> Der Techniker der Gemeinde öffnet das Datenblatt des Heizkessels im Modell und findet Modell, Einbaudatum und Wartungstermine.
+v0308	Quellen: <a href="https://biblus.acca.it/modellazione-bim-5d/" target="_blank" rel="noopener">BibLus (ACCA), „Modellazione BIM 5D“ (auf Italienisch), 2026 ↗</a>; <a href="https://aifos.org/home/news/int/interventi_commenti/bim-bum-bam---bit" target="_blank" rel="noopener">AiFOS, „BIM BUM BAM… bit“ (auf Italienisch) ↗</a>; <a href="https://www.designingbuildings.co.uk/wiki/BIM_dimensions" target="_blank" rel="noopener">Designing Buildings Wiki, „BIM dimensions“ (auf Englisch) ↗</a>
+v0309	Die Nachhaltigkeit
+v0310	In der italienischen Nomenklatur ist 7D die Bewertung der ökologischen, wirtschaftlichen und sozialen Nachhaltigkeit. Im Ausland ist 7D dagegen oft das Facility Management.
+v0311	One Click LCA
+v0312	Tally
+v0313	Autodesk Insight
+v0314	IES VE
+v0315	DesignBuilder
+v0316	Termus
+v0317	Energieanalysen auf Grundlage des Modells.
+v0318	Materialmengen zur Bewertung von Auswirkungen und Lebenszyklus.
+v0319	Vergleich von Planungsvarianten auch unter Umweltgesichtspunkten.
+v0320	<b>Beispiel.</b> Zwei Fassadenlösungen werden nicht nur nach Kosten verglichen, sondern auch nach Verbrauch und eingesetzten Materialien.
+v0321	Quellen: <a href="https://biblus.acca.it/modellazione-bim-5d/" target="_blank" rel="noopener">BibLus (ACCA), „Modellazione BIM 5D“ (auf Italienisch), 2026 ↗</a>; <a href="https://aifos.org/home/news/int/interventi_commenti/bim-bum-bam---bit" target="_blank" rel="noopener">AiFOS, „BIM BUM BAM… bit“ (auf Italienisch) ↗</a>
+v0322	Die Sicherheit
+v0323	Der Begriff 8D wurde erstmals von Imriyas Kamardeen (2010) für ein BIM verwendet, das schon in der Planung der Unfallverhütung dient („prevention through design“). Heute spricht man von Sicherheit über den ganzen Lebenszyklus des Bauwerks.
+v0324	Synchro 4D und Navisworks zur Simulation der Phasen
+v0325	Solibri für regelbasierte Prüfungen
+v0326	CerTus für den Sicherheitsplan
+v0327	Risiken schon in der Planung erkennen und wegplanen.
+v0328	Schutzmaßnahmen, Wege und Baustellenbereiche am Modell planen.
+v0329	Auch die Risiken des genutzten Gebäudes untersuchen, nicht nur die der Baustelle.
+v0330	<b>Beispiel.</b> Das provisorische Geländer erscheint im 4D-Modell genau in der Woche, in der die Decke über dem Hohlraum betoniert wird.
+v0331	Quellen: <a href="https://www.ingenio-web.it/articoli/l-ottava-dimensione-del-bim-sicurezza-e-prevenzione-in-cantiere/" target="_blank" rel="noopener">Ingenio, „L'ottava dimensione del BIM“ (auf Italienisch), 2022 ↗</a>; <a href="https://aifos.org/home/news/int/interventi_commenti/bim-bum-bam---bit" target="_blank" rel="noopener">AiFOS, „BIM BUM BAM… bit“ (auf Italienisch) ↗</a>

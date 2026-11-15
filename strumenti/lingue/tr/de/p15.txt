@@ -1,0 +1,63 @@
+v1199	← Startseite · BIM News
+v1200	BIM News, die Übersicht zum BIM in der Welt, kuratiert von Marco Scigliuolo: eine inklusive Website, damit alle BIM einführen
+v1201	Die wöchentliche Übersicht aus der Welt, mit der interaktiven Karte
+v1202	Die Nachrichten der jüngsten Woche
+v1203	Die Auswahlkriterien, angefangen bei der Inklusion
+v1204	Weltkarte
+v1205	Kontinente, Länder und Regionen mit der Zahl der Nachrichten
+v1206	Archiv seit 2015
+v1207	Alle Nachrichten nach Jahr und Monat, mit Filtern und Suche
+v1208	Die nächsten Termine, neben den Nachrichten
+v1209	Die Nachrichten, in denen BIM auf künstliche Intelligenz trifft
+v1210	Wissenschaftliche Artikel zum BIM, mit den Original-Abstracts
+v1211	Was BIM ist, einfach erklärt: Normen, Dimensionen und Abkürzungen
+v1212	Die Normen von 2015 bis heute
+v1213	Die Fischgräten-Zeitleiste, von links nach rechts
+v1214	Die Dimensionen des BIM
+v1215	Von 3D bis 10D, mit Grafiken und Quellen
+v1216	Die Abkürzungen in einer Minute
+v1217	IFC, CDE, LOD, LOIN und die anderen
+v1218	Konkrete Ergebnisse
+v1219	Eingesparte Stunden und Kosten laut Studien, mit dem Zähler für dein Büro
+v1220	BIM im Lauf der Zeit: Welt und Italien
+v1221	Von 1975 bis heute, internationale und italienische Etappen im Vergleich
+v1222	Zertifizierungen weltweit
+v1223	Wer BIM-Kompetenzen zertifiziert, wo es Pflicht ist und nach welcher Norm
+v1224	Aufgezeichnete Webinare und kostenlose Kanäle zum BIM
+v1225	Webinare und Konferenzen
+v1226	Kostenlose Aufzeichnungen in vier Sprachen
+v1227	Von den Universitäten
+v1228	Vorlesungen aus Stanford, dem Technion, der TUM, Cambridge und italienischen Universitäten
+v1229	YouTube-Kanäle
+v1230	Die Kanäle, die über BIM sprechen
+v1231	Gesetzliche Fristen, Veranstaltungen und Webinare, gefiltert nach Region
+v1232	Die BIM-Pflichten, die in Kraft treten, Land für Land
+v1233	Messen, Kongresse und Konferenzen, Monat für Monat
+v1234	Online-Termine, kostenlos und kostenpflichtig
+v1235	Wer die Website betreut: Profil, Projekte, Ideen und Leidenschaften
+v1236	Gedanken, Lösungen und Handbücher für Planende
+v1237	Was es heißt, Ingenieur zu sein
+v1238	Zwölf häufige Probleme, eines nach dem anderen zu lösen
+v1239	Skripte, um wiederkehrende Arbeit in der Modellierung zu verringern
+v1240	Routinen und Skripte zum Kopieren oder Herunterladen
+v1241	Berufliche Handbücher, mit Claude nach meinen Vorgaben geschrieben, online zu lesen oder als PDF herunterzuladen
+v1242	Erkundung und Disziplin
+v1243	Ingenieur sein
+v1244	Wie man sich sieht und fühlt
+v1245	Von der AGESCI zum CNGEI, den konfessionslosen Pfadfindern
+v1246	Die fünf Tugenden: Weisheit, Mitgefühl, Aufrichtigkeit, Mut, Geduld
+v1247	Nicht berufliche Handbücher: Klang, Gitarre, Bass
+v1248	Sechs Kategorien grundlegender Lektüre
+v1249	Menschen verstehen, angefangen bei sich selbst
+v1250	Die Geschichten, die bleiben
+v1251	Die Sammlungen, zu denen ich zurückkehre
+v1252	Die Sachbücher, die die Art zu denken verändern
+v1253	Sehen lernen
+v1254	Wirtschaft verstehen, jenseits der Schlagworte
+v1255	Die häufigen Fragen beim Erkunden der Website, mit den Sprachen der Suche
+v1256	Wer die Website betreibt, wie die Nachrichten aktualisiert werden, Kontakte und Zusammenarbeit
+v1257	Fragen: Woher kommen die Nachrichten, Wie wählt ihr aus, was veröffentlicht wird…
+v1258	Fragen: In welchen Sprachen sucht ihr die Nachrichten, Wie habt ihr diese Sprachen ausgewählt…
+v1259	Fragen: Ich kenne BIM nicht: Wo fange ich an, Was sind die Handbücher auf der Seite des Kurators…
+v1260	Fragen: Was ist der Unterschied zwischen vollständiger und einfacher Version, Wie wechsle ich vom dunklen zum hellen Design…
+v1261	Öffnen →

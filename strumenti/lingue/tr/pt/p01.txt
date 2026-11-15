@@ -1,0 +1,97 @@
+v0001	<span aria-hidden="true" class="lang-ico">🌐</span>Idioma
+v0002	Italiano
+v0003	English
+v0004	Français
+v0005	Deutsch
+v0006	Español
+v0007	Português
+v0008	A sua região
+v0009	O mundo inteiro
+v0010	Europa
+v0011	Ásia
+v0012	África
+v0013	América
+v0014	Oceânia
+v0015	Guia do site
+v0016	Tema claro
+v0017	Versão essencial
+v0018	Não foi possível carregar as notícias. Verifique a ligação e recarregue a página.
+v0019	BIM News
+v0020	As novidades sobre o BIM reunidas todas as semanas, cada uma com um resumo em italiano e a ligação para a fonte. Um site com curadoria de <a href="#chi-sono">Marco Scigliuolo</a>, sempre em construção: o curador atualiza-o e amplia-o sempre que necessário.
+v0021	curadoria do Eng. <a href="#chi-sono">Marco Scigliuolo</a>
+v0022	O BIM do mundo, em italiano e com a fonte. Para todos, da grande entidade pública ao pequeno gabinete.
+v0023	Para onde vamos hoje?
+v0024	Escolha um país no mapa ou escreva-o acima
+v0025	<b>Versão essencial:</b> o mapa interativo (cerca de 380 KB) não é descarregado. Pode filtrar as notícias com «Área geográfica», ou então
+v0026	Carregar o mapa
+v0027	Fronteiras: Natural Earth (domínio público); regiões italianas: ISTAT, elaboração openpolis (CC BY); globo: world-atlas e d3-geo (licença ISC), cidades de Natural Earth.
+v0028	As novidades BIM do Alto Ádige ao resto do mundo, reunidas todas as semanas, cada uma com a ligação para a fonte.
+v0029	O que é o BIM News, e o que não é
+v0030	<b class="si">É</b> um agregador de informação que quer ajudar a difundir a cultura BIM no mundo da construção e, ao mesmo tempo, o blogue pessoal do curador: uma pequena biblioteca onde ler e informar-se.
+v0031	<b class="no">Não é</b> uma rede social para moderar nem um lugar para expressar opiniões: para discutir, encontramo-nos mais tarde no <a href="https://www.linkedin.com/in/marco-scigliuolo/" target="_blank" rel="noopener">LinkedIn ↗</a>.
+v0032	<b>A missão do site:</b> dar a conhecer a cultura BIM ao mundo inteiro. <b>A missão pessoal do curador:</b> difundi-la em Itália, um país muito ligado às suas tradições, para que o BIM não seja apenas um «certificado» para participar em concursos públicos, mas uma ferramenta profundamente ligada ao método de projeto. Milagres não se fazem, mas tenta-se fazer as coisas bem. Estamos a tentar.
+v0033	O BIM no mundo, uma semana de cada vez
+v0034	Esta é a resenha completa: todas as semanas chegam notícias sobre o BIM de todo o mundo, são resumidas em italiano e colocadas no mapa, até à região ou ao estado onde acontecem. Normas e obrigações, contratação pública, projetos, normas técnicas e tecnologias.
+v0035	O nosso critério: como escolhemos as notícias, as fontes e as línguas
+v0036	<b>O critério de fundo é a inclusão.</b> Este site nasce para que todos adotem o BIM: não só os grandes donos de obra e as grandes empresas de engenharia, mas também o pequeno gabinete, a empresa da aldeia, o município de montanha, o estudante. Por isso as notícias são escritas em italiano simples, as siglas são explicadas, privilegiam-se os formatos abertos e os recursos gratuitos, e no mapa tem lugar cada país que dá um passo em frente, mesmo pequeno.
+v0037	O mapa é mundial por opção: o BIM não pertence a um único país. O desejo do curador é que cada organização, em qualquer parte do mundo, possa servir-se desta tecnologia para construir melhor e, assim, melhorar a vida de quem habita, estuda e trabalha nos edifícios.
+v0038	Como escolhemos as notícias
+v0039	As notícias sobre o BIM são muitíssimas: todos os dias a imprensa do setor publica novidades sobre produtos, cursos e casos de empresas. Esta resenha não as reúne todas: é uma seleção do que pode realmente interessar a quem projeta e a quem trabalha no setor.
+v0040	<b>Normas e obrigações</b>: leis, decretos e prazos para a contratação pública
+v0041	<b>Normas técnicas</b>: ISO 19650, UNI 11337, IFC e os outros formatos abertos
+v0042	<b>Estratégias nacionais e contratação</b>: planos BIM dos governos, grandes projetos e obras públicas
+v0043	<b>Software e inteligência artificial</b>: só as novidades que mudam a forma de trabalhar
+v0044	<b>Eventos de referência</b>: feiras, congressos e prémios do setor
+v0045	Com igual interesse, prefere-se a notícia que ajuda alguém a começar: um guia gratuito, uma obrigação explicada, um primeiro projeto-piloto, um país que parte do zero.
+v0046	De que fontes, por ordem de fiabilidade
+v0047	<b>Fontes institucionais</b>, sempre admitidas: governos, ministérios, jornais oficiais, organismos de normalização (ISO, CEN, UNI, DIN e os equivalentes nacionais), secções nacionais da buildingSMART, entidades adjudicantes públicas, universidades e bancos de desenvolvimento. Cidades, regiões e províncias só contam quando dão um contributo concreto para o BIM: uma obrigação, um regulamento, uma licença de construção baseada no modelo, um programa, uma grande obra.
+v0048	<b>Imprensa de referência</b>: publicações do setor com redação, grandes jornais nacionais, agências noticiosas.
+v0049	<b>Grandes empresas</b>, só para factos de peso real, como uma grande obra entregue em BIM; nunca para apresentar um produto.
+v0050	Ficam sempre de fora blogues pessoais, sites de gabinetes ou consultores individuais, revendedores, notícias locais, publicações nas redes sociais e sites sem autor nem data. Cada notícia é verificada abrindo a sua fonte, e nada anterior a 2015 é publicado.
+v0051	As línguas em que procuramos as notícias
+v0052	Cada notícia é procurada na língua do país onde nasce, não só em inglês.
+v0053	<b>Em verificação</b>: línguas nacionais de países onde esperamos atividade BIM. Ficam na lista se trouxerem fontes válidas; caso contrário, saem.
+v0054	Como as escolhemos está explicado nas <a href="#faq">perguntas frequentes</a>.
+v0055	Cada notícia tem a ligação para a fonte principal, para quem a quiser ler na íntegra. Quando uma data ou um pormenor não são certos, uma nota assinala-o.
+v0056	Explore as notícias por local, tema e período com o mapa, os filtros e o arquivo; no separador BIM & AI encontra as dedicadas à inteligência artificial. Na coluna da esquerda encontra também os próximos eventos e webinars.
+v0057	Quando o poder da inteligência artificial encontra o BIM
+v0058	Um modelo BIM é um grande arquivo ordenado de informação: geometrias, materiais, instalações, prazos e custos. A inteligência artificial sabe ler esses dados e pô-los a trabalhar: propõe soluções, deteta erros e interferências antes da obra, trata das tarefas repetitivas e responde a perguntas em linguagem natural.
+v0059	Juntos podem fazer realmente a diferença no mundo da construção: projetos mais coerentes, obras mais seguras, edifícios que consomem menos e se gerem melhor, para quem os constrói e para quem os vive. As decisões, porém, continuam a ser de quem projeta e assina.
+v0060	Aqui encontra as notícias em que a inteligência artificial aplicada ao BIM é o tema principal, com o mesmo mapa, os mesmos filtros e o mesmo arquivo do BIM News.
+v0061	Filtros e pesquisa
+v0062	Pesquisar
+v0063	Ano
+v0064	Todos
+v0065	Mês
+v0066	openBIM
+v0067	Prémios
+v0068	Administração pública
+v0069	Plataformas
+v0070	Software
+v0071	IA
+v0072	Regulamentação
+v0073	Associações
+v0074	Eventos
+v0075	Sustentabilidade
+v0076	Formação
+v0077	Gestão
+v0078	Limpar filtros
+v0079	Eventos e webinars
+v0080	Webinars
+v0081	O mais perto de mim
+v0082	Datas e custos verificados nas páginas dos organizadores quando os inserimos: confirme-os sempre antes de se inscrever. A sua localização fica no seu navegador e não é enviada a ninguém.
+v0083	<strong>Língua.</strong> As notícias são escritas em italiano, com a ligação para a fonte original. Para o texto completo noutra língua, use a tradução integrada do seu navegador.
+v0084	Arquivo: de 2015 até hoje, por ano e mês
+v0085	← Mais recentes
+v0086	Anteriores →
+v0087	Nenhuma notícia corresponde aos filtros. Tente outra palavra ou limpe os filtros.
+v0088	As mais lidas
+v0089	A classificação aparecerá quando o site estiver online e tiver os primeiros leitores.
+v0090	Classificação da semana
+v0091	BIM Academia
+v0092	A investigação universitária sobre o BIM, para ler mesmo sem dominar o inglês: de cada artigo, o título e o resumo, o original a um clique e a ligação direta para a publicação.
+v0093	Tema
+v0094	Traduzido para italiano
+v0095	Língua original
+v0096	Como escolhemos os artigos
+v0097	Reunimos artigos científicos sobre o BIM publicados em revistas com revisão por pares, os mesmos que se encontram no Google Scholar ou no Academia.edu, procurando-os nos arquivos abertos de metadados das publicações (Crossref). Só publicamos artigos em acesso aberto com licença Creative Commons BY: é a licença que permite reproduzir e traduzir o resumo citando os autores e a fonte.

@@ -1,0 +1,74 @@
+v0332	البناء الرشيق
+v0333	يُدخل البعد 9D إلى النموذج «البناء الرشيق» (lean construction): هدر أقل في الوقت والمواد والعمل، مع تدفق أكثر استمرارية للأنشطة يخططه البنّاؤون معًا.
+v0334	Touchplan (Last Planner)
+v0335	Procore
+v0336	Autodesk Build
+v0337	Dalux Field
+v0338	كميات دقيقة لطلب المادة المناسبة في الوقت المناسب.
+v0339	تخطيط مشترك للأنشطة بين المقاولين والمصممين.
+v0340	انتظار أقل، وإعادة عمل أقل، وهدر أقل.
+v0341	<b>مثال.</b> تصل المواد إلى الموقع عند الحاجة إليها، بالكمية المقيسة على النموذج، من دون مخازن تعيق العمل.
+v0342	المصادر: <a href="https://aifos.org/home/news/int/interventi_commenti/bim-bum-bam---bit" target="_blank" rel="noopener">AiFOS، «BIM BUM BAM… bit» (بالإيطالية) ↗</a>
+v0343	التصنيع
+v0344	يتجه البعد 10D إلى تصنيع البناء: تصميم المبنى وإنتاجه كمنتج صناعي، بمكوّنات مسبقة الصنع خارج الموقع تُركّب في مكانها.
+v0345	Allplan Precast
+v0346	Planbar
+v0347	hsbcad
+v0348	cadwork
+v0349	يصبح النموذج مصدر البيانات للإنتاج في المصنع.
+v0350	تصنيع مسبق وإنتاج «خارج الموقع» مع ضبط الجودة.
+v0351	يصبح الموقع في الغالب مكانًا للتركيب.
+v0352	<b>مثال.</b> من نموذج سقف فولاذي تخرج كل التفاصيل اللازمة لتصنيع القطع وتركيبها.
+v0353	البرامج أمثلة شائعة، لا قائمة كاملة ولا توصية: كثير منها يغطي عدة أبعاد. مقارنة بين الاصطلاحات. <b>إيطاليا (UNI 11337 كما تنقلها BibLus):</b> 6D الإدارة، 7D الاستدامة. <b>الاستخدام الدولي الغالب:</b> 6D الاستدامة، 7D إدارة المرافق. الرسوم التوضيحية مرسومة لهذا الموقع. لمقدمة نقدية حول هذه التسميات: <a href="https://www.shelidon.it/bimpill-le-dimensioni-e-gli-usi" target="_blank" rel="noopener">Shelidon، «#BIMpill – Le dimensioni e gli usi» (بالإيطالية) ↗</a>.
+v0354	IFC
+v0355	<i>Industry Foundation Classes</i>: الصيغة المفتوحة التي تتبادل بها البرامج المختلفة النماذج. وهي المعيار ISO 16739-1.
+v0356	العمل بصيغ ومعايير مفتوحة، من دون الاعتماد على برنامج واحد.
+v0357	ACDat · CDE
+v0358	بيئة البيانات المشتركة (بالإنجليزية <i>Common Data Environment</i>): حيث تُحفظ نماذج المشروع ووثائقه وتُشارك وتُعتمد.
+v0359	CI · EIR
+v0360	متطلبات المالك من المعلومات (بالإيطالية «Capitolato informativo»): ما يطلبه المالك، وأي معلومات، وبأي صيغة، ومتى (UNI 11337-5).
+v0361	oGI · pGI · BEP
+v0362	عرض إدارة المعلومات وخطتها: كيف يستجيب المتعاقد للمتطلبات، أولًا في المناقصة ثم أثناء العقد. خارج إيطاليا يُقال BEP، أي <i>BIM Execution Plan</i>.
+v0363	LOD
+v0364	مستوى تطوير العناصر، من A إلى G في UNI 11337-4: إلى أي حد يكون العنصر محددًا في تلك المرحلة.
+v0365	LOIN
+v0366	<i>Level of information need</i>، مستوى الحاجة إلى المعلومات: كم من المعلومات وأيها مطلوب فعلًا (ISO 7817-1).
+v0367	Clash detection
+v0368	فحص آلي للتعارضات بين نماذج التخصصات المختلفة.
+v0369	أدوار BIM
+v0370	BIM Manager وBIM Coordinator وBIM Specialist وCDE Manager: الأدوار التي تحددها UNI 11337-7.
+v0371	كم يوفّر BIM فعلًا؟ أدناه أرقام الأبحاث التي تمكّنا من التحقق منها، مع مصدر كل منها، ثم عدّاد يطبقها على مكتبك. تتغير الأرقام كثيرًا من مشروع إلى آخر: يجب قراءتها كمراتب تقريبية لا كوعود.
+v0372	وقت أقل لإعداد جدول الكميات والتكاليف من النموذج، بتقديرات دقيقة في حدود 3%
+v0373	بيانات Stanford CIFE عن 32 مشروعًا، كما وردت في <a href="https://doi.org/10.5130/ajceb.v12i4.3032" target="_blank" rel="noopener">Azhar, Khalfan, Maqsood، «Building information modelling (BIM): now and beyond»، 2012/2015، CC BY ↗</a>
+v0374	من التعديلات غير المدرجة في الميزانية أُلغيت
+v0375	بيانات Stanford CIFE كما وردت في <a href="https://doi.org/10.1061/(ASCE)LM.1943-5630.0000127" target="_blank" rel="noopener">Azhar، «BIM: Trends, Benefits, Risks, and Challenges for the AEC Industry»، 2011 ↗</a>
+v0376	من قيمة العقد وُفّرت بفضل فحص التعارضات
+v0377	بيانات Stanford CIFE كما وردت في <a href="https://doi.org/10.1061/(ASCE)LM.1943-5630.0000127" target="_blank" rel="noopener">Azhar، «BIM: Trends, Benefits, Risks, and Challenges for the AEC Industry»، 2011 ↗</a>. وفي مشروع بنية تحتية كبير تقدّر دراسة <a href="https://doi.org/10.1080/01446193.2020.1802768" target="_blank" rel="noopener">Chahrour وآخرين، «Cost-benefit analysis of BIM-enabled design clash detection and resolution»، 2021 ↗</a> التوفير بنسبة 20%
+v0378	وُفّرت بفحص التعارضات قبل البدء في الموقع، في مبنى جامعي بقيمة 35 مليون دولار
+v0379	دراسة حالة Holder Construction في <a href="https://doi.org/10.5130/ajceb.v12i4.3032" target="_blank" rel="noopener">Azhar, Khalfan, Maqsood، «Building information modelling (BIM): now and beyond»، 2012/2015، CC BY ↗</a>
+v0380	أسبوعيًا لكل شخص تضيع في الموقع بين النزاعات وإعادة العمل والبحث عن المعلومات
+v0381	<a href="https://www.prnewswire.com/news-releases/new-research-from-plangrid-and-fmi-identifies-factors-costing-the-construction-industry-more-than-177-billion-annually-300689826.html" target="_blank" rel="noopener">PlanGrid وFMI، «Construction Disconnected»، 2018 ↗</a>: استطلاع شمل 600 مهني في الولايات المتحدة
+v0382	من إعادة العمل في مواقع البناء الأمريكية ينشأ عن ضعف التواصل وأخطاء بيانات المشروع
+v0383	<a href="https://www.prnewswire.com/news-releases/new-research-from-plangrid-and-fmi-identifies-factors-costing-the-construction-industry-more-than-177-billion-annually-300689826.html" target="_blank" rel="noopener">PlanGrid وFMI، «Construction Disconnected»، 2018 ↗</a>
+v0384	عدّاد مكتبك
+v0385	عدد المصممين
+v0386	قيمة المشاريع المصممة في سنة
+v0387	5 ملايين $
+v0388	نسبة الوقت الضائع التي يستعيدها BIM
+v0389	التوفير من قيمة المشاريع
+v0390	طريقة الحساب: الساعات = الأشخاص × 14 ساعة أسبوعيًا × 46 أسبوعًا × النسبة المستعادة؛ التوفير = قيمة المشاريع × النسبة المئوية. القيم الأولية متحفظة عمدًا، أقل من 10% التي ذكرتها ستانفورد: إنها افتراضاتنا، فغيّرها بافتراضاتك.
+v0391	وللابتسام قليلًا
+v0392	أكواب القهوة والليالي الساهرة لعبة لا إحصاء: لم تقسها أي دراسة. أما بقية القسم فمأخوذة من المصادر المذكورة.
+v0393	إلزامية استخدام BIM لا تعني إلزامية الحصول على شهادة. في كل مكان تقريبًا تكون الشهادة طوعية: تفيد في إثبات قدرتك على ما تدّعيه أمام المالك، بحكم جهة مستقلة. إليك كيف تعمل في البلدان التي تحققنا منها، مع المعيار الذي ينظمها والمصدر.
+v0394	الأشخاص
+v0395	تُعتمد كفاءات دور معيّن، مثل BIM Manager أو BIM Coordinator: امتحان ثم الحفاظ على الشهادة عبر السنين. وتُعتمد الجهات التي تمنح شهادات الأشخاص وفق ISO/IEC 17024.
+v0396	المؤسسات
+v0397	يُشهد بأن مكتبًا أو شركة يدير المعلومات كما تطلب ISO 19650: تدقيق على العمليات والمشاريع يتكرر كل سنة.
+v0398	هونغ كونغ
+v0399	في الأشغال العامة التي تتجاوز 30 مليون دولار هونغ كونغي، يجب أن يقود فريق BIM لدى المتعاقد مدير BIM معتمد من Construction Industry Council ‏(CIC). وفي المناقصات منذ 1 يناير 2024 يجب أن يكون منسقو BIM معتمدين أيضًا (نصفهم على الأقل بالمستوى الكامل).
+v0400	DEVB Technical Circular (Works) رقم 2/2021 وتحديث 13/06/2023
+v0401	<a href="https://devb.gov.hk/filemanager/technicalcirculars/en/upload/387/1/C-2021-02-02.pdf" target="_blank" rel="noopener">تعميم DEVB، النص مع التحديثات (بالإنجليزية) ↗</a>
+v0402	إيطاليا
+v0403	يطلب قانون العقود الإيطالي من الجهات المتعاقدة تعيين مدير لبيئة البيانات المشتركة، ومدير واحد على الأقل للعمليات الرقمية، ولكل مشروع منسق لتدفقات المعلومات، بـ«كفاءة مناسبة» مكتسبة بالممارسة المهنية أو بدورات اجتيزت بنجاح. الشهادة غير مطلوبة: إنها وسيلة لتوثيق الكفاءة. الأدوار هي أدوار UNI 11337-7:2018؛ ومتطلبات اعتمادها في الوثيقة UNI/PdR 78:2020، السارية منذ 2 مارس 2020.
+v0404	المرسوم التشريعي 36/2023، الملحق I.9، المادة 1، الفقرة 3 · UNI 11337-7:2018 · UNI/PdR 78:2020
+v0405	<a href="https://www.codiceappalti.it/DLGS_36_2023/Allegato_I_9_Metodi_e_strumenti_di_gestione_informativa_digitale_delle_costruzioni_/12885" target="_blank" rel="noopener">الملحق I.9، النص النافذ (بالإيطالية) ↗</a> · <a href="https://www.certifico.com/normazione/news-normazione/uni-pdr-78-2020-requisiti-valutazione-di-conformita-uni-11337-7-2018" target="_blank" rel="noopener">UNI/PdR 78:2020، بطاقة تعريف (بالإيطالية) ↗</a>

@@ -1,0 +1,85 @@
+v0406	إسبانيا
+v0407	خطة BIM ‏(Plan BIM)، التي أقرّها مجلس الوزراء في 27 يونيو 2023، إلزامية لإدارة الدولة وتُطبَّق على مستويات من 2024 إلى 2030. لا تشترط شهادات شخصية: في المستويات العليا يجب أن يكون كل العاملين في العقد مدرَّبين وفق UNE-EN ISO 19650، ويلزم مسؤول BIM بخبرة لا تقل عن 3 سنوات في عقود BIM.
+v0408	Plan de Incorporación de la Metodología BIM en la contratación pública (CIBIM, 2023)
+v0409	<a href="https://public-buyers-community.ec.europa.eu/system/files/2024-02/Executive%20Summary%20_EN%20A4%20web.pdf" target="_blank" rel="noopener">ملخص Plan BIM (المفوضية الأوروبية، بالإنجليزية) ↗</a>
+v0410	المملكة المتحدة
+v0411	هنا تُعتمد المؤسسات أساسًا، أي قدرة الشركة على إدارة المعلومات وفق ISO 19650-2. مخطط BRE معتمد من UKAS منذ 2022 وفق ISO/IEC 17065، وهو من أوائل مخططات BIM في العالم التي حصلت على ذلك؛ وتمنح BSI علامتها Kitemark الخاصة بـ BIM.
+v0412	ISO 19650-2:2018 · ISO/IEC 17065:2012
+v0413	<a href="https://bregroup.com/press-releases/bre-bim-certification-ukas-accreditation" target="_blank" rel="noopener">BRE، اعتماد UKAS (بالإنجليزية) ↗</a>
+v0414	ألمانيا
+v0415	يحدد الدليل VDI/bS 2552 Blatt 8.1 المعارف الأساسية حول BIM. وتعترف buildingSMART Deutschland وVDI بالدورات التي تلتزم به، والامتحان النهائي هو امتحان buildingSMART International عبر الإنترنت.
+v0416	VDI/bS 2552 Blatt 8.1 ‏(BIM، المؤهلات، المعارف الأساسية)
+v0417	<a href="https://www.baulinks.de/bausoftware/2018/0092.php4" target="_blank" rel="noopener">إطلاق الشهادة، 2018 (بالألمانية) ↗</a>
+v0418	دولي · buildingSMART
+v0419	تعتمد Professional Certification من buildingSMART International معارف openBIM: مستوى أساسي (Foundation) ومستوى متقدم (Practitioner). تديرها الفروع الوطنية، التي يمكنها إضافة مستويات أخرى: في كندا هناك أربعة.
+v0420	buildingSMART Professional Certification
+v0421	<a href="https://buildingsmartcanada.ca/certification/" target="_blank" rel="noopener">buildingSMART Canada، المستويات (بالإنجليزية) ↗</a>
+v0422	مصادر جرى التحقق منها في نوفمبر 2026. الالتزامات تتغير: قبل أي مناقصة تحقّق من الإعلان والمعيار النافذ. ستُضاف بلدان أخرى مع البحث الشامل.
+v0423	المشرف
+v0424	من يشرف على BIM News. هنا، في الخلفية، الملف الشخصي والأعمال وتأملات في العمل ومقترحات لعالم BIM والأعمال الجارية وبعض الأفكار الشخصية.
+v0425	أنا Marco Scigliuolo، مهندس مدني مرخّص لمزاولة المهنة. درست في Politecnico di Bari وعملت مدرّسًا لفترة؛ ثم تفرغت لمهنة الهندسة. عملت في السابق على مشاريع بنية تحتية كبرى في شركة من القطاع. واليوم أعمل في تصميم الأنظمة، خاصة للمدارس والمكاتب العامة (حاليًا في مكتب في جنوب تيرول).
+v0426	أنا BIM Coordinator معتمد، ومنسق سلامة في مرحلتي التصميم والتنفيذ (CSP/CSE)، ومنذ وقت قريب Lead Auditor ISO 9001.
+v0427	هدفي أن أصبح BIM Manager وأتولى إدارة معلومات النماذج بالكامل.
+v0428	أشرف على BIM News: أبحث عن الأخبار، وأتحقق منها في مصادرها، وأكتب ملخصها.
+v0429	باختصار
+v0430	اليوم
+v0431	مصمم أنظمة · BIM Coordinator وSpecialist MEP<br><small>Baubüro · بولزانو، منذ 2026</small>
+v0432	الشهادات
+v0433	ماجستير في هندسة البناء والعمارة<br><small>Politecnico di Bari</small>
+v0434	الترخيص المهني
+v0435	الهدف
+v0436	BIM Manager
+v0437	السيرة الذاتية
+v0438	مهندس مدني مرخّص، أعمل في تصميم ونمذجة BIM للأنظمة الكهربائية والحرارية والصحية ومكافحة الحريق، وفي العمليات الرقمية المطبقة على التصميم: نماذج MEP في Revit، وعائلات بارامترية، وأتمتة باستخدام Dynamo، وتوافق IFC، وجداول الكميات ووثائق المشروع. أوسّع كفاءاتي في تصميم الأنظمة، ومحاسبة الأعمال، وحسابات الإضاءة، وكفاءة الطاقة وفق منهج CasaClima، بهدف تنسيق BIM وتحسين العمليات.
+v0439	مسيرتي المهنية، بدءًا من أحدث مرحلة. انقر على مرحلة لقراءة التفاصيل.
+v0440	عمل
+v0441	تدريس
+v0442	02/2026 – اليوم
+v0443	مصمم أنظمة · BIM Coordinator/Specialist MEP
+v0444	Baubüro · بولزانو
+v0445	<span class="tl-date">02/2026 – اليوم</span><span class="tl-name"><b>مصمم أنظمة · BIM Coordinator/Specialist MEP</b><span>Baubüro · بولزانو</span></span><span class="tl-kind">عمل</span>
+v0446	BIM Coordinator معتمد من ICMQ
+v0447	الشهادة رقم 26-01646 · UNI 11337-7، UNI/PdR 78:2020
+v0448	شهادة
+v0449	<span class="tl-date">06/2026</span><span class="tl-name"><b>BIM Coordinator معتمد من ICMQ</b><span>الشهادة رقم 26-01646 · UNI 11337-7، UNI/PdR 78:2020</span></span><span class="tl-kind">شهادة</span>
+v0450	دورة تدريبية
+v0451	<span class="tl-date">2026</span><span class="tl-name"><b>BIM Manager</b><span>دورة تدريبية</span></span><span class="tl-kind">تكوين</span>
+v0452	Lead Auditor ISO 9001
+v0453	أنظمة إدارة الجودة
+v0454	<span class="tl-date">2026</span><span class="tl-name"><b>Lead Auditor ISO 9001</b><span>أنظمة إدارة الجودة</span></span><span class="tl-kind">شهادة</span>
+v0455	منسق السلامة (CSP/CSE)
+v0456	دورة تأهيلية · المرسوم التشريعي 81/2008
+v0457	<span class="tl-date">2025</span><span class="tl-name"><b>منسق السلامة (CSP/CSE)</b><span>دورة تأهيلية · المرسوم التشريعي 81/2008</span></span><span class="tl-kind">شهادة</span>
+v0458	BIM MEP
+v0459	<span class="tl-date">2025</span><span class="tl-name"><b>BIM MEP</b><span>دورة تدريبية</span></span><span class="tl-kind">تكوين</span>
+v0460	مسؤول الجودة · فني موقع
+v0461	Strabag SpA · بولزانو
+v0462	<span class="tl-date">09/2024 – 01/2026</span><span class="tl-name"><b>مسؤول الجودة · فني موقع</b><span>Strabag SpA · بولزانو</span></span><span class="tl-kind">عمل</span>
+v0463	BIM Specialist معتمد من ICMQ · تخصص العمارة
+v0464	الشهادة رقم 24-01010 · UNI 11337-7، UNI/PdR 78:2020
+v0465	<span class="tl-date">2024</span><span class="tl-name"><b>BIM Specialist معتمد من ICMQ · تخصص العمارة</b><span>الشهادة رقم 24-01010 · UNI 11337-7، UNI/PdR 78:2020</span></span><span class="tl-kind">شهادة</span>
+v0466	Autodesk Civil 3D
+v0467	<span class="tl-date">2024</span><span class="tl-name"><b>Autodesk Civil 3D</b><span>دورة تدريبية</span></span><span class="tl-kind">تكوين</span>
+v0468	BIM Coordinator
+v0469	<span class="tl-date">2023</span><span class="tl-name"><b>BIM Coordinator</b><span>دورة تدريبية</span></span><span class="tl-kind">تكوين</span>
+v0470	مدرّس في المرحلة الثانوية
+v0471	IISS Galilei، ITE Battisti، ITE Walther، ITCAT Delai · بولزانو
+v0472	<span class="tl-date">09/2019 – 08/2024</span><span class="tl-name"><b>مدرّس في المرحلة الثانوية</b><span>IISS Galilei، ITE Battisti، ITE Walther، ITCAT Delai · بولزانو</span></span><span class="tl-kind">تدريس</span>
+v0473	Master BIM Specialist
+v0474	برنامج ماستر تدريبي
+v0475	<span class="tl-date">2020</span><span class="tl-name"><b>Master BIM Specialist</b><span>برنامج ماستر تدريبي</span></span><span class="tl-kind">تكوين</span>
+v0476	الترخيص بمزاولة مهنة الهندسة
+v0477	امتحان الدولة · قطاع الهندسة المدنية والبيئية
+v0478	<span class="tl-date">2019</span><span class="tl-name"><b>الترخيص بمزاولة مهنة الهندسة</b><span>امتحان الدولة · قطاع الهندسة المدنية والبيئية</span></span><span class="tl-kind">شهادة</span>
+v0479	BIM Specialist
+v0480	IG&P · باري
+v0481	<span class="tl-date">01/2019 – 09/2019</span><span class="tl-name"><b>BIM Specialist</b><span>IG&amp;P · باري</span></span><span class="tl-kind">عمل</span>
+v0482	ECDL CAD ثنائي وثلاثي الأبعاد
+v0483	شهادة AICA
+v0484	<span class="tl-date">2018</span><span class="tl-name"><b>ECDL CAD ثنائي وثلاثي الأبعاد</b><span>شهادة AICA</span></span><span class="tl-kind">شهادة</span>
+v0485	ماجستير في هندسة البناء والعمارة
+v0486	Politecnico di Bari
+v0487	<span class="tl-date">2009 – 12/2018</span><span class="tl-name"><b>ماجستير في هندسة البناء والعمارة</b><span>Politecnico di Bari</span></span><span class="tl-kind">تكوين</span>
+v0488	الترخيص بمزاولة مهنة المساح (فني البناء)
+v0489	امتحان الدولة
+v0490	<span class="tl-date">2011</span><span class="tl-name"><b>الترخيص بمزاولة مهنة المساح (فني البناء)</b><span>امتحان الدولة</span></span><span class="tl-kind">شهادة</span>

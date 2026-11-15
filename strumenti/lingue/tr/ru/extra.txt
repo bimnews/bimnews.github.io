@@ -1,0 +1,8 @@
+§conteggio	{1} новостей за {2} недель, {3} месяцев
+§pagina	Страница {1} из {2}
+§articoli	Статей: {1}
+§anno	{1}: статей — {2}, фильтр
+§vedi	Новости: {1} →
+§passo	Шаг {1} из {2}
+Ultimo aggiornamento	Последнее обновление
+Prossimo evento · costo da verificare	Ближайшее мероприятие · стоимость уточняется

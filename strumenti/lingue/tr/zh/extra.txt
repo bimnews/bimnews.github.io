@@ -1,0 +1,8 @@
+§conteggio	{2} 周、{3} 个月内共 {1} 条新闻
+§pagina	第 {1} 页，共 {2} 页
+§articoli	{1} 篇文章
+§anno	{1} 年：{2} 篇文章，筛选
+§vedi	查看 {1} 的新闻 →
+§passo	第 {1} 步，共 {2} 步
+Ultimo aggiornamento	最近更新
+Prossimo evento · costo da verificare	下一场活动 · 费用待核实

@@ -1,0 +1,65 @@
+v0159	其他页面
+v0160	我不了解 BIM：从哪里开始？
+v0161	从<a href="#bim-5-minuti">5 分钟了解 BIM</a>开始：它是什么、有什么用、相关规范、缩写、从 3D 到 10D 的维度，以及研究测得的实际成效。
+v0166	策划人页面上的手册是什么？
+v0167	面向设计人员的实用指南：IFC 的 Property Sets、Dynamo、AutoCAD、电气设计、编程语言。可以在<a href="#studio">工作室里</a>找到，可在线阅读或下载 PDF。
+v0170	使用网站
+v0171	完整版和精简版有什么区别？
+v0172	完整版包含交互式地图、照片、动画和网站字体。精简版只下载文字和新闻：适合网速较慢或希望减少动态效果的人。用右上角的按钮切换。
+v0173	如何从深色主题切换到浅色主题？
+v0174	用右上角的「浅色主题」或「深色主题」按钮。网站会记住你的选择。
+v0175	网站内容很多：有导览吗？
+v0176	有，三种。首页顶部按钮打开的<b>网站指南</b>会一步步介绍主要部分。<a href="#mappa">网站地图</a>列出所有页面并附简短说明。这个页面则回答最常见的问题。
+v0177	如何报告错误或提供新闻线索？
+v0178	在 <a href="https://www.linkedin.com/in/marco-scigliuolo/" target="_blank" rel="noopener">LinkedIn ↗</a> 上给作者留言，并附上来源链接：每条反馈都会在发布前核实。
+v0179	没有找到相关问题。请换个词，或者打开
+v0180	网站地图
+v0181	所有可以访问的内容都在一张地图上：每个条目都有简短说明，点击名称即可直接进入网站的相应部分。
+v0182	点击条目旁边的 <b>+</b> 展开分支，查看其中包含的栏目；点击 <b>−</b> 收起。
+v0183	点击<b>全部展开</b>可以看到包含网站所有栏目的完整地图；点击<b>全部收起</b>则回到主要分支。
+v0184	点击条目的<b>名称</b>即可前往该页面：子标签和分类会自动打开。
+v0185	全部展开
+v0186	全部收起
+v0187	网站访问量
+v0188	我们用 GoatCounter 统计访问量，不使用 Cookie，也不收集个人数据：这里的数字对所有人公开。统计数据大约每四小时更新一次。
+v0189	访问最多的页面
+v0190	图片和字体来源
+v0191	各页面的照片来自维基共享资源，并以 CC0 1.0 贡献到公共领域：作者放弃了所有权利。出于对他们工作的尊重，我们仍然注明出处。网站上的照片按每个页面的颜色着色，只在完整版中显示。
+v0192	<b>5 分钟了解 BIM，「它是什么」</b> · <a href="https://commons.wikimedia.org/wiki/File:Villa_Almerico_(Villa_Rotunda),_from_I_quattro_libri_dell%27architettura_di_Andrea_Palladio_(Book_2,_page_19)_MET_DP109542.jpg" target="_blank" rel="noopener">阿尔梅里科别墅（圆厅别墅），选自《建筑四书》</a>，安德烈亚·帕拉第奥，1570 年（The Metropolitan Museum of Art，CC0）
+v0193	<b>BIM News</b> · <a href="https://commons.wikimedia.org/wiki/File:Victoria_Harbour_skyscrapers.jpg" target="_blank" rel="noopener">Victoria Harbour skyscrapers</a>，作者 Wilfredor
+v0194	<b>BIM &amp; AI</b> · <a href="https://commons.wikimedia.org/wiki/File:Data_center_roof.jpg" target="_blank" rel="noopener">Data center roof</a>，作者 Rsparks3
+v0195	<b>BIM 学术</b> · <a href="https://commons.wikimedia.org/wiki/File:The_John_Rylands_Library_Reading_Room_Enclosure.jpg" target="_blank" rel="noopener">The John Rylands Library, Reading Room</a>，作者 Michael D Beckwith
+v0196	<b>5 分钟了解 BIM</b> · <a href="https://commons.wikimedia.org/wiki/File:Steel_frame_structure.jpg" target="_blank" rel="noopener">Steel frame structure</a>，作者 Wikideas1
+v0197	<b>视频</b> · <a href="https://commons.wikimedia.org/wiki/File:H%C3%B6rsaal_101_LMU.jpg" target="_blank" rel="noopener">Hörsaal 101, LMU</a>，作者 Slashme
+v0198	<b>日程</b> · <a href="https://commons.wikimedia.org/wiki/File:Six_workers_on_crane_in_Shibuya.jpg" target="_blank" rel="noopener">Six workers on crane in Shibuya</a>，作者 Syced
+v0199	<b>策划人</b> · <a href="https://commons.wikimedia.org/wiki/File:Rebar_combo.jpg" target="_blank" rel="noopener">Rebar combo</a>，作者 Henryeke
+v0200	<b>作品集</b> · <a href="https://commons.wikimedia.org/wiki/File:Steel_frame_building_under_construction_in_Taiwan.jpg" target="_blank" rel="noopener">Steel frame building under construction in Taiwan</a>，作者 SSJF01
+v0201	字体：Inter、Inter Tight 和 JetBrains Mono，采用 SIL Open Font License 1.1 许可（许可文本在网站的 <code>fonts</code> 文件夹中）。BIM News 和 BIM &amp; AI 页头的点云由网站代码绘制。
+v0202	5 分钟了解 BIM
+v0203	不知道 BIM 是什么？从这里开始：它是什么、在事务所里有什么用、为什么今天离不开它、相关规范和缩写。五分钟了解要点，其余内容随时再看。
+v0204	01 它是什么
+v0205	02 工程的整个生命周期
+v0206	03 有什么变化
+v0207	04 为什么是现在
+v0208	05 规范
+v0209	05 世界与意大利
+v0210	06 维度
+v0211	07 缩写
+v0212	08 实际成效
+v0213	09 世界各地的认证
+v0214	<strong>BIM</strong> 是 <em>Building Information Modeling</em> 的缩写，即「建筑信息模型」。要理解真正改变了什么，不妨先看看过去一直是怎样做设计的。
+v0215	安德烈亚·帕拉第奥，圆厅别墅：平面图和剖面图，选自<i>《建筑四书》</i>，1570 年。The Metropolitan Museum of Art，CC0。
+v0216	<span>1</span> 几百年来，靠手绘
+v0217	几百年来，设计就是手绘图纸：平面、剖面和立面，各自分开绘制。帕拉第奥的图版里已经有了我们今天仍在使用的全部要素。这种方式一直延续到计算机出现：各个视图彼此分离，要靠手工保持一致。
+v0218	要加长墙体，就得一根一根地移动线条。
+v0219	<span>2</span> CAD：同样的线条，搬到电脑上
+v0220	CAD 把绘图桌搬进了电脑。画的仍然是<b>线条</b>，只是更精确，也更容易复制和修改。每条线可以赋予<b>属性</b>：图层、颜色、线型，或者一段写着「砖墙」的文字。这些只是贴在图纸上的标签，用来描述图纸，却不能控制它。要加长一面墙，必须移动它的线条，然后手工修改剖面、立面和工程量。
+v0221	长度
+v0222	高度
+v0223	试着拖动滑块：改变参数，墙体、面积和体积都会自动更新。<span class="ex">示例数值</span>
+v0224	<span>3</span> BIM：带参数的对象
+v0225	在 BIM 中画的不再是线条，而是<b>三维对象</b>：一面墙、一块楼板、一扇窗。每个对象都由<b>参数</b>控制：长度、高度、厚度等数值，并通过公式相互关联。体积不用重画，而是计算出来。屏幕上看到的不再是图纸，而是数据的表现：平面、剖面和明细表都来自同一个模型。
+v0226	为什么一切都变了
+v0227	<b>信息可以提取，也可以录入。</b>工程量、面积、体积和明细表都从模型中导出；计算、招标、施工和维护所需的数据也录入到模型中。
+v0228	<b>修改是联动的。</b>抬高一块楼板或扩大一个房间，平面、剖面、面积、体积和明细表会一起更新。在 CAD 中，同样的工作要花好几个小时。
+v0229	<b>一处修改，处处生效。</b>改变某种墙体类型的材料，整个项目中该类型的所有墙体都会随之改变。

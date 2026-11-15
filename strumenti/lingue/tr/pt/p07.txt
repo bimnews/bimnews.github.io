@@ -1,0 +1,110 @@
+v0491	Diploma de «geometra» (técnico de construção)
+v0492	Instituto técnico para geometras Vivante Pitagora · Bari
+v0493	<span class="tl-date">2004 – 2009</span><span class="tl-name"><b>Diploma de «geometra» (técnico de construção)</b><span>Instituto técnico para geometras Vivante Pitagora · Bari</span></span><span class="tl-kind">Formação</span>
+v0494	Work in progress: a cronologia está em preparação.
+v0495	Competências
+v0496	Modelação BIM MEP em Revit
+v0497	Instalações elétricas, de climatização, hidráulicas e de segurança contra incêndio
+v0498	Coordenação multidisciplinar e interoperabilidade IFC
+v0499	Famílias paramétricas do Revit
+v0500	Automatizações com Dynamo
+v0501	Gestão de modelos e de dados de informação
+v0502	Medições, autos de medição e análise de preços
+v0503	Documentação técnica de projeto
+v0504	Cálculos luminotécnicos
+v0505	Projeto energético CasaClima
+v0506	Levantamento com laser scanner e nuvens de pontos
+v0507	Qualidade e controlos de obra
+v0508	Coordenação de segurança
+v0509	Resolução de problemas e abordagem sistémica
+v0510	Organização, precisão e método
+v0511	Aprendizagem contínua e adaptabilidade
+v0512	Outras habilitações
+v0513	Carta de condução A2, A, B
+v0514	Ferramentas
+v0515	Os programas e as ferramentas que uso no trabalho, com a ligação para o site oficial.
+v0516	Modelação BIM · arquitetura, estruturas, MEP
+v0517	Dynamo para Revit
+v0518	Programação visual e automatizações
+v0519	Navisworks
+v0520	Coordenação e verificação de interferências
+v0521	AutoCAD
+v0522	CAD 2D e 3D · automatização com AutoLISP
+v0523	Civil 3D
+v0524	Projeto de infraestruturas
+v0525	InfraWorks
+v0526	Modelos de contexto e infraestruturas
+v0527	ReCap
+v0528	Nuvens de pontos de laser scanner
+v0529	PriMus
+v0530	DIALux evo
+v0531	Microsoft Office
+v0532	Documentos e folhas de cálculo
+v0533	Os nomes dos programas são marcas dos respetivos titulares; o seu uso aqui indica apenas as ferramentas que utilizo. Os ícones são genéricos, por categoria.
+v0534	Publicações
+v0535	A regeneração urbana das áreas militares desativadas
+v0536	Brownfields' urban regeneration process. Problems and future perspectives
+v0537	Os quartéis e as áreas militares abandonados após o fim da Guerra Fria marcam o tecido de muitas cidades italianas e europeias. A tese percorre como nasceu o problema da desativação e como foi enfrentado ao longo do tempo, para daí retirar uma linha orientadora útil para novas intervenções de requalificação.
+v0538	Politecnico di Bari · Engenharia Civil-Arquitetura
+v0539	Portfólio
+v0540	Projetos
+v0541	Os projetos em que trabalhei, contados um a um: o problema, as escolhas, o modelo e o que aprendi.
+v0542	<span class="tag">Work in progress</span> As fichas dos projetos estão em preparação.
+v0543	No gabinete
+v0544	Reflexões e soluções para o trabalho de projeto. O verdadeiro problema, no desenho e no projeto, é o tempo que se perde em tudo o que se repete: aqui tento reduzi-lo. Cada problema verifico-o caso a caso, com testes em situações concretas, e proponho uma solução. É o meu contributo pessoal: não será a solução para todos, mas quer dar aos projetistas mais algumas ideias.
+v0545	<span class="f-lab">Estado dos artigos</span><span><span class="tag">Work in progress</span> em preparação</span><span><span class="tag ok">Publicado e verificado</span> testado em casos reais, com o código para copiar ou descarregar</span>
+v0546	Reflexões
+v0547	Os problemas do projeto
+v0548	Otimização para o BIM
+v0549	Otimização para o AutoCAD
+v0550	Os manuais do Claude
+v0551	4 publicados · 11 entradas
+v0552	O que significa ser engenheiro · no gabinete
+v0553	A profissão vista pelo mundo: o que se espera de um engenheiro, entre responsabilidades, competências e relações com donos de obra, empresas e colegas. A outra face está em <a href="#fuori">Fora do gabinete →</a>
+v0554	<span class="tag">Work in progress</span> Artigo em preparação.
+v0555	O mundo para além de nós
+v0556	O que será dos nossos modelos, e dos nossos esforços, daqui a 200 anos? Um desenho de Miguel Ângelo ainda hoje se pode ver: um ficheiro nosso ainda se poderá abrir? Vou partir de uma pesquisa sobre o mais antigo desenho de projeto que chegou até nós, e sobre como envelheceu realmente. Liga-se ao artigo <a href="#wip" data-goto-art="art-ifc-zero">Como construir um IFC do zero →</a>
+v0557	Cada problema tornar-se-á um artigo com uma proposta concreta, verificada em casos reais.
+v0558	Coordenação entre especialidades
+v0559	Arquitetura, estruturas e instalações projetadas em paralelo mas verificadas em conjunto demasiado tarde: as interferências aparecem na obra, quando custam mais.
+v0560	Requisitos do dono de obra vagos ou variáveis
+v0561	Requisitos de informação genéricos, objetivos não escritos e pedidos que mudam com o projeto avançado: a causa de muitas alterações.
+v0562	Prazos comprimidos
+v0563	Prazos de concurso e de financiamento que reduzem as fases de projeto: entrega-se a tempo, mas adia-se o controlo de qualidade.
+v0564	Projetar sobre o existente
+v0565	Levantamentos incompletos ou antigos nas requalificações: projeta-se sobre o que se julga existir, não sobre o que existe.
+v0566	Interoperabilidade e dados perdidos
+v0567	Modelos que passam entre programas diferentes e perdem informação pelo caminho: IFC mal exportados, propriedades em falta, geometrias a refazer.
+v0568	Ambiente comum de dados
+v0569	O CDE usado como uma pasta partilhada: versões que se multiplicam, estados pouco claros, ninguém sabe qual é o ficheiro certo.
+v0570	Modelos bonitos mas vazios
+v0571	Muita geometria e pouca informação útil: níveis de necessidade de informação não definidos e dados que ninguém vai usar.
+v0572	Verificações regulamentares fragmentadas
+v0573	Segurança contra incêndio, energia, acústica e instalações verificadas à mão e em separado, a cada revisão do projeto.
+v0574	Medições e custos desligados do modelo
+v0575	Quantidades recalculadas à parte e estimativas que não acompanham as alterações: o custo da obra fica uma incógnita até ao concurso.
+v0576	Segurança desligada do projeto
+v0577	O plano de segurança escrito a jusante, sem diálogo com as escolhas de projeto e sem usar o modelo para planear o estaleiro.
+v0578	Do projeto à obra e à gestão
+v0579	A informação perde-se a cada passagem: o empreiteiro redesenha, as telas finais não são fiáveis, o gestor recebe papel em vez de dados.
+v0580	Competências, papéis e responsabilidades
+v0581	Perfis BIM previstos no papel mas não na prática, formação descontínua e dúvidas sobre quem responde pelo dado digital.
+v0582	Scripts e procedimentos para automatizar as operações repetitivas da modelação BIM, por exemplo com Python e Dynamo para Revit: o código completo para copiar ou descarregar, com uma breve explicação do que faz, como usá-lo e quanto tempo poupa.
+v0583	Os primeiros scripts
+v0584	As primeiras soluções estão em teste em casos reais: só serão publicadas depois da verificação.
+v0585	Rotinas e scripts para AutoCAD, por exemplo em AutoLISP ou em Python, para eliminar os passos repetitivos do desenho: código pronto a copiar ou descarregar e instruções essenciais para o usar.
+v0586	Guia: AutoCAD 2026, xrefs e impressão
+v0587	Para substituir as xrefs do arquiteto sem perder o alinhamento e evitar as tramas pretas na impressão: dois scripts AutoLISP para descarregar, onde os colocar e como os carregar. A explicação completa está nos manuais do Claude.
+v0588	<a class="man-btn" href="manuali/autocad-2026-xrif-stampa.html">Abrir o guia</a><a class="man-btn ghost" href="#studio" data-goto-man="man-pro-05">Ir para os manuais do Claude</a>
+v0589	A primeira rotina: configurar bem o desenho
+v0590	O ponto de referência comum a todas as plantas, as pranchas que não se deslocam, a limpeza antes da entrega e as polilinhas fechadas para poder ler as plantas também com a inteligência artificial.
+v0591	<span class="tag">Work in progress</span> Artigo em revisão.
+v0592	Manuais que criei, pedindo ao Claude, o assistente de inteligência artificial da Anthropic, que os escrevesse seguindo indicações precisas: o tema, a estrutura, o nível de pormenor e os exemplos fui eu que escolhi. Por agora encontra os títulos: os textos chegarão um de cada vez.
+v0593	Manual de famílias do Revit 2026
+v0594	Como criar e gerir as famílias no Revit 2026.
+v0595	<span class="tag">Work in progress</span> Publicação em preparação.
+v0596	Manual de parâmetros do Revit: identificação, classificação e dimensões BIM
+v0597	Os parâmetros para identificar, classificar e dimensionar os objetos BIM no Revit.
+v0598	Property Sets para a exportação IFC a partir do Revit
+v0599	Como levar para o IFC os parâmetros pedidos pelo dono de obra, por exemplo os da estrutura de dados provincial: a sintaxe do ficheiro de Property Sets, um exemplo com apenas três parâmetros e a configuração de exportação do Revit passo a passo, com a checklist final.
+v0600	<span class="tag ok">Publicado</span><a class="man-btn" href="manuali/property-set-ifc-revit.html">Ler online</a><a class="man-btn ghost" href="manuali/property-set-ifc-revit.pdf" download="">PDF</a><a class="man-btn ghost" href="manuali/revit/Pset_esempio.txt" download="">Ficheiro de exemplo .txt</a>

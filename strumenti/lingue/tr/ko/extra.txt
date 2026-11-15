@@ -1,0 +1,8 @@
+§conteggio	{2}주, {3}개월 동안 뉴스 {1}건
+§pagina	{2}쪽 중 {1}쪽
+§articoli	논문 {1}편
+§anno	{1}년: 논문 {2}편, 필터
+§vedi	{1} 뉴스 보기 →
+§passo	{2}단계 중 {1}단계
+Ultimo aggiornamento	최근 업데이트
+Prossimo evento · costo da verificare	다음 행사 · 비용 확인 필요

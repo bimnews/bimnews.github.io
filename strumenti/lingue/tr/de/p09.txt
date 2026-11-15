@@ -1,0 +1,55 @@
+v0680	Handbücher mit Bildern, die deine Sprache sprechen
+v0681	Die Handbücher mit „dynamischen“ Bildern bereichern, deren Beschriftungen sich mit der für die Website gewählten Sprache ändern.
+v0682	Als SVG gezeichnete Bilder, mit den Beschriftungen als Text und nicht als Pixel
+v0683	Beschriftungen, die der gewählten Sprache folgen
+v0684	Test an den ersten Handbüchern
+v0685	Außerhalb des Büros
+v0686	Gedanken über das, was mich begeistert, und darüber, wie sich die Arbeitsweise verändert. Meine Meinungen, mit derselben Sorgfalt, die ich in die Projekte stecke.
+v0687	Leidenschaften und Gedanken
+v0688	Die Musik
+v0689	Erkundung und Disziplin: was mich die Musik gelehrt hat, in der Arbeit und außerhalb.
+v0690	Meine Bücher
+v0691	Die Bücher, die für meine Bildung grundlegend waren. Sie haben eine eigene Seite: <a href="#libri">Meine Bücher →</a>
+v0692	Was es heißt, Ingenieur zu sein · außerhalb des Büros
+v0693	Dieselbe Frage von innen gesehen: wie man sich in diesem Beruf sieht und fühlt, zwischen Zweifeln, Mühe und Zufriedenheit. Die andere Seite steht unter <a href="#studio">Im Büro →</a>
+v0694	Die Pfadfinderei
+v0695	Ich habe in der AGESCI angefangen, dem Verband der katholischen Pfadfinder Italiens. Mit der Zeit habe ich verstanden, dass das nicht die richtige Wahl für mich war: In der AGESCI trifft man eine „Glaubensentscheidung“, und mein spiritueller Weg hat mich erkennen lassen, dass ich nicht gläubig bin. Seit ich in Bozen lebe und arbeite, bin ich im <span translate="no">CNGEI</span>, bei den konfessionslosen Pfadfindern, weil ich fest davon überzeugt bin, dass Erziehung laizistisch sein muss und nie von religiösen Prinzipien gelenkt werden darf.
+v0696	Was gebe ich? Meine Kompetenzen, meine Leidenschaft, die Lust, mit anzupacken. Wir sammeln Lebensmittel und helfen der Gemeinschaft, so gut wir können.
+v0697	Was gibt mir die Pfadfinderei? Vor allem den Sinn dessen, worauf der <span translate="no">CNGEI</span> gründet: die Erziehung junger Menschen. Sie ist der Pfeiler einer gesunden Gesellschaft, mit einer laizistischen Erziehung, die die spirituelle Seite jedes Einzelnen nicht vernachlässigt und hilft, bessere Weltbürger zu werden. So werden die Bürgerinnen und Bürger von morgen geformt.
+v0698	„Das Ziel der Pfadfinderausbildung ist, die Qualität der künftigen Bürger zu verbessern, vor allem in Charakter und Gesundheit; das Ich durch den Dienst zu ersetzen.“
+v0699	Robert Baden-Powell, <i lang="en">Aids to Scoutmastership</i>, Kapitel „The Aim of Scouting“ (Ausgabe 1930). Unsere Übersetzung aus dem Englischen: <span lang="en">«The aim of the Scout training is to improve the standard of our future citizenhood, especially in Character and Health; to replace Self with Service».</span> <a href="https://isf-world.org/pdf/A2SM-A5.pdf" target="_blank" rel="noopener">Originaltext ↗</a>
+v0700	Tai Chi und Kung Fu
+v0701	Den Kampfkünsten liegen Tugenden zugrunde: keine Regeln zum Aufsagen, sondern Haltungen, Anregungen, sich selbst zu verbessern, vor dem Meister und im Alltag. Sie zu verkünden heißt nicht, sie zu besitzen: Es heißt, den Willen zu haben, sie zu erringen. Und mit dem inneren Wachstum findet jeder seine eigene Bedeutung.
+v0702	<span lang="zh-Hans">智</span> Weisheit <small lang="zh-Latn-pinyin">zhì</small>
+v0703	Ausgewogenheit im Verhalten und im Rat, gereift durch Erfahrung und durch den Wunsch, die Dinge aus mehreren Blickwinkeln zu betrachten.
+v0704	<span lang="zh-Hans">仁</span> Mitgefühl <small lang="zh-Latn-pinyin">rén</small>
+v0705	Verständnis für andere haben, auch für den Gegner, und vor allem für sich selbst: Die eigenen Grenzen anzunehmen ist der erste Schritt, um sie zu überwinden und denen zu helfen, die neben uns stehen. „Wenn der Feind mit Wut kämpft, gib dem Zorn nicht nach: übe Mitgefühl.“
+v0706	<span lang="zh-Hans">信</span> Aufrichtigkeit <small lang="zh-Latn-pinyin">xìn</small>
+v0707	Handeln und sprechen nach dem, was wir wirklich denken, ohne uns ablenken zu lassen. Das heißt auch, die eigenen Grenzen ehrlich anzuerkennen und sich zu bemühen, sie zu überwinden.
+v0708	<span lang="zh-Hans">勇</span> Mut <small lang="zh-Latn-pinyin">yǒng</small>
+v0709	Mut ist nicht die Abwesenheit von Angst: Er heißt, Schwierigkeiten zu begegnen, ohne die eigenen Werte zu verraten, in Widrigkeiten durchzuhalten, die Angst zu beherrschen und zu wissen, wann man aufhört.
+v0710	<span lang="zh-Hans">忍</span> Geduld <small lang="zh-Latn-pinyin">rěn</small>
+v0711	Die abstrakteste, aber die Grundlage aller anderen. Sie ist kein Erdulden: Sie heißt anzunehmen, dass alles seine Zeit hat, und sich auf den langen Weg einzulassen. „Kaue, schlucke, verdaue. Dann bitte um mehr Reis.“
+v0712	Die Beschreibungen fassen mit unseren Worten die Seite <a href="https://www.kungfuetaichi.com/5-virt%C3%B9" target="_blank" rel="noopener">Le 5 Virtù · Kung Fu e Tai Chi (auf Italienisch) ↗</a> zusammen, aus der auch die beiden Zitate stammen.
+v0713	Warum es mir wichtig ist
+v0714	Tai Chi und Kung Fu werden in meinem Leben immer wichtiger. Vor allem sind sie ein Ventil: ein Weg, ein inneres Gleichgewicht zu suchen und meine Aggressivität auf gesunde Weise auszudrücken, mit einem ganz eigenen Raum in mir.
+v0715	Spirituell bringen sie mich dazu, über die Bedeutung von Gut und Böse nachzudenken und darüber, dass diese Mittel nur und ausschließlich im schlimmsten Fall einzusetzen sind: um das eigene Leben oder das eines anderen zu retten. Wie die erste Tugend, die Weisheit, lehrt, muss man lernen, seine Kämpfe zu wählen.
+v0716	Das ist für mich auch in der Arbeit ein Grundprinzip, nicht nur im Privatleben: Es ist sinnlos, Zeit mit dem zu verlieren, was uns Energie, Gesundheit und Seelenfrieden raubt. Jede Tugend des Kung Fu lehrt mich etwas. Die chinesische Philosophie, die in diesen Disziplinen lebt, durchdringt einen und hilft, den Alltag bewusster anzugehen.
+v0717	Nicht berufliche Handbücher, die ich selbst erstellt habe, indem ich Claude, den KI-Assistenten von Anthropic, gebeten habe, sie nach genauen Vorgaben zu schreiben: Thema, Aufbau, Detailtiefe und Beispiele habe ich gewählt. Vorerst findest du die Titel: Die Texte kommen nach und nach.
+v0718	Der Klang: Mathematik, Effekte und Psychoakustik
+v0719	Was Klang ist, von der Mathematik bis zur Wahrnehmung.
+v0720	Effektbibliothek für Gitarre und Bass
+v0721	Die Effekte für Gitarre und Bass, gesammelt und erklärt.
+v0722	Gitarrensounds mit dem Modeler
+v0723	Zusammenfassung der Fractal-Tutorial-Playlist zu Gitarrensounds.
+v0724	Die Bücher, die für meine Bildung grundlegend waren. Zu jedem wird es einen kurzen Artikel darüber geben, was es mir gegeben hat, nach Kategorien geordnet.
+v0725	Persönliche Entwicklung und Psychologie
+v0726	Die Bücher, die mir geholfen haben zu verstehen, wie Menschen funktionieren, angefangen bei mir selbst.<span class="acc-count">· 5 Karten</span>
+v0727	Der wunde Punkt
+v0728	Die Kunst, nicht unglücklich zu sein · Wayne W. Dyer · ital. Ausgabe Rizzoli, BUR
+v0729	Das erste Buch zur persönlichen Entwicklung des US-amerikanischen Psychotherapeuten Wayne W. Dyer, 1976 erschienen und zu einem internationalen Bestseller geworden. Dyer nennt „wunde Punkte“ (im Original „erroneous zones“) die Denkgewohnheiten, die uns schaden, ohne dass wir es merken: Schuldgefühl und Sorge, das ständige Bedürfnis nach Bestätigung, die Etiketten, mit denen wir uns definieren („so bin ich eben“), die Neigung zum Aufschieben. Der Grundgedanke ist, dass Gefühle zu einem guten Teil davon abhängen, wie wir denken, und dass jeder wählen kann, in der Gegenwart zu leben und Verantwortung für sich zu übernehmen.
+v0730	Ich kann es ruhig sagen: Für mich ist dieses Buch das Jahr null, der Punkt, an dem mein ganzes Interesse für persönliche Entwicklung und Psychologie begann. Vorher hatte mich die Philosophie sehr angezogen, aber ich hatte darin nichts Konkretes für mein Leben gefunden und sie etwas beiseitegelegt. Hier dagegen fand ich praktische Werkzeuge.
+v0731	Seitdem habe ich viele Kurse zu Weiterbildung und persönlicher Entwicklung besucht, und lange war dieses Buch mein Leitfaden: Es hat mich gelehrt, mich nicht ohne kritischen Geist von den tiefen Überzeugungen mitreißen zu lassen, die uns die Welt fertig liefert.
+v0732	Die Bücher von Gabriella Tupini
+v0733	Acht Bücher zur Tiefenpsychologie · Gabriella Tupini
+v0734	Gabriella Tupini ist Psychologin und Psychotherapeutin, die mit der Analyse und Deutung von Träumen arbeitet, und als Vermittlerin sehr gefragt: Auf ihrem YouTube-Kanal spricht sie über Traumata, verdrängte Gefühle, Bewusstheit und das Gewicht familiärer und gesellschaftlicher Muster. In ihren Büchern verfolgt sie dieselbe Methode: von der Reise in die eigenen Ängste in <i>Nella tana del lupo</i> („In der Höhle des Wolfs“) über das Traumhandbuch, geschrieben, wie sie selbst erklärt, für alle, die sich keine Analyse leisten können, bis zur Reihe <i>Storia di un'analisi</i> („Geschichte einer Analyse“), in der jeder Band den Weg eines Menschen begleitet.

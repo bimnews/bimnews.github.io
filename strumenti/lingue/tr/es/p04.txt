@@ -1,0 +1,102 @@
+v0230	<b>¿Atributo o parámetro?</b> El atributo es una información apoyada en un elemento del dibujo, como la capa o el color de una línea: lo describe, pero no lo gobierna. El parámetro, en cambio, gobierna el objeto: cambias el valor y cambia la forma, y con ella todo lo que depende de él.
+v0231	<b>Proyecto</b><span>Arquitectura, estructuras e instalaciones trabajan sobre el mismo modelo</span>
+v0232	<b>Licitación</b><span>Cantidades y presupuestos extraídos del modelo, no recontados a mano</span>
+v0233	<b>Obra</b><span>La constructora trabaja sobre un modelo ya coordinado</span>
+v0234	<b>Gestión</b><span>El promotor recibe un edificio con su información</span>
+v0235	<b>Las interferencias se ven antes.</b> El conducto que atraviesa la viga aparece en el modelo, no en la obra.
+v0236	<b>Planos siempre coherentes.</b> Plantas, secciones y tablas nacen del mismo modelo: cambias una cosa y se actualiza en todas partes.
+v0237	<b>Las disciplinas se entienden.</b> A través del formato abierto IFC, aunque usen programas distintos.
+v0238	Desde el <strong>1 de enero de 2025</strong>, en Italia las entidades contratantes deben usar métodos y herramientas de gestión digital de la información en el proyecto y la ejecución de <strong>obras nuevas</strong> y de <strong>intervenciones en edificios existentes</strong> con trabajos estimados en <strong>más de 2 millones de euros</strong>.
+v0239	Decreto Legislativo 36/2023, art. 43, apdo. 1, modificado por el Decreto Legislativo 209/2024
+v0240	Diez años de normas en una espina de pescado: se lee de izquierda a derecha, de 2015 a hoy. Toca una etapa para ver qué cambió; las normas UNI e ISO se compran en los sitios oficiales, aquí tienes el enlace directo.
+v0241	Todo
+v0242	Normas UNI
+v0243	Normas ISO
+v0244	Leyes, decretos, directrices
+v0245	Dónde nace el BIM y cómo llega a Italia. Arriba el mundo, de la primera idea de 1975 a las normas ISO; abajo Italia, de la primera norma sobre codificación de 2009 a la obligación actual. Las líneas unen una norma italiana con la internacional que adopta. Toca una etapa para ver el detalle y las fuentes.
+v0246	Ambas
+v0247	Solo el mundo
+v0248	Solo Italia
+v0249	Mostrar las conexiones
+v0250	Las «dimensiones» indican qué información se añade al modelo además de la geometría. Antes del 3D está el dibujo bidimensional del CAD (2D). Hasta el 5D hay acuerdo en todas partes; a partir del 6D las definiciones cambian de un país a otro, y 8D, 9D y 10D son propuestas todavía en discusión, no normas. Por eso en un pliego conviene decir qué usos y qué información se necesitan, no solo una etiqueta.
+v0251	<b>3D</b><span>El modelo geométrico</span>
+v0252	<b>4D</b><span>Los plazos</span>
+v0253	<b>5D</b><span>Los costes</span>
+v0254	<b>6D</b><span>La gestión de la obra</span>
+v0255	<b>7D</b><span>La sostenibilidad</span>
+v0256	<b>8D</b><span>La seguridad</span>
+v0257	<b>9D</b><span>La construcción ajustada</span>
+v0258	<b>10D</b><span>La industrialización</span>
+v0259	El modelo geométrico
+v0260	El punto de partida: un modelo tridimensional hecho de objetos (muros, forjados, vigas, tuberías), cada uno con su geometría y su información. Todas las demás dimensiones se apoyan aquí.
+v0261	Revit
+v0262	Archicad
+v0263	Allplan
+v0264	Tekla Structures
+v0265	Vectorworks
+v0266	Bonsai (código abierto, antes BlenderBIM)
+v0267	Navisworks, Solibri para la coordinación
+v0268	Profundiza
+v0269	Contiene geometría, posición, materiales y clasificación de cada objeto.
+v0270	Plantas, secciones y tablas nacen del mismo modelo y siguen siendo coherentes.
+v0271	Las disciplinas se coordinan y las interferencias se encuentran antes de la obra.
+v0272	<b>Ejemplo.</b> El conducto de aire que atraviesa una viga aparece en el control de interferencias, no durante los trabajos.
+v0273	Fuentes: <a href="https://www.designingbuildings.co.uk/wiki/BIM_dimensions" target="_blank" rel="noopener">Designing Buildings Wiki, «BIM dimensions» (en inglés) ↗</a>
+v0274	Los plazos
+v0275	Los objetos del modelo se vinculan a las actividades del cronograma: se ve cómo crece la obra en el tiempo, fase tras fase.
+v0276	Navisworks (TimeLiner)
+v0277	Synchro 4D
+v0278	Fuzor
+v0279	Microsoft Project y Primavera P6 para el cronograma que se vincula
+v0280	Simula la secuencia constructiva y las fases de trabajo.
+v0281	Ayuda a organizar la obra: grúas, acopios, recorridos, zonas de trabajo.
+v0282	Compara lo programado con lo ejecutado.
+v0283	<b>Ejemplo.</b> Antes de empezar se ve, semana a semana, dónde están la grúa y los materiales y qué cuadrillas trabajan en el mismo punto.
+v0284	Fuentes: <a href="https://www.designingbuildings.co.uk/wiki/BIM_dimensions" target="_blank" rel="noopener">Designing Buildings Wiki, «BIM dimensions» (en inglés) ↗</a>; <a href="https://aifos.org/home/news/int/interventi_commenti/bim-bum-bam---bit" target="_blank" rel="noopener">AiFOS, «BIM BUM BAM… bit» (en italiano) ↗</a>
+v0285	Los costes
+v0286	A las cantidades medidas en los objetos se asocian las partidas del banco de precios: el presupuesto nace del modelo y se actualiza con él.
+v0287	PriMus-IFC
+v0288	CostX
+v0289	RIB iTWO
+v0290	Navisworks (Quantification)
+v0291	TeamSystem CPM
+v0292	Todavía no hay ninguna noticia dedicada en la reseña: la añadiremos cuando llegue.
+v0293	Cantidades extraídas automáticamente, no recontadas a mano.
+v0294	Estimaciones rápidas cuando cambian las decisiones de proyecto.
+v0295	Base para modificados y certificaciones de obra.
+v0296	<b>Ejemplo.</b> Cambias las capas de un forjado y el presupuesto se actualiza, con la diferencia de coste ya calculada.
+v0297	Fuentes: <a href="https://biblus.acca.it/modellazione-bim-5d/" target="_blank" rel="noopener">BibLus (ACCA), «Modellazione BIM 5D» (en italiano), 2026 ↗</a>; <a href="https://www.designingbuildings.co.uk/wiki/BIM_dimensions" target="_blank" rel="noopener">Designing Buildings Wiki, «BIM dimensions» (en inglés) ↗</a>
+v0298	La gestión de la obra
+v0299	Según la nomenclatura de la UNI 11337 recogida por BibLus, la 6D es la gestión de la obra construida: uso, mantenimiento, facility management. Atención: en el ámbito internacional la 6D indica a menudo la sostenibilidad.
+v0300	Autodesk Tandem
+v0301	Archibus
+v0302	Planon
+v0303	Dalux FM
+v0304	El promotor recibe un edificio con su información: componentes, garantías, manuales.
+v0305	Mantenimiento programado a partir de los objetos del modelo.
+v0306	Vínculo con la ISO 19650-3, la fase de operación.
+v0307	<b>Ejemplo.</b> El técnico municipal abre la ficha de la caldera en el modelo y encuentra el modelo, la fecha de instalación y los plazos de mantenimiento.
+v0308	Fuentes: <a href="https://biblus.acca.it/modellazione-bim-5d/" target="_blank" rel="noopener">BibLus (ACCA), «Modellazione BIM 5D» (en italiano), 2026 ↗</a>; <a href="https://aifos.org/home/news/int/interventi_commenti/bim-bum-bam---bit" target="_blank" rel="noopener">AiFOS, «BIM BUM BAM… bit» (en italiano) ↗</a>; <a href="https://www.designingbuildings.co.uk/wiki/BIM_dimensions" target="_blank" rel="noopener">Designing Buildings Wiki, «BIM dimensions» (en inglés) ↗</a>
+v0309	La sostenibilidad
+v0310	En la nomenclatura italiana la 7D es la evaluación de la sostenibilidad ambiental, económica y social. En el extranjero, al contrario, la 7D es a menudo el facility management.
+v0311	One Click LCA
+v0312	Tally
+v0313	Autodesk Insight
+v0314	IES VE
+v0315	DesignBuilder
+v0316	Termus
+v0317	Análisis energéticos a partir del modelo.
+v0318	Cantidades de materiales para evaluar impactos y ciclo de vida.
+v0319	Comparación entre alternativas de proyecto también en el plano ambiental.
+v0320	<b>Ejemplo.</b> Dos soluciones de fachada comparadas no solo por su coste, sino también por su consumo y los materiales empleados.
+v0321	Fuentes: <a href="https://biblus.acca.it/modellazione-bim-5d/" target="_blank" rel="noopener">BibLus (ACCA), «Modellazione BIM 5D» (en italiano), 2026 ↗</a>; <a href="https://aifos.org/home/news/int/interventi_commenti/bim-bum-bam---bit" target="_blank" rel="noopener">AiFOS, «BIM BUM BAM… bit» (en italiano) ↗</a>
+v0322	La seguridad
+v0323	El término 8D lo usó por primera vez Imriyas Kamardeen (2010) para un BIM al servicio de la prevención de accidentes desde el proyecto («prevention through design»). Hoy se habla de seguridad a lo largo de toda la vida de la obra.
+v0324	Synchro 4D y Navisworks para simular las fases
+v0325	Solibri para los controles por reglas
+v0326	CerTus para el plan de seguridad
+v0327	Identificar los riesgos ya en el proyecto y eliminarlos con el diseño.
+v0328	Planificar protecciones, recorridos y zonas de obra sobre el modelo.
+v0329	Estudiar también los riesgos del edificio en uso, no solo de la obra.
+v0330	<b>Ejemplo.</b> La barandilla provisional aparece en el modelo 4D justo en la semana en que se hormigona el forjado sobre el vacío.
+v0331	Fuentes: <a href="https://www.ingenio-web.it/articoli/l-ottava-dimensione-del-bim-sicurezza-e-prevenzione-in-cantiere/" target="_blank" rel="noopener">Ingenio, «L'ottava dimensione del BIM» (en italiano), 2022 ↗</a>; <a href="https://aifos.org/home/news/int/interventi_commenti/bim-bum-bam---bit" target="_blank" rel="noopener">AiFOS, «BIM BUM BAM… bit» (en italiano) ↗</a>

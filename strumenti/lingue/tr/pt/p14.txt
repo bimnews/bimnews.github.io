@@ -1,0 +1,41 @@
+v1144	fevereiro
+v1145	março
+v1146	abril
+v1147	maio
+v1148	junho
+v1149	agosto
+v1150	dezembro
+v1153	Adoção do BIM
+v1154	Património cultural (HBIM)
+v1155	Custos (5D)
+v1156	SIG
+v1157	Gémeo digital e IoT
+v1158	Operação e facility management
+v1159	Inteligência artificial
+v1160	Interoperabilidade e IFC
+v1161	Lean construction
+v1162	Pré-fabricação e offsite
+v1163	Revisão da literatura
+v1164	Segurança
+v1165	Sustentabilidade e energia
+v1166	Estruturas
+v1167	Prazos (4D)
+v1168	Verificação regulamentar
+v1170	Artigos por ano de publicação · toque numa barra para filtrar, de novo para retirar o filtro
+v1182	janeiro
+v1183	julho
+v1184	setembro
+v1185	outubro
+v1186	novembro
+v1187	notícias
+v1188	notícia
+v1189	Última atualização:
+v1190	Global
+v1191	línguas
+v1192	em verificação
+v1193	Línguas em que procuramos
+v1194	Línguas em verificação
+v1195	entradas
+v1196	entrada
+v1197	fichas
+v1198	ficha
