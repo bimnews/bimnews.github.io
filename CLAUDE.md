@@ -74,17 +74,12 @@ Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato co
    - **Codice:** `assets/globo/` (`globo.js`, `mondo.json`, `citta.json`, le librerie, `LICENZE.txt`); `loadGlobe()` parte dopo `loadMap()`, solo nella versione completa.
    - **Cosa fa:** orientamento iniziale dal fuso orario; asse inclinato di 23,44°; giorno e notte reali; luci delle città; clic su un paese → volo sul paese, poi passaggio alla mappa piatta; «← Mondo» → torna il globo.
    - **Movimento:** il globo ruota soltanto, senza oscillare in su e in giù: Marco l'ha trovato brutto (15/11/2026). Rotazione continua.
-2. **Animazioni stagionali (solo anteprime per ora):** effetti leggeri e trasparenti sulla fascia della ricerca, attivati da soli nel periodo giusto.
-   - **Natale:** neve e simboli natalizi dall'8 dicembre al 6 gennaio (Marco ha scritto «6 dicembre», ma intende la Befana).
-   - **Altre grandi religioni**, ciascuna con un tema suo:
-     - Ramadan ed Eid: mezzaluna e lanterne;
-     - Hanukkah: luci della menorah;
-     - Diwali: lampade diya;
-     - Vesak: lanterne e loto;
-     - Capodanno lunare: lanterne rosse;
-     - Pasqua.
-   - **Calcolo delle date:** usare `Intl.DateTimeFormat` con i calendari `islamic-umalqura`, `hebrew` e `chinese`, così le date si calcolano da sole. Diwali e Vesak vanno in una tabella verificata anno per anno.
-   - **Anteprime:** GIF da mostrare a Marco prima di pubblicare.
+2. **Feste (animazioni stagionali): approvate da Marco il 15/11/2026, sul ramo, da pubblicare con la prossima revisione.**
+   - **Codice:** in fondo a `index.html`, blocco «feste» (CSS `.fest-*` e script). Canvas `.fest-cv` nella fascia alta della mappa della home (non nella versione essenziale), simbolo `.fest-orn` sulla «B» di `.fc-h`, pulsante `.fest-chip` in alto a destra con «Nome · Che cos'è ↗» che porta a Wikipedia nella lingua del sito (`Special:Search`).
+   - **Per tutti, ovunque:** Marco ha deciso di non legarle all'area geografica né alla religione (discorso inclusivo). Se due feste coincidono si alternano un giorno l'una e un giorno l'altra.
+   - **Periodi (calcolati da soli):** Natale 8/12–6/1 (neve geometrica, cappellino); Hanukkah 24 Kislev + 8 giorni (menorah, `Intl` calendario `hebrew`); Capodanno lunare dalla vigilia al 15° giorno (lanterne rosse, calendario `chinese`); Ramadan (mese 9), Eid al-Fitr (1–3 Shawwal), Eid al-Adha (10–13 Dhu al-Hijja) con mezzaluna e lanterne (`islamic-umalqura`); Pasqua cattolica e ortodossa, dalla Domenica delle Palme al Lunedì dell'Angelo (computo nel codice; rametto d'ulivo sulla «B», cestino di uova e coniglietto che ruba un uovo, richiesta di Marco).
+   - **Tabelle da aggiornare ogni anno:** `DIWALI` (2026: 8/11, 2027: 29/10; si vede ±2 giorni) e `VESAK` (2027: 20/5, ±3 giorni; varia da paese a paese). Senza la riga dell'anno la festa non compare.
+   - **Anteprima di una festa:** `?stagione=natale|hanukkah|lunare|ramadan|eid|adha|pasqua|vesak|diwali`. L'elenco `OK` nello script dice quali si attivano da sole (ora tutte tranne la Pasqua, in attesa del sì sulla nuova versione).
 3. **Pulsanti 3D «a LED incassati»: PUBBLICATI il 15/11/2026 (revisione 111) dopo il sì di Marco.**
    - **Dove si applicano:** barra in alto, schede di BIM News, impostazioni, «Vedi le notizie», «Tutti gli appuntamenti».
    - **Il codice:** il CSS è in fondo allo `<style>`, blocco «pulsanti 3D a LED incassati».
@@ -175,7 +170,6 @@ Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato co
    - **Guida al sito:** una breve descrizione per ogni scheda (BIM News, AI ecc.).
    - **Lingue:** nelle lingue diverse dall'italiano le notizie vanno mostrate in inglese (titolo e sintesi in inglese) e BIM Accademia con l'abstract originale inglese, per non sprecare token. Serve aggiungere i campi in inglese alle notizie e aggiornare il task del lunedì.
    - **Festività della tecnologia:** un piccolo widget per le giornate mondiali legate alla tecnologia, riconosciute a livello mondiale (per esempio quelle ONU, ITU e UNESCO). Da verificare una per una.
-   - **Animazioni stagionali** (punto 2): mai fatte finora. Marco chiede un'anteprima.
    - **Agenda:** grafica a calendario.
 
 ## Fatto di recente
