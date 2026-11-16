@@ -1,0 +1,38 @@
+v1350	Die Artikel, an denen ich arbeite: Alle sind im Entwurf. Der vollständige Text kommt nach und nach.
+v1351	Inspirationen
+v1352	Die YouTube-Kanäle, denen ich folge: woher ich Ideen, Neugier und ab und zu ein bisschen Leichtigkeit nehme.
+v1353	Es gibt keinen roten Faden: Es gibt gut erklärte Wissenschaft, Elektrik und Elektronik, die ich bei der Arbeit brauche, die Gitarre, Wirtschaft, Körper und Geist. Ich nenne sie hier so, wie man einem Freund ein Buch empfiehlt, ohne Abmachung mit irgendwem.
+v1354	Wissenschaft, Mathematik und Vermittlung
+v1355	<a href="https://www.youtube.com/@BarbascuraX" target="_blank" rel="noopener" translate="no">Barbascura X ↗</a> · Wissenschaft und Natur, mit Ironie
+v1356	<a href="https://www.youtube.com/@dariobressanini" target="_blank" rel="noopener" translate="no">Dario Bressanini ↗</a> · Wissenschaft und Essen
+v1357	<a href="https://www.youtube.com/@DarioBressaniniExtra" target="_blank" rel="noopener" translate="no">Dario Bressanini Extra ↗</a> · sein zweiter Kanal
+v1358	<a href="https://www.youtube.com/@EntropyforLife" target="_blank" rel="noopener" translate="no">Entropy for Life ↗</a> · Wissenschaft erzählt von Giacomo Moro Mauretto
+v1359	<a href="https://www.youtube.com/@avvocatoatomico" target="_blank" rel="noopener" translate="no">L'Avvocato dell'Atomo ↗</a> · Energie und Kernkraft, erklärt von Physikern und Ingenieuren
+v1360	<a href="https://www.youtube.com/@ClearMath1" target="_blank" rel="noopener" translate="no">ClearMath ↗</a> · Mathematik neu gesehen
+v1361	<a href="https://www.youtube.com/@PaoloColetti" target="_blank" rel="noopener" translate="no">Paolo Coletti ↗</a> · Mathematik, Programmierung und Datenanalyse
+v1362	Technik und Methode
+v1363	<a href="https://www.youtube.com/@antirez" target="_blank" rel="noopener" translate="no">Salvatore Sanfilippo ↗</a> · Programmierung, Algorithmen und künstliche Intelligenz
+v1364	<a href="https://www.youtube.com/@alessandrodeconcini-adc" target="_blank" rel="noopener" translate="no">Alessandro de Concini ↗</a> · Lernmethode, Lernen und Produktivität
+v1365	<a href="https://www.youtube.com/@mmontemagno" target="_blank" rel="noopener" translate="no">Marco Montemagno ↗</a> · Technik und Business, einfach erklärt
+v1366	Elektrik, Elektronik und Haus
+v1367	<a href="https://www.youtube.com/@ilprofelettrico" target="_blank" rel="noopener" translate="no">il Prof Elettrico ↗</a> · die Grundlagen der Elektrik, mit Corrado Lai
+v1368	<a href="https://www.youtube.com/@IchigoElettronica" target="_blank" rel="noopener" translate="no">Ichigo Elettronica ↗</a> · Elektronikprojekte, vom Einsteiger- bis zum Fortgeschrittenenniveau
+v1369	<a href="https://www.youtube.com/@SamuelMagistro" target="_blank" rel="noopener" translate="no">Samuel Magistro ↗</a> · Werkzeuge, Heimwerken und Elektronik
+v1370	<a href="https://www.youtube.com/@MissioneCasa" target="_blank" rel="noopener" translate="no">Missione Casa ↗</a> · ein praktischer Leitfaden rund ums Wohnen
+v1371	Musik und Gitarre
+v1372	<a href="https://www.youtube.com/@FebbreDaChitarra" target="_blank" rel="noopener" translate="no">Febbre Da Chitarra ↗</a> · Gitarre, mit Riccardo
+v1373	<a href="https://www.youtube.com/@MarcoFanton" target="_blank" rel="noopener" translate="no">Marco Fanton ↗</a> · E-Gitarre und digitale Systeme für Gitarre und Bass
+v1374	<a href="https://www.youtube.com/@robyrocks" target="_blank" rel="noopener" translate="no">Roby Rocks ↗</a> · auf der Suche nach dem perfekten Gitarrensound
+v1375	<a href="https://www.youtube.com/@EpicMusicVN" target="_blank" rel="noopener" translate="no">Epic Music VN ↗</a> · epische und filmische Musik
+v1376	Wirtschaft, Finanzen und Arbeit
+v1377	<a href="https://www.youtube.com/@giorgiopecorari" target="_blank" rel="noopener" translate="no">Giorgio Pecorari ↗</a> · Investieren und Finanzanalyse
+v1378	<a href="https://www.youtube.com/@MicheleBoldrin" target="_blank" rel="noopener" translate="no">Michele Boldrin ↗</a> · Wirtschaft
+v1379	<a href="https://www.youtube.com/@mr_rip" target="_blank" rel="noopener" translate="no">Mr. RIP ↗</a> · persönliche Finanzen und finanzielle Unabhängigkeit
+v1380	<a href="https://www.youtube.com/@PietroMichelangeli" target="_blank" rel="noopener" translate="no">Pietro Michelangeli ↗</a> · persönliche Finanzen
+v1381	<a href="https://www.youtube.com/@StartingFinance" target="_blank" rel="noopener" translate="no">Starting Finance ↗</a> · wirtschaftliche und finanzielle Bildung
+v1382	<a href="https://www.youtube.com/@ValerioVillaniChannel" target="_blank" rel="noopener" translate="no">Valerio Villani ↗</a> · berufliche Entwicklung und Karriere
+v1383	Körper, Geist und Welt
+v1384	<a href="https://www.youtube.com/@ChrisGalbiati" target="_blank" rel="noopener" translate="no">Chris Galbiati ↗</a> · Autor des Buches «L'America mi ha scoperto»
+v1385	<a href="https://www.youtube.com/@ManuelSpadacciniKMA" target="_blank" rel="noopener" translate="no">Manuel Spadaccini ↗</a> · Selbstverteidigung und Sicherheit
+v1386	<a href="https://www.youtube.com/@Hill3iner" target="_blank" rel="noopener" translate="no">Nicola Colle – Hill 3iner ↗</a> · Training und Coaching
+v1387	<a href="https://www.youtube.com/@gabriellatupini" target="_blank" rel="noopener" translate="no">Gabriella Tupini ↗</a> · Spiritualität und Esoterik

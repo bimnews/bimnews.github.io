@@ -60,7 +60,7 @@ v0659	<b>2. Time management and productivity.</b> The two-minute rule, the Eisen
 v0660	<b>3. The template.</b> If you work in BIM, «get it into your f***ing heads» (an invented quote, from a film that doesn't exist): to work well you need templates. Every studio should have one, with the views set up and the families already loaded. Take the time to create it and update it now and then with the studio's know-how. It is vital.
 v0661	<b>4. The uninterruptible power supply.</b> How to choose one for your workstation, and by what criteria. Every now and then the power goes out, especially in summer. The goal is not to keep working, but to save your work safely without corrupted files and without losing precious hours.
 v0662	<b>5. Overtime is nothing to boast about.</b> It means that something in the organisation of the work did not function. With the difference between employment and self-employment.
-v0663	<b>6. The value of reflection.</b> Take some time, as a studio or on your own, to tidy up your files and work on small projects that improve the studio's material: everyone will benefit. And every now and then, question your work and your organisation. «What grows slowly puts down deep roots» (a proverb attributed to African tradition).
+v0663	<b>6. The value of reflection.</b> Take some time, as a studio or on your own, to tidy up your files and work on small projects that improve the studio's material: everyone will benefit. And every now and then, question your work and your organisation. «What grows slowly puts down deep roots» (a proverb of uncertain origin).
 v0664	<b>7–10.</b> To be defined.
 v0665	The IFC library in Excel
 v0666	An Excel sheet with the IFC classes and their descriptions: how to use it, and where.
