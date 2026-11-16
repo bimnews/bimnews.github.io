@@ -47,7 +47,7 @@ v0046	Quelles sources, par ordre de fiabilité
 v0047	<b>Sources institutionnelles</b>, toujours admises : gouvernements, ministères, journaux officiels, organismes de normalisation (ISO, CEN, UNI, DIN et leurs équivalents nationaux), sections nationales de buildingSMART, acheteurs publics, universités et banques de développement. Les villes, régions et provinces ne comptent que lorsqu'elles apportent une contribution concrète au BIM : une obligation, un règlement, un permis de construire sur maquette, un programme, un grand ouvrage.
 v0048	<b>Presse de référence</b> : titres spécialisés avec une rédaction, grands quotidiens nationaux, agences de presse.
 v0049	<b>Grandes entreprises</b>, seulement pour des faits d'un poids réel, comme un grand ouvrage livré en BIM ; jamais pour présenter un produit.
-v0050	Toujours exclus : blogs personnels, sites de bureaux ou de consultants individuels, revendeurs, faits divers locaux, publications sur les réseaux sociaux et sites sans auteur ni date. Chaque actualité est vérifiée en ouvrant sa source. Les actualités commencent en 2015 ; avant cela, seules entrent les étapes fondatrices des pays pionniers, c'est-à-dire les premières obligations et normes nationales sur le BIM, avec l'étiquette « Historique ».
+v0050	Toujours exclus : blogs personnels, sites de bureaux ou de consultants individuels, revendeurs, faits divers locaux, publications sur les réseaux sociaux et sites sans auteur ni date. Chaque actualité est vérifiée en ouvrant sa source. Les archives commencent en 1992, l'année où apparaît pour la première fois l'expression « Building Information Model ».
 v0051	Les langues dans lesquelles nous cherchons les actualités
 v0052	Chaque actualité est recherchée dans la langue du pays où elle naît, pas seulement en anglais.
 v0053	<b>En vérification</b> : langues nationales de pays où nous attendons une activité BIM. Elles restent dans la liste si elles apportent des sources valables ; sinon, elles en sortent.
@@ -81,7 +81,7 @@ v0080	Webinaires
 v0081	Le plus proche de moi
 v0082	Dates et coûts vérifiés sur les pages des organisateurs au moment de l'ajout : vérifiez-les toujours avant de vous inscrire. Votre position reste dans votre navigateur et n'est envoyée à personne.
 v0083	<strong>Langue.</strong> Dans les langues autres que l'italien, chaque actualité est présentée dans la langue de sa source quand elle correspond à celle que vous avez choisie, sinon en anglais, toujours avec le lien vers la source originale.
-v0084	Archives : de 2015 à aujourd'hui, par année et par mois, plus les étapes historiques
+v0084	Archives : de 1992 à aujourd'hui, par année et par mois
 v0085	← Plus récentes
 v0086	Précédentes →
 v0087	Aucune actualité ne correspond aux filtres. Essayez un autre mot ou réinitialisez les filtres.

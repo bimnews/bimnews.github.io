@@ -5,7 +5,7 @@ v1202	Le notizie della settimana più recente
 v1203	I criteri della selezione, a partire dall'inclusività
 v1204	Mappa del mondo
 v1205	Continenti, paesi e regioni con il numero di notizie
-v1206	Archivio dal 2015
+v1206	Archivio dal 1992
 v1207	Tutte le notizie per anno e mese, con filtri e ricerca
 v1208	I prossimi appuntamenti, accanto alle notizie
 v1209	Le notizie in cui il BIM incontra l'intelligenza artificiale

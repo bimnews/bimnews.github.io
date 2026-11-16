@@ -343,9 +343,9 @@
 "id": "v0049"
 },
 {
-"k": "Restano sempre fuori blog personali, siti di singoli studi o consulenti, rivenditori, cronaca locale, post sui social e siti senza autore né data. Ogni notizia è verificata aprendo la sua fonte. Le notizie partono dal 2015; prima di allora entrano solo le tappe fondative dei paesi pionieri, cioè i primi obblighi e le prime norme nazionali sul BIM, con l'etichetta «Storico».",
+"k": "Restano sempre fuori blog personali, siti di singoli studi o consulenti, rivenditori, cronaca locale, post sui social e siti senza autore né data. Ogni notizia è verificata aprendo la sua fonte. L'archivio parte dal 1992, l'anno in cui compare per la prima volta l'espressione «Building Information Model».",
 "m": "text",
-"h": "Restano sempre fuori blog personali, siti di singoli studi o consulenti, rivenditori, cronaca locale, post sui social e siti senza autore né data. Ogni notizia è verificata aprendo la sua fonte. Le notizie partono dal 2015; prima di allora entrano solo le tappe fondative dei paesi pionieri, cioè i primi obblighi e le prime norme nazionali sul BIM, con l'etichetta «Storico».",
+"h": "Restano sempre fuori blog personali, siti di singoli studi o consulenti, rivenditori, cronaca locale, post sui social e siti senza autore né data. Ogni notizia è verificata aprendo la sua fonte. L'archivio parte dal 1992, l'anno in cui compare per la prima volta l'espressione «Building Information Model».",
 "tag": "P",
 "id": "v0050"
 },
@@ -581,9 +581,9 @@
 "id": "v0083"
 },
 {
-"k": "Archivio: dal 2015 a oggi, per anno e mese, più le tappe storiche",
+"k": "Archivio: dal 1992 a oggi, per anno e mese",
 "m": "text",
-"h": "Archivio: dal 2015 a oggi, per anno e mese, più le tappe storiche",
+"h": "Archivio: dal 1992 a oggi, per anno e mese",
 "tag": "H3",
 "id": "v0084"
 },
@@ -1036,16 +1036,16 @@
 "id": "v0148"
 },
 {
-"k": "Perché non ci sono notizie prima del 2015?",
+"k": "Da quando partono le notizie?",
 "m": "text",
-"h": "Perché non ci sono notizie prima del 2015?",
+"h": "Da quando partono le notizie?",
 "tag": "SUMMARY",
 "id": "v0149"
 },
 {
-"k": "Il 2015 è l'anno in cui è uscita la prima parte della UNI 11337, la serie di norme italiane sul BIM. Lo usiamo come punto di partenza comune per tutto il mondo. C'è una sola eccezione: le tappe fondative dei paesi pionieri, cioè i primi obblighi e le prime norme nazionali sul BIM, come in Danimarca, Finlandia, Regno Unito e Stati Uniti. Senza di loro la mappa direbbe che quei paesi sono arrivati tardi, mentre sono arrivati per primi. Le trovi con l'etichetta «Storico».",
+"k": "Dal dicembre 1992, quando G.A. van Nederveen e F.P. Tolman usano per la prima volta l'espressione «Building Information Model» in un articolo sulla rivista Automation in Construction: è l'anno zero del nome BIM. L'idea è più antica: nel 1975 Charles M. Eastman descrive il Building Description System, che trovi nella linea del tempo di BIM in breve. Da lì andiamo avanti fino a oggi, senza salti.",
 "m": "text",
-"h": "Il 2015 è l'anno in cui è uscita la prima parte della UNI 11337, la serie di norme italiane sul BIM. Lo usiamo come punto di partenza comune per tutto il mondo. C'è una sola eccezione: le tappe fondative dei paesi pionieri, cioè i primi obblighi e le prime norme nazionali sul BIM, come in Danimarca, Finlandia, Regno Unito e Stati Uniti. Senza di loro la mappa direbbe che quei paesi sono arrivati tardi, mentre sono arrivati per primi. Le trovi con l'etichetta «Storico».",
+"h": "Dal dicembre 1992, quando G.A. van Nederveen e F.P. Tolman usano per la prima volta l'espressione «Building Information Model» in un articolo sulla rivista Automation in Construction: è l'anno zero del nome BIM. L'idea è più antica: nel 1975 Charles M. Eastman descrive il Building Description System, che trovi nella linea del tempo di BIM in breve. Da lì andiamo avanti fino a oggi, senza salti.",
 "tag": "P",
 "id": "v0150"
 },
@@ -8421,9 +8421,9 @@
 "id": "v1205"
 },
 {
-"k": "Archivio dal 2015",
+"k": "Archivio dal 1992",
 "m": "text",
-"h": "Archivio dal 2015",
+"h": "Archivio dal 1992",
 "tag": "#rest",
 "id": "v1206"
 },

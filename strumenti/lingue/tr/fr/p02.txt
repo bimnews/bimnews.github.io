@@ -49,8 +49,8 @@ v0145	Que signifient les chiffres sur la carte ?
 v0146	Le nombre d'actualités par continent, pays ou région. Touchez un continent, puis un pays et une région pour voir les actualités de ce lieu.
 v0147	Pourquoi certaines actualités portent-elles l'étiquette « Archives » ?
 v0148	Ce sont des actualités que nous avons recueillies plus de sept jours après leur parution, pour compléter l'histoire d'un pays ou d'une norme.
-v0149	Pourquoi n'y a-t-il pas d'actualités avant 2015 ?
-v0150	2015 est l'année de parution de la première partie de l'UNI 11337, la série de normes italiennes sur le BIM. Nous l'utilisons comme point de départ commun pour le monde entier. Il n'y a qu'une exception : les étapes fondatrices des pays pionniers, c'est-à-dire les premières obligations et normes nationales sur le BIM, comme au Danemark, en Finlande, au Royaume-Uni et aux États-Unis. Sans elles, la carte laisserait croire que ces pays sont arrivés tard, alors qu'ils ont été les premiers. Vous les trouverez avec l'étiquette « Historique ».
+v0149	Depuis quand commencent les actualités ?
+v0150	Depuis décembre 1992, quand G.A. van Nederveen et F.P. Tolman utilisent pour la première fois l'expression « Building Information Model » dans un article de la revue Automation in Construction : c'est l'année zéro du nom BIM. L'idée est plus ancienne : en 1975, Charles M. Eastman décrit le Building Description System, que vous trouverez dans la frise de Le BIM en bref. De là, nous avançons jusqu'à aujourd'hui, sans trous.
 v0151	Que trouve-t-on dans BIM & AI ?
 v0152	Les actualités dont le thème principal est l'intelligence artificielle appliquée au BIM et à la construction, avec la même carte et les mêmes filtres que BIM News.
 v0153	Les langues de la recherche

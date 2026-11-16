@@ -5,7 +5,7 @@ v1202	The news of the most recent week
 v1203	The selection criteria, starting with inclusiveness
 v1204	World map
 v1205	Continents, countries and regions with the number of news items
-v1206	Archive since 2015
+v1206	Archive since 1992
 v1207	All the news by year and month, with filters and search
 v1208	Upcoming dates, next to the news
 v1209	The news in which BIM meets artificial intelligence
