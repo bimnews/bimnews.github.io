@@ -44,12 +44,12 @@ Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato co
 
 ## Attività programmate (account di Marco)
 
-- **Task settimanale** `trig_015jCaF6QnEXfgYXfYEkz2L5`, ogni lunedì alle 7:41 (ora di Roma):
+- **Task settimanale** `trig_015jCaF6QnEXfgYXfYEkz2L5`, nella notte tra domenica e lunedì alle 0:13 (ora di Roma; spostato da Marco il 16/11/2026 per non consumare i token del lunedì mattina). **Le istruzioni sono nel repository: `strumenti/task-settimanale.md`** (fonte unica: per cambiare il lavoro del task si modifica quel file; il testo del task dice solo di collegare il repository ed eseguirlo):
   - SOLO le notizie della settimana passata (decisione di Marco del 15/11/2026: niente ricerca storica il lunedì), più agenda, scadenze, video e circa 20 articoli di BIM Accademia;
   - fonti in tre livelli (istituzionali, stampa autorevole, grandi aziende);
   - lingue della ricerca: 36 lingue più 40 in verifica, elencate nella FAQ, che è la fonte unica: la tendina di BIM News le copia da lì.
 - **I due task puntano a `bimnews/bimnews.github.io`** (testi aggiornati il 16/11/2026).
-- **ATTENZIONE, 16/11/2026:** il primo giro del task del lunedì NON ha pubblicato: la sua sessione non aveva `add_repo` né un token GitHub valido (push 403). Ha mandato a Marco la patch `bimnews-settimana-2026-11-09.patch` (10 notizie, revisione 125 nella patch: da rinumerare). Rimedio: Marco aggiunge il repository nelle impostazioni dell'ambiente del task (Repositories), oppure la patch si applica a mano.
+- **16/11/2026:** il primo giro del task non ha potuto pubblicare (push 403: la sessione del task non aveva il repository collegato). La sua patch è stata applicata a mano (revisione 129). Se si ripete, il task manda a Marco la patch e basta allegarla in una sessione con Claude. Rimedio definitivo: aggiungere `bimnews/bimnews.github.io` ai Repositories dell'ambiente del task.
 - **Backup mensile** `trig_01JYeJLDBXhzrernU5qSRte7`, il 1° del mese alle 19:23: invia a Marco uno zip con il sito, la cronologia (git bundle) e il testo del task settimanale.
 - **Se cambi la struttura dei dati, aggiorna il testo dei task con `update_trigger`.**
 
@@ -196,6 +196,8 @@ Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato co
   - **BIM in breve:** «Che cos'è» riscritto.
   - **Le mie proposte:** la frase «aperte ai commenti» è sostituita dal rimando a LinkedIn, per coerenza con il disclaimer.
 - **15/11/2026, revisione 113:** selettore delle lingue (11 lingue) con le scritte principali tradotte.
+- **16/11/2026:** istruzioni del task settimanale spostate in `strumenti/task-settimanale.md`; il task ora parte lunedì alle 0:13.
+- **16/11/2026, revisione 129 (rassegna del task del lunedì, settimana 9–15/11, pubblicata da Claude dalla patch):** 10 notizie (Italia, Germania 2, Belgio, Corea del Sud, Malesia, Vietnam, Indonesia, Marocco, Brasile/Paraná); nuovi sulla mappa Belgio, Vietnam, Indonesia. 20 articoli in BIM Accademia (79), 19 appuntamenti, 4 scadenze (Irlanda 2, Singapore, Perù), 7 video, 2 video universitari, 3 canali. Malese spostato tra le lingue della ricerca (37/39). n87 ora ha `n` vuoto. Il push dal task era fallito con 403: la patch è stata applicata in una sessione con Marco. Difetto noto: in FAQ i titoli «Lingue in cui cerchiamo (N)» e «Lingue in verifica (N)» non si traducono per intero perché il numero è nel testo (es. «Lingue under review (39)»).
 - **16/11/2026, revisione 128:** tornata la prima Via Lattea (sempre solo con `?vialattea=1`); aggiunto il canale «La vera interpretazione dei Sogni».
 - **16/11/2026, revisione 127:** Via Lattea migliorata per il computer (fascia più larga e continua, nucleo caldo a destra fuori dalla ricerca, polvere a strisce allungate); sempre solo con `?vialattea=1`.
 - **16/11/2026, revisione 126:** Via Lattea dietro il globo, visibile solo in anteprima con `?vialattea=1`.
