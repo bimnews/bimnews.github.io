@@ -49,8 +49,8 @@ v0145	Che cosa indicano i numeri sulla mappa?
 v0146	Quante notizie ci sono per continente, paese o regione. Tocca un continente, poi un paese e una regione per vedere le notizie di quel luogo.
 v0147	Perché alcune notizie hanno l'etichetta «Archivio»?
 v0148	Sono notizie che abbiamo raccolto più di sette giorni dopo la loro uscita, per completare la storia di un paese o di una norma.
-v0149	Perché non ci sono notizie prima del 2015?
-v0150	Il 2015 è l'anno in cui è uscita la prima parte della UNI 11337, la serie di norme italiane sul BIM. Lo usiamo come punto di partenza comune per tutto il mondo. C'è una sola eccezione: le tappe fondative dei paesi pionieri, cioè i primi obblighi e le prime norme nazionali sul BIM, come in Danimarca, Finlandia, Regno Unito e Stati Uniti. Senza di loro la mappa direbbe che quei paesi sono arrivati tardi, mentre sono arrivati per primi. Le trovi con l'etichetta «Storico».
+v0149	Da quando partono le notizie?
+v0150	Dal dicembre 1992, quando G.A. van Nederveen e F.P. Tolman usano per la prima volta l'espressione «Building Information Model» in un articolo sulla rivista Automation in Construction: è l'anno zero del nome BIM. L'idea è più antica: nel 1975 Charles M. Eastman descrive il Building Description System, che trovi nella linea del tempo di BIM in breve. Da lì andiamo avanti fino a oggi, senza salti.
 v0151	Che cosa trovo in BIM & AI?
 v0152	Le notizie in cui il tema principale è l'intelligenza artificiale applicata al BIM e alle costruzioni, con la stessa mappa e gli stessi filtri di BIM News.
 v0153	Le lingue della ricerca

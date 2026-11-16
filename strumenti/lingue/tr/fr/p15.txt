@@ -5,7 +5,7 @@ v1202	Les actualités de la semaine la plus récente
 v1203	Les critères de la sélection, à commencer par l'inclusion
 v1204	Carte du monde
 v1205	Continents, pays et régions avec le nombre d'actualités
-v1206	Archives depuis 2015
+v1206	Archives depuis 1992
 v1207	Toutes les actualités par année et par mois, avec filtres et recherche
 v1208	Les prochains rendez-vous, à côté des actualités
 v1209	Les actualités où le BIM rencontre l'intelligence artificielle

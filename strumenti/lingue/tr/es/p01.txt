@@ -47,7 +47,7 @@ v0046	De qué fuentes, por orden de fiabilidad
 v0047	<b>Fuentes institucionales</b>, siempre admitidas: gobiernos, ministerios, boletines oficiales, organismos de normalización (ISO, CEN, UNI, DIN y los equivalentes nacionales), capítulos nacionales de buildingSMART, entidades contratantes públicas, universidades y bancos de desarrollo. Ciudades, regiones y provincias valen solo cuando aportan una contribución concreta al BIM: una obligación, un reglamento, una licencia de obra basada en el modelo, un programa, una gran obra.
 v0048	<b>Prensa de prestigio</b>: medios del sector con redacción, grandes diarios nacionales, agencias de noticias.
 v0049	<b>Grandes empresas</b>, solo para hechos de peso real, como una gran obra entregada en BIM; nunca para presentar un producto.
-v0050	Quedan siempre fuera los blogs personales, los sitios de estudios o consultores individuales, los distribuidores, la crónica local, las publicaciones en redes sociales y los sitios sin autor ni fecha. Cada noticia se verifica abriendo su fuente. Las noticias empiezan en 2015; antes de esa fecha solo entran los hitos fundacionales de los países pioneros, es decir, las primeras obligaciones y normas nacionales sobre BIM, con la etiqueta «Histórico».
+v0050	Quedan siempre fuera los blogs personales, los sitios de estudios o consultores individuales, los distribuidores, la crónica local, las publicaciones en redes sociales y los sitios sin autor ni fecha. Cada noticia se verifica abriendo su fuente. El archivo empieza en 1992, el año en que aparece por primera vez la expresión «Building Information Model».
 v0051	Los idiomas en los que buscamos las noticias
 v0052	Cada noticia se busca en el idioma del país donde nace, no solo en inglés.
 v0053	<b>En verificación</b>: idiomas nacionales de países en los que esperamos actividad BIM. Siguen en la lista si aportan fuentes válidas; si no, salen.
@@ -81,7 +81,7 @@ v0080	Webinars
 v0081	El más cercano a mí
 v0082	Fechas y costes verificados en las páginas de los organizadores cuando los añadimos: compruébalos siempre antes de inscribirte. Tu ubicación se queda en tu navegador y no se envía a nadie.
 v0083	<strong>Idioma.</strong> En los idiomas distintos del italiano, cada noticia se muestra en el idioma de su fuente cuando coincide con el que has elegido; si no, en inglés, siempre con el enlace a la fuente original.
-v0084	Archivo: de 2015 a hoy, por año y mes, más los hitos históricos
+v0084	Archivo: de 1992 a hoy, por año y mes
 v0085	← Más recientes
 v0086	Anteriores →
 v0087	Ninguna noticia coincide con los filtros. Prueba con otra palabra o borra los filtros.

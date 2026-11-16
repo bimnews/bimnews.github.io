@@ -47,7 +47,7 @@ v0046	Aus welchen Quellen, nach Zuverlässigkeit geordnet
 v0047	<b>Institutionelle Quellen</b>, immer zugelassen: Regierungen, Ministerien, Amtsblätter, Normungsorganisationen (ISO, CEN, UNI, DIN und die nationalen Entsprechungen), nationale Sektionen von buildingSMART, öffentliche Auftraggeber, Universitäten und Entwicklungsbanken. Städte, Regionen und Provinzen zählen nur, wenn sie einen konkreten Beitrag zum BIM leisten: eine Pflicht, eine Verordnung, eine Baugenehmigung auf Modellbasis, ein Programm, ein Großprojekt.
 v0048	<b>Seriöse Presse</b>: Fachzeitschriften mit Redaktion, große überregionale Tageszeitungen, Nachrichtenagenturen.
 v0049	<b>Große Unternehmen</b>, nur für wirklich gewichtige Fakten, etwa ein in BIM übergebenes Großprojekt; nie, um ein Produkt vorzustellen.
-v0050	Immer ausgeschlossen sind persönliche Blogs, Websites einzelner Büros oder Berater, Händler, Lokalnachrichten, Beiträge in sozialen Netzwerken und Websites ohne Autor und Datum. Jede Nachricht wird durch Öffnen ihrer Quelle geprüft. Die Nachrichten beginnen 2015; davor kommen nur die grundlegenden Meilensteine der Pionierländer hinzu, also die ersten nationalen BIM-Pflichten und -Normen, mit der Kennzeichnung „Historisch“.
+v0050	Immer ausgeschlossen sind persönliche Blogs, Websites einzelner Büros oder Berater, Händler, Lokalnachrichten, Beiträge in sozialen Netzwerken und Websites ohne Autor und Datum. Jede Nachricht wird durch Öffnen ihrer Quelle geprüft. Das Archiv beginnt 1992, dem Jahr, in dem der Ausdruck „Building Information Model“ zum ersten Mal auftaucht.
 v0051	Die Sprachen, in denen wir suchen
 v0052	Jede Nachricht wird in der Sprache des Landes gesucht, in dem sie entsteht, nicht nur auf Englisch.
 v0053	<b>In Prüfung</b>: Landessprachen von Ländern, in denen wir BIM-Aktivität erwarten. Sie bleiben auf der Liste, wenn sie gültige Quellen liefern, sonst werden sie gestrichen.
@@ -81,7 +81,7 @@ v0080	Webinare
 v0081	Am nächsten bei mir
 v0082	Daten und Kosten wurden beim Eintragen auf den Seiten der Veranstalter geprüft: Kontrolliere sie immer, bevor du dich anmeldest. Dein Standort bleibt in deinem Browser und wird an niemanden gesendet.
 v0083	<strong>Sprache.</strong> In anderen Sprachen als Italienisch wird jede Nachricht in der Sprache ihrer Quelle angezeigt, wenn sie mit der gewählten übereinstimmt, sonst auf Englisch, immer mit dem Link zur Originalquelle.
-v0084	Archiv: von 2015 bis heute, nach Jahr und Monat, dazu die historischen Meilensteine
+v0084	Archiv: von 1992 bis heute, nach Jahr und Monat
 v0085	← Neuere
 v0086	Ältere →
 v0087	Keine Nachricht entspricht den Filtern. Versuche es mit einem anderen Wort oder setze die Filter zurück.

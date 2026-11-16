@@ -47,7 +47,7 @@ v0046	Which sources, in order of reliability
 v0047	<b>Institutional sources</b>, always accepted: governments, ministries, official gazettes, standards bodies (ISO, CEN, UNI, DIN and their national equivalents), national buildingSMART chapters, public contracting authorities, universities and development banks. Cities, regions and provinces count only when they make a concrete contribution to BIM: a mandate, a regulation, a model-based building permit, a programme, a major project.
 v0048	<b>Reputable press</b>: trade publications with an editorial team, major national newspapers, news agencies.
 v0049	<b>Large companies</b>, only for facts of real weight, such as a major project delivered in BIM; never to present a product.
-v0050	Always excluded: personal blogs, websites of individual practices or consultants, resellers, local news, social media posts and sites without author or date. Every news item is checked by opening its source. News starts in 2015; before that, only the founding milestones of pioneer countries are included, i.e. the first national BIM mandates and standards, labelled “Historical”.
+v0050	Always excluded: personal blogs, websites of individual practices or consultants, resellers, local news, social media posts and sites without author or date. Every news item is checked by opening its source. The archive starts in 1992, the year the expression “Building Information Model” first appears.
 v0051	The languages we search the news in
 v0052	Each item is searched for in the language of the country where it originates, not only in English.
 v0053	<b>Under review</b>: national languages of countries where we expect BIM activity. They stay on the list if they bring valid sources; otherwise they are removed.
@@ -81,7 +81,7 @@ v0080	Webinars
 v0081	Nearest to me
 v0082	Dates and costs were checked on the organisers' pages when we added them: always check them before registering. Your location stays in your browser and is not sent to anyone.
 v0083	<strong>Language.</strong> In languages other than Italian, each news item is shown in the language of its source when it matches the one you chose, otherwise in English, always with the link to the original source.
-v0084	Archive: from 2015 to today, by year and month, plus the historical milestones
+v0084	Archive: from 1992 to today, by year and month
 v0085	← More recent
 v0086	Earlier →
 v0087	No news matches the filters. Try a different word or clear the filters.
