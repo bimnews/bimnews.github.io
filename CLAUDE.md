@@ -49,7 +49,7 @@ Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato co
   - fonti in tre livelli (istituzionali, stampa autorevole, grandi aziende);
   - lingue della ricerca: 36 lingue più 40 in verifica, elencate nella FAQ, che è la fonte unica: la tendina di BIM News le copia da lì.
 - **I due task puntano a `bimnews/bimnews.github.io`** (testi aggiornati il 16/11/2026).
-- **16/11/2026:** il primo giro del task non ha potuto pubblicare (push 403: la sessione del task non aveva il repository collegato). La sua patch è stata applicata a mano (revisione 129). Se si ripete, il task manda a Marco la patch e basta allegarla in una sessione con Claude. Rimedio definitivo: aggiungere `bimnews/bimnews.github.io` ai Repositories dell'ambiente del task.
+- **16/11/2026:** il primo giro del task non ha potuto pubblicare (push 403). Causa: l'ambiente del task («BIM News: rassegna settimanale dal mondo», `env_01PKTScVCapzPJdy5JcKsLsj`) aveva ancora il vecchio repository `mscigliuolo/mscigliuolo.github.io`. Marco l'ha sostituito con `bimnews/bimnews.github.io` lo stesso giorno (verificato con get_environment). Prima verifica vera: il giro del 23/11 alle 0:13. Se il push fallisse ancora, il task manda la patch a Marco. NON lanciare il task a mano per provarlo: ignora l'istruzione «solo prova» e rifà tutta la rassegna.
 - **Backup mensile** `trig_01JYeJLDBXhzrernU5qSRte7`, il 1° del mese alle 19:23: invia a Marco uno zip con il sito, la cronologia (git bundle) e il testo del task settimanale.
 - **Se cambi la struttura dei dati, aggiorna il testo dei task con `update_trigger`.**
 
