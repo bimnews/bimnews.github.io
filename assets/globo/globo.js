@@ -15,21 +15,27 @@ var HOME=homeView(),TILT=-23.44,rot=[-HOME[0],-Math.max(-45,Math.min(62,HOME[1]+
 var MWON=/[?&]vialattea=1/.test(location.search)||window.VIALATTEA===true,MW=null;
 function rnd(seed){return function(){seed=(seed*16807)%2147483647;return (seed-1)/2147483646}}
 function mwBuild(){var c=document.createElement("canvas"),w=Math.max(1,Math.round(W*DPR)),h=Math.max(1,Math.round(H*DPR));c.width=w;c.height=h;
-  var g=c.getContext("2d"),R1=rnd(7),L=Math.hypot(w,h),ang=-0.42,cs=Math.cos(ang),sn=Math.sin(ang),cx0=w*.5,cy0=h*.52;
+  var g=c.getContext("2d"),R1=rnd(7),L=Math.hypot(w,h),wide=w/h>1.6,ang=wide?-0.30:-0.42,cs=Math.cos(ang),sn=Math.sin(ang),cx0=w*.5,cy0=h*(wide?.56:.52),
+    B=wide?Math.min(h*.30,L*.09):h*.10,UC=wide?L*.26:L*.12; // larghezza della fascia e posizione del nucleo (sul computer: a destra, fuori dalla ricerca)
   function pt(u,v){return[cx0+u*cs-v*sn,cy0+u*sn+v*cs]}
   g.globalCompositeOperation="lighter";
-  // bagliore diffuso lungo la fascia (più intenso verso il nucleo, spostato a destra)
-  for(var i=0;i<140;i++){var u=(R1()-.5)*L*1.1,v=(R1()-.5)*h*.10,core=Math.exp(-Math.pow((u-L*.12)/(L*.22),2)),q=pt(u,v),rad=h*(.08+.14*R1())*(.7+core*.8);
-    var gr=g.createRadialGradient(q[0],q[1],0,q[0],q[1],rad),warm=core>.5;
-    gr.addColorStop(0,warm?"rgba(255,232,200,"+(.065+.07*core)+")":"rgba(170,195,255,"+(.045+.04*core)+")");gr.addColorStop(1,"rgba(0,0,0,0)");
+  // bagliore diffuso lungo la fascia, più intenso verso il nucleo
+  var NG=wide?240:140;
+  for(var i=0;i<NG;i++){var u=(R1()-.5)*L*1.1,v=((R1()+R1())/2-.5)*B*1.3,core=Math.exp(-Math.pow((u-UC)/(L*.32),2)),q=pt(u,v),rad=B*(.55+.9*R1())*(.7+core*.7);
+    var gr=g.createRadialGradient(q[0],q[1],0,q[0],q[1],rad),warm=core>.45;
+    gr.addColorStop(0,warm?"rgba(255,226,190,"+(.014+.022*core)+")":"rgba(170,195,255,"+(.016+.012*core)+")");gr.addColorStop(1,"rgba(0,0,0,0)");
     g.fillStyle=gr;g.beginPath();g.arc(q[0],q[1],rad,0,6.283);g.fill()}
+  // nucleo: un alone caldo più marcato
+  var qc=pt(UC,0),rc=B*(wide?2.2:1.6),gc=g.createRadialGradient(qc[0],qc[1],0,qc[0],qc[1],rc);
+  gc.addColorStop(0,"rgba(255,224,180,.10)");gc.addColorStop(.5,"rgba(255,210,170,.035)");gc.addColorStop(1,"rgba(0,0,0,0)");g.fillStyle=gc;g.beginPath();g.arc(qc[0],qc[1],rc,0,6.283);g.fill();
   // stelline fitte, concentrate al centro della fascia
-  for(i=0;i<2600;i++){var u2=(R1()-.5)*L*1.1,v2=((R1()+R1()+R1())/3-.5)*h*.42,core2=Math.exp(-Math.pow((u2-L*.12)/(L*.3),2)),q2=pt(u2,v2);
-    if(R1()>.55+.4*core2)continue;g.fillStyle="rgba(235,240,255,"+(.25+.5*R1())+")";var z=(.35+R1()*.75)*DPR;g.fillRect(q2[0],q2[1],z,z)}
-  // polvere scura: una banda sottile e irregolare lungo l'asse
+  var NS=Math.round((wide?5200:2600)*Math.min(1.6,Math.max(.7,w*h/(2560*1300))));
+  for(i=0;i<NS;i++){var u2=(R1()-.5)*L*1.1,v2=((R1()+R1()+R1())/3-.5)*B*3.2,core2=Math.exp(-Math.pow((u2-UC)/(L*.28),2)),q2=pt(u2,v2);
+    if(R1()>.5+.45*core2)continue;var br=R1();g.fillStyle=br>.97?"rgba(255,236,210,.95)":"rgba(230,238,255,"+(.2+.5*br)+")";var z=(br>.97?1.3:.35+R1()*.75)*DPR;g.fillRect(q2[0],q2[1],z,z)}
+  // polvere scura: una banda sottile e irregolare lungo l'asse, più evidente vicino al nucleo
   g.globalCompositeOperation="source-over";
-  for(i=0;i<70;i++){var u3=(R1()-.5)*L*.9,v3=Math.sin(u3/L*9)*h*.018+(R1()-.5)*h*.02,q3=pt(u3,v3),r3=h*(.02+.04*R1());
-    var gd=g.createRadialGradient(q3[0],q3[1],0,q3[0],q3[1],r3);gd.addColorStop(0,"rgba(4,6,12,.35)");gd.addColorStop(1,"rgba(4,6,12,0)");g.fillStyle=gd;g.beginPath();g.arc(q3[0],q3[1],r3,0,6.283);g.fill()}
+  for(i=0;i<(wide?220:110);i++){var u3=(R1()-.5)*L*.95,v3=Math.sin(u3/L*9)*B*.18+(R1()-.5)*B*.22,near=Math.exp(-Math.pow((u3-UC)/(L*.25),2)),q3=pt(u3,v3),r3=B*(.06+.14*R1());
+    g.save();g.translate(q3[0],q3[1]);g.rotate(ang);g.scale(3.2,1);var gd=g.createRadialGradient(0,0,0,0,0,r3);gd.addColorStop(0,"rgba(4,6,12,"+(.07+.08*near)+")");gd.addColorStop(1,"rgba(4,6,12,0)");g.fillStyle=gd;g.beginPath();g.arc(0,0,r3,0,6.283);g.fill();g.restore()}
   return c}
 var stars=[];for(var i=0;i<260;i++)stars.push({x:Math.random(),y:Math.random(),s:Math.random()*Math.random()*1.6+.25,p:Math.random()*6.3,v:.4+Math.random()*1.4});
 // dove guarda il globo all'apertura: il fuso orario del browser (nessuna posizione chiesta né inviata)

@@ -196,6 +196,7 @@ Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato co
   - **BIM in breve:** «Che cos'è» riscritto.
   - **Le mie proposte:** la frase «aperte ai commenti» è sostituita dal rimando a LinkedIn, per coerenza con il disclaimer.
 - **15/11/2026, revisione 113:** selettore delle lingue (11 lingue) con le scritte principali tradotte.
+- **16/11/2026, revisione 127:** Via Lattea migliorata per il computer (fascia più larga e continua, nucleo caldo a destra fuori dalla ricerca, polvere a strisce allungate); sempre solo con `?vialattea=1`.
 - **16/11/2026, revisione 126:** Via Lattea dietro il globo, visibile solo in anteprima con `?vialattea=1`.
 - **16/11/2026, revisione 125:** articolo «Ispirazioni» (28 canali, 11 lingue, pacchetto `p20`); tutti gli articoli in preparazione in fase «Bozza»; la notizia n87 (Singapore) ora ha `n` vuoto; proverbio con «origine incerta».
 - **16/11/2026, revisione 124:** tolto ogni limite di data: l'archivio parte dal dicembre 1992, primo uso documentato di «Building Information Model». 11 notizie storiche 1992–2014 (dalla timeline del mondo, fonti già verificate) e tolta l'etichetta «Storico».
