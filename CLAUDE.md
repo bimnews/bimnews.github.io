@@ -56,7 +56,7 @@ Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato co
 ## Google (Search Console)
 
 - **16/11/2026:** aggiunti `robots.txt` e `sitemap.xml` (home, manuali HTML, privacy). Le viste con `#` non sono pagine per Google: si indicizza solo la home.
-- **16/11/2026, revisione 130:** inserito il tag di verifica di Marco (`google-site-verification`, nella testa di `index.html`, accanto alla revisione): NON toglierlo. Restano a Marco: premere «Verifica» e inviare `sitemap.xml`.
+- **16/11/2026, revisione 130–131:** inserito il tag di verifica di Marco (`google-site-verification`, nella testa di `index.html`, accanto alla revisione): NON toglierlo. In revisione 131 il codice è stato sostituito con quello giusto del metodo «Tag HTML» (`bjOU_7z5…`): il primo (`Dn1I…`) era il record DNS, che su github.io non si può usare. Restano a Marco: premere «Verifica» e inviare `sitemap.xml`.
 - **Procedura:** proprietà «Prefisso URL» `https://bimnews.github.io/` in Search Console, verifica con il metodo «Tag HTML» (Marco manda il codice, Claude aggiunge `<meta name="google-site-verification" content="…">` nella testa di `index.html`), poi invio di `sitemap.xml`. Se si aggiungono manuali, aggiornare la sitemap.
 
 ## Regole fisse
