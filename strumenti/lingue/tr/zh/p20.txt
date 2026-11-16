@@ -1,0 +1,38 @@
+v1350	我正在写的文章：全部处于草稿阶段，完整内容会陆续推出。
+v1351	灵感来源
+v1352	我关注的 YouTube 频道：我从这里获得想法、好奇心，偶尔也收获一点轻松。
+v1353	没有统一的主线：有讲得清楚的科学，有我工作中用到的电气和电子，有吉他、经济学、身体与心灵。我把它们列在这里，就像向朋友推荐一本书，和任何人都没有合作关系。
+v1354	科学、数学与科普
+v1355	<a href="https://www.youtube.com/@BarbascuraX" target="_blank" rel="noopener" translate="no">Barbascura X ↗</a> · 科学与自然，带点幽默
+v1356	<a href="https://www.youtube.com/@dariobressanini" target="_blank" rel="noopener" translate="no">Dario Bressanini ↗</a> · 科学与食物
+v1357	<a href="https://www.youtube.com/@DarioBressaniniExtra" target="_blank" rel="noopener" translate="no">Dario Bressanini Extra ↗</a> · 他的第二个频道
+v1358	<a href="https://www.youtube.com/@EntropyforLife" target="_blank" rel="noopener" translate="no">Entropy for Life ↗</a> · Giacomo Moro Mauretto 讲科学
+v1359	<a href="https://www.youtube.com/@avvocatoatomico" target="_blank" rel="noopener" translate="no">L'Avvocato dell'Atomo ↗</a> · 由物理学家和工程师讲解能源与核能
+v1360	<a href="https://www.youtube.com/@ClearMath1" target="_blank" rel="noopener" translate="no">ClearMath ↗</a> · 换个角度看数学
+v1361	<a href="https://www.youtube.com/@PaoloColetti" target="_blank" rel="noopener" translate="no">Paolo Coletti ↗</a> · 数学、编程与数据分析
+v1362	技术与方法
+v1363	<a href="https://www.youtube.com/@antirez" target="_blank" rel="noopener" translate="no">Salvatore Sanfilippo ↗</a> · 编程、算法与人工智能
+v1364	<a href="https://www.youtube.com/@alessandrodeconcini-adc" target="_blank" rel="noopener" translate="no">Alessandro de Concini ↗</a> · 学习方法、学习与效率
+v1365	<a href="https://www.youtube.com/@mmontemagno" target="_blank" rel="noopener" translate="no">Marco Montemagno ↗</a> · 把技术和商业讲得简单易懂
+v1366	电气、电子与家居
+v1367	<a href="https://www.youtube.com/@ilprofelettrico" target="_blank" rel="noopener" translate="no">il Prof Elettrico ↗</a> · 电学基础，主讲 Corrado Lai
+v1368	<a href="https://www.youtube.com/@IchigoElettronica" target="_blank" rel="noopener" translate="no">Ichigo Elettronica ↗</a> · 电子项目，从入门到进阶
+v1369	<a href="https://www.youtube.com/@SamuelMagistro" target="_blank" rel="noopener" translate="no">Samuel Magistro ↗</a> · 工具、DIY 与电子
+v1370	<a href="https://www.youtube.com/@MissioneCasa" target="_blank" rel="noopener" translate="no">Missione Casa ↗</a> · 住房领域的实用指南
+v1371	音乐与吉他
+v1372	<a href="https://www.youtube.com/@FebbreDaChitarra" target="_blank" rel="noopener" translate="no">Febbre Da Chitarra ↗</a> · 吉他，主讲 Riccardo
+v1373	<a href="https://www.youtube.com/@MarcoFanton" target="_blank" rel="noopener" translate="no">Marco Fanton ↗</a> · 电吉他以及吉他和贝斯的数字系统
+v1374	<a href="https://www.youtube.com/@robyrocks" target="_blank" rel="noopener" translate="no">Roby Rocks ↗</a> · 寻找完美的吉他音色
+v1375	<a href="https://www.youtube.com/@EpicMusicVN" target="_blank" rel="noopener" translate="no">Epic Music VN ↗</a> · 史诗与电影配乐风格音乐
+v1376	经济、金融与工作
+v1377	<a href="https://www.youtube.com/@giorgiopecorari" target="_blank" rel="noopener" translate="no">Giorgio Pecorari ↗</a> · 投资与金融分析
+v1378	<a href="https://www.youtube.com/@MicheleBoldrin" target="_blank" rel="noopener" translate="no">Michele Boldrin ↗</a> · 经济学
+v1379	<a href="https://www.youtube.com/@mr_rip" target="_blank" rel="noopener" translate="no">Mr. RIP ↗</a> · 个人理财与财务自由
+v1380	<a href="https://www.youtube.com/@PietroMichelangeli" target="_blank" rel="noopener" translate="no">Pietro Michelangeli ↗</a> · 个人理财
+v1381	<a href="https://www.youtube.com/@StartingFinance" target="_blank" rel="noopener" translate="no">Starting Finance ↗</a> · 经济与金融教育
+v1382	<a href="https://www.youtube.com/@ValerioVillaniChannel" target="_blank" rel="noopener" translate="no">Valerio Villani ↗</a> · 职业成长与职业发展
+v1383	身体、心灵与世界
+v1384	<a href="https://www.youtube.com/@ChrisGalbiati" target="_blank" rel="noopener" translate="no">Chris Galbiati ↗</a> · 《L'America mi ha scoperto》一书的作者
+v1385	<a href="https://www.youtube.com/@ManuelSpadacciniKMA" target="_blank" rel="noopener" translate="no">Manuel Spadaccini ↗</a> · 防身与安全
+v1386	<a href="https://www.youtube.com/@Hill3iner" target="_blank" rel="noopener" translate="no">Nicola Colle – Hill 3iner ↗</a> · 训练与指导
+v1387	<a href="https://www.youtube.com/@gabriellatupini" target="_blank" rel="noopener" translate="no">Gabriella Tupini ↗</a> · 灵性与神秘学

@@ -1,0 +1,38 @@
+v1350	Статьи, над которыми я работаю: все они в черновиках. Полный текст будет появляться по одному.
+v1351	Вдохновение
+v1352	YouTube-каналы, которые я смотрю: откуда я беру идеи, любопытство и время от времени немного лёгкости.
+v1353	Единой темы нет: есть хорошо объяснённая наука, электрика и электроника, которыми я пользуюсь в работе, гитара, экономика, тело и разум. Я привожу их здесь так, как советуют книгу другу, без каких-либо договорённостей.
+v1354	Наука, математика и популяризация
+v1355	<a href="https://www.youtube.com/@BarbascuraX" target="_blank" rel="noopener" translate="no">Barbascura X ↗</a> · наука и природа, с иронией
+v1356	<a href="https://www.youtube.com/@dariobressanini" target="_blank" rel="noopener" translate="no">Dario Bressanini ↗</a> · наука и еда
+v1357	<a href="https://www.youtube.com/@DarioBressaniniExtra" target="_blank" rel="noopener" translate="no">Dario Bressanini Extra ↗</a> · его второй канал
+v1358	<a href="https://www.youtube.com/@EntropyforLife" target="_blank" rel="noopener" translate="no">Entropy for Life ↗</a> · наука в рассказах Джакомо Моро Мауретто
+v1359	<a href="https://www.youtube.com/@avvocatoatomico" target="_blank" rel="noopener" translate="no">L'Avvocato dell'Atomo ↗</a> · энергетика и атомная энергия от физиков и инженеров
+v1360	<a href="https://www.youtube.com/@ClearMath1" target="_blank" rel="noopener" translate="no">ClearMath ↗</a> · математика по-новому
+v1361	<a href="https://www.youtube.com/@PaoloColetti" target="_blank" rel="noopener" translate="no">Paolo Coletti ↗</a> · математика, программирование и анализ данных
+v1362	Технологии и метод
+v1363	<a href="https://www.youtube.com/@antirez" target="_blank" rel="noopener" translate="no">Salvatore Sanfilippo ↗</a> · программирование, алгоритмы и искусственный интеллект
+v1364	<a href="https://www.youtube.com/@alessandrodeconcini-adc" target="_blank" rel="noopener" translate="no">Alessandro de Concini ↗</a> · метод учёбы, обучение и продуктивность
+v1365	<a href="https://www.youtube.com/@mmontemagno" target="_blank" rel="noopener" translate="no">Marco Montemagno ↗</a> · технологии и бизнес простыми словами
+v1366	Электрика, электроника и дом
+v1367	<a href="https://www.youtube.com/@ilprofelettrico" target="_blank" rel="noopener" translate="no">il Prof Elettrico ↗</a> · основы электрики с Коррадо Лаи
+v1368	<a href="https://www.youtube.com/@IchigoElettronica" target="_blank" rel="noopener" translate="no">Ichigo Elettronica ↗</a> · проекты по электронике, от простых до сложных
+v1369	<a href="https://www.youtube.com/@SamuelMagistro" target="_blank" rel="noopener" translate="no">Samuel Magistro ↗</a> · инструменты, сделай сам и электроника
+v1370	<a href="https://www.youtube.com/@MissioneCasa" target="_blank" rel="noopener" translate="no">Missione Casa ↗</a> · практический гид по миру жилья
+v1371	Музыка и гитара
+v1372	<a href="https://www.youtube.com/@FebbreDaChitarra" target="_blank" rel="noopener" translate="no">Febbre Da Chitarra ↗</a> · гитара с Риккардо
+v1373	<a href="https://www.youtube.com/@MarcoFanton" target="_blank" rel="noopener" translate="no">Marco Fanton ↗</a> · электрогитара и цифровые системы для гитары и баса
+v1374	<a href="https://www.youtube.com/@robyrocks" target="_blank" rel="noopener" translate="no">Roby Rocks ↗</a> · в поисках идеального звука гитары
+v1375	<a href="https://www.youtube.com/@EpicMusicVN" target="_blank" rel="noopener" translate="no">Epic Music VN ↗</a> · эпическая и кинематографическая музыка
+v1376	Экономика, финансы и работа
+v1377	<a href="https://www.youtube.com/@giorgiopecorari" target="_blank" rel="noopener" translate="no">Giorgio Pecorari ↗</a> · инвестиции и финансовый анализ
+v1378	<a href="https://www.youtube.com/@MicheleBoldrin" target="_blank" rel="noopener" translate="no">Michele Boldrin ↗</a> · экономика
+v1379	<a href="https://www.youtube.com/@mr_rip" target="_blank" rel="noopener" translate="no">Mr. RIP ↗</a> · личные финансы и финансовая независимость
+v1380	<a href="https://www.youtube.com/@PietroMichelangeli" target="_blank" rel="noopener" translate="no">Pietro Michelangeli ↗</a> · личные финансы
+v1381	<a href="https://www.youtube.com/@StartingFinance" target="_blank" rel="noopener" translate="no">Starting Finance ↗</a> · экономическое и финансовое образование
+v1382	<a href="https://www.youtube.com/@ValerioVillaniChannel" target="_blank" rel="noopener" translate="no">Valerio Villani ↗</a> · профессиональный рост и карьера
+v1383	Тело, разум и мир
+v1384	<a href="https://www.youtube.com/@ChrisGalbiati" target="_blank" rel="noopener" translate="no">Chris Galbiati ↗</a> · автор книги «L'America mi ha scoperto»
+v1385	<a href="https://www.youtube.com/@ManuelSpadacciniKMA" target="_blank" rel="noopener" translate="no">Manuel Spadaccini ↗</a> · самооборона и безопасность
+v1386	<a href="https://www.youtube.com/@Hill3iner" target="_blank" rel="noopener" translate="no">Nicola Colle – Hill 3iner ↗</a> · тренировки и коучинг
+v1387	<a href="https://www.youtube.com/@gabriellatupini" target="_blank" rel="noopener" translate="no">Gabriella Tupini ↗</a> · духовность и эзотерика

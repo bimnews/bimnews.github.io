@@ -1,0 +1,38 @@
+v1350	المقالات التي أعمل عليها: كلها مسودات. سيصل النص الكامل واحدًا تلو الآخر.
+v1351	مصادر إلهام
+v1352	قنوات يوتيوب التي أتابعها: منها أستمد الأفكار والفضول، وبين الحين والآخر قليلًا من الخفة.
+v1353	لا يوجد خيط واحد: هناك العلم المشروح جيدًا، والكهرباء والإلكترونيات التي أستخدمها في العمل، والغيتار، والاقتصاد، والجسد والعقل. أذكرها هنا كما يُنصح صديق بكتاب، من دون أي اتفاق مع أحد.
+v1354	العلوم والرياضيات والتبسيط العلمي
+v1355	<a href="https://www.youtube.com/@BarbascuraX" target="_blank" rel="noopener" translate="no">Barbascura X ↗</a> · العلوم والطبيعة بروح ساخرة
+v1356	<a href="https://www.youtube.com/@dariobressanini" target="_blank" rel="noopener" translate="no">Dario Bressanini ↗</a> · العلوم والطعام
+v1357	<a href="https://www.youtube.com/@DarioBressaniniExtra" target="_blank" rel="noopener" translate="no">Dario Bressanini Extra ↗</a> · قناته الثانية
+v1358	<a href="https://www.youtube.com/@EntropyforLife" target="_blank" rel="noopener" translate="no">Entropy for Life ↗</a> · العلم بصوت جاكومو مورو ماوريتو
+v1359	<a href="https://www.youtube.com/@avvocatoatomico" target="_blank" rel="noopener" translate="no">L'Avvocato dell'Atomo ↗</a> · الطاقة والنووي يشرحهما فيزيائيون ومهندسون
+v1360	<a href="https://www.youtube.com/@ClearMath1" target="_blank" rel="noopener" translate="no">ClearMath ↗</a> · الرياضيات من زاوية جديدة
+v1361	<a href="https://www.youtube.com/@PaoloColetti" target="_blank" rel="noopener" translate="no">Paolo Coletti ↗</a> · الرياضيات والبرمجة وتحليل البيانات
+v1362	التكنولوجيا والمنهج
+v1363	<a href="https://www.youtube.com/@antirez" target="_blank" rel="noopener" translate="no">Salvatore Sanfilippo ↗</a> · البرمجة والخوارزميات والذكاء الاصطناعي
+v1364	<a href="https://www.youtube.com/@alessandrodeconcini-adc" target="_blank" rel="noopener" translate="no">Alessandro de Concini ↗</a> · منهج الدراسة والتعلّم والإنتاجية
+v1365	<a href="https://www.youtube.com/@mmontemagno" target="_blank" rel="noopener" translate="no">Marco Montemagno ↗</a> · التكنولوجيا والأعمال بشرح بسيط
+v1366	الكهرباء والإلكترونيات والمنزل
+v1367	<a href="https://www.youtube.com/@ilprofelettrico" target="_blank" rel="noopener" translate="no">il Prof Elettrico ↗</a> · أساسيات الكهرباء مع كورادو لاي
+v1368	<a href="https://www.youtube.com/@IchigoElettronica" target="_blank" rel="noopener" translate="no">Ichigo Elettronica ↗</a> · مشاريع إلكترونيات من المستوى الأساسي إلى المتقدم
+v1369	<a href="https://www.youtube.com/@SamuelMagistro" target="_blank" rel="noopener" translate="no">Samuel Magistro ↗</a> · الأدوات والأعمال اليدوية والإلكترونيات
+v1370	<a href="https://www.youtube.com/@MissioneCasa" target="_blank" rel="noopener" translate="no">Missione Casa ↗</a> · دليل عملي لعالم السكن
+v1371	الموسيقى والغيتار
+v1372	<a href="https://www.youtube.com/@FebbreDaChitarra" target="_blank" rel="noopener" translate="no">Febbre Da Chitarra ↗</a> · الغيتار مع ريكاردو
+v1373	<a href="https://www.youtube.com/@MarcoFanton" target="_blank" rel="noopener" translate="no">Marco Fanton ↗</a> · الغيتار الكهربائي والأنظمة الرقمية للغيتار والباص
+v1374	<a href="https://www.youtube.com/@robyrocks" target="_blank" rel="noopener" translate="no">Roby Rocks ↗</a> · بحثًا عن صوت الغيتار المثالي
+v1375	<a href="https://www.youtube.com/@EpicMusicVN" target="_blank" rel="noopener" translate="no">Epic Music VN ↗</a> · موسيقى ملحمية وسينمائية
+v1376	الاقتصاد والمال والعمل
+v1377	<a href="https://www.youtube.com/@giorgiopecorari" target="_blank" rel="noopener" translate="no">Giorgio Pecorari ↗</a> · الاستثمار والتحليل المالي
+v1378	<a href="https://www.youtube.com/@MicheleBoldrin" target="_blank" rel="noopener" translate="no">Michele Boldrin ↗</a> · الاقتصاد
+v1379	<a href="https://www.youtube.com/@mr_rip" target="_blank" rel="noopener" translate="no">Mr. RIP ↗</a> · المالية الشخصية والاستقلال المالي
+v1380	<a href="https://www.youtube.com/@PietroMichelangeli" target="_blank" rel="noopener" translate="no">Pietro Michelangeli ↗</a> · المالية الشخصية
+v1381	<a href="https://www.youtube.com/@StartingFinance" target="_blank" rel="noopener" translate="no">Starting Finance ↗</a> · التثقيف الاقتصادي والمالي
+v1382	<a href="https://www.youtube.com/@ValerioVillaniChannel" target="_blank" rel="noopener" translate="no">Valerio Villani ↗</a> · النمو المهني والمسار الوظيفي
+v1383	الجسد والعقل والعالم
+v1384	<a href="https://www.youtube.com/@ChrisGalbiati" target="_blank" rel="noopener" translate="no">Chris Galbiati ↗</a> · مؤلف كتاب «L'America mi ha scoperto»
+v1385	<a href="https://www.youtube.com/@ManuelSpadacciniKMA" target="_blank" rel="noopener" translate="no">Manuel Spadaccini ↗</a> · الدفاع عن النفس والأمن
+v1386	<a href="https://www.youtube.com/@Hill3iner" target="_blank" rel="noopener" translate="no">Nicola Colle – Hill 3iner ↗</a> · التدريب والتوجيه
+v1387	<a href="https://www.youtube.com/@gabriellatupini" target="_blank" rel="noopener" translate="no">Gabriella Tupini ↗</a> · الروحانيات والباطنية

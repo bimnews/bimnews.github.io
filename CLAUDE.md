@@ -48,7 +48,8 @@ Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato co
   - SOLO le notizie della settimana passata (decisione di Marco del 15/11/2026: niente ricerca storica il lunedì), più agenda, scadenze, video e circa 20 articoli di BIM Accademia;
   - fonti in tre livelli (istituzionali, stampa autorevole, grandi aziende);
   - lingue della ricerca: 36 lingue più 40 in verifica, elencate nella FAQ, che è la fonte unica: la tendina di BIM News le copia da lì.
-- **I due task puntano a `bimnews/bimnews.github.io`** (testi aggiornati il 15/11/2026).
+- **I due task puntano a `bimnews/bimnews.github.io`** (testi aggiornati il 16/11/2026).
+- **ATTENZIONE, 16/11/2026:** il primo giro del task del lunedì NON ha pubblicato: la sua sessione non aveva `add_repo` né un token GitHub valido (push 403). Ha mandato a Marco la patch `bimnews-settimana-2026-11-09.patch` (10 notizie, revisione 125 nella patch: da rinumerare). Rimedio: Marco aggiunge il repository nelle impostazioni dell'ambiente del task (Repositories), oppure la patch si applica a mano.
 - **Backup mensile** `trig_01JYeJLDBXhzrernU5qSRte7`, il 1° del mese alle 19:23: invia a Marco uno zip con il sito, la cronologia (git bundle) e il testo del task settimanale.
 - **Se cambi la struttura dei dati, aggiorna il testo dei task con `update_trigger`.**
 
@@ -101,7 +102,6 @@ Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato co
    - **Cercati senza fonti istituzionali valide:** Ruanda, Nigeria, Ghana, Kenya (solo un discorso), Marocco, Algeria e Tunisia (nessun obbligo BIM), Egitto (il codice BIM esiste ma la fonte non era raggiungibile).
    - **Storia mondiale 1992–2014 (revisione 124):** nome «Building Information Model» (1992), IAI (1995), IFC 1.0 (1996), «Building Information Modeling» si diffonde (2002), GSA (2003), buildingSMART e ISO/PAS 16739 (2005), BS 1192 e Senaatti (2007), ISO 29481-1 (2010), Government Construction Strategy (2011), PAS 1192-2, ISO 16739 e obbligo danese (2013), direttiva 2014/24/UE (2014). Da aggiungere, verificando: NBIMS-US v1 (2007), Statsbygg, Corea (PPS), Singapore (BCA e-submission), Paesi Bassi (IFC nella lista del Forum Standaardisatie), Germania (Stufenplan 2015), Francia (PTNB 2015), Italia prima del 2015.
    - **Restano:** l'Europa ancora vuota (Belgio, Danimarca dopo il 2013, Svezia, Finlandia, Grecia, Romania, Lettonia, Slovacchia, Slovenia, Croazia, Bulgaria, Lussemburgo, Islanda, Serbia), poi Africa francofona ed Egitto in arabo; poi Asia e Medio Oriente (con Singapore, India, Arabia Saudita, Turchia, Vietnam, Taiwan) e Oceania (Nuova Zelanda); infine l'approfondimento dei paesi già presenti.
-   - **Notizia fuori mappa da sistemare:** n87 ha `n` = «Singapore», che non è sulla mappa (andrebbe `n` vuoto e il paese in `p`).
    - **Strumenti:** `strumenti/sweep_add.py` (aggiunge notizie complete di te/xe/lo/tl/xl, data di raccolta 15/11/2026: aggiornala), `strumenti/ver.py` (scarica una pagina e mostra le frasi con le parole chiave) e `strumenti/add_news.py` (aggiunge le notizie calcolando id e settimana).
 6. **Tai Chi e Kung Fu: PUBBLICATO il 15/11/2026 (revisione 107), `#fuori-taichi` in Fuori dallo studio.**
    - **Immagine:** le cinque virtù (智 仁 信 勇 忍) ricostruite in HTML e CSS (`.kf-fig`), con caratteri veri in font kaishu di sistema, non come immagine.
@@ -138,7 +138,8 @@ Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato co
      - `art-img-lingua`: manuali con immagini SVG, con le scritte che seguono la lingua.
    - **In `#studio` → Riflessioni:** `studio-oltre-noi`, «Il mondo oltre noi» (che ne sarà dei nostri modelli tra 200 anni; da fare una ricerca sul più antico disegno di progetto arrivato fino a noi).
    - **Collegamenti tra sottopagine:** usare `data-goto-art="id"`.
-   - **Da verificare:** il proverbio «Ciò che cresce lentamente mette radici profonde» è indicato come «attribuito alla tradizione africana»; l'origine non è verificata.
+   - **Proverbio** «Ciò che cresce lentamente mette radici profonde»: origine non trovata in nessuna fonte, ora scritto «proverbio di origine incerta» (revisione 125).
+   - **Tutti gli articoli in preparazione sono in fase «Bozza»** (decisione di Marco del 16/11/2026: non si aspetta, i testi arriveranno col tempo).
 
 11. **BIM in breve, «01 · Che cos'è» riscritto: PUBBLICATO il 15/11/2026 (revisione 112).** Tre passi: a mano (Palladio, 1570, MET CC0, `assets/foto/palladio-rotonda.jpg`, con credito nella Mappa del sito), il CAD (linee con attributi) e il BIM (oggetti con parametri, muro interattivo `#bim-demo`); poi «Perché cambia tutto» e «Attributo o parametro?».
 
@@ -161,7 +162,8 @@ Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato co
 13. **Appunti di Marco del 15/11/2026, da fare dopo le traduzioni** (riordinati per area):
    - **Il curatore:**
      - **Tai Chi:** fatto in revisione 119. Il «maestro dei maestri» di Marco è Shin Dae Woung (Marco l'aveva scritto «Schin Dae wuong»; grafia corretta dal sito ufficiale shindaewoung.com): scomparso nel 2016, in Italia dal 1975, libri *Scuola di kung fu* vol. 1 (1988) e vol. 2 (1997), Edizioni Mediterranee (verificati su Libraccio). Nessun link a librerie: si cita solo il titolo. La scuola di Bolzano è citata con la scheda del Registro CONI; il legale rappresentante del registro non va scritto come maestro.
-     - **Nuova scheda «Ispirazioni»:** i canali YouTube che segue Marco. Lo screenshot con i 34 canali non è più leggibile nella sessione: Marco deve rimandarlo.
+     - **«Ispirazioni»: PUBBLICATA in revisione 125** (`#fuori-ispirazioni`, 06 in Fuori dallo studio): 28 canali YouTube verificati (handle @… aperti su YouTube) in 6 gruppi. Tolti su richiesta di Marco: Alle Cuoghi, Beyond Ordinary World, RGN. Da chiarire con Marco: «Comunicazione …» (nome troncato, non trovato) e «La vera interpret…» (forse «La vera interpretazione dei Sogni», @SaraLunaris, non confermato).
+     - **Via Lattea dietro il globo della home:** richiesta di Marco (15/11 e 16/11/2026), prima l'anteprima.
      - **Portfolio:** la grafica è rimasta quella vecchia, va resa coerente con il resto della sezione. Poi le anteprime dei progetti affrontati, poi l'elenco dei modelli fatti con Guadagnuolo. Servono materiali da Marco.
    - **BIM in breve, agenda a calendario e giornate della tecnologia: PUBBLICATI in revisione 120** dopo il sì di Marco (15/11/2026).
      - **BIM in breve** (`#bim-5-minuti`): linea del tempo `.evo-tl` sopra i tre passi (1570, 1963, 1982, 1996, 2002, oggi; fonti Wikipedia in inglese), approfondimento `.evo-deep` su attributi e parametri (codice CAD/BIM, grafo delle dipendenze, IfcWall/IfcExtrudedAreaSolid/Pset_WallCommon/IfcRelVoidsElement), sezione `#b5-futuro` «10 · Cosa ci riserva il futuro?» (3 schede «sta già succedendo» legate alle notizie n10, n100, n36 e 3 «domande aperte»). I due blocchi di codice `.evo-code` restano in italiano in tutte le lingue.
@@ -194,6 +196,7 @@ Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato co
   - **BIM in breve:** «Che cos'è» riscritto.
   - **Le mie proposte:** la frase «aperte ai commenti» è sostituita dal rimando a LinkedIn, per coerenza con il disclaimer.
 - **15/11/2026, revisione 113:** selettore delle lingue (11 lingue) con le scritte principali tradotte.
+- **16/11/2026, revisione 125:** articolo «Ispirazioni» (28 canali, 11 lingue, pacchetto `p20`); tutti gli articoli in preparazione in fase «Bozza»; la notizia n87 (Singapore) ora ha `n` vuoto; proverbio con «origine incerta».
 - **16/11/2026, revisione 124:** tolto ogni limite di data: l'archivio parte dal dicembre 1992, primo uso documentato di «Building Information Model». 11 notizie storiche 1992–2014 (dalla timeline del mondo, fonti già verificate) e tolta l'etichetta «Storico».
 - **15/11/2026, revisione 123:** tappe fondative prima del 2015 (opzione 2 scelta da Marco): Danimarca (BEK 118/2013, BIM e IFC obbligatori nelle opere pubbliche), Finlandia (Senaatti-kiinteistöt, requisiti BIM 2007), Regno Unito (Government Construction Strategy, 31/5/2011), Stati Uniti (programma GSA 3D-4D-BIM, 2003). Le date del 1° gennaio di Finlandia e Stati Uniti sono convenzionali (spiegato nel memo). Da cercare ancora: Norvegia (Statsbygg, non verificato), Paesi Bassi (IFC nella lista «applica o spiega», data da verificare), Corea del Sud, Singapore, Svezia.
 - **15/11/2026, revisione 122:** ricerca a tappeto, primo giro sull'Europa vuota: 11 notizie (Svizzera 7, Paesi Bassi 1, Lituania 1, Estonia 2), tutte con fonte aperta e verificata.
