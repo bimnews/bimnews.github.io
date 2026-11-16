@@ -53,6 +53,11 @@ Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato co
 - **Backup mensile** `trig_01JYeJLDBXhzrernU5qSRte7`, il 1° del mese alle 19:23: invia a Marco uno zip con il sito, la cronologia (git bundle) e il testo del task settimanale.
 - **Se cambi la struttura dei dati, aggiorna il testo dei task con `update_trigger`.**
 
+## Google (Search Console)
+
+- **16/11/2026:** aggiunti `robots.txt` e `sitemap.xml` (home, manuali HTML, privacy). Le viste con `#` non sono pagine per Google: si indicizza solo la home.
+- **Da fare con Marco:** proprietà «Prefisso URL» `https://bimnews.github.io/` in Search Console, verifica con il metodo «Tag HTML» (Marco manda il codice, Claude aggiunge `<meta name="google-site-verification" content="…">` nella testa di `index.html`), poi invio di `sitemap.xml`. Se si aggiungono manuali, aggiornare la sitemap.
+
 ## Regole fisse
 
 - **Principi etici NON negoziabili (Marco, 15/11/2026):** tutto deve essere gratis per chi visita il sito; nessun cookie di tracciamento (GoatCounter va bene perché non usa cookie). Gli eventi a pagamento si segnalano come tali, senza assumersene la responsabilità. Sono scritti nel riquadro `.bn-rules` di BIM News.
