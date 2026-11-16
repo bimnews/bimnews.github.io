@@ -177,6 +177,8 @@ Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato co
      - **Date delle giornate verificate:** 11/2, 13/2, 4/3, 14/3, 12/4, 21/4, 4° giovedì di aprile (Girls in ICT, ITU), 26/4 (WIPO), 16/5 (luce, UNESCO), 17/5, 28/9, 1° lunedì di ottobre (Habitat), 14/10 (normazione ISO/IEC/ITU), 31/10, 10/11.
      - **Da fare se Marco lo chiede:** un'etichetta in home nel giorno stesso di una giornata della tecnologia (come `.fest-chip`).
 
+14. **DA FARE al prossimo reset dei token (richiesta di Marco del 16/11/2026): «Roadmap dell'obbligatorietà» in BIM in breve.** Una sezione nuova con i progressi di tutti gli stati sull'obbligo del BIM: dove è obbligatorio (da quando, per quali opere, con quale norma), dove no e soprattutto PERCHÉ non lo è ancora (con fonti verificate, niente supposizioni). Partire dai dati già raccolti nelle notizie e nella ricerca a tappeto (punto 5). Mostrare un'anteprima a Marco prima di pubblicare. Servirà poi come base per un articolo di riflessione di Marco.
+
 ## Fatto di recente
 
 - **15/11/2026, revisione 100:**
