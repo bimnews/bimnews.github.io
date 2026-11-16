@@ -196,6 +196,7 @@ Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato co
   - **BIM in breve:** «Che cos'è» riscritto.
   - **Le mie proposte:** la frase «aperte ai commenti» è sostituita dal rimando a LinkedIn, per coerenza con il disclaimer.
 - **15/11/2026, revisione 113:** selettore delle lingue (11 lingue) con le scritte principali tradotte.
+- **16/11/2026, revisione 129 (rassegna del task del lunedì, settimana 9–15/11, pubblicata da Claude dalla patch):** 10 notizie (Italia, Germania 2, Belgio, Corea del Sud, Malesia, Vietnam, Indonesia, Marocco, Brasile/Paraná); nuovi sulla mappa Belgio, Vietnam, Indonesia. 20 articoli in BIM Accademia (79), 19 appuntamenti, 4 scadenze (Irlanda 2, Singapore, Perù), 7 video, 2 video universitari, 3 canali. Malese spostato tra le lingue della ricerca (37/39). n87 ora ha `n` vuoto. Il push dal task era fallito con 403: la patch è stata applicata in una sessione con Marco. Difetto noto: in FAQ i titoli «Lingue in cui cerchiamo (N)» e «Lingue in verifica (N)» non si traducono per intero perché il numero è nel testo (es. «Lingue under review (39)»).
 - **16/11/2026, revisione 128:** tornata la prima Via Lattea (sempre solo con `?vialattea=1`); aggiunto il canale «La vera interpretazione dei Sogni».
 - **16/11/2026, revisione 127:** Via Lattea migliorata per il computer (fascia più larga e continua, nucleo caldo a destra fuori dalla ricerca, polvere a strisce allungate); sempre solo con `?vialattea=1`.
 - **16/11/2026, revisione 126:** Via Lattea dietro il globo, visibile solo in anteprima con `?vialattea=1`.

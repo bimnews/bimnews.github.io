@@ -8,7 +8,7 @@ nid=max(int(a['id'][1:]) for a in d['arts'])
 for x in NEW:
     if any(s[1] in srcs for s in x['src']):print('GIÀ PRESENTE',x['t']);continue
     dt=datetime.date.fromisoformat(x['d']);mon=dt-datetime.timedelta(days=dt.weekday());sun=mon+datetime.timedelta(days=6)
-    nid+=1;o={'id':'n%d'%nid,'w':mon.isoformat(),'d':x['d'],'r':'2026-11-15','c':x['c'],'n':x['n']}
+    nid+=1;o={'id':'n%d'%nid,'w':mon.isoformat(),'d':x['d'],'r':'2026-11-16','c':x['c'],'n':x['n']}
     if x.get('rg'):o['rg']=x['rg']
     o.update({'p':x['p'],'t':x['t'],'x':x['x']})
     if x.get('m'):o['m']=x['m']
