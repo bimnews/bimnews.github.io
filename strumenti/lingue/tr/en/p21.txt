@@ -1,0 +1,125 @@
+v1435	11 The mandate worldwide
+v1448	Where BIM is already mandatory, where it is coming and where it is not yet, with the reason when the sources give it. Each row links to the BIM News items that prove it; if a source does not explain why, we say so instead of guessing. The map grows with the country-by-country research: a missing country is not a country without BIM, but one we have not checked yet.
+v1449	<span class="ob-k">●</span> Mandatory <small>18</small>
+v1450	State public works: object-based models and delivery in IFC (ICT regulation).
+v1451	BIM building permit submissions for new buildings over 5,000 m²: architecture first, everything from 2015. From 2026 through CORENET X.
+v1452	First the large works of the procurement agency; now all public works from 50 billion won, 30 billion in 2028, all in 2030.
+v1453	All central government contracts, of any value (BIM Level 2); since 2021 an information management mandate.
+v1454	Public works over 30 million Hong Kong dollars, in all stages.
+v1455	Threshold schedule of Ministerial Decree 560/2017; since 2025 all public works over 2 million euros (Legislative Decree 36/2023, art. 43).
+v1456	Federal state only: large infrastructure (Stufenplan 2015), then federal buildings (Masterplan 2021).
+v1457	Federal works, in stages until 2028.
+v1458	Public works, in stages.
+v1459	Confederation buildings since 2021, infrastructure since 2025.
+v1460	State-funded works, except defence and security.
+v1461	Civil works managed by the infrastructure ministry, except small ones.
+v1462	Designers over 100 million euros, since 2025 over 20 million, since 2026 also contractors over 10 million.
+v1463	Building permits for large buildings and public projects, in IFC.
+v1464	Public and private projects from 10 million ringgit; in 2024 extended to roads and sewers.
+v1465	State BIM Plan (2023): since 2026 'Medium' BIM level in works above the EU threshold.
+v1466	Works of the national and regional governments in 14 types (hospitals, universities, roads…).
+v1467	New works of class II and above, from the feasibility study onwards.
+v1468	<span class="ob-k">◐</span> Coming <small>6</small>
+v1469	The new procurement regulation proposed by the Commission requires BIM in works from 25 million euros up. Parliament and Council still have to adopt it.
+v1470	BIM Act: public projects over 135 million crowns, for the whole life of the asset. Planned earlier, then postponed.
+v1471	Government plan: BIM mandatory for new residential and commercial buildings.
+v1472	The 2020 strategy sets the mandate from 2026; we do not yet have a source confirming it has started.
+v1473	A bill (24587) for a progressive mandate in public works.
+v1474	A project for works over 250 million birr; we do not know whether it has started.
+v1475	<span class="ob-k">○</span> Not yet <small>11</small>
+v1476	National plans since 2015 (PTNB, Plan BIM 2022).
+v1477	<b>Why not yet?</b> The procurement code allows contracting authorities to ask for BIM but does not oblige them, and generalisation is slow; the push could come from the European revision.
+v1478	National strategy and roadmap (2024); the first technical guideline (2026).
+v1479	<b>Why not yet?</b> There is no threshold above which BIM is mandatory. For the Technical Chamber the key issue is the public administration, which must be able to request, check and use models; resistance to change, BIM seen as a cost and legal uncertainty also weigh.
+v1480	Government roadmap (2022) and national technical guide (2023).
+v1481	<b>Why not yet?</b> For now the guide applies only to pilot projects; for other public projects it is a recommendation. The criteria for a mandate are postponed to the next phase of the roadmap.
+v1482	Large public clients require BIM in their contracts (Trafikverket since 2015).
+v1483	<b>Why not yet?</b> There is no national legal mandate: each client decides.
+v1484	'Comply or explain' requirement for open standards: IFC (2011), NLCS and COINS (2018).
+v1485	<b>Why not yet?</b> The requirement covers the formats used to exchange data, not the use of BIM itself.
+v1486	Government strategy (2021) with pilot projects.
+v1487	<b>Why not yet?</b> The source does not explain it.
+v1488	National strategy approved in 2026.
+v1489	<b>Why not yet?</b> The strategy has just started; the source does not set a mandate.
+v1490	Roadmap for introducing BIM in public procurement (2020).
+v1491	GSA federal programme (2003), NBIMS national standard (since 2007), National BIM Program (2022).
+v1492	<b>Why not yet?</b> There is no general federal mandate: individual agencies and clients ask for BIM.
+v1493	National strategies for public works (2019).
+v1494	<b>Why not yet?</b> The sources do not explain it.
+v1495	BIM requirements of the state real estate agencies (Senaatti since 2007, RKAS since 2018).
+v1496	<b>Why not yet?</b> These are rules of the public client, not a national law.
+v1497	Updated 16/11/2026. 'Mandatory' means that a law, decree or government rule requires it in at least part of public works; details are in the news items. A proposal or a strategy without a binding date stays under 'coming' or 'not yet'.
+v1506	11 · The road to a mandate
+v1507	Denmark, Singapore, South Korea
+v1508	Brazil, Lithuania, Switzerland
+v1509	Russia
+v1510	Japan
+v1511	Ireland, Dubai, Malaysia
+v1512	Spain, Peru, Vietnam
+v1513	News: <a href="#settimana-2013-02-04" data-art="n185">2013</a>
+v1514	Denmark
+v1515	since 2013
+v1516	News: <a href="#settimana-2013-07-01" data-art="n212">2013</a> · <a href="#settimana-2015-06-29" data-art="n131">2015</a> · <a href="#settimana-2026-07-20" data-art="n55">2026</a>
+v1517	Singapore
+v1518	News: <a href="#settimana-2015-09-14" data-art="n214">2015</a> · <a href="#settimana-2026-10-05" data-art="n26">2026</a>
+v1519	South Korea
+v1520	News: <a href="#settimana-2016-04-25" data-art="n61">2016</a> · <a href="#settimana-2021-09-13" data-art="n122">2021</a>
+v1521	since 2016
+v1522	News: <a href="#settimana-2017-11-27" data-art="n152">2017</a> · <a href="#settimana-2025-01-20" data-art="n81">2025</a>
+v1523	since 2018
+v1524	News: <a href="#settimana-2018-12-31" data-art="n124">2019</a> · <a href="#settimana-2024-12-30" data-art="n77">2025</a>
+v1525	since 2019
+v1526	News: <a href="#settimana-2015-12-14" data-art="n60">2015</a> · <a href="#settimana-2021-11-01" data-art="n123">2021</a>
+v1527	since 2020
+v1528	News: <a href="#settimana-2020-03-30" data-art="n69">2020</a> · <a href="#settimana-2020-12-28" data-art="n120">2021</a>
+v1529	Brazil
+v1530	since 2021
+v1531	News: <a href="#settimana-2020-05-18" data-art="n182">2020</a>
+v1532	Lithuania
+v1533	News: <a href="#settimana-2019-04-15" data-art="n175">2019</a>
+v1534	Switzerland
+v1535	News: <a href="#settimana-2021-12-27" data-art="n114">2022</a>
+v1536	since 2022
+v1537	News: <a href="#settimana-2023-03-27" data-art="n109">2023</a>
+v1538	since 2023
+v1539	News: <a href="#settimana-2024-01-01" data-art="n99">2024</a> · <a href="#settimana-2025-06-02" data-art="n94">2025</a> · <a href="#settimana-2026-01-12" data-art="n39">2026</a>
+v1540	Ireland
+v1541	since 2024
+v1542	News: <a href="#settimana-2024-01-01" data-art="n98">2024</a>
+v1543	Dubai
+v1544	Malaysia
+v1545	News: <a href="#settimana-2023-06-26" data-art="n111">2023</a> · <a href="#settimana-2026-11-09" data-art="n17">2026</a>
+v1546	since 2026
+v1547	News: <a href="#settimana-2026-08-24" data-art="n171">2026</a>
+v1548	Peru
+v1549	Vietnam
+v1550	European Union
+v1551	proposal
+v1552	Czech Republic
+v1553	Kazakhstan
+v1554	Colombia
+v1555	Costa Rica
+v1556	to be decided
+v1557	Ethiopia
+v1558	News: <a href="#settimana-2018-11-12" data-art="n150">2018</a> · <a href="#settimana-2026-11-09" data-art="n37">2026</a>
+v1559	France
+v1560	News: <a href="#settimana-2024-01-01" data-art="n217">2024</a> · <a href="#settimana-2026-10-12" data-art="n219">2026</a>
+v1561	Greece
+v1562	Romania
+v1563	News: <a href="#settimana-2014-12-29" data-art="n213">2015</a>
+v1564	Sweden
+v1565	News: <a href="#settimana-2011-11-14" data-art="n211">2011</a> · <a href="#settimana-2018-06-25" data-art="n181">2018</a>
+v1566	Netherlands
+v1567	News: <a href="#settimana-2021-02-15" data-art="n215">2021</a>
+v1568	Ukraine
+v1569	Portugal
+v1570	Poland
+v1571	News: <a href="#settimana-2002-12-30" data-art="n188">2003</a> · <a href="#settimana-2007-11-26" data-art="n210">2007</a> · <a href="#settimana-2022-09-05" data-art="n116">2022</a>
+v1572	United States
+v1573	News: <a href="#settimana-2019-02-25" data-art="n162">2019</a> · <a href="#settimana-2019-08-26" data-art="n157">2019</a>
+v1574	Mexico and Argentina
+v1575	News: <a href="#settimana-2007-01-01" data-art="n186">2007</a> · <a href="#settimana-2018-04-16" data-art="n183">2018</a>
+v1576	Estonia and Finland
+v1627	Year the mandate starts
+v1633	The road to a mandate
+v1634	Where BIM is mandatory, where it is coming and why elsewhere it is not yet

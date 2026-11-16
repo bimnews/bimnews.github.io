@@ -1,0 +1,125 @@
+v1435	11 La obligación en el mundo
+v1448	Dónde el BIM ya es obligatorio, dónde está llegando y dónde aún no lo es, con el porqué cuando las fuentes lo dicen. Cada fila remite a las noticias de BIM News que lo prueban; si una fuente no explica el porqué, lo decimos en lugar de adivinarlo. El mapa crece con la búsqueda país por país: un país que falta no es un país sin BIM, sino uno que aún no hemos verificado.
+v1449	<span class="ob-k">●</span> Obligatorio <small>18</small>
+v1450	Obras públicas del Estado: modelos orientados a objetos y entrega en IFC (reglamento TIC).
+v1451	Trámites de licencia en BIM para edificios nuevos de más de 5.000 m²: primero la arquitectura, todo desde 2015. Desde 2026 a través de CORENET X.
+v1452	Primero las grandes obras de la agencia de compras; ahora todas las obras públicas desde 50.000 millones de wones, 30.000 millones en 2028, todas en 2030.
+v1453	Todos los contratos del gobierno central, de cualquier importe (BIM nivel 2); desde 2021, un mandato sobre gestión de la información.
+v1454	Obras públicas de más de 30 millones de dólares de Hong Kong, en todas las fases.
+v1455	Calendario por umbrales del decreto 560/2017; desde 2025, todas las obras públicas de más de 2 millones de euros (decreto legislativo 36/2023, art. 43).
+v1456	Solo para el Estado federal: grandes infraestructuras (Stufenplan 2015) y luego edificios federales (Masterplan 2021).
+v1457	Obras federales, por etapas hasta 2028.
+v1458	Obras públicas, por etapas.
+v1459	Edificios de la Confederación desde 2021, infraestructuras desde 2025.
+v1460	Obras financiadas por el Estado, salvo defensa y seguridad.
+v1461	Obras civiles gestionadas por el ministerio de infraestructuras, salvo las pequeñas.
+v1462	Proyectistas por encima de 100 millones de euros, desde 2025 por encima de 20 millones, desde 2026 también las constructoras por encima de 10 millones.
+v1463	Licencias de obra de grandes edificios y proyectos públicos, en IFC.
+v1464	Proyectos públicos y privados desde 10 millones de ringgit; en 2024 ampliado a carreteras y alcantarillado.
+v1465	Plan BIM del Estado (2023): desde 2026, nivel BIM «Medio» en las obras por encima del umbral europeo.
+v1466	Obras del gobierno nacional y de los gobiernos regionales en 14 tipologías (hospitales, universidades, carreteras…).
+v1467	Obras nuevas de clase II y superiores, desde el estudio de viabilidad.
+v1468	<span class="ob-k">◐</span> En camino <small>6</small>
+v1469	El nuevo reglamento de contratación propuesto por la Comisión exige el BIM en obras desde 25 millones de euros. Aún deben aprobarlo el Parlamento y el Consejo.
+v1470	Ley del BIM: proyectos públicos de más de 135 millones de coronas, para toda la vida de la obra. Prevista antes, luego aplazada.
+v1471	Plan del gobierno: BIM obligatorio para los nuevos edificios residenciales y comerciales.
+v1472	La estrategia de 2020 fija la obligación desde 2026; aún no tenemos una fuente que confirme que haya entrado en vigor.
+v1473	Un proyecto de ley (24587) para la obligación progresiva en las obras públicas.
+v1474	Un proyecto para las obras de más de 250 millones de birr; no sabemos si ha arrancado.
+v1475	<span class="ob-k">○</span> Todavía no <small>11</small>
+v1476	Planes nacionales desde 2015 (PTNB, Plan BIM 2022).
+v1477	<b>¿Por qué todavía no?</b> El código de contratación permite a los órganos de contratación pedir el BIM pero no los obliga, y la generalización se retrasa; el impulso podría venir de la revisión europea.
+v1478	Estrategia nacional y hoja de ruta (2024); la primera guía técnica (2026).
+v1479	<b>¿Por qué todavía no?</b> Falta un umbral por encima del cual el BIM sea obligatorio. Para la Cámara Técnica el nudo es la administración pública, que debe saber pedir, controlar y usar los modelos; pesan también la resistencia al cambio, el BIM visto como un coste y la inseguridad jurídica.
+v1480	Hoja de ruta del gobierno (2022) y guía técnica nacional (2023).
+v1481	<b>¿Por qué todavía no?</b> Por ahora la guía solo vale para los proyectos piloto; para los demás proyectos públicos es una recomendación. Los criterios de la obligación se aplazan a la siguiente fase de la hoja de ruta.
+v1482	Los grandes promotores públicos exigen el BIM en sus contratos (Trafikverket desde 2015).
+v1483	<b>¿Por qué todavía no?</b> No hay una obligación legal nacional: decide cada promotor.
+v1484	Obligación «cumplir o explicar» para los estándares abiertos: IFC (2011), NLCS y COINS (2018).
+v1485	<b>¿Por qué todavía no?</b> La obligación afecta a los formatos de intercambio de datos, no al uso del BIM en sí.
+v1486	Estrategia del gobierno (2021) con proyectos piloto.
+v1487	<b>¿Por qué todavía no?</b> La fuente no lo explica.
+v1488	Estrategia nacional aprobada en 2026.
+v1489	<b>¿Por qué todavía no?</b> La estrategia acaba de arrancar; la fuente no fija una obligación.
+v1490	Hoja de ruta para introducir el BIM en la contratación pública (2020).
+v1491	Programa federal de la GSA (2003), estándar nacional NBIMS (desde 2007), National BIM Program (2022).
+v1492	<b>¿Por qué todavía no?</b> No hay una obligación federal general: piden el BIM agencias y promotores concretos.
+v1493	Estrategias nacionales para las obras públicas (2019).
+v1494	<b>¿Por qué todavía no?</b> Las fuentes no lo explican.
+v1495	Requisitos BIM de las agencias inmobiliarias del Estado (Senaatti desde 2007, RKAS desde 2018).
+v1496	<b>¿Por qué todavía no?</b> Son reglas del promotor público, no una ley nacional.
+v1497	Actualizado el 16/11/2026. «Obligatorio» significa que una ley, un decreto o una norma del gobierno lo impone al menos en una parte de las obras públicas; los detalles están en las noticias. Una propuesta o una estrategia sin fecha vinculante queda en «en camino» o «todavía no».
+v1506	11 · El camino hacia la obligación
+v1507	Dinamarca, Singapur, Corea del Sur
+v1508	Brasil, Lituania, Suiza
+v1509	Rusia
+v1510	Japón
+v1511	Irlanda, Dubái, Malasia
+v1512	España, Perú, Vietnam
+v1513	Noticias: <a href="#settimana-2013-02-04" data-art="n185">2013</a>
+v1514	Dinamarca
+v1515	desde 2013
+v1516	Noticias: <a href="#settimana-2013-07-01" data-art="n212">2013</a> · <a href="#settimana-2015-06-29" data-art="n131">2015</a> · <a href="#settimana-2026-07-20" data-art="n55">2026</a>
+v1517	Singapur
+v1518	Noticias: <a href="#settimana-2015-09-14" data-art="n214">2015</a> · <a href="#settimana-2026-10-05" data-art="n26">2026</a>
+v1519	Corea del Sur
+v1520	Noticias: <a href="#settimana-2016-04-25" data-art="n61">2016</a> · <a href="#settimana-2021-09-13" data-art="n122">2021</a>
+v1521	desde 2016
+v1522	Noticias: <a href="#settimana-2017-11-27" data-art="n152">2017</a> · <a href="#settimana-2025-01-20" data-art="n81">2025</a>
+v1523	desde 2018
+v1524	Noticias: <a href="#settimana-2018-12-31" data-art="n124">2019</a> · <a href="#settimana-2024-12-30" data-art="n77">2025</a>
+v1525	desde 2019
+v1526	Noticias: <a href="#settimana-2015-12-14" data-art="n60">2015</a> · <a href="#settimana-2021-11-01" data-art="n123">2021</a>
+v1527	desde 2020
+v1528	Noticias: <a href="#settimana-2020-03-30" data-art="n69">2020</a> · <a href="#settimana-2020-12-28" data-art="n120">2021</a>
+v1529	Brasil
+v1530	desde 2021
+v1531	Noticias: <a href="#settimana-2020-05-18" data-art="n182">2020</a>
+v1532	Lituania
+v1533	Noticias: <a href="#settimana-2019-04-15" data-art="n175">2019</a>
+v1534	Suiza
+v1535	Noticias: <a href="#settimana-2021-12-27" data-art="n114">2022</a>
+v1536	desde 2022
+v1537	Noticias: <a href="#settimana-2023-03-27" data-art="n109">2023</a>
+v1538	desde 2023
+v1539	Noticias: <a href="#settimana-2024-01-01" data-art="n99">2024</a> · <a href="#settimana-2025-06-02" data-art="n94">2025</a> · <a href="#settimana-2026-01-12" data-art="n39">2026</a>
+v1540	Irlanda
+v1541	desde 2024
+v1542	Noticias: <a href="#settimana-2024-01-01" data-art="n98">2024</a>
+v1543	Dubái
+v1544	Malasia
+v1545	Noticias: <a href="#settimana-2023-06-26" data-art="n111">2023</a> · <a href="#settimana-2026-11-09" data-art="n17">2026</a>
+v1546	desde 2026
+v1547	Noticias: <a href="#settimana-2026-08-24" data-art="n171">2026</a>
+v1548	Perú
+v1549	Vietnam
+v1550	Unión Europea
+v1551	propuesta
+v1552	Chequia
+v1553	Kazajistán
+v1554	Colombia
+v1555	Costa Rica
+v1556	por decidir
+v1557	Etiopía
+v1558	Noticias: <a href="#settimana-2018-11-12" data-art="n150">2018</a> · <a href="#settimana-2026-11-09" data-art="n37">2026</a>
+v1559	Francia
+v1560	Noticias: <a href="#settimana-2024-01-01" data-art="n217">2024</a> · <a href="#settimana-2026-10-12" data-art="n219">2026</a>
+v1561	Grecia
+v1562	Rumanía
+v1563	Noticias: <a href="#settimana-2014-12-29" data-art="n213">2015</a>
+v1564	Suecia
+v1565	Noticias: <a href="#settimana-2011-11-14" data-art="n211">2011</a> · <a href="#settimana-2018-06-25" data-art="n181">2018</a>
+v1566	Países Bajos
+v1567	Noticias: <a href="#settimana-2021-02-15" data-art="n215">2021</a>
+v1568	Ucrania
+v1569	Portugal
+v1570	Polonia
+v1571	Noticias: <a href="#settimana-2002-12-30" data-art="n188">2003</a> · <a href="#settimana-2007-11-26" data-art="n210">2007</a> · <a href="#settimana-2022-09-05" data-art="n116">2022</a>
+v1572	Estados Unidos
+v1573	Noticias: <a href="#settimana-2019-02-25" data-art="n162">2019</a> · <a href="#settimana-2019-08-26" data-art="n157">2019</a>
+v1574	México y Argentina
+v1575	Noticias: <a href="#settimana-2007-01-01" data-art="n186">2007</a> · <a href="#settimana-2018-04-16" data-art="n183">2018</a>
+v1576	Estonia y Finlandia
+v1627	Año de inicio de la obligación
+v1633	El camino hacia la obligación
+v1634	Dónde el BIM es obligatorio, dónde está llegando y por qué en otros sitios aún no lo es

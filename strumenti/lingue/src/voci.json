@@ -9700,5 +9700,880 @@
 "h": "<a href=\"https://www.youtube.com/@SaraLunaris\" target=\"_blank\" rel=\"noopener\" translate=\"no\">La vera interpretazione dei Sogni ↗</a> · il significato dei sogni",
 "tag": "LI",
 "id": "v1388"
+},
+{
+"k": "11 L'obbligo nel mondo",
+"m": "text",
+"h": "11 L'obbligo nel mondo",
+"tag": "BUTTON",
+"id": "v1435"
+},
+{
+"k": "Dove il BIM è già obbligatorio, dove sta arrivando e dove non lo è ancora, con il perché quando le fonti lo dicono. Ogni riga rimanda alle notizie di BIM News che la provano; se una fonte non spiega il perché, lo scriviamo invece di indovinarlo. La mappa cresce con la ricerca paese per paese: un paese che manca non è un paese senza BIM, ma un paese che non abbiamo ancora verificato.",
+"m": "text",
+"h": "Dove il BIM è già obbligatorio, dove sta arrivando e dove non lo è ancora, con il perché quando le fonti lo dicono. Ogni riga rimanda alle notizie di BIM News che la provano; se una fonte non spiega il perché, lo scriviamo invece di indovinarlo. La mappa cresce con la ricerca paese per paese: un paese che manca non è un paese senza BIM, ma un paese che non abbiamo ancora verificato.",
+"tag": "P",
+"id": "v1448"
+},
+{
+"k": "● Obbligatorio 18",
+"m": "html",
+"h": "<span class=\"ob-k\">●</span> Obbligatorio <small>18</small>",
+"tag": "H4",
+"id": "v1449"
+},
+{
+"k": "Opere pubbliche dello Stato: modelli a oggetti e consegna in IFC (regolamento IKT).",
+"m": "text",
+"h": "Opere pubbliche dello Stato: modelli a oggetti e consegna in IFC (regolamento IKT).",
+"tag": "P",
+"id": "v1450"
+},
+{
+"k": "Pratiche edilizie in BIM per i nuovi edifici oltre 5.000 m²: prima l'architettura, dal 2015 tutto. Dal 2026 passano da CORENET X.",
+"m": "text",
+"h": "Pratiche edilizie in BIM per i nuovi edifici oltre 5.000 m²: prima l'architettura, dal 2015 tutto. Dal 2026 passano da CORENET X.",
+"tag": "P",
+"id": "v1451"
+},
+{
+"k": "Prima le grandi opere dell'agenzia appalti; ora tutte le opere pubbliche da 50 miliardi di won, 30 miliardi nel 2028, tutte nel 2030.",
+"m": "text",
+"h": "Prima le grandi opere dell'agenzia appalti; ora tutte le opere pubbliche da 50 miliardi di won, 30 miliardi nel 2028, tutte nel 2030.",
+"tag": "P",
+"id": "v1452"
+},
+{
+"k": "Tutti i contratti del governo centrale, a qualunque importo (BIM Level 2); dal 2021 un mandato sulla gestione informativa.",
+"m": "text",
+"h": "Tutti i contratti del governo centrale, a qualunque importo (BIM Level 2); dal 2021 un mandato sulla gestione informativa.",
+"tag": "P",
+"id": "v1453"
+},
+{
+"k": "Opere pubbliche oltre 30 milioni di dollari di Hong Kong, in tutte le fasi.",
+"m": "text",
+"h": "Opere pubbliche oltre 30 milioni di dollari di Hong Kong, in tutte le fasi.",
+"tag": "P",
+"id": "v1454"
+},
+{
+"k": "Calendario a soglie del DM 560/2017; dal 2025 tutte le opere pubbliche oltre 2 milioni di euro (D.Lgs. 36/2023, art. 43).",
+"m": "text",
+"h": "Calendario a soglie del DM 560/2017; dal 2025 tutte le opere pubbliche oltre 2 milioni di euro (D.Lgs. 36/2023, art. 43).",
+"tag": "P",
+"id": "v1455"
+},
+{
+"k": "Solo per lo Stato federale: grandi infrastrutture (Stufenplan 2015) e poi edifici federali (Masterplan 2021).",
+"m": "text",
+"h": "Solo per lo Stato federale: grandi infrastrutture (Stufenplan 2015) e poi edifici federali (Masterplan 2021).",
+"tag": "P",
+"id": "v1456"
+},
+{
+"k": "Opere federali, a tappe fino al 2028.",
+"m": "text",
+"h": "Opere federali, a tappe fino al 2028.",
+"tag": "P",
+"id": "v1457"
+},
+{
+"k": "Opere pubbliche, a tappe.",
+"m": "text",
+"h": "Opere pubbliche, a tappe.",
+"tag": "P",
+"id": "v1458"
+},
+{
+"k": "Edifici della Confederazione dal 2021, infrastrutture dal 2025.",
+"m": "text",
+"h": "Edifici della Confederazione dal 2021, infrastrutture dal 2025.",
+"tag": "P",
+"id": "v1459"
+},
+{
+"k": "Opere finanziate dallo Stato, salvo difesa e sicurezza.",
+"m": "text",
+"h": "Opere finanziate dallo Stato, salvo difesa e sicurezza.",
+"tag": "P",
+"id": "v1460"
+},
+{
+"k": "Opere civili gestite dal ministero delle infrastrutture, salvo le piccole.",
+"m": "text",
+"h": "Opere civili gestite dal ministero delle infrastrutture, salvo le piccole.",
+"tag": "P",
+"id": "v1461"
+},
+{
+"k": "Progettisti oltre 100 milioni di euro, dal 2025 oltre 20 milioni, dal 2026 anche le imprese oltre 10 milioni.",
+"m": "text",
+"h": "Progettisti oltre 100 milioni di euro, dal 2025 oltre 20 milioni, dal 2026 anche le imprese oltre 10 milioni.",
+"tag": "P",
+"id": "v1462"
+},
+{
+"k": "Permessi di costruire dei grandi edifici e dei progetti pubblici, in IFC.",
+"m": "text",
+"h": "Permessi di costruire dei grandi edifici e dei progetti pubblici, in IFC.",
+"tag": "P",
+"id": "v1463"
+},
+{
+"k": "Progetti pubblici e privati da 10 milioni di ringgit; nel 2024 esteso a strade e fognature.",
+"m": "text",
+"h": "Progetti pubblici e privati da 10 milioni di ringgit; nel 2024 esteso a strade e fognature.",
+"tag": "P",
+"id": "v1464"
+},
+{
+"k": "Plan BIM dello Stato (2023): dal 2026 livello BIM «Medio» nei lavori sopra la soglia europea.",
+"m": "text",
+"h": "Plan BIM dello Stato (2023): dal 2026 livello BIM «Medio» nei lavori sopra la soglia europea.",
+"tag": "P",
+"id": "v1465"
+},
+{
+"k": "Opere del governo nazionale e regionali in 14 tipologie (ospedali, università, strade…).",
+"m": "text",
+"h": "Opere del governo nazionale e regionali in 14 tipologie (ospedali, università, strade…).",
+"tag": "P",
+"id": "v1466"
+},
+{
+"k": "Nuove opere di classe II e superiori, fin dallo studio di fattibilità.",
+"m": "text",
+"h": "Nuove opere di classe II e superiori, fin dallo studio di fattibilità.",
+"tag": "P",
+"id": "v1467"
+},
+{
+"k": "◐ In arrivo 6",
+"m": "html",
+"h": "<span class=\"ob-k\">◐</span> In arrivo <small>6</small>",
+"tag": "H4",
+"id": "v1468"
+},
+{
+"k": "Il nuovo regolamento appalti proposto dalla Commissione chiede il BIM nei lavori da 25 milioni di euro in su. Deve passare da Parlamento e Consiglio.",
+"m": "text",
+"h": "Il nuovo regolamento appalti proposto dalla Commissione chiede il BIM nei lavori da 25 milioni di euro in su. Deve passare da Parlamento e Consiglio.",
+"tag": "P",
+"id": "v1469"
+},
+{
+"k": "Legge sul BIM: progetti pubblici oltre 135 milioni di corone, per tutta la vita dell'opera. Era previsto prima, poi rinviato.",
+"m": "text",
+"h": "Legge sul BIM: progetti pubblici oltre 135 milioni di corone, per tutta la vita dell'opera. Era previsto prima, poi rinviato.",
+"tag": "P",
+"id": "v1470"
+},
+{
+"k": "Piano del governo: BIM obbligatorio per i nuovi edifici residenziali e commerciali.",
+"m": "text",
+"h": "Piano del governo: BIM obbligatorio per i nuovi edifici residenziali e commerciali.",
+"tag": "P",
+"id": "v1471"
+},
+{
+"k": "La strategia del 2020 fissa l'obbligo dal 2026; non abbiamo ancora una fonte che confermi che sia scattato.",
+"m": "text",
+"h": "La strategia del 2020 fissa l'obbligo dal 2026; non abbiamo ancora una fonte che confermi che sia scattato.",
+"tag": "P",
+"id": "v1472"
+},
+{
+"k": "Un disegno di legge (24587) per l'obbligo progressivo nelle opere pubbliche.",
+"m": "text",
+"h": "Un disegno di legge (24587) per l'obbligo progressivo nelle opere pubbliche.",
+"tag": "P",
+"id": "v1473"
+},
+{
+"k": "Un progetto per le opere oltre 250 milioni di birr; non sappiamo se è partito.",
+"m": "text",
+"h": "Un progetto per le opere oltre 250 milioni di birr; non sappiamo se è partito.",
+"tag": "P",
+"id": "v1474"
+},
+{
+"k": "○ Non ancora 11",
+"m": "html",
+"h": "<span class=\"ob-k\">○</span> Non ancora <small>11</small>",
+"tag": "H4",
+"id": "v1475"
+},
+{
+"k": "Piani nazionali dal 2015 (PTNB, Plan BIM 2022).",
+"m": "text",
+"h": "Piani nazionali dal 2015 (PTNB, Plan BIM 2022).",
+"tag": "P",
+"id": "v1476"
+},
+{
+"k": "Perché non ancora? Il Codice degli appalti permette alle stazioni appaltanti di chiedere il BIM ma non le obbliga, e la generalizzazione tarda; la spinta potrebbe venire dalla revisione europea.",
+"m": "html",
+"h": "<b>Perché non ancora?</b> Il Codice degli appalti permette alle stazioni appaltanti di chiedere il BIM ma non le obbliga, e la generalizzazione tarda; la spinta potrebbe venire dalla revisione europea.",
+"tag": "P",
+"id": "v1477"
+},
+{
+"k": "Strategia nazionale e roadmap (2024); la prima linea guida tecnica (2026).",
+"m": "text",
+"h": "Strategia nazionale e roadmap (2024); la prima linea guida tecnica (2026).",
+"tag": "P",
+"id": "v1478"
+},
+{
+"k": "Perché non ancora? Manca una soglia oltre la quale il BIM sia obbligatorio. Per la Camera tecnica il nodo è la pubblica amministrazione, che deve saper chiedere, controllare e usare i modelli; pesano anche la resistenza al cambiamento, il BIM visto come un costo e l'incertezza giuridica.",
+"m": "html",
+"h": "<b>Perché non ancora?</b> Manca una soglia oltre la quale il BIM sia obbligatorio. Per la Camera tecnica il nodo è la pubblica amministrazione, che deve saper chiedere, controllare e usare i modelli; pesano anche la resistenza al cambiamento, il BIM visto come un costo e l'incertezza giuridica.",
+"tag": "P",
+"id": "v1479"
+},
+{
+"k": "Roadmap del governo (2022) e guida tecnica nazionale (2023).",
+"m": "text",
+"h": "Roadmap del governo (2022) e guida tecnica nazionale (2023).",
+"tag": "P",
+"id": "v1480"
+},
+{
+"k": "Perché non ancora? Per ora la guida vale solo per i progetti pilota; per gli altri progetti pubblici è una raccomandazione. I criteri dell'obbligo sono rinviati alla fase successiva della roadmap.",
+"m": "html",
+"h": "<b>Perché non ancora?</b> Per ora la guida vale solo per i progetti pilota; per gli altri progetti pubblici è una raccomandazione. I criteri dell'obbligo sono rinviati alla fase successiva della roadmap.",
+"tag": "P",
+"id": "v1481"
+},
+{
+"k": "I grandi committenti pubblici chiedono il BIM nei loro contratti (Trafikverket dal 2015).",
+"m": "text",
+"h": "I grandi committenti pubblici chiedono il BIM nei loro contratti (Trafikverket dal 2015).",
+"tag": "P",
+"id": "v1482"
+},
+{
+"k": "Perché non ancora? Non c'è un obbligo di legge nazionale: decide ogni committente.",
+"m": "html",
+"h": "<b>Perché non ancora?</b> Non c'è un obbligo di legge nazionale: decide ogni committente.",
+"tag": "P",
+"id": "v1483"
+},
+{
+"k": "Obbligo «applica o spiega» per gli standard aperti: IFC (2011), NLCS e COINS (2018).",
+"m": "text",
+"h": "Obbligo «applica o spiega» per gli standard aperti: IFC (2011), NLCS e COINS (2018).",
+"tag": "P",
+"id": "v1484"
+},
+{
+"k": "Perché non ancora? L'obbligo riguarda i formati con cui si scambiano i dati, non l'uso del BIM in sé.",
+"m": "html",
+"h": "<b>Perché non ancora?</b> L'obbligo riguarda i formati con cui si scambiano i dati, non l'uso del BIM in sé.",
+"tag": "P",
+"id": "v1485"
+},
+{
+"k": "Strategia del governo (2021) con progetti pilota.",
+"m": "text",
+"h": "Strategia del governo (2021) con progetti pilota.",
+"tag": "P",
+"id": "v1486"
+},
+{
+"k": "Perché non ancora? La fonte non lo spiega.",
+"m": "html",
+"h": "<b>Perché non ancora?</b> La fonte non lo spiega.",
+"tag": "P",
+"id": "v1487"
+},
+{
+"k": "Strategia nazionale approvata nel 2026.",
+"m": "text",
+"h": "Strategia nazionale approvata nel 2026.",
+"tag": "P",
+"id": "v1488"
+},
+{
+"k": "Perché non ancora? La strategia è appena partita; la fonte non fissa un obbligo.",
+"m": "html",
+"h": "<b>Perché non ancora?</b> La strategia è appena partita; la fonte non fissa un obbligo.",
+"tag": "P",
+"id": "v1489"
+},
+{
+"k": "Mappa per introdurre il BIM negli appalti (2020).",
+"m": "text",
+"h": "Mappa per introdurre il BIM negli appalti (2020).",
+"tag": "P",
+"id": "v1490"
+},
+{
+"k": "Programma federale GSA (2003), standard nazionale NBIMS (dal 2007), National BIM Program (2022).",
+"m": "text",
+"h": "Programma federale GSA (2003), standard nazionale NBIMS (dal 2007), National BIM Program (2022).",
+"tag": "P",
+"id": "v1491"
+},
+{
+"k": "Perché non ancora? Non c'è un obbligo federale generale: chiedono il BIM singole agenzie e committenti.",
+"m": "html",
+"h": "<b>Perché non ancora?</b> Non c'è un obbligo federale generale: chiedono il BIM singole agenzie e committenti.",
+"tag": "P",
+"id": "v1492"
+},
+{
+"k": "Strategie nazionali per le opere pubbliche (2019).",
+"m": "text",
+"h": "Strategie nazionali per le opere pubbliche (2019).",
+"tag": "P",
+"id": "v1493"
+},
+{
+"k": "Perché non ancora? Le fonti non lo spiegano.",
+"m": "html",
+"h": "<b>Perché non ancora?</b> Le fonti non lo spiegano.",
+"tag": "P",
+"id": "v1494"
+},
+{
+"k": "Requisiti BIM delle agenzie immobiliari dello Stato (Senaatti dal 2007, RKAS dal 2018).",
+"m": "text",
+"h": "Requisiti BIM delle agenzie immobiliari dello Stato (Senaatti dal 2007, RKAS dal 2018).",
+"tag": "P",
+"id": "v1495"
+},
+{
+"k": "Perché non ancora? Sono regole del committente pubblico, non una legge nazionale.",
+"m": "html",
+"h": "<b>Perché non ancora?</b> Sono regole del committente pubblico, non una legge nazionale.",
+"tag": "P",
+"id": "v1496"
+},
+{
+"k": "Aggiornato al 16/11/2026. «Obbligatorio» vuol dire che una legge, un decreto o una regola del governo lo impone almeno in una parte delle opere pubbliche; i dettagli sono nelle notizie. Una proposta o una strategia senza data vincolante resta tra «in arrivo» o «non ancora».",
+"m": "text",
+"h": "Aggiornato al 16/11/2026. «Obbligatorio» vuol dire che una legge, un decreto o una regola del governo lo impone almeno in una parte delle opere pubbliche; i dettagli sono nelle notizie. Una proposta o una strategia senza data vincolante resta tra «in arrivo» o «non ancora».",
+"tag": "P",
+"id": "v1497"
+},
+{
+"k": "11 · La strada verso l'obbligo",
+"m": "text",
+"h": "11 · La strada verso l'obbligo",
+"tag": "SPAN",
+"id": "v1506"
+},
+{
+"k": "Danimarca, Singapore, Corea del Sud",
+"m": "text",
+"h": "Danimarca, Singapore, Corea del Sud",
+"tag": "SPAN",
+"id": "v1507"
+},
+{
+"k": "Brasile, Lituania, Svizzera",
+"m": "text",
+"h": "Brasile, Lituania, Svizzera",
+"tag": "SPAN",
+"id": "v1508"
+},
+{
+"k": "Russia",
+"m": "text",
+"h": "Russia",
+"tag": "SPAN",
+"id": "v1509"
+},
+{
+"k": "Giappone",
+"m": "text",
+"h": "Giappone",
+"tag": "SPAN",
+"id": "v1510"
+},
+{
+"k": "Irlanda, Dubai, Malesia",
+"m": "text",
+"h": "Irlanda, Dubai, Malesia",
+"tag": "SPAN",
+"id": "v1511"
+},
+{
+"k": "Spagna, Perù, Vietnam",
+"m": "text",
+"h": "Spagna, Perù, Vietnam",
+"tag": "SPAN",
+"id": "v1512"
+},
+{
+"k": "Notizie: 2013",
+"m": "html",
+"h": "Notizie: <a href=\"#settimana-2013-02-04\" data-art=\"n185\">2013</a>",
+"tag": "SPAN",
+"id": "v1513"
+},
+{
+"k": "Danimarca",
+"m": "text",
+"h": "Danimarca",
+"tag": "B",
+"id": "v1514"
+},
+{
+"k": "dal 2013",
+"m": "text",
+"h": "dal 2013",
+"tag": "SPAN",
+"id": "v1515"
+},
+{
+"k": "Notizie: 2013 · 2015 · 2026",
+"m": "html",
+"h": "Notizie: <a href=\"#settimana-2013-07-01\" data-art=\"n212\">2013</a> · <a href=\"#settimana-2015-06-29\" data-art=\"n131\">2015</a> · <a href=\"#settimana-2026-07-20\" data-art=\"n55\">2026</a>",
+"tag": "SPAN",
+"id": "v1516"
+},
+{
+"k": "Singapore",
+"m": "text",
+"h": "Singapore",
+"tag": "B",
+"id": "v1517"
+},
+{
+"k": "Notizie: 2015 · 2026",
+"m": "html",
+"h": "Notizie: <a href=\"#settimana-2015-09-14\" data-art=\"n214\">2015</a> · <a href=\"#settimana-2026-10-05\" data-art=\"n26\">2026</a>",
+"tag": "SPAN",
+"id": "v1518"
+},
+{
+"k": "Corea del Sud",
+"m": "text",
+"h": "Corea del Sud",
+"tag": "B",
+"id": "v1519"
+},
+{
+"k": "Notizie: 2016 · 2021",
+"m": "html",
+"h": "Notizie: <a href=\"#settimana-2016-04-25\" data-art=\"n61\">2016</a> · <a href=\"#settimana-2021-09-13\" data-art=\"n122\">2021</a>",
+"tag": "SPAN",
+"id": "v1520"
+},
+{
+"k": "dal 2016",
+"m": "text",
+"h": "dal 2016",
+"tag": "SPAN",
+"id": "v1521"
+},
+{
+"k": "Notizie: 2017 · 2025",
+"m": "html",
+"h": "Notizie: <a href=\"#settimana-2017-11-27\" data-art=\"n152\">2017</a> · <a href=\"#settimana-2025-01-20\" data-art=\"n81\">2025</a>",
+"tag": "SPAN",
+"id": "v1522"
+},
+{
+"k": "dal 2018",
+"m": "text",
+"h": "dal 2018",
+"tag": "SPAN",
+"id": "v1523"
+},
+{
+"k": "Notizie: 2019 · 2025",
+"m": "html",
+"h": "Notizie: <a href=\"#settimana-2018-12-31\" data-art=\"n124\">2019</a> · <a href=\"#settimana-2024-12-30\" data-art=\"n77\">2025</a>",
+"tag": "SPAN",
+"id": "v1524"
+},
+{
+"k": "dal 2019",
+"m": "text",
+"h": "dal 2019",
+"tag": "SPAN",
+"id": "v1525"
+},
+{
+"k": "Notizie: 2015 · 2021",
+"m": "html",
+"h": "Notizie: <a href=\"#settimana-2015-12-14\" data-art=\"n60\">2015</a> · <a href=\"#settimana-2021-11-01\" data-art=\"n123\">2021</a>",
+"tag": "SPAN",
+"id": "v1526"
+},
+{
+"k": "dal 2020",
+"m": "text",
+"h": "dal 2020",
+"tag": "SPAN",
+"id": "v1527"
+},
+{
+"k": "Notizie: 2020 · 2021",
+"m": "html",
+"h": "Notizie: <a href=\"#settimana-2020-03-30\" data-art=\"n69\">2020</a> · <a href=\"#settimana-2020-12-28\" data-art=\"n120\">2021</a>",
+"tag": "SPAN",
+"id": "v1528"
+},
+{
+"k": "Brasile",
+"m": "text",
+"h": "Brasile",
+"tag": "B",
+"id": "v1529"
+},
+{
+"k": "dal 2021",
+"m": "text",
+"h": "dal 2021",
+"tag": "SPAN",
+"id": "v1530"
+},
+{
+"k": "Notizie: 2020",
+"m": "html",
+"h": "Notizie: <a href=\"#settimana-2020-05-18\" data-art=\"n182\">2020</a>",
+"tag": "SPAN",
+"id": "v1531"
+},
+{
+"k": "Lituania",
+"m": "text",
+"h": "Lituania",
+"tag": "B",
+"id": "v1532"
+},
+{
+"k": "Notizie: 2019",
+"m": "html",
+"h": "Notizie: <a href=\"#settimana-2019-04-15\" data-art=\"n175\">2019</a>",
+"tag": "SPAN",
+"id": "v1533"
+},
+{
+"k": "Svizzera",
+"m": "text",
+"h": "Svizzera",
+"tag": "B",
+"id": "v1534"
+},
+{
+"k": "Notizie: 2022",
+"m": "html",
+"h": "Notizie: <a href=\"#settimana-2021-12-27\" data-art=\"n114\">2022</a>",
+"tag": "SPAN",
+"id": "v1535"
+},
+{
+"k": "dal 2022",
+"m": "text",
+"h": "dal 2022",
+"tag": "SPAN",
+"id": "v1536"
+},
+{
+"k": "Notizie: 2023",
+"m": "html",
+"h": "Notizie: <a href=\"#settimana-2023-03-27\" data-art=\"n109\">2023</a>",
+"tag": "SPAN",
+"id": "v1537"
+},
+{
+"k": "dal 2023",
+"m": "text",
+"h": "dal 2023",
+"tag": "SPAN",
+"id": "v1538"
+},
+{
+"k": "Notizie: 2024 · 2025 · 2026",
+"m": "html",
+"h": "Notizie: <a href=\"#settimana-2024-01-01\" data-art=\"n99\">2024</a> · <a href=\"#settimana-2025-06-02\" data-art=\"n94\">2025</a> · <a href=\"#settimana-2026-01-12\" data-art=\"n39\">2026</a>",
+"tag": "SPAN",
+"id": "v1539"
+},
+{
+"k": "Irlanda",
+"m": "text",
+"h": "Irlanda",
+"tag": "B",
+"id": "v1540"
+},
+{
+"k": "dal 2024",
+"m": "text",
+"h": "dal 2024",
+"tag": "SPAN",
+"id": "v1541"
+},
+{
+"k": "Notizie: 2024",
+"m": "html",
+"h": "Notizie: <a href=\"#settimana-2024-01-01\" data-art=\"n98\">2024</a>",
+"tag": "SPAN",
+"id": "v1542"
+},
+{
+"k": "Dubai",
+"m": "text",
+"h": "Dubai",
+"tag": "B",
+"id": "v1543"
+},
+{
+"k": "Malesia",
+"m": "text",
+"h": "Malesia",
+"tag": "B",
+"id": "v1544"
+},
+{
+"k": "Notizie: 2023 · 2026",
+"m": "html",
+"h": "Notizie: <a href=\"#settimana-2023-06-26\" data-art=\"n111\">2023</a> · <a href=\"#settimana-2026-11-09\" data-art=\"n17\">2026</a>",
+"tag": "SPAN",
+"id": "v1545"
+},
+{
+"k": "dal 2026",
+"m": "text",
+"h": "dal 2026",
+"tag": "SPAN",
+"id": "v1546"
+},
+{
+"k": "Notizie: 2026",
+"m": "html",
+"h": "Notizie: <a href=\"#settimana-2026-08-24\" data-art=\"n171\">2026</a>",
+"tag": "SPAN",
+"id": "v1547"
+},
+{
+"k": "Perù",
+"m": "text",
+"h": "Perù",
+"tag": "B",
+"id": "v1548"
+},
+{
+"k": "Vietnam",
+"m": "text",
+"h": "Vietnam",
+"tag": "B",
+"id": "v1549"
+},
+{
+"k": "Unione europea",
+"m": "text",
+"h": "Unione europea",
+"tag": "B",
+"id": "v1550"
+},
+{
+"k": "proposta",
+"m": "text",
+"h": "proposta",
+"tag": "SPAN",
+"id": "v1551"
+},
+{
+"k": "Repubblica Ceca",
+"m": "text",
+"h": "Repubblica Ceca",
+"tag": "B",
+"id": "v1552"
+},
+{
+"k": "Kazakistan",
+"m": "text",
+"h": "Kazakistan",
+"tag": "B",
+"id": "v1553"
+},
+{
+"k": "Colombia",
+"m": "text",
+"h": "Colombia",
+"tag": "B",
+"id": "v1554"
+},
+{
+"k": "Costa Rica",
+"m": "text",
+"h": "Costa Rica",
+"tag": "B",
+"id": "v1555"
+},
+{
+"k": "da decidere",
+"m": "text",
+"h": "da decidere",
+"tag": "SPAN",
+"id": "v1556"
+},
+{
+"k": "Etiopia",
+"m": "text",
+"h": "Etiopia",
+"tag": "B",
+"id": "v1557"
+},
+{
+"k": "Notizie: 2018 · 2026",
+"m": "html",
+"h": "Notizie: <a href=\"#settimana-2018-11-12\" data-art=\"n150\">2018</a> · <a href=\"#settimana-2026-11-09\" data-art=\"n37\">2026</a>",
+"tag": "SPAN",
+"id": "v1558"
+},
+{
+"k": "Francia",
+"m": "text",
+"h": "Francia",
+"tag": "B",
+"id": "v1559"
+},
+{
+"k": "Notizie: 2024 · 2026",
+"m": "html",
+"h": "Notizie: <a href=\"#settimana-2024-01-01\" data-art=\"n217\">2024</a> · <a href=\"#settimana-2026-10-12\" data-art=\"n219\">2026</a>",
+"tag": "SPAN",
+"id": "v1560"
+},
+{
+"k": "Grecia",
+"m": "text",
+"h": "Grecia",
+"tag": "B",
+"id": "v1561"
+},
+{
+"k": "Romania",
+"m": "text",
+"h": "Romania",
+"tag": "B",
+"id": "v1562"
+},
+{
+"k": "Notizie: 2015",
+"m": "html",
+"h": "Notizie: <a href=\"#settimana-2014-12-29\" data-art=\"n213\">2015</a>",
+"tag": "SPAN",
+"id": "v1563"
+},
+{
+"k": "Svezia",
+"m": "text",
+"h": "Svezia",
+"tag": "B",
+"id": "v1564"
+},
+{
+"k": "Notizie: 2011 · 2018",
+"m": "html",
+"h": "Notizie: <a href=\"#settimana-2011-11-14\" data-art=\"n211\">2011</a> · <a href=\"#settimana-2018-06-25\" data-art=\"n181\">2018</a>",
+"tag": "SPAN",
+"id": "v1565"
+},
+{
+"k": "Paesi Bassi",
+"m": "text",
+"h": "Paesi Bassi",
+"tag": "B",
+"id": "v1566"
+},
+{
+"k": "Notizie: 2021",
+"m": "html",
+"h": "Notizie: <a href=\"#settimana-2021-02-15\" data-art=\"n215\">2021</a>",
+"tag": "SPAN",
+"id": "v1567"
+},
+{
+"k": "Ucraina",
+"m": "text",
+"h": "Ucraina",
+"tag": "B",
+"id": "v1568"
+},
+{
+"k": "Portogallo",
+"m": "text",
+"h": "Portogallo",
+"tag": "B",
+"id": "v1569"
+},
+{
+"k": "Polonia",
+"m": "text",
+"h": "Polonia",
+"tag": "B",
+"id": "v1570"
+},
+{
+"k": "Notizie: 2003 · 2007 · 2022",
+"m": "html",
+"h": "Notizie: <a href=\"#settimana-2002-12-30\" data-art=\"n188\">2003</a> · <a href=\"#settimana-2007-11-26\" data-art=\"n210\">2007</a> · <a href=\"#settimana-2022-09-05\" data-art=\"n116\">2022</a>",
+"tag": "SPAN",
+"id": "v1571"
+},
+{
+"k": "Stati Uniti",
+"m": "text",
+"h": "Stati Uniti",
+"tag": "B",
+"id": "v1572"
+},
+{
+"k": "Notizie: 2019 · 2019",
+"m": "html",
+"h": "Notizie: <a href=\"#settimana-2019-02-25\" data-art=\"n162\">2019</a> · <a href=\"#settimana-2019-08-26\" data-art=\"n157\">2019</a>",
+"tag": "SPAN",
+"id": "v1573"
+},
+{
+"k": "Messico e Argentina",
+"m": "text",
+"h": "Messico e Argentina",
+"tag": "B",
+"id": "v1574"
+},
+{
+"k": "Notizie: 2007 · 2018",
+"m": "html",
+"h": "Notizie: <a href=\"#settimana-2007-01-01\" data-art=\"n186\">2007</a> · <a href=\"#settimana-2018-04-16\" data-art=\"n183\">2018</a>",
+"tag": "SPAN",
+"id": "v1575"
+},
+{
+"k": "Estonia e Finlandia",
+"m": "text",
+"h": "Estonia e Finlandia",
+"tag": "B",
+"id": "v1576"
+},
+{
+"k": "Anno di partenza dell'obbligo",
+"m": "attr",
+"h": "Anno di partenza dell'obbligo",
+"tag": "@aria-label",
+"id": "v1627"
+},
+{
+"k": "La strada verso l'obbligo",
+"m": "text",
+"h": "La strada verso l'obbligo",
+"tag": "#rest",
+"id": "v1633"
+},
+{
+"k": "Dove il BIM è obbligatorio, dove sta arrivando e perché altrove non lo è ancora",
+"m": "text",
+"h": "Dove il BIM è obbligatorio, dove sta arrivando e perché altrove non lo è ancora",
+"tag": "#rest",
+"id": "v1634"
 }
 ]
