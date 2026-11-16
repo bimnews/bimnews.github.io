@@ -11,6 +11,26 @@ LIGHTS=citta||[];feats.forEach(function(f){f.b=d3.geoBounds(f);f.c=d3.geoCentroi
 var sphere={type:"Sphere"},grat=d3.geoGraticule10();
 var proj=d3.geoOrthographic().clipAngle(90).precision(.4),path=d3.geoPath(proj,cx);
 var HOME=homeView(),TILT=-23.44,rot=[-HOME[0],-Math.max(-45,Math.min(62,HOME[1]+15)),TILT],k=1,t0=performance.now(),last=t0,hold=0,hover=null,mode="idle",fade=1,raf=0,mx=-1,my=-1;
+// Via Lattea: fascia diagonale di luce diffusa, nucleo caldo, stelline fitte e polvere scura; disegnata una volta per dimensione
+var MWON=/[?&]vialattea=1/.test(location.search)||window.VIALATTEA===true,MW=null;
+function rnd(seed){return function(){seed=(seed*16807)%2147483647;return (seed-1)/2147483646}}
+function mwBuild(){var c=document.createElement("canvas"),w=Math.max(1,Math.round(W*DPR)),h=Math.max(1,Math.round(H*DPR));c.width=w;c.height=h;
+  var g=c.getContext("2d"),R1=rnd(7),L=Math.hypot(w,h),ang=-0.42,cs=Math.cos(ang),sn=Math.sin(ang),cx0=w*.5,cy0=h*.52;
+  function pt(u,v){return[cx0+u*cs-v*sn,cy0+u*sn+v*cs]}
+  g.globalCompositeOperation="lighter";
+  // bagliore diffuso lungo la fascia (più intenso verso il nucleo, spostato a destra)
+  for(var i=0;i<140;i++){var u=(R1()-.5)*L*1.1,v=(R1()-.5)*h*.10,core=Math.exp(-Math.pow((u-L*.12)/(L*.22),2)),q=pt(u,v),rad=h*(.08+.14*R1())*(.7+core*.8);
+    var gr=g.createRadialGradient(q[0],q[1],0,q[0],q[1],rad),warm=core>.5;
+    gr.addColorStop(0,warm?"rgba(255,232,200,"+(.065+.07*core)+")":"rgba(170,195,255,"+(.045+.04*core)+")");gr.addColorStop(1,"rgba(0,0,0,0)");
+    g.fillStyle=gr;g.beginPath();g.arc(q[0],q[1],rad,0,6.283);g.fill()}
+  // stelline fitte, concentrate al centro della fascia
+  for(i=0;i<2600;i++){var u2=(R1()-.5)*L*1.1,v2=((R1()+R1()+R1())/3-.5)*h*.42,core2=Math.exp(-Math.pow((u2-L*.12)/(L*.3),2)),q2=pt(u2,v2);
+    if(R1()>.55+.4*core2)continue;g.fillStyle="rgba(235,240,255,"+(.25+.5*R1())+")";var z=(.35+R1()*.75)*DPR;g.fillRect(q2[0],q2[1],z,z)}
+  // polvere scura: una banda sottile e irregolare lungo l'asse
+  g.globalCompositeOperation="source-over";
+  for(i=0;i<70;i++){var u3=(R1()-.5)*L*.9,v3=Math.sin(u3/L*9)*h*.018+(R1()-.5)*h*.02,q3=pt(u3,v3),r3=h*(.02+.04*R1());
+    var gd=g.createRadialGradient(q3[0],q3[1],0,q3[0],q3[1],r3);gd.addColorStop(0,"rgba(4,6,12,.35)");gd.addColorStop(1,"rgba(4,6,12,0)");g.fillStyle=gd;g.beginPath();g.arc(q3[0],q3[1],r3,0,6.283);g.fill()}
+  return c}
 var stars=[];for(var i=0;i<260;i++)stars.push({x:Math.random(),y:Math.random(),s:Math.random()*Math.random()*1.6+.25,p:Math.random()*6.3,v:.4+Math.random()*1.4});
 // dove guarda il globo all'apertura: il fuso orario del browser (nessuna posizione chiesta né inviata)
 function homeView(){var z="",lon;try{z=Intl.DateTimeFormat().resolvedOptions().timeZone||""}catch(e){}
@@ -33,7 +53,7 @@ function main(f){var g=f.geometry;if(g.type!=="MultiPolygon")return f;
   var keep=P.filter(function(p){return p===P[0]||d3.geoDistance(p.m,P[0].m)<.3});
   return{type:"Feature",geometry:{type:"MultiPolygon",coordinates:keep.map(function(p){return p.c})}}}
 function size(){var b=wrap.getBoundingClientRect();W=b.width;H=b.height;DPR=Math.min(2,devicePixelRatio||1);
-  cv.width=Math.round(W*DPR);cv.height=Math.round(H*DPR);r0=Math.max(60,Math.min(H*.43,W*.32))}
+  cv.width=Math.round(W*DPR);cv.height=Math.round(H*DPR);MW=null;r0=Math.max(60,Math.min(H*.43,W*.32))}
 function css(n,d){var v=getComputedStyle(R).getPropertyValue(n).trim();return v||d}
 function has(){var o={};document.querySelectorAll("#ctrs .ctry.has").forEach(function(p){o[p.dataset.n]=1});return o}
 var HAS={},SEL="";
@@ -45,6 +65,7 @@ function draw(t){
   var g=cx.createRadialGradient(W/2,H/2,0,W/2,H/2,Math.max(W,H)*.75);
   g.addColorStop(0,dark?"#0e1626":"#16233b");g.addColorStop(1,dark?"#05070c":"#0a1222");cx.fillStyle=g;cx.fillRect(0,0,W,H);
   var sp=Math.max(0,1-(k-1)/3);
+  if(MWON){if(!MW)MW=mwBuild();cx.globalAlpha=sp*(dark?.95:.85);cx.drawImage(MW,0,0,W,H);cx.globalAlpha=1}
   stars.forEach(function(s){var a=still()?.7:.45+.55*Math.sin(t/1000*s.v+s.p)*.5+.27;cx.globalAlpha=Math.max(.08,a)*sp;cx.fillStyle="#dfe8ff";
     cx.beginPath();cx.arc(s.x*W,s.y*H,s.s,0,6.283);cx.fill()});
   cx.globalAlpha=1;
