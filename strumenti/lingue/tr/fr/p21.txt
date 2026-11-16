@@ -56,41 +56,25 @@ v1509	Russie
 v1510	Japon
 v1511	Irlande, Dubaï, Malaisie
 v1512	Espagne, Pérou, Viêt Nam
-v1513	Actualités : <a href="#settimana-2013-02-04" data-art="n185">2013</a>
 v1514	Danemark
 v1515	depuis 2013
-v1516	Actualités : <a href="#settimana-2013-07-01" data-art="n212">2013</a> · <a href="#settimana-2015-06-29" data-art="n131">2015</a> · <a href="#settimana-2026-07-20" data-art="n55">2026</a>
 v1517	Singapour
-v1518	Actualités : <a href="#settimana-2015-09-14" data-art="n214">2015</a> · <a href="#settimana-2026-10-05" data-art="n26">2026</a>
 v1519	Corée du Sud
-v1520	Actualités : <a href="#settimana-2016-04-25" data-art="n61">2016</a> · <a href="#settimana-2021-09-13" data-art="n122">2021</a>
 v1521	depuis 2016
-v1522	Actualités : <a href="#settimana-2017-11-27" data-art="n152">2017</a> · <a href="#settimana-2025-01-20" data-art="n81">2025</a>
 v1523	depuis 2018
-v1524	Actualités : <a href="#settimana-2018-12-31" data-art="n124">2019</a> · <a href="#settimana-2024-12-30" data-art="n77">2025</a>
 v1525	depuis 2019
-v1526	Actualités : <a href="#settimana-2015-12-14" data-art="n60">2015</a> · <a href="#settimana-2021-11-01" data-art="n123">2021</a>
 v1527	depuis 2020
-v1528	Actualités : <a href="#settimana-2020-03-30" data-art="n69">2020</a> · <a href="#settimana-2020-12-28" data-art="n120">2021</a>
 v1529	Brésil
 v1530	depuis 2021
-v1531	Actualités : <a href="#settimana-2020-05-18" data-art="n182">2020</a>
 v1532	Lituanie
-v1533	Actualités : <a href="#settimana-2019-04-15" data-art="n175">2019</a>
 v1534	Suisse
-v1535	Actualités : <a href="#settimana-2021-12-27" data-art="n114">2022</a>
 v1536	depuis 2022
-v1537	Actualités : <a href="#settimana-2023-03-27" data-art="n109">2023</a>
 v1538	depuis 2023
-v1539	Actualités : <a href="#settimana-2024-01-01" data-art="n99">2024</a> · <a href="#settimana-2025-06-02" data-art="n94">2025</a> · <a href="#settimana-2026-01-12" data-art="n39">2026</a>
 v1540	Irlande
 v1541	depuis 2024
-v1542	Actualités : <a href="#settimana-2024-01-01" data-art="n98">2024</a>
 v1543	Dubaï
 v1544	Malaisie
-v1545	Actualités : <a href="#settimana-2023-06-26" data-art="n111">2023</a> · <a href="#settimana-2026-11-09" data-art="n17">2026</a>
 v1546	depuis 2026
-v1547	Actualités : <a href="#settimana-2026-08-24" data-art="n171">2026</a>
 v1548	Pérou
 v1549	Viêt Nam
 v1550	Union européenne
@@ -101,25 +85,46 @@ v1554	Colombie
 v1555	Costa Rica
 v1556	à décider
 v1557	Éthiopie
-v1558	Actualités : <a href="#settimana-2018-11-12" data-art="n150">2018</a> · <a href="#settimana-2026-11-09" data-art="n37">2026</a>
 v1559	France
-v1560	Actualités : <a href="#settimana-2024-01-01" data-art="n217">2024</a> · <a href="#settimana-2026-10-12" data-art="n219">2026</a>
 v1561	Grèce
 v1562	Roumanie
-v1563	Actualités : <a href="#settimana-2014-12-29" data-art="n213">2015</a>
 v1564	Suède
-v1565	Actualités : <a href="#settimana-2011-11-14" data-art="n211">2011</a> · <a href="#settimana-2018-06-25" data-art="n181">2018</a>
 v1566	Pays-Bas
-v1567	Actualités : <a href="#settimana-2021-02-15" data-art="n215">2021</a>
 v1568	Ukraine
 v1569	Portugal
 v1570	Pologne
-v1571	Actualités : <a href="#settimana-2002-12-30" data-art="n188">2003</a> · <a href="#settimana-2007-11-26" data-art="n210">2007</a> · <a href="#settimana-2022-09-05" data-art="n116">2022</a>
 v1572	États-Unis
-v1573	Actualités : <a href="#settimana-2019-02-25" data-art="n162">2019</a> · <a href="#settimana-2019-08-26" data-art="n157">2019</a>
 v1574	Mexique et Argentine
-v1575	Actualités : <a href="#settimana-2007-01-01" data-art="n186">2007</a> · <a href="#settimana-2018-04-16" data-art="n183">2018</a>
 v1576	Estonie et Finlande
 v1627	Année de début de l'obligation
 v1633	Le chemin vers l'obligation
 v1634	Où le BIM est obligatoire, où il arrive et pourquoi ailleurs il ne l'est pas encore
+v1635	<span class="ob-k">●</span> Obligatoire <small>20</small>
+v1636	Nouveaux ouvrages complexes avec un maître d'ouvrage public : projet en BIM (loi sur la construction GZ-1).
+v1637	Nouveaux bâtiments du troisième groupe (les plus grands) financés par des organismes publics.
+v1638	<span class="ob-k">◐</span> En cours <small>7</small>
+v1639	Règlement de 2026 : maquette BIM en IFC pour les permis des grands bâtiments, par étapes de 2029 à 2032 en commençant par les villes les plus peuplées.
+v1640	<span class="ob-k">○</span> Pas encore <small>16</small>
+v1641	Exigences BIM des agences immobilières de l'État (RKAS depuis 2018, FSRE depuis 2023).
+v1642	Exigences BIM de l'agence immobilière de l'État (Senaatti, depuis 2007) ; depuis 2026, le permis de construire peut être demandé avec la maquette.
+v1643	<b>Pourquoi pas encore ?</b> La maquette pour le permis est une possibilité, pas une obligation ; les exigences de Senaatti valent pour ses propres projets.
+v1644	Feuille de route BIM nationale approuvée par le gouvernement en 2026.
+v1645	<b>Pourquoi pas encore ?</b> C'est un choix : l'obligation pèse sur les services d'urbanisme, qui devront recevoir et utiliser les maquettes ; pour les concepteurs, les déposer sera une possibilité. La loi est prévue pour 2031-2032.
+v1646	Plateforme nationale hrBIM ; le BIM figure dans les nouvelles lois sur l'urbanisme et la construction (2026).
+v1647	<b>Pourquoi pas encore ?</b> La source parle d'une possibilité : à partir de 2027, le projet pourra être déposé en IFC pour le permis de localisation.
+v1648	Le guide des marchés publics du gouvernement (2019) demande aux agences publiques d'adopter le BIM.
+v1649	<b>Pourquoi pas encore ?</b> Le guide ne fixe ni seuils ni échéances, et la source ne parle pas d'obligation légale.
+v1650	Plan de la Commission des travaux publics depuis 2014, avec des projets pilotes et un seuil prévu à partir de 2017.
+v1651	<b>Pourquoi pas encore ?</b> La Cour des comptes a relevé des résultats inférieurs aux attentes, des règles BIM différentes d'un organisme à l'autre dans les contrats et des critères de coût non uniformes ; la source ne dit pas si le seuil a été fixé.
+v1652	Slovénie, Russie
+v1653	Lettonie
+v1654	Actualités :
+v1655	Slovénie
+v1656	depuis 2025
+v1657	Turquie
+v1658	Estonie et Islande
+v1659	Finlande
+v1660	Slovaquie
+v1661	Croatie
+v1662	Nouvelle-Zélande
+v1663	Taïwan
