@@ -10575,5 +10575,208 @@
 "h": "Dove il BIM è obbligatorio, dove sta arrivando e perché altrove non lo è ancora",
 "tag": "#rest",
 "id": "v1634"
+},
+{
+"k": "● Obbligatorio 20",
+"m": "html",
+"h": "<span class=\"ob-k\">●</span> Obbligatorio <small>20</small>",
+"tag": "H4",
+"id": "v1635"
+},
+{
+"k": "Nuove opere complesse con committente pubblico: progetto in BIM (legge edilizia GZ-1).",
+"m": "text",
+"h": "Nuove opere complesse con committente pubblico: progetto in BIM (legge edilizia GZ-1).",
+"tag": "P",
+"id": "v1636"
+},
+{
+"k": "Nuovi edifici del terzo gruppo (i più grandi) finanziati da enti pubblici.",
+"m": "text",
+"h": "Nuovi edifici del terzo gruppo (i più grandi) finanziati da enti pubblici.",
+"tag": "P",
+"id": "v1637"
+},
+{
+"k": "◐ In arrivo 7",
+"m": "html",
+"h": "<span class=\"ob-k\">◐</span> In arrivo <small>7</small>",
+"tag": "H4",
+"id": "v1638"
+},
+{
+"k": "Regolamento del 2026: modello BIM in IFC per i permessi dei grandi edifici, a tappe dal 2029 al 2032 a partire dalle città più popolose.",
+"m": "text",
+"h": "Regolamento del 2026: modello BIM in IFC per i permessi dei grandi edifici, a tappe dal 2029 al 2032 a partire dalle città più popolose.",
+"tag": "P",
+"id": "v1639"
+},
+{
+"k": "○ Non ancora 16",
+"m": "html",
+"h": "<span class=\"ob-k\">○</span> Non ancora <small>16</small>",
+"tag": "H4",
+"id": "v1640"
+},
+{
+"k": "Requisiti BIM delle agenzie immobiliari dello Stato (RKAS dal 2018, FSRE dal 2023).",
+"m": "text",
+"h": "Requisiti BIM delle agenzie immobiliari dello Stato (RKAS dal 2018, FSRE dal 2023).",
+"tag": "P",
+"id": "v1641"
+},
+{
+"k": "Requisiti BIM dell'agenzia immobiliare dello Stato (Senaatti, dal 2007); dal 2026 il permesso di costruire si può chiedere con il modello.",
+"m": "text",
+"h": "Requisiti BIM dell'agenzia immobiliare dello Stato (Senaatti, dal 2007); dal 2026 il permesso di costruire si può chiedere con il modello.",
+"tag": "P",
+"id": "v1642"
+},
+{
+"k": "Perché non ancora? Il modello per il permesso è una possibilità, non un obbligo; i requisiti di Senaatti valgono per i suoi progetti.",
+"m": "html",
+"h": "<b>Perché non ancora?</b> Il modello per il permesso è una possibilità, non un obbligo; i requisiti di Senaatti valgono per i suoi progetti.",
+"tag": "P",
+"id": "v1643"
+},
+{
+"k": "Roadmap nazionale BIM approvata dal governo nel 2026.",
+"m": "text",
+"h": "Roadmap nazionale BIM approvata dal governo nel 2026.",
+"tag": "P",
+"id": "v1644"
+},
+{
+"k": "Perché non ancora? È una scelta: l'obbligo è per gli uffici tecnici, che dovranno ricevere e usare i modelli; per i progettisti presentarli sarà una possibilità. La legge è prevista per il 2031-2032.",
+"m": "html",
+"h": "<b>Perché non ancora?</b> È una scelta: l'obbligo è per gli uffici tecnici, che dovranno ricevere e usare i modelli; per i progettisti presentarli sarà una possibilità. La legge è prevista per il 2031-2032.",
+"tag": "P",
+"id": "v1645"
+},
+{
+"k": "Piattaforma nazionale hrBIM; il BIM è nelle nuove leggi su urbanistica e costruzioni (2026).",
+"m": "text",
+"h": "Piattaforma nazionale hrBIM; il BIM è nelle nuove leggi su urbanistica e costruzioni (2026).",
+"tag": "P",
+"id": "v1646"
+},
+{
+"k": "Perché non ancora? La fonte parla di una possibilità: dal 2027 si potrà presentare il progetto in IFC per il permesso di localizzazione.",
+"m": "html",
+"h": "<b>Perché non ancora?</b> La fonte parla di una possibilità: dal 2027 si potrà presentare il progetto in IFC per il permesso di localizzazione.",
+"tag": "P",
+"id": "v1647"
+},
+{
+"k": "La guida del governo agli appalti (2019) chiede alle agenzie pubbliche di adottare il BIM.",
+"m": "text",
+"h": "La guida del governo agli appalti (2019) chiede alle agenzie pubbliche di adottare il BIM.",
+"tag": "P",
+"id": "v1648"
+},
+{
+"k": "Perché non ancora? La guida non fissa soglie né scadenze, e la fonte non parla di un obbligo di legge.",
+"m": "html",
+"h": "<b>Perché non ancora?</b> La guida non fissa soglie né scadenze, e la fonte non parla di un obbligo di legge.",
+"tag": "P",
+"id": "v1649"
+},
+{
+"k": "Piano della Commissione per le opere pubbliche dal 2014, con progetti pilota e una soglia prevista dal 2017.",
+"m": "text",
+"h": "Piano della Commissione per le opere pubbliche dal 2014, con progetti pilota e una soglia prevista dal 2017.",
+"tag": "P",
+"id": "v1650"
+},
+{
+"k": "Perché non ancora? La Corte dei conti ha trovato risultati sotto le attese, regole BIM diverse da un ente all'altro nei contratti e criteri di costo non uniformi; la fonte non dice se la soglia sia stata fissata.",
+"m": "html",
+"h": "<b>Perché non ancora?</b> La Corte dei conti ha trovato risultati sotto le attese, regole BIM diverse da un ente all'altro nei contratti e criteri di costo non uniformi; la fonte non dice se la soglia sia stata fissata.",
+"tag": "P",
+"id": "v1651"
+},
+{
+"k": "Slovenia, Russia",
+"m": "text",
+"h": "Slovenia, Russia",
+"tag": "SPAN",
+"id": "v1652"
+},
+{
+"k": "Lettonia",
+"m": "text",
+"h": "Lettonia",
+"tag": "SPAN",
+"id": "v1653"
+},
+{
+"k": "Notizie:",
+"m": "text",
+"h": "Notizie:",
+"tag": "SPAN",
+"id": "v1654"
+},
+{
+"k": "Slovenia",
+"m": "text",
+"h": "Slovenia",
+"tag": "B",
+"id": "v1655"
+},
+{
+"k": "dal 2025",
+"m": "text",
+"h": "dal 2025",
+"tag": "SPAN",
+"id": "v1656"
+},
+{
+"k": "Turchia",
+"m": "text",
+"h": "Turchia",
+"tag": "B",
+"id": "v1657"
+},
+{
+"k": "Estonia e Islanda",
+"m": "text",
+"h": "Estonia e Islanda",
+"tag": "B",
+"id": "v1658"
+},
+{
+"k": "Finlandia",
+"m": "text",
+"h": "Finlandia",
+"tag": "B",
+"id": "v1659"
+},
+{
+"k": "Slovacchia",
+"m": "text",
+"h": "Slovacchia",
+"tag": "B",
+"id": "v1660"
+},
+{
+"k": "Croazia",
+"m": "text",
+"h": "Croazia",
+"tag": "B",
+"id": "v1661"
+},
+{
+"k": "Nuova Zelanda",
+"m": "text",
+"h": "Nuova Zelanda",
+"tag": "B",
+"id": "v1662"
+},
+{
+"k": "Taiwan",
+"m": "text",
+"h": "Taiwan",
+"tag": "B",
+"id": "v1663"
 }
 ]

@@ -56,41 +56,25 @@ v1509	俄罗斯
 v1510	日本
 v1511	爱尔兰、迪拜、马来西亚
 v1512	西班牙、秘鲁、越南
-v1513	新闻： <a href="#settimana-2013-02-04" data-art="n185">2013</a>
 v1514	丹麦
 v1515	2013年起
-v1516	新闻： <a href="#settimana-2013-07-01" data-art="n212">2013</a> · <a href="#settimana-2015-06-29" data-art="n131">2015</a> · <a href="#settimana-2026-07-20" data-art="n55">2026</a>
 v1517	新加坡
-v1518	新闻： <a href="#settimana-2015-09-14" data-art="n214">2015</a> · <a href="#settimana-2026-10-05" data-art="n26">2026</a>
 v1519	韩国
-v1520	新闻： <a href="#settimana-2016-04-25" data-art="n61">2016</a> · <a href="#settimana-2021-09-13" data-art="n122">2021</a>
 v1521	2016年起
-v1522	新闻： <a href="#settimana-2017-11-27" data-art="n152">2017</a> · <a href="#settimana-2025-01-20" data-art="n81">2025</a>
 v1523	2018年起
-v1524	新闻： <a href="#settimana-2018-12-31" data-art="n124">2019</a> · <a href="#settimana-2024-12-30" data-art="n77">2025</a>
 v1525	2019年起
-v1526	新闻： <a href="#settimana-2015-12-14" data-art="n60">2015</a> · <a href="#settimana-2021-11-01" data-art="n123">2021</a>
 v1527	2020年起
-v1528	新闻： <a href="#settimana-2020-03-30" data-art="n69">2020</a> · <a href="#settimana-2020-12-28" data-art="n120">2021</a>
 v1529	巴西
 v1530	2021年起
-v1531	新闻： <a href="#settimana-2020-05-18" data-art="n182">2020</a>
 v1532	立陶宛
-v1533	新闻： <a href="#settimana-2019-04-15" data-art="n175">2019</a>
 v1534	瑞士
-v1535	新闻： <a href="#settimana-2021-12-27" data-art="n114">2022</a>
 v1536	2022年起
-v1537	新闻： <a href="#settimana-2023-03-27" data-art="n109">2023</a>
 v1538	2023年起
-v1539	新闻： <a href="#settimana-2024-01-01" data-art="n99">2024</a> · <a href="#settimana-2025-06-02" data-art="n94">2025</a> · <a href="#settimana-2026-01-12" data-art="n39">2026</a>
 v1540	爱尔兰
 v1541	2024年起
-v1542	新闻： <a href="#settimana-2024-01-01" data-art="n98">2024</a>
 v1543	迪拜
 v1544	马来西亚
-v1545	新闻： <a href="#settimana-2023-06-26" data-art="n111">2023</a> · <a href="#settimana-2026-11-09" data-art="n17">2026</a>
 v1546	2026年起
-v1547	新闻： <a href="#settimana-2026-08-24" data-art="n171">2026</a>
 v1548	秘鲁
 v1549	越南
 v1550	欧盟
@@ -101,25 +85,46 @@ v1554	哥伦比亚
 v1555	哥斯达黎加
 v1556	待定
 v1557	埃塞俄比亚
-v1558	新闻： <a href="#settimana-2018-11-12" data-art="n150">2018</a> · <a href="#settimana-2026-11-09" data-art="n37">2026</a>
 v1559	法国
-v1560	新闻： <a href="#settimana-2024-01-01" data-art="n217">2024</a> · <a href="#settimana-2026-10-12" data-art="n219">2026</a>
 v1561	希腊
 v1562	罗马尼亚
-v1563	新闻： <a href="#settimana-2014-12-29" data-art="n213">2015</a>
 v1564	瑞典
-v1565	新闻： <a href="#settimana-2011-11-14" data-art="n211">2011</a> · <a href="#settimana-2018-06-25" data-art="n181">2018</a>
 v1566	荷兰
-v1567	新闻： <a href="#settimana-2021-02-15" data-art="n215">2021</a>
 v1568	乌克兰
 v1569	葡萄牙
 v1570	波兰
-v1571	新闻： <a href="#settimana-2002-12-30" data-art="n188">2003</a> · <a href="#settimana-2007-11-26" data-art="n210">2007</a> · <a href="#settimana-2022-09-05" data-art="n116">2022</a>
 v1572	美国
-v1573	新闻： <a href="#settimana-2019-02-25" data-art="n162">2019</a> · <a href="#settimana-2019-08-26" data-art="n157">2019</a>
 v1574	墨西哥和阿根廷
-v1575	新闻： <a href="#settimana-2007-01-01" data-art="n186">2007</a> · <a href="#settimana-2018-04-16" data-art="n183">2018</a>
 v1576	爱沙尼亚和芬兰
 v1627	强制开始年份
 v1633	走向强制之路
 v1634	BIM 在哪里已强制、在哪里即将强制，以及其他地方为何尚未强制
+v1635	<span class="ob-k">●</span> 强制 <small>20</small>
+v1636	由公共业主建设的新复杂工程：以 BIM 进行设计（建筑法 GZ-1）。
+v1637	由公共机构出资的第三类新建筑（最大型）。
+v1638	<span class="ob-k">◐</span> 即将到来 <small>7</small>
+v1639	2026 年法规：大型建筑报建须提交 IFC 格式的 BIM 模型，2029 至 2032 年从人口最多的城市开始分阶段实施。
+v1640	<span class="ob-k">○</span> 尚未 <small>16</small>
+v1641	国家房地产机构的 BIM 要求（RKAS 自 2018 年，FSRE 自 2023 年）。
+v1642	国家房地产机构的 BIM 要求（Senaatti，自 2007 年）；2026 年起可凭模型申请建筑许可。
+v1643	<b>为什么还没有？</b> 以模型申请许可是可选项而非义务；Senaatti 的要求只适用于其自身项目。
+v1644	政府于 2026 年批准的国家 BIM 路线图。
+v1645	<b>为什么还没有？</b> 这是一种选择：义务落在建设主管部门，必须接收并使用模型；对设计方而言，提交模型将是可选项。相关法律计划于 2031-2032 年出台。
+v1646	国家 hrBIM 平台；BIM 已写入新的规划法和建设法（2026）。
+v1647	<b>为什么还没有？</b> 来源说的是一种可能：2027 年起可以用 IFC 提交项目以申请选址许可。
+v1648	政府采购指南（2019）要求公共机构采用 BIM。
+v1649	<b>为什么还没有？</b> 该指南没有规定门槛或期限，来源也未提及法律义务。
+v1650	公共工程委员会自 2014 年起的计划，包括试点项目以及 2017 年起拟定的金额门槛。
+v1651	<b>为什么还没有？</b> 审计部发现执行结果未如预期、各机关采购契约中的 BIM 规定不一、费用编列缺乏统一依据；来源未说明门槛是否已经订定。
+v1652	斯洛文尼亚、俄罗斯
+v1653	拉脱维亚
+v1654	新闻：
+v1655	斯洛文尼亚
+v1656	2025年起
+v1657	土耳其
+v1658	爱沙尼亚和冰岛
+v1659	芬兰
+v1660	斯洛伐克
+v1661	克罗地亚
+v1662	新西兰
+v1663	台湾

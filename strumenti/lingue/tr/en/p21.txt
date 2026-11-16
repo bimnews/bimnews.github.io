@@ -56,41 +56,25 @@ v1509	Russia
 v1510	Japan
 v1511	Ireland, Dubai, Malaysia
 v1512	Spain, Peru, Vietnam
-v1513	News: <a href="#settimana-2013-02-04" data-art="n185">2013</a>
 v1514	Denmark
 v1515	since 2013
-v1516	News: <a href="#settimana-2013-07-01" data-art="n212">2013</a> · <a href="#settimana-2015-06-29" data-art="n131">2015</a> · <a href="#settimana-2026-07-20" data-art="n55">2026</a>
 v1517	Singapore
-v1518	News: <a href="#settimana-2015-09-14" data-art="n214">2015</a> · <a href="#settimana-2026-10-05" data-art="n26">2026</a>
 v1519	South Korea
-v1520	News: <a href="#settimana-2016-04-25" data-art="n61">2016</a> · <a href="#settimana-2021-09-13" data-art="n122">2021</a>
 v1521	since 2016
-v1522	News: <a href="#settimana-2017-11-27" data-art="n152">2017</a> · <a href="#settimana-2025-01-20" data-art="n81">2025</a>
 v1523	since 2018
-v1524	News: <a href="#settimana-2018-12-31" data-art="n124">2019</a> · <a href="#settimana-2024-12-30" data-art="n77">2025</a>
 v1525	since 2019
-v1526	News: <a href="#settimana-2015-12-14" data-art="n60">2015</a> · <a href="#settimana-2021-11-01" data-art="n123">2021</a>
 v1527	since 2020
-v1528	News: <a href="#settimana-2020-03-30" data-art="n69">2020</a> · <a href="#settimana-2020-12-28" data-art="n120">2021</a>
 v1529	Brazil
 v1530	since 2021
-v1531	News: <a href="#settimana-2020-05-18" data-art="n182">2020</a>
 v1532	Lithuania
-v1533	News: <a href="#settimana-2019-04-15" data-art="n175">2019</a>
 v1534	Switzerland
-v1535	News: <a href="#settimana-2021-12-27" data-art="n114">2022</a>
 v1536	since 2022
-v1537	News: <a href="#settimana-2023-03-27" data-art="n109">2023</a>
 v1538	since 2023
-v1539	News: <a href="#settimana-2024-01-01" data-art="n99">2024</a> · <a href="#settimana-2025-06-02" data-art="n94">2025</a> · <a href="#settimana-2026-01-12" data-art="n39">2026</a>
 v1540	Ireland
 v1541	since 2024
-v1542	News: <a href="#settimana-2024-01-01" data-art="n98">2024</a>
 v1543	Dubai
 v1544	Malaysia
-v1545	News: <a href="#settimana-2023-06-26" data-art="n111">2023</a> · <a href="#settimana-2026-11-09" data-art="n17">2026</a>
 v1546	since 2026
-v1547	News: <a href="#settimana-2026-08-24" data-art="n171">2026</a>
 v1548	Peru
 v1549	Vietnam
 v1550	European Union
@@ -101,25 +85,46 @@ v1554	Colombia
 v1555	Costa Rica
 v1556	to be decided
 v1557	Ethiopia
-v1558	News: <a href="#settimana-2018-11-12" data-art="n150">2018</a> · <a href="#settimana-2026-11-09" data-art="n37">2026</a>
 v1559	France
-v1560	News: <a href="#settimana-2024-01-01" data-art="n217">2024</a> · <a href="#settimana-2026-10-12" data-art="n219">2026</a>
 v1561	Greece
 v1562	Romania
-v1563	News: <a href="#settimana-2014-12-29" data-art="n213">2015</a>
 v1564	Sweden
-v1565	News: <a href="#settimana-2011-11-14" data-art="n211">2011</a> · <a href="#settimana-2018-06-25" data-art="n181">2018</a>
 v1566	Netherlands
-v1567	News: <a href="#settimana-2021-02-15" data-art="n215">2021</a>
 v1568	Ukraine
 v1569	Portugal
 v1570	Poland
-v1571	News: <a href="#settimana-2002-12-30" data-art="n188">2003</a> · <a href="#settimana-2007-11-26" data-art="n210">2007</a> · <a href="#settimana-2022-09-05" data-art="n116">2022</a>
 v1572	United States
-v1573	News: <a href="#settimana-2019-02-25" data-art="n162">2019</a> · <a href="#settimana-2019-08-26" data-art="n157">2019</a>
 v1574	Mexico and Argentina
-v1575	News: <a href="#settimana-2007-01-01" data-art="n186">2007</a> · <a href="#settimana-2018-04-16" data-art="n183">2018</a>
 v1576	Estonia and Finland
 v1627	Year the mandate starts
 v1633	The road to a mandate
 v1634	Where BIM is mandatory, where it is coming and why elsewhere it is not yet
+v1635	<span class="ob-k">●</span> Mandatory <small>20</small>
+v1636	New complex works with a public client: design in BIM (Building Act GZ-1).
+v1637	New group-three buildings (the largest) funded by public bodies.
+v1638	<span class="ob-k">◐</span> Coming <small>7</small>
+v1639	2026 regulation: BIM model in IFC for permits of large buildings, phased from 2029 to 2032 starting with the most populous cities.
+v1640	<span class="ob-k">○</span> Not yet <small>16</small>
+v1641	BIM requirements of the state real estate agencies (RKAS since 2018, FSRE since 2023).
+v1642	BIM requirements of the state real estate agency (Senaatti, since 2007); since 2026 building permits can be applied for with the model.
+v1643	<b>Why not yet?</b> The model for the permit is an option, not an obligation; Senaatti's requirements apply to its own projects.
+v1644	National BIM roadmap approved by the government in 2026.
+v1645	<b>Why not yet?</b> It is a choice: the obligation falls on building authorities, which must receive and use the models; for designers submitting them will be an option. The law is planned for 2031-2032.
+v1646	National hrBIM platform; BIM is in the new planning and construction laws (2026).
+v1647	<b>Why not yet?</b> The source speaks of an option: from 2027 the design can be submitted in IFC for the location permit.
+v1648	The government's procurement guide (2019) asks public agencies to adopt BIM.
+v1649	<b>Why not yet?</b> The guide sets no thresholds or deadlines, and the source does not speak of a legal obligation.
+v1650	Public Construction Commission plan since 2014, with pilot projects and a threshold planned from 2017.
+v1651	<b>Why not yet?</b> The National Audit Office found results below expectations, BIM rules that differ between agencies in contracts and non-uniform cost criteria; the source does not say whether the threshold was set.
+v1652	Slovenia, Russia
+v1653	Latvia
+v1654	News:
+v1655	Slovenia
+v1656	since 2025
+v1657	Turkey
+v1658	Estonia and Iceland
+v1659	Finland
+v1660	Slovakia
+v1661	Croatia
+v1662	New Zealand
+v1663	Taiwan

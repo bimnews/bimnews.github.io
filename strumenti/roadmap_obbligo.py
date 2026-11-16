@@ -16,9 +16,11 @@ SI=[ # paese, anno di partenza, per che cosa, notizie
 ('Brasile','2021',"Opere federali, a tappe fino al 2028.",['n120','n69']),
 ('Lituania','2021',"Opere pubbliche, a tappe.",['n182']),
 ('Svizzera','2021',"Edifici della Confederazione dal 2021, infrastrutture dal 2025.",['n175']),
+('Slovenia','2022',"Nuove opere complesse con committente pubblico: progetto in BIM (legge edilizia GZ-1).",['n222']),
 ('Russia','2022',"Opere finanziate dallo Stato, salvo difesa e sicurezza.",['n114']),
 ('Giappone','2023',"Opere civili gestite dal ministero delle infrastrutture, salvo le piccole.",['n109']),
 ('Irlanda','2024',"Progettisti oltre 100 milioni di euro, dal 2025 oltre 20 milioni, dal 2026 anche le imprese oltre 10 milioni.",['n99','n94','n39']),
+('Lettonia','2025',"Nuovi edifici del terzo gruppo (i più grandi) finanziati da enti pubblici.",['n224']),
 ('Dubai','2024',"Permessi di costruire dei grandi edifici e dei progetti pubblici, in IFC.",['n98']),
 ('Malesia','2024',"Progetti pubblici e privati da 10 milioni di ringgit; nel 2024 esteso a strade e fognature.",['n103']),
 ('Spagna','2026',"Plan BIM dello Stato (2023): dal 2026 livello BIM «Medio» nei lavori sopra la soglia europea.",['n111','n17']),
@@ -27,6 +29,7 @@ SI=[ # paese, anno di partenza, per che cosa, notizie
 ]
 ARR=[ # paese, quando, che cosa, notizie
 ('Unione europea','proposta',"Il nuovo regolamento appalti proposto dalla Commissione chiede il BIM nei lavori da 25 milioni di euro in su. Deve passare da Parlamento e Consiglio.",['n218']),
+('Turchia','2029',"Regolamento del 2026: modello BIM in IFC per i permessi dei grandi edifici, a tappe dal 2029 al 2032 a partire dalle città più popolose.",['n227']),
 ('Repubblica Ceca','2027',"Legge sul BIM: progetti pubblici oltre 135 milioni di corone, per tutta la vita dell'opera. Era previsto prima, poi rinviato.",['n90','n133']),
 ('Kazakistan','2026-27',"Piano del governo: BIM obbligatorio per i nuovi edifici residenziali e commerciali.",['n38']),
 ('Colombia','2026',"La strategia del 2020 fissa l'obbligo dal 2026; non abbiamo ancora una fonte che confermi che sia scattato.",['n165']),
@@ -44,7 +47,12 @@ NO=[ # paese, che cosa c'è, perché non è obbligatorio (solo dalle fonti), not
 ('Polonia',"Mappa per introdurre il BIM negli appalti (2020).","La fonte non lo spiega.",['n160']),
 ('Stati Uniti',"Programma federale GSA (2003), standard nazionale NBIMS (dal 2007), National BIM Program (2022).","Non c'è un obbligo federale generale: chiedono il BIM singole agenzie e committenti.",['n188','n210','n116']),
 ('Messico e Argentina',"Strategie nazionali per le opere pubbliche (2019).","Le fonti non lo spiegano.",['n162','n157']),
-('Estonia e Finlandia',"Requisiti BIM delle agenzie immobiliari dello Stato (Senaatti dal 2007, RKAS dal 2018).","Sono regole del committente pubblico, non una legge nazionale.",['n186','n183']),
+('Estonia e Islanda',"Requisiti BIM delle agenzie immobiliari dello Stato (RKAS dal 2018, FSRE dal 2023).","Sono regole del committente pubblico, non una legge nazionale.",['n183','n223']),
+('Finlandia',"Requisiti BIM dell'agenzia immobiliare dello Stato (Senaatti, dal 2007); dal 2026 il permesso di costruire si può chiedere con il modello.","Il modello per il permesso è una possibilità, non un obbligo; i requisiti di Senaatti valgono per i suoi progetti.",['n186','n225']),
+('Slovacchia',"Roadmap nazionale BIM approvata dal governo nel 2026.","È una scelta: l'obbligo è per gli uffici tecnici, che dovranno ricevere e usare i modelli; per i progettisti presentarli sarà una possibilità. La legge è prevista per il 2031-2032.",['n226']),
+('Croazia',"Piattaforma nazionale hrBIM; il BIM è nelle nuove leggi su urbanistica e costruzioni (2026).","La fonte parla di una possibilità: dal 2027 si potrà presentare il progetto in IFC per il permesso di localizzazione.",['n228']),
+('Nuova Zelanda',"La guida del governo agli appalti (2019) chiede alle agenzie pubbliche di adottare il BIM.","La guida non fissa soglie né scadenze, e la fonte non parla di un obbligo di legge.",['n221']),
+('Taiwan',"Piano della Commissione per le opere pubbliche dal 2014, con progetti pilota e una soglia prevista dal 2017.","La Corte dei conti ha trovato risultati sotto le attese, regole BIM diverse da un ente all'altro nei contratti e criteri di costo non uniformi; la fonte non dice se la soglia sia stata fissata.",['n220']),
 ]
 
 def links(ids):
@@ -52,7 +60,7 @@ def links(ids):
     for i in sorted(ids,key=lambda i:A[i]['d']):
         a=A[i]
         out.append('<a href="#settimana-%s" data-art="%s">%s</a>'%(a['w'],i,a['d'][:4]))
-    return '<span class="ob-src">Notizie: '+' · '.join(out)+'</span>'
+    return '<div class="ob-srcw"><span class="ob-lab">Notizie:</span> <span class="ob-src">'+' · '.join(out)+'</span></div>'
 
 def e(s):return html.escape(s,quote=False)
 h=['<!-- obbligo:inizio -->','<div class="ob-wrap" id="b5-obbligo">',
@@ -100,7 +108,7 @@ CSS='''/* obbligo: roadmap dell'obbligatorietà (#b5-obbligo) */
 .ob-y{font-family:var(--mono);font-size:.75rem;color:var(--muted);white-space:nowrap}
 .ob-row p{margin:0;font-size:.9rem;line-height:1.45}
 .ob-why{color:var(--muted)}.ob-why b{color:var(--ink)}
-.ob-src{font-size:.78rem;color:var(--muted)}
+.ob-srcw{font-size:.78rem;color:var(--muted)}
 .ob-note{font-size:.85rem;color:var(--muted);margin:0}
 /* obbligo:fine-css */'''
 
