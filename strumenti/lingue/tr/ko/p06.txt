@@ -14,7 +14,7 @@ v0418	국제 · buildingSMART
 v0419	buildingSMART International의 Professional Certification은 openBIM 지식을 인증합니다. 기초 단계(Foundation)와 심화 단계(Practitioner)가 있습니다. 운영은 각국 지부가 맡으며, 다른 단계를 더할 수도 있습니다. 캐나다에는 네 단계가 있습니다.
 v0420	buildingSMART Professional Certification
 v0421	<a href="https://buildingsmartcanada.ca/certification/" target="_blank" rel="noopener">buildingSMART Canada, 단계(영어) ↗</a>
-v0422	출처는 2026년 11월에 확인했습니다. 의무는 바뀝니다. 입찰 전에 공고와 현행 규정을 확인하세요. 다른 나라는 전수 조사를 통해 추가됩니다.
+v0422	출처는 2026년 11월에 확인했습니다. 의무는 바뀝니다. 입찰 전에 공고와 현행 규정을 확인하세요.
 v0423	운영자
 v0424	BIM News를 운영하는 사람. 여기서는 한발 물러나 프로필, 포트폴리오, 일에 대한 생각, BIM 분야를 위한 제안, 진행 중인 작업, 그리고 몇 가지 개인적인 생각을 소개합니다.
 v0425	저는 Marco Scigliuolo, 자격을 갖춘 토목 엔지니어입니다. 바리 공과대학교에서 공부했고 한동안 교사로 일한 뒤 엔지니어 일에 전념했습니다. 예전에는 업계 기업에서 대형 인프라를 다뤘습니다. 지금은 주로 학교와 공공 청사의 설비 설계를 하고 있습니다(현재 남티롤의 한 사무소).

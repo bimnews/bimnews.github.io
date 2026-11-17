@@ -14,7 +14,7 @@ v0418	International · buildingSMART
 v0419	La Professional Certification de buildingSMART International certifie les connaissances openBIM : un niveau de base (Foundation) et un niveau avancé (Practitioner). Elle est gérée par les sections nationales, qui peuvent ajouter d'autres niveaux : au Canada, il y en a quatre.
 v0420	buildingSMART Professional Certification
 v0421	<a href="https://buildingsmartcanada.ca/certification/" target="_blank" rel="noopener">buildingSMART Canada, niveaux (en anglais) ↗</a>
-v0422	Sources vérifiées en novembre 2026. Les obligations changent : avant un appel d'offres, vérifiez l'avis de marché et la règle en vigueur. D'autres pays arriveront avec la recherche systématique.
+v0422	Sources vérifiées en novembre 2026. Les obligations changent : avant un appel d'offres, vérifiez l'avis de marché et la règle en vigueur.
 v0423	Le curateur
 v0424	Qui s'occupe de BIM News. Ici, au second plan, le profil, le portfolio, les réflexions sur le travail, les propositions pour le monde du BIM, les travaux en cours et quelques pensées personnelles.
 v0425	Je suis Marco Scigliuolo, ingénieur civil habilité à exercer. J'ai étudié au Politecnico di Bari et j'ai enseigné pendant un temps ; puis je me suis consacré au métier d'ingénieur. Par le passé, j'ai travaillé sur de grandes infrastructures, dans une entreprise du secteur. Aujourd'hui, je conçois des installations techniques, surtout pour des écoles et des bureaux publics (actuellement dans un bureau du Haut-Adige).

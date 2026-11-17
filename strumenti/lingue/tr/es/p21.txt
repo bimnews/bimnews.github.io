@@ -1,5 +1,5 @@
 v1435	11 La obligación en el mundo
-v1448	Dónde el BIM ya es obligatorio, dónde está llegando y dónde aún no lo es, con el porqué cuando las fuentes lo dicen. Cada fila remite a las noticias de BIM News que lo prueban; si una fuente no explica el porqué, lo decimos en lugar de adivinarlo. El mapa crece con la búsqueda país por país: un país que falta no es un país sin BIM, sino uno que aún no hemos verificado.
+v1448	Dónde el BIM ya es obligatorio, dónde está llegando y dónde aún no lo es, con el porqué cuando las fuentes lo dicen. Cada fila remite a las noticias de BIM News que lo prueban.
 v1449	<span class="ob-k">●</span> Obligatorio <small>18</small>
 v1450	Obras públicas del Estado: modelos orientados a objetos y entrega en IFC (reglamento TIC).
 v1451	Trámites de licencia en BIM para edificios nuevos de más de 5.000 m²: primero la arquitectura, todo desde 2015. Desde 2026 a través de CORENET X.
@@ -23,9 +23,9 @@ v1468	<span class="ob-k">◐</span> En camino <small>6</small>
 v1469	El nuevo reglamento de contratación propuesto por la Comisión exige el BIM en obras desde 25 millones de euros. Aún deben aprobarlo el Parlamento y el Consejo.
 v1470	Ley del BIM: proyectos públicos de más de 135 millones de coronas, para toda la vida de la obra. Prevista antes, luego aplazada.
 v1471	Plan del gobierno: BIM obligatorio para los nuevos edificios residenciales y comerciales.
-v1472	La estrategia de 2020 fija la obligación desde 2026; aún no tenemos una fuente que confirme que haya entrado en vigor.
+v1472	La estrategia de 2020 fija la obligación desde 2026.
 v1473	Un proyecto de ley (24587) para la obligación progresiva en las obras públicas.
-v1474	Un proyecto para las obras de más de 250 millones de birr; no sabemos si ha arrancado.
+v1474	Un proyecto para las obras de más de 250 millones de birr.
 v1475	<span class="ob-k">○</span> Todavía no <small>11</small>
 v1476	Planes nacionales desde 2015 (PTNB, Plan BIM 2022).
 v1477	<b>¿Por qué todavía no?</b> El código de contratación permite a los órganos de contratación pedir el BIM pero no los obliga, y la generalización se retrasa; el impulso podría venir de la revisión europea.

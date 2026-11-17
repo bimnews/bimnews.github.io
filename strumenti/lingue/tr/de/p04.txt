@@ -60,7 +60,7 @@ v0288	CostX
 v0289	RIB iTWO
 v0290	Navisworks (Quantification)
 v0291	TeamSystem CPM
-v0292	Noch keine eigene Nachricht in der Übersicht: Wir ergänzen sie, sobald es eine gibt.
+v0292	Keine eigene Nachricht in der Übersicht.
 v0293	Automatisch ermittelte Mengen, nicht von Hand nachgezählt.
 v0294	Schnelle Schätzungen, wenn sich Planungsentscheidungen ändern.
 v0295	Grundlage für Nachträge und Abschlagsrechnungen.

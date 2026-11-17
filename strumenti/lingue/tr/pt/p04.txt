@@ -60,7 +60,7 @@ v0288	CostX
 v0289	RIB iTWO
 v0290	Navisworks (Quantification)
 v0291	TeamSystem CPM
-v0292	Ainda não há nenhuma notícia dedicada na resenha: acrescentá-la-emos quando chegar.
+v0292	Nenhuma notícia dedicada na resenha.
 v0293	Quantidades extraídas automaticamente, não recontadas à mão.
 v0294	Estimativas rápidas quando mudam as opções de projeto.
 v0295	Base para trabalhos a mais e autos de medição.

@@ -1,5 +1,5 @@
 v1435	11 Die Pflicht weltweit
-v1448	Wo BIM bereits Pflicht ist, wo die Pflicht kommt und wo noch nicht, mit dem Grund, wenn die Quellen ihn nennen. Jede Zeile verweist auf die BIM-News-Meldungen, die es belegen; erklärt eine Quelle das Warum nicht, sagen wir das, statt zu raten. Die Karte wächst mit der Recherche Land für Land: Ein fehlendes Land ist kein Land ohne BIM, sondern eines, das wir noch nicht geprüft haben.
+v1448	Wo BIM bereits Pflicht ist, wo die Pflicht kommt und wo noch nicht, mit dem Grund, wenn die Quellen ihn nennen. Jede Zeile verweist auf die BIM-News-Meldungen, die es belegen.
 v1449	<span class="ob-k">●</span> Pflicht <small>18</small>
 v1450	Öffentliche Bauten des Staates: objektbasierte Modelle und Übergabe in IFC (IKT-Verordnung).
 v1451	Bauanträge in BIM für Neubauten über 5.000 m²: zuerst die Architektur, ab 2015 alles. Seit 2026 über CORENET X.
@@ -23,9 +23,9 @@ v1468	<span class="ob-k">◐</span> Im Kommen <small>6</small>
 v1469	Die von der Kommission vorgeschlagene neue Vergabeverordnung verlangt BIM bei Bauaufträgen ab 25 Millionen Euro. Parlament und Rat müssen noch zustimmen.
 v1470	BIM-Gesetz: öffentliche Projekte über 135 Millionen Kronen, über den gesamten Lebenszyklus. Früher geplant, dann verschoben.
 v1471	Regierungsplan: BIM-Pflicht für neue Wohn- und Geschäftsgebäude.
-v1472	Die Strategie von 2020 sieht die Pflicht ab 2026 vor; wir haben noch keine Quelle, die bestätigt, dass sie gilt.
+v1472	Die Strategie von 2020 sieht die Pflicht ab 2026 vor.
 v1473	Ein Gesetzentwurf (24587) für eine schrittweise Pflicht bei öffentlichen Bauten.
-v1474	Ein Vorhaben für Bauten über 250 Millionen Birr; wir wissen nicht, ob es gestartet ist.
+v1474	Ein Vorhaben für Bauten über 250 Millionen Birr.
 v1475	<span class="ob-k">○</span> Noch nicht <small>11</small>
 v1476	Nationale Pläne seit 2015 (PTNB, Plan BIM 2022).
 v1477	<b>Warum noch nicht?</b> Das Vergaberecht erlaubt den Auftraggebern, BIM zu verlangen, verpflichtet sie aber nicht, und die Verbreitung lässt auf sich warten; der Anstoß könnte von der EU-Reform kommen.
