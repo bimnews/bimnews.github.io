@@ -1,5 +1,5 @@
 v1435	11 The mandate worldwide
-v1448	Where BIM is already mandatory, where it is coming and where it is not yet, with the reason when the sources give it. Each row links to the BIM News items that prove it; if a source does not explain why, we say so instead of guessing. The map grows with the country-by-country research: a missing country is not a country without BIM, but one we have not checked yet.
+v1448	Where BIM is already mandatory, where it is coming and where it is not yet, with the reason when the sources give it. Each row links to the BIM News items that prove it.
 v1449	<span class="ob-k">●</span> Mandatory <small>18</small>
 v1450	State public works: object-based models and delivery in IFC (ICT regulation).
 v1451	BIM building permit submissions for new buildings over 5,000 m²: architecture first, everything from 2015. From 2026 through CORENET X.
@@ -23,9 +23,9 @@ v1468	<span class="ob-k">◐</span> Coming <small>6</small>
 v1469	The new procurement regulation proposed by the Commission requires BIM in works from 25 million euros up. Parliament and Council still have to adopt it.
 v1470	BIM Act: public projects over 135 million crowns, for the whole life of the asset. Planned earlier, then postponed.
 v1471	Government plan: BIM mandatory for new residential and commercial buildings.
-v1472	The 2020 strategy sets the mandate from 2026; we do not yet have a source confirming it has started.
+v1472	The 2020 strategy sets the mandate from 2026.
 v1473	A bill (24587) for a progressive mandate in public works.
-v1474	A project for works over 250 million birr; we do not know whether it has started.
+v1474	A project for works over 250 million birr.
 v1475	<span class="ob-k">○</span> Not yet <small>11</small>
 v1476	National plans since 2015 (PTNB, Plan BIM 2022).
 v1477	<b>Why not yet?</b> The procurement code allows contracting authorities to ask for BIM but does not oblige them, and generalisation is slow; the push could come from the European revision.

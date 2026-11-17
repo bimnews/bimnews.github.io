@@ -1,5 +1,5 @@
 v1435	11 L'obligation dans le monde
-v1448	Où le BIM est déjà obligatoire, où il arrive et où il ne l'est pas encore, avec la raison quand les sources la donnent. Chaque ligne renvoie aux actualités de BIM News qui le prouvent ; si une source n'explique pas pourquoi, nous le disons au lieu de le deviner. La carte grandit avec la recherche pays par pays : un pays absent n'est pas un pays sans BIM, mais un pays que nous n'avons pas encore vérifié.
+v1448	Où le BIM est déjà obligatoire, où il arrive et où il ne l'est pas encore, avec la raison quand les sources la donnent. Chaque ligne renvoie aux actualités de BIM News qui le prouvent.
 v1449	<span class="ob-k">●</span> Obligatoire <small>18</small>
 v1450	Ouvrages publics de l'État : maquettes orientées objet et remise en IFC (règlement TIC).
 v1451	Dépôt des demandes de permis en BIM pour les bâtiments neufs de plus de 5 000 m² : d'abord l'architecture, tout depuis 2015. Depuis 2026 via CORENET X.
@@ -23,9 +23,9 @@ v1468	<span class="ob-k">◐</span> En cours <small>6</small>
 v1469	Le nouveau règlement sur les marchés proposé par la Commission impose le BIM pour les travaux à partir de 25 millions d'euros. Le Parlement et le Conseil doivent encore l'adopter.
 v1470	Loi sur le BIM : projets publics de plus de 135 millions de couronnes, sur toute la vie de l'ouvrage. Prévue plus tôt, puis reportée.
 v1471	Plan du gouvernement : BIM obligatoire pour les nouveaux bâtiments résidentiels et commerciaux.
-v1472	La stratégie de 2020 fixe l'obligation à partir de 2026 ; nous n'avons pas encore de source confirmant qu'elle est entrée en vigueur.
+v1472	La stratégie de 2020 fixe l'obligation à partir de 2026 .
 v1473	Un projet de loi (24587) pour une obligation progressive dans les ouvrages publics.
-v1474	Un projet pour les ouvrages de plus de 250 millions de birrs ; nous ne savons pas s'il a démarré.
+v1474	Un projet pour les ouvrages de plus de 250 millions de birrs.
 v1475	<span class="ob-k">○</span> Pas encore <small>11</small>
 v1476	Plans nationaux depuis 2015 (PTNB, Plan BIM 2022).
 v1477	<b>Pourquoi pas encore ?</b> Le code de la commande publique permet aux acheteurs de demander le BIM sans les y obliger, et la généralisation tarde ; l'impulsion pourrait venir de la révision européenne.

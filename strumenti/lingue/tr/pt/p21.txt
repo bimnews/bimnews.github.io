@@ -1,5 +1,5 @@
 v1435	11 A obrigatoriedade no mundo
-v1448	Onde o BIM já é obrigatório, onde está chegando e onde ainda não é, com o porquê quando as fontes o dizem. Cada linha remete às notícias do BIM News que o comprovam; se uma fonte não explica o porquê, dizemos isso em vez de adivinhar. O mapa cresce com a pesquisa país por país: um país que falta não é um país sem BIM, mas um que ainda não verificamos.
+v1448	Onde o BIM já é obrigatório, onde está chegando e onde ainda não é, com o porquê quando as fontes o dizem. Cada linha remete às notícias do BIM News que o comprovam.
 v1449	<span class="ob-k">●</span> Obrigatório <small>18</small>
 v1450	Obras públicas do Estado: modelos orientados a objetos e entrega em IFC (regulamento TIC).
 v1451	Processos de licenciamento em BIM para edifícios novos acima de 5.000 m²: primeiro a arquitetura, tudo desde 2015. Desde 2026 pelo CORENET X.
@@ -23,9 +23,9 @@ v1468	<span class="ob-k">◐</span> Em andamento <small>6</small>
 v1469	O novo regulamento de contratação proposto pela Comissão exige o BIM em obras a partir de 25 milhões de euros. Parlamento e Conselho ainda precisam aprová-lo.
 v1470	Lei do BIM: projetos públicos acima de 135 milhões de coroas, para toda a vida da obra. Prevista antes, depois adiada.
 v1471	Plano do governo: BIM obrigatório para novos edifícios residenciais e comerciais.
-v1472	A estratégia de 2020 fixa a obrigatoriedade a partir de 2026; ainda não temos uma fonte que confirme que entrou em vigor.
+v1472	A estratégia de 2020 fixa a obrigatoriedade a partir de 2026.
 v1473	Um projeto de lei (24587) para a obrigatoriedade progressiva nas obras públicas.
-v1474	Um projeto para obras acima de 250 milhões de birr; não sabemos se começou.
+v1474	Um projeto para obras acima de 250 milhões de birr.
 v1475	<span class="ob-k">○</span> Ainda não <small>11</small>
 v1476	Planos nacionais desde 2015 (PTNB, Plan BIM 2022).
 v1477	<b>Por que ainda não?</b> O código de contratação permite que as entidades adjudicantes exijam o BIM, mas não as obriga, e a generalização tarda; o impulso pode vir da revisão europeia.

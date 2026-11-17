@@ -14,7 +14,7 @@ v0418	International · buildingSMART
 v0419	buildingSMART International's Professional Certification certifies openBIM knowledge: a basic level (Foundation) and an advanced one (Practitioner). It is run by the national chapters, which can add further levels: Canada has four.
 v0420	buildingSMART Professional Certification
 v0421	<a href="https://buildingsmartcanada.ca/certification/" target="_blank" rel="noopener">buildingSMART Canada, levels ↗</a>
-v0422	Sources checked in November 2026. Mandates change: before a tender, check the call and the rules in force. More countries will follow with the systematic search.
+v0422	Sources checked in November 2026. Mandates change: before a tender, check the call and the rules in force.
 v0423	The curator
 v0424	Who curates BIM News. Here, in the background, the profile, the portfolio, reflections on work, proposals for the BIM world, work in progress and a few personal thoughts.
 v0425	I am Marco Scigliuolo, a civil engineer licensed to practise. I studied at the Politecnico di Bari and taught for a while; then I devoted myself to engineering practice. In the past I worked on major infrastructure for a company in the sector. Today I design building services, mainly for schools and public offices (currently at a firm in South Tyrol).

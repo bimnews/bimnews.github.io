@@ -7,7 +7,7 @@ v0103	Alemán
 v0104	Español
 v0105	Webinars y conferencias grabados
 v0106	De universidades y centros de investigación
-v0107	Clases y conferencias de profesores e investigadores de Stanford, el Technion, la TU München, Cambridge, UCL, Penn State, el Politecnico di Torino, el Politecnico di Milano y la Sapienza. Del MIT y de Harvard no hemos encontrado, por ahora, vídeos públicos dedicados al BIM en sus canales.
+v0107	Clases y conferencias de profesores e investigadores de Stanford, el Technion, la TU München, Cambridge, UCL, Penn State, el Politecnico di Torino, el Politecnico di Milano y la Sapienza.
 v0108	Canales de YouTube sobre BIM
 v0109	Los vídeos se abren en YouTube: no los incrustamos en el sitio, así no se carga ninguna cookie de terceros hasta que tú decidas verlos. La lista crece cada semana junto con la reseña; para los subtítulos puedes usar la traducción automática de YouTube.
 v0110	Agenda

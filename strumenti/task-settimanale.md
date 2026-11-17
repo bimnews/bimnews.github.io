@@ -87,6 +87,10 @@ Sono scritti anche sul sito, nel riquadro «Come scegliamo le notizie» e nel pa
 - **Omonimi da scartare:** supermercati BIM in Marocco e Turchia, fiera BIM di Salisburgo, distribuzione cinematografica BIM, consorzi BIM italiani. Non dare per scontato che in un paese non ci sia nulla: cerca nella sua lingua prima di concluderlo, e nel riepilogo elenca i paesi cercati senza risultati.
 - **Non inventare nulla:** niente notizie, date, numeri o link non verificati aprendo la pagina. Ogni notizia deve avere almeno un link che hai aperto con successo. Non duplicare notizie già presenti.
 
+## Niente frasi sul nostro lavoro
+
+il sito è un posto pubblico. Non scrivere nelle pagine frasi che raccontano i nostri processi interni o i lavori futuri («altri paesi arriveranno con la ricerca a tappeto», «la aggiungeremo quando arriverà», «non abbiamo ancora trovato…», «la mappa cresce con la ricerca…»). Si scrive solo quello che è vero oggi per chi legge. Così si risparmiano anche traduzioni inutili. Restano ammesse le parti volute da Marco: le schede «Work in progress» del curatore, la FAQ su come si aggiorna il sito e le lingue «in verifica». Vale per notizie, agenda, video, BIM Accademia, ogni testo aggiunto alle pagine e anche per il memo `m`, che sul sito si vede: nel memo niente «ho indicato», «data letta sulla pagina», «non sono riuscito», «valutare se tenerla»; solo il fatto utile a chi legge (per esempio «La pagina non riporta il giorno: la data indicata è il 1° marzo»). Le valutazioni su che cosa tenere vanno nel riepilogo per Marco, non nel memo.
+
 ## Formato delle notizie
 
 Le notizie vanno in `assets/notizie.json`: segui esattamente lo stile esistente.
@@ -113,7 +117,7 @@ Le notizie vanno in `assets/notizie.json`: segui esattamente lo stile esistente.
   - se una notizia riguarda un luogo di una nazione che non ha ancora il gruppo `rgc` con le suddivisioni, ometti `rg` e segnalalo nel riepilogo;
   - se il paese non è sulla mappa (per esempio Singapore), lascia `n` vuoto, scrivi il paese in `p` e segnalalo nel riepilogo.
 - **Campo `r`:** serve al sito per mostrare l'etichetta «Archivio» quando una notizia è raccolta più di 7 giorni dopo l'uscita. Mettilo sempre.
-- **Date senza giorno:** se la pagina non riporta una data di pubblicazione, aggiungi il campo `m` (memorandum) spiegando quale data hai attribuito e perché.
+- **Date senza giorno:** se la pagina non riporta una data di pubblicazione, aggiungi il campo `m` (memorandum) che dice quale data è indicata e perché, in forma impersonale.
 - **Settimane:** in `"weeks"` aggiungi la voce di ogni settimana che ha notizie, nella forma `"AAAA-MM-GG":{"from":"...","to":"..."}`. L'archivio si divide per anno e mese da solo, in base a `d`.
 - **Mappa e testata:** la mappa è neutra. Non aggiungere segnaposti o luoghi evidenziati (i numeri li calcola il sito). Non reintrodurre timbri «Work in progress» in testata.
 

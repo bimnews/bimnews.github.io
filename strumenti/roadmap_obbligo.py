@@ -32,9 +32,9 @@ ARR=[ # paese, quando, che cosa, notizie
 ('Turchia','2029',"Regolamento del 2026: modello BIM in IFC per i permessi dei grandi edifici, a tappe dal 2029 al 2032 a partire dalle città più popolose.",['n227']),
 ('Repubblica Ceca','2027',"Legge sul BIM: progetti pubblici oltre 135 milioni di corone, per tutta la vita dell'opera. Era previsto prima, poi rinviato.",['n90','n133']),
 ('Kazakistan','2026-27',"Piano del governo: BIM obbligatorio per i nuovi edifici residenziali e commerciali.",['n38']),
-('Colombia','2026',"La strategia del 2020 fissa l'obbligo dal 2026; non abbiamo ancora una fonte che confermi che sia scattato.",['n165']),
+('Colombia','2026',"La strategia del 2020 fissa l'obbligo dal 2026.",['n165']),
 ('Costa Rica','da decidere',"Un disegno di legge (24587) per l'obbligo progressivo nelle opere pubbliche.",['n166']),
-('Etiopia','da decidere',"Un progetto per le opere oltre 250 milioni di birr; non sappiamo se è partito.",['n172']),
+('Etiopia','da decidere',"Un progetto per le opere oltre 250 milioni di birr.",['n172']),
 ]
 NO=[ # paese, che cosa c'è, perché non è obbligatorio (solo dalle fonti), notizie
 ('Francia',"Piani nazionali dal 2015 (PTNB, Plan BIM 2022).","Il Codice degli appalti permette alle stazioni appaltanti di chiedere il BIM ma non le obbliga, e la generalizzazione tarda; la spinta potrebbe venire dalla revisione europea.",['n37','n150']),
@@ -65,7 +65,7 @@ def links(ids):
 def e(s):return html.escape(s,quote=False)
 h=['<!-- obbligo:inizio -->','<div class="ob-wrap" id="b5-obbligo">',
 '  <span class="label">11 · La strada verso l\'obbligo</span>',
-'  <p class="tl-intro">Dove il BIM è già obbligatorio, dove sta arrivando e dove non lo è ancora, con il perché quando le fonti lo dicono. Ogni riga rimanda alle notizie di BIM News che la provano; se una fonte non spiega il perché, lo scriviamo invece di indovinarlo. La mappa cresce con la ricerca paese per paese: un paese che manca non è un paese senza BIM, ma un paese che non abbiamo ancora verificato.</p>',
+'  <p class="tl-intro">Dove il BIM è già obbligatorio, dove sta arrivando e dove non lo è ancora, con il perché quando le fonti lo dicono. Ogni riga rimanda alle notizie di BIM News che la provano.</p>',
 '  <div class="ob-line" aria-label="Anno di partenza dell\'obbligo">']
 yrs={}
 for p,y,_,_ in SI: yrs.setdefault(y,[]).append(p)

@@ -60,7 +60,7 @@ v0288	CostX
 v0289	RIB iTWO
 v0290	Navisworks (Quantification)
 v0291	TeamSystem CPM
-v0292	资讯中暂时还没有专门的新闻：有了就会添加。
+v0292	资讯中没有专门的新闻。
 v0293	工程量自动提取，不再手工重算。
 v0294	设计方案变化时可快速估算。
 v0295	作为变更和进度结算的依据。
