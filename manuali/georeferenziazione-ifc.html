@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Georeferenziazione BIM tra software diversi · I manuali di BIM News</title>
-<meta name="description" content="Perché i modelli BIM di software diversi non coincidono in federazione: coordinate, rotazione, unità, nord di rete e nord geografico. Caso per caso tra Revit, Archicad, Allplan e IFC 2x3, 4 e 4.3, con un convertitore gratuito e scaricabile.">
+<meta name="description" content="Come impostare il modello iniziale perché i modelli BIM di software diversi coincidano in federazione, e perché a volte non succede: coordinate, rotazione, unità, nord di rete e nord geografico. Caso per caso tra Revit, Archicad, Allplan e IFC 2x3, 4 e 4.3, con un convertitore gratuito e scaricabile.">
 <link rel="stylesheet" href="manuale.css">
 <script>try{var t=localStorage.getItem("tema-2026");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
 <style>
@@ -21,15 +21,14 @@
 <nav class="toc" aria-label="Indice">
   <b>Indice</b>
   <ol>
-    <li><a href="#c1">1 · Il problema</a></li>
-    <li><a href="#c2">2 · Come ho lavorato</a></li>
+    <li><a href="#c1">1 · Impostare il modello iniziale</a></li>
+    <li><a href="#c2">2 · Perché i modelli non coincidono</a></li>
     <li><a href="#c3">3 · La matematica è esatta</a></li>
-    <li><a href="#c4">4 · Caso per caso: lo schema IFC</a></li>
-    <li><a href="#c5">5 · Caso per caso: i software</a></li>
+    <li><a href="#c4">4 · Lo schema IFC: 2x3, 4 e 4.3</a></li>
+    <li><a href="#c5">5 · I software nel dettaglio</a></li>
     <li><a href="#c6">6 · Un caso reale: l'errore 1:1000</a></li>
     <li><a href="#c7">7 · Nord di rete, nord geografico e scala</a></li>
     <li><a href="#c8">8 · Il convertitore</a></li>
-    <li><a href="#c9">9 · Checklist prima della consegna</a></li>
     <li><a href="#fonti">Fonti</a></li>
   </ol>
 </nav>
@@ -38,7 +37,7 @@
   <div>
     <span class="kick">I manuali di BIM News · Nello studio</span>
     <h1>Georeferenziazione BIM tra software diversi</h1>
-    <p>Perché il modello impianti finisce a 5 km da quello architettonico, come si passa da Revit ad Archicad, ad Allplan o all'IFC senza perdere la posizione, e un convertitore gratuito da usare online o scaricare.</p>
+    <p>Come impostare il modello iniziale perché tutte le discipline coincidano, perché a volte il modello impianti finisce a chilometri da quello architettonico, e un convertitore gratuito da usare online o scaricare.</p>
     <div class="meta"><span class="pill">Revit · Archicad · Allplan</span><span class="pill">IFC 2x3 · 4 · 4.3</span><span class="pill">convertitore scaricabile</span><span class="pill">Edizione novembre 2026</span></div>
   </div>
   <svg viewBox="0 0 360 240" role="img" aria-label="Il sistema locale del modello, ruotato e traslato rispetto alla griglia della mappa">
@@ -65,7 +64,50 @@
 </header>
 
 <section class="ch" id="c1">
-  <div class="ch-h"><span class="ch-n">1</span><h2>Il problema</h2></div>
+  <div class="ch-h"><span class="ch-n">1</span><h2>Impostare il modello iniziale</h2></div>
+  <p class="lead">La regola è una sola: tutti i modelli dello stesso progetto condividono un unico punto di riferimento, deciso prima di modellare, e nessuno sposta la geometria per farli combaciare. La procedura vale per chi modella l'architettonico, lo strutturale e gli impianti, in qualunque software.</p>
+  <h3>Prima di modellare: lo decide il coordinatore</h3>
+  <ol class="steps">
+    <li><b>Un punto di riferimento comune</b>, riconoscibile in tutti i modelli: per esempio l'incrocio di due fili fissi, uno spigolo dell'edificio o un vertice del rilievo. Lo stesso punto fisico per ogni disciplina.</li>
+    <li><b>Le sue coordinate reali, in metri:</b> Est, Nord e quota, con il sistema di coordinate (codice EPSG, per esempio EPSG:25832 per ETRS89 / UTM 32N) e il riferimento della quota.</li>
+    <li><b>L'angolo</b> tra il nord di progetto e il nord delle coordinate, con il verso (Est oppure Ovest), in gradi, primi e secondi.</li>
+    <li><b>Lo schema IFC e la configurazione di export</b> comuni a tutti i modelli.</li>
+    <li><b>Tutto in una scheda</b> allegata al capitolato informativo e al piano di gestione informativa, consegnata a ogni BIM specialist prima che i modelli nascano.</li>
+  </ol>
+  <div class="tbl"><table>
+    <tr><th>La scheda delle coordinate</th><th>Esempio (valori inventati)</th></tr>
+    <tr><td>Punto di riferimento</td><td>Incrocio dei fili fissi A e 1, piano terra</td></tr>
+    <tr><td>Est · Nord</td><td>680 000,000 m · 5 150 000,000 m</td></tr>
+    <tr><td>Quota</td><td>250,000 m s.l.m.</td></tr>
+    <tr><td>Angolo</td><td>12° 30′ 00″ Ovest (il nord delle coordinate sta a sinistra del nord di progetto)</td></tr>
+    <tr><td>Sistema di coordinate</td><td>EPSG:25832 · ETRS89 / UTM 32N</td></tr>
+    <tr><td>Scambio</td><td>Stesso schema IFC per tutti; origine del file nelle coordinate condivise</td></tr>
+  </table></div>
+  <h3>Nel proprio modello: ogni BIM specialist</h3>
+  <ol class="steps">
+    <li><b>Unità del modello dichiarata.</b> Millimetri per gli impianti, metri per l'architettonico: va bene qualunque scelta, purché sia scritta. Le coordinate della scheda restano in metri.</li>
+    <li><b>Geometria vicino all'origine.</b> Si modella a poche centinaia di metri dall'origine del software; le coordinate reali non entrano mai nella geometria, ma solo nella georeferenziazione.</li>
+    <li><b>Coordinate assegnate al punto di riferimento</b>, nel software che si usa:
+      <ul>
+        <li><b>Revit:</b> Gestisci → Coordinate → Specifica coordinate in un punto, cliccando il punto comune. Nord/Sud, Est/Ovest e quota si digitano <b>in metri</b>, con la virgola decimale, anche se il progetto è in millimetri; poi l'angolo con Est o Ovest. Subito dopo, controllare che il punto base progetto mostri i valori della scheda.</li>
+        <li><b>Archicad:</b> Survey Point sul punto comune (Options → Project Preferences → Location Settings), North Angle e dati di Georeferencing per l'IFC. Il North Angle si misura in senso antiorario dall'asse X: 90° vuol dire nessuna rotazione.</li>
+        <li><b>Allplan:</b> georeferenziazione del progetto con nome del sistema di coordinate, Est e Nord; export IFC con il metodo IfcMapConversion, che usa il survey point come origine del file.</li>
+        <li><b>Altri software:</b> stesso principio. Il convertitore del capitolo 8 traduce i valori della scheda nei campi di ciascun programma.</li>
+      </ul></li>
+    <li><b>Mai spostare la geometria</b> per far combaciare i modelli: se qualcosa non torna si corregge il sistema di coordinate.</li>
+    <li><b>Export con la configurazione comune</b>, salvata e riusata a ogni consegna (in Revit: Base coordinate = Coordinate condivise).</li>
+  </ol>
+  <h3>Prima di consegnare: il controllo</h3>
+  <ol class="steps">
+    <li><b>Un punto noto:</b> le sue coordinate nel modello devono coincidere con quelle attese entro il centimetro (convertitore, scheda 2).</li>
+    <li><b>La federazione:</b> tutti i modelli nella stessa posizione, prima di qualsiasi altra verifica. Se uno compare lontano, la scheda 4 del convertitore dice se è un errore di unità o di assi.</li>
+    <li><b>In IFC 2x3:</b> se il capitolato li chiede, Property Set di georeferenziazione, IfcSite e TrueNorth coerenti tra loro (capitolo 4).</li>
+  </ol>
+  <div class="box bim"><b>Perché funziona</b><p>Con un solo punto, una sola scheda e le coordinate sempre in metri, ogni software fa la stessa trasformazione matematica (capitolo 3). I capitoli che seguono spiegano cosa succede quando un passo salta, e come accorgersene.</p></div>
+</section>
+
+<section class="ch" id="c2">
+  <div class="ch-h"><span class="ch-n">2</span><h2>Perché i modelli non coincidono</h2></div>
   <p class="lead">Ogni software BIM disegna in un sistema di coordinate suo, piccolo e comodo. La mappa (il rilievo, il catasto, la cartografia) usa coordinate enormi: a Bolzano, in UTM, circa 680 000 m verso est e 5 150 000 m verso nord. Georeferenziare vuol dire dichiarare come si passa dall'uno all'altro.</p>
   <p>Per farlo bastano poche informazioni, ma tutte devono essere giuste e lette allo stesso modo da chi esporta e da chi importa:</p>
   <div class="grid3">
@@ -75,18 +117,6 @@
   </div>
   <p>A queste tre si aggiungono due questioni più sottili: il <b>nord di rete</b> della carta non coincide con il <b>nord geografico</b>, e le distanze sulla carta non sono identiche a quelle misurate sul terreno. Ne parlo nel capitolo 7.</p>
   <div class="box bim"><b>Il sintomo tipico</b><p>In federazione due modelli che dovrebbero sovrapporsi compaiono in due posti diversi, magari a chilometri di distanza, oppure vicini ma ruotati di qualche grado. Quasi sempre la tentazione è spostare la geometria finché combacia: è la scelta sbagliata, perché rompe il modello per tutti gli scambi successivi.</p></div>
-</section>
-
-<section class="ch" id="c2">
-  <div class="ch-h"><span class="ch-n">2</span><h2>Come ho lavorato</h2></div>
-  <p>L'idea di partenza era un «convertitore da Archicad a Revit». Prima di scriverlo ho voluto capire se esiste un modo matematico preciso per passare da un software all'altro, o se ogni conversione è un caso a sé. Ho seguito quattro passi.</p>
-  <ol class="steps">
-    <li><b>Le fonti dei produttori e dello standard.</b> Ho letto la documentazione ufficiale di buildingSMART (IFC 4.3, entità IfcMapConversion, e la guida per la georeferenziazione in IFC 2x3), l'Help di Autodesk Revit, di Graphisoft Archicad e di Allplan, e l'articolo scientifico che definisce i livelli di georeferenziazione (LoGeoRef). Ho usato forum e blog solo per capire i problemi, mai come prova di come funziona un software.</li>
-    <li><b>La matematica.</b> Lo standard IFC descrive la georeferenziazione con una trasformazione precisa (capitolo 3). Ho quindi tradotto le convenzioni di ogni software in quella formula: così ogni conversione passa da un linguaggio comune, invece di avere una regola diversa per ogni coppia di programmi.</li>
-    <li><b>La verifica.</b> Ho confrontato i calcoli geodetici del convertitore con la libreria PROJ, lo standard di riferimento in campo GIS: in Alto Adige le differenze sono sotto un decimo di millimetro e sotto un millesimo di secondo d'arco. Poi ho provato le 30 combinazioni tra i sei formati di partenza e di arrivo, andata e ritorno: l'errore massimo è di 0,04 mm, dovuto solo all'arrotondamento dei decimali mostrati.</li>
-    <li><b>Un caso reale.</b> Ho ricostruito, in forma anonima e con numeri inventati, un errore realmente accaduto in uno scambio tra modelli (capitolo 6).</li>
-  </ol>
-  <div class="box warn"><b>Cosa non ho potuto verificare</b><p>Le convenzioni dei software cambiano tra versioni e non sono sempre documentate per intero. Nell'articolo e nel convertitore segnalo cosa viene da una fonte ufficiale e cosa invece va controllato. Per questo il convertitore ha uno strumento che non dipende dalle convenzioni: il calcolo dei parametri da punti noti.</p></div>
 </section>
 
 <section class="ch" id="c3">
@@ -113,7 +143,7 @@
 </section>
 
 <section class="ch" id="c4">
-  <div class="ch-h"><span class="ch-n">4</span><h2>Caso per caso: lo schema IFC</h2></div>
+  <div class="ch-h"><span class="ch-n">4</span><h2>Lo schema IFC: 2x3, 4 e 4.3</h2></div>
   <p>Molti esportano ancora in IFC 2x3, e qui sta la prima grande differenza: l'entità che descrive la georeferenziazione, IfcMapConversion, esiste solo da IFC 4.</p>
   <div class="tbl"><table>
     <tr><th>Schema</th><th>Dove sta la georeferenziazione</th><th>Rischi</th></tr>
@@ -135,35 +165,33 @@
 </section>
 
 <section class="ch" id="c5">
-  <div class="ch-h"><span class="ch-n">5</span><h2>Caso per caso: i software</h2></div>
-  <p>Per ogni programma riporto cosa dice la documentazione ufficiale (<span class="ok-v">verificato</span>) e cosa invece va controllato con un punto noto (<span class="no-v">da verificare</span>).</p>
+  <div class="ch-h"><span class="ch-n">5</span><h2>I software nel dettaglio</h2></div>
+  <p>Le regole del capitolo 1 vengono da qui: per ogni programma, quello che dice la documentazione ufficiale (<span class="ok-v">verificato</span>) o una prova su un modello reale.</p>
   <h3>Revit</h3>
   <ul>
     <li><span class="ok-v">Verificato</span> (Help Autodesk): Revit ha tre riferimenti, l'origine interna, il punto base progetto e il punto di rilievo. Il comando <i>Specifica coordinate in un punto</i> assegna a un punto scelto Nord/Sud, Est/Ovest, quota e l'angolo «dal nord di progetto al nord reale», con Est oppure Ovest. L'intero modello si sposta insieme ai due punti.</li>
     <li><span class="ok-v">Verificato</span> (Autodesk IFC Manual): all'export IFC, <i>Base coordinate</i> sceglie tra coordinate condivise, origine interna, punto base progetto e punto di rilievo; la scelta cambia le coordinate scritte per IfcSite. L'origine interna è il centro della zona di circa 20 miglia in cui Revit tollera la geometria.</li>
     <li><span class="ok-v">Provato su un modello reale</span> (Revit 2026, progetto in millimetri partito da un template MEP): nel dialogo <i>Specifica coordinate in un punto</i> le coordinate si digitano <b>in metri</b>, con la virgola decimale. Digitando il valore in millimetri, Revit lo legge come metri e avvisa che il modello supera la distanza ammessa dall'origine.</li>
-    <li><span class="no-v">Da verificare</span>: se valga lo stesso per gli altri campi (per esempio le proprietà del punto base progetto) e per altre versioni, e cosa scrive l'esportatore nei Property Set di IFC 2x3. Dopo ogni modifica controlla il punto base progetto.</li>
     <li><b>Una deduzione utile:</b> se si digitano coordinate UTM, il «nord reale» di Revit è il nord di quelle coordinate, cioè il nord di rete UTM, non quello geografico.</li>
   </ul>
   <h3>Archicad</h3>
   <ul>
     <li><span class="ok-v">Verificato</span> (Help di Archicad 28 e 30): la posizione del Survey Point (Easting, Northing, Elevation) è misurata rispetto al Project Origin. I dati di <i>Georeferencing</i> servono solo per lo scambio IFC e non spostano il Survey Point: in IFC 2x3 diventano due Property Set, in IFC 4 IfcMapConversion e IfcProjectedCRS.</li>
     <li><span class="ok-v">Verificato</span> (Graphisoft Community, 2022): il North Angle si misura in senso antiorario dall'asse X; 90° significa nord verso l'alto. Il passaggio alla formula IFC è θ = 90° − North Angle.</li>
-    <li><span class="no-v">Da verificare</span>: gli esempi di Graphisoft mostrano valori negativi molto grandi per il Survey Point; controlla con un punto noto quale punto descrivono nella tua versione.</li>
   </ul>
   <h3>Allplan</h3>
   <ul>
     <li><span class="ok-v">Verificato</span> (Help di Allplan 2027): all'export IFC si sceglie tra <i>Custom</i>, con la combinazione di coordinate e rotazione voluta (di default il punto base diventa 0,0,0), e <i>IfcMapConversion</i>, che richiede nome del CRS, Est e Nord, scrive l'orientamento senza ruotare la geometria e usa il survey point come origine del file.</li>
-    <li><span class="no-v">Da verificare</span>: il verso dell'angolo nella georeferenziazione del progetto. Nel convertitore Allplan usa la definizione geometrica (il nord della mappa sta a Est o a Ovest del nord di progetto).</li>
   </ul>
   <h3>Gli altri</h3>
   <p>Tekla, Vectorworks, BricsCAD e gli altri programmi si possono ricondurre alla stessa definizione geometrica: un punto con coordinate locali e reali, e l'angolo del nord della mappa visto nella pianta orientata al nord di progetto. Il convertitore ha la voce «Altro software» per questo.</p>
   <div class="box idea"><b>Archicad e Revit a confronto</b><p>Lo stesso edificio ruotato di 12° 30′ verso ovest si scrive così: in Revit «12° 30′ 00″ Ovest»; in Archicad North Angle = 102,5°; in IFC XAxisAbscissa = 0,9763 e XAxisOrdinate = −0,2164. Sono tre modi di dire la stessa cosa.</p></div>
+  <div class="box warn"><b>I limiti di queste regole</b><p>Le convenzioni dei software cambiano tra versioni. Non sono documentati: in Revit, l'unità dei campi del punto base progetto e il contenuto dei Property Set di IFC 2x3 scritti dall'esportatore; in Allplan, il verso dell'angolo nella georeferenziazione del progetto (nel convertitore vale la definizione geometrica). Per questo la procedura finisce sempre con il controllo di un punto noto: è l'unica verifica che non dipende dalle convenzioni.</p></div>
 </section>
 
 <section class="ch" id="c6">
   <div class="ch-h"><span class="ch-n">6</span><h2>Un caso reale: l'errore 1:1000</h2></div>
-  <p>Il caso è reale, ma nomi e numeri sono stati cambiati. Tre modelli dello stesso edificio: architettonico e strutturale impostati in metri, impianti elettrici in millimetri. Tutti esportati da Revit in IFC 2x3 e federati in un software di model checking.</p>
+  <p>È quello che succede quando un passo del capitolo 1 salta. Il caso è reale, ma nomi e numeri sono stati cambiati. Tre modelli dello stesso edificio: architettonico e strutturale impostati in metri, impianti elettrici in millimetri. Tutti esportati da Revit in IFC 2x3 e federati in un software di model checking.</p>
   <figure>
     <svg viewBox="0 0 900 230" role="img" aria-label="In federazione architettonico e strutturale stanno a 680 km e 5150 km, il modello impianti a 0,68 km e 5,15 km">
       <rect class="s-as" width="900" height="230" rx="18"/>
@@ -219,19 +247,6 @@
   <iframe class="conv-frame noprint" id="conv" src="convertitore-georeferenziazione.html?embed=1" title="Convertitore di georeferenziazione BIM" loading="lazy"></iframe>
 </section>
 
-<section class="ch" id="c9">
-  <div class="ch-h"><span class="ch-n">9</span><h2>Checklist prima della consegna</h2></div>
-  <ul>
-    <li>Punto di riferimento comune scritto nel capitolato: quale punto, coordinate, quota, angolo, sistema di coordinate (codice EPSG).</li>
-    <li>Unità del modello dichiarata, e unità in cui si digitano le coordinate nel software.</li>
-    <li>Geometria vicina all'origine del modello; coordinate reali solo nella georeferenziazione.</li>
-    <li>Stesso schema IFC e configurazione di export salvata per tutti i modelli.</li>
-    <li>In IFC 2x3: Property Set di georeferenziazione e, se richiesto, IfcSite e TrueNorth coerenti tra loro.</li>
-    <li>Controllo di almeno un punto noto nel software di arrivo: scarto sotto il centimetro.</li>
-    <li>In federazione tutti i modelli nella stessa posizione, prima di qualsiasi altra verifica.</li>
-  </ul>
-</section>
-
 <section class="ch" id="fonti">
   <div class="ch-h"><span class="ch-n">≡</span><h2>Fonti</h2></div>
   <ul class="src">
@@ -246,7 +261,7 @@
     <li>EPSG, <a href="https://epsg.io/7791" target="_blank" rel="noopener">EPSG:7791</a> e <a href="https://spatialreference.org/ref/epsg/6707/" target="_blank" rel="noopener">EPSG:6707</a> (RDN2008 / UTM 32N, ordine degli assi Est-Nord e Nord-Est).</li>
     <li>C. F. F. Karney, «Transverse Mercator with an accuracy of a few nanometers», Journal of Geodesy 85, 2011: le serie usate per i calcoli UTM. Confronto dei risultati con <a href="https://proj.org/" target="_blank" rel="noopener">PROJ</a>.</li>
   </ul>
-  <div class="box idea"><b>Come è nato questo articolo</b><p>È uno dei «manuali di Claude»: l'ha scritto Claude, l'assistente di intelligenza artificiale di Anthropic, partendo da un problema reale di coordinamento e seguendo le indicazioni del curatore. Le convenzioni dei software sono riprese dalle fonti qui sopra; il convertitore è stato verificato con PROJ e con prove di andata e ritorno.</p></div>
+  <div class="box idea"><b>Come è nato questo articolo</b><p>È uno dei «manuali di Claude»: l'ha scritto Claude, l'assistente di intelligenza artificiale di Anthropic, partendo da un problema reale di coordinamento e seguendo le indicazioni del curatore. Le convenzioni dei software vengono dalla documentazione ufficiale qui sopra e da una prova su un modello reale; forum e blog sono serviti solo a capire i problemi. I calcoli del convertitore coincidono con la libreria geodetica PROJ entro un decimo di millimetro, e le 30 combinazioni tra i sei formati, andata e ritorno, danno al massimo 0,04 mm di differenza (arrotondamento dei decimali mostrati).</p></div>
   <p class="foot">BIM News · I manuali di Claude · Georeferenziazione BIM tra software diversi · edizione novembre 2026</p>
 </section>
 </main>
