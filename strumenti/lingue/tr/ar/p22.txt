@@ -1,0 +1,5 @@
+v1664	5 منشورة · 12 بندًا
+v1665	الإسناد الجغرافي في BIM بين برامج مختلفة
+v1666	لماذا ينتهي نموذج على بُعد كيلومترات من النماذج الأخرى عند الدمج: الإحداثيات والدوران ووحدات القياس والشمال الشبكي والشمال الجغرافي، حالة بحالة بين Revit وArchicad وAllplan وIFC 2x3 و4 و4.3، مع حالة حقيقية لخطأ بنسبة 1:1000.
+v1667	مع محوّل مجاني: من قيم برنامج إلى قيم برنامج آخر، والتحقق بنقاط معروفة، وتشخيص الإزاحات. يُستخدم عبر الإنترنت أو يُنزَّل: إنه ملف واحد يعمل أيضًا دون إنترنت.
+v1668	<span class="tag ok">منشور</span><a class="man-btn" href="manuali/georeferenziazione-ifc.html">اقرأ على الإنترنت</a><a class="man-btn ghost" href="manuali/convertitore-georeferenziazione.html">افتح المحوّل</a><a class="man-btn ghost" href="manuali/convertitore-georeferenziazione.html" download="">نزّل المحوّل</a>

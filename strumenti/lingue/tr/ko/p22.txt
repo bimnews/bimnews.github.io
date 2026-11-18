@@ -1,0 +1,5 @@
+v1664	게시 5 · 전체 12개
+v1665	서로 다른 소프트웨어 간 BIM 지오레퍼런싱
+v1666	통합(페더레이션) 과정에서 왜 한 모델이 다른 모델들과 수 킬로미터 떨어진 곳에 나타나는지: 좌표, 회전, 측정 단위, 도북과 진북을 Revit, Archicad, Allplan, IFC 2x3·4·4.3별로 사례마다 설명하고, 1:1000 오류의 실제 사례도 다룹니다.
+v1667	무료 변환기 포함: 한 소프트웨어의 값을 다른 소프트웨어의 값으로 변환하고, 알려진 점으로 검사하며, 위치 이동을 진단합니다. 온라인으로 쓰거나 내려받을 수 있습니다. 인터넷 없이도 작동하는 단일 파일입니다.
+v1668	<span class="tag ok">게시됨</span><a class="man-btn" href="manuali/georeferenziazione-ifc.html">온라인으로 읽기</a><a class="man-btn ghost" href="manuali/convertitore-georeferenziazione.html">변환기 열기</a><a class="man-btn ghost" href="manuali/convertitore-georeferenziazione.html" download="">변환기 내려받기</a>

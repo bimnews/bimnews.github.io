@@ -1,0 +1,559 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Convertitore di georeferenziazione BIM · BIM News</title>
+<meta name="description" content="Convertitore gratuito per la georeferenziazione dei modelli BIM: dai parametri di Revit, Archicad, Allplan o di un file IFC (2x3, 4, 4.3) ai valori da inserire in un altro software, con unità di misura, nord di rete e controllo con punti noti. Funziona anche offline.">
+<script>try{var t=localStorage.getItem("tema-2026");if(t)document.documentElement.dataset.theme=t}catch(e){}
+if(/[?&]embed=1/.test(location.search))document.documentElement.classList.add("embed")</script>
+<style>
+@font-face{font-family:"Atkinson Hyperlegible Next";src:url("../fonts/atkinson-next-latin.woff2") format("woff2");font-weight:200 800;font-display:swap}
+@font-face{font-family:"Atkinson Hyperlegible Mono";src:url("../fonts/atkinson-mono-latin.woff2") format("woff2");font-weight:200 800;font-display:swap}
+:root{--bg:#f6f8fb;--surface:#fff;--ink:#1d2533;--muted:#5b6678;--line:#dde3ec;--accent:#2a6fc9;--soft:#e7f0fb;--ok:#14857a;--oks:#dcf2ee;--warn:#b8730b;--warns:#fbefd8;--bad:#c0446b;--bads:#fbe7ee;--r:14px;--body:"Atkinson Hyperlegible Next",system-ui,sans-serif;--mono:"Atkinson Hyperlegible Mono",ui-monospace,Menlo,Consolas,monospace;color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#10141b;--surface:#171c25;--ink:#e6eaf1;--muted:#9aa5b6;--line:#2a323f;--accent:#7fb0ec;--soft:#1c2a3d;--ok:#6fd0c3;--oks:#173532;--warn:#f0b955;--warns:#33281a;--bad:#f09ab9;--bads:#3a1f2a;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#10141b;--surface:#171c25;--ink:#e6eaf1;--muted:#9aa5b6;--line:#2a323f;--accent:#7fb0ec;--soft:#1c2a3d;--ok:#6fd0c3;--oks:#173532;--warn:#f0b955;--warns:#33281a;--bad:#f09ab9;--bads:#3a1f2a;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:1rem;line-height:1.55}
+.embed body{background:transparent}
+a{color:var(--accent)}
+.wrap{max-width:72rem;margin:0 auto;padding:1.2rem 16px 3rem}
+.embed .wrap{padding:0}
+.embed .hd,.embed .ft-site{display:none}
+.hd{display:flex;flex-wrap:wrap;gap:.6rem 1rem;align-items:flex-end;justify-content:space-between;margin-bottom:1rem}
+.hd h1{margin:0;font-size:clamp(1.5rem,3.2vw,2.2rem);line-height:1.1}
+.hd p{margin:.3rem 0 0;color:var(--muted)}
+.kick{font-family:var(--mono);font-size:.72rem;letter-spacing:.09em;text-transform:uppercase;color:var(--accent)}
+.btn{display:inline-flex;align-items:center;gap:.35rem;font-family:var(--mono);font-size:.78rem;font-weight:700;background:var(--accent);color:#fff;text-decoration:none;padding:.45rem .9rem;border-radius:999px;border:0;cursor:pointer}
+:root[data-theme="dark"] .btn{color:#0f1a2b}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .btn{color:#0f1a2b}}
+.btn.ghost{background:transparent;color:var(--accent);border:1px solid var(--line)}
+.tabs{display:flex;flex-wrap:wrap;gap:.35rem;margin:0 0 .8rem}
+.tabs button{font:inherit;font-size:.9rem;padding:.45rem .85rem;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer}
+.tabs button[aria-selected="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
+:root[data-theme="dark"] .tabs button[aria-selected="true"]{color:#0f1a2b}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .tabs button[aria-selected="true"]{color:#0f1a2b}}
+.panel{display:none}.panel.on{display:block}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:1rem 1.1rem;margin-bottom:1rem}
+.card h2{font-size:1.15rem;margin:0 0 .3rem}
+.card>p.sub{margin:0 0 .8rem;color:var(--muted);font-size:.93rem}
+.pick{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:.6rem;align-items:end;margin-bottom:1rem}
+.pick label{display:block;font-family:var(--mono);font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-bottom:.2rem}
+select,input{font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:.5rem .6rem;width:100%;min-width:0}
+.pick select{font-size:1.05rem;font-weight:700;padding:.65rem .7rem}
+input:focus,select:focus{outline:2px solid var(--accent);outline-offset:1px}
+.swap{font-size:1.2rem;width:2.8rem;height:2.8rem;border-radius:50%;border:1px solid var(--line);background:var(--surface);color:var(--accent);cursor:pointer}
+.cols{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:1rem}
+.side{border:1px solid var(--line);border-radius:12px;padding:.8rem .9rem;background:var(--bg)}
+.side h3{margin:0 0 .5rem;font-size:1rem}
+.f{margin:.45rem 0}
+.f>span{display:block;font-size:.85rem;font-weight:700}
+.f small,.echo{display:block;font-size:.78rem;color:var(--muted)}
+.echo{font-family:var(--mono);min-height:1.1em}
+.echo.err{color:var(--bad)}
+.row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,1fr);gap:.5rem}
+.row2{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:.5rem}
+details.more{margin:.6rem 0 0;border-top:1px dashed var(--line);padding-top:.4rem}
+details.more summary{cursor:pointer;font-size:.88rem;color:var(--accent)}
+.out{display:grid;gap:.45rem}
+.o{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:.5rem .65rem;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:.1rem .6rem;align-items:center}
+.o .k{font-size:.82rem;color:var(--muted)}
+.o .v{font-family:var(--mono);font-size:1.15rem;font-weight:700;word-break:break-all}
+.o .h{grid-column:1/-1;font-size:.76rem;color:var(--muted)}
+.o button{grid-row:1/3;grid-column:2;font:inherit;font-size:.75rem;border:1px solid var(--line);background:var(--bg);color:var(--accent);border-radius:8px;padding:.3rem .5rem;cursor:pointer}
+.grp{font-family:var(--mono);font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;color:var(--accent);margin:.7rem 0 .1rem}
+.note{border-radius:10px;padding:.6rem .75rem;margin:.6rem 0;font-size:.9rem;border-left:5px solid var(--accent);background:var(--soft)}
+.note.warn{border-color:var(--warn);background:var(--warns)}
+.note.ok{border-color:var(--ok);background:var(--oks)}
+.note.bad{border-color:var(--bad);background:var(--bads)}
+.note p{margin:.2rem 0}
+.spec{font-size:.9rem}
+.spec dt{font-weight:700;margin-top:.4rem}
+.spec dd{margin:0 0 0 .2rem;color:var(--muted)}
+.how{font-family:var(--mono);font-size:.82rem;background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:.7rem .8rem;overflow-x:auto;white-space:pre;line-height:1.5}
+table{border-collapse:collapse;width:100%;font-size:.88rem}
+th,td{text-align:left;padding:.35rem .4rem;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:.75rem;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
+td input{padding:.35rem .4rem}
+.tblw{overflow-x:auto}
+.ft-site{margin-top:1.4rem;font-size:.84rem;color:var(--muted);border-top:1px solid var(--line);padding-top:.8rem}
+@media (max-width:760px){.cols{grid-template-columns:minmax(0,1fr)}.pick{grid-template-columns:minmax(0,1fr)}.swap{justify-self:center;transform:rotate(90deg)}.row{grid-template-columns:minmax(0,1fr)}}
+@media print{.tabs,.btn,.o button{display:none}.panel{display:block}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="hd">
+  <div><span class="kick">BIM News · Strumenti gratuiti</span><h1>Convertitore di georeferenziazione BIM</h1><p>Dai parametri di un software, o di un file IFC, ai valori da inserire in un altro. Tutto si calcola nel browser: nessun dato esce dal tuo computer.</p></div>
+  <div style="display:flex;gap:.4rem;flex-wrap:wrap"><a class="btn" href="convertitore-georeferenziazione.html" download="convertitore-georeferenziazione.html">Scarica (funziona offline)</a><a class="btn ghost" href="georeferenziazione-ifc.html">Leggi l'articolo</a></div>
+</header>
+
+<nav class="tabs" role="tablist" aria-label="Strumenti">
+  <button role="tab" aria-selected="true" data-p="p-conv">1 · Converti i parametri</button>
+  <button role="tab" aria-selected="false" data-p="p-pt">2 · Converti un punto</button>
+  <button role="tab" aria-selected="false" data-p="p-cal">3 · Parametri da punti noti</button>
+  <button role="tab" aria-selected="false" data-p="p-diag">4 · Diagnosi di uno spostamento</button>
+  <button role="tab" aria-selected="false" data-p="p-nord">5 · Nord e scala</button>
+</nav>
+
+<!-- 1 · CONVERTITORE -->
+<section class="panel on" id="p-conv">
+<div class="card">
+  <h2>Da un software all'altro</h2>
+  <p class="sub">Scegli il software (o il formato IFC) di partenza e quello di arrivo, poi inserisci i valori che leggi nel primo. I risultati si aggiornano mentre scrivi.</p>
+  <div class="pick">
+    <div><label for="src">Da</label><select id="src"></select></div>
+    <button class="swap" id="swap" type="button" title="Inverti partenza e arrivo" aria-label="Inverti partenza e arrivo">⇄</button>
+    <div><label for="dst">A</label><select id="dst"></select></div>
+  </div>
+  <div class="field-crs f" style="max-width:36rem"><span>Sistema di coordinate della mappa (CRS)</span><select id="crs"></select><small>Serve per latitudine e longitudine, nord geografico e fattori di scala. Le coordinate si intendono in metri.</small></div>
+  <div class="cols">
+    <div class="side"><h3 id="src-h">Valori di partenza</h3><div id="src-f"></div></div>
+    <div class="side"><h3 id="dst-h">Valori di arrivo</h3><div id="dst-o" class="out"></div></div>
+  </div>
+  <div id="conv-notes"></div>
+  <details class="more"><summary>Come si calcola, con i tuoi numeri</summary><div class="how" id="how"></div></details>
+  <details class="more"><summary>Le specifiche dei due software</summary><div class="cols" style="margin-top:.6rem"><dl class="spec" id="spec-src"></dl><dl class="spec" id="spec-dst"></dl></div></details>
+</div>
+</section>
+
+<!-- 2 · PUNTO -->
+<section class="panel" id="p-pt">
+<div class="card">
+  <h2>Converti un punto</h2>
+  <p class="sub">Usa i parametri inseriti nella scheda 1. Inserisci le coordinate di un punto del modello per avere le coordinate reali, o il contrario. Se conosci le coordinate reali misurate, il controllo ti dice di quanto sbaglia la georeferenziazione.</p>
+  <div class="cols">
+    <div class="side"><h3>Dal modello alla mappa</h3>
+      <div class="row"><label class="f"><span>x</span><input id="pt-x" value="20000"><small class="echo" id="pt-x-e"></small></label><label class="f"><span>y</span><input id="pt-y" value="10000"><small class="echo" id="pt-y-e"></small></label><label class="f"><span>z</span><input id="pt-z" value="0"><small class="echo" id="pt-z-e"></small></label></div>
+      <small>Coordinate locali nell'unità del modello indicata nella scheda 1 (<b id="pt-u"></b>).</small>
+      <div class="grp">Coordinate attese (facoltative, dal rilievo)</div>
+      <div class="row"><label class="f"><span>E atteso (m)</span><input id="pt-ee"><small class="echo" id="pt-ee-e"></small></label><label class="f"><span>N atteso (m)</span><input id="pt-ne"><small class="echo" id="pt-ne-e"></small></label><label class="f"><span>Quota attesa (m)</span><input id="pt-he"><small class="echo" id="pt-he-e"></small></label></div>
+    </div>
+    <div class="side"><h3>Risultato</h3><div class="out" id="pt-o"></div></div>
+  </div>
+  <div class="cols" style="margin-top:1rem">
+    <div class="side"><h3>Dalla mappa al modello</h3>
+      <div class="row"><label class="f"><span>E (m)</span><input id="mp-e" value="680020"><small class="echo" id="mp-e-e"></small></label><label class="f"><span>N (m)</span><input id="mp-n" value="5150010"><small class="echo" id="mp-n-e"></small></label><label class="f"><span>Quota (m)</span><input id="mp-h" value="250"><small class="echo" id="mp-h-e"></small></label></div>
+    </div>
+    <div class="side"><h3>Coordinate nel modello</h3><div class="out" id="mp-o"></div></div>
+  </div>
+</div>
+</section>
+
+<!-- 3 · CALIBRAZIONE -->
+<section class="panel" id="p-cal">
+<div class="card">
+  <h2>Ricava i parametri da punti noti</h2>
+  <p class="sub">Hai due o più punti di cui conosci sia le coordinate nel modello sia quelle reali (picchetti, vertici di rilievo, spigoli dell'edificio)? Il calcolo ricava rotazione, scala e traslazione con i minimi quadrati e mostra lo scarto di ogni punto. Non dipende dalle convenzioni dei software: per questo è il controllo più affidabile.</p>
+  <div class="tblw"><table id="cal-t"><thead><tr><th>#</th><th>x modello</th><th>y modello</th><th>E reale (m)</th><th>N reale (m)</th><th>Scarto</th></tr></thead><tbody></tbody></table></div>
+  <div class="f" style="max-width:20rem"><span>Unità delle coordinate del modello</span><select id="cal-u"></select></div>
+  <div class="out" id="cal-o" style="margin-top:.6rem"></div>
+  <p style="margin-top:.8rem"><button class="btn ghost" type="button" id="cal-use">Usa questi parametri nella scheda 1 (come IFC 4)</button></p>
+</div>
+</section>
+
+<!-- 4 · DIAGNOSI -->
+<section class="panel" id="p-diag">
+<div class="card">
+  <h2>Diagnosi di uno spostamento in federazione</h2>
+  <p class="sub">Un modello compare lontano dagli altri? Inserisci dove dovrebbe stare e dove lo vedi. Se lo spostamento è un errore di unità (per esempio metri letti come millimetri) o due assi scambiati, il calcolo lo riconosce.</p>
+  <div class="cols">
+    <div class="side"><h3>Dove dovrebbe stare</h3>
+      <div class="row"><label class="f"><span>x / Est</span><input id="dg-ee" value="680000"><small class="echo" id="dg-ee-e"></small></label><label class="f"><span>y / Nord</span><input id="dg-ne" value="5150000"><small class="echo" id="dg-ne-e"></small></label><label class="f"><span>Unità</span><select id="dg-ue"></select></label></div>
+    </div>
+    <div class="side"><h3>Dove lo vedi</h3>
+      <div class="row"><label class="f"><span>x / Est</span><input id="dg-eo" value="0,68"><small class="echo" id="dg-eo-e"></small></label><label class="f"><span>y / Nord</span><input id="dg-no" value="5,15"><small class="echo" id="dg-no-e"></small></label><label class="f"><span>Unità</span><select id="dg-uo"></select></label></div>
+    </div>
+  </div>
+  <div id="dg-o" style="margin-top:.8rem"></div>
+</div>
+</section>
+
+<!-- 5 · NORD E SCALA -->
+<section class="panel" id="p-nord">
+<div class="card">
+  <h2>Nord di rete, nord geografico e scala</h2>
+  <p class="sub">Per un punto in coordinate UTM calcola latitudine e longitudine, la convergenza dei meridiani (l'angolo tra nord di rete e nord geografico), il fattore di scala della proiezione e quello della quota. Formule di Krüger (serie di Karney), confrontate con la libreria geodetica PROJ.</p>
+  <div class="cols">
+    <div class="side">
+      <div class="f"><span>Sistema di coordinate</span><select id="nd-crs"></select></div>
+      <div class="row"><label class="f"><span>E (m)</span><input id="nd-e" value="680000"><small class="echo" id="nd-e-e"></small></label><label class="f"><span>N (m)</span><input id="nd-n" value="5150000"><small class="echo" id="nd-n-e"></small></label><label class="f"><span>Quota (m s.l.m.)</span><input id="nd-h" value="250"><small class="echo" id="nd-h-e"></small></label></div>
+      <small>Il fattore di quota usa la quota sul livello del mare al posto dell'altezza sull'ellissoide: la differenza (in Italia nell'ordine di qualche decina di metri) cambia il risultato di pochi milionesimi.</small>
+    </div>
+    <div class="side"><div class="out" id="nd-o"></div></div>
+  </div>
+</div>
+</section>
+
+<p class="ft-site">Strumento gratuito di <a href="https://bimnews.github.io/">BIM News</a>, edizione novembre 2026. I calcoli sono esatti per le formule dichiarate; le convenzioni dei software sono riprese dalla documentazione citata nell'articolo e possono cambiare tra versioni. Prima di consegnare, controlla sempre un punto noto nel software di destinazione (scheda 2 o 3). La responsabilità del modello resta di chi lo firma.</p>
+</div>
+
+<script>
+"use strict";
+/* ============ numeri: lettura e scrittura all'italiana ============ */
+function parseNum(s){
+  if(s==null)return NaN; s=String(s).trim().replace(/[\s'’  ]/g,"");
+  if(s==="")return NaN;
+  var neg=false; if(/^[−-]/.test(s)){neg=true;s=s.slice(1)} else if(s[0]==="+")s=s.slice(1);
+  var nc=(s.match(/,/g)||[]).length, nd=(s.match(/\./g)||[]).length;
+  if(nc>1)return NaN;
+  if(nc===1){ s=s.replace(/\./g,"").replace(",","."); }
+  else if(nd>1){ s=s.replace(/\./g,""); }
+  if(!/^\d*\.?\d+(e[+-]?\d+)?$/i.test(s)&&!/^\d+\.$/.test(s))return NaN;
+  var v=parseFloat(s); return neg?-v:v;
+}
+function fmt(x,d){ if(!isFinite(x))return "—"; var s=x.toFixed(d); if(s==="-0"||/^-0[.,]0*$/.test(s))s=s.slice(1); return s.replace("-","−").replace(".",","); }
+function fmtR(x,d){ if(!isFinite(x))return "—"; var neg=x<0; var s=Math.abs(x).toFixed(d).split("."); s[0]=s[0].replace(/\B(?=(\d{3})+(?!\d))/g," "); return (neg?"−":"")+s.join(","); }
+/* angoli: decimali o gradi primi secondi */
+function parseAng(s){
+  if(s==null)return NaN; s=String(s).trim(); if(!s)return NaN;
+  if(/[°'’"″′]|\d\s+\d/.test(s)){
+    var neg=/^[−-]/.test(s); var p=s.replace(/^[−-]/,"").split(/[°'’"″′\s]+/).filter(Boolean).map(function(t){return parseNum(t)});
+    if(p.some(isNaN)||!p.length||p.length>3)return NaN;
+    var v=p[0]+(p[1]||0)/60+(p[2]||0)/3600; return neg?-v:v;
+  }
+  return parseNum(s);
+}
+function dms(a,dsec){ var neg=a<0; a=Math.abs(a); var d=Math.floor(a+1e-12), mf=(a-d)*60, m=Math.floor(mf+1e-10), s=(mf-m)*60; if(s>=60-Math.pow(10,-(dsec||1))/2){s=0;m++} if(m>=60){m=0;d++} return (neg?"−":"")+d+"°"+(m<10?"0":"")+m+"′"+(s<10?"0":"")+fmt(s,dsec==null?1:dsec)+"″"; }
+var D2R=Math.PI/180, R2D=180/Math.PI;
+function norm360(a){ a%=360; return a<0?a+360:a; }
+function norm180(a){ a=norm360(a); return a>180?a-360:a; }
+
+/* ============ unità ============ */
+var UNITS={m:{n:"metri (m)",f:1},cm:{n:"centimetri (cm)",f:0.01},mm:{n:"millimetri (mm)",f:0.001},ft:{n:"piedi (ft)",f:0.3048},usft:{n:"piedi US survey",f:1200/3937},"in":{n:"pollici (in)",f:0.0254},km:{n:"chilometri (km)",f:1000}};
+function unitOpts(sel,def,noKm){ sel.innerHTML=""; Object.keys(UNITS).forEach(function(k){ if(noKm&&k==="km")return; var o=document.createElement("option"); o.value=k;o.textContent=UNITS[k].n; if(k===def)o.selected=true; sel.appendChild(o); }); }
+
+/* ============ proiezione trasversa di Mercatore (Krüger, serie di Karney al 6° ordine) ============ */
+var GRS80={a:6378137,f:1/298.257222101}, WGS84={a:6378137,f:1/298.257223563};
+function tmSetup(el){
+  var n=el.f/(2-el.f), n2=n*n,n3=n2*n,n4=n3*n,n5=n4*n,n6=n5*n;
+  return {a:el.a,e:Math.sqrt(el.f*(2-el.f)),A:el.a/(1+n)*(1+n2/4+n4/64+n6/256),
+   al:[0,n/2-2*n2/3+5*n3/16+41*n4/180-127*n5/288+7891*n6/37800, 13*n2/48-3*n3/5+557*n4/1440+281*n5/630-1983433*n6/1935360, 61*n3/240-103*n4/140+15061*n5/26880+167603*n6/181440, 49561*n4/161280-179*n5/168+6601661*n6/7257600, 34729*n5/80640-3418889*n6/1995840, 212378941*n6/319334400],
+   be:[0,n/2-2*n2/3+37*n3/96-n4/360-81*n5/512+96199*n6/604800, n2/48+n3/15-437*n4/1440+46*n5/105-1118711*n6/3870720, 17*n3/480-37*n4/840-209*n5/4480+5569*n6/90720, 4397*n4/161280-11*n5/504-830251*n6/7257600, 4583*n5/161280-108847*n6/3991680, 20648693*n6/638668800]};
+}
+/* UTM inversa: E,N (m) -> lat, lon (gradi), convergenza (gradi, positiva = nord di rete a est del nord geografico), scala */
+function utmInv(E,N,zone,el){
+  var T=tmSetup(el), k0=0.9996, x=E-500000, y=N, lon0=(zone*6-183)*D2R, e=T.e;
+  var eta=x/(k0*T.A), xi=y/(k0*T.A), xi1=xi, eta1=eta, j;
+  for(j=1;j<=6;j++){ xi1-=T.be[j]*Math.sin(2*j*xi)*Math.cosh(2*j*eta); eta1-=T.be[j]*Math.cos(2*j*xi)*Math.sinh(2*j*eta); }
+  var sh=Math.sinh(eta1), sx=Math.sin(xi1), cx=Math.cos(xi1);
+  var tp=sx/Math.sqrt(sh*sh+cx*cx), ti=tp, dt;
+  do{ var si=Math.sinh(e*Math.atanh(e*ti/Math.sqrt(1+ti*ti))); var tip=ti*Math.sqrt(1+si*si)-si*Math.sqrt(1+ti*ti);
+      dt=(tp-tip)/Math.sqrt(1+tip*tip)*(1+(1-e*e)*ti*ti)/((1-e*e)*Math.sqrt(1+ti*ti)); ti+=dt; }while(Math.abs(dt)>1e-13);
+  var phi=Math.atan(ti), lam=Math.atan2(sh,cx);
+  var p=1,q=0; for(j=1;j<=6;j++){ p-=2*j*T.be[j]*Math.cos(2*j*xi)*Math.cosh(2*j*eta); q+=2*j*T.be[j]*Math.sin(2*j*xi)*Math.sinh(2*j*eta); }
+  var g=Math.atan(Math.tan(xi1)*Math.tanh(eta1))+Math.atan2(q,p);
+  var sp=Math.sin(phi);
+  var k=k0*Math.sqrt(1-e*e*sp*sp)*Math.sqrt(1+ti*ti)*Math.sqrt(sh*sh+cx*cx)*(T.A/T.a)/Math.sqrt(p*p+q*q);
+  var M=T.a*(1-e*e)/Math.pow(1-e*e*sp*sp,1.5), Nr=T.a/Math.sqrt(1-e*e*sp*sp);
+  return {lat:phi*R2D,lon:(lon0+lam)*R2D,conv:g*R2D,k:k,R:Math.sqrt(M*Nr)};
+}
+var CRS={
+  "25832":{n:"EPSG:25832 · ETRS89 / UTM 32N (Alto Adige, Italia a ovest di 12° E)",z:32,el:GRS80},
+  "25833":{n:"EPSG:25833 · ETRS89 / UTM 33N",z:33,el:GRS80},
+  "6707":{n:"EPSG:6707 · RDN2008 / UTM 32N (N-E)",z:32,el:GRS80,ne:true},
+  "7791":{n:"EPSG:7791 · RDN2008 / UTM 32N",z:32,el:GRS80},
+  "32632":{n:"EPSG:32632 · WGS 84 / UTM 32N",z:32,el:WGS84},
+  "32633":{n:"EPSG:32633 · WGS 84 / UTM 33N",z:33,el:WGS84},
+  "":{n:"Sistema locale o non indicato (niente calcoli geodetici)"}
+};
+function crsOpts(sel,def){ sel.innerHTML=""; Object.keys(CRS).sort(function(a,b){return (a===""?1:0)-(b===""?1:0)}).forEach(function(k){ var o=document.createElement("option");o.value=k;o.textContent=CRS[k].n; if(k===def)o.selected=true; sel.appendChild(o); }); }
+
+/* ============ i software: convenzioni ============
+   Rappresentazione comune (come IFC): P punto di riferimento, con coordinate locali (x,y,z) nel modello
+   e coordinate reali (E,N,H) in metri; theta = rotazione antioraria dall'asse Est della mappa all'asse x locale;
+   s = da unità del modello a metri. */
+var SW={
+ revit:{n:"Revit",kind:"ew",
+   title:"Revit · Specifica coordinate in un punto",
+   spec:[["Dove","Gestisci → Coordinate → Specifica coordinate in un punto: si sceglie un punto del modello e se ne digitano le coordinate condivise. In alternativa le proprietà del Punto base progetto."],
+     ["Campi","Nord/Sud, Est/Ovest, Quota altimetrica, Angolo tra il nord di progetto e il nord reale (con Est oppure Ovest)."],
+     ["Unità","Il numero digitato viene letto in un'unità di lunghezza: se non è quella che intendi, il modello si sposta di un fattore 1000 (mm e m), che è l'errore descritto nell'articolo. Prima di digitare guarda come il dialogo mostra i valori attuali del punto e usa lo stesso formato; dopo l'OK controlla il Punto base progetto."],
+     ["Angolo","«Ovest» = guardando la pianta orientata al nord di progetto, il nord del sistema condiviso sta a sinistra (rotazione antioraria). Se digiti coordinate UTM, quel «nord reale» è in pratica il nord di rete UTM."],
+     ["IFC","All'export, Base coordinate decide quale sistema diventa l'origine del file (coordinate condivise, punto di rilievo, punto base, origine interna). La scheda Riferimento geografico contiene anche il codice EPSG."]],
+   lab:{E:"Est/Ovest",N:"Nord/Sud",H:"Quota altimetrica",a:"Angolo tra il nord di progetto e il nord reale"}},
+ archicad:{n:"Archicad",kind:"ac",
+   title:"Archicad · Survey Point e Georeferencing",
+   spec:[["Dove","Options → Project Preferences → Location Settings (nomi del menu in inglese): pannello Survey Point e dati di Georeferencing."],
+     ["Survey Point","La posizione (Easting, Northing, Elevation) è misurata rispetto al Project Origin, cioè è una posizione nel modello. Ha anche il North Angle."],
+     ["Georeferencing","Dati usati solo per lo scambio IFC: non spostano il Survey Point. In IFC 2x3 diventano due Property Set, in IFC 4 IfcMapConversion e IfcProjectedCRS (Help di Archicad 28 e 30)."],
+     ["Angolo","North Angle misurato in senso antiorario dall'asse X positivo; 90° = nord verso l'alto, cioè nessuna rotazione (Graphisoft Community, 2022)."],
+     ["Da verificare","Gli esempi di Graphisoft mostrano anche valori negativi molto grandi: controlla con un punto noto quale punto descrivono nella tua versione."]],
+   lab:{E:"Georeferencing · Eastings",N:"Georeferencing · Northings",H:"Georeferencing · altezza",a:"Survey Point · North Angle",x:"Survey Point · Easting (nel modello)",y:"Survey Point · Northing (nel modello)",z:"Survey Point · Elevation (nel modello)"}},
+ allplan:{n:"Allplan",kind:"ew",
+   title:"Allplan · Georeferenziazione del progetto",
+   spec:[["Dove","Proprietà del progetto (georeferenziazione e offset) e impostazioni di export IFC."],
+     ["Export IFC","Due metodi (Help di Allplan 2027): Custom, con la combinazione di coordinate e rotazione scelta (di default il punto base diventa 0,0,0); IfcMapConversion, che scrive nome del CRS, Est, Nord e orientamento senza ruotare la geometria, e usa il survey point come origine del file."],
+     ["Coordinate piccole","Le coordinate interne vanno tenute vicine all'origine e quelle reali affidate all'offset o alla georeferenziazione."],
+     ["Angolo","La guida consultata non definisce il verso dell'angolo: qui si usa la definizione geometrica (nord della mappa a Est o a Ovest del nord di progetto). Verifica con un punto noto."]],
+   lab:{E:"Est (coordinata reale)",N:"Nord (coordinata reale)",H:"Quota",a:"Angolo del nord della mappa rispetto al nord di progetto"}},
+ altro:{n:"Altro software (definizione geometrica)",kind:"ew",
+   title:"Definizione geometrica, valida per ogni software",
+   spec:[["Punto","Un punto del modello di cui conosci le coordinate locali e quelle reali."],
+     ["Angolo","Guardando la pianta orientata al nord di progetto: di quanti gradi, e verso Est (destra) o verso Ovest (sinistra), sta il nord della mappa."],
+     ["Quando usarlo","Per software non elencati (Tekla, Vectorworks, BricsCAD, ecc.): traduci i loro campi in questa definizione e verifica con un punto noto."]],
+   lab:{E:"Est (coordinata reale)",N:"Nord (coordinata reale)",H:"Quota",a:"Angolo del nord della mappa rispetto al nord di progetto"}},
+ ifc4:{n:"IFC 4 / 4.3 · IfcMapConversion",kind:"ifc",
+   title:"IFC 4 e 4.3 · IfcMapConversion + IfcProjectedCRS",
+   spec:[["Formula","Coordinate locali × Scale, poi rotazione antioraria di θ = atan2(XAxisOrdinate, XAxisAbscissa), poi traslazione di Eastings, Northings, OrthogonalHeight (buildingSMART, IFC 4.3)."],
+     ["Scale","Converte le unità del modello in quelle della mappa (mm → m: 0,001). Se omesso vale 1."],
+     ["IFC 4.3","IfcMapConversionScaled aggiunge fattori diversi su x, y e z per scalare le coordinate, non le unità. Il CRS di arrivo deve essere un IfcProjectedCRS."],
+     ["Origine","Eastings e Northings sono le coordinate dell'origine locale del file IFC."]],
+   lab:{E:"Eastings",N:"Northings",H:"OrthogonalHeight"}},
+ ifc2x3:{n:"IFC 2x3 · ePSet_MapConversion",kind:"ifc",
+   title:"IFC 2x3 · ePSet_MapConversion + ePSet_ProjectedCRS",
+   spec:[["Perché","IFC 2x3 non ha IfcMapConversion. La guida buildingSMART (User Guide for Geo-referencing in IFC, v2.0, 2020) mette gli stessi valori in due Property Set collegati a IfcProject."],
+     ["Proprietà","ePSet_MapConversion: Eastings, Northings, OrthogonalHeight, XAxisAbscissa, XAxisOrdinate, Scale. ePSet_ProjectedCRS: Name (codice EPSG), GeodeticDatum, VerticalDatum, MapProjection, MapZone."],
+     ["Attenzione","Li leggono solo i programmi che conoscono la convenzione; gli altri li ignorano. Restano allora IfcSite (RefLatitude, RefLongitude, RefElevation), la posizione di IfcSite e il TrueNorth, che è il nord geografico, non quello di rete."]],
+   lab:{E:"Eastings",N:"Northings",H:"OrthogonalHeight"}}
+};
+var ORDER=["revit","archicad","allplan","altro","ifc4","ifc2x3"];
+
+/* ============ stato e campi di ingresso ============ */
+var $=function(id){return document.getElementById(id)};
+var src=$("src"),dst=$("dst"),crsSel=$("crs");
+ORDER.forEach(function(k){ [src,dst].forEach(function(s){ var o=document.createElement("option"); o.value=k;o.textContent=SW[k].n; s.appendChild(o); }); });
+src.value="revit"; dst.value="ifc2x3"; crsOpts(crsSel,"25832");
+var VAL={E:"680000,000",N:"5150000,000",H:"250,000",a:"12°30'00\"",dir:"W",acA:"102,5",x:"0",y:"0",z:"0",uc:"m",um:"mm",abs:"0,976296007",ord:"−0,216439614",sc:"0,001"};
+
+function inp(id,label,val,hint){ return '<label class="f"><span>'+label+'</span><input id="'+id+'" value="'+String(val).replace(/"/g,"&quot;")+'" autocomplete="off" inputmode="decimal"><small class="echo" id="'+id+'-e"></small>'+(hint?'<small>'+hint+'</small>':'')+'</label>'; }
+function selU(id,label,def,hint){ var s='<label class="f"><span>'+label+'</span><select id="'+id+'">'; Object.keys(UNITS).forEach(function(k){ if(k==="km")return; s+='<option value="'+k+'"'+(k===def?" selected":"")+'>'+UNITS[k].n+'</option>'; }); return s+'</select>'+(hint?'<small>'+hint+'</small>':'')+'</label>'; }
+
+function buildSrc(){
+  var k=src.value, sw=SW[k], L=sw.lab, h="";
+  $("src-h").textContent=sw.title;
+  if(sw.kind==="ifc"){
+    h+=inp("f-E",L.E+" (m)",VAL.E)+inp("f-N",L.N+" (m)",VAL.N)+inp("f-H",L.H+" (m)",VAL.H);
+    h+='<div class="row2">'+inp("f-abs","XAxisAbscissa",VAL.abs)+inp("f-ord","XAxisOrdinate",VAL.ord)+'</div>';
+    h+=inp("f-sc","Scale",VAL.sc,"Da unità del modello a metri: 0,001 se il modello è in mm, 1 se è in m.");
+  }else{
+    var cu=(k==="archicad")?"m":VAL.uc;
+    if(k!=="archicad") h+=selU("f-uc","Unità in cui leggi questi valori",VAL.uc,"L'unità in cui il software mostra questi numeri. Se sbagli qui, tutto si sposta di un fattore 1000 (mm e m).");
+    h+=inp("f-N",L.N,VAL.N)+inp("f-E",L.E,VAL.E)+inp("f-H",L.H,VAL.H);
+    if(sw.kind==="ac") h+=inp("f-acA",L.a+" (gradi)",VAL.acA,"Antiorario dall'asse X; 90° = nessuna rotazione.");
+    else h+='<div class="row2">'+inp("f-a",L.a,VAL.a,"Decimale (12,5) oppure gradi, primi e secondi (12°30′00″).")+'<label class="f"><span>Verso</span><select id="f-dir"><option value="W"'+(VAL.dir==="W"?" selected":"")+'>Ovest</option><option value="E"'+(VAL.dir==="E"?" selected":"")+'>Est</option></select></label></div>';
+    h+=selU("f-um","Unità del modello",VAL.um);
+    var open=(k==="archicad")||parseNum(VAL.x)||parseNum(VAL.y)||parseNum(VAL.z);
+    h+='<details class="more"'+(open?" open":"")+'><summary>'+(k==="archicad"?"Posizione del Survey Point nel modello":"Il punto scelto non è l'origine del modello?")+'</summary><small>Coordinate locali del punto, nell\'unità del modello. Con 0, 0, 0 il punto coincide con l\'origine usata per l\'IFC.</small><div class="row">'+inp("f-x",L.x||"x",VAL.x)+inp("f-y",L.y||"y",VAL.y)+inp("f-z",L.z||"z",VAL.z)+'</div></details>';
+  }
+  $("src-f").innerHTML=h;
+  $("src-f").querySelectorAll("input,select").forEach(function(el){ el.addEventListener("input",function(){ VAL[el.id.slice(2)]=el.value; calc(); }); });
+}
+
+/* ============ calcolo principale ============ */
+var G=null; /* parametri comuni */
+function echo(id,txt,err){ var e=$(id+"-e"); if(e){ e.textContent=txt; e.className="echo"+(err?" err":""); } }
+function readNum(id,unitF,unitLab){ var el=$(id); if(!el)return 0; var v=parseNum(el.value); if(isNaN(v)){ echo(id,el.value.trim()?"Valore non leggibile":"",true); return NaN; } echo(id,"letto: "+fmtR(v,Math.min(6,Math.max(3,(String(el.value).split(/[,.]/).pop()||"").length)))+(unitLab?" "+unitLab:"")+(unitF&&unitF!==1?"  = "+fmtR(v*unitF,4)+" m":"")); return v*(unitF||1); }
+
+function readSource(){
+  var k=src.value, sw=SW[k], g={k:k};
+  if(sw.kind==="ifc"){
+    g.E=readNum("f-E",1,"m"); g.N=readNum("f-N",1,"m"); g.H=readNum("f-H",1,"m");
+    var a=parseNum($("f-abs").value), o=parseNum($("f-ord").value);
+    echo("f-abs",isNaN(a)?"Valore non leggibile":"letto: "+fmt(a,10),isNaN(a)); echo("f-ord",isNaN(o)?"Valore non leggibile":"letto: "+fmt(o,10),isNaN(o));
+    var s=$("f-sc").value.trim()===""?1:parseNum($("f-sc").value);
+    echo("f-sc",isNaN(s)?"Valore non leggibile":"letto: "+fmt(s,9)+guessUnit(s),isNaN(s));
+    g.th=Math.atan2(o,a); g.vecLen=Math.hypot(a,o); g.s=s; g.x=g.y=g.z=0;
+    g.umName=guessUnit(s,true);
+  }else{
+    var uc=k==="archicad"?"m":$("f-uc").value, cf=UNITS[uc].f, um=$("f-um").value, mf=UNITS[um].f;
+    g.E=readNum("f-E",cf,uc); g.N=readNum("f-N",cf,uc); g.H=readNum("f-H",cf,uc);
+    if(sw.kind==="ac"){ var A=parseAng($("f-acA").value); echo("f-acA",isNaN(A)?"Valore non leggibile":"letto: "+fmt(A,6)+"° = "+dms(A),isNaN(A)); g.th=(90-A)*D2R; }
+    else{ var an=parseAng($("f-a").value); echo("f-a",isNaN(an)?"Valore non leggibile":"letto: "+fmt(an,6)+"° = "+dms(an),isNaN(an)); g.th=($("f-dir").value==="W"?-an:an)*D2R; }
+    g.s=mf; g.um=um; g.umName=UNITS[um].n;
+    g.x=readNum("f-x",1,um)||0; g.y=readNum("f-y",1,um)||0; g.z=readNum("f-z",1,um)||0;
+  }
+  return g;
+}
+function guessUnit(s,name){ var best=null; Object.keys(UNITS).forEach(function(k){ if(Math.abs(s/UNITS[k].f-1)<1e-9)best=k; }); if(name)return best?UNITS[best].n:"unità con scala "+fmt(s,9); return best?"  (modello in "+UNITS[best].n+")":"  (scala non standard)"; }
+
+/* origine del modello in coordinate reali */
+function originMap(g){ var c=Math.cos(g.th),s=Math.sin(g.th), x=g.x*g.s,y=g.y*g.s; return {E:g.E-(x*c-y*s),N:g.N-(x*s+y*c),H:g.H-g.z*g.s}; }
+function toMap(g,x,y,z){ var O=originMap(g),c=Math.cos(g.th),s=Math.sin(g.th); x*=g.s;y*=g.s;z*=g.s; return {E:O.E+x*c-y*s,N:O.N+x*s+y*c,H:O.H+z}; }
+function toLocal(g,E,N,H){ var O=originMap(g),c=Math.cos(g.th),s=Math.sin(g.th),dE=E-O.E,dN=N-O.N; return {x:(dE*c+dN*s)/g.s,y:(-dE*s+dN*c)/g.s,z:(H-O.H)/g.s}; }
+
+function out(k,v,h,copy){ return '<div class="o"><span class="k">'+k+'</span><span class="v">'+v+'</span>'+(copy!==false?'<button type="button" data-c="'+String(copy||v).replace(/"/g,"&quot;")+'">Copia</button>':'')+(h?'<span class="h">'+h+'</span>':'')+'</div>'; }
+function grp(t){ return '<div class="grp">'+t+'</div>'; }
+function geo(E,N){ var c=CRS[crsSel.value]; if(!c||!c.z)return null; return utmInv(E,N,c.z,c.el); }
+function cmp(lat){ var neg=lat<0; lat=Math.abs(lat); var d=Math.floor(lat), mf=(lat-d)*60, m=Math.floor(mf), sf=(mf-m)*60, s=Math.floor(sf), u=Math.round((sf-s)*1e6); if(u>=1e6){u-=1e6;s++} if(s>=60){s-=60;m++} if(m>=60){m-=60;d++} var sg=neg?-1:1; return "("+[d*sg,m*sg,s*sg,u*sg].join(",")+")"; }
+
+function calc(){
+  var g=readSource(); G=g;
+  var bad=[g.E,g.N,g.H,g.th,g.s].some(function(v){return !isFinite(v)});
+  var O=bad?null:originMap(g), d=dst.value, sw=SW[d], h="", notes="";
+  $("dst-h").textContent=sw.title;
+  if(bad){ $("dst-o").innerHTML='<div class="note warn">Completa i valori di partenza: quelli in rosso non sono leggibili.</div>'; $("how").textContent=""; $("conv-notes").innerHTML=""; specs(); return; }
+  var thD=norm180(g.th*R2D), ang=Math.abs(thD), dir=thD<0?"Ovest":(thD>0?"Est":"—");
+  var info=geo(g.E,g.N), gam=info?info.conv:null;
+  if(sw.kind==="ifc"){
+    var c=Math.cos(g.th),s=Math.sin(g.th);
+    h+=grp(d==="ifc2x3"?"ePSet_MapConversion (su IfcProject)":"IfcMapConversion");
+    h+=out("Eastings",fmt(O.E,4),"Coordinate reali dell'origine del modello, in metri.");
+    h+=out("Northings",fmt(O.N,4));
+    h+=out("OrthogonalHeight",fmt(O.H,4));
+    h+=out("XAxisAbscissa",fmt(c,10),"cos θ, con θ = "+fmt(thD,6)+"° (antiorario dall'Est della mappa all'asse x del modello)");
+    h+=out("XAxisOrdinate",fmt(s,10),"sin θ");
+    h+=out("Scale",fmt(g.s,9),"Da "+g.umName+" a metri");
+    var crsN=crsSel.value?("EPSG:"+crsSel.value):"";
+    h+=grp(d==="ifc2x3"?"ePSet_ProjectedCRS":"IfcProjectedCRS");
+    h+=crsN?out("Name",crsN):'<div class="note warn">Nessun CRS indicato: chi riceve il file non sa a quale mappa si riferiscono le coordinate.</div>';
+    if(g.x||g.y||g.z){ h+=grp("Se l'origine del file IFC è il punto di riferimento"); h+=out("Eastings",fmt(g.E,4),"Caso di Archicad e di Allplan con IfcMapConversion: l'origine del file è il survey point."); h+=out("Northings",fmt(g.N,4)); h+=out("OrthogonalHeight",fmt(g.H,4)); }
+    if(d==="ifc2x3"){
+      h+=grp("Riserva per chi non legge gli ePSet (LoGeoRef 20 e 40)");
+      if(info){ var gi=geo(O.E,O.N); h+=out("IfcSite.RefLatitude",cmp(gi.lat),"Gradi, primi, secondi, milionesimi di secondo · "+fmt(gi.lat,8)+"°"); h+=out("IfcSite.RefLongitude",cmp(gi.lon),fmt(gi.lon,8)+"°"); h+=out("IfcSite.RefElevation",fmt(O.H/g.s,3),"Nell'unità del modello ("+g.umName+")");
+        var gr=gi.conv*D2R, tx=Math.sin(g.th-gr), ty=Math.cos(g.th-gr);
+        h+=out("TrueNorth (nord geografico)","("+fmt(tx,8)+", "+fmt(ty,8)+")","Direzione nel sistema del modello. Tiene conto della convergenza: "+fmt(gi.conv,4)+"°.");
+        h+=out("Direzione del nord di rete","("+fmt(Math.sin(g.th),8)+", "+fmt(Math.cos(g.th),8)+")","Se un programma scrive questa in TrueNorth, sbaglia di "+fmt(Math.abs(gi.conv),4)+"°.");
+      }else h+='<div class="note">Scegli un CRS UTM per calcolare latitudine, longitudine e TrueNorth.</div>';
+    }
+    if(d==="ifc4") notes+='<div class="note"><p><b>IFC 4.3:</b> se servono fattori di scala diversi su x, y e z (per esempio per il fattore di scala della proiezione) si usa IfcMapConversionScaled. Il campo Scale resta quello delle unità.</p></div>';
+  }else if(sw.kind==="ac"){
+    var A=norm360(90-thD);
+    h+=grp("Survey Point");
+    h+=out("North Angle",fmt(A,6)+"°",dms(A)+" · antiorario dall'asse X; 90° = nessuna rotazione",fmt(A,6));
+    h+=out("Easting (posizione nel modello)",fmt(g.x*g.s,4)+" m","Posizione del punto di riferimento rispetto al Project Origin, in metri.",fmt(g.x*g.s,4));
+    h+=out("Northing (posizione nel modello)",fmt(g.y*g.s,4)+" m","",fmt(g.y*g.s,4));
+    h+=out("Elevation (posizione nel modello)",fmt(g.z*g.s,4)+" m","",fmt(g.z*g.s,4));
+    h+=grp("Georeferencing (per l'IFC)");
+    h+=out("Eastings",fmt(g.E,4)+" m","Coordinate reali del Survey Point.",fmt(g.E,4)); h+=out("Northings",fmt(g.N,4)+" m","",fmt(g.N,4)); h+=out("Altezza",fmt(g.H,4)+" m","",fmt(g.H,4));
+    h+=out("XAxisAbscissa",fmt(Math.cos(g.th),10)); h+=out("XAxisOrdinate",fmt(Math.sin(g.th),10));
+    notes+='<div class="note warn"><p>Le convenzioni di Archicad vengono da Graphisoft (Help e Community). Dopo l\'inserimento controlla un punto noto con la scheda 2.</p></div>';
+  }else{
+    h+=grp(d==="revit"?"Specifica coordinate in un punto (stesso punto di partenza)":"Coordinate reali del punto di riferimento");
+    [["N",g.N],["E",g.E],["H",g.H]].forEach(function(p){ var lab=sw.lab[p[0]]; h+=out(lab+" · se il campo è in metri",fmt(p[1],4),"",fmt(p[1],4)); h+=out(lab+" · se il campo è in millimetri",fmt(p[1]*1000,1),"",fmt(p[1]*1000,1)); });
+    h+=out(sw.lab.a,ang<1e-12?"0°":dms(ang)+" "+dir,"In decimale: "+fmt(ang,6)+"° "+dir,dms(ang).replace("−",""));
+    notes+='<div class="note warn"><p><b>Unità:</b> digita una sola delle due righe, quella dell\'unità in cui il campo lavora. Per capirlo, guarda come il dialogo mostra i valori attuali prima di modificarli. Dopo l\'OK '+(d==="revit"?"controlla che il Punto base progetto mostri le coordinate attese":"controlla un punto noto")+': lo stesso numero letto come metri o come millimetri sposta il modello di un fattore 1000.</p></div>';
+    if(d!=="revit") notes+='<div class="note"><p>Per '+SW[d].n+' la convenzione dell\'angolo è quella geometrica: verificala con un punto noto (scheda 2).</p></div>';
+    if(g.x||g.y||g.z) notes+='<div class="note"><p>Le coordinate valgono per il punto del modello in ('+fmt(g.x,3)+'; '+fmt(g.y,3)+'; '+fmt(g.z,3)+') '+g.um+'. Per l\'origine: E '+fmt(O.E,4)+', N '+fmt(O.N,4)+', quota '+fmt(O.H,4)+' m.</p></div>';
+  }
+  if(info&&Math.abs(gam)>0.05&&sw.kind!=="ifc") notes+='<div class="note"><p><b>Nord di rete e nord geografico:</b> in questo punto differiscono di '+fmt(Math.abs(gam),4)+'° (il geografico è a '+(gam>0?"ovest":"est")+' di quello di rete). L\'angolo qui sopra è riferito al nord delle coordinate che digiti, cioè al nord di rete.</p></div>';
+  if(g.vecLen&&Math.abs(g.vecLen-1)>1e-6) notes+='<div class="note warn"><p>Il vettore (XAxisAbscissa; XAxisOrdinate) non ha lunghezza 1 ('+fmt(g.vecLen,6)+'): conta solo la direzione, ma controlla da dove arrivano i valori.</p></div>';
+  if(Math.abs(g.x*g.s)>10000||Math.abs(g.y*g.s)>10000) notes+='<div class="note warn"><p>Il punto di riferimento è a più di 10 km dall\'origine del modello: con coordinate così grandi molti programmi perdono precisione. Meglio tenere la geometria vicino all\'origine e affidare le coordinate reali alla georeferenziazione.</p></div>';
+  $("dst-o").innerHTML=h; $("conv-notes").innerHTML=notes;
+  /* come si calcola */
+  var c2=Math.cos(g.th),s2=Math.sin(g.th);
+  $("how").textContent=
+    "1) Lettura della partenza ("+SW[g.k].n+")\n"+
+    "   punto di riferimento P: E = "+fmt(g.E,4)+" m   N = "+fmt(g.N,4)+" m   quota = "+fmt(g.H,4)+" m\n"+
+    "   posizione di P nel modello: x = "+fmt(g.x,4)+"  y = "+fmt(g.y,4)+"  z = "+fmt(g.z,4)+" ("+g.umName+")\n"+
+    "   scala s (unità modello → m) = "+fmt(g.s,9)+"\n"+
+    "   rotazione θ (antioraria, da Est mappa ad asse x) = "+fmt(thD,6)+"°\n"+
+    (SW[g.k].kind==="ew"?"   regola: Ovest → θ = −angolo; Est → θ = +angolo\n":SW[g.k].kind==="ac"?"   regola: θ = 90° − North Angle\n":"   regola: θ = atan2(XAxisOrdinate; XAxisAbscissa)\n")+
+    "\n2) Trasformazione di Helmert (la stessa di IfcMapConversion)\n"+
+    "   E = E0 + s·(x·cos θ − y·sin θ)\n   N = N0 + s·(x·sin θ + y·cos θ)\n   H = H0 + s·z\n"+
+    "   cos θ = "+fmt(c2,10)+"   sin θ = "+fmt(s2,10)+"\n"+
+    "   origine del modello: E0 = "+fmt(O.E,4)+"  N0 = "+fmt(O.N,4)+"  H0 = "+fmt(O.H,4)+"\n"+
+    "\n3) Scrittura nella convenzione di "+SW[d].n+"\n"+
+    (sw.kind==="ew"?"   angolo = |θ| = "+fmt(ang,6)+"°, verso "+dir+" (θ negativo = Ovest)\n":sw.kind==="ac"?"   North Angle = 90° − θ = "+fmt(norm360(90-thD),6)+"°\n":"   XAxisAbscissa = cos θ, XAxisOrdinate = sin θ, Scale = s\n")+
+    (info?"\nNord di rete e geografico in P: convergenza γ = "+fmt(gam,6)+"°, fattore di scala UTM k = "+fmt(info.k,8):"");
+  specs();
+  if(typeof ptCalc==="function")ptCalc();
+}
+function specs(){ [["spec-src",src.value],["spec-dst",dst.value]].forEach(function(p){ var sw=SW[p[1]]; $(p[0]).innerHTML="<dt style=\"font-size:1rem\">"+sw.n+"</dt>"+sw.spec.map(function(r){return "<dt>"+r[0]+"</dt><dd>"+r[1]+"</dd>"}).join(""); }); }
+
+/* scambio partenza/arrivo: i valori di arrivo diventano quelli di partenza */
+function adoptAsSource(newSrc,g){
+  var O=originMap(g), thD=norm180(g.th*R2D);
+  if(SW[newSrc].kind==="ifc"){ VAL.E=fmt(O.E,4);VAL.N=fmt(O.N,4);VAL.H=fmt(O.H,4);VAL.abs=fmt(Math.cos(g.th),10);VAL.ord=fmt(Math.sin(g.th),10);VAL.sc=fmt(g.s,9); }
+  else{ VAL.E=fmt(g.E,4);VAL.N=fmt(g.N,4);VAL.H=fmt(g.H,4);VAL.uc="m"; VAL.x=fmt(g.x,4);VAL.y=fmt(g.y,4);VAL.z=fmt(g.z,4);
+    var um=Object.keys(UNITS).filter(function(k){return Math.abs(UNITS[k].f/g.s-1)<1e-9})[0]; if(um)VAL.um=um;
+    if(SW[newSrc].kind==="ac")VAL.acA=fmt(norm360(90-thD),6); else{ VAL.a=fmt(Math.abs(thD),8); VAL.dir=thD<0?"W":"E"; } }
+}
+$("swap").addEventListener("click",function(){ var a=src.value,b=dst.value; if(G&&isFinite(G.th)&&isFinite(G.E))adoptAsSource(b,G); src.value=b; dst.value=a; buildSrc(); calc(); });
+src.addEventListener("change",function(){ if(G&&isFinite(G.th)&&isFinite(G.E))adoptAsSource(src.value,G); buildSrc(); calc(); });
+dst.addEventListener("change",calc); crsSel.addEventListener("change",calc);
+document.addEventListener("click",function(e){ var b=e.target.closest("button[data-c]"); if(!b)return; var t=b.getAttribute("data-c"); (navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(function(){b.textContent="Copiato";setTimeout(function(){b.textContent="Copia"},1200)},function(){b.textContent="—"}); });
+
+/* ============ 2 · un punto ============ */
+function nv(id,lab){ var el=$(id), v=parseNum(el.value); if(el.value.trim()===""){echo(id,"");return null} if(isNaN(v)){echo(id,"Valore non leggibile",true);return NaN} echo(id,"letto: "+fmtR(v,4)+(lab?" "+lab:"")); return v; }
+function ptCalc(){
+  if(!G||![G.E,G.N,G.H,G.th,G.s].every(isFinite)){ $("pt-o").innerHTML=$("mp-o").innerHTML='<div class="note warn">Completa prima la scheda 1.</div>'; return; }
+  var um=G.um||"", x=nv("pt-x",um),y=nv("pt-y",um),z=nv("pt-z",um); $("pt-u").textContent=G.umName;
+  if([x,y,z].some(function(v){return v===null||isNaN(v)})) $("pt-o").innerHTML='<div class="note warn">Inserisci x, y e z.</div>';
+  else{ var P=toMap(G,x,y,z), h=out("E",fmt(P.E,4)+" m","",fmt(P.E,4))+out("N",fmt(P.N,4)+" m","",fmt(P.N,4))+out("Quota",fmt(P.H,4)+" m","",fmt(P.H,4));
+    var ee=nv("pt-ee","m"),ne=nv("pt-ne","m"),he=nv("pt-he","m");
+    if(ee!=null&&ne!=null&&!isNaN(ee)&&!isNaN(ne)){ var dE=P.E-ee,dN=P.N-ne,dd=Math.hypot(dE,dN); var cls=dd<0.01?"ok":dd<0.05?"warn":"bad";
+      h+='<div class="note '+cls+'"><p><b>Scarto in pianta: '+fmt(dd*1000,1)+' mm</b> (ΔE '+fmt(dE*1000,1)+' mm, ΔN '+fmt(dN*1000,1)+' mm'+(he!=null&&!isNaN(he)?', Δquota '+fmt((P.H-he)*1000,1)+' mm':'')+').</p><p>'+(cls==="ok"?"Sotto il centimetro: georeferenziazione coerente.":cls==="warn"?"Tra 1 e 5 cm: controlla arrotondamenti dell'angolo e fattore di scala (scheda 5).":"Oltre 5 cm: c'è un errore di parametri, di unità o di convenzione. Prova la scheda 4.")+'</p></div>'; }
+    $("pt-o").innerHTML=h; }
+  var E=nv("mp-e","m"),N=nv("mp-n","m"),H=nv("mp-h","m");
+  if([E,N,H].some(function(v){return v===null||isNaN(v)})) $("mp-o").innerHTML='<div class="note warn">Inserisci E, N e quota.</div>';
+  else{ var L=toLocal(G,E,N,H); $("mp-o").innerHTML=out("x",fmt(L.x,4),G.umName,fmt(L.x,4))+out("y",fmt(L.y,4),G.umName,fmt(L.y,4))+out("z",fmt(L.z,4),G.umName,fmt(L.z,4)); }
+}
+["pt-x","pt-y","pt-z","pt-ee","pt-ne","pt-he","mp-e","mp-n","mp-h"].forEach(function(id){ $(id).addEventListener("input",ptCalc); });
+
+/* ============ 3 · calibrazione (Helmert 2D ai minimi quadrati) ============ */
+var CAL=[["0","0","680000","5150000"],["20000","0","680019,5258","5149995,6712"],["0","15000","680003,2466","5150014,6448"],["","","",""]];
+(function(){ var tb=$("cal-t").querySelector("tbody"); CAL.forEach(function(r,i){ var tr=document.createElement("tr"); tr.innerHTML="<td>"+(i+1)+"</td>"+r.map(function(v,j){return '<td><input data-r="'+i+'" data-c="'+j+'" value="'+v+'" inputmode="decimal" aria-label="Punto '+(i+1)+' colonna '+(j+1)+'"></td>'}).join("")+'<td class="res" id="res'+i+'"></td>'; tb.appendChild(tr); }); unitOpts($("cal-u"),"mm",true); tb.addEventListener("input",calCalc); $("cal-u").addEventListener("change",calCalc); })();
+var CALG=null;
+function calCalc(){
+  var f=UNITS[$("cal-u").value].f, P=[];
+  document.querySelectorAll("#cal-t tbody tr").forEach(function(tr,i){ var v=[].map.call(tr.querySelectorAll("input"),function(x){return parseNum(x.value)}); $("res"+i).textContent=""; if(v.every(isFinite))P.push({i:i,x:v[0]*f,y:v[1]*f,E:v[2],N:v[3]}); });
+  CALG=null;
+  if(P.length<2){ $("cal-o").innerHTML='<div class="note warn">Servono almeno due punti completi.</div>'; return; }
+  var n=P.length,mx=0,my=0,mE=0,mN=0; P.forEach(function(p){mx+=p.x/n;my+=p.y/n;mE+=p.E/n;mN+=p.N/n});
+  var S=0,A=0,B=0; P.forEach(function(p){ var dx=p.x-mx,dy=p.y-my,dE=p.E-mE,dN=p.N-mN; S+=dx*dx+dy*dy; A+=dx*dE+dy*dN; B+=dx*dN-dy*dE; });
+  if(S<1e-12){ $("cal-o").innerHTML='<div class="note bad">I punti del modello coincidono: servono punti distinti, meglio se lontani tra loro.</div>'; return; }
+  var a=A/S,b=B/S,sc=Math.hypot(a,b),th=Math.atan2(b,a), E0=mE-(a*mx-b*my), N0=mN-(b*mx+a*my), rms=0, mx2=0;
+  P.forEach(function(p){ var e=E0+a*p.x-b*p.y-p.E, nn=N0+b*p.x+a*p.y-p.N, d=Math.hypot(e,nn); rms+=d*d; mx2=Math.max(mx2,d); $("res"+p.i).textContent=n>2?fmt(d*1000,1)+" mm":"—"; });
+  rms=Math.sqrt(rms/n);
+  var thD=th*R2D, ppm=(sc-1)*1e6, dir=thD<0?"Ovest":"Est";
+  var h=out("Rotazione θ",fmt(thD,6)+"°","Angolo tra nord di progetto e nord della mappa: "+dms(Math.abs(thD))+" "+dir,fmt(thD,6));
+  h+=out("Fattore di scala ricavato",fmt(sc,9),(Math.abs(ppm)<1000?"Rispetto alle unità dichiarate: "+(ppm>=0?"+":"")+fmt(ppm,1)+" ppm ("+fmt(ppm/1000,2)+" mm ogni metro)":"Molto diverso da 1: le unità del modello non sono quelle indicate"),fmt(sc,9));
+  h+=out("Origine del modello: E0",fmt(E0,4)+" m","",fmt(E0,4))+out("N0",fmt(N0,4)+" m","",fmt(N0,4));
+  if(n>2) h+='<div class="note '+(mx2<0.01?"ok":mx2<0.05?"warn":"bad")+'"><p><b>Scarto massimo '+fmt(mx2*1000,1)+' mm</b>, scarto quadratico medio '+fmt(rms*1000,1)+' mm.</p></div>';
+  else h+='<div class="note"><p>Con due punti la soluzione è esatta ma senza controllo: aggiungi un terzo punto per vedere gli scarti.</p></div>';
+  if(Math.abs(ppm)>=1000) h+='<div class="note bad"><p>La scala si discosta di oltre lo 0,1 %: controlla l\'unità delle coordinate del modello.</p></div>';
+  else if(Math.abs(ppm)>2) h+='<div class="note"><p>Uno scarto di scala di qualche ppm può essere il fattore di scala UTM e di quota (scheda 5): in quel caso non è un errore del modello.</p></div>';
+  $("cal-o").innerHTML=h; CALG={E:E0,N:N0,th:th,s:f};
+}
+$("cal-use").addEventListener("click",function(){ if(!CALG)return; src.value="ifc4"; VAL.E=fmt(CALG.E,4);VAL.N=fmt(CALG.N,4); VAL.H=VAL.H||"0"; VAL.abs=fmt(Math.cos(CALG.th),10); VAL.ord=fmt(Math.sin(CALG.th),10); VAL.sc=fmt(CALG.s,9); buildSrc(); calc(); show("p-conv"); });
+
+/* ============ 4 · diagnosi ============ */
+unitOpts($("dg-ue"),"m"); unitOpts($("dg-uo"),"km");
+var FACT=[[1e-3,"Il numero inteso in metri è stato letto in millimetri (o il modello in mm è stato preso per metri): il modello appare 1000 volte più vicino all'origine."],[1e3,"Il numero inteso in millimetri è stato letto in metri: il modello appare 1000 volte più lontano."],[1e-2,"Metri letti come centimetri."],[1e2,"Centimetri letti come metri."],[1e-1,"Centimetri letti come millimetri."],[10,"Millimetri letti come centimetri."],[0.3048,"Metri letti come piedi."],[1/0.3048,"Piedi letti come metri."],[1/304.8,"Piedi letti come millimetri."],[304.8,"Millimetri letti come piedi."]];
+function diag(){
+  var fe=UNITS[$("dg-ue").value].f, fo=UNITS[$("dg-uo").value].f;
+  var ee=nv("dg-ee"),ne=nv("dg-ne"),eo=nv("dg-eo"),no=nv("dg-no");
+  if([ee,ne,eo,no].some(function(v){return v===null||isNaN(v)})){ $("dg-o").innerHTML='<div class="note warn">Inserisci le quattro coordinate.</div>'; return; }
+  ee*=fe;ne*=fe;eo*=fo;no*=fo;
+  var h="", rE=eo/ee, rN=no/ne, close=function(a,b,t){return Math.abs(a/b-1)<t};
+  h+=out("Distanza tra le due posizioni",fmtR(Math.hypot(eo-ee,no-ne),3)+" m","",false);
+  h+=out("Rapporto Est (visto / atteso)",fmt(rE,6),"",false)+out("Rapporto Nord (visto / atteso)",fmt(rN,6),"",false);
+  var found=null; FACT.forEach(function(f){ if(close(rE,f[0],0.01)&&close(rN,f[0],0.01))found=f; });
+  if(Math.abs(eo)<1&&Math.abs(no)<1&&Math.hypot(ee,ne)>1000) h+='<div class="note bad"><p><b>Il modello è all\'origine:</b> le coordinate reali non sono state applicate. Controlla la base coordinate dell\'export (per esempio origine interna invece di coordinate condivise).</p></div>';
+  else if(found) h+='<div class="note bad"><p><b>Errore di unità, fattore '+fmt(found[0],4)+'.</b> '+found[1]+'</p><p>Correggi i valori nel software di origine (con la virgola nel posto giusto) invece di spostare la geometria.</p></div>';
+  else if(close(eo,ne,0.001)&&close(no,ee,0.001)) h+='<div class="note bad"><p><b>Est e Nord sono scambiati.</b> Succede con i sistemi in ordine Nord-Est (per esempio EPSG:6707) o quando un campo «Nord/Sud» precede «Est/Ovest».</p></div>';
+  else if(close(rE,1,0.001)&&close(rN,1,0.001)) h+='<div class="note warn"><p><b>Nessun errore di unità.</b> Lo spostamento di '+fmtR(Math.hypot(eo-ee,no-ne),3)+' m dipende da traslazione o rotazione: punto di riferimento diverso (punto base, punto di rilievo, origine interna), angolo con il verso sbagliato, o nord di rete scambiato con il geografico. Usa le schede 2 e 3 con un punto noto.</p></div>';
+  else h+='<div class="note warn"><p>Il rapporto non corrisponde a un errore di unità noto e gli assi non sono scambiati: probabilmente più errori insieme. Ricava i parametri da punti noti (scheda 3).</p></div>';
+  $("dg-o").innerHTML=h;
+}
+["dg-ee","dg-ne","dg-eo","dg-no","dg-ue","dg-uo"].forEach(function(id){ $(id).addEventListener("input",diag); });
+
+/* ============ 5 · nord e scala ============ */
+crsOpts($("nd-crs"),"25832"); $("nd-crs").querySelector('option[value=""]').remove();
+function nord(){
+  var c=CRS[$("nd-crs").value], E=nv("nd-e","m"),N=nv("nd-n","m"),H=nv("nd-h","m");
+  if([E,N,H].some(function(v){return v===null||isNaN(v)})){ $("nd-o").innerHTML='<div class="note warn">Inserisci E, N e quota.</div>'; return; }
+  var r=utmInv(E,N,c.z,c.el), kh=r.R/(r.R+H), kc=r.k*kh;
+  var h=out("Latitudine",fmt(r.lat,8)+"°",dms(r.lat,4),fmt(r.lat,8))+out("Longitudine",fmt(r.lon,8)+"°",dms(r.lon,4),fmt(r.lon,8));
+  h+=out("Convergenza dei meridiani γ",fmt(r.conv,6)+"°",dms(Math.abs(r.conv),2)+": il nord geografico sta "+(r.conv>0?"a ovest (sinistra)":"a est (destra)")+" del nord di rete.",fmt(r.conv,6));
+  h+=out("Fattore di scala UTM k",fmt(r.k,9),"Distanza sulla mappa / distanza sull'ellissoide: "+fmt((r.k-1)*1e6,1)+" mm ogni 1000 m",fmt(r.k,9));
+  h+=out("Fattore di quota",fmt(kh,9),"Raggio medio "+fmtR(r.R,0)+" m: "+fmt((kh-1)*1e6,1)+" mm ogni 1000 m",fmt(kh,9));
+  h+=out("Fattore combinato",fmt(kc,9),"1000 m misurati sul terreno diventano "+fmt(1000*kc,4)+" m sulla mappa ("+fmt((kc-1)*1e6,1)+" ppm)",fmt(kc,9));
+  h+='<div class="note"><p>Su un edificio di 100 m l\'effetto del fattore combinato è di '+fmt(Math.abs(kc-1)*100*1000,1)+' mm. Si può ignorare nella maggior parte degli edifici; conta per opere lunghe (strade, ponti, gallerie) o in quota.</p></div>';
+  $("nd-o").innerHTML=h;
+}
+["nd-e","nd-n","nd-h","nd-crs"].forEach(function(id){ $(id).addEventListener("input",nord); });
+
+/* ============ schede ============ */
+function show(p){ document.querySelectorAll(".tabs button").forEach(function(b){ b.setAttribute("aria-selected",b.dataset.p===p?"true":"false"); }); document.querySelectorAll(".panel").forEach(function(s){ s.classList.toggle("on",s.id===p); }); }
+document.querySelectorAll(".tabs button").forEach(function(b){ b.addEventListener("click",function(){ show(b.dataset.p); }); });
+
+/* avvio */
+buildSrc(); calc(); calCalc(); diag(); nord();
+window.GEO={utmInv:utmInv,parseNum:parseNum,parseAng:parseAng,toMap:toMap,toLocal:toLocal,originMap:originMap,SW:SW,get G(){return G}};
+/* altezza per l'articolo che incorpora lo strumento */
+if(window.parent!==window&&window.ResizeObserver){ new ResizeObserver(function(){ parent.postMessage({georefH:document.documentElement.scrollHeight},"*"); }).observe(document.body); }
+</script>
+</body>
+</html>
