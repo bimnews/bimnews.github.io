@@ -1,0 +1,5 @@
+v1664	5 veröffentlicht · 12 Einträge
+v1665	BIM-Georeferenzierung zwischen verschiedenen Programmen
+v1666	Warum ein Modell in der Federation kilometerweit von den anderen entfernt landet: Koordinaten, Drehung, Maßeinheiten, Gitternord und geografisch Nord, Fall für Fall zwischen Revit, Archicad, Allplan und IFC 2x3, 4 und 4.3, mit einem realen Fall eines Fehlers 1:1000.
+v1667	Mit einem kostenlosen Umrechner: von den Werten eines Programms zu denen eines anderen, Kontrolle mit bekannten Punkten und Diagnose von Verschiebungen. Online nutzbar oder zum Herunterladen: eine einzige Datei, die auch ohne Internet funktioniert.
+v1668	<span class="tag ok">Veröffentlicht</span><a class="man-btn" href="manuali/georeferenziazione-ifc.html">Online lesen</a><a class="man-btn ghost" href="manuali/convertitore-georeferenziazione.html">Umrechner öffnen</a><a class="man-btn ghost" href="manuali/convertitore-georeferenziazione.html" download="">Umrechner herunterladen</a>

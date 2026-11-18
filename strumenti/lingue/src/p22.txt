@@ -1,0 +1,5 @@
+v1664	5 pubblicati · 12 voci
+v1665	Georeferenziazione BIM tra software diversi
+v1666	Perché in federazione un modello finisce a chilometri dagli altri: coordinate, rotazione, unità di misura, nord di rete e nord geografico, caso per caso tra Revit, Archicad, Allplan e IFC 2x3, 4 e 4.3, con un caso reale di errore 1:1000.
+v1667	Con un convertitore gratuito: dai valori di un software a quelli di un altro, il controllo con punti noti e la diagnosi degli spostamenti. Si usa online o si scarica: è un unico file che funziona anche senza internet.
+v1668	<span class="tag ok">Pubblicato</span><a class="man-btn" href="manuali/georeferenziazione-ifc.html">Leggi online</a><a class="man-btn ghost" href="manuali/convertitore-georeferenziazione.html">Apri il convertitore</a><a class="man-btn ghost" href="manuali/convertitore-georeferenziazione.html" download="">Scarica il convertitore</a>

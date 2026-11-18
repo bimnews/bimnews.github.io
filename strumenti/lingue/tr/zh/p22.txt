@@ -1,0 +1,5 @@
+v1664	已发布 5 份 · 共 12 项
+v1665	不同软件之间的 BIM 地理配准
+v1666	为什么在模型整合时，一个模型会落在离其他模型几公里远的地方：坐标、旋转、计量单位、坐标网北与真北，逐一分析 Revit、Archicad、Allplan 以及 IFC 2x3、4 和 4.3，并附一个 1:1000 误差的真实案例。
+v1667	附免费转换器：把一个软件的数值换算成另一个软件的数值，用已知点进行检查，并诊断偏移。可在线使用，也可下载：只有一个文件，离线也能运行。
+v1668	<span class="tag ok">已发布</span><a class="man-btn" href="manuali/georeferenziazione-ifc.html">在线阅读</a><a class="man-btn ghost" href="manuali/convertitore-georeferenziazione.html">打开转换器</a><a class="man-btn ghost" href="manuali/convertitore-georeferenziazione.html" download="">下载转换器</a>

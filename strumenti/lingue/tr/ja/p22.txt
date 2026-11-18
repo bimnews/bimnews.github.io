@@ -1,0 +1,5 @@
+v1664	公開 5 · 全 12 項目
+v1665	異なるソフトウェア間の BIM ジオリファレンス
+v1666	統合（フェデレーション）の際、なぜモデルが他のモデルから何キロも離れた位置に現れるのか。座標、回転、単位、図北と真北を、Revit、Archicad、Allplan、IFC 2x3・4・4.3 についてケースごとに解説し、1:1000 の誤差の実例も紹介します。
+v1667	無料の変換ツール付き：あるソフトウェアの値を別のソフトウェアの値に変換し、既知点で確認し、位置ずれを診断します。オンラインで使うことも、ダウンロードすることもできます。インターネットなしでも動く単一のファイルです。
+v1668	<span class="tag ok">公開済み</span><a class="man-btn" href="manuali/georeferenziazione-ifc.html">オンラインで読む</a><a class="man-btn ghost" href="manuali/convertitore-georeferenziazione.html">変換ツールを開く</a><a class="man-btn ghost" href="manuali/convertitore-georeferenziazione.html" download="">変換ツールをダウンロード</a>
