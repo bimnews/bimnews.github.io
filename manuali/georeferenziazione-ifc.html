@@ -141,7 +141,8 @@
   <ul>
     <li><span class="ok-v">Verificato</span> (Help Autodesk): Revit ha tre riferimenti, l'origine interna, il punto base progetto e il punto di rilievo. Il comando <i>Specifica coordinate in un punto</i> assegna a un punto scelto Nord/Sud, Est/Ovest, quota e l'angolo «dal nord di progetto al nord reale», con Est oppure Ovest. L'intero modello si sposta insieme ai due punti.</li>
     <li><span class="ok-v">Verificato</span> (Autodesk IFC Manual): all'export IFC, <i>Base coordinate</i> sceglie tra coordinate condivise, origine interna, punto base progetto e punto di rilievo; la scelta cambia le coordinate scritte per IfcSite. L'origine interna è il centro della zona di circa 20 miglia in cui Revit tollera la geometria.</li>
-    <li><span class="no-v">Da verificare</span>: in quale unità il dialogo legge i numeri digitati, e cosa scrive l'esportatore nei Property Set di IFC 2x3. Prima di digitare, guarda come il dialogo mostra i valori attuali; dopo, controlla il punto base progetto.</li>
+    <li><span class="ok-v">Provato su un modello reale</span> (Revit 2026, progetto in millimetri partito da un template MEP): nel dialogo <i>Specifica coordinate in un punto</i> le coordinate si digitano <b>in metri</b>, con la virgola decimale. Digitando il valore in millimetri, Revit lo legge come metri e avvisa che il modello supera la distanza ammessa dall'origine.</li>
+    <li><span class="no-v">Da verificare</span>: se valga lo stesso per gli altri campi (per esempio le proprietà del punto base progetto) e per altre versioni, e cosa scrive l'esportatore nei Property Set di IFC 2x3. Dopo ogni modifica controlla il punto base progetto.</li>
     <li><b>Una deduzione utile:</b> se si digitano coordinate UTM, il «nord reale» di Revit è il nord di quelle coordinate, cioè il nord di rete UTM, non quello geografico.</li>
   </ul>
   <h3>Archicad</h3>
@@ -178,7 +179,7 @@
   <h3>La correzione</h3>
   <ol class="steps">
     <li><b>Non spostare la geometria.</b> Muri, impianti, livelli e famiglie restano dove sono: si corregge il sistema di coordinate condivise.</li>
-    <li><b>Riassegnare le coordinate.</b> In Revit: Gestisci → Coordinate → Specifica coordinate in un punto, scegliendo il punto usato come riferimento condiviso. Inserire Nord/Sud, Est/Ovest, quota e angolo con la virgola nel posto giusto per l'unità in cui il dialogo lavora.</li>
+    <li><b>Riassegnare le coordinate.</b> In Revit: Gestisci → Coordinate → Specifica coordinate in un punto, scegliendo il punto usato come riferimento condiviso. Inserire Nord/Sud, Est/Ovest, quota e angolo <b>in metri</b>, con la virgola decimale, anche se il progetto è in millimetri. Il valore convertito in millimetri non funziona: Revit lo legge come metri e avvisa che il modello supera la distanza ammessa.</li>
     <li><b>Controllare il punto base progetto</b> prima di esportare: deve mostrare le coordinate attese e lo stesso angolo degli altri modelli.</li>
     <li><b>Esportare con una configurazione dedicata e salvata:</b> stesso schema degli altri modelli (qui IFC 2x3 Coordination View 2.0) e Base coordinate = Coordinate condivise. Il codice EPSG si indica se il capitolato lo prescrive.</li>
     <li><b>Verificare in federazione</b>: i tre modelli devono comparire nella stessa posizione.</li>

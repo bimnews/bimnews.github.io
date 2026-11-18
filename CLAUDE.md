@@ -189,11 +189,12 @@ Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato co
    - **Formati:** Revit, Archicad, Allplan, «Altro software» (definizione geometrica), IFC 4/4.3 (IfcMapConversion), IFC 2x3 (ePSet_MapConversion ed ePSet_ProjectedCRS, più RefLatitude/RefLongitude e TrueNorth con la convergenza). Rappresentazione comune = formula IfcMapConversion (θ antiorario da Est all'asse x).
    - **Convenzioni e fonti:** Revit «Ovest» → θ = −angolo (dalla lettura del campo «dal nord di progetto al nord reale»); Archicad θ = 90° − North Angle (Graphisoft Community 2022); Allplan senza verso documentato (definizione geometrica). Calcoli UTM con le serie di Karney, confrontati con PROJ (pyproj 3.8: differenze < 0,04 mm, convergenza identica); 30 coppie andata e ritorno, errore massimo 0,04 mm. La convergenza a E 680000 / N 5150000 (EPSG:25832) vale +1,7009° (nord geografico a ovest di quello di rete).
    - **Caso reale anonimizzato** dal PDF di Marco (errore 1:1000 tra un modello in mm e modelli in m): nomi del progetto e coordinate vere tolti, numeri inventati (E 680 000, N 5 150 000, quota 250, angolo 12°30′ Ovest). Il PDF non va pubblicato.
-   - **Dubbio aperto da chiarire con Marco:** in quale unità il dialogo «Specifica coordinate in un punto» di Revit legge i numeri (nel PDF, nel modello in mm si digitano i valori in metri). Il convertitore mostra entrambe le righe (m e mm) e dice di guardare come il dialogo mostra i valori attuali. Con la risposta di Marco si può scrivere la regola in modo netto (articolo cap. 5–6 e `SW.revit.spec` nel convertitore).
+   - **Unità nel dialogo di Revit, chiarito con Marco il 18/11/2026 (revisione 137):** nel suo modello in mm (template MEP; l'architetto modella in m), «Specifica coordinate in un punto» accetta i valori in metri; digitando i millimetri Revit avvisa che il modello supera la distanza ammessa (li legge come metri). Il convertitore, con Revit come arrivo, dà solo i valori in metri. Non provati: le proprietà del Punto base progetto e altre versioni. Resta ignoto quale valore causò il primo errore 1:1000.
    - **Se si cambiano le convenzioni:** rilanciare i controlli (confronto con pyproj e andata e ritorno su tutte le coppie) prima di pubblicare.
 
 ## Fatto di recente
 
+- **18/11/2026, revisione 137:** georeferenziazione, regola delle unità in Revit (valori in metri nel dialogo anche nei progetti in mm), dalla prova di Marco.
 - **18/11/2026, revisione 136:** articolo «Georeferenziazione BIM tra software diversi» con il convertitore gratuito e scaricabile (punto 15), scheda man-pro-12 tradotta nelle 11 lingue.
 
 - **15/11/2026, revisione 100:**
