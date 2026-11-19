@@ -1,0 +1,10 @@
+v1676	全 2 項目
+v1677	全 12 項目
+v1678	全 1 項目
+v1679	公開済み 7 · 全 14 項目
+v1680	200 年後、私たちのモデルと努力はどうなっているでしょうか？ ミケランジェロの素描は今でも見ることができます。私たちのファイルはそのとき開けるでしょうか？ 現存する最古の設計図についての調査と、それが実際にどう古びてきたかから始めます。記事<a href="#studio" data-goto-art="man-pro-14">手書きの IFC →</a>とつながっています
+v1681	手書きの IFC
+v1682	BIM ソフトを使わず、テキストファイルに1行ずつ書いた2階建ての小さな家。Revit で開け、検証にも合格します。
+v1683	IFC4 のコードをパターンごとに解説：単位、空間構造、連鎖する配置、プロファイルと押し出し、開口と建具、関係、プロパティ、GlobalId。回せる 3D モデル、クリックでたどれる行どうしの参照、モデルがおかしく届いたときにどこを見ればよいかの表付き。
+v1684	<span class="tag ok">公開済み</span><a class="man-btn" href="manuali/ifc-da-zero.html">記事を読む</a><a class="man-btn ghost" href="manuali/ifc-da-zero.html#c1">3D モデル</a><a class="man-btn ghost" href="manuali/ifc-da-zero/casetta.ifc" download="">casetta.ifc をダウンロード</a>
+v1685	全 6 項目

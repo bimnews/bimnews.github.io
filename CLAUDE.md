@@ -141,7 +141,7 @@ Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato co
 10. **Articoli da scrivere con Marco (impostati il 15/11/2026; testi da fare insieme):**
    - **In `#wip` → «Articoli in preparazione»** (`.wip-art`), ogni scheda con «Cosa conterrà»:
      - `art-hoover`: lo script «Hoover», che legge un Excel con materiali, parametri e informazioni di sistema;
-     - `art-ifc-zero`: come costruire un IFC da zero (esperimento riuscito, mancano le considerazioni finali; si lega a «Il mondo oltre noi»);
+     - ~~`art-ifc-zero`~~: pubblicato come manuale «Un IFC scritto a mano» (punto 18);
      - `art-10-tips`: i 10 consigli, di cui 6 scritti (salvataggi automatici, gestione del tempo, template, gruppo di continuità, straordinari, riflessione) e 4 da definire;
      - `art-ifc-excel`: la biblioteca IFC in Excel;
      - `art-ifc-versioni`: le versioni di esportazione IFC a confronto;
@@ -208,14 +208,17 @@ Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato co
    - **Fonti verificate il 19/11/2026:** comunicato Provincia di Bolzano 13/04/2026 (BIM4PAB, BIM-Guide, obbligo da 2 milioni, CDE per tutti gli enti); via.bund.de/bim; digigo.nu (BIM basis ILS); innovance.it; opencup.gov.it; istat.it (codici unità amministrative); buildingsmart.org (IDS).
    - **In attesa di Marco:** forma (solo articolo o articolo + prototipo consultabile tipo libreria IFC) e se l'Excel provinciale si può citare/ripubblicare. Prima di pubblicare: anteprima.
 
-18. **«Come costruire un IFC da zero» (bozza `art-ifc-zero`), IN CORSO dal 19/11/2026.**
+18. **«Un IFC scritto a mano» (ex bozza `art-ifc-zero`): PUBBLICATO il 19/11/2026 (revisione 140) dopo il sì di Marco.**
    - **File:** `manuali/ifc-da-zero/casetta.ifc`, casetta di due piani scritta a mano come testo (IFC4 ADD2 TC1, schema `IFC4`): 8×6 m, piani a 0 e 3 m, muri 30 cm, tetto a due falde al 50 %, porta, 6 finestre, scala da 16 alzate (18,75/25 cm) con foro nel solaio, 2 locali, 4 materiali, colori, Pset comuni. 311 entità, numerate a blocchi (1 geometria base, 10 unità, 20 struttura spaziale, 40 colori, 60 materiali, 110 forme condivise, 200 PT, 300 P1, 400 tetto, 500/600 fori, 700 relazioni) con commenti `/* */`. Solo i GlobalId sono stati generati con IfcOpenShell e incollati.
-   - **Controlli:** IfcOpenShell 0.9.0, `validate` con le regole EXPRESS: 0 errori; 30 oggetti con geometria. Anteprima `anteprima-sud-est.png`.
+   - **Controlli:** IfcOpenShell 0.9.0, `validate` con le regole EXPRESS: 0 errori; 30 oggetti con geometria.
    - **Semplificazioni note:** cuneo di 15 cm tra la testa dei muri sud/nord e il tetto (lato interno); il locale del P1 è un parallelepipedo alto 2,80 (ignora il soffitto inclinato); muri senza stratigrafia.
    - **19/11/2026:** Marco l'ha aperto in Revit: funziona. Articolo scritto in `manuali/ifc-da-zero.html` (stile dei manuali, 14 capitoli + fonti, codice spiegato per pattern; i `#n` nei blocchi di codice sono cliccabili e mostrano la riga del file; visualizzatore 3D in canvas senza librerie che legge `manuali/ifc-da-zero/casetta-3d.json`, generato da `strumenti/ifc/casetta_json.py` con IfcOpenShell). Capitolo 13: errori introdotti apposta (il validatore NON vede un attributo mancante né un enum inventato). Le 101 righe di codice citate coincidono con il file (controllo automatico).
-   - **Stato:** anteprima mandata a Marco, sul ramo, NON pubblicata. Dopo il sì: scheda `man-pro-14` in «I manuali di Claude», togliere la bozza WIP `art-ifc-zero` e ripuntare il link di `studio-oltre-noi`, traduzione della scheda (pacchetto `p24`), URL in `sitemap.xml`, revisione 140.
+   - **Pubblicazione:** scheda `#man-pro-14` in `#studio` → I manuali di Claude (pulsanti: articolo, modello 3D, scarica casetta.ifc); tolta la bozza WIP `art-ifc-zero`; il link di `studio-oltre-noi` ora punta a `man-pro-14`; URL in `sitemap.xml`; traduzione della scheda nel pacchetto `p24` (`strumenti/lingue/p24_ifc_da_zero.py`, con anche i contatori «N voci» nuovi). L'articolo è solo in italiano.
+   - **Se si cambia `casetta.ifc`:** rilanciare la validazione, `strumenti/ifc/casetta_json.py` per il visualizzatore e il controllo che le righe citate nell'articolo coincidano col file.
 
 ## Fatto di recente
+
+- **19/11/2026, revisione 140:** pubblicato «Un IFC scritto a mano» (punto 18): casetta IFC4 scritta a mano, articolo per pattern con modello 3D e riferimenti cliccabili.
 
 - **19/11/2026, revisione 139:** pubblicata «La libreria IFC 4.3» (punto 16): ricerca, mappa mentale, Excel e JSON, descrizioni nostre in italiano e inglese.
 

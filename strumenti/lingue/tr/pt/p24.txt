@@ -1,0 +1,10 @@
+v1676	2 entradas
+v1677	12 entradas
+v1678	1 entrada
+v1679	7 publicados · 14 entradas
+v1680	O que será dos nossos modelos, e dos nossos esforços, daqui a 200 anos? Um desenho de Miguel Ângelo ainda hoje se pode ver: um ficheiro nosso ainda se poderá abrir? Vou partir de uma pesquisa sobre o mais antigo desenho de projeto que chegou até nós, e sobre como envelheceu realmente. Liga-se ao artigo <a href="#studio" data-goto-art="man-pro-14">Um IFC escrito à mão →</a>
+v1681	Um IFC escrito à mão
+v1682	Uma pequena casa de dois pisos escrita linha a linha num ficheiro de texto, sem qualquer software BIM, que abre no Revit e passa a validação.
+v1683	O código IFC4 explicado padrão a padrão: unidades, estrutura espacial, posicionamentos em cadeia, perfis e extrusões, vãos e caixilharias, relações, propriedades e GlobalId. Com um modelo 3D para rodar, referências entre linhas para seguir com um clique e uma tabela para saber onde procurar o erro quando um modelo chega errado.
+v1684	<span class="tag ok">Publicado</span><a class="man-btn" href="manuali/ifc-da-zero.html">Ler o artigo</a><a class="man-btn ghost" href="manuali/ifc-da-zero.html#c1">Modelo 3D</a><a class="man-btn ghost" href="manuali/ifc-da-zero/casetta.ifc" download="">Descarregar casetta.ifc</a>
+v1685	6 entradas
