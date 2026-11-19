@@ -25,7 +25,7 @@ v0624	Work in progress: le prime proposte sono in preparazione. Per discuterne, 
 v0625	Work in progress
 v0626	Quello su cui sto lavorando adesso, con la fase in cui si trova. Le schede si aggiornano man mano.
 v0627	Libreria di famiglie con struttura dati provinciale
-v0628	Famiglie con i parametri richiesti dalla Provincia di Bolzano, pronte da usare nei progetti.
+v0628	Famiglie con i parametri richiesti dalla Provincia di Bolzano. Sono già funzionanti, ma ci sto ancora lavorando: le sto testando e migliorando man mano.
 v0629	Idea
 v0630	Sviluppo
 v0631	Test

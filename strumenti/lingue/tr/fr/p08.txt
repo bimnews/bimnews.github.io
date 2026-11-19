@@ -25,7 +25,7 @@ v0624	Travail en cours : les premières propositions sont en préparation. Pour 
 v0625	Travaux en cours
 v0626	Ce sur quoi je travaille en ce moment, avec l'étape où il en est. Les fiches se mettent à jour au fur et à mesure.
 v0627	Bibliothèque de familles avec la structure de données provinciale
-v0628	Des familles avec les paramètres demandés par la Province de Bolzano, prêtes à l'emploi dans les projets.
+v0628	Familles avec les paramètres exigés par la Province de Bolzano. Elles fonctionnent déjà, mais j'y travaille encore : je les teste et je les améliore au fur et à mesure.
 v0629	Idée
 v0630	Développement
 v0631	Test

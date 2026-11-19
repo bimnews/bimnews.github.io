@@ -25,7 +25,7 @@ v0624	Work in progress: as primeiras propostas estão em preparação. Para as d
 v0625	Work in progress
 v0626	Aquilo em que estou a trabalhar agora, com a fase em que se encontra. As fichas são atualizadas à medida.
 v0627	Biblioteca de famílias com a estrutura de dados provincial
-v0628	Famílias com os parâmetros pedidos pela Província de Bolzano, prontas a usar nos projetos.
+v0628	Famílias com os parâmetros exigidos pela Província de Bolzano. Já funcionam, mas ainda estou a trabalhar nelas: estou a testá-las e a melhorá-las aos poucos.
 v0629	Ideia
 v0630	Desenvolvimento
 v0631	Teste
