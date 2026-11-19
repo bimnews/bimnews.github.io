@@ -202,6 +202,12 @@ Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato co
    - **Altre lingue delle descrizioni:** solo IT ed EN; nella pagina e nel Read me c'è l'invito «Ti servono in un'altra lingua? Scrivimi su LinkedIn» (scelta di Marco).
    - **Possibili sviluppi:** le stesse librerie per IFC 2x3 e IFC 4 (bozza WIP `art-ifc-versioni`), i tipi (IfcWallType…) e i Pset.
 
+17. **«Le mie proposte», proposta 1 (dati pubblici nazionali): IMPOSTAZIONE discussa il 19/11/2026, nulla pubblicato.**
+   - **Idea di Marco:** uniformare a livello nazionale i parametri utili ai committenti pubblici (come l'Excel della struttura dati della Provincia di Bolzano, esteso all'Italia), con un codice che identifichi il territorio, e allineare la documentazione (capitolato informativo e pGI) in un database consultabile.
+   - **Impostazione proposta da Claude:** non «tutti» i parametri ma un nucleo minimo nazionale + estensioni di regione/ente + parametri di progetto (modello: BIM basis ILS olandese; BIM-Portal des Bundes tedesco; lezione di INNOVance). Niente codice regionale nuovo: usare CUP (L. 3/2003 art. 11) e codici ISTAT dei comuni (cambiano: serve la versione). Ogni parametro con codice univoco, nomi IT/DE, definizione, tipo, unità, valori ammessi, mappatura IFC, fase/LOIN (ISO 7817-1), chi lo compila, versione e stato; formato ISO 23386/23387, pubblicazione anche come IDS (buildingSMART, standard dal 1/6/2024). Si uniforma il capitolato informativo; il pGI segue.
+   - **Fonti verificate il 19/11/2026:** comunicato Provincia di Bolzano 13/04/2026 (BIM4PAB, BIM-Guide, obbligo da 2 milioni, CDE per tutti gli enti); via.bund.de/bim; digigo.nu (BIM basis ILS); innovance.it; opencup.gov.it; istat.it (codici unità amministrative); buildingsmart.org (IDS).
+   - **In attesa di Marco:** forma (solo articolo o articolo + prototipo consultabile tipo libreria IFC) e se l'Excel provinciale si può citare/ripubblicare. Prima di pubblicare: anteprima.
+
 ## Fatto di recente
 
 - **19/11/2026, revisione 139:** pubblicata «La libreria IFC 4.3» (punto 16): ricerca, mappa mentale, Excel e JSON, descrizioni nostre in italiano e inglese.
