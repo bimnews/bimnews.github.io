@@ -25,17 +25,17 @@ v0624	Work in progress: as primeiras propostas estão em preparação. Para as d
 v0625	Work in progress
 v0626	Aquilo em que estou a trabalhar agora, com a fase em que se encontra. As fichas são atualizadas à medida.
 v0627	Biblioteca de famílias com a estrutura de dados provincial
-v0628	Famílias com os parâmetros pedidos pela Província de Bolzano, prontas a usar nos projetos.
+v0628	Famílias com os parâmetros exigidos pela Província de Bolzano. Já funcionam, mas ainda estou a trabalhar nelas: estou a testá-las e a melhorá-las aos poucos.
 v0629	Ideia
 v0630	Desenvolvimento
 v0631	Teste
 v0632	Lançamento
 v0633	Automatização dos desenhos
-v0634	Scripts para as operações repetitivas, a começar pela gestão das referências externas.
+v0634	Scripts para as operações repetitivas, a começar pela gestão das referências externas. Já funcionam e melhoram muito o trabalho; vou-os afinando continuamente, a pequenos passos, como no kaizen.
 v0635	Verificações automáticas a partir da checklist
-v0636	Da checklist de controlo a verificações repetíveis nos projetos.
+v0636	Da checklist de controlo a verificações repetíveis nos projetos. Ainda as estou a elaborar e, entretanto, estou a testá-las.
 v0637	Das áreas do desenho ao cálculo CasaClima
-v0638	Extrair as áreas dos DWG e levá-las para a folha de cálculo sem as copiar à mão.
+v0638	Extrair as áreas dos DWG e levá-las para a folha de cálculo sem as copiar à mão. Já funciona e reduziu bastante o trabalho; faltam melhorar os pormenores.
 v0639	Artigos em preparação
 v0640	Os artigos em que estou a pensar, com a fase em que se encontram. Por agora estão só esboçados: o texto chegará um de cada vez.
 v0641	O script «Hoover»

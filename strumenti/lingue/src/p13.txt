@@ -263,3 +263,5 @@ v1178	2022: 8 articoli, filtra
 v1179	2023: 10 articoli, filtra
 v1180	2024: 6 articoli, filtra
 v1181	2025: 4 articoli, filtra
+v1676	Fase attuale: test
+v1677	Fase attuale: sviluppo e test

@@ -208,7 +208,7 @@ Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato co
    - **Fonti verificate il 19/11/2026:** comunicato Provincia di Bolzano 13/04/2026 (BIM4PAB, BIM-Guide, obbligo da 2 milioni, CDE per tutti gli enti); via.bund.de/bim; digigo.nu (BIM basis ILS); innovance.it; opencup.gov.it; istat.it (codici unità amministrative); buildingsmart.org (IDS).
    - **In attesa di Marco:** forma (solo articolo o articolo + prototipo consultabile tipo libreria IFC) e se l'Excel provinciale si può citare/ripubblicare. Prima di pubblicare: anteprima.
 
-18. **«Un IFC scritto a mano» (ex bozza `art-ifc-zero`): PUBBLICATO il 19/11/2026 (revisione 140) dopo il sì di Marco.**
+18. **«Un IFC scritto a mano» (ex bozza `art-ifc-zero`): PUBBLICATO il 19/11/2026 (revisione 144) dopo il sì di Marco.**
    - **File:** `manuali/ifc-da-zero/casetta.ifc`, casetta di due piani scritta a mano come testo (IFC4 ADD2 TC1, schema `IFC4`): 8×6 m, piani a 0 e 3 m, muri 30 cm, tetto a due falde al 50 %, porta, 6 finestre, scala da 16 alzate (18,75/25 cm) con foro nel solaio, 2 locali, 4 materiali, colori, Pset comuni. 311 entità, numerate a blocchi (1 geometria base, 10 unità, 20 struttura spaziale, 40 colori, 60 materiali, 110 forme condivise, 200 PT, 300 P1, 400 tetto, 500/600 fori, 700 relazioni) con commenti `/* */`. Solo i GlobalId sono stati generati con IfcOpenShell e incollati.
    - **Controlli:** IfcOpenShell 0.9.0, `validate` con le regole EXPRESS: 0 errori; 30 oggetti con geometria.
    - **Semplificazioni note:** cuneo di 15 cm tra la testa dei muri sud/nord e il tetto (lato interno); il locale del P1 è un parallelepipedo alto 2,80 (ignora il soffitto inclinato); muri senza stratigrafia.
@@ -218,7 +218,15 @@ Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato co
 
 ## Fatto di recente
 
-- **19/11/2026, revisione 140:** pubblicato «Un IFC scritto a mano» (punto 18): casetta IFC4 scritta a mano, articolo per pattern con modello 3D e riferimenti cliccabili.
+- **19/11/2026, revisione 144:** pubblicato «Un IFC scritto a mano» (punto 18): casetta IFC4 scritta a mano, articolo per pattern con modello 3D e riferimenti cliccabili.
+
+- **19/11/2026, revisione 143:** Work in progress, «Verifiche automatiche da checklist» passa da «Idea» a «Sviluppo» e «Test» insieme (tutte e due `now`), senza «Rilascio» (`.ph3`). Traduzione v0636 in `p08`, nuova voce v1677 (aria-label) in `p13`. Ora nessuna delle quattro schede del Work in progress ha la fase «Rilascio».
+
+- **19/11/2026, revisione 142:** Work in progress, «Dalle superfici del disegno al calcolo CasaClima» passa da «Idea» a «Test» senza «Rilascio» (`.ph3`): funziona e ha ridotto sensibilmente il lavoro, restano da migliorare i dettagli (Marco). Traduzione v0638 in `p08`.
+
+- **19/11/2026, revisione 141:** Work in progress, anche «Automazione dei disegni» (AutoCAD · AutoLISP) passa a fase «Test» senza «Rilascio» (`.ph3`): gli script funzionano e migliorano molto il lavoro, affinati di continuo «come nel kaizen» (parole di Marco). Traduzione v0634 in `p08`.
+
+- **19/11/2026, revisione 140:** Work in progress, scheda «Libreria di famiglie con struttura dati provinciale»: fase «Test» (Idea e Sviluppo fatti), testo «già funzionanti, ma ci sto ancora lavorando: le sto testando e migliorando». Tolta la fase «Rilascio» solo da questa scheda (classe `.phases.ph3`, 3 colonne): Marco per ora non vuole condividere le famiglie, quindi non promettere un rilascio. Traduzioni: v0628 aggiornata in `p08`, nuova voce v1676 (aria-label «Fase attuale: test») in `p13`.
 
 - **19/11/2026, revisione 139:** pubblicata «La libreria IFC 4.3» (punto 16): ricerca, mappa mentale, Excel e JSON, descrizioni nostre in italiano e inglese.
 

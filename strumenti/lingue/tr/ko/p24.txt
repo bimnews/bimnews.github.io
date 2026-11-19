@@ -1,10 +1,10 @@
-v1676	총 2개
-v1677	총 12개
-v1678	총 1개
-v1679	7개 공개 · 총 14개
-v1680	200년 뒤 우리의 모델과 노력은 어떻게 될까요? 미켈란젤로의 드로잉은 오늘도 볼 수 있습니다. 우리의 파일은 그때도 열 수 있을까요? 지금까지 남아 있는 가장 오래된 설계 도면을 조사하고, 그것이 실제로 어떻게 낡아 왔는지에서 시작하려 합니다. <a href="#studio" data-goto-art="man-pro-14">손으로 쓴 IFC →</a> 글과 이어집니다
-v1681	손으로 쓴 IFC
-v1682	BIM 소프트웨어 없이 텍스트 파일에 한 줄씩 쓴 2층 집. Revit에서 열리고 검증도 통과합니다.
-v1683	IFC4 코드를 패턴별로 설명합니다: 단위, 공간 구조, 연쇄 배치, 프로파일과 돌출, 개구부와 창호, 관계, 속성, GlobalId. 돌려 볼 수 있는 3D 모델, 클릭으로 따라가는 줄 사이 참조, 모델이 잘못 도착했을 때 어디를 봐야 하는지 알려 주는 표가 있습니다.
-v1684	<span class="tag ok">공개됨</span><a class="man-btn" href="manuali/ifc-da-zero.html">글 읽기</a><a class="man-btn ghost" href="manuali/ifc-da-zero.html#c1">3D 모델</a><a class="man-btn ghost" href="manuali/ifc-da-zero/casetta.ifc" download="">casetta.ifc 내려받기</a>
-v1685	총 6개
+v1678	총 2개
+v1679	총 12개
+v1680	총 1개
+v1681	7개 공개 · 총 14개
+v1682	200년 뒤 우리의 모델과 노력은 어떻게 될까요? 미켈란젤로의 드로잉은 오늘도 볼 수 있습니다. 우리의 파일은 그때도 열 수 있을까요? 지금까지 남아 있는 가장 오래된 설계 도면을 조사하고, 그것이 실제로 어떻게 낡아 왔는지에서 시작하려 합니다. <a href="#studio" data-goto-art="man-pro-14">손으로 쓴 IFC →</a> 글과 이어집니다
+v1683	손으로 쓴 IFC
+v1684	BIM 소프트웨어 없이 텍스트 파일에 한 줄씩 쓴 2층 집. Revit에서 열리고 검증도 통과합니다.
+v1685	IFC4 코드를 패턴별로 설명합니다: 단위, 공간 구조, 연쇄 배치, 프로파일과 돌출, 개구부와 창호, 관계, 속성, GlobalId. 돌려 볼 수 있는 3D 모델, 클릭으로 따라가는 줄 사이 참조, 모델이 잘못 도착했을 때 어디를 봐야 하는지 알려 주는 표가 있습니다.
+v1686	<span class="tag ok">공개됨</span><a class="man-btn" href="manuali/ifc-da-zero.html">글 읽기</a><a class="man-btn ghost" href="manuali/ifc-da-zero.html#c1">3D 모델</a><a class="man-btn ghost" href="manuali/ifc-da-zero/casetta.ifc" download="">casetta.ifc 내려받기</a>
+v1687	총 6개

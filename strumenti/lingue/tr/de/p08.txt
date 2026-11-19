@@ -25,17 +25,17 @@ v0624	Work in progress: Die ersten Vorschläge sind in Vorbereitung. Zur Diskuss
 v0625	Work in progress
 v0626	Woran ich gerade arbeite, mit der jeweiligen Phase. Die Karten werden laufend aktualisiert.
 v0627	Familienbibliothek mit der Datenstruktur der Provinz
-v0628	Familien mit den von der Provinz Bozen verlangten Parametern, bereit für den Einsatz in Projekten.
+v0628	Familien mit den von der Provinz Bozen verlangten Parametern. Sie funktionieren bereits, aber ich arbeite noch daran: Ich teste und verbessere sie nach und nach.
 v0629	Idee
 v0630	Entwicklung
 v0631	Test
 v0632	Freigabe
 v0633	Automatisierung der Zeichnungen
-v0634	Skripte für wiederkehrende Vorgänge, angefangen bei der Verwaltung externer Referenzen.
+v0634	Skripte für wiederkehrende Arbeitsschritte, angefangen bei der Verwaltung externer Referenzen. Sie funktionieren bereits und verbessern die Arbeit deutlich; ich verfeinere sie laufend in kleinen Schritten, wie beim Kaizen.
 v0635	Automatische Prüfungen aus der Checkliste
-v0636	Von der Prüfliste zu wiederholbaren Prüfungen an den Projekten.
+v0636	Von der Prüfcheckliste zu wiederholbaren Prüfungen an den Projekten. Ich arbeite sie noch aus und teste sie parallel.
 v0637	Von den Flächen der Zeichnung zur KlimaHaus-Berechnung
-v0638	Die Flächen aus den DWG entnehmen und in die Tabelle übertragen, ohne sie von Hand abzuschreiben.
+v0638	Die Flächen aus den DWG-Dateien auslesen und ohne Abtippen in die Tabelle übernehmen. Das funktioniert bereits und hat die Arbeit deutlich verringert; an den Details ist noch zu feilen.
 v0639	Artikel in Vorbereitung
 v0640	Die Artikel, an die ich denke, mit der jeweiligen Phase. Vorerst sind sie nur angelegt: Die Texte kommen nach und nach.
 v0641	Das Skript „Hoover“

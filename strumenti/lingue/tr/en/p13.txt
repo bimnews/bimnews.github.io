@@ -188,3 +188,5 @@ v1140	Close: Capire l'economia For Dummies
 v1141	Close: The Psychology of Money
 v1142	Close: Economics
 v1143	Other sections of the site
+v1676	Current stage: testing
+v1677	Current stage: development and testing

@@ -25,17 +25,17 @@ v0624	Travail en cours : les premières propositions sont en préparation. Pour 
 v0625	Travaux en cours
 v0626	Ce sur quoi je travaille en ce moment, avec l'étape où il en est. Les fiches se mettent à jour au fur et à mesure.
 v0627	Bibliothèque de familles avec la structure de données provinciale
-v0628	Des familles avec les paramètres demandés par la Province de Bolzano, prêtes à l'emploi dans les projets.
+v0628	Familles avec les paramètres exigés par la Province de Bolzano. Elles fonctionnent déjà, mais j'y travaille encore : je les teste et je les améliore au fur et à mesure.
 v0629	Idée
 v0630	Développement
 v0631	Test
 v0632	Diffusion
 v0633	Automatisation des dessins
-v0634	Des scripts pour les opérations répétitives, à commencer par la gestion des références externes.
+v0634	Scripts pour les opérations répétitives, à commencer par la gestion des références externes. Ils fonctionnent déjà et améliorent beaucoup le travail ; je les affine sans cesse, par petits pas, comme dans le kaizen.
 v0635	Vérifications automatiques à partir d'une liste de contrôle
-v0636	De la liste de contrôle à des vérifications reproductibles sur les projets.
+v0636	De la checklist de contrôle à des vérifications reproductibles sur les projets. Je les élabore encore et, en attendant, je les teste.
 v0637	Des surfaces du dessin au calcul CasaClima
-v0638	Extraire les surfaces des DWG et les reporter dans la feuille de calcul sans les recopier à la main.
+v0638	Extraire les surfaces des DWG et les reporter dans la feuille de calcul sans les recopier à la main. Cela fonctionne déjà et a nettement réduit le travail ; il reste à améliorer les détails.
 v0639	Articles en préparation
 v0640	Les articles auxquels je pense, avec l'étape où ils en sont. Pour l'instant, ils sont seulement esquissés : le texte arrivera un par un.
 v0641	Le script « Hoover »

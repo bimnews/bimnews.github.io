@@ -1,10 +1,10 @@
-v1676	2 Einträge
-v1677	12 Einträge
-v1678	1 Eintrag
-v1679	7 veröffentlicht · 14 Einträge
-v1680	Was wird in 200 Jahren aus unseren Modellen und unseren Mühen? Eine Zeichnung von Michelangelo kann man heute noch ansehen: Wird man eine unserer Dateien noch öffnen können? Ich beginne mit einer Recherche über die älteste erhaltene Projektzeichnung und darüber, wie sie wirklich gealtert ist. Verbunden mit dem Artikel <a href="#studio" data-goto-art="man-pro-14">Eine von Hand geschriebene IFC-Datei →</a>
-v1681	Eine von Hand geschriebene IFC-Datei
-v1682	Ein kleines zweigeschossiges Haus, Zeile für Zeile in einer Textdatei geschrieben, ohne BIM-Software, das sich in Revit öffnen lässt und die Validierung besteht.
-v1683	Der IFC4-Code Muster für Muster erklärt: Einheiten, räumliche Struktur, verkettete Platzierungen, Profile und Extrusionen, Öffnungen und Fenster, Beziehungen, Eigenschaften und GlobalId. Mit einem drehbaren 3D-Modell, Verweisen zwischen den Zeilen, denen man per Klick folgt, und einer Tabelle, wo man suchen muss, wenn ein Modell fehlerhaft ankommt.
-v1684	<span class="tag ok">Veröffentlicht</span><a class="man-btn" href="manuali/ifc-da-zero.html">Artikel lesen</a><a class="man-btn ghost" href="manuali/ifc-da-zero.html#c1">3D-Modell</a><a class="man-btn ghost" href="manuali/ifc-da-zero/casetta.ifc" download="">casetta.ifc herunterladen</a>
-v1685	6 Einträge
+v1678	2 Einträge
+v1679	12 Einträge
+v1680	1 Eintrag
+v1681	7 veröffentlicht · 14 Einträge
+v1682	Was wird in 200 Jahren aus unseren Modellen und unseren Mühen? Eine Zeichnung von Michelangelo kann man heute noch ansehen: Wird man eine unserer Dateien noch öffnen können? Ich beginne mit einer Recherche über die älteste erhaltene Projektzeichnung und darüber, wie sie wirklich gealtert ist. Verbunden mit dem Artikel <a href="#studio" data-goto-art="man-pro-14">Eine von Hand geschriebene IFC-Datei →</a>
+v1683	Eine von Hand geschriebene IFC-Datei
+v1684	Ein kleines zweigeschossiges Haus, Zeile für Zeile in einer Textdatei geschrieben, ohne BIM-Software, das sich in Revit öffnen lässt und die Validierung besteht.
+v1685	Der IFC4-Code Muster für Muster erklärt: Einheiten, räumliche Struktur, verkettete Platzierungen, Profile und Extrusionen, Öffnungen und Fenster, Beziehungen, Eigenschaften und GlobalId. Mit einem drehbaren 3D-Modell, Verweisen zwischen den Zeilen, denen man per Klick folgt, und einer Tabelle, wo man suchen muss, wenn ein Modell fehlerhaft ankommt.
+v1686	<span class="tag ok">Veröffentlicht</span><a class="man-btn" href="manuali/ifc-da-zero.html">Artikel lesen</a><a class="man-btn ghost" href="manuali/ifc-da-zero.html#c1">3D-Modell</a><a class="man-btn ghost" href="manuali/ifc-da-zero/casetta.ifc" download="">casetta.ifc herunterladen</a>
+v1687	6 Einträge

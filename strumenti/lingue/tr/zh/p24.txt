@@ -1,10 +1,10 @@
-v1676	共 2 项
-v1677	共 12 项
-v1678	共 1 项
-v1679	已发布 7 份 · 共 14 项
-v1680	200 年后，我们的模型和我们的努力会怎样？米开朗基罗的一幅素描今天仍然可以观赏：我们的文件到那时还能打开吗？我会从研究流传至今最古老的设计图纸开始，看看它究竟是如何老去的。与文章<a href="#studio" data-goto-art="man-pro-14">手写的 IFC →</a>相关。
-v1681	手写的 IFC
-v1682	一栋两层小房子，在文本文件中逐行写成，不借助任何 BIM 软件，可在 Revit 中打开并通过校验。
-v1683	逐个模式讲解 IFC4 代码：单位、空间结构、链式定位、轮廓与拉伸、洞口与门窗、关系、属性和 GlobalId。附可旋转的 3D 模型、点击即可追踪的行间引用，以及一张帮助查找模型出错位置的表格。
-v1684	<span class="tag ok">已发布</span><a class="man-btn" href="manuali/ifc-da-zero.html">阅读文章</a><a class="man-btn ghost" href="manuali/ifc-da-zero.html#c1">3D 模型</a><a class="man-btn ghost" href="manuali/ifc-da-zero/casetta.ifc" download="">下载 casetta.ifc</a>
-v1685	共 6 项
+v1678	共 2 项
+v1679	共 12 项
+v1680	共 1 项
+v1681	已发布 7 份 · 共 14 项
+v1682	200 年后，我们的模型和我们的努力会怎样？米开朗基罗的一幅素描今天仍然可以观赏：我们的文件到那时还能打开吗？我会从研究流传至今最古老的设计图纸开始，看看它究竟是如何老去的。与文章<a href="#studio" data-goto-art="man-pro-14">手写的 IFC →</a>相关。
+v1683	手写的 IFC
+v1684	一栋两层小房子，在文本文件中逐行写成，不借助任何 BIM 软件，可在 Revit 中打开并通过校验。
+v1685	逐个模式讲解 IFC4 代码：单位、空间结构、链式定位、轮廓与拉伸、洞口与门窗、关系、属性和 GlobalId。附可旋转的 3D 模型、点击即可追踪的行间引用，以及一张帮助查找模型出错位置的表格。
+v1686	<span class="tag ok">已发布</span><a class="man-btn" href="manuali/ifc-da-zero.html">阅读文章</a><a class="man-btn ghost" href="manuali/ifc-da-zero.html#c1">3D 模型</a><a class="man-btn ghost" href="manuali/ifc-da-zero/casetta.ifc" download="">下载 casetta.ifc</a>
+v1687	共 6 项
