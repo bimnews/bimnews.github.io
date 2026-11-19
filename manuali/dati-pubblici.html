@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Un dizionario nazionale dei dati BIM pubblici · Le mie proposte · BIM News</title>
+<meta name="description" content="Proposta e prototipo consultabile: un nucleo nazionale di parametri BIM per le opere pubbliche, con estensioni regionali, codici che esistono già (CUP, ISTAT, IPA, ISO 3166-2), mappatura IFC 4.3 e requisiti IDS da scaricare.">
+<link rel="stylesheet" href="manuale.css">
+<script>try{var t=localStorage.getItem("tema-2026");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+<style>
+.dp-bar{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;margin-top:1rem}
+.dp-bar input{flex:1 1 16rem;min-width:0;font:inherit;font-size:1.05rem;padding:.7rem 1rem;border:1px solid var(--line);border-radius:999px;background:var(--surface);color:var(--ink)}
+.dp-bar input:focus{outline:2px solid var(--accent);outline-offset:1px}
+.dp-f{display:flex;flex-wrap:wrap;gap:.35rem;margin:.7rem 0 0}
+.dp-f button{font-family:var(--mono);font-size:.74rem;border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:.3rem .75rem;border-radius:999px;cursor:pointer}
+.dp-f button[aria-pressed="true"]{border-color:var(--accent);background:var(--soft);color:var(--accent)}
+.dp-f span{font-size:.8rem;color:var(--muted);align-self:center;margin-right:.2rem}
+.dp-res{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:1rem;margin-top:1rem}
+.dp-list{list-style:none;margin:0;padding:0;border:1px solid var(--line);border-radius:var(--r);background:var(--surface);max-height:34rem;overflow:auto}
+.dp-list li{margin:0;border-bottom:1px solid var(--line)}
+.dp-list li:last-child{border-bottom:0}
+.dp-list button{all:unset;box-sizing:border-box;display:block;width:100%;padding:.55rem .9rem;cursor:pointer}
+.dp-list button:hover,.dp-list button[aria-current="true"]{background:var(--soft)}
+.dp-list b{font-size:.95rem}
+.dp-list code{font-family:var(--mono);font-size:.74rem;color:var(--muted);margin-right:.4rem}
+.dp-list small{display:block;color:var(--muted);font-size:.8rem;line-height:1.35;font-family:var(--mono)}
+.dp-list .lvh{position:sticky;top:0;background:var(--bg);font-family:var(--mono);font-size:.72rem;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);padding:.4rem .9rem;border-bottom:1px solid var(--line);z-index:1}
+.dp-empty{padding:1rem;color:var(--muted)}
+.dp-card{border:1px solid var(--line);border-radius:var(--r);background:var(--surface);padding:1.1rem 1.2rem;box-shadow:var(--shadow);align-self:start;position:sticky;top:4.2rem}
+.dp-card h3{margin:.1rem 0 .1rem;font-size:1.15rem}
+.dp-card .code{font-family:var(--mono);font-size:.8rem;color:var(--accent)}
+.dp-card .names{margin:.2rem 0 .7rem;color:var(--muted);font-size:.92rem}
+.dp-card .names span{font-family:var(--mono);font-size:.66rem;letter-spacing:.06em;margin:0 .25rem 0 .6rem}
+.dp-card .names span:first-child{margin-left:0}
+.dp-kv{display:grid;grid-template-columns:auto minmax(0,1fr);gap:.3rem .8rem;font-size:.9rem;margin:.7rem 0}
+.dp-kv dt{color:var(--muted)}
+.dp-kv dd{margin:0;overflow-wrap:anywhere}
+.dp-kv dd.m{font-family:var(--mono);font-size:.82rem}
+.badge{display:inline-block;font-family:var(--mono);font-size:.68rem;padding:.12rem .55rem;border-radius:999px;margin:0 .3rem .2rem 0;vertical-align:1px}
+.b-std{background:var(--a2s);color:var(--a2)}
+.b-it{background:var(--a3s);color:var(--a3)}
+.b-rel{background:var(--a4s);color:var(--a4)}
+.b-bz{background:var(--a5s);color:var(--a5)}
+.dp-eq{font:inherit;font-size:.88rem;border:0;background:none;color:var(--accent);cursor:pointer;padding:0;text-decoration:underline;text-underline-offset:3px}
+.lv3{display:grid;gap:.6rem;margin:1rem 0}
+.lv3 div{border:1px solid var(--line);border-left:6px solid var(--accent);border-radius:12px;padding:.7rem 1rem;background:var(--surface)}
+.lv3 div:nth-child(2){margin-left:1.2rem;border-left-color:var(--a5)}
+.lv3 div:nth-child(3){margin-left:2.4rem;border-left-color:var(--a4)}
+.lv3 b{display:block}
+.lv3 small{color:var(--muted)}
+.dl{display:flex;flex-wrap:wrap;gap:.6rem;margin:1rem 0}
+.draft{border:2px dashed var(--a3);border-radius:var(--r);padding:1rem 1.2rem;background:var(--a3s)}
+@media (max-width:980px){.dp-res{grid-template-columns:1fr}.dp-card{position:static}}
+@media (max-width:640px){.lv3 div:nth-child(2){margin-left:.6rem}.lv3 div:nth-child(3){margin-left:1.2rem}}
+</style>
+</head>
+<body>
+<div class="topbar"><div class="in"><a class="back" href="../#proposte">← BIM News · Le mie proposte</a><span class="sp"></span><a class="btn ghost noprint" href="#c3">Il prototipo</a><a class="btn noprint" href="dati-pubblici/dizionario-dati-pubblici.xlsx" download>Scarica l'Excel</a></div></div>
+<div class="layout">
+<nav class="toc" aria-label="Indice">
+  <b>Indice</b>
+  <ol>
+    <li><a href="#c1">1 · Il problema</a></li>
+    <li><a href="#c2">2 · La proposta</a></li>
+    <li><a href="#c3">3 · Il prototipo</a></li>
+    <li><a href="#c4">4 · Com'è fatta una scheda</a></li>
+    <li><a href="#c5">5 · Bolzano come estensione</a></li>
+    <li><a href="#c6">6 · Una famiglia MEP</a></li>
+    <li><a href="#c7">7 · E il resto del mondo?</a></li>
+    <li><a href="#c8">8 · Le obiezioni</a></li>
+    <li><a href="#c9">9 · Scarica</a></li>
+    <li><a href="#fonti">Fonti</a></li>
+  </ol>
+</nav>
+<main>
+<header class="cover">
+  <div>
+    <span class="kick">Le mie proposte · Proposta 1</span>
+    <h1>Un dizionario nazionale dei dati BIM pubblici</h1>
+    <p>Ogni committente pubblico chiede i suoi parametri, con i suoi nomi. Propongo un nucleo comune per tutta l'Italia, con le estensioni di regioni ed enti agganciate sopra, scritto in un formato che i software leggono e controllano da soli. Qui sotto c'è anche un prototipo da consultare.</p>
+    <div class="meta"><span class="pill">Prototipo 0.1</span><span class="pill" id="pill-n">36 parametri</span><span class="pill">IFC 4.3 · IDS 1.0</span><span class="pill">JSON · Excel · IDS</span></div>
+  </div>
+  <svg viewBox="0 0 360 240" role="img" aria-label="Tre livelli: il nucleo nazionale, sopra le estensioni regionali, sopra i parametri di progetto">
+    <rect x="10" y="10" width="340" height="220" rx="22" style="fill:var(--surface);stroke:var(--line)"/>
+    <g style="font-family:var(--mono);font-size:11px;font-weight:700">
+      <rect x="40" y="160" width="280" height="44" rx="10" style="fill:var(--accent)"/>
+      <text x="180" y="187" text-anchor="middle" style="fill:var(--surface)">IT · nucleo nazionale</text>
+      <rect x="70" y="106" width="100" height="40" rx="10" style="fill:var(--a5s);stroke:var(--a5)"/>
+      <text x="120" y="130" text-anchor="middle" style="fill:var(--a5)">IT-BZ</text>
+      <rect x="190" y="106" width="100" height="40" rx="10" style="fill:var(--a5s);stroke:var(--a5);stroke-dasharray:4 3"/>
+      <text x="240" y="130" text-anchor="middle" style="fill:var(--a5)">IT-25 …</text>
+      <rect x="95" y="54" width="170" height="38" rx="10" style="fill:var(--a4s);stroke:var(--a4)"/>
+      <text x="180" y="77" text-anchor="middle" style="fill:var(--a4)">progetto</text>
+      <text x="180" y="36" text-anchor="middle" style="fill:var(--muted);font-weight:400;font-size:10px">IFC · bSDD · IDS</text>
+    </g>
+  </svg>
+</header>
+
+<section class="ch" id="c1">
+  <div class="ch-h"><span class="ch-n">1</span><h2>Il problema</h2></div>
+  <p class="lead">In Italia ogni committente pubblico che chiede il BIM scrive la sua struttura dati: quali parametri, con quali nomi, con quali valori. Chi progetta per più enti rifà ogni volta famiglie, template e mappature.</p>
+  <p>Gli esempi sono pubblici. La Provincia autonoma di Bolzano consegna agli affidatari una propria struttura dati con le schede informative, e nel 2026 ha presentato una guida e una piattaforma comuni per gli enti pubblici del territorio (programma BIM4PAB). Rete Ferroviaria Italiana ha pubblicato il suo «Modello Dati RFI» nel dizionario internazionale di buildingSMART. buildingSMART Italia ha pubblicato lì un dizionario per i sistemi di rivelazione e allarme incendio. Sono lavori seri, ma ognuno parla la sua lingua: lo stesso dato, per esempio il codice di un locale, ha un nome diverso in ogni capitolato.</p>
+  <p>Il costo lo pagano tutti. Gli studi traducono a mano i parametri da un ente all'altro. Gli enti piccoli, che non hanno un BIM manager, non sanno da dove partire. I dati consegnati non si possono confrontare tra un'opera e l'altra, nemmeno dentro la stessa regione. E tra trent'anni, quando quei modelli serviranno per la manutenzione, nessuno ricorderà che cosa voleva dire una sigla.</p>
+</section>
+
+<section class="ch" id="c2">
+  <div class="ch-h"><span class="ch-n">2</span><h2>La proposta</h2></div>
+  <p class="lead">Non tutti i parametri, ma un nucleo minimo uguale per tutta l'Italia, con le estensioni agganciate sopra.</p>
+  <div class="lv3">
+    <div><b>Nucleo nazionale (IT)</b><small>Pochi parametri che servono a ogni opera pubblica: chi è il committente, dov'è l'opera, che cosa contiene, chi ha installato che cosa. Uguali da Bolzano a Palermo.</small></div>
+    <div><b>Estensioni di regioni, province ed enti (IT-BZ, IT-25…)</b><small>Quello che serve a un territorio o a un ente in più. Non sostituiscono il nucleo: lo completano, e dove dicono la stessa cosa lo dichiarano.</small></div>
+    <div><b>Parametri di progetto</b><small>Quello che serve solo a quell'opera, scritto nel capitolato informativo.</small></div>
+  </div>
+  <p>Le regole che seguirei sono cinque.</p>
+  <p><b>1. Usare prima quello che esiste già.</b> Per identificare un progetto c'è il CUP (L. 3/2003, art. 11); per il comune, il codice ISTAT; per l'ente, il codice IPA; per la regione o la provincia, il codice ISO 3166-2 (IT-BZ, IT-25…), che segue lo stesso sistema in tutto il mondo. Non serve inventare un «codice regione»: basta scrivere quelli ufficiali, con la data dell'elenco usato, perché i codici cambiano (le province sarde, per esempio, sono state riordinate e i loro comuni rinumerati).</p>
+  <p><b>2. Dentro IFC, prima le proprietà standard.</b> Anno di costruzione, numero di piani, accessibilità di un locale, produttore, numero di serie, data di installazione: buildingSMART li ha già definiti nei Pset standard. Un parametro nazionale nuovo si crea solo quando IFC non ha niente, in un property set con il prefisso <code>IT_</code> (il prefisso <code>Pset_</code> è riservato a buildingSMART).</p>
+  <p><b>3. Ogni parametro è una scheda,</b> con un codice univoco, i nomi nelle lingue che servono (in Alto Adige almeno italiano e tedesco), la definizione, il tipo di dato, l'unità, i valori ammessi, la mappatura IFC, la fase in cui si compila e chi lo compila. È il metodo della ISO 23386 per i dizionari di proprietà collegati tra loro.</p>
+  <p><b>4. I requisiti si controllano da soli.</b> Lo stesso contenuto si scarica in IDS (Information Delivery Specification), lo standard di buildingSMART approvato il 1° giugno 2024: un file che i programmi di controllo leggono per dire, oggetto per oggetto, che cosa manca.</p>
+  <p><b>5. Un custode pubblico e le versioni.</b> Un dizionario senza chi lo mantiene invecchia in due anni. Servono un ente responsabile, un numero di versione, le richieste di modifica aperte a tutti e i parametri deprecati segnati come tali, non cancellati.</p>
+  <div class="box tip"><b>Capitolato prima del pGI</b><p>Lo standard va messo nel capitolato informativo, cioè nella richiesta del committente. Il piano di gestione informativa è la risposta dell'affidatario: se il capitolato ha sezioni e requisiti codificati, il pGI si allinea da solo.</p></div>
+</section>
+
+<section class="ch" id="c3">
+  <div class="ch-h"><span class="ch-n">3</span><h2>Il prototipo</h2></div>
+  <p class="lead">Un primo nucleo di 28 parametri e l'estensione di Bolzano ricostruita dagli estratti pubblici. Cerca per nome, in italiano, tedesco o inglese, per codice o per nome IFC.</p>
+  <form class="dp-bar" role="search" id="dp-form">
+    <label for="q" style="position:absolute;left:-9999px">Cerca nel dizionario</label>
+    <input id="q" type="search" placeholder="es. locale, CUP, Raumnummer, Pset_SpaceCommon…" autocomplete="off" spellcheck="false">
+    <button class="btn" type="submit">Cerca</button>
+  </form>
+  <div class="dp-f" id="f-lv"><span>Livello</span><button type="button" data-v="" aria-pressed="true">Tutti</button><button type="button" data-v="IT" aria-pressed="false">Nucleo IT</button><button type="button" data-v="IT-BZ" aria-pressed="false">Estensione IT-BZ</button></div>
+  <div class="dp-f" id="f-g"><span>Gruppo</span><button type="button" data-v="" aria-pressed="true">Tutti</button></div>
+  <div class="dp-f" id="f-f"><span>Fase</span><button type="button" data-v="" aria-pressed="true">Tutte</button><button type="button" data-v="PFTE" aria-pressed="false">PFTE</button><button type="button" data-v="PE" aria-pressed="false">Esecutivo</button><button type="button" data-v="AB" aria-pressed="false">As built</button><button type="button" data-v="GES" aria-pressed="false">Gestione</button></div>
+  <div class="dp-res">
+    <ul class="dp-list" id="dp-list" aria-label="Parametri"><li class="dp-empty">Carico il dizionario…</li></ul>
+    <div class="dp-card" id="dp-card" aria-live="polite"><p class="names">Scegli un parametro per vedere la scheda.</p></div>
+  </div>
+  <p class="foot">Legenda della mappatura IFC: <span class="badge b-std">standard IFC</span> proprietà, quantità o attributo già definiti da buildingSMART · <span class="badge b-it">IT_ nazionale</span> property set proposto qui · <span class="badge b-rel">relazione o classificazione</span> nessun testo da compilare, un collegamento tra oggetti.</p>
+</section>
+
+<section class="ch" id="c4">
+  <div class="ch-h"><span class="ch-n">4</span><h2>Com'è fatta una scheda</h2></div>
+  <p>Ogni parametro ha gli stessi campi, che corrispondono alle colonne dell'Excel e alle chiavi del JSON.</p>
+  <div class="tbl"><table>
+    <tr><th>Campo</th><th>Che cosa contiene</th><th>Esempio</th></tr>
+    <tr><td>Codice</td><td>Paese o territorio, gruppo, numero. Non cambia mai, anche se cambia il nome.</td><td><code>IT.SPC.001</code></td></tr>
+    <tr><td>Nomi</td><td>Italiano, tedesco, inglese: tutti ufficiali, nessuno «tradotto dopo».</td><td>Codice del locale · Raumnummer · Space number</td></tr>
+    <tr><td>Definizione</td><td>Che cosa vuol dire, in una o due frasi.</td><td>—</td></tr>
+    <tr><td>Tipo e unità</td><td>Il tipo di dato IFC e l'unità di misura.</td><td><code>IfcAreaMeasure</code>, m²</td></tr>
+    <tr><td>Valori ammessi</td><td>Elenco o regola che il controllo automatico verifica.</td><td><code>[0-9]{6}</code></td></tr>
+    <tr><td>Mappatura IFC</td><td>Dove sta il dato nel file IFC.</td><td><code>Pset_SpaceCommon.HandicapAccessible</code></td></tr>
+    <tr><td>Fasi</td><td>Da quale fase è richiesto (PFTE, esecutivo, as built, gestione).</td><td>PFTE</td></tr>
+    <tr><td>Chi lo compila</td><td>Ente, coordinatore BIM, progettista, impresa.</td><td>Impresa</td></tr>
+    <tr><td>Equivalente</td><td>Per le estensioni: il parametro del nucleo che dice la stessa cosa.</td><td><code>IT-BZ.SPC.002 → IT.SPC.001</code></td></tr>
+    <tr><td>Versione e stato</td><td>Quando è nato, se è ancora valido.</td><td>0.1 · proposta</td></tr>
+  </table></div>
+</section>
+
+<section class="ch" id="c5">
+  <div class="ch-h"><span class="ch-n">5</span><h2>Bolzano come estensione</h2></div>
+  <p class="lead">La struttura dati completa della Provincia non è pubblica: il capitolato informativo dice che sarà condivisa con l'affidatario. Pubblici sono gli estratti nelle tabelle del capitolato, ed è da lì che viene l'estensione IT-BZ del prototipo.</p>
+  <p>Gli otto parametri degli estratti mostrano bene come funzionerebbe l'aggancio. Il <b>codice vano</b> (Raumkodex) e il <b>codice livello</b> (Kodex Ebene) dicono la stessa cosa del codice del locale e del codice del piano del nucleo: nell'estensione restano con i loro nomi, ma dichiarano l'equivalente. <b>Disciplina, unità tecnologiche e classi di elementi tecnici</b> sono tre livelli di un'unica classificazione ad albero: in IFC diventano un riferimento di classificazione, non tre parametri di testo. Il <b>codice DIN277</b> è a sua volta una classificazione, e nel dizionario internazionale di buildingSMART esiste già un dizionario delle destinazioni d'uso secondo la DIN 277-2.</p>
+  <p>Due parametri, infine, raccontano i limiti dei parametri di testo. Il <b>materiale del telaio</b> in IFC si associa all'oggetto come materiale. Il <b>numero di ante</b> invece in IFC non esiste come numero: c'è solo il tipo di suddivisione della finestra (anta singola, doppia, tripla). Qui un parametro dell'estensione serve davvero.</p>
+  <p><button type="button" class="btn ghost" id="go-bz">Mostra l'estensione IT-BZ nel prototipo</button></p>
+</section>
+
+<section class="ch" id="c6">
+  <div class="ch-h"><span class="ch-n">6</span><h2>Una famiglia MEP</h2></div>
+  <div class="draft"><b>Anteprima</b><p>Qui va l'esempio con il Pset di una famiglia della libreria MEP di Marco: i suoi parametri, la loro mappatura sul nucleo e sui Pset standard, e quelli che resterebbero nell'estensione.</p></div>
+</section>
+
+<section class="ch" id="c7">
+  <div class="ch-h"><span class="ch-n">7</span><h2>E il resto del mondo?</h2></div>
+  <p class="lead">Un unico database mondiale sarebbe un'utopia. Una rete di dizionari nazionali collegati tra loro, invece, esiste già in parte.</p>
+  <p>Il buildingSMART Data Dictionary (bSDD) è un servizio gratuito di buildingSMART International che ospita dizionari pubblicati da organizzazioni indipendenti: classificazioni internazionali, standard nazionali, accordi di singole aziende. Applica i concetti della ISO 12006-3, della ISO 23386 e della ISO 23387, e le sue definizioni si possono richiamare dai modelli IFC e dai file IDS. Il 19 novembre 2026 elencava 445 dizionari, tra versioni attive, in prova e ritirate.</p>
+  <p>Alcuni paesi ci sono arrivati per strade diverse. In Germania il BIM-Portal del governo federale gestisce proprietà e gruppi di proprietà uniformi per le gare pubbliche, mantenuti da un ufficio coordinato dallo Stato, e genera da lì i requisiti informativi del committente. Nei Paesi Bassi la BIM basis ILS è un elenco breve di accordi minimi per scambiare i modelli, a cui aderiscono committenti, studi e imprese. Dall'Italia, nel bSDD, ci sono già il modello dati di RFI e il dizionario di buildingSMART Italia sui sistemi di rivelazione incendi.</p>
+  <p>Il pezzo che manca è il collegamento. Se ogni paese pubblica il suo nucleo nello stesso formato, una proprietà italiana può dichiarare di essere equivalente a una tedesca o olandese, come nel prototipo l'estensione di Bolzano dichiara l'equivalente nel nucleo italiano. Il codice ISO 3166-2 fa da indirizzo comune: IT-BZ, DE-BY, NL-NH. Sui prodotti, l'Unione europea va già in questa direzione con il passaporto digitale dei prodotti del regolamento (UE) 2024/1781.</p>
+  <p>Quindi non un mega-database, ma tanti dizionari piccoli, ciascuno con il suo custode, che si riconoscono tra loro. È meno affascinante di un archivio unico, ma regge.</p>
+</section>
+
+<section class="ch" id="c8">
+  <div class="ch-h"><span class="ch-n">8</span><h2>Le obiezioni</h2></div>
+  <p><b>«Le regioni e le province autonome hanno già i loro standard.»</b> Il nucleo non li sostituisce: chiede solo di dichiarare quali parametri dicono la stessa cosa. Bolzano terrebbe nomi e struttura, e guadagnerebbe la compatibilità con il resto d'Italia.</p>
+  <p><b>«Ci si è già provato.»</b> Il progetto INNOVance voleva creare la prima banca dati nazionale con tutte le informazioni tecniche, scientifiche ed economiche delle costruzioni. La lezione che ne traggo è sul perimetro: un dizionario di tutto è troppo grande per essere mantenuto. Un nucleo di poche decine di parametri sì.</p>
+  <p><b>«Chi paga la manutenzione?»</b> È la domanda giusta, e senza risposta la proposta non sta in piedi. Il costo di un piccolo ufficio che mantiene il nucleo è da confrontare con quello dei tanti studi che rifanno le stesse mappature a ogni gara.</p>
+  <p><b>«Le lingue.»</b> Un dizionario con nomi ufficiali in più lingue evita le traduzioni fatte all'ultimo momento, che in un territorio bilingue sono una fonte continua di errori nei capitolati, nei cartigli e nei modelli.</p>
+</section>
+
+<section class="ch" id="c9">
+  <div class="ch-h"><span class="ch-n">9</span><h2>Scarica</h2></div>
+  <p>Il prototipo è gratuito e si può usare liberamente. È una proposta di BIM News, non uno standard né un documento ufficiale.</p>
+  <div class="dl"><a class="btn" href="dati-pubblici/dizionario-dati-pubblici.xlsx" download>Excel</a><a class="btn ghost" href="dati-pubblici/dizionario.json" download>JSON</a><a class="btn ghost" href="dati-pubblici/IT-nucleo.ids" download>IDS · nucleo IT</a><a class="btn ghost" href="dati-pubblici/IT-BZ-estensione.ids" download>IDS · estensione IT-BZ</a></div>
+  <div class="tbl"><table>
+    <tr><th>File</th><th>Che cosa contiene</th></tr>
+    <tr><td>Excel</td><td>Foglio «Leggimi» e foglio «Parametri», una riga per parametro con tutti i campi della scheda. È una tabella: si filtra dalle intestazioni.</td></tr>
+    <tr><td>JSON</td><td>Gli stessi dati per chi scrive script (Dynamo, Python, pyRevit).</td></tr>
+    <tr><td>IDS</td><td>I requisiti in formato IDS 1.0, uno per il nucleo e uno per l'estensione, da aprire in un programma di controllo dei modelli. I parametri che sono relazioni (locale di appartenenza, materiale) e il sistema di riferimento restano solo nel dizionario. Le classificazioni sono richieste senza fissare il sistema, che il nucleo lascia da scegliere.</td></tr>
+  </table></div>
+  <div class="box tip"><b>Come sono stati controllati</b><p>Ogni mappatura IFC è stata confrontata con lo schema IFC 4.3 ADD2 (ISO 16739-1:2024) e con i modelli di property set distribuiti con IfcOpenShell 0.9: entità, attributi, property set, nomi e tipi delle proprietà. I file IDS sono stati riletti con lo schema XSD ufficiale e provati su un modello IFC di prova.</p></div>
+</section>
+
+<section class="ch" id="fonti">
+  <div class="ch-h"><span class="ch-n">≡</span><h2>Fonti</h2></div>
+  <ul class="src">
+    <li><a href="https://news.provincia.bz.it/it/news/building-information-modeling-la-provincia-definisce-gli-standard" rel="noopener">Provincia autonoma di Bolzano, «Building Information Modeling: la Provincia definisce gli standard», 13/04/2026</a></li>
+    <li><a href="https://concorsiawn.it/uploads/concorsi/scuola-fallmerayer-bressanone/documentazione-di-gara/capitolato-informativo-ci-bim.00.pdf" rel="noopener">Provincia autonoma di Bolzano, capitolato informativo della gara per la scuola Fallmerayer di Bressanone (PDF), §2.6 e §2.7, tabelle 5–7</a></li>
+    <li><a href="https://www.opencup.gov.it/portale/web/opencup/cos-%C3%A8-il-cup" rel="noopener">OpenCUP, «Cos'è il CUP»</a></li>
+    <li><a href="https://www.istat.it/classificazione/codici-dei-comuni-delle-province-e-delle-regioni/" rel="noopener">ISTAT, codici statistici delle unità amministrative territoriali</a></li>
+    <li><a href="https://indicepa.gov.it/ipa-dati/dataset/enti" rel="noopener">IndicePA, dataset «Enti» (campo Codice_IPA)</a></li>
+    <li><a href="https://www.iso.org/obp/ui/#iso:code:3166:IT" rel="noopener">ISO 3166-2:IT</a></li>
+    <li><a href="https://www.buildingsmart.org/users/services/buildingsmart-data-dictionary/" rel="noopener">buildingSMART International, buildingSMART Data Dictionary (bSDD)</a> · elenco dei dizionari letto dalle API del bSDD il 19/11/2026</li>
+    <li><a href="https://www.buildingsmart.org/standards/bsi-standards/information-delivery-specification-ids/" rel="noopener">buildingSMART International, Information Delivery Specification (IDS)</a></li>
+    <li><a href="https://www.iso.org/standard/82914.html" rel="noopener">ISO 7817-1:2024, livello di fabbisogno informativo</a></li>
+    <li><a href="https://via.bund.de/bim/" rel="noopener">BIM-Portal des Bundes (Germania)</a></li>
+    <li><a href="https://www.digigo.nu/ilsen-en-richtlijnen/bim-basis-ils/" rel="noopener">digiGO, BIM basis ILS (Paesi Bassi)</a></li>
+    <li><a href="https://www.innovance.it/" rel="noopener">Progetto INNOVance</a></li>
+    <li><a href="https://eur-lex.europa.eu/eli/reg/2024/1781/oj/eng" rel="noopener">Regolamento (UE) 2024/1781 (progettazione ecocompatibile e passaporto digitale dei prodotti)</a></li>
+    <li><a href="https://ifc43-docs.standards.buildingsmart.org/" rel="noopener">buildingSMART International, documentazione IFC 4.3</a> e <a href="https://ifcopenshell.org/" rel="noopener">IfcOpenShell</a>, usato per i controlli</li>
+  </ul>
+  <div class="contact" style="border:1px dashed var(--accent);border-radius:var(--r);padding:.9rem 1.1rem;background:var(--soft)"><b>Ne parliamo?</b> Questa è una proposta aperta: <a href="https://www.linkedin.com/in/marco-scigliuolo/" rel="noopener">scrivimi su LinkedIn</a>.</div>
+  <p class="foot">IFC, IDS e bSDD sono standard e servizi di buildingSMART International. Questo prototipo non è una pubblicazione di buildingSMART né di un ente pubblico.</p>
+</section>
+</main>
+</div>
+<script>
+(function(){
+var D,ALL=[],BY={},S={lv:"",g:"",f:"",q:""},CUR=null;
+function $(i){return document.getElementById(i)}
+function esc(t){return String(t==null?"":t).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[c]})}
+function norm(t){return String(t||"").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"")}
+var MK={pset:["b-std","standard IFC"],qto:["b-std","standard IFC"],attr:["b-std","standard IFC"],crs:["b-std","standard IFC"],cpset:["b-it","IT_ nazionale"],"class":["b-rel","classificazione"],rel:["b-rel","relazione"],mat:["b-rel","materiale"]};
+function pick(id,key){
+  $(id).addEventListener("click",function(e){var b=e.target.closest("button");if(!b)return;
+    [].forEach.call(this.querySelectorAll("button"),function(x){x.setAttribute("aria-pressed",x===b?"true":"false")});
+    S[key]=b.dataset.v;draw()});
+}
+function match(p){
+  if(S.lv&&p.lv!==S.lv)return false;
+  if(S.g&&p.g!==S.g)return false;
+  if(S.f&&p.f.indexOf(S.f)<0)return false;
+  if(S.q){var h=norm([p.code,p.it,p.de,p.en,p.d,p.ifc,p.ent,p.ex].join(" "));
+    var w=norm(S.q).split(/\s+/);for(var i=0;i<w.length;i++)if(w[i]&&h.indexOf(w[i])<0)return false}
+  return true;
+}
+function draw(){
+  var L=ALL.filter(match),h="",last="";
+  L.forEach(function(p){
+    if(p.lv!==last){last=p.lv;h+='<li class="lvh">'+esc(D.livelli[p.lv].it)+'</li>'}
+    h+='<li><button type="button" data-c="'+esc(p.code)+'"'+(CUR===p.code?' aria-current="true"':'')+'><code>'+esc(p.code)+'</code><b>'+esc(p.it)+'</b><small>'+esc(p.ifc)+'</small></button></li>';
+  });
+  $("dp-list").innerHTML=h||'<li class="dp-empty">Nessun parametro con questi filtri.</li>';
+  if(L.length&&(!CUR||!L.some(function(p){return p.code===CUR})))card(L[0].code,true);
+}
+function card(c,quiet){
+  var p=BY[c];if(!p)return;CUR=c;
+  [].forEach.call($("dp-list").querySelectorAll("button[data-c]"),function(b){b.toggleAttribute("aria-current",b.dataset.c===c);if(b.dataset.c===c)b.setAttribute("aria-current","true")});
+  var mk=MK[p.mk]||["b-std",""],fs=p.f.map(function(x){return '<abbr title="'+esc(D.fasi[x])+'">'+esc(x)+'</abbr>'}).join(", ");
+  var h='<span class="code">'+esc(p.code)+'</span> <span class="badge '+(p.lv==="IT"?"b-std":"b-bz")+'">'+esc(p.lv)+'</span>'+
+    '<h3>'+esc(p.it)+'</h3><p class="names"><span>DE</span>'+esc(p.de)+'<span>EN</span>'+esc(p.en)+'</p>'+
+    '<p>'+esc(p.d)+'</p><dl class="dp-kv">'+
+    '<dt>Mappatura IFC</dt><dd><span class="badge '+mk[0]+'">'+mk[1]+'</span><br><span class="m" style="font-family:var(--mono);font-size:.82rem">'+esc(p.ifc)+'</span></dd>'+
+    '<dt>Si applica a</dt><dd class="m">'+esc(p.ent)+'</dd>'+
+    (p.t?'<dt>Tipo</dt><dd class="m">'+esc(p.t)+(p.u?' · '+esc(p.u):'')+'</dd>':'')+
+    (p.v?'<dt>Valori</dt><dd>'+esc(p.v)+(p.rx?' · <code>'+esc(p.rx)+'</code>':'')+'</dd>':'')+
+    '<dt>Esempio</dt><dd>'+esc(p.ex)+'</dd>'+
+    '<dt>Fasi</dt><dd>'+fs+'</dd><dt>Chi lo compila</dt><dd>'+esc(p.chi)+'</dd>'+
+    (p.eq?'<dt>Equivalente</dt><dd><button type="button" class="dp-eq" data-eq="'+esc(p.eq)+'">'+esc(p.eq)+' · '+esc(BY[p.eq]?BY[p.eq].it:"")+'</button></dd>':'')+
+    '<dt>Fonte</dt><dd>'+(p.url?'<a href="'+esc(p.url)+'" rel="noopener">'+esc(p.src)+'</a>':esc(p.src))+'</dd>'+
+    '<dt>Versione</dt><dd>'+esc(p.ver)+' · '+esc(p.st)+'</dd></dl>';
+  $("dp-card").innerHTML=h;
+  if(!quiet)try{history.replaceState(null,"","#p="+encodeURIComponent(c))}catch(e){}
+}
+$("dp-list").addEventListener("click",function(e){var b=e.target.closest("button[data-c]");if(b)card(b.dataset.c)});
+$("dp-card").addEventListener("click",function(e){var b=e.target.closest("button[data-eq]");if(!b)return;
+  S.lv="";[].forEach.call($("f-lv").querySelectorAll("button"),function(x){x.setAttribute("aria-pressed",x.dataset.v===""?"true":"false")});draw();card(b.dataset.eq)});
+$("dp-form").addEventListener("submit",function(e){e.preventDefault();S.q=$("q").value.trim();draw()});
+$("q").addEventListener("input",function(){S.q=this.value.trim();draw()});
+$("go-bz").addEventListener("click",function(){var b=$("f-lv").querySelector('[data-v="IT-BZ"]');b.click();$("c3").scrollIntoView({behavior:"smooth"})});
+pick("f-lv","lv");pick("f-g","g");pick("f-f","f");
+fetch("dati-pubblici/dizionario.json",{cache:"no-cache"}).then(function(r){return r.json()}).then(function(d){
+  D=d;ALL=d.parametri;ALL.forEach(function(p){BY[p.code]=p});
+  $("pill-n").textContent=ALL.length+" parametri";
+  var g=$("f-g"),seen={};ALL.forEach(function(p){if(!seen[p.g]){seen[p.g]=1;var b=document.createElement("button");b.type="button";b.dataset.v=p.g;b.setAttribute("aria-pressed","false");b.textContent=d.gruppi[p.g];g.appendChild(b)}});
+  var m=/[#&]p=([^&]+)/.exec(location.hash);
+  draw();if(m&&BY[decodeURIComponent(m[1])])card(decodeURIComponent(m[1]),true);
+}).catch(function(){$("dp-list").innerHTML='<li class="dp-empty">Il dizionario non si è caricato. Si può scaricare in Excel o JSON qui sotto.</li>'});
+})();
+</script>
+</body>
+</html>

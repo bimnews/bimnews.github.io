@@ -18,6 +18,7 @@ a{color:var(--accent);text-underline-offset:3px}
 .btn{display:inline-flex;align-items:center;gap:.4rem;font-family:var(--mono);font-size:.78rem;font-weight:700;background:var(--accent);color:#fff;text-decoration:none;padding:.45rem .9rem;border-radius:999px;border:0;cursor:pointer}
 :root[data-theme="dark"] .btn{color:#0f1a2b}
 .btn.ghost{background:transparent;color:var(--accent);border:1px solid var(--line)}
+:root[data-theme="dark"] .btn.ghost{color:var(--accent)}
 .layout{max-width:84rem;margin:0 auto;padding:1.4rem max(16px,2vw) 4rem;display:grid;grid-template-columns:16rem minmax(0,1fr);gap:2.4rem;align-items:start}
 .toc{position:sticky;top:4rem;max-height:calc(100vh - 5rem);overflow:auto;font-size:.88rem;padding-right:.4rem}
 .toc b{display:block;font-family:var(--mono);font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:.5rem}
