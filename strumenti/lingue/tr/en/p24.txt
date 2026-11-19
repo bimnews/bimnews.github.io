@@ -1,0 +1,10 @@
+v1678	2 entries
+v1679	12 entries
+v1680	1 entry
+v1681	7 published · 14 entries
+v1682	What will become of our models, and our efforts, in 200 years? A drawing by Michelangelo can still be looked at today: will one of our files still open? I will start from research on the oldest design drawing that has come down to us, and on how it has really aged. It is linked to the article <a href="#studio" data-goto-art="man-pro-14">A hand-written IFC →</a>
+v1683	A hand-written IFC
+v1684	A small two-storey house written line by line in a text file, without any BIM software, that opens in Revit and passes validation.
+v1685	The IFC4 code explained pattern by pattern: units, spatial structure, chained placements, profiles and extrusions, openings and windows, relationships, properties and GlobalId. With a 3D model to rotate, references between lines to follow with a click, and a table showing where to look when a model arrives wrong.
+v1686	<span class="tag ok">Published</span><a class="man-btn" href="manuali/ifc-da-zero.html">Read the article</a><a class="man-btn ghost" href="manuali/ifc-da-zero.html#c1">3D model</a><a class="man-btn ghost" href="manuali/ifc-da-zero/casetta.ifc" download="">Download casetta.ifc</a>
+v1687	6 entries

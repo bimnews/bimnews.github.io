@@ -1,0 +1,747 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Un IFC scritto a mano · I manuali di BIM News</title>
+<meta name="description" content="Una casetta di due piani scritta riga per riga in un file di testo IFC4, che si apre in Revit e passa la validazione. Il codice spiegato pattern per pattern: unità, struttura spaziale, posizioni, forme, fori, relazioni, proprietà e GlobalId.">
+<link rel="stylesheet" href="manuale.css">
+<script>try{var t=localStorage.getItem("tema-2026");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+<style>
+pre.ifc{white-space:pre;font-size:.8rem}
+pre.ifc .r{color:#f0c06a;cursor:pointer;text-decoration:underline dotted;text-underline-offset:3px}
+pre.ifc .r:hover{background:rgba(240,192,106,.18);border-radius:3px}
+pre.ifc .e{color:#c9a7f5}
+pre.ifc .u{color:#8fa3bb}
+.peek{font-family:var(--mono);font-size:.78rem;background:var(--surface);border:1px solid var(--line);border-left:5px solid var(--a3);border-radius:10px;padding:.55rem .8rem;margin:-.5rem 0 1rem;overflow-x:auto;white-space:pre;display:none}
+.peek.on{display:block}
+.peek .r{color:var(--a3);cursor:pointer;text-decoration:underline dotted}
+.peek b{font-family:var(--body);font-weight:700;color:var(--muted);font-size:.74rem;display:block;white-space:normal;margin-bottom:.2rem}
+.tbl table{width:100%;border-collapse:collapse;font-size:.92rem}
+.tbl th,.tbl td{padding:.5rem .7rem;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+.tbl th{font-family:var(--mono);font-size:.72rem;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);background:var(--bg)}
+.tbl td code{white-space:nowrap}
+.tbl tr:last-child td{border-bottom:0}
+.viewer{position:relative;background:var(--surface);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);overflow:hidden;margin:1rem 0}
+.viewer canvas{display:block;width:100%;height:440px;touch-action:none;cursor:grab}
+.viewer canvas:active{cursor:grabbing}
+.vbar{display:flex;flex-wrap:wrap;gap:.4rem;padding:.6rem .8rem;border-top:1px solid var(--line);align-items:center}
+.vbar label{font-family:var(--mono);font-size:.74rem;display:inline-flex;gap:.3rem;align-items:center;padding:.25rem .6rem;border:1px solid var(--line);border-radius:999px;cursor:pointer;user-select:none}
+.vbar .sp{flex:1}
+.vinfo{font-family:var(--mono);font-size:.78rem;padding:.55rem .8rem;border-top:1px solid var(--line);min-height:2.4rem;color:var(--muted);white-space:pre-wrap}
+.vinfo b{color:var(--ink)}
+.vhint{position:absolute;top:.6rem;left:.8rem;font-family:var(--mono);font-size:.7rem;color:var(--muted);pointer-events:none}
+.kv{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.6rem;margin:1rem 0}
+.kv div{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:.7rem .8rem}
+.kv b{display:block;font-size:1.5rem;line-height:1.1}
+.kv span{font-size:.82rem;color:var(--muted)}
+.pat{display:inline-block;font-family:var(--mono);font-size:.7rem;letter-spacing:.06em;text-transform:uppercase;background:var(--a4s);color:var(--a4);border-radius:999px;padding:.15rem .6rem;margin-bottom:.4rem}
+details.full{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:.6rem .9rem;margin:1rem 0}
+details.full summary{cursor:pointer;font-weight:700}
+.dia{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:.6rem;margin:.6rem 0 1rem}
+.dia svg{width:100%;height:auto;display:block}
+.ok-v{color:var(--a2);font-weight:700}.no-v{color:var(--a3);font-weight:700}
+.btn.ghost,:root[data-theme="dark"] .btn.ghost{color:var(--accent)}
+.cap{font-size:.86rem;color:var(--muted);margin:-.4rem 0 1rem}
+@media (max-width:640px){.kv{grid-template-columns:repeat(2,minmax(0,1fr))}.viewer canvas{height:340px}}
+@media print{.viewer,.peek{display:none!important}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 10 5 0 10z" style="fill:var(--muted)"/></marker><marker id="ara" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 10 5 0 10z" style="fill:var(--accent)"/></marker></defs></svg>
+<div class="topbar"><div class="in"><a class="back" href="../#studio">← BIM News · Nello studio</a><span class="sp"></span><a class="btn ghost noprint" href="#c1">Guarda la casetta in 3D</a><a class="btn noprint" href="ifc-da-zero/casetta.ifc" download="casetta.ifc">Scarica casetta.ifc</a></div></div>
+<div class="layout">
+<nav class="toc" aria-label="Indice">
+  <b>Indice</b>
+  <ol>
+    <li><a href="#c1">1 · L'esperimento</a></li>
+    <li><a href="#c2">2 · Che cos'è un file IFC</a></li>
+    <li><a href="#c3">3 · La grammatica di una riga</a></li>
+    <li><a href="#c4">4 · Le fondamenta: unità e contesto</a></li>
+    <li><a href="#c5">5 · L'albero dei contenitori</a></li>
+    <li><a href="#c6">6 · Le posizioni a catena</a></li>
+    <li><a href="#c7">7 · La forma: profilo ed estrusione</a></li>
+    <li><a href="#c8">8 · L'oggetto: dare un nome alla forma</a></li>
+    <li><a href="#c9">9 · Forme libere: timpano, scala, tetto</a></li>
+    <li><a href="#c10">10 · Il foro e il serramento</a></li>
+    <li><a href="#c11">11 · Dove sta, di che cos'è, che proprietà ha</a></li>
+    <li><a href="#c12">12 · Il GlobalId</a></li>
+    <li><a href="#c13">13 · La prova</a></li>
+    <li><a href="#c14">14 · Considerazioni finali</a></li>
+    <li><a href="#fonti">Fonti</a></li>
+  </ol>
+</nav>
+<main>
+<header class="cover">
+  <div>
+    <span class="kick">I manuali di BIM News · Nello studio</span>
+    <h1>Un IFC scritto a mano</h1>
+    <p>Una casetta di due piani scritta riga per riga in un file di testo, senza nessun software BIM, che si apre in Revit e passa la validazione. E poi il codice, spiegato pattern per pattern, per capire una volta per tutte che cosa c'è dentro un file IFC.</p>
+    <div class="meta"><span class="pill">IFC4 ADD2 TC1</span><span class="pill">404 righe · 311 entità</span><span class="pill">file scaricabile</span><span class="pill">Edizione novembre 2026</span></div>
+  </div>
+  <svg viewBox="0 0 360 240" role="img" aria-label="Una riga di testo IFC che diventa un muro">
+    <rect class="s-as" x="10" y="10" width="340" height="220" rx="22"/>
+    <rect x="28" y="30" width="170" height="104" rx="10" style="fill:var(--code)"/>
+    <text x="40" y="54" style="font-family:var(--mono);font-size:10px;fill:#e3ebf7">#122=IFCRECTANGLE…</text>
+    <text x="40" y="74" style="font-family:var(--mono);font-size:10px;fill:#e3ebf7">#123=IFCEXTRUDED…</text>
+    <text x="40" y="94" style="font-family:var(--mono);font-size:10px;fill:#7fb0ec">#203=IFCWALL(…)</text>
+    <text x="40" y="114" style="font-family:var(--mono);font-size:10px;fill:#8fa3bb">/* riga per riga */</text>
+    <path d="M200 84C226 84 232 104 236 116" class="s-al" marker-end="url(#ara)"/>
+    <g transform="translate(290 180)">
+      <path d="M0 40 -60 10 -60 -40 0 -10Z" class="s-w"/>
+      <path d="M0 40 60 10 60 -40 0 -10Z" style="fill:var(--line);stroke:var(--line)"/>
+      <path d="M0 -10 60 -40 30 -66Z" style="fill:var(--line);stroke:var(--line)"/>
+      <path d="M-66 -37 0 -6 30 -70 -36 -101Z" class="s-3" style="opacity:.85"/>
+      <path d="M-24 22 -14 27 -14 3 -24 -2Z" class="s-3s" style="stroke:var(--a3)"/>
+      <path d="M-50 -2 -38 4 -38 -10 -50 -16Z M18 18 32 11 32 -3 18 4Z" class="s-a" style="opacity:.6"/>
+    </g>
+    <text class="s-tm" x="40" y="168">testo semplice</text>
+    <text class="s-tm" x="40" y="186">ISO 10303-21</text>
+    <text class="s-tb" x="214" y="214">modello BIM</text>
+  </svg>
+</header>
+
+<!-- ============================================================ 1 -->
+<section class="ch" id="c1">
+  <div class="ch-h"><span class="ch-n">1</span><h2>L'esperimento</h2></div>
+  <p class="lead">Un file IFC non è una scatola nera: è testo. Per dimostrarlo ho scritto da zero, in un editor di testo, una casetta di due piani completa di muri, solai, tetto, scala, porta, finestre, locali, materiali e proprietà. Nessun software BIM l'ha generata: è stata scritta come si scrive una lettera, una riga dopo l'altra.</p>
+  <div class="kv">
+    <div><b>404</b><span>righe di testo</span></div>
+    <div><b>311</b><span>entità numerate</span></div>
+    <div><b>20 KB</b><span>peso del file</span></div>
+    <div><b>0</b><span>errori di validazione</span></div>
+  </div>
+  <p>Il risultato si apre in Revit, dove è stato provato, e passa il controllo di IfcOpenShell sullo schema e sulle sue regole (capitolo 13). Qui sotto puoi girarlo, nascondere il tetto e il primo piano, vedere i fori; un clic su un oggetto mostra la sua riga nel file.</p>
+  <div class="viewer noprint" id="viewer">
+    <span class="vhint">trascina per ruotare · rotellina o due dita per lo zoom · clic su un oggetto</span>
+    <canvas id="cv" aria-label="Modello 3D della casetta, calcolato dal file IFC"></canvas>
+    <div class="vbar">
+      <label><input type="checkbox" data-l="tetto" checked> Tetto</label>
+      <label><input type="checkbox" data-l="p1" checked> Primo piano</label>
+      <label><input type="checkbox" data-l="locali"> Locali</label>
+      <label><input type="checkbox" data-l="fori"> Fori</label>
+      <span class="sp"></span>
+      <button class="btn ghost" type="button" id="vreset">Vista iniziale</button>
+    </div>
+    <div class="vinfo" id="vinfo">Clicca un muro, una finestra o la scala.</div>
+  </div>
+  <p class="cap">La geometria del visualizzatore è calcolata da IfcOpenShell leggendo il file IFC, fori compresi: quello che vedi è esattamente quello che c'è scritto.</p>
+  <h3>Che cosa contiene la casetta</h3>
+  <div class="tbl"><table>
+    <tr><th>Parte</th><th>Misure</th><th>Classe IFC</th></tr>
+    <tr><td>Pianta</td><td>8,00 × 6,00 m esterni, muri da 30 cm</td><td><code>IfcWall</code> × 8</td></tr>
+    <tr><td>Piani</td><td>piano terra a 0,00 m, primo piano a 3,00 m; altezza dei muri 2,80 m</td><td><code>IfcBuildingStorey</code> × 2</td></tr>
+    <tr><td>Solai</td><td>platea e solaio da 20 cm, con il foro per la scala</td><td><code>IfcSlab</code> × 2</td></tr>
+    <tr><td>Tetto</td><td>due falde con pendenza del 50 %, gronda sporgente 30 cm, colmo a 7,55 m</td><td><code>IfcRoof</code> + <code>IfcSlab</code> × 2</td></tr>
+    <tr><td>Scala</td><td>rampa unica larga 90 cm, 16 alzate da 18,75 cm e pedate da 25 cm</td><td><code>IfcStair</code></td></tr>
+    <tr><td>Serramenti</td><td>porta 1,00 × 2,10 m; 6 finestre 1,20 × 1,20 m con davanzale a 90 cm</td><td><code>IfcDoor</code>, <code>IfcWindow</code> × 6</td></tr>
+    <tr><td>Fori</td><td>uno per ogni serramento, più quello della scala nel solaio</td><td><code>IfcOpeningElement</code> × 8</td></tr>
+    <tr><td>Locali</td><td>«Zona giorno» e «Zona notte», 7,40 × 5,40 m</td><td><code>IfcSpace</code> × 2</td></tr>
+    <tr><td>Dati</td><td>4 materiali, 6 colori, 5 gruppi di proprietà standard</td><td><code>IfcMaterial</code>, <code>IfcPropertySet</code></td></tr>
+  </table></div>
+  <h3>Perché IFC4</h3>
+  <p>Ho scelto <b>IFC4 ADD2 TC1</b> (versione 4.0.2.1, pubblicata come ISO 16739-1:2018), che nel file si dichiara con <code>FILE_SCHEMA(('IFC4'))</code>. Oggi è la versione che i software per l'edilizia leggono e scrivono in modo più affidabile. Rispetto a IFC 2x3 permette due cose usate qui: un elenco di punti compatto per la scala e i colori agganciati direttamente alla geometria. IFC 4.3 (ISO 16739-1:2024, che ha sostituito la norma del 2018) aggiunge soprattutto le infrastrutture (strade, ferrovie, ponti), che per una casa non servono. Gli stessi pattern valgono in tutte e tre le versioni, con piccole differenze di attributi.</p>
+  <div class="box tip"><b>Come leggere questo articolo</b><p>Ogni capitolo dal 4 al 11 spiega un <b>pattern</b>: un gruppo di righe che si ripete ogni volta che si fa la stessa cosa (posizionare, dare forma, bucare, collegare). Nei blocchi di codice i numeri come <code>#123</code> sono cliccabili: sotto il blocco compare la riga a cui puntano, e da lì puoi continuare a seguire la catena.</p></div>
+</section>
+
+<!-- ============================================================ 2 -->
+<section class="ch" id="c2">
+  <div class="ch-h"><span class="ch-n">2</span><h2>Che cos'è un file IFC</h2></div>
+  <p class="lead">Dietro la sigla ci sono due cose distinte: lo <b>schema</b>, cioè il vocabolario, e il <b>file</b>, cioè un testo scritto con quel vocabolario.</p>
+  <div class="grid2">
+    <div class="card"><h4>Lo schema (ISO 16739-1)</h4><p>Definisce le parole: che cos'è un <code>IfcWall</code>, quali attributi ha e in che ordine, quali sono obbligatori, quali regole devono rispettare. È scritto nel linguaggio EXPRESS ed è lo stesso per tutti i software.</p></div>
+    <div class="card"><h4>Il file (ISO 10303-21)</h4><p>È l'elenco degli oggetti di un progetto preciso, uno per riga, scritto con le parole dello schema. Il formato si chiama STEP Physical File, o «file Part 21»: è testo semplice, leggibile con qualunque editor.</p></div>
+  </div>
+  <p>Per un ingegnere strutturista c'è un paragone immediato: il file di input di un programma agli elementi finiti. Prima i nodi, ognuno con un numero e tre coordinate; poi le aste, ognuna con un numero e i numeri dei due nodi che collega; poi le sezioni, i materiali, i carichi. Nessuna riga contiene «tutto»: ogni riga contiene un pezzo e <b>rimanda ad altri pezzi con il loro numero</b>. Un file IFC funziona esattamente così. Il muro non contiene le sue coordinate: contiene il numero della riga dove sta la sua posizione e il numero della riga dove sta la sua forma.</p>
+  <h3>Le quattro parti del file</h3>
+<pre class="ifc"><code>ISO-10303-21;
+HEADER;
+FILE_DESCRIPTION(('Casetta di due piani scritta a mano, riga per riga, con un editor di testo'),'2;1');
+FILE_NAME('casetta.ifc','2026-11-19T12:00:00',('BIM News'),('bimnews.github.io'),'nessuno: scritto a mano','Blocco note','');
+FILE_SCHEMA(('IFC4'));
+ENDSEC;
+DATA;
+   … 311 righe di entità …
+ENDSEC;
+END-ISO-10303-21;</code></pre>
+  <div class="tbl"><table>
+    <tr><th>Riga</th><th>Che cosa dice</th></tr>
+    <tr><td><code>ISO-10303-21;</code></td><td>«Questo è un file STEP». È la prima parola che un programma legge per capire il formato.</td></tr>
+    <tr><td><code>HEADER;</code> … <code>ENDSEC;</code></td><td>L'intestazione, come il cartiglio di una tavola: descrizione, nome del file, data, autore, organizzazione, programma che l'ha prodotto. In <code>'2;1'</code> il 2 indica il livello di implementazione del formato.</td></tr>
+    <tr><td><code>FILE_SCHEMA(('IFC4'))</code></td><td>La riga più importante dell'intestazione: dice con quale vocabolario leggere il resto. Con <code>'IFC2X3'</code> o <code>'IFC4X3_ADD2'</code> le stesse righe verrebbero lette secondo un altro schema.</td></tr>
+    <tr><td><code>DATA;</code> … <code>ENDSEC;</code></td><td>Il contenuto vero: le entità numerate.</td></tr>
+    <tr><td><code>END-ISO-10303-21;</code></td><td>La fine del file. Se manca, il file è troncato.</td></tr>
+  </table></div>
+  <div class="box bim"><b>Il primo esperimento che puoi fare</b><p>Apri un qualunque IFC esportato dal tuo software con Blocco note, o con un editor che regge file grandi. Le prime righe dicono quale programma l'ha prodotto e con quale schema: è il primo controllo da fare quando un modello arriva da fuori e «non si legge bene».</p></div>
+</section>
+
+<!-- ============================================================ 3 -->
+<section class="ch" id="c3">
+  <div class="ch-h"><span class="ch-n">3</span><h2>La grammatica di una riga</h2></div>
+  <p class="lead">Tutte le 311 righe della sezione DATA hanno la stessa forma: un numero, un tipo, e tra parentesi l'elenco dei valori nell'ordine fissato dallo schema.</p>
+<pre class="ifc"><code>#203=IFCWALL('3ec2psCj55wgXFGQk4WD7C',$,'Muro sud PT',$,$,#200,#202,$,.SOLIDWALL.);</code></pre>
+  <p>Si legge così: «l'entità numero 203 è un muro; il suo identificativo è <code>3ec2…</code>, non ha storia del proprietario, si chiama <i>Muro sud PT</i>, non ha descrizione né tipo libero, sta dove dice la riga 200, ha la forma descritta alla riga 202, non ha codice, ed è un muro pieno». Nessun valore ha un'etichetta: conta solo la <b>posizione</b> nell'elenco. Per sapere che il sesto valore è la posizione bisogna guardare lo schema, che per <code>IfcWall</code> elenca nove attributi in quest'ordine (capitolo 8).</p>
+  <h3>I dieci segni da conoscere</h3>
+  <div class="tbl"><table>
+    <tr><th>Segno</th><th>Esempio dal file</th><th>Significato</th></tr>
+    <tr><td><code>#n=</code></td><td><code>#203=IFCWALL(…)</code></td><td>Numero dell'entità, unico nel file. Non ha bisogno di essere consecutivo: nella casetta ho usato i blocchi 1, 10, 20, 40… per ordinare il file per argomento.</td></tr>
+    <tr><td><code>#n</code> come valore</td><td><code>#200</code></td><td>Riferimento a un'altra entità. Può puntare anche a una riga più in basso: <code>#426</code> usa <code>#427</code>, scritta dopo. Per questo un programma deve leggere tutto il file prima di interpretarlo.</td></tr>
+    <tr><td><code>$</code></td><td><code>'Muro sud PT',$,$</code></td><td>Valore non dato. Si può usare solo per gli attributi facoltativi.</td></tr>
+    <tr><td><code>*</code></td><td><code>IFCSIUNIT(*,…)</code></td><td>Valore che non si scrive perché lo calcola lo schema (attributo derivato). Le dimensioni fisiche del metro, per esempio, le conosce già.</td></tr>
+    <tr><td><code>'testo'</code></td><td><code>'Porta d''ingresso'</code></td><td>Stringa tra apici. L'apostrofo dentro il testo si raddoppia.</td></tr>
+    <tr><td><code>2.8</code>, <code>0.</code></td><td><code>2.8</code>, <code>1.E-05</code></td><td>Numeri reali, sempre con il <b>punto</b> decimale, anche quando sono interi (<code>0.</code>). Una virgola al posto del punto spezza il numero in due valori.</td></tr>
+    <tr><td><code>16</code></td><td><code>IFCCOUNTMEASURE(16)</code></td><td>Numero intero, senza punto.</td></tr>
+    <tr><td><code>.TESTO.</code></td><td><code>.SOLIDWALL.</code>, <code>.T.</code></td><td>Valore scelto da un elenco chiuso (enumerazione) o booleano: <code>.T.</code> vero, <code>.F.</code> falso.</td></tr>
+    <tr><td><code>( … )</code></td><td><code>(#28,#30)</code></td><td>Elenco di valori, anche annidato: <code>((0.,0.),(0.,0.1875))</code> è un elenco di coppie.</td></tr>
+    <tr><td><code>/* … */</code></td><td><code>/* 7. PIANO TERRA */</code></td><td>Commento, ignorato dai programmi. I software di solito non li scrivono, ma il formato li ammette: nella casetta dividono il file in capitoli.</td></tr>
+  </table></div>
+  <div class="box warn"><b>Le lettere accentate</b><p>Il formato accetta direttamente solo i caratteri ASCII. Una «à» va codificata con una sequenza speciale (per esempio <code>\X2\00E0\X0\</code>); per tenere il file leggibile ho scritto i nomi senza accenti. È anche il motivo per cui a volte, in un IFC esportato, i nomi italiani o tedeschi compaiono con sequenze strane: non sono errori, è la codifica.</p></div>
+</section>
+
+<!-- ============================================================ 4 -->
+<section class="ch" id="c4">
+  <div class="ch-h"><span class="ch-n">4</span><h2>Le fondamenta: unità e contesto</h2></div>
+  <span class="pat">Pattern · fondamenta</span>
+  <p class="lead">Prima di disegnare qualunque cosa servono tre accordi: i mattoni della geometria, le unità di misura e il «foglio» su cui si disegna.</p>
+<pre class="ifc"><code>#1=IFCCARTESIANPOINT((0.,0.,0.));
+#2=IFCDIRECTION((0.,0.,1.));
+#3=IFCDIRECTION((1.,0.,0.));
+#4=IFCDIRECTION((0.,1.,0.));
+#5=IFCAXIS2PLACEMENT3D(#1,$,$);
+#6=IFCAXIS2PLACEMENT3D(#1,#3,#4);</code></pre>
+  <p>L'origine <code>#1</code> e le tre direzioni degli assi sono scritte una volta sola e riusate in tutto il file. <code>#5</code> è un sistema di riferimento con l'origine in <code>#1</code> e gli assi standard: i due <code>$</code> significano «asse Z verticale, asse X verso est», i valori predefiniti. <code>#6</code> è lo stesso sistema ruotato, che serve per disegnare in verticale (capitolo 6).</p>
+<pre class="ifc"><code>#10=IFCSIUNIT(*,.LENGTHUNIT.,$,.METRE.);
+#11=IFCSIUNIT(*,.AREAUNIT.,$,.SQUARE_METRE.);
+#12=IFCSIUNIT(*,.VOLUMEUNIT.,$,.CUBIC_METRE.);
+#13=IFCSIUNIT(*,.PLANEANGLEUNIT.,$,.RADIAN.);
+#14=IFCUNITASSIGNMENT((#10,#11,#12,#13));
+#15=IFCGEOMETRICREPRESENTATIONCONTEXT($,'Model',3,1.E-05,#5,$);
+#16=IFCGEOMETRICREPRESENTATIONSUBCONTEXT('Body','Model',*,*,*,*,#15,$,.MODEL_VIEW.,$);</code></pre>
+  <div class="tbl"><table>
+    <tr><th>Riga</th><th>Che cosa stabilisce</th></tr>
+    <tr><td><code>#10</code>–<code>#13</code></td><td>Le unità del Sistema Internazionale: metro, metro quadrato, metro cubo, radiante. Il terzo valore <code>$</code> è il prefisso: scrivendo <code>.MILLI.</code> la lunghezza diventerebbe il millimetro, e ogni <code>2.8</code> del file varrebbe 2,8 mm. È esattamente l'origine degli errori 1:1000 tra modelli in metri e in millimetri.</td></tr>
+    <tr><td><code>#14</code></td><td>Raccoglie le unità del progetto. Da qui in poi ogni numero senza unità esplicita si legge in queste unità.</td></tr>
+    <tr><td><code>#15</code></td><td>Il contesto geometrico: un modello (<code>'Model'</code>) in 3 dimensioni, con precisione 0,01 mm (1·10⁻⁵ m), riferito al sistema <code>#5</code>. L'ultimo <code>$</code> è il nord: assente vuol dire che il nord è l'asse Y. Qui si aggancerebbe anche la georeferenziazione (<code>IfcMapConversion</code>).</td></tr>
+    <tr><td><code>#16</code></td><td>Un sotto-contesto chiamato <code>'Body'</code>: il «livello» su cui stanno i solidi 3D. Un software può avere anche <code>'Axis'</code> per le linee d'asse o <code>'FootPrint'</code> per le impronte in pianta; la casetta usa solo il corpo.</td></tr>
+  </table></div>
+  <div class="box bim"><b>Perché conta</b><p>Unità e contesto sono dichiarati una volta per tutto il progetto, e ogni geometria vi fa riferimento. Se un modello arriva «mille volte troppo grande», il primo posto da guardare è la riga <code>IFCSIUNIT</code> della lunghezza. La georeferenziazione e il nord sono spiegati nel manuale <a href="georeferenziazione-ifc.html">Georeferenziazione BIM tra software diversi</a>.</p></div>
+</section>
+
+<!-- ============================================================ 5 -->
+<section class="ch" id="c5">
+  <div class="ch-h"><span class="ch-n">5</span><h2>L'albero dei contenitori</h2></div>
+  <span class="pat">Pattern · aggregazione</span>
+  <p class="lead">Ogni IFC ha la stessa ossatura: un progetto che contiene un sito, che contiene un edificio, che contiene i piani. È la struttura spaziale, e senza di lei i software non sanno dove mettere gli oggetti.</p>
+<pre class="ifc"><code>#20=IFCPROJECT('36WzZYQl54x9zzTDASaEFK',$,'Casetta IFC',$,$,'Casetta di due piani scritta a mano',$,(#15),#14);
+#21=IFCLOCALPLACEMENT($,#5);
+#22=IFCSITE('1KgWwz7SfEbhTlbCglDDvs',$,'Lotto',$,$,#21,$,$,.ELEMENT.,$,$,$,$,$);
+#23=IFCLOCALPLACEMENT(#21,#5);
+#24=IFCBUILDING('1kJ9ay4eH3UhB8Od3tHA1U',$,'Casetta',$,$,#23,$,$,.ELEMENT.,$,$,$);
+#25=IFCCARTESIANPOINT((0.,0.,3.));
+#26=IFCAXIS2PLACEMENT3D(#25,$,$);
+#27=IFCLOCALPLACEMENT(#23,#5);
+#28=IFCBUILDINGSTOREY('035K_7$VT34A7rO3dawyjH',$,'Piano terra',$,$,#27,$,$,.ELEMENT.,0.);
+#29=IFCLOCALPLACEMENT(#23,#26);
+#30=IFCBUILDINGSTOREY('3FlKffZcjElOBKkI0zWHp6',$,'Primo piano',$,$,#29,$,$,.ELEMENT.,3.);
+#31=IFCRELAGGREGATES('3KnaxpqYTB6A1GkdZ2XwKA',$,'Progetto > sito',$,#20,(#22));
+#32=IFCRELAGGREGATES('16DsCY4MvAs9RPhJ_BJu8y',$,'Sito > edificio',$,#22,(#24));
+#33=IFCRELAGGREGATES('3OMKhQbE9EwuL2f2WZ$Jnp',$,'Edificio > piani',$,#24,(#28,#30));</code></pre>
+  <p>Il progetto <code>#20</code> è l'unico oggetto senza posizione: è il contenitore di tutto, e porta con sé il contesto <code>(#15)</code> e le unità <code>#14</code> (ultimi due valori). Sito, edificio e piani hanno invece ciascuno la propria posizione. Il primo piano ha la posizione <code>#29</code>, che sposta tutto di 3 m in alto: da qui in poi tutto ciò che sta al primo piano si disegna a quota zero, e il piano lo solleva da solo.</p>
+  <div class="tbl"><table>
+    <tr><th>Attributo di <code>IfcBuildingStorey</code></th><th>Valore al primo piano</th><th>Significato</th></tr>
+    <tr><td>1 · GlobalId</td><td><code>'3FlK…'</code></td><td>Identità permanente (capitolo 12).</td></tr>
+    <tr><td>2 · OwnerHistory</td><td><code>$</code></td><td>Chi l'ha creato e quando. In IFC4 è facoltativo: un file scritto a mano non ne ha bisogno.</td></tr>
+    <tr><td>3 · Name</td><td><code>'Primo piano'</code></td><td>Il nome che compare nei software.</td></tr>
+    <tr><td>4 · Description, 5 · ObjectType</td><td><code>$</code>, <code>$</code></td><td>Descrizione e tipo libero.</td></tr>
+    <tr><td>6 · ObjectPlacement</td><td><code>#29</code></td><td>Dove sta: 3 m sopra l'edificio.</td></tr>
+    <tr><td>7 · Representation</td><td><code>$</code></td><td>Un piano non ha una forma propria.</td></tr>
+    <tr><td>8 · LongName</td><td><code>$</code></td><td>Nome esteso.</td></tr>
+    <tr><td>9 · CompositionType</td><td><code>.ELEMENT.</code></td><td>Un piano intero (non una parte di piano né un insieme di piani).</td></tr>
+    <tr><td>10 · Elevation</td><td><code>3.</code></td><td>La quota del piano, come informazione. La posizione vera la dà <code>#29</code>: le due devono coincidere.</td></tr>
+  </table></div>
+  <h3>Le relazioni sono oggetti</h3>
+  <p>Il sito non ha un campo «edificio», e l'edificio non ha un campo «piani». Il legame è una riga a sé, <code>IFCRELAGGREGATES</code>, che dice «l'oggetto <code>#24</code> è composto da <code>#28</code> e <code>#30</code>». È una scelta di fondo di IFC: le relazioni sono <b>oggetti indipendenti</b>, con un loro identificativo e un loro nome. Il vantaggio è che una relazione si può aggiungere, togliere o cambiare senza toccare gli oggetti collegati, e che una sola relazione può legare un oggetto a molti altri. È lo stesso principio di una tabella di collegamento in un database.</p>
+  <div class="dia"><svg viewBox="0 0 720 150" role="img" aria-label="Progetto, sito, edificio e piani collegati da relazioni di aggregazione">
+    <g class="s-t">
+      <rect class="s-w" x="10" y="50" width="120" height="46" rx="10"/><text x="70" y="70" text-anchor="middle" class="s-tb">IfcProject</text><text x="70" y="87" text-anchor="middle" class="s-tm">#20</text>
+      <rect class="s-w" x="200" y="50" width="110" height="46" rx="10"/><text x="255" y="70" text-anchor="middle" class="s-tb">IfcSite</text><text x="255" y="87" text-anchor="middle" class="s-tm">#22</text>
+      <rect class="s-w" x="380" y="50" width="120" height="46" rx="10"/><text x="440" y="70" text-anchor="middle" class="s-tb">IfcBuilding</text><text x="440" y="87" text-anchor="middle" class="s-tm">#24</text>
+      <rect class="s-w" x="570" y="10" width="140" height="46" rx="10"/><text x="640" y="30" text-anchor="middle" class="s-tb">Piano terra</text><text x="640" y="47" text-anchor="middle" class="s-tm">#28</text>
+      <rect class="s-w" x="570" y="92" width="140" height="46" rx="10"/><text x="640" y="112" text-anchor="middle" class="s-tb">Primo piano</text><text x="640" y="129" text-anchor="middle" class="s-tm">#30</text>
+    </g>
+    <path class="s-ar" d="M130 73H198"/><path class="s-ar" d="M310 73H378"/><path class="s-ar" d="M500 73C535 73 535 33 568 33"/><path class="s-ar" d="M500 73C535 73 535 115 568 115"/>
+    <g class="s-tm"><text x="140" y="64">#31</text><text x="320" y="64">#32</text><text x="512" y="64">#33</text></g>
+  </svg></div>
+  <p class="cap">Ogni freccia è una riga <code>IFCRELAGGREGATES</code>, non un attributo degli oggetti.</p>
+</section>
+
+<!-- ============================================================ 6 -->
+<section class="ch" id="c6">
+  <div class="ch-h"><span class="ch-n">6</span><h2>Le posizioni a catena</h2></div>
+  <span class="pat">Pattern · posizionamento</span>
+  <p class="lead">In IFC nessun oggetto conosce le proprie coordinate assolute. Ognuno dice soltanto dove sta <b>rispetto a un altro</b>: la finestra rispetto al suo foro, il foro rispetto al muro, il muro rispetto al piano, il piano rispetto all'edificio.</p>
+  <p>Gli ingredienti sono tre entità, sempre le stesse:</p>
+  <div class="tbl"><table>
+    <tr><th>Entità</th><th>Attributi</th><th>A che cosa serve</th></tr>
+    <tr><td><code>IfcCartesianPoint</code></td><td>le coordinate</td><td>Un punto: <code>(7.7,0.3,0.)</code>.</td></tr>
+    <tr><td><code>IfcAxis2Placement3D</code></td><td>Location, Axis, RefDirection</td><td>Un sistema di riferimento: l'origine, la direzione dell'asse Z locale e quella dell'asse X locale. L'asse Y non si scrive: è perpendicolare agli altri due (regola della mano destra).</td></tr>
+    <tr><td><code>IfcLocalPlacement</code></td><td>PlacementRelTo, RelativePlacement</td><td>«Sto in questo sistema di riferimento, misurato rispetto alla posizione di quest'altro oggetto». Con <code>$</code> al primo posto la posizione è assoluta.</td></tr>
+  </table></div>
+  <h3>Esempio: dov'è la finestra est del piano terra?</h3>
+<pre class="ifc"><code>#538=IFCWINDOW('1Nm5r05rLB7gXIELQdA_1A',$,'Finestra est PT',$,$,#535,#537,$,1.2,1.2,.WINDOW.,.SINGLE_PANEL.,$);
+#535=IFCLOCALPLACEMENT(#530,#5);
+#530=IFCLOCALPLACEMENT(#212,#187);
+#212=IFCLOCALPLACEMENT(#27,#115);
+#27=IFCLOCALPLACEMENT(#23,#5);
+#23=IFCLOCALPLACEMENT(#21,#5);
+#21=IFCLOCALPLACEMENT($,#5);</code></pre>
+  <p>Ho messo in fila le righe seguendo la catena (nel file sono sparse). Si risale finché il primo valore è <code>$</code>, poi si sommano gli spostamenti:</p>
+  <div class="tbl"><table>
+    <tr><th>Anello</th><th>Rispetto a</th><th>Spostamento</th><th>Posizione assoluta</th></tr>
+    <tr><td>Sito <code>#21</code></td><td>mondo</td><td>(0; 0; 0)</td><td>(0; 0; 0)</td></tr>
+    <tr><td>Edificio <code>#23</code></td><td>sito</td><td>(0; 0; 0)</td><td>(0; 0; 0)</td></tr>
+    <tr><td>Piano terra <code>#27</code></td><td>edificio</td><td>(0; 0; 0)</td><td>(0; 0; 0)</td></tr>
+    <tr><td>Muro est <code>#212</code></td><td>piano terra</td><td>(7,70; 0,30; 0) da <code>#115</code></td><td>(7,70; 0,30; 0)</td></tr>
+    <tr><td>Foro <code>#530</code></td><td>muro est</td><td>(0; 2,10; 0,90) da <code>#187</code></td><td>(7,70; 2,40; 0,90)</td></tr>
+    <tr><td>Finestra <code>#535</code></td><td>foro</td><td>(0; 0; 0)</td><td><b>(7,70; 2,40; 0,90)</b></td></tr>
+  </table></div>
+  <p>Lo stesso conto per la finestra nord del primo piano dà (0 + 0 + 3,40; 0 + 5,70 + 0; 3,00 + 0 + 0,90) = <b>(3,40; 5,70; 3,90)</b>: il 3,00 arriva dal piano, senza che la finestra lo sappia.</p>
+  <div class="dia"><svg viewBox="0 0 720 170" role="img" aria-label="La catena dei posizionamenti dal sito alla finestra">
+    <g>
+      <rect class="s-w" x="8" y="60" width="96" height="50" rx="10"/><rect class="s-w" x="126" y="60" width="96" height="50" rx="10"/><rect class="s-w" x="244" y="60" width="104" height="50" rx="10"/><rect class="s-w" x="370" y="60" width="104" height="50" rx="10"/><rect class="s-w" x="496" y="60" width="96" height="50" rx="10"/><rect x="614" y="60" width="98" height="50" rx="10" class="s-as" style="stroke:var(--accent)"/>
+    </g>
+    <g text-anchor="middle"><text class="s-tb" x="56" y="82">Sito</text><text class="s-tm" x="56" y="99">#21</text><text class="s-tb" x="174" y="82">Edificio</text><text class="s-tm" x="174" y="99">#23</text><text class="s-tb" x="296" y="82">Piano</text><text class="s-tm" x="296" y="99">#27</text><text class="s-tb" x="422" y="82">Muro est</text><text class="s-tm" x="422" y="99">#212</text><text class="s-tb" x="544" y="82">Foro</text><text class="s-tm" x="544" y="99">#530</text><text class="s-tb" x="663" y="82">Finestra</text><text class="s-tm" x="663" y="99">#535</text></g>
+    <g><path class="s-ar" d="M124 85H106"/><path class="s-ar" d="M242 85H224"/><path class="s-ar" d="M368 85H350"/><path class="s-ar" d="M494 85H476"/><path class="s-ar" d="M612 85H594"/></g>
+    <g class="s-tm" text-anchor="middle"><text x="174" y="135">+0</text><text x="296" y="135">+0</text><text x="422" y="135">+(7,70; 0,30; 0)</text><text x="544" y="135">+(0; 2,10; 0,90)</text><text x="663" y="135">+0</text></g>
+    <text class="s-tm" x="10" y="40">ogni freccia: «la mia posizione è misurata da qui»</text>
+    <text class="s-tb" x="452" y="160" style="fill:var(--accent)">= (7,70; 2,40; 0,90) m</text>
+  </svg></div>
+  <h3>Perché le posizioni sono relative</h3>
+  <p>Perché si spostano insieme. Se il primo piano salisse a 3,20 m basterebbe cambiare il 3 di <code>#25</code>: muri, finestre, solaio e tetto del primo piano seguirebbero da soli, perché sono tutti misurati dal piano. È il comportamento che ci si aspetta da un modello BIM, e nel file si vede come una catena di riferimenti.</p>
+  <h3>Il sistema ruotato <code>#6</code></h3>
+  <p><code>#6=IFCAXIS2PLACEMENT3D(#1,#3,#4)</code> dice: l'asse Z locale punta verso <code>#3</code> = (1, 0, 0), cioè verso est; l'asse X locale punta verso <code>#4</code> = (0, 1, 0), cioè verso nord. L'asse Y locale è il prodotto vettoriale Z × X = (1, 0, 0) × (0, 1, 0) = (0, 0, 1): punta in alto. In questo sistema il «foglio» su cui si disegna (il piano XY locale) è verticale e guarda verso est, come un prospetto. Lo uso per disegnare il profilo del timpano, della scala e delle falde del tetto, che poi si estrudono verso est (capitolo 9).</p>
+</section>
+
+<!-- ============================================================ 7 -->
+<section class="ch" id="c7">
+  <div class="ch-h"><span class="ch-n">7</span><h2>La forma: profilo ed estrusione</h2></div>
+  <span class="pat">Pattern · forma</span>
+  <p class="lead">Quasi tutta la casetta è fatta con un solo gesto, lo stesso dei software BIM: si disegna una figura piana e la si tira in una direzione per una certa lunghezza.</p>
+<pre class="ifc"><code>#120=IFCCARTESIANPOINT((4.,0.15));
+#121=IFCAXIS2PLACEMENT2D(#120,$);
+#122=IFCRECTANGLEPROFILEDEF(.AREA.,'Muro 30 x 800',#121,8.,0.3);
+#123=IFCEXTRUDEDAREASOLID(#122,#5,#2,2.8);
+#124=IFCSTYLEDITEM(#123,(#42),$);</code></pre>
+  <div class="tbl"><table>
+    <tr><th>Riga</th><th>Che cosa fa</th></tr>
+    <tr><td><code>#122</code> profilo rettangolare</td><td>Un rettangolo pieno (<code>.AREA.</code>) di 8,00 × 0,30 m, con un nome libero. Attenzione: il rettangolo è <b>centrato</b> sul suo punto di posizione.</td></tr>
+    <tr><td><code>#120</code>, <code>#121</code></td><td>Per questo il centro va spostato in (4,00; 0,15): così il rettangolo va da x = 0 a x = 8 e da y = 0 a y = 0,30, con lo spigolo nell'origine del muro. È la causa più comune di muri «spostati di mezzo spessore» quando si scrive a mano.</td></tr>
+    <tr><td><code>#123</code> solido estruso</td><td>Prende il profilo <code>#122</code>, lo posa nel sistema <code>#5</code> (quello standard), lo tira nella direzione <code>#2</code> (verso l'alto) per 2,80 m. Risultato: un parallelepipedo di 8,00 × 0,30 × 2,80 m.</td></tr>
+    <tr><td><code>#124</code> stile</td><td>Il colore della muratura (capitolo 11). Si aggancia al solido, non al muro.</td></tr>
+  </table></div>
+  <div class="dia"><svg viewBox="0 0 720 190" role="img" aria-label="Dal profilo rettangolare al solido estruso">
+    <g transform="translate(30 30)">
+      <text class="s-tb" x="0" y="0">1 · Profilo</text>
+      <rect x="10" y="60" width="200" height="16" class="s-as" style="stroke:var(--accent);stroke-width:2"/>
+      <circle cx="110" cy="68" r="4" class="s-3"/>
+      <text class="s-tm" x="68" y="98">centro (4,00; 0,15)</text>
+      <text class="s-tm" x="10" y="52">8,00 × 0,30 m</text>
+      <circle cx="10" cy="76" r="3.5" class="s-a"/><text class="s-tm" x="0" y="124">origine del muro</text>
+    </g>
+    <path class="s-ar" d="M262 98H312"/>
+    <g transform="translate(330 30)">
+      <text class="s-tb" x="0" y="0">2 · Estrusione</text>
+      <path d="M20 140 220 140 240 126 40 126Z" class="s-as" style="stroke:var(--accent)"/>
+      <path d="M20 140V40M220 140V40M240 126V26M40 126V30" class="s-l" style="stroke-dasharray:4 4;stroke:var(--muted)"/>
+      <path d="M130 120V48" class="s-al" marker-end="url(#ara)"/><text class="s-tm" x="138" y="80">#2 · 2,80 m</text>
+    </g>
+    <path class="s-ar" d="M592 98H612"/>
+    <g transform="translate(620 30)">
+      <text class="s-tb" x="0" y="0">3 · Solido</text>
+      <path d="M4 140 64 140 74 132 14 132Z" class="s-w"/><path d="M4 140V40H64V140Z" class="s-w"/><path d="M4 40 14 32H74L64 40Z" class="s-w"/><path d="M64 40 74 32V132L64 140Z" style="fill:var(--line)"/>
+    </g>
+  </svg></div>
+  <h3>Dalla forma all'oggetto: due scatole in più</h3>
+<pre class="ifc"><code>#200=IFCLOCALPLACEMENT(#27,#5);
+#201=IFCSHAPEREPRESENTATION(#16,'Body','SweptSolid',(#123));
+#202=IFCPRODUCTDEFINITIONSHAPE($,$,(#201));
+#203=IFCWALL('3ec2psCj55wgXFGQk4WD7C',$,'Muro sud PT',$,$,#200,#202,$,.SOLIDWALL.);</code></pre>
+  <p>Il solido da solo non basta. <code>IFCSHAPEREPRESENTATION</code> lo mette nel contesto <code>'Body'</code> (<code>#16</code>) e dichiara che tipo di geometria è (<code>'SweptSolid'</code>, solido ottenuto per estrusione): un programma che non sa calcolare certe geometrie capisce subito se può leggerla. <code>IFCPRODUCTDEFINITIONSHAPE</code> raccoglie tutte le rappresentazioni dell'oggetto (il corpo, l'asse, l'impronta…): la casetta ne ha una sola per oggetto. Solo a questo punto il muro <code>#203</code> riceve posizione e forma.</p>
+  <div class="box idea"><b>Una forma, quattro muri</b><p>Il solido <code>#123</code> è usato da quattro muri: sud e nord del piano terra e del primo piano. Cambiano solo le posizioni (<code>#200</code>, <code>#204</code>, <code>#300</code>, <code>#304</code>). Allo stesso modo il solido <code>#128</code> serve i due muri corti del piano terra, <code>#145</code> entrambi i solai, <code>#157</code> cinque fori di finestra. Riusare una forma è perfettamente lecito: ogni oggetto ha la sua rappresentazione (<code>#201</code>, <code>#205</code>…), che punta allo stesso solido.</p></div>
+  <div class="tbl"><table>
+    <tr><th>Riga</th><th>Profilo</th><th>Estrusione</th><th>Usata da</th></tr>
+    <tr><td><code>#123</code></td><td>rettangolo 8,00 × 0,30</td><td>2,80 in alto</td><td>muri sud e nord, due piani</td></tr>
+    <tr><td><code>#128</code></td><td>rettangolo 0,30 × 5,40</td><td>2,80 in alto</td><td>muri ovest ed est del piano terra</td></tr>
+    <tr><td><code>#145</code></td><td>rettangolo 8,00 × 6,00, posato a −0,20</td><td>0,20 in alto</td><td>platea e solaio del primo piano</td></tr>
+    <tr><td><code>#192</code></td><td>rettangolo 7,40 × 5,40</td><td>2,80 in alto</td><td>i due locali</td></tr>
+  </table></div>
+</section>
+
+<!-- ============================================================ 8 -->
+<section class="ch" id="c8">
+  <div class="ch-h"><span class="ch-n">8</span><h2>L'oggetto: dare un nome alla forma</h2></div>
+  <span class="pat">Pattern · oggetto</span>
+  <p class="lead">Qui sta la differenza tra un disegno e un modello BIM. Il solido <code>#123</code> è solo un parallelepipedo; la riga <code>#203</code> dice che quel parallelepipedo <b>è un muro</b>.</p>
+  <div class="tbl"><table>
+    <tr><th>#</th><th>Attributo di <code>IfcWall</code></th><th>Muro sud PT</th><th>Che cosa significa</th></tr>
+    <tr><td>1</td><td>GlobalId</td><td><code>'3ec2psCj55wgXFGQk4WD7C'</code></td><td>L'identità del muro, unica al mondo (capitolo 12).</td></tr>
+    <tr><td>2</td><td>OwnerHistory</td><td><code>$</code></td><td>Autore, programma, data di modifica: facoltativo in IFC4.</td></tr>
+    <tr><td>3</td><td>Name</td><td><code>'Muro sud PT'</code></td><td>Il nome leggibile.</td></tr>
+    <tr><td>4</td><td>Description</td><td><code>$</code></td><td>Una descrizione libera.</td></tr>
+    <tr><td>5</td><td>ObjectType</td><td><code>$</code></td><td>Un tipo scritto a parole, usato con <code>.USERDEFINED.</code>.</td></tr>
+    <tr><td>6</td><td>ObjectPlacement</td><td><code>#200</code></td><td>Dove sta (capitolo 6).</td></tr>
+    <tr><td>7</td><td>Representation</td><td><code>#202</code></td><td>Che forma ha (capitolo 7).</td></tr>
+    <tr><td>8</td><td>Tag</td><td><code>$</code></td><td>Un codice, per esempio l'ID dell'elemento nel software d'origine.</td></tr>
+    <tr><td>9</td><td>PredefinedType</td><td><code>.SOLIDWALL.</code></td><td>Il sottotipo, scelto dall'elenco dello schema: muro pieno, parapetto, tramezzo, muro di taglio…</td></tr>
+  </table></div>
+  <p>La forma e il significato sono separati: lo stesso solido potrebbe essere un muro, una trave o un arredo. Cambiando solo la parola <code>IFCWALL</code> in <code>IFCBEAM</code> (e il PredefinedType), il software importerebbe una trave identica nella forma. È per questo che conta tanto scegliere la classe giusta in esportazione: è la classe che dice al software di chi riceve che cosa sta guardando. La <a href="libreria-ifc.html">libreria IFC 4.3</a> raccoglie tutte le classi e i loro sottotipi.</p>
+  <div class="tbl"><table>
+    <tr><th>Classe</th><th>PredefinedType usati nella casetta</th></tr>
+    <tr><td><code>IfcWall</code></td><td><code>.SOLIDWALL.</code></td></tr>
+    <tr><td><code>IfcSlab</code></td><td><code>.BASESLAB.</code> (platea), <code>.FLOOR.</code> (solaio), <code>.ROOF.</code> (falde)</td></tr>
+    <tr><td><code>IfcStair</code></td><td><code>.STRAIGHT_RUN_STAIR.</code> (rampa unica)</td></tr>
+    <tr><td><code>IfcRoof</code></td><td><code>.GABLE_ROOF.</code> (a due falde)</td></tr>
+    <tr><td><code>IfcDoor</code> / <code>IfcWindow</code></td><td><code>.DOOR.</code> / <code>.WINDOW.</code></td></tr>
+    <tr><td><code>IfcSpace</code></td><td><code>.INTERNAL.</code></td></tr>
+  </table></div>
+</section>
+
+<!-- ============================================================ 9 -->
+<section class="ch" id="c9">
+  <div class="ch-h"><span class="ch-n">9</span><h2>Forme libere: timpano, scala, tetto</h2></div>
+  <span class="pat">Pattern · profilo libero</span>
+  <p class="lead">Quando il rettangolo non basta si disegna il contorno punto per punto. Il gesto resta lo stesso, profilo ed estrusione; cambia solo il modo di descrivere il profilo.</p>
+  <h3>Il muro a timpano: una polilinea</h3>
+<pre class="ifc"><code>#130=IFCCARTESIANPOINT((0.,0.));
+#131=IFCCARTESIANPOINT((5.4,0.));
+#132=IFCCARTESIANPOINT((5.4,2.95));
+#133=IFCCARTESIANPOINT((2.7,4.3));
+#134=IFCCARTESIANPOINT((0.,2.95));
+#135=IFCPOLYLINE((#130,#131,#132,#133,#134,#130));
+#137=IFCARBITRARYCLOSEDPROFILEDEF(.AREA.,'Timpano',#135);
+#138=IFCEXTRUDEDAREASOLID(#137,#6,#2,0.3);</code></pre>
+  <p>Cinque punti disegnano un pentagono: la base lunga 5,40 m, i due lati verticali alti 2,95 m e la punta a 4,30 m. La polilinea <code>#135</code> torna sul primo punto per chiudersi (<code>#130</code> compare due volte). Il profilo è disegnato nel sistema ruotato <code>#6</code>: le x del disegno vanno verso nord, le y verso l'alto, e l'estrusione di 0,30 m va verso est. Il risultato è un muro spesso 30 cm che segue la pendenza del tetto.</p>
+  <p>Da dove vengono i numeri. Il tetto ha pendenza del 50 %, quindi sale di 0,50 m ogni metro in orizzontale. All'esterno dei muri sud e nord (a 0 e a 6 m) l'intradosso del tetto è a 2,80 m sopra il primo piano; il colmo, a 3,00 m di distanza, è più alto di 3,00 × 0,5 = 1,50 m, cioè a 4,30 m. Il timpano comincia a 0,30 m dal filo esterno, dove il tetto è già salito di 0,15 m: 2,80 + 0,15 = 2,95 m.</p>
+  <h3>La scala: un elenco di punti</h3>
+<pre class="ifc"><code>#233=IFCCARTESIANPOINTLIST2D(((0.,0.),(0.,0.1875),(0.25,0.1875),(0.25,0.375),(0.5,0.375),(0.5,0.5625),(0.75,0.5625),(0.75,0.75),(1.,0.75),(1.,0.9375),(1.25,0.9375),(1.25,1.125),(1.5,1.125),(1.5,1.3125),(1.75,1.3125),(1.75,1.5),(2.,1.5),(2.,1.6875),(2.25,1.6875),(2.25,1.875),(2.5,1.875),(2.5,2.0625),(2.75,2.0625),(2.75,2.25),(3.,2.25),(3.,2.4375),(3.25,2.4375),(3.25,2.625),(3.5,2.625),(3.5,2.8125),(3.75,2.8125),(3.75,3.),(4.,3.),(4.,2.75),(0.4,0.)),$);
+#234=IFCINDEXEDPOLYCURVE(#233,(IFCLINEINDEX((1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,1))),.F.);
+#235=IFCARBITRARYCLOSEDPROFILEDEF(.AREA.,'Scala 16 alzate',#234);
+#236=IFCEXTRUDEDAREASOLID(#235,#6,#2,0.9);</code></pre>
+  <p>Con 35 punti la polilinea classica avrebbe richiesto 35 righe <code>IFCCARTESIANPOINT</code>. IFC4 permette di scriverli tutti in un unico elenco, <code>IFCCARTESIANPOINTLIST2D</code>, e di unirli con <code>IFCINDEXEDPOLYCURVE</code>, che li collega per numero d'ordine: 1, 2, 3 … 35 e di nuovo 1 per chiudere. È lo stesso disegno con un sesto delle righe.</p>
+  <div class="tbl"><table>
+    <tr><th>Grandezza</th><th>Valore</th><th>Verifica</th></tr>
+    <tr><td>Dislivello</td><td>3,00 m</td><td>dal piano terra al primo piano</td></tr>
+    <tr><td>Alzata a</td><td>3,00 / 16 = 0,1875 m</td><td>16 alzate</td></tr>
+    <tr><td>Pedata p</td><td>0,25 m</td><td>2a + p = 0,375 + 0,25 = 0,625 m (regola di Blondel: 62–64 cm)</td></tr>
+    <tr><td>Sviluppo</td><td>15 pedate × 0,25 = 3,75 m, più 0,25 m di arrivo</td><td>la scala occupa da y = 1,00 a y = 5,00 m</td></tr>
+    <tr><td>Intradosso</td><td>retta da (0,40; 0) a (4,00; 2,75)</td><td>resta sotto tutti gli spigoli interni dei gradini</td></tr>
+  </table></div>
+  <p>I primi 33 punti sono il dente di sega dei gradini: partendo da (0; 0) ogni alzata aggiunge due punti, uno in verticale (+0,1875) e uno in orizzontale (+0,25). Gli ultimi due chiudono la soletta inclinata sotto i gradini. Il profilo, disegnato nel sistema ruotato <code>#6</code>, si estrude di 0,90 m verso est: la larghezza della rampa.</p>
+  <h3>Il tetto: un contenitore di due falde</h3>
+<pre class="ifc"><code>#401=IFCROOF('17287tA3H2Xw82yf$P04m8',$,'Tetto',$,$,#400,$,$,.GABLE_ROOF.);
+#405=IFCCARTESIANPOINT((-0.3,2.65));
+#406=IFCCARTESIANPOINT((3.,4.3));
+#407=IFCCARTESIANPOINT((3.,4.55));
+#408=IFCCARTESIANPOINT((-0.3,2.9));
+#409=IFCPOLYLINE((#405,#406,#407,#408,#405));
+#411=IFCEXTRUDEDAREASOLID(#410,#6,#2,8.6);
+#415=IFCSLAB('2YxvXURBj6YxSRAUbGas4J',$,'Falda sud',$,$,#404,#414,$,.ROOF.);
+#428=IFCRELAGGREGATES('3MWFJu4Hn2ReQpHD7SRgjZ',$,'Tetto > falde',$,#401,(#415,#426));</code></pre>
+  <p>Il tetto <code>#401</code> non ha una forma propria (il settimo valore è <code>$</code>): è un contenitore, come l'edificio. Le due falde sono lastre <code>IfcSlab</code> di tipo <code>.ROOF.</code>, legate al tetto dalla stessa relazione di aggregazione usata per sito, edificio e piani (capitolo 5). Ogni falda è un parallelogramma spesso 0,25 m in verticale, che parte dalla gronda (0,30 m oltre il muro) e arriva al colmo, estruso per 8,60 m (8,00 m più le due sporgenze da 0,30 m).</p>
+</section>
+
+<!-- ============================================================ 10 -->
+<section class="ch" id="c10">
+  <div class="ch-h"><span class="ch-n">10</span><h2>Il foro e il serramento</h2></div>
+  <span class="pat">Pattern · foro e riempimento</span>
+  <p class="lead">Una finestra in IFC sono tre oggetti e due relazioni: il muro, un foro che lo buca, la finestra che riempie il foro. È il pattern più istruttivo del file, perché spiega come i software «sanno» che una finestra sta in un muro.</p>
+<pre class="ifc"><code>/* il foro: un parallelepipedo che buca il muro */
+#510=IFCLOCALPLACEMENT(#200,#183);
+#511=IFCSHAPEREPRESENTATION(#16,'Body','SweptSolid',(#157));
+#512=IFCPRODUCTDEFINITIONSHAPE($,$,(#511));
+#513=IFCOPENINGELEMENT('2vMIgLFLf02h732gD$xbyE',$,'Foro finestra',$,$,#510,#512,$,.OPENING.);
+#514=IFCRELVOIDSELEMENT('04dJ3BEe9FJeGsgtE96QKJ',$,$,$,#203,#513);
+/* la finestra: sta nel foro e lo riempie */
+#515=IFCLOCALPLACEMENT(#510,#5);
+#516=IFCSHAPEREPRESENTATION(#16,'Body','SweptSolid',(#174));
+#517=IFCPRODUCTDEFINITIONSHAPE($,$,(#516));
+#518=IFCWINDOW('05ZgyjWQH8lhKBbneGdDGN',$,'Finestra sud PT 1',$,$,#515,#517,$,1.2,1.2,.WINDOW.,.SINGLE_PANEL.,$);
+#519=IFCRELFILLSELEMENT('17tmyW8UH6TRG4oAjC_oc4',$,$,$,#513,#518);</code></pre>
+  <div class="dia"><svg viewBox="0 0 720 150" role="img" aria-label="Muro, foro e finestra collegati dalle relazioni RelVoids e RelFills">
+    <rect class="s-w" x="10" y="50" width="140" height="50" rx="10"/><text class="s-tb" x="80" y="72" text-anchor="middle">Muro sud PT</text><text class="s-tm" x="80" y="90" text-anchor="middle">IfcWall #203</text>
+    <rect x="290" y="50" width="140" height="50" rx="10" class="s-5s" style="stroke:var(--a5)"/><text class="s-tb" x="360" y="72" text-anchor="middle">Foro</text><text class="s-tm" x="360" y="90" text-anchor="middle">IfcOpeningElement #513</text>
+    <rect x="570" y="50" width="140" height="50" rx="10" class="s-as" style="stroke:var(--accent)"/><text class="s-tb" x="640" y="72" text-anchor="middle">Finestra</text><text class="s-tm" x="640" y="90" text-anchor="middle">IfcWindow #518</text>
+    <path class="s-ar" d="M152 75H288"/><path class="s-ar" d="M432 75H568"/>
+    <text class="s-tm" x="168" y="66">RelVoidsElement #514</text><text class="s-tm" x="168" y="122">«il foro buca il muro»</text>
+    <text class="s-tm" x="448" y="66">RelFillsElement #519</text><text class="s-tm" x="448" y="122">«la finestra riempie il foro»</text>
+  </svg></div>
+  <div class="tbl"><table>
+    <tr><th>Passo</th><th>Riga</th><th>Che cosa succede</th></tr>
+    <tr><td>1 · Il foro</td><td><code>#513</code></td><td>Un oggetto <code>IfcOpeningElement</code> con una sua forma: il solido <code>#157</code>, un parallelepipedo di 1,20 × 0,40 × 1,20 m. È posizionato rispetto al muro (<code>#510</code> → <code>#200</code>) a 1,00 m dallo spigolo e a 0,90 m di altezza (<code>#183</code>).</td></tr>
+    <tr><td>2 · Il buco</td><td><code>#514</code></td><td><code>IfcRelVoidsElement</code> dice al software: «sottrai dal muro <code>#203</code> il volume del foro <code>#513</code>». Lo schema lo definisce come un'operazione booleana di sottrazione tra i due solidi. La geometria del muro nel file resta un parallelepipedo pieno: il buco lo calcola chi legge.</td></tr>
+    <tr><td>3 · La finestra</td><td><code>#518</code></td><td>Posizionata rispetto al foro (<code>#515</code> → <code>#510</code>), con altezza e larghezza complessive (1,2 e 1,2) come attributi. La sua forma è una lastra di 6 cm al centro dello spessore del muro.</td></tr>
+    <tr><td>4 · Il riempimento</td><td><code>#519</code></td><td><code>IfcRelFillsElement</code>: «la finestra <code>#518</code> riempie il foro <code>#513</code>». È il legame che permette di sapere in quale muro sta una finestra.</td></tr>
+  </table></div>
+  <div class="box warn"><b>Il foro più spesso del muro</b><p>Il muro è spesso 0,30 m, il foro 0,40 m: sporge di 5 cm per lato. Se il foro avesse esattamente lo spessore del muro, le sue facce coinciderebbero con quelle del muro e la sottrazione potrebbe lasciare un velo di superficie, a seconda di come il programma gestisce le facce coincidenti. Un foro leggermente più grande toglie il dubbio. È la stessa accortezza che usano i software quando esportano.</p></div>
+  <p>Il pattern è universale. Il foro della scala nel solaio del primo piano usa le stesse righe, senza il riempimento:</p>
+<pre class="ifc"><code>#640=IFCLOCALPLACEMENT(#320,#5);
+#641=IFCSHAPEREPRESENTATION(#16,'Body','SweptSolid',(#167));
+#642=IFCPRODUCTDEFINITIONSHAPE($,$,(#641));
+#643=IFCOPENINGELEMENT('0m4qiLem5FQu5HYKeRtew$',$,'Foro scala',$,$,#640,#642,$,.OPENING.);
+#644=IFCRELVOIDSELEMENT('0Rg3EswX54hB9gKMWOpvgJ',$,$,$,#323,#643);</code></pre>
+  <p>Il foro va da x = 0,30 a 1,25 m e da y = 1,60 a 5,00 m: copre la scala (larga 0,90 m, da y = 1,00 a 5,00) Il punto più basso sopra la scala è il bordo del foro: lì il gradino è a 0,5625 m e l'intradosso del solaio a 2,80 m, quindi restano 2,24 m liberi.</p>
+</section>
+
+<!-- ============================================================ 11 -->
+<section class="ch" id="c11">
+  <div class="ch-h"><span class="ch-n">11</span><h2>Dove sta, di che cos'è, che proprietà ha</h2></div>
+  <span class="pat">Pattern · relazioni</span>
+  <p class="lead">Le ultime righe del file sono il cuore informativo del modello: collegano gli oggetti ai piani, ai materiali e alle proprietà. Sono tutte relazioni, e seguono tutte lo stesso schema: «questi oggetti» ↔ «quella cosa».</p>
+  <h3>Il contenimento: in quale piano sta</h3>
+<pre class="ifc"><code>#700=IFCRELCONTAINEDINSPATIALSTRUCTURE('1GPSV5wlP2bgJqGfxt30Du',$,'Elementi del piano terra',$,(#203,#207,#211,#215,#223,#240,#508,#518,#528,#538),#28);
+#701=IFCRELCONTAINEDINSPATIALSTRUCTURE('0PWL2miz1EdeafQZFjHFrv',$,'Elementi del primo piano',$,(#303,#307,#311,#315,#323,#401,#608,#618,#628),#30);</code></pre>
+  <p>Due righe assegnano tutti gli elementi ai due piani. È questa relazione che fa comparire i muri sotto «Piano terra» nell'albero del modello di qualunque visualizzatore. Due regole, che la casetta rispetta e che spiegano molte stranezze dei file esportati:</p>
+  <ol class="steps">
+    <li><b>Ogni elemento sta in un solo piano.</b> Una relazione di contenimento per oggetto, non di più.</li>
+    <li><b>Le parti non si contengono, si aggregano.</b> Il tetto <code>#401</code> sta nel primo piano; le sue falde no, perché sono parti del tetto (<code>#428</code>). Lo stesso per i locali: <code>#253</code> e <code>#333</code> sono aggregati ai piani (<code>#254</code>, <code>#334</code>), non contenuti, perché un locale è una suddivisione dello spazio del piano e non un oggetto che ci sta dentro.</li>
+    <li><b>I fori non si contengono.</b> Stanno dove sta il loro muro, attraverso la relazione di sottrazione.</li>
+  </ol>
+  <h3>Il materiale</h3>
+<pre class="ifc"><code>#60=IFCMATERIAL('Muratura in laterizio',$,'Muratura');
+#702=IFCRELASSOCIATESMATERIAL('3ZOHxOUiHEn9x0uC9vIkJa',$,$,$,(#203,#207,#211,#215,#303,#307,#311,#315),#60);</code></pre>
+  <p>Un materiale si scrive una volta e si collega a tutti gli oggetti che ne sono fatti: una riga per otto muri. Nella casetta i materiali sono semplici; in un progetto reale al posto di <code>IfcMaterial</code> ci sarebbe una stratigrafia (<code>IfcMaterialLayerSet</code>), con uno strato per intonaco, laterizio, isolante.</p>
+  <h3>Le proprietà</h3>
+<pre class="ifc"><code>#720=IFCPROPERTYSINGLEVALUE('NumberOfRiser',$,IFCCOUNTMEASURE(16),$);
+#721=IFCPROPERTYSINGLEVALUE('NumberOfTreads',$,IFCCOUNTMEASURE(15),$);
+#722=IFCPROPERTYSINGLEVALUE('RiserHeight',$,IFCPOSITIVELENGTHMEASURE(0.1875),$);
+#723=IFCPROPERTYSINGLEVALUE('TreadLength',$,IFCPOSITIVELENGTHMEASURE(0.25),$);
+#724=IFCPROPERTYSET('3hQETEaW93svkn7MwvJGti',$,'Pset_StairCommon',$,(#720,#721,#722,#723));
+#725=IFCRELDEFINESBYPROPERTIES('290_sp_FT5Ow3MoIYxU1YS',$,$,$,(#240),#724);</code></pre>
+  <p>Tre livelli, sempre gli stessi. La <b>proprietà</b> (<code>#720</code>) ha un nome e un valore con il suo tipo: <code>IFCCOUNTMEASURE</code> è un conteggio, <code>IFCPOSITIVELENGTHMEASURE</code> una lunghezza positiva, quindi in metri per via di <code>#10</code>. Il <b>gruppo di proprietà</b> (<code>#724</code>) le raccoglie sotto un nome. La <b>relazione</b> (<code>#725</code>) lo assegna agli oggetti. I nomi che cominciano con <code>Pset_</code> e le loro proprietà sono definiti dallo schema: <code>Pset_StairCommon</code> con <code>NumberOfRiser</code> lo capisce qualunque software, mentre un gruppo con un nome inventato è letto come informazione libera. La stessa logica dei Property Set spiegata nel manuale <a href="property-set-ifc-revit.html">Property Set IFC in Revit</a>.</p>
+  <div class="tbl"><table>
+    <tr><th>Gruppo</th><th>Proprietà</th><th>Oggetti</th></tr>
+    <tr><td><code>Pset_WallCommon</code></td><td>IsExternal = vero, LoadBearing = vero</td><td>8 muri</td></tr>
+    <tr><td><code>Pset_SlabCommon</code></td><td>LoadBearing = vero</td><td>platea e solaio</td></tr>
+    <tr><td><code>Pset_StairCommon</code></td><td>16 alzate, 15 pedate, alzata 0,1875 m, pedata 0,25 m</td><td>scala</td></tr>
+    <tr><td><code>Pset_DoorCommon</code></td><td>IsExternal = vero</td><td>porta</td></tr>
+    <tr><td><code>Pset_WindowCommon</code></td><td>IsExternal = vero</td><td>6 finestre</td></tr>
+  </table></div>
+  <h3>I colori</h3>
+<pre class="ifc"><code>#52=IFCCOLOURRGB($,0.55,0.75,0.90);
+#53=IFCSURFACESTYLESHADING(#52,0.5);
+#54=IFCSURFACESTYLE('Vetro',.BOTH.,(#53));
+#175=IFCSTYLEDITEM(#174,(#54),$);</code></pre>
+  <p>Il colore è un'informazione di presentazione, non di progetto: si aggancia al <b>solido</b> (<code>#174</code>, la lastra delle finestre) e non all'oggetto. Rosso, verde e blu vanno da 0 a 1; il secondo valore di <code>#53</code> è la trasparenza (0,5 = vetro semitrasparente). <code>.BOTH.</code> vuol dire che il colore vale su entrambe le facce.</p>
+</section>
+
+<!-- ============================================================ 12 -->
+<section class="ch" id="c12">
+  <div class="ch-h"><span class="ch-n">12</span><h2>Il GlobalId</h2></div>
+  <p class="lead">È l'unica parte del file che non ho inventato a mano. Ogni oggetto e ogni relazione ha un codice di 22 caratteri, come <code>3ec2psCj55wgXFGQk4WD7C</code>, che deve essere unico al mondo.</p>
+  <p>Dietro c'è un numero di 128 bit (un GUID, lo stesso tipo di identificativo usato dai sistemi informatici di tutto il mondo), scritto in base 64 con l'alfabeto <code>0–9 A–Z a–z _ $</code>. Il conto torna così: 21 caratteri da 6 bit fanno 126 bit, e il primo carattere porta i 2 bit rimanenti, quindi può valere solo da 0 a 3. Tutti i GlobalId validi cominciano con 0, 1, 2 o 3.</p>
+  <p>Una curiosità che buildingSMART stessa racconta: la compressione a 22 caratteri fu introdotta nel 1996, con IFC 1.0, quando i file viaggiavano su dischetti da 1,44 MB e ogni byte contava. Oggi non servirebbe più, ma è rimasta per compatibilità.</p>
+  <div class="box bim"><b>Perché conta nel lavoro di tutti i giorni</b><p>Il GlobalId è l'identità di un oggetto <b>tra una versione e l'altra</b> del modello. Le segnalazioni BCF, i risultati delle verifiche di interferenza e i confronti tra revisioni si agganciano a questo codice. Se un software lo rigenera a ogni esportazione, ogni consegna sembra un modello nuovo e le segnalazioni aperte perdono il loro oggetto.</p></div>
+  <p>I 73 GlobalId della casetta li ho generati con la funzione di IfcOpenShell e incollati nel file: scritti a mano rispetterebbero la forma, ma nessuno potrebbe garantire che siano unici. Il validatore controlla sia la forma sia l'unicità (capitolo 13).</p>
+</section>
+
+<!-- ============================================================ 13 -->
+<section class="ch" id="c13">
+  <div class="ch-h"><span class="ch-n">13</span><h2>La prova</h2></div>
+  <p class="lead">Un file che «si apre» non è necessariamente un file corretto. Per questo la casetta è stata controllata in tre modi.</p>
+  <div class="tbl"><table>
+    <tr><th>Controllo</th><th>Che cosa verifica</th><th>Risultato</th></tr>
+    <tr><td>Lettura</td><td>IfcOpenShell 0.9.0 legge il file secondo lo schema IFC4</td><td>311 entità lette</td></tr>
+    <tr><td>Validazione</td><td>Tipi degli attributi, attributi obbligatori, riferimenti, relazioni inverse, regole dello schema (EXPRESS), unicità e forma dei GlobalId</td><td><b>0 errori</b></td></tr>
+    <tr><td>Geometria</td><td>Calcolo dei solidi, fori compresi</td><td>30 oggetti con geometria, tutti calcolati</td></tr>
+    <tr><td>Revit</td><td>Apertura in un software BIM commerciale</td><td>Si apre con piani, oggetti e fori corretti</td></tr>
+  </table></div>
+  <h3>Gli errori che il validatore trova, e quelli che non trova</h3>
+  <p>Per capire quanto ci si può fidare, ho introdotto apposta alcuni errori tipici della scrittura a mano, uno alla volta, e ho rilanciato la validazione:</p>
+  <div class="tbl"><table>
+    <tr><th>Errore introdotto</th><th>Il validatore se ne accorge?</th></tr>
+    <tr><td>Una direzione al posto di un sistema di riferimento (<code>#2</code> invece di <code>#5</code> in <code>#200</code>)</td><td><span class="ok-v">Sì</span>: tipo non valido per l'attributo RelativePlacement</td></tr>
+    <tr><td>Un riferimento a una riga che non esiste (<code>#9999</code>)</td><td><span class="ok-v">Sì</span>: attributo obbligatorio mancante e relazione inversa vuota</td></tr>
+    <tr><td>Due oggetti con lo stesso GlobalId</td><td><span class="ok-v">Sì</span>: regola IfcRoot.UR1, «GlobalId should be unique»</td></tr>
+    <tr><td>Un GlobalId di 21 caratteri</td><td><span class="ok-v">Sì</span>: non è un numero di 128 bit valido</td></tr>
+    <tr><td>Una virgola decimale (<code>2,8</code> invece di <code>2.8</code>)</td><td><span class="ok-v">Sì</span>: la profondità diventa il numero intero 2, che non è una lunghezza valida</td></tr>
+    <tr><td>Un attributo in meno nel muro (8 valori invece di 9)</td><td><span class="no-v">No</span>: il muro viene letto e il PredefinedType va perso senza avvisi</td></tr>
+    <tr><td>Un sottotipo inventato (<code>.MURO.</code> invece di <code>.SOLIDWALL.</code>)</td><td><span class="no-v">No</span>: il valore viene scartato senza avvisi</td></tr>
+  </table></div>
+  <p>La lezione vale anche per i file esportati: la validazione automatica è indispensabile, ma non sostituisce il controllo di chi conosce il contenuto. Un oggetto con il sottotipo sbagliato passa tutti i controlli dello schema e arriva comunque sbagliato in cantiere.</p>
+  <h3>Le semplificazioni dichiarate</h3>
+  <ul>
+    <li>Tra la testa dei muri sud e nord (a 2,80 m) e l'intradosso del tetto resta, sul lato interno, un cuneo alto 15 cm: il tetto è appoggiato sul filo esterno.</li>
+    <li>Il locale del primo piano è un parallelepipedo alto 2,80 m e non segue il soffitto inclinato.</li>
+    <li>I muri sono accostati di testa, senza stratigrafia e senza linea d'asse; i serramenti sono lastre semplici, senza telaio.</li>
+    <li>Non ci sono georeferenziazione, quantità (<code>IfcElementQuantity</code>) né tipi (<code>IfcWallType</code>, <code>IfcWindowType</code>).</li>
+  </ul>
+  <details class="full noprint" id="full"><summary>Il file completo (404 righe)</summary><pre class="ifc" id="fullcode"><code>Caricamento…</code></pre></details>
+</section>
+
+<!-- ============================================================ 14 -->
+<section class="ch" id="c14">
+  <div class="ch-h"><span class="ch-n">14</span><h2>Considerazioni finali</h2></div>
+  <h3>Che cosa dimostra l'esperimento</h3>
+  <p><b>Che IFC è un formato aperto nel senso più concreto:</b> non serve nessun programma per leggerlo o scriverlo. Basta lo schema, pubblico, e un editor di testo. Un file scritto oggi con Blocco note si apre in Revit, e un file esportato da Revit si legge con Blocco note.</p>
+  <p><b>Che un modello BIM è fatto di poche idee ripetute.</b> Tolti i numeri, la casetta usa otto pattern: fondamenta, aggregazione, posizionamento, forma, oggetto, profilo libero, foro e riempimento, relazioni. Un IFC da 200 MB di un ospedale usa le stesse idee, ripetute centinaia di migliaia di volte e con geometrie più complesse.</p>
+  <p><b>Che la geometria è la parte più pesante, ma non la più importante.</b> Nella casetta 189 entità su 311 (il 61 %) servono a descrivere forme e posizioni; il significato dell'edificio sta tutto nelle 32 relazioni e nelle righe degli oggetti. È lì che si gioca la qualità di un modello informativo.</p>
+  <h3>Che cosa non dimostra</h3>
+  <p>Che convenga scrivere i modelli a mano. Anche una casetta richiede di calcolare ogni coordinata, ogni pendenza, ogni alzata; un edificio vero sarebbe impossibile. I software BIM esistono per questo. Il punto è un altro: sapere che cosa c'è sotto permette di <b>diagnosticare</b>. Quando un modello arriva spostato, scalato di mille, con i muri come «oggetti generici», con le finestre fuori dai muri o con le proprietà sparite, la risposta è scritta in qualche riga del file, e ora si sa dove cercarla:</p>
+  <div class="tbl"><table>
+    <tr><th>Sintomo</th><th>Dove guardare</th><th>Capitolo</th></tr>
+    <tr><td>Il modello è mille volte troppo grande o piccolo</td><td><code>IFCSIUNIT</code> della lunghezza</td><td>4</td></tr>
+    <tr><td>Il modello è lontano o ruotato rispetto agli altri</td><td>contesto, posizione del sito, <code>IfcMapConversion</code></td><td>4, 6</td></tr>
+    <tr><td>Gli oggetti non compaiono sotto nessun piano</td><td><code>IFCRELCONTAINEDINSPATIALSTRUCTURE</code></td><td>11</td></tr>
+    <tr><td>I muri arrivano come «oggetti generici»</td><td>la classe della riga (<code>IFCBUILDINGELEMENTPROXY</code> invece di <code>IFCWALL</code>)</td><td>8</td></tr>
+    <tr><td>Le finestre non bucano i muri</td><td><code>IFCRELVOIDSELEMENT</code> e <code>IFCRELFILLSELEMENT</code></td><td>10</td></tr>
+    <tr><td>Le proprietà non si vedono</td><td><code>IFCPROPERTYSET</code> e <code>IFCRELDEFINESBYPROPERTIES</code></td><td>11</td></tr>
+    <tr><td>Le segnalazioni BCF perdono gli oggetti</td><td>il GlobalId cambia tra le versioni</td><td>12</td></tr>
+  </table></div>
+  <h3>Un formato fatto per durare</h3>
+  <p>Un file di testo con uno schema pubblicato come norma ISO è uno dei modi più robusti per conservare un'informazione nel tempo: non dipende da un programma, da una licenza o da un sistema operativo. Chi aprirà questa casetta tra cinquant'anni troverà le stesse righe, e con lo schema in mano saprà ricostruire muri, scala e finestre. È una proprietà che un formato proprietario, legato a un programma e alle sue versioni, non può garantire.</p>
+  <h3>Se vuoi provarci</h3>
+  <ol class="steps">
+    <li><b>Scarica <a href="ifc-da-zero/casetta.ifc" download="casetta.ifc">casetta.ifc</a></b> e aprilo sia nel tuo software BIM sia in un editor di testo, uno accanto all'altro.</li>
+    <li><b>Cambia un numero e riapri:</b> il 3 di <code>#25</code> in 3.5 alza il primo piano; il 2.8 di <code>#123</code> alza i muri lunghi; il 0.9 di <code>#183</code> sposta in alto una finestra.</li>
+    <li><b>Aggiungi una finestra</b> copiando le dieci righe da <code>#510</code> a <code>#519</code>: nuovi numeri, nuovi GlobalId, una nuova posizione, e la finestra va aggiunta all'elenco di <code>#700</code>.</li>
+    <li><b>Confronta con un IFC esportato</b> dal tuo software: ritroverai gli stessi pattern, con molte più righe.</li>
+  </ol>
+</section>
+
+<section class="ch" id="fonti">
+  <div class="ch-h"><span class="ch-n">≡</span><h2>Fonti</h2></div>
+  <ul class="src">
+    <li>buildingSMART, <a href="https://standards.buildingsmart.org/IFC/RELEASE/IFC4/ADD2_TC1/HTML/" target="_blank" rel="noopener">IFC4 ADD2 TC1, versione 4.0.2.1</a> (in inglese): lo schema usato per la casetta, con attributi, regole ed esempi di ogni classe.</li>
+    <li>buildingSMART, <a href="https://github.com/buildingSMART/IFC/releases" target="_blank" rel="noopener">IFC releases</a> (in inglese): IFC4 ADD2 TC1 corrisponde a ISO 16739-1:2018.</li>
+    <li>ISO, <a href="https://www.iso.org/standard/70303.html" target="_blank" rel="noopener">ISO 16739-1:2018</a> (in inglese): norma ritirata e sostituita da ISO 16739-1:2024 (IFC 4.3).</li>
+    <li>buildingSMART, <a href="https://standards.buildingsmart.org/IFC/RELEASE/IFC4/ADD2_TC1/HTML/schema/ifcproductextension/lexical/ifcrelvoidselement.htm" target="_blank" rel="noopener">IfcRelVoidsElement</a> (in inglese): la relazione di sottrazione tra elemento e foro.</li>
+    <li>buildingSMART, <a href="https://standards.buildingsmart.org/IFC/RELEASE/IFC4/ADD2_TC1/HTML/annex/annex-e/wall-with-opening-and-window.htm" target="_blank" rel="noopener">Esempio E.10.1, Wall with opening and window</a> (in inglese): l'esempio ufficiale del pattern foro e riempimento, con il file STEP.</li>
+    <li>buildingSMART, <a href="https://standards.buildingsmart.org/IFC/RELEASE/IFC4/ADD2_TC1/HTML/schema/ifcutilityresource/lexical/ifcgloballyuniqueid.htm" target="_blank" rel="noopener">IfcGloballyUniqueId</a> e <a href="https://technical.buildingsmart.org/resources/ifcimplementationguidance/ifc-guid/" target="_blank" rel="noopener">IFC GUID</a> (in inglese): la codifica a 22 caratteri e la sua storia.</li>
+    <li>Wikipedia, <a href="https://en.wikipedia.org/wiki/ISO_10303-21" target="_blank" rel="noopener">ISO 10303-21</a> (in inglese): la sintassi del formato STEP Physical File (edizioni 1994, 2002, 2016).</li>
+    <li><a href="https://ifcopenshell.org/" target="_blank" rel="noopener">IfcOpenShell</a> 0.9.0, libreria open source usata per la validazione, il calcolo della geometria del visualizzatore e la generazione dei GlobalId.</li>
+  </ul>
+  <div class="box idea"><b>Come è nato questo articolo</b><p>È uno dei «manuali di Claude»: l'ha scritto Claude, l'assistente di intelligenza artificiale di Anthropic, partendo da un'idea di Marco: dimostrare che un IFC si può costruire da zero con un editor di testo. Il file è stato scritto riga per riga come testo, tranne i GlobalId; è stato validato con IfcOpenShell e Marco l'ha aperto in Revit. Ogni numero del file e dell'articolo è stato ricontrollato con il calcolo.</p></div>
+  <p class="foot">BIM News · I manuali di Claude · Un IFC scritto a mano · edizione novembre 2026</p>
+</section>
+</main>
+</div>
+<script>
+(function(){
+"use strict";
+/* --- 1. colorazione del codice IFC e riferimenti cliccabili --- */
+var LINES={}, SRC="";
+function esc(s){return s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;")}
+function hl(t){
+  return esc(t).replace(/(\/\*[\s\S]*?\*\/)|('(?:[^']|'')*')|(#\d+)|(\bIFC[A-Z0-9]+\b)|(\.[A-Z_0-9]+\.)/g,function(m,c,s,r,k,e){
+    if(c)return '<span class="c">'+c+'</span>';
+    if(s)return '<span class="s">'+s+'</span>';
+    if(r)return '<span class="r" data-r="'+r.slice(1)+'">'+r+'</span>';
+    if(k)return '<span class="k">'+k+'</span>';
+    return '<span class="e">'+e+'</span>';
+  });
+}
+function paint(pre){var c=pre.querySelector("code");c.innerHTML=hl(c.textContent)}
+document.querySelectorAll("pre.ifc").forEach(function(pre){
+  paint(pre);
+  var pk=document.createElement("div");pk.className="peek";pre.after(pk);
+  pre.addEventListener("click",function(ev){var t=ev.target.closest(".r");if(t)show(pk,t.dataset.r,true)});
+  pk.addEventListener("click",function(ev){var t=ev.target.closest(".r");if(t)show(pk,t.dataset.r,false)});
+});
+function show(pk,id,reset){
+  var l=LINES[id]; if(!l){pk.className="peek on";pk.innerHTML="<b>Il file non è ancora caricato.</b>";return}
+  var html='<span>'+hl(l)+'</span>';
+  if(reset||!pk.classList.contains("on")) pk.innerHTML='<b>Riga a cui punta il riferimento (clicca i numeri per continuare)</b>'+html;
+  else pk.innerHTML+= "\n"+html;
+  pk.className="peek on";
+}
+fetch("ifc-da-zero/casetta.ifc",{cache:"no-cache"}).then(function(r){return r.text()}).then(function(t){
+  SRC=t; t.split(/\r?\n/).forEach(function(l){var m=l.match(/^#(\d+)=/);if(m)LINES[m[1]]=l});
+  var fc=document.getElementById("fullcode"); if(fc){fc.querySelector("code").textContent=t;paint(fc)}
+}).catch(function(){});
+
+/* --- 2. visualizzatore 3D (solo canvas, senza librerie) --- */
+var cv=document.getElementById("cv"); if(!cv)return;
+var ctx=cv.getContext("2d"), DATA=[], yaw=-0.95, pitch=0.42, zoom=1, sel=null, PANX=0, PANY=0;
+var VIS={tetto:true,p1:true,locali:false,fori:false};
+var C=[4,3,3.6];
+function layer(o){
+  if(o.c==="IfcOpeningElement")return VIS.fori&&(o.p!=="Primo piano"||VIS.p1);
+  if(o.c==="IfcSpace")return VIS.locali&&(o.p!=="Primo piano"||VIS.p1);
+  if(o.c==="IfcSlab"&&/^Falda/.test(o.n))return VIS.tetto;
+  if(o.p==="Primo piano")return VIS.p1;
+  return true;
+}
+function bg(){return getComputedStyle(document.body).getPropertyValue("--surface")||"#fff"}
+function ink(){return getComputedStyle(document.body).getPropertyValue("--ink")||"#000"}
+var TRI=[];
+function draw(){
+  var w=cv.clientWidth,h=cv.clientHeight,dpr=window.devicePixelRatio||1;
+  if(cv.width!==Math.round(w*dpr)||cv.height!==Math.round(h*dpr)){cv.width=Math.round(w*dpr);cv.height=Math.round(h*dpr)}
+  ctx.setTransform(dpr,0,0,dpr,0,0);ctx.fillStyle=bg();ctx.fillRect(0,0,w,h);
+  var cy=Math.cos(yaw),sy=Math.sin(yaw),cp=Math.cos(pitch),sp=Math.sin(pitch);
+  var s=Math.min(w,h)/12.5*zoom, ox=w/2+PANX, oy=h/2+PANY+h*0.04;
+  function P(x,y,z){x-=C[0];y-=C[1];z-=C[2];
+    var X=x*cy-y*sy, Y=x*sy+y*cy;          /* rotazione attorno a Z */
+    var Yd=Y*cp-z*sp, Z=Y*sp+z*cp;         /* inclinazione: si guarda dall'alto */
+    return [ox+X*s, oy-Z*s, Yd];}
+  var L=[0.35,-0.55,0.76], items=[];
+  TRI=[];
+  DATA.forEach(function(o){ if(!layer(o))return;
+    var v=o.v,f=o.f,pp=[];for(var i=0;i<v.length;i+=3)pp.push(P(v[i],v[i+1],v[i+2]));
+    var a=o.col[3], isSel=(sel===o);
+    for(var k=0;k<f.length;k+=3){var A=f[k]*3,B=f[k+1]*3,D=f[k+2]*3;
+      var ux=v[B]-v[A],uy=v[B+1]-v[A+1],uz=v[B+2]-v[A+2],wx=v[D]-v[A],wy=v[D+1]-v[A+1],wz=v[D+2]-v[A+2];
+      var nx=uy*wz-uz*wy,ny=uz*wx-ux*wz,nz=ux*wy-uy*wx,nl=Math.hypot(nx,ny,nz)||1;
+      var sh=0.62+0.38*Math.abs((nx*L[0]+ny*L[1]+nz*L[2])/nl);
+      var p1=pp[f[k]],p2=pp[f[k+1]],p3=pp[f[k+2]];
+      var col=o.col; if(isSel)col=[0.98,0.70,0.20,Math.max(a,0.9)];
+      items.push({d:(p1[2]+p2[2]+p3[2])/3,t:0,p:[p1,p2,p3],c:"rgba("+Math.round(col[0]*255*sh)+","+Math.round(col[1]*255*sh)+","+Math.round(col[2]*255*sh)+","+col[3]+")",o:o});
+    }
+    var e=o.e;for(var j=0;j<e.length;j+=2){var q1=pp[e[j]],q2=pp[e[j+1]];items.push({d:(q1[2]+q2[2])/2-0.02,t:1,p:[q1,q2],o:o})}
+  });
+  items.sort(function(a,b){return b.d-a.d});
+  var ec=ink();
+  items.forEach(function(it){
+    if(it.t===0){ctx.beginPath();ctx.moveTo(it.p[0][0],it.p[0][1]);ctx.lineTo(it.p[1][0],it.p[1][1]);ctx.lineTo(it.p[2][0],it.p[2][1]);ctx.closePath();ctx.fillStyle=it.c;ctx.fill();ctx.strokeStyle=it.c;ctx.lineWidth=0.6;ctx.stroke();TRI.push(it)}
+    else{ctx.beginPath();ctx.moveTo(it.p[0][0],it.p[0][1]);ctx.lineTo(it.p[1][0],it.p[1][1]);ctx.strokeStyle=ec;ctx.globalAlpha=it.o.c==="IfcSpace"||it.o.c==="IfcOpeningElement"?0.35:0.55;ctx.lineWidth=0.8;ctx.stroke();ctx.globalAlpha=1}
+  });
+}
+function inTri(x,y,p){function s(a,b,c){return (a[0]-c[0])*(b[1]-c[1])-(b[0]-c[0])*(a[1]-c[1])}
+  var d1=s([x,y],p[0],p[1]),d2=s([x,y],p[1],p[2]),d3=s([x,y],p[2],p[0]);
+  return !(((d1<0)||(d2<0)||(d3<0))&&((d1>0)||(d2>0)||(d3>0)));}
+var info=document.getElementById("vinfo");
+function pick(x,y){
+  for(var i=TRI.length-1;i>=0;i--){var t=TRI[i];if(t.o.c==="IfcSpace"&&!VIS.locali)continue;if(inTri(x,y,t.p))return t.o}
+  return null;
+}
+function describe(o){
+  if(!o){info.textContent="Clicca un muro, una finestra o la scala.";return}
+  var l=LINES[o.id]||("#"+o.id);
+  info.innerHTML="<b>"+esc(o.c)+"</b> · "+esc(o.n||"")+" · "+esc(o.p||"")+"\n"+hl(l);
+}
+var drag=null,moved=false,pts={};
+cv.addEventListener("pointerdown",function(e){cv.setPointerCapture(e.pointerId);pts[e.pointerId]=[e.clientX,e.clientY];drag=[e.clientX,e.clientY,yaw,pitch];moved=false});
+cv.addEventListener("pointermove",function(e){
+  if(!pts[e.pointerId])return; var prev=pts[e.pointerId];pts[e.pointerId]=[e.clientX,e.clientY];
+  var ids=Object.keys(pts);
+  if(ids.length===2){var a=pts[ids[0]],b=pts[ids[1]],o=ids[0]==e.pointerId?b:a;
+    var d0=Math.hypot(prev[0]-o[0],prev[1]-o[1]),d1=Math.hypot(e.clientX-o[0],e.clientY-o[1]);
+    if(d0>0)zoom=Math.max(0.5,Math.min(4,zoom*d1/d0));moved=true;draw();return}
+  var dx=e.clientX-drag[0],dy=e.clientY-drag[1];if(Math.abs(dx)+Math.abs(dy)>3)moved=true;
+  yaw=drag[2]-dx*0.008;pitch=Math.max(-0.2,Math.min(1.45,drag[3]+dy*0.006));draw();
+});
+function up(e){
+  if(!moved&&pts[e.pointerId]){var r=cv.getBoundingClientRect();sel=pick(e.clientX-r.left,e.clientY-r.top);describe(sel);draw()}
+  delete pts[e.pointerId];
+}
+cv.addEventListener("pointerup",up);cv.addEventListener("pointercancel",function(e){delete pts[e.pointerId]});
+cv.addEventListener("wheel",function(e){e.preventDefault();zoom=Math.max(0.5,Math.min(4,zoom*(e.deltaY<0?1.1:0.9)));draw()},{passive:false});
+document.querySelectorAll(".vbar input").forEach(function(i){i.addEventListener("change",function(){VIS[i.dataset.l]=i.checked;if(sel&&!layer(sel)){sel=null;describe(null)}draw()})});
+document.getElementById("vreset").addEventListener("click",function(){yaw=-0.95;pitch=0.42;zoom=1;draw()});
+window.addEventListener("resize",draw);
+try{new MutationObserver(draw).observe(document.documentElement,{attributes:true,attributeFilter:["data-theme"]})}catch(e){}
+fetch("ifc-da-zero/casetta-3d.json",{cache:"no-cache"}).then(function(r){return r.json()}).then(function(d){DATA=d;draw()}).catch(function(){info.textContent="Il modello 3D non si è caricato: si vede solo da un indirizzo web, non aprendo il file dal disco."});
+})();
+</script>
+</body>
+</html>

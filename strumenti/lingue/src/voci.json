@@ -10876,5 +10876,75 @@
 "h": "Fase attuale: sviluppo e test",
 "tag": "@aria-label",
 "id": "v1677"
+},
+{
+"k": "2 voci",
+"m": "text",
+"h": "2 voci",
+"tag": "#node",
+"id": "v1678"
+},
+{
+"k": "12 voci",
+"m": "text",
+"h": "12 voci",
+"tag": "#node",
+"id": "v1679"
+},
+{
+"k": "1 voce",
+"m": "text",
+"h": "1 voce",
+"tag": "#node",
+"id": "v1680"
+},
+{
+"k": "7 pubblicati · 14 voci",
+"m": "text",
+"h": "7 pubblicati · 14 voci",
+"tag": "#node",
+"id": "v1681"
+},
+{
+"k": "Che ne sarà dei nostri modelli, e dei nostri sforzi, tra 200 anni? Un disegno di Michelangelo si guarda ancora oggi: un nostro file si potrà ancora aprire? Partirò da una ricerca sul più antico disegno di progetto arrivato fino a noi, e su come è davvero invecchiato. Si lega all'articolo Un IFC scritto a mano →",
+"m": "html",
+"h": "Che ne sarà dei nostri modelli, e dei nostri sforzi, tra 200 anni? Un disegno di Michelangelo si guarda ancora oggi: un nostro file si potrà ancora aprire? Partirò da una ricerca sul più antico disegno di progetto arrivato fino a noi, e su come è davvero invecchiato. Si lega all'articolo <a href=\"#studio\" data-goto-art=\"man-pro-14\">Un IFC scritto a mano →</a>",
+"tag": "P",
+"id": "v1682"
+},
+{
+"k": "Un IFC scritto a mano",
+"m": "text",
+"h": "Un IFC scritto a mano",
+"tag": "H4",
+"id": "v1683"
+},
+{
+"k": "Una casetta di due piani scritta riga per riga in un file di testo, senza nessun software BIM, che si apre in Revit e passa la validazione.",
+"m": "text",
+"h": "Una casetta di due piani scritta riga per riga in un file di testo, senza nessun software BIM, che si apre in Revit e passa la validazione.",
+"tag": "P",
+"id": "v1684"
+},
+{
+"k": "Il codice IFC4 spiegato pattern per pattern: unità, struttura spaziale, posizioni a catena, profili ed estrusioni, fori e serramenti, relazioni, proprietà e GlobalId. Con un modello 3D da girare, i riferimenti tra le righe da seguire con un clic e una tabella per capire dove cercare l'errore quando un modello arriva sbagliato.",
+"m": "text",
+"h": "Il codice IFC4 spiegato pattern per pattern: unità, struttura spaziale, posizioni a catena, profili ed estrusioni, fori e serramenti, relazioni, proprietà e GlobalId. Con un modello 3D da girare, i riferimenti tra le righe da seguire con un clic e una tabella per capire dove cercare l'errore quando un modello arriva sbagliato.",
+"tag": "P",
+"id": "v1685"
+},
+{
+"k": "PubblicatoLeggi l'articoloModello 3DScarica casetta.ifc",
+"m": "html",
+"h": "<span class=\"tag ok\">Pubblicato</span><a class=\"man-btn\" href=\"manuali/ifc-da-zero.html\">Leggi l'articolo</a><a class=\"man-btn ghost\" href=\"manuali/ifc-da-zero.html#c1\">Modello 3D</a><a class=\"man-btn ghost\" href=\"manuali/ifc-da-zero/casetta.ifc\" download=\"\">Scarica casetta.ifc</a>",
+"tag": "P",
+"id": "v1686"
+},
+{
+"k": "6 voci",
+"m": "text",
+"h": "6 voci",
+"tag": "#node",
+"id": "v1687"
 }
 ]

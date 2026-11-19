@@ -1,0 +1,10 @@
+v1678	2 entrées
+v1679	12 entrées
+v1680	1 entrée
+v1681	7 publiés · 14 entrées
+v1682	Que deviendront nos maquettes, et nos efforts, dans 200 ans ? Un dessin de Michel-Ange se regarde encore aujourd'hui : un de nos fichiers pourra-t-il encore s'ouvrir ? Je partirai d'une recherche sur le plus ancien dessin de projet parvenu jusqu'à nous, et sur la façon dont il a vraiment vieilli. C'est lié à l'article <a href="#studio" data-goto-art="man-pro-14">Un IFC écrit à la main →</a>
+v1683	Un IFC écrit à la main
+v1684	Une petite maison de deux étages écrite ligne par ligne dans un fichier texte, sans aucun logiciel BIM, qui s'ouvre dans Revit et passe la validation.
+v1685	Le code IFC4 expliqué motif par motif : unités, structure spatiale, positionnements en chaîne, profils et extrusions, ouvertures et menuiseries, relations, propriétés et GlobalId. Avec une maquette 3D à faire tourner, des références entre lignes à suivre d'un clic et un tableau pour savoir où chercher l'erreur quand une maquette arrive fausse.
+v1686	<span class="tag ok">Publié</span><a class="man-btn" href="manuali/ifc-da-zero.html">Lire l'article</a><a class="man-btn ghost" href="manuali/ifc-da-zero.html#c1">Maquette 3D</a><a class="man-btn ghost" href="manuali/ifc-da-zero/casetta.ifc" download="">Télécharger casetta.ifc</a>
+v1687	6 entrées
