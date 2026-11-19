@@ -1,0 +1,7 @@
+v1669	6 publiés · 13 entrées
+v1670	La bibliothèque IFC 4.3
+v1671	Toutes les classes IFC des objets d'une maquette, avec leurs PredefinedType, expliquées en italien et en anglais.
+v1672	214 classes et 1422 combinaisons de classe et de sous-type issues du schéma IFC 4.3 ADD2 (ISO 16739-1:2024), avec la hiérarchie, les classes obsolètes et les valeurs prêtes pour IfcExportAs et IfcExportType. On les explore comme une carte mentale dépliable et on les télécharge gratuitement en Excel ou en JSON.
+v1673	<span class="tag ok">Publié</span><a class="man-btn" href="manuali/libreria-ifc.html">Ouvrir la bibliothèque</a><a class="man-btn ghost" href="manuali/libreria-ifc.html#c2">Carte mentale</a><a class="man-btn ghost" href="manuali/libreria-ifc/IFC-4.3-library.xlsx" download="">Télécharger l'Excel</a><a class="man-btn ghost" href="manuali/libreria-ifc/ifc-4.3-map.json" download="">JSON</a>
+v1674	Rechercher une classe : mur, registre, IfcSlab…
+v1675	Rechercher dans la bibliothèque IFC

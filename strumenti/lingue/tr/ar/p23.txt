@@ -1,0 +1,7 @@
+v1669	6 منشورة · 13 بندًا
+v1670	مكتبة IFC 4.3
+v1671	جميع فئات IFC لعناصر النموذج، مع قيم PredefinedType الخاصة بها، مشروحة بالإيطالية والإنجليزية.
+v1672	214 فئة و1422 تركيبة من الفئة والنوع الفرعي من مخطط IFC 4.3 ADD2 (ISO 16739-1:2024)، مع التسلسل الهرمي والفئات المهملة وقيم جاهزة لـ IfcExportAs وIfcExportType. تُستكشف كخريطة ذهنية قابلة للفتح وتُنزَّل مجانًا بصيغة Excel أو JSON.
+v1673	<span class="tag ok">منشور</span><a class="man-btn" href="manuali/libreria-ifc.html">افتح المكتبة</a><a class="man-btn ghost" href="manuali/libreria-ifc.html#c2">الخريطة الذهنية</a><a class="man-btn ghost" href="manuali/libreria-ifc/IFC-4.3-library.xlsx" download="">نزّل ملف Excel</a><a class="man-btn ghost" href="manuali/libreria-ifc/ifc-4.3-map.json" download="">JSON</a>
+v1674	ابحث عن فئة: جدار، مخمد، IfcSlab…
+v1675	ابحث في مكتبة IFC

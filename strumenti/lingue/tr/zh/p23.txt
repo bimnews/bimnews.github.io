@@ -1,0 +1,7 @@
+v1669	已发布 6 份 · 共 13 项
+v1670	IFC 4.3 库
+v1671	模型中各类对象的全部 IFC 类及其 PredefinedType，附意大利语和英语说明。
+v1672	来自 IFC 4.3 ADD2 架构（ISO 16739-1:2024）的 214 个类和 1422 个类与子类型组合，包含层级、已弃用的类以及可直接用于 IfcExportAs 和 IfcExportType 的值。可以像可展开的思维导图一样浏览，并免费下载 Excel 或 JSON 文件。
+v1673	<span class="tag ok">已发布</span><a class="man-btn" href="manuali/libreria-ifc.html">打开库</a><a class="man-btn ghost" href="manuali/libreria-ifc.html#c2">思维导图</a><a class="man-btn ghost" href="manuali/libreria-ifc/IFC-4.3-library.xlsx" download="">下载 Excel</a><a class="man-btn ghost" href="manuali/libreria-ifc/ifc-4.3-map.json" download="">JSON</a>
+v1674	搜索类：墙、风阀、IfcSlab…
+v1675	在 IFC 库中搜索

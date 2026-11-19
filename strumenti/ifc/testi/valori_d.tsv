@@ -1,0 +1,232 @@
+# Testi scritti da noi (blocco D). Le classi strutturali con valori ripetuti e IfcWallStandardCase sono in valori_e.tsv, generato da ripeti.py.
+IfcSanitaryTerminal	BATH	Bath	Vasca da bagno.	Bath.
+IfcSanitaryTerminal	BIDET	Bidet	Bidet.	Bidet.
+IfcSanitaryTerminal	CISTERN	Cistern	Cassetta di scarico del WC.	WC flushing cistern.
+IfcSanitaryTerminal	SANITARYFOUNTAIN	Sanitary fountain	Fontanella o lavamani a uso collettivo.	Drinking or washing fountain for shared use.
+IfcSanitaryTerminal	SHOWER	Shower	Doccia.	Shower.
+IfcSanitaryTerminal	SINK	Sink	Lavello, per esempio da cucina o di servizio.	Sink, for example kitchen or utility.
+IfcSanitaryTerminal	TOILETPAN	Toilet pan	Vaso WC.	WC pan.
+IfcSanitaryTerminal	URINAL	Urinal	Orinatoio.	Urinal.
+IfcSanitaryTerminal	WASHHANDBASIN	Wash hand basin	Lavabo per lavarsi le mani.	Wash basin.
+IfcSanitaryTerminal	WCSEAT	WC seat	Sedile del WC. Valore deprecato nello standard.	WC seat. Deprecated value in the standard.
+IfcSensor	CO2SENSOR	CO2 sensor	Sensore di anidride carbonica, per la qualità dell'aria.	Carbon dioxide sensor, for air quality.
+IfcSensor	CONDUCTANCESENSOR	Conductance sensor	Sensore di conducibilità elettrica di un liquido.	Sensor of a liquid's electrical conductivity.
+IfcSensor	CONTACTSENSOR	Contact sensor	Contatto che rileva apertura o chiusura, per esempio di porte e finestre.	Contact detecting opening or closing, for example of doors and windows.
+IfcSensor	COSENSOR	CO sensor	Sensore di monossido di carbonio, per esempio nelle autorimesse.	Carbon monoxide sensor, for example in car parks.
+IfcSensor	EARTHQUAKESENSOR	Earthquake sensor	Sensore di vibrazioni sismiche.	Seismic vibration sensor.
+IfcSensor	FIRESENSOR	Fire sensor	Rivelatore d'incendio generico.	Generic fire detector.
+IfcSensor	FLOWSENSOR	Flow sensor	Sensore di portata o di flusso.	Flow sensor.
+IfcSensor	FOREIGNOBJECTDETECTIONSENSOR	Foreign object detection sensor	Rilevatore di oggetti estranei, per esempio sui binari o sulle piste.	Detector of foreign objects, for example on tracks or runways.
+IfcSensor	FROSTSENSOR	Frost sensor	Sensore di gelo o brina.	Frost sensor.
+IfcSensor	GASSENSOR	Gas sensor	Rilevatore di gas, per esempio metano.	Gas detector, for example methane.
+IfcSensor	HEATSENSOR	Heat sensor	Rivelatore d'incendio di calore.	Heat detector.
+IfcSensor	HUMIDITYSENSOR	Humidity sensor	Sensore di umidità dell'aria.	Air humidity sensor.
+IfcSensor	IDENTIFIERSENSOR	Identifier sensor	Lettore che identifica persone o oggetti: badge, RFID, codici.	Reader identifying people or objects: badges, RFID, codes.
+IfcSensor	IONCONCENTRATIONSENSOR	Ion concentration sensor	Sensore di concentrazione di ioni in un liquido.	Sensor of ion concentration in a liquid.
+IfcSensor	LEVELSENSOR	Level sensor	Sensore di livello di un liquido o di un materiale.	Level sensor for a liquid or material.
+IfcSensor	LIGHTSENSOR	Light sensor	Sensore di luce o di illuminamento.	Light or illuminance sensor.
+IfcSensor	MOISTURESENSOR	Moisture sensor	Sensore di umidità di un materiale o del terreno.	Moisture sensor for a material or soil.
+IfcSensor	MOVEMENTSENSOR	Movement sensor	Rilevatore di movimento o di presenza.	Motion or presence detector.
+IfcSensor	OBSTACLESENSOR	Obstacle sensor	Sensore che rileva ostacoli lungo un percorso.	Sensor detecting obstacles along a path.
+IfcSensor	PHSENSOR	pH sensor	Sensore di pH.	pH sensor.
+IfcSensor	PRESSURESENSOR	Pressure sensor	Sensore di pressione.	Pressure sensor.
+IfcSensor	RADIATIONSENSOR	Radiation sensor	Sensore di radiazione, per esempio solare.	Radiation sensor, for example solar.
+IfcSensor	RADIOACTIVITYSENSOR	Radioactivity sensor	Sensore di radioattività.	Radioactivity sensor.
+IfcSensor	RAINSENSOR	Rain sensor	Sensore di pioggia.	Rain sensor.
+IfcSensor	SMOKESENSOR	Smoke sensor	Rivelatore di fumo.	Smoke detector.
+IfcSensor	SNOWDEPTHSENSOR	Snow depth sensor	Sensore di altezza della neve.	Snow depth sensor.
+IfcSensor	SOUNDSENSOR	Sound sensor	Sensore di suono o di rumore.	Sound or noise sensor.
+IfcSensor	TEMPERATURESENSOR	Temperature sensor	Sensore di temperatura.	Temperature sensor.
+IfcSensor	TRAINSENSOR	Train sensor	Sensore che rileva la presenza o il passaggio di un treno.	Sensor detecting the presence or passage of a train.	Sensore di treno
+IfcSensor	TURNOUTCLOSURESENSOR	Turnout closure sensor	Sensore che controlla che l'ago del deviatoio sia accostato.	Sensor checking that the switch blade is closed.
+IfcSensor	WHEELSENSOR	Wheel sensor	Sensore che conta le ruote o gli assi dei treni.	Sensor counting train wheels or axles.
+IfcSensor	WINDSENSOR	Wind sensor	Sensore di velocità e direzione del vento.	Wind speed and direction sensor.
+IfcShadingDevice	AWNING	Awning	Tenda da sole sporgente.	Projecting sun awning.
+IfcShadingDevice	JALOUSIE	Jalousie	Veneziana o gelosia a lamelle orientabili.	Venetian blind or louvred shutter with adjustable slats.
+IfcShadingDevice	SHUTTER	Shutter	Persiana, scuro o tapparella.	Shutter or roller shutter.
+IfcSign	MARKER	Marker	Segnale a picchetto o delineatore.	Marker post or delineator.
+IfcSign	MIRROR	Mirror	Specchio stradale per vedere oltre un ostacolo.	Traffic mirror for seeing past an obstruction.
+IfcSign	PICTORAL	Pictorial	Cartello con testo o simboli.	Sign with text or symbols.	Cartello
+IfcSignal	AUDIO	Audio	Segnale acustico.	Audible signal.
+IfcSignal	MIXED	Mixed	Segnale acustico e luminoso insieme.	Combined audible and visual signal.
+IfcSignal	VISUAL	Visual	Segnale luminoso, come un semaforo.	Visual signal, such as a traffic light.
+IfcSolarDevice	SOLARCOLLECTOR	Solar collector	Collettore solare termico che scalda un fluido.	Solar thermal collector heating a fluid.
+IfcSolarDevice	SOLARPANEL	Solar panel	Modulo fotovoltaico che produce energia elettrica.	Photovoltaic module producing electricity.
+IfcSpaceHeater	CONVECTOR	Convector	Convettore che scalda soprattutto per convezione.	Convector heating mainly by convection.
+IfcSpaceHeater	RADIATOR	Radiator	Radiatore o termosifone.	Radiator.
+IfcSpatialZone	CONSTRUCTION	Construction	Zona di cantiere o di lavorazione.	Construction or work zone.
+IfcSpatialZone	FIRESAFETY	Fire safety	Compartimento o zona antincendio.	Fire compartment or fire zone.
+IfcSpatialZone	INTERFERENCE	Interference	Zona in cui si verificano interferenze tra discipline o impianti.	Zone used to check clashes between disciplines or systems.
+IfcSpatialZone	LIGHTING	Lighting	Zona di illuminazione con le stesse esigenze o comandi.	Lighting zone with the same requirements or controls.
+IfcSpatialZone	OCCUPANCY	Occupancy	Zona di occupazione o di utilizzo.	Occupancy or use zone.
+IfcSpatialZone	RESERVATION	Reservation	Zona riservata a un uso futuro o vietata ad altri elementi.	Zone reserved for future use or kept clear of other elements.
+IfcSpatialZone	SECURITY	Security	Zona con lo stesso livello di sicurezza o di accesso.	Zone with the same security or access level.
+IfcSpatialZone	THERMAL	Thermal	Zona termica, con le stesse condizioni di climatizzazione.	Thermal zone, with the same climate conditions.
+IfcSpatialZone	TRANSPORT	Transport	Zona dedicata a traffico o trasporto.	Zone used for traffic or transport.
+IfcSpatialZone	VENTILATION	Ventilation	Zona servita dallo stesso impianto di ventilazione.	Zone served by the same ventilation system.
+IfcStackTerminal	BIRDCAGE	Birdcage	Griglia che impedisce agli uccelli di entrare nella canna.	Cage stopping birds from entering the stack.
+IfcStackTerminal	COWL	Cowl	Comignolo o cappello antivento in cima alla canna.	Cowl or wind cap on top of the stack.
+IfcStackTerminal	RAINWATERHOPPER	Rainwater hopper	Imbuto che raccoglie l'acqua piovana all'imbocco del pluviale.	Hopper collecting rainwater at the top of a downpipe.	Imbuto pluviale
+IfcStair	CURVED_RUN_STAIR	Curved run stair	Scala a una sola rampa curva.	Stair with a single curved flight.
+IfcStair	DOUBLE_RETURN_STAIR	Double return stair	Scala che sale con una rampa e si divide in due rampe che tornano indietro.	Stair rising in one flight and splitting into two return flights.
+IfcStair	HALF_TURN_STAIR	Half-turn stair	Scala che gira di 180° con un pianerottolo.	Stair turning 180° at a landing.
+IfcStair	HALF_WINDING_STAIR	Half-winding stair	Scala che gira di 180° con gradini a ventaglio.	Stair turning 180° with winders.
+IfcStair	LADDER	Ladder	Scala a pioli o alla marinara.	Ladder.
+IfcStair	QUARTER_TURN_STAIR	Quarter-turn stair	Scala che gira di 90° con un pianerottolo.	Stair turning 90° at a landing.
+IfcStair	QUARTER_WINDING_STAIR	Quarter-winding stair	Scala che gira di 90° con gradini a ventaglio.	Stair turning 90° with winders.
+IfcStair	SPIRAL_STAIR	Spiral stair	Scala a chiocciola.	Spiral stair.
+IfcStair	STRAIGHT_RUN_STAIR	Straight run stair	Scala rettilinea a una rampa.	Straight single-flight stair.
+IfcStair	THREE_QUARTER_TURN_STAIR	Three-quarter-turn stair	Scala che gira di 270° con pianerottoli.	Stair turning 270° with landings.
+IfcStair	THREE_QUARTER_WINDING_STAIR	Three-quarter-winding stair	Scala che gira di 270° con gradini a ventaglio.	Stair turning 270° with winders.
+IfcStair	TWO_CURVED_RUN_STAIR	Two curved run stair	Scala con due rampe curve.	Stair with two curved flights.
+IfcStair	TWO_QUARTER_TURN_STAIR	Two quarter-turn stair	Scala che gira due volte di 90° con pianerottoli.	Stair turning twice by 90° at landings.
+IfcStair	TWO_QUARTER_WINDING_STAIR	Two quarter-winding stair	Scala che gira due volte di 90° con gradini a ventaglio.	Stair turning twice by 90° with winders.
+IfcStair	TWO_STRAIGHT_RUN_STAIR	Two straight run stair	Scala rettilinea in due rampe con un pianerottolo.	Straight stair in two flights with a landing.
+IfcStairFlight	CURVED	Curved	Rampa curva.	Curved flight.
+IfcStairFlight	FREEFORM	Freeform	Rampa a forma libera.	Freeform flight.
+IfcStairFlight	SPIRAL	Spiral	Rampa elicoidale, come nelle scale a chiocciola.	Spiral flight, as in spiral stairs.
+IfcStairFlight	STRAIGHT	Straight	Rampa rettilinea.	Straight flight.
+IfcStairFlight	WINDER	Winder	Rampa con gradini a ventaglio.	Flight with winders.
+IfcStructuralCurveMember	CABLE	Cable	Cavo: lavora solo a trazione.	Cable: works in tension only.
+IfcStructuralCurveMember	COMPRESSION_MEMBER	Compression member	Asta che lavora solo a compressione.	Member working in compression only.
+IfcStructuralCurveMember	PIN_JOINED_MEMBER	Pin-joined member	Asta incernierata agli estremi: solo sforzo normale.	Member pinned at both ends: axial force only.
+IfcStructuralCurveMember	RIGID_JOINED_MEMBER	Rigid-joined member	Asta collegata rigidamente: porta anche flessione e taglio.	Rigidly connected member: also carries bending and shear.
+IfcStructuralCurveMember	TENSION_MEMBER	Tension member	Asta che lavora solo a trazione.	Member working in tension only.
+IfcStructuralSurfaceMember	BENDING_ELEMENT	Bending element	Piastra che lavora a flessione.	Plate working in bending.
+IfcStructuralSurfaceMember	MEMBRANE_ELEMENT	Membrane element	Lastra che lavora solo nel proprio piano.	Element working in its own plane only.
+IfcStructuralSurfaceMember	SHELL	Shell	Guscio che lavora sia a flessione sia nel piano.	Shell working both in bending and in plane.
+IfcSurfaceFeature	DEFECT	Defect	Difetto della superficie da registrare, come una fessura.	Surface defect to record, such as a crack.
+IfcSurfaceFeature	HATCHMARKING	Hatch marking	Zebratura dipinta sulla pavimentazione.	Hatched marking painted on the pavement.
+IfcSurfaceFeature	LINEMARKING	Line marking	Linea dipinta sulla pavimentazione.	Line painted on the pavement.
+IfcSurfaceFeature	MARK	Mark	Segno di riferimento sull'elemento.	Reference mark on the element.
+IfcSurfaceFeature	NONSKIDSURFACING	Non-skid surfacing	Trattamento antisdrucciolo della superficie.	Anti-skid surface treatment.
+IfcSurfaceFeature	PAVEMENTSURFACEMARKING	Pavement surface marking	Segnaletica orizzontale.	Road surface marking.
+IfcSurfaceFeature	RUMBLESTRIP	Rumble strip	Banda rumorosa longitudinale che avvisa chi esce di corsia.	Longitudinal rumble strip warning drivers leaving the lane.
+IfcSurfaceFeature	SYMBOLMARKING	Symbol marking	Simbolo dipinto sulla pavimentazione, come frecce e scritte.	Symbol painted on the pavement, such as arrows and words.
+IfcSurfaceFeature	TAG	Tag	Etichetta o marcatura identificativa.	Identification tag or marking.
+IfcSurfaceFeature	TRANSVERSERUMBLESTRIP	Transverse rumble strip	Bande rumorose trasversali che fanno rallentare.	Transverse rumble strips that slow traffic down.
+IfcSurfaceFeature	TREATMENT	Treatment	Trattamento della superficie, come sabbiatura o verniciatura.	Surface treatment, such as blasting or painting.
+IfcSwitchingDevice	CONTACTOR	Contactor	Contattore comandato a distanza.	Remotely operated contactor.
+IfcSwitchingDevice	DIMMERSWITCH	Dimmer switch	Regolatore dell'intensità luminosa.	Dimmer switch.
+IfcSwitchingDevice	EMERGENCYSTOP	Emergency stop	Pulsante di arresto d'emergenza.	Emergency stop button.
+IfcSwitchingDevice	KEYPAD	Keypad	Tastierino di comando.	Control keypad.
+IfcSwitchingDevice	MOMENTARYSWITCH	Momentary switch	Pulsante che resta chiuso solo finché è premuto.	Push button closed only while pressed.	Pulsante
+IfcSwitchingDevice	RELAY	Relay	Relè.	Relay.
+IfcSwitchingDevice	SELECTORSWITCH	Selector switch	Commutatore a più posizioni.	Multi-position selector switch.
+IfcSwitchingDevice	STARTER	Starter	Avviatore per motori.	Motor starter.
+IfcSwitchingDevice	START_AND_STOP_EQUIPMENT	Start and stop equipment	Comando di marcia e arresto di una macchina.	Start and stop control of a machine.
+IfcSwitchingDevice	SWITCHDISCONNECTOR	Switch disconnector	Interruttore di manovra-sezionatore.	Switch disconnector.
+IfcSwitchingDevice	TOGGLESWITCH	Toggle switch	Interruttore a leva o a bilanciere, come quelli della luce.	Toggle or rocker switch, like light switches.	Interruttore
+IfcSystemFurnitureElement	PANEL	Panel	Pannello divisorio di una postazione modulare.	Screen panel of a modular workstation.
+IfcSystemFurnitureElement	SUBRACK	Subrack	Telaio che contiene schede o moduli in un armadio tecnico.	Frame holding cards or modules in an equipment cabinet.
+IfcSystemFurnitureElement	WORKSURFACE	Work surface	Piano di lavoro di una postazione modulare.	Worktop of a modular workstation.
+IfcTank	BASIN	Basin	Vasca aperta.	Open basin.
+IfcTank	BREAKPRESSURE	Break pressure	Vasca che interrompe la pressione di una rete, separandola da quella a valle.	Tank breaking the pressure of a network, separating it from downstream.
+IfcTank	EXPANSION	Expansion	Vaso di espansione che assorbe le variazioni di volume dell'acqua.	Expansion vessel absorbing water volume changes.
+IfcTank	FEEDANDEXPANSION	Feed and expansion	Vaso aperto che alimenta l'impianto e ne assorbe l'espansione.	Open tank feeding the system and absorbing its expansion.
+IfcTank	OILRETENTIONTRAY	Oil retention tray	Vasca che raccoglie l'olio in caso di perdite, per esempio sotto un trasformatore.	Tray collecting oil in case of leaks, for example under a transformer.
+IfcTank	PRESSUREVESSEL	Pressure vessel	Serbatoio in pressione.	Pressure vessel.
+IfcTank	STORAGE	Storage	Serbatoio di accumulo.	Storage tank.
+IfcTank	VESSEL	Vessel	Recipiente chiuso generico.	Generic closed vessel.
+IfcTendon	BAR	Bar	Barra di precompressione.	Prestressing bar.
+IfcTendon	COATED	Coated	Cavo rivestito o inguainato, per esempio non aderente.	Coated or sheathed tendon, for example unbonded.
+IfcTendon	STRAND	Strand	Trefolo di fili d'acciaio.	Strand of steel wires.
+IfcTendon	WIRE	Wire	Filo d'acciaio singolo.	Single steel wire.
+IfcTendonAnchor	COUPLER	Coupler	Giunto che collega due cavi di precompressione.	Coupler joining two tendons.
+IfcTendonAnchor	FIXED_END	Fixed end	Ancoraggio passivo, all'estremità che non si tesa.	Dead-end anchorage, at the end that is not stressed.
+IfcTendonAnchor	TENSIONING_END	Tensioning end	Ancoraggio attivo, da cui si tesa il cavo.	Live-end anchorage, from which the tendon is stressed.
+IfcTendonConduit	COUPLER	Coupler	Manicotto che collega due tratti di guaina.	Coupler joining two duct lengths.
+IfcTendonConduit	DIABOLO	Diabolo	Elemento svasato che guida il cavo nei punti di deviazione.	Flared element guiding the tendon at deviation points.
+IfcTendonConduit	DUCT	Duct	Guaina in cui scorre il cavo.	Duct through which the tendon runs.
+IfcTendonConduit	GROUTING_DUCT	Grouting duct	Tubetto per iniettare la boiacca o far uscire l'aria.	Small tube for injecting grout or venting air.
+IfcTendonConduit	TRUMPET	Trumpet	Raccordo a tromba tra guaina e ancoraggio.	Trumpet-shaped transition between duct and anchorage.
+IfcTrackElement	BLOCKINGDEVICE	Blocking device	Dispositivo che impedisce il movimento dei veicoli su un binario.	Device preventing vehicle movement on a track.
+IfcTrackElement	DERAILER	Derailer	Svio: fa deragliare in modo controllato un veicolo che non deve proseguire.	Derailer: derails in a controlled way a vehicle that must not proceed.	Svio (deragliatore)
+IfcTrackElement	FROG	Frog	Cuore del deviatoio, dove si incrociano le rotaie.	Frog of the turnout, where the rails cross.
+IfcTrackElement	HALF_SET_OF_BLADES	Half set of blades	Metà del gruppo aghi di un deviatoio: un ago con il suo contrago.	Half of a turnout's switch set: one blade with its stock rail.
+IfcTrackElement	SLEEPER	Sleeper	Traversa che sostiene le rotaie.	Sleeper supporting the rails.
+IfcTrackElement	SPEEDREGULATOR	Speed regulator	Dispositivo che frena i carri, per esempio negli scali di smistamento.	Device braking wagons, for example in marshalling yards.
+IfcTrackElement	TRACKENDOFALIGNMENT	Track end of alignment	Punto in cui finisce il binario.	Point where the track ends.
+IfcTrackElement	VEHICLESTOP	Vehicle stop	Paraurti o respingente di fine binario.	Buffer stop at the end of the track.
+IfcTransformer	CHOPPER	Chopper	Convertitore che regola una tensione continua a impulsi.	Converter regulating a DC voltage by pulses.
+IfcTransformer	COMBINED	Combined	Trasformatore che misura insieme tensione e corrente.	Instrument transformer measuring voltage and current together.
+IfcTransformer	CURRENT	Current	Trasformatore di corrente, per misure e protezioni.	Current transformer, for metering and protection.
+IfcTransformer	FREQUENCY	Frequency	Convertitore di frequenza.	Frequency converter.
+IfcTransformer	INVERTER	Inverter	Inverter: da corrente continua ad alternata.	Inverter: from DC to AC.
+IfcTransformer	RECTIFIER	Rectifier	Raddrizzatore: da corrente alternata a continua.	Rectifier: from AC to DC.
+IfcTransformer	VOLTAGE	Voltage	Trasformatore che cambia la tensione, di potenza o di misura.	Transformer changing voltage, power or instrument type.
+IfcTransportElement	CRANEWAY	Craneway	Via di corsa di un carroponte.	Runway of an overhead crane.
+IfcTransportElement	ELEVATOR	Elevator	Ascensore o montacarichi.	Lift or goods lift.
+IfcTransportElement	ESCALATOR	Escalator	Scala mobile.	Escalator.
+IfcTransportElement	HAULINGGEAR	Hauling gear	Argano o verricello che traina carichi in orizzontale.	Winch hauling loads horizontally.
+IfcTransportElement	LIFTINGGEAR	Lifting gear	Apparecchio di sollevamento, come paranchi e gru.	Lifting equipment, such as hoists and cranes.
+IfcTransportElement	MOVINGWALKWAY	Moving walkway	Tappeto mobile.	Moving walkway.
+IfcTubeBundle	FINNED	Finned	Fascio di tubi alettati per aumentare lo scambio.	Bundle of finned tubes to increase heat transfer.
+IfcUnitaryControlElement	ALARMPANEL	Alarm panel	Centrale o pannello di allarme.	Alarm control panel.
+IfcUnitaryControlElement	BASESTATIONCONTROLLER	Base station controller	Controllore delle stazioni radio base nelle reti mobili (BSC).	Controller of base stations in mobile networks (BSC).
+IfcUnitaryControlElement	COMBINED	Combined	Elemento che riunisce più funzioni di controllo.	Element combining several control functions.
+IfcUnitaryControlElement	CONTROLPANEL	Control panel	Pannello di comando.	Control panel.
+IfcUnitaryControlElement	GASDETECTIONPANEL	Gas detection panel	Centrale di rilevazione gas.	Gas detection control panel.
+IfcUnitaryControlElement	HUMIDISTAT	Humidistat	Umidostato.	Humidistat.
+IfcUnitaryControlElement	INDICATORPANEL	Indicator panel	Pannello con spie e indicatori di stato.	Panel with status lamps and indicators.
+IfcUnitaryControlElement	MIMICPANEL	Mimic panel	Quadro sinottico che mostra lo schema e lo stato dell'impianto.	Mimic panel showing the system layout and status.
+IfcUnitaryControlElement	THERMOSTAT	Thermostat	Termostato ambiente.	Room thermostat.
+IfcUnitaryControlElement	WEATHERSTATION	Weather station	Stazione meteorologica.	Weather station.
+IfcUnitaryEquipment	AIRCONDITIONINGUNIT	Air conditioning unit	Condizionatore autonomo.	Packaged air conditioner.
+IfcUnitaryEquipment	AIRHANDLER	Air handler	Unità di trattamento aria (UTA).	Air handling unit (AHU).
+IfcUnitaryEquipment	DEHUMIDIFIER	Dehumidifier	Deumidificatore.	Dehumidifier.
+IfcUnitaryEquipment	ROOFTOPUNIT	Rooftop unit	Unità compatta installata in copertura.	Packaged unit installed on the roof.
+IfcUnitaryEquipment	SPLITSYSTEM	Split system	Climatizzatore split con unità interna ed esterna.	Split air conditioner with indoor and outdoor units.
+IfcValve	AIRRELEASE	Air release	Valvola di sfogo dell'aria (jolly).	Air release valve.
+IfcValve	ANTIVACUUM	Anti-vacuum	Valvola che impedisce la formazione di vuoto nella tubazione.	Valve preventing vacuum in the pipe.
+IfcValve	CHANGEOVER	Changeover	Valvola che commuta il flusso tra due circuiti.	Valve switching flow between two circuits.
+IfcValve	CHECK	Check	Valvola di ritegno: il flusso passa in un solo verso.	Check valve: flow passes in one direction only.
+IfcValve	COMMISSIONING	Commissioning	Valvola con prese di misura per tarare le portate.	Valve with test points for balancing flows.	Valvola di taratura
+IfcValve	DIVERTING	Diverting	Valvola a tre vie che devia il flusso.	Three-way valve diverting the flow.
+IfcValve	DOUBLECHECK	Double check	Doppia valvola di ritegno contro il riflusso.	Double check valve against backflow.
+IfcValve	DOUBLEREGULATING	Double regulating	Valvola di regolazione con memoria della posizione di taratura.	Regulating valve that remembers its balancing setting.
+IfcValve	DRAWOFFCOCK	Draw-off cock	Rubinetto di scarico per svuotare un impianto.	Drain cock for emptying a system.
+IfcValve	FAUCET	Faucet	Rubinetto di erogazione, per esempio di un lavabo.	Tap, for example on a basin.
+IfcValve	FLUSHING	Flushing	Valvola di cacciata o flussometro per WC e orinatoi.	Flush valve for WCs and urinals.
+IfcValve	GASCOCK	Gas cock	Rubinetto del gas a monte di un apparecchio.	Gas cock upstream of an appliance.
+IfcValve	GASTAP	Gas tap	Rubinetto del gas di erogazione, per esempio di laboratorio.	Gas outlet tap, for example in a laboratory.
+IfcValve	ISOLATING	Isolating	Valvola di intercettazione, aperta o chiusa.	Isolating valve, open or closed.
+IfcValve	MIXING	Mixing	Valvola che miscela due flussi, per esempio acqua calda e fredda.	Valve mixing two flows, for example hot and cold water.
+IfcValve	PRESSUREREDUCING	Pressure reducing	Riduttore di pressione.	Pressure reducing valve.
+IfcValve	PRESSURERELIEF	Pressure relief	Valvola di sicurezza che scarica la sovrappressione.	Safety valve relieving overpressure.
+IfcValve	REGULATING	Regulating	Valvola di regolazione della portata.	Flow regulating valve.
+IfcValve	SAFETYCUTOFF	Safety cutoff	Valvola che chiude automaticamente in caso di pericolo, per esempio fuga di gas.	Valve closing automatically in danger, for example a gas leak.
+IfcValve	STEAMTRAP	Steam trap	Scaricatore di condensa.	Steam trap.
+IfcValve	STOPCOCK	Stopcock	Rubinetto di arresto, per esempio all'ingresso dell'acqua.	Stopcock, for example at the water inlet.
+IfcVehicle	CARGO	Cargo	Unità di carico, come un container.	Cargo unit, such as a container.
+IfcVehicle	ROLLINGSTOCK	Rolling stock	Materiale rotabile ferroviario.	Railway rolling stock.
+IfcVehicle	VEHICLE	Vehicle	Veicolo generico.	Generic vehicle.
+IfcVehicle	VEHICLEAIR	Air vehicle	Aeromobile.	Aircraft.
+IfcVehicle	VEHICLEMARINE	Marine vehicle	Imbarcazione o nave.	Boat or ship.
+IfcVehicle	VEHICLETRACKED	Tracked vehicle	Veicolo cingolato.	Tracked vehicle.
+IfcVehicle	VEHICLEWHEELED	Wheeled vehicle	Veicolo su ruote.	Wheeled vehicle.
+IfcVibrationDamper	AXIAL_YIELD	Axial yield	Dissipatore che lavora per snervamento assiale.	Damper working by axial yielding.
+IfcVibrationDamper	BENDING_YIELD	Bending yield	Dissipatore che lavora per snervamento a flessione.	Damper working by bending yielding.
+IfcVibrationDamper	FRICTION	Friction	Dissipatore ad attrito.	Friction damper.
+IfcVibrationDamper	RUBBER	Rubber	Smorzatore in gomma o elastomero.	Rubber or elastomeric damper.
+IfcVibrationDamper	SHEAR_YIELD	Shear yield	Dissipatore che lavora per snervamento a taglio.	Damper working by shear yielding.
+IfcVibrationDamper	VISCOUS	Viscous	Dissipatore viscoso a fluido.	Viscous fluid damper.
+IfcVibrationIsolator	BASE	Base	Isolatore alla base, per esempio sismico.	Base isolator, for example seismic.
+IfcVibrationIsolator	COMPRESSION	Compression	Isolatore che lavora a compressione, per esempio in gomma.	Isolator working in compression, for example rubber.
+IfcVibrationIsolator	SPRING	Spring	Isolatore a molla.	Spring isolator.
+IfcVirtualElement	BOUNDARY	Boundary	Confine virtuale tra spazi senza un elemento fisico.	Virtual boundary between spaces without a physical element.
+IfcVirtualElement	CLEARANCE	Clearance	Volume di rispetto da tenere libero, per esempio per manutenzione o sagoma.	Clearance volume to keep free, for example for maintenance or gauge.
+IfcVirtualElement	PROVISIONFORVOID	Provision for void	Volume che indica dove si dovrà fare un'apertura.	Volume showing where an opening will be needed.
+IfcVoidingFeature	CHAMFER	Chamfer	Smusso su uno spigolo.	Chamfer on an edge.
+IfcVoidingFeature	CUTOUT	Cutout	Ritaglio di una parte dell'elemento.	Cut-out part of the element.
+IfcVoidingFeature	EDGE	Edge	Lavorazione lungo un bordo.	Feature along an edge.
+IfcVoidingFeature	HOLE	Hole	Foro.	Hole.
+IfcVoidingFeature	MITER	Mitre	Taglio inclinato per una giunzione ad angolo.	Angled cut for a corner joint.
+IfcVoidingFeature	NOTCH	Notch	Intaglio o tacca.	Notch.
+IfcWasteTerminal	FLOORTRAP	Floor trap	Piletta a pavimento con sifone.	Floor trap with a water seal.
+IfcWasteTerminal	FLOORWASTE	Floor waste	Scarico a pavimento.	Floor waste outlet.
+IfcWasteTerminal	GULLYSUMP	Gully sump	Caditoia con pozzetto di sedimentazione, senza sifone.	Gully with a silt pit, without a trap.
+IfcWasteTerminal	GULLYTRAP	Gully trap	Caditoia con sifone.	Trapped gully.
+IfcWasteTerminal	ROOFDRAIN	Roof drain	Bocchettone di scarico in copertura.	Roof drain outlet.
+IfcWasteTerminal	WASTEDISPOSALUNIT	Waste disposal unit	Tritarifiuti sotto il lavello.	Under-sink food waste disposer.
+IfcWasteTerminal	WASTETRAP	Waste trap	Sifone di scarico di un apparecchio.	Appliance waste trap.

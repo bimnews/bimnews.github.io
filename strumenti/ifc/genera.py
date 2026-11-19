@@ -59,7 +59,13 @@ def main():
         if c not in classi:
             sys.exit("classe sconosciuta in testi/classi.tsv: " + c)
         classi[c].update(en=en, di=di, de=de)
-    testi = {(c, v): (en, di, de, itc) for c, v, en, di, de, itc in tsv(os.path.join(H, "testi", "valori.tsv"), 6)}
+    import glob
+    testi = {}
+    for fp in sorted(glob.glob(os.path.join(H, "testi", "valori*.tsv"))):
+        for c, v, en, di, de, itc in tsv(fp, 6):
+            if (c, v) in testi:
+                sys.exit("valore ripetuto: %s.%s" % (c, v))
+            testi[(c, v)] = (en, di, de, itc)
     valori = OrderedDict()
     for c, v, it, dep in tsv(os.path.join(H, "struttura_valori.tsv"), 4):
         valori.setdefault(c, []).append((v, it, dep))

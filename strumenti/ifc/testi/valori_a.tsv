@@ -1,0 +1,249 @@
+# Testi scritti da noi (blocco A). Colonne: classe, PredefinedType, nome EN, descrizione IT, descrizione EN, nome IT corretto (facoltativo)
+IfcActuator	ELECTRICACTUATOR	Electric actuator	Attuatore mosso da un motore o da un solenoide elettrico.	Actuator driven by an electric motor or solenoid.
+IfcActuator	HANDOPERATEDACTUATOR	Hand-operated actuator	Attuatore azionato a mano, con leva o volantino.	Actuator operated by hand, with a lever or handwheel.
+IfcActuator	HYDRAULICACTUATOR	Hydraulic actuator	Attuatore mosso dalla pressione di un liquido.	Actuator driven by liquid pressure.
+IfcActuator	PNEUMATICACTUATOR	Pneumatic actuator	Attuatore mosso da aria compressa.	Actuator driven by compressed air.
+IfcActuator	THERMOSTATICACTUATOR	Thermostatic actuator	Attuatore che si muove da solo al variare della temperatura, come una testa termostatica.	Actuator that moves by itself as temperature changes, such as a thermostatic head.
+IfcAirTerminal	DIFFUSER	Diffuser	Terminale che immette aria miscelandola rapidamente con quella dell'ambiente.	Terminal supplying air and mixing it quickly with room air.
+IfcAirTerminal	GRILLE	Grille	Griglia fissa per la mandata o la ripresa dell'aria.	Fixed grille for supply or return air.
+IfcAirTerminal	LOUVRE	Louvre	Griglia a lamelle in facciata per prese o espulsioni d'aria, che ferma la pioggia.	Façade louvre for air intake or exhaust, keeping rain out.
+IfcAirTerminal	REGISTER	Register	Bocchetta con serranda incorporata per regolare la portata.	Grille with a built-in damper to adjust airflow.
+IfcAirTerminalBox	CONSTANTFLOW	Constant flow	Cassetta che mantiene una portata d'aria costante.	Box keeping a constant airflow.
+IfcAirTerminalBox	VARIABLEFLOWPRESSUREDEPENDANT	Variable flow, pressure dependent	Cassetta a portata variabile la cui portata risente della pressione nel canale.	Variable-flow box whose airflow is affected by duct pressure.
+IfcAirTerminalBox	VARIABLEFLOWPRESSUREINDEPENDANT	Variable flow, pressure independent	Cassetta a portata variabile che misura la portata e la mantiene al variare della pressione.	Variable-flow box that measures airflow and holds it as pressure changes.
+IfcAirToAirHeatRecovery	FIXEDPLATECOUNTERFLOWEXCHANGER	Fixed plate, counterflow	Recuperatore a piastre in cui i due flussi d'aria scorrono in versi opposti.	Plate heat exchanger where the two airstreams flow in opposite directions.
+IfcAirToAirHeatRecovery	FIXEDPLATECROSSFLOWEXCHANGER	Fixed plate, crossflow	Recuperatore a piastre in cui i due flussi d'aria si incrociano.	Plate heat exchanger where the two airstreams cross each other.
+IfcAirToAirHeatRecovery	FIXEDPLATEPARALLELFLOWEXCHANGER	Fixed plate, parallel flow	Recuperatore a piastre in cui i due flussi d'aria scorrono nello stesso verso.	Plate heat exchanger where the two airstreams flow in the same direction.
+IfcAirToAirHeatRecovery	HEATPIPE	Heat pipe	Recuperatore con tubi sigillati che trasportano calore per evaporazione e condensazione.	Recovery unit with sealed tubes carrying heat by evaporation and condensation.
+IfcAirToAirHeatRecovery	ROTARYWHEEL	Rotary wheel	Recuperatore a ruota che gira tra il flusso espulso e quello di rinnovo.	Wheel rotating between the exhaust and supply airstreams.
+IfcAirToAirHeatRecovery	RUNAROUNDCOILLOOP	Run-around coil loop	Due batterie collegate da un circuito ad acqua o glicole, per flussi d'aria lontani tra loro.	Two coils linked by a water or glycol loop, for airstreams far apart.
+IfcAirToAirHeatRecovery	THERMOSIPHONCOILTYPEHEATEXCHANGERS	Thermosiphon, coil type	Recuperatore a termosifone con batterie collegate, senza pompa.	Thermosiphon recovery unit with linked coils, without a pump.
+IfcAirToAirHeatRecovery	THERMOSIPHONSEALEDTUBEHEATEXCHANGERS	Thermosiphon, sealed tube	Recuperatore a termosifone con tubi sigillati che attraversano i due flussi.	Thermosiphon recovery unit with sealed tubes crossing both airstreams.
+IfcAirToAirHeatRecovery	TWINTOWERENTHALPYRECOVERYLOOPS	Twin tower enthalpy recovery	Recupero di calore e umidità con due torri e una soluzione che circola tra loro.	Heat and moisture recovery with two towers and a solution circulating between them.
+IfcAlarm	BELL	Bell	Campana d'allarme.	Alarm bell.
+IfcAlarm	BREAKGLASSBUTTON	Break-glass button	Pulsante d'allarme che si attiva rompendo o premendo un vetrino.	Alarm call point activated by breaking or pressing a glass.
+IfcAlarm	LIGHT	Light	Segnalatore luminoso d'allarme, come un lampeggiante.	Visual alarm, such as a flashing beacon.
+IfcAlarm	MANUALPULLBOX	Manual pull box	Pulsante d'allarme a leva da tirare.	Alarm station operated by pulling a lever.
+IfcAlarm	RAILWAYCROCODILE	Railway crocodile	Dispositivo posato nel binario che trasmette un segnale al treno al passaggio.	Device in the track that sends a signal to the passing train.
+IfcAlarm	RAILWAYDETONATOR	Railway detonator	Petardo posato sulla rotaia che esplode al passaggio del treno per avvisare il macchinista.	Charge placed on the rail that bangs under the train to warn the driver.
+IfcAlarm	SIREN	Siren	Sirena d'allarme.	Alarm siren.
+IfcAlarm	WHISTLE	Whistle	Fischio d'allarme.	Alarm whistle.
+IfcAnnotation	CONTOURLINE	Contour line	Linea che unisce punti alla stessa quota.	Line joining points at the same elevation.
+IfcAnnotation	DIMENSION	Dimension	Quota che misura una distanza o un angolo nel disegno.	Dimension measuring a distance or angle in the drawing.
+IfcAnnotation	ISOBAR	Isobar	Linea che unisce punti alla stessa pressione.	Line joining points of equal pressure.
+IfcAnnotation	ISOLUX	Isolux	Linea che unisce punti con lo stesso illuminamento.	Line joining points of equal illuminance.
+IfcAnnotation	ISOTHERM	Isotherm	Linea che unisce punti alla stessa temperatura.	Line joining points of equal temperature.
+IfcAnnotation	LEADER	Leader	Linea di richiamo che collega una nota all'oggetto.	Leader line linking a note to an object.
+IfcAnnotation	SURVEY	Survey	Annotazione che registra un punto o un dato di rilievo.	Annotation recording a survey point or measurement.
+IfcAnnotation	SYMBOL	Symbol	Simbolo grafico nel disegno.	Graphic symbol in the drawing.
+IfcAnnotation	TEXT	Text	Testo libero nel disegno.	Free text in the drawing.
+IfcAudioVisualAppliance	AMPLIFIER	Amplifier	Amplificatore di segnali audio.	Audio signal amplifier.
+IfcAudioVisualAppliance	CAMERA	Camera	Telecamera o videocamera, anche di sorveglianza.	Video or surveillance camera.
+IfcAudioVisualAppliance	COMMUNICATIONTERMINAL	Communication terminal	Punto di chiamata audio o video, come le colonnine SOS e i citofoni.	Audio or video call point, such as SOS points and intercoms.
+IfcAudioVisualAppliance	DISPLAY	Display	Schermo o monitor.	Screen or monitor.
+IfcAudioVisualAppliance	MICROPHONE	Microphone	Microfono.	Microphone.
+IfcAudioVisualAppliance	PLAYER	Player	Riproduttore audio o video.	Audio or video player.
+IfcAudioVisualAppliance	PROJECTOR	Projector	Proiettore di immagini.	Image projector.
+IfcAudioVisualAppliance	RECEIVER	Receiver	Ricevitore audio e video, come un sintoamplificatore.	Audio-video receiver.
+IfcAudioVisualAppliance	RECORDINGEQUIPMENT	Recording equipment	Apparecchio che registra audio o video.	Equipment recording audio or video.
+IfcAudioVisualAppliance	SPEAKER	Speaker	Altoparlante o diffusore sonoro.	Loudspeaker.
+IfcAudioVisualAppliance	SWITCHER	Switcher	Commutatore che sceglie tra più sorgenti audio o video.	Switcher selecting between audio or video sources.
+IfcAudioVisualAppliance	TELEPHONE	Telephone	Apparecchio telefonico.	Telephone set.
+IfcAudioVisualAppliance	TUNER	Tuner	Sintonizzatore radio o TV.	Radio or TV tuner.
+IfcBearing	CYLINDRICAL	Cylindrical	Appoggio con superficie cilindrica che permette rotazioni attorno a un asse.	Bearing with a cylindrical surface allowing rotation about one axis.
+IfcBearing	DISK	Disk	Appoggio con un disco in elastomero che assorbe le rotazioni.	Bearing with an elastomeric disc absorbing rotations.
+IfcBearing	ELASTOMERIC	Elastomeric	Appoggio in gomma, spesso armata con lamierini, che si deforma per seguire i movimenti.	Rubber bearing, often steel-laminated, deforming to follow movements.
+IfcBearing	GUIDE	Guide	Appoggio che permette lo scorrimento in una sola direzione.	Bearing allowing sliding in one direction only.
+IfcBearing	POT	Pot	Appoggio con un cuscinetto di elastomero chiuso in un vaso d'acciaio.	Bearing with an elastomeric pad confined in a steel pot.
+IfcBearing	ROCKER	Rocker	Appoggio a bilanciere che permette la rotazione.	Rocker bearing allowing rotation.
+IfcBearing	ROLLER	Roller	Appoggio su rulli che permette lo scorrimento.	Bearing on rollers allowing sliding.
+IfcBearing	SPHERICAL	Spherical	Appoggio con superficie sferica che permette rotazioni in tutte le direzioni.	Bearing with a spherical surface allowing rotation in all directions.
+IfcBoiler	STEAM	Steam	Caldaia che produce vapore.	Boiler producing steam.
+IfcBoiler	WATER	Water	Caldaia che produce acqua calda.	Boiler producing hot water.
+IfcBridge	ARCHED	Arched	Ponte in cui l'arco porta i carichi.	Bridge whose loads are carried by an arch.
+IfcBridge	CABLE_STAYED	Cable-stayed	Ponte con l'impalcato sostenuto da stralli ancorati ai piloni.	Bridge with the deck held by stays anchored to pylons.
+IfcBridge	CANTILEVER	Cantilever	Ponte a sbalzo, con mensole che si protendono dalle pile.	Bridge with cantilevers projecting from the piers.
+IfcBridge	CULVERT	Culvert	Piccola opera che fa passare acqua sotto un rilevato.	Small structure carrying water under an embankment.
+IfcBridge	FRAMEWORK	Framework	Ponte a telaio, con impalcato e pile collegati rigidamente.	Frame bridge, with deck and piers rigidly connected.
+IfcBridge	GIRDER	Girder	Ponte a travi appoggiate o continue.	Bridge on simply supported or continuous girders.
+IfcBridge	SUSPENSION	Suspension	Ponte sospeso a cavi portanti tramite pendini.	Bridge hung from main cables by hangers.
+IfcBridge	TRUSS	Truss	Ponte a travatura reticolare.	Truss bridge.
+IfcBridgePart	ABUTMENT	Abutment	Spalla: appoggio di estremità del ponte che contiene anche il terreno.	End support of the bridge that also retains the ground.
+IfcBridgePart	DECK	Deck	Impalcato: la parte che porta il traffico.	The part carrying the traffic.
+IfcBridgePart	DECK_SEGMENT	Deck segment	Tratto o concio dell'impalcato.	Section or segment of the deck.
+IfcBridgePart	FOUNDATION	Foundation	Fondazioni del ponte.	Bridge foundations.
+IfcBridgePart	PIER	Pier	Pila intermedia del ponte.	Intermediate bridge pier.
+IfcBridgePart	PIER_SEGMENT	Pier segment	Tratto o concio di una pila.	Section or segment of a pier.
+IfcBridgePart	PYLON	Pylon	Pilone o antenna dei ponti strallati e sospesi.	Tower of cable-stayed and suspension bridges.
+IfcBridgePart	SUBSTRUCTURE	Substructure	Insieme delle parti sotto gli appoggi: pile, spalle, fondazioni.	Everything below the bearings: piers, abutments, foundations.
+IfcBridgePart	SUPERSTRUCTURE	Superstructure	Insieme delle parti sopra gli appoggi: impalcato e strutture che lo portano.	Everything above the bearings: deck and its supporting structure.
+IfcBridgePart	SURFACESTRUCTURE	Surface structure	Parte superficiale dell'impalcato: pavimentazione, marciapiedi, barriere.	Surface layer of the deck: paving, sidewalks, barriers.
+IfcBuildingElementPart	APRON	Apron	Platea di protezione al piede di un'opera, contro l'erosione.	Protective apron at the toe of a structure, against erosion.	Platea di protezione
+IfcBuildingElementPart	ARMOURUNIT	Armour unit	Masso o elemento in calcestruzzo che protegge una scogliera o un frangiflutti.	Rock or concrete unit protecting a revetment or breakwater.
+IfcBuildingElementPart	INSULATION	Insulation	Strato isolante che fa parte di un elemento composto.	Insulating layer forming part of a composite element.
+IfcBuildingElementPart	PRECASTPANEL	Precast panel	Pannello prefabbricato di un elemento composto.	Precast panel of a composite element.
+IfcBuildingElementPart	SAFETYCAGE	Safety cage	Gabbia di protezione, per esempio attorno a una scala alla marinara.	Protective cage, for example around a fixed ladder.
+IfcBuildingElementProxy	COMPLEX	Complex	Valore deprecato nello standard: non usarlo nei modelli nuovi.	Deprecated value in the standard: do not use it in new models.
+IfcBuildingElementProxy	ELEMENT	Element	Valore deprecato nello standard: non usarlo nei modelli nuovi.	Deprecated value in the standard: do not use it in new models.
+IfcBuildingElementProxy	PARTIAL	Partial	Valore deprecato nello standard: non usarlo nei modelli nuovi.	Deprecated value in the standard: do not use it in new models.
+IfcBuildingElementProxy	PROVISIONFORSPACE	Provision for space	Ingombro riservato a un elemento futuro. Valore deprecato nello standard.	Space reserved for a future element. Deprecated value in the standard.
+IfcBuildingElementProxy	PROVISIONFORVOID	Provision for void	Predisposizione di un foro da realizzare. Valore deprecato nello standard.	Provision for an opening still to be made. Deprecated value in the standard.
+IfcCableCarrierFitting	BEND	Bend	Curva di canalina o passerella.	Bend of cable tray or trunking.
+IfcCableCarrierFitting	CONNECTOR	Connector	Giunto che collega due tratti dritti.	Connector joining two straight runs.
+IfcCableCarrierFitting	CROSS	Cross	Raccordo a croce. Valore deprecato nello standard.	Cross fitting. Deprecated value in the standard.
+IfcCableCarrierFitting	JUNCTION	Junction	Raccordo in cui si incontrano più tratti: tee e croci.	Fitting where several runs meet: tees and crosses.
+IfcCableCarrierFitting	REDUCER	Reducer	Riduzione di sezione. Valore deprecato nello standard.	Size reducer. Deprecated value in the standard.
+IfcCableCarrierFitting	TEE	Tee	Raccordo a T. Valore deprecato nello standard.	Tee fitting. Deprecated value in the standard.
+IfcCableCarrierFitting	TRANSITION	Transition	Raccordo che cambia dimensione o forma della sezione.	Fitting changing the size or shape of the section.	Transizione / riduzione
+IfcCableCarrierSegment	CABLEBRACKET	Cable bracket	Staffa a mensola che sostiene i cavi.	Cantilever bracket supporting cables.
+IfcCableCarrierSegment	CABLELADDERSEGMENT	Cable ladder	Passerella a scala, con due longheroni e traversini.	Ladder-type tray with two side rails and rungs.
+IfcCableCarrierSegment	CABLETRAYSEGMENT	Cable tray	Passerella a fondo pieno o forato.	Tray with a solid or perforated base.
+IfcCableCarrierSegment	CABLETRUNKINGSEGMENT	Cable trunking	Canalina chiusa con coperchio.	Closed trunking with a lid.
+IfcCableCarrierSegment	CATENARYWIRE	Catenary wire	Fune tesa che sostiene i cavi sospesi, come nelle linee aeree ferroviarie.	Tensioned wire supporting hanging cables, as in railway overhead lines.
+IfcCableCarrierSegment	CONDUITSEGMENT	Conduit	Tubo protettivo in cui passano i cavi.	Protective tube through which cables run.
+IfcCableCarrierSegment	DROPPER	Dropper	Pendino che appende il filo di contatto alla fune portante.	Hanger suspending the contact wire from the catenary wire.	Pendino
+IfcCableFitting	CONNECTOR	Connector	Connettore che collega due cavi o un cavo a un apparecchio.	Connector joining two cables or a cable to a device.
+IfcCableFitting	ENTRY	Entry	Punto in cui un cavo entra in un apparecchio o in un involucro.	Point where a cable enters a device or enclosure.
+IfcCableFitting	EXIT	Exit	Punto in cui un cavo esce da un apparecchio o da un involucro.	Point where a cable leaves a device or enclosure.
+IfcCableFitting	FANOUT	Fanout	Accessorio che separa le fibre o i conduttori di un cavo multiplo.	Accessory separating the fibres or conductors of a multi-core cable.
+IfcCableFitting	JUNCTION	Junction	Giunzione o derivazione tra cavi.	Joint or branch between cables.
+IfcCableFitting	TRANSITION	Transition	Raccordo tra cavi di tipo o sezione diversi.	Joint between cables of different types or sizes.
+IfcCableSegment	BUSBARSEGMENT	Busbar	Tratto di condotto sbarre, con barre rigide al posto dei cavi.	Run of busbar trunking, with rigid bars instead of cables.	Condotto sbarre
+IfcCableSegment	CABLESEGMENT	Cable	Cavo elettrico con uno o più conduttori isolati e una guaina.	Electrical cable with one or more insulated conductors and a sheath.
+IfcCableSegment	CONDUCTORSEGMENT	Conductor	Singolo conduttore, nudo o isolato.	Single conductor, bare or insulated.
+IfcCableSegment	CONTACTWIRESEGMENT	Contact wire	Filo di contatto della linea aerea, toccato dal pantografo.	Overhead contact wire touched by the pantograph.
+IfcCableSegment	CORESEGMENT	Core	Anima di un cavo: il conduttore con il suo isolamento.	Core of a cable: the conductor with its insulation.
+IfcCableSegment	FIBERSEGMENT	Fibre	Singola fibra ottica.	Single optical fibre.
+IfcCableSegment	FIBERTUBE	Fibre tube	Tubetto che contiene e protegge un gruppo di fibre ottiche.	Tube containing and protecting a group of optical fibres.
+IfcCableSegment	OPTICALCABLESEGMENT	Optical cable	Cavo in fibra ottica completo.	Complete optical-fibre cable.
+IfcCableSegment	STITCHWIRE	Stitch wire	Filo che collega la fune portante vicino ai sostegni della linea aerea, per renderla più elastica.	Wire linking the catenary near overhead-line supports, to make it more elastic.	Filo a Y (stitch wire)
+IfcCableSegment	WIREPAIRSEGMENT	Wire pair	Coppia di fili intrecciati, tipica dei cavi telefonici e dati.	Twisted pair of wires, typical of telephone and data cables.
+IfcCaissonFoundation	CAISSON	Caisson	Cassone chiuso, affondato e riempito.	Closed caisson, sunk and filled.
+IfcCaissonFoundation	WELL	Well	Pozzo di fondazione aperto, scavato dall'interno.	Open foundation well, excavated from inside.
+IfcChiller	AIRCOOLED	Air-cooled	Refrigeratore che cede il calore all'aria esterna.	Chiller rejecting heat to outdoor air.
+IfcChiller	HEATRECOVERY	Heat recovery	Refrigeratore che recupera il calore di condensazione per altri usi.	Chiller recovering condenser heat for other uses.
+IfcChiller	WATERCOOLED	Water-cooled	Refrigeratore che cede il calore a un circuito ad acqua, spesso con torre evaporativa.	Chiller rejecting heat to a water loop, often with a cooling tower.
+IfcCoil	DXCOOLINGCOIL	DX cooling coil	Batteria di raffreddamento in cui evapora direttamente il refrigerante.	Cooling coil in which refrigerant evaporates directly.
+IfcCoil	ELECTRICHEATINGCOIL	Electric heating coil	Batteria di riscaldamento a resistenze elettriche.	Heating coil with electric elements.
+IfcCoil	GASHEATINGCOIL	Gas heating coil	Batteria scaldata da un bruciatore a gas.	Coil heated by a gas burner.
+IfcCoil	HYDRONICCOIL	Hydronic coil	Batteria ad acqua che può scaldare o raffreddare.	Water coil that can heat or cool.
+IfcCoil	STEAMHEATINGCOIL	Steam heating coil	Batteria di riscaldamento a vapore.	Heating coil fed with steam.
+IfcCoil	WATERCOOLINGCOIL	Water cooling coil	Batteria di raffreddamento ad acqua refrigerata.	Cooling coil fed with chilled water.
+IfcCoil	WATERHEATINGCOIL	Water heating coil	Batteria di riscaldamento ad acqua calda.	Heating coil fed with hot water.
+IfcCommunicationsAppliance	ANTENNA	Antenna	Antenna che trasmette o riceve segnali radio.	Antenna transmitting or receiving radio signals.
+IfcCommunicationsAppliance	AUTOMATON	Automaton	Apparecchio automatico che esegue funzioni di comunicazione o controllo senza operatore.	Automatic device performing communication or control functions without an operator.
+IfcCommunicationsAppliance	COMPUTER	Computer	Computer o server.	Computer or server.
+IfcCommunicationsAppliance	FAX	Fax	Apparecchio fax.	Fax machine.
+IfcCommunicationsAppliance	GATEWAY	Gateway	Apparato che collega reti con protocolli diversi.	Device linking networks with different protocols.
+IfcCommunicationsAppliance	INTELLIGENTPERIPHERAL	Intelligent peripheral	Apparato di rete telefonica che fornisce servizi come messaggi vocali e riconoscimento dei toni.	Telephone network device providing services such as voice prompts and tone recognition.
+IfcCommunicationsAppliance	IPNETWORKEQUIPMENT	IP network equipment	Apparato generico di una rete IP.	Generic IP network equipment.
+IfcCommunicationsAppliance	LINESIDEELECTRONICUNIT	Lineside electronic unit	Unità a lato binario che passa ai balise le informazioni dei segnali ferroviari.	Trackside unit passing railway signal data to the balises.
+IfcCommunicationsAppliance	MODEM	Modem	Modem che converte segnali digitali per la linea di trasmissione.	Modem converting digital signals for the transmission line.
+IfcCommunicationsAppliance	NETWORKAPPLIANCE	Network appliance	Apparecchio di rete dedicato a una funzione, come firewall o storage di rete.	Network device dedicated to one function, such as a firewall or network storage.
+IfcCommunicationsAppliance	NETWORKBRIDGE	Network bridge	Bridge che collega due segmenti di rete.	Bridge connecting two network segments.
+IfcCommunicationsAppliance	NETWORKHUB	Network hub	Hub che ripete il segnale verso tutte le porte.	Hub repeating the signal to all ports.
+IfcCommunicationsAppliance	OPTICALLINETERMINAL	Optical line terminal	Terminale di centrale di una rete in fibra ottica passiva (OLT).	Central-office terminal of a passive optical network (OLT).
+IfcCommunicationsAppliance	OPTICALNETWORKUNIT	Optical network unit	Unità lato utente di una rete in fibra ottica passiva (ONU).	User-side unit of a passive optical network (ONU).
+IfcCommunicationsAppliance	PRINTER	Printer	Stampante.	Printer.
+IfcCommunicationsAppliance	RADIOBLOCKCENTER	Radio block center	Centro che autorizza via radio il movimento dei treni nel sistema ERTMS/ETCS.	Centre authorising train movements by radio in the ERTMS/ETCS system.
+IfcCommunicationsAppliance	REPEATER	Repeater	Ripetitore che rigenera un segnale per allungarne la portata.	Repeater regenerating a signal to extend its reach.
+IfcCommunicationsAppliance	ROUTER	Router	Router che instrada i dati tra reti.	Router forwarding data between networks.
+IfcCommunicationsAppliance	SCANNER	Scanner	Scanner di documenti o immagini.	Document or image scanner.
+IfcCommunicationsAppliance	TELECOMMAND	Telecommand	Apparato che invia comandi a distanza a impianti o dispositivi.	Equipment sending remote commands to plants or devices.
+IfcCommunicationsAppliance	TELEPHONYEXCHANGE	Telephony exchange	Centrale telefonica.	Telephone exchange.
+IfcCommunicationsAppliance	TRANSITIONCOMPONENT	Transition component	Convertitore tra mezzi diversi, per esempio da rame a fibra ottica.	Converter between media, for example from copper to optical fibre.	Convertitore di mezzo
+IfcCommunicationsAppliance	TRANSPONDER	Transponder	Apparato che riceve un segnale e risponde trasmettendone un altro.	Device that receives a signal and replies with another.
+IfcCommunicationsAppliance	TRANSPORTEQUIPMENT	Transport equipment	Apparato che trasporta i dati sulle lunghe distanze nelle reti di telecomunicazione.	Equipment carrying data over long distances in telecom networks.
+IfcCompressor	BOOSTER	Booster	Compressore che aumenta ancora la pressione all'uscita di un altro.	Compressor raising pressure further after another one.
+IfcCompressor	DYNAMIC	Dynamic	Compressore che dà velocità al gas con giranti, poi la trasforma in pressione.	Compressor accelerating the gas with impellers, then turning speed into pressure.
+IfcCompressor	HERMETIC	Hermetic	Compressore con motore chiuso nello stesso involucro sigillato.	Compressor with the motor sealed in the same casing.
+IfcCompressor	OPENTYPE	Open type	Compressore con motore esterno collegato da un albero.	Compressor with an external motor linked by a shaft.
+IfcCompressor	RECIPROCATING	Reciprocating	Compressore alternativo a pistoni.	Reciprocating piston compressor.
+IfcCompressor	ROLLINGPISTON	Rolling piston	Compressore rotativo a pistone rotolante.	Rotary compressor with a rolling piston.
+IfcCompressor	ROTARY	Rotary	Compressore rotativo generico.	Generic rotary compressor.
+IfcCompressor	ROTARYVANE	Rotary vane	Compressore rotativo a palette.	Rotary vane compressor.
+IfcCompressor	SCROLL	Scroll	Compressore a spirale (scroll).	Scroll compressor.
+IfcCompressor	SEMIHERMETIC	Semi-hermetic	Compressore con motore nello stesso involucro, ma apribile per la manutenzione.	Compressor with the motor in the same casing, but openable for service.
+IfcCompressor	SINGLESCREW	Single screw	Compressore a vite singola.	Single-screw compressor.
+IfcCompressor	SINGLESTAGE	Single stage	Compressore a un solo stadio di compressione.	Compressor with a single compression stage.
+IfcCompressor	TROCHOIDAL	Trochoidal	Compressore rotativo a profilo trocoidale.	Rotary compressor with a trochoidal profile.
+IfcCompressor	TWINSCREW	Twin screw	Compressore a doppia vite.	Twin-screw compressor.
+IfcCompressor	WELDEDSHELLHERMETIC	Welded shell hermetic	Compressore ermetico con involucro saldato, non apribile.	Hermetic compressor with a welded, non-openable casing.
+IfcCondenser	AIRCOOLED	Air-cooled	Condensatore raffreddato dall'aria esterna.	Condenser cooled by outdoor air.
+IfcCondenser	EVAPORATIVECOOLED	Evaporative-cooled	Condensatore raffreddato da acqua che evapora sulle sue superfici.	Condenser cooled by water evaporating on its surfaces.
+IfcCondenser	WATERCOOLED	Water-cooled	Condensatore raffreddato ad acqua, di tipo non specificato.	Water-cooled condenser of unspecified type.
+IfcCondenser	WATERCOOLEDBRAZEDPLATE	Water-cooled brazed plate	Condensatore ad acqua a piastre brasate.	Water-cooled brazed-plate condenser.
+IfcCondenser	WATERCOOLEDSHELLCOIL	Water-cooled shell and coil	Condensatore ad acqua con serpentina dentro un mantello.	Water-cooled condenser with a coil inside a shell.
+IfcCondenser	WATERCOOLEDSHELLTUBE	Water-cooled shell and tube	Condensatore ad acqua a fascio tubiero in un mantello.	Water-cooled shell-and-tube condenser.
+IfcCondenser	WATERCOOLEDTUBEINTUBE	Water-cooled tube in tube	Condensatore ad acqua a tubi concentrici.	Water-cooled condenser with concentric tubes.
+IfcController	FLOATING	Floating	Regolatore che apre o chiude a piccoli passi finché la grandezza torna nella banda voluta.	Controller opening or closing in small steps until the variable is back in band.
+IfcController	MULTIPOSITION	Multi-position	Regolatore con più posizioni fisse di uscita.	Controller with several fixed output positions.
+IfcController	PROGRAMMABLE	Programmable	Regolatore programmabile, digitale (DDC, PLC).	Programmable digital controller (DDC, PLC).
+IfcController	PROPORTIONAL	Proportional	Regolatore con uscita proporzionale allo scostamento, anche PI o PID.	Controller whose output is proportional to the deviation, including PI or PID.
+IfcController	TWOPOSITION	Two-position	Regolatore acceso o spento (on/off).	On/off controller.
+IfcConveyorSegment	BELTCONVEYOR	Belt conveyor	Trasportatore a nastro.	Belt conveyor.
+IfcConveyorSegment	BUCKETCONVEYOR	Bucket conveyor	Trasportatore a tazze, anche verticale.	Bucket conveyor, also vertical.
+IfcConveyorSegment	CHUTECONVEYOR	Chute conveyor	Scivolo in cui il materiale scende per gravità.	Chute where material slides down by gravity.
+IfcConveyorSegment	SCREWCONVEYOR	Screw conveyor	Coclea che spinge il materiale con una vite rotante.	Screw conveyor pushing material with a rotating screw.
+IfcCooledBeam	ACTIVE	Active	Trave fredda alimentata anche con aria primaria, che richiama l'aria ambiente sulla batteria.	Chilled beam also fed with primary air, drawing room air across the coil.
+IfcCooledBeam	PASSIVE	Passive	Trave fredda senza aria primaria, che raffresca per convezione naturale.	Chilled beam without primary air, cooling by natural convection.
+IfcCoolingTower	MECHANICALFORCEDDRAFT	Mechanical forced draft	Torre con ventilatori che spingono l'aria all'interno.	Tower with fans pushing air in.
+IfcCoolingTower	MECHANICALINDUCEDDRAFT	Mechanical induced draft	Torre con ventilatori che aspirano l'aria dall'alto.	Tower with fans drawing air out from the top.
+IfcCoolingTower	NATURALDRAFT	Natural draft	Torre senza ventilatori, con tiraggio naturale.	Tower without fans, using natural draught.
+IfcCourse	ARMOUR	Armour	Strato esterno di massi o blocchi che protegge un'opera dalle onde.	Outer layer of rocks or blocks protecting a structure from waves.
+IfcCourse	BALLASTBED	Ballast bed	Massicciata ferroviaria di pietrisco su cui poggiano le traverse.	Railway ballast of crushed stone on which sleepers rest.
+IfcCourse	CORE	Core	Nucleo interno di un'opera in terra o in pietrame.	Inner core of an earth or rubble structure.
+IfcCourse	FILTER	Filter	Strato filtrante che lascia passare l'acqua ma trattiene il materiale fine.	Filter layer letting water through while retaining fine material.
+IfcCourse	PAVEMENT	Pavement	Strato della pavimentazione stradale.	Layer of a road pavement.
+IfcCourse	PROTECTION	Protection	Strato che protegge il materiale sottostante.	Layer protecting the material below.
+IfcDamper	BACKDRAFTDAMPER	Backdraft damper	Serranda che lascia passare l'aria in un solo verso.	Damper letting air through in one direction only.
+IfcDamper	BALANCINGDAMPER	Balancing damper	Serranda tarata una volta per bilanciare le portate.	Damper set once to balance airflows.
+IfcDamper	BLASTDAMPER	Blast damper	Serranda che si chiude per resistere a un'onda d'urto.	Damper closing to withstand a blast wave.
+IfcDamper	CONTROLDAMPER	Control damper	Serranda motorizzata che regola la portata.	Motorised damper regulating airflow.
+IfcDamper	FIREDAMPER	Fire damper	Serranda tagliafuoco che si chiude in caso d'incendio, nell'attraversamento di una compartimentazione.	Fire damper closing in a fire, where a duct crosses a fire compartment.
+IfcDamper	FIRESMOKEDAMPER	Fire and smoke damper	Serranda che ferma sia il fuoco sia il fumo.	Damper stopping both fire and smoke.
+IfcDamper	FUMEHOODEXHAUST	Fume hood exhaust	Serranda sull'estrazione di una cappa di laboratorio.	Damper on a laboratory fume-hood exhaust.
+IfcDamper	GRAVITYDAMPER	Gravity damper	Serranda che si chiude per gravità quando l'aria si ferma.	Damper closing by gravity when the airflow stops.
+IfcDamper	GRAVITYRELIEFDAMPER	Gravity relief damper	Serranda di sovrappressione che si apre con la spinta dell'aria e si richiude per gravità.	Relief damper opened by air pressure and closed by gravity.
+IfcDamper	RELIEFDAMPER	Relief damper	Serranda che scarica la sovrappressione di un ambiente o di un canale.	Damper relieving excess pressure from a room or duct.
+IfcDamper	SMOKEDAMPER	Smoke damper	Serranda tagliafumo, che ferma o gestisce il fumo.	Smoke damper, stopping or controlling smoke.
+IfcDiscreteAccessory	ANCHORPLATE	Anchor plate	Piastra annegata nel calcestruzzo per fissarvi altri elementi.	Plate cast into concrete to fix other elements.
+IfcDiscreteAccessory	BIRDPROTECTION	Bird protection	Dispositivo che impedisce agli uccelli di posarsi o nidificare, per esempio sulle linee elettriche.	Device stopping birds from perching or nesting, for example on power lines.
+IfcDiscreteAccessory	BRACKET	Bracket	Staffa o mensola di supporto.	Support bracket.
+IfcDiscreteAccessory	CABLEARRANGER	Cable arranger	Accessorio che tiene in ordine e separati i cavi.	Accessory keeping cables tidy and separated.
+IfcDiscreteAccessory	ELASTIC_CUSHION	Elastic cushion	Cuscinetto elastico che smorza vibrazioni e urti.	Elastic pad damping vibration and impact.
+IfcDiscreteAccessory	EXPANSION_JOINT_DEVICE	Expansion joint device	Dispositivo che chiude un giunto di dilatazione lasciando muovere le parti.	Device closing an expansion joint while letting the parts move.
+IfcDiscreteAccessory	FILLER	Filler	Materiale o pezzo che riempie uno spazio o un giunto.	Material or piece filling a gap or joint.
+IfcDiscreteAccessory	FLASHING	Flashing	Scossalina o converso che porta via l'acqua dai giunti.	Flashing that sheds water from joints.
+IfcDiscreteAccessory	INSULATOR	Insulator	Isolatore elettrico che sostiene un conduttore.	Electrical insulator supporting a conductor.
+IfcDiscreteAccessory	LOCK	Lock	Serratura o dispositivo di chiusura.	Lock or locking device.
+IfcDiscreteAccessory	PANEL_STRENGTHENING	Panel strengthening	Rinforzo di un pannello, per esempio un irrigidimento.	Reinforcement of a panel, such as a stiffener.
+IfcDiscreteAccessory	POINTMACHINEMOUNTINGDEVICE	Point machine mounting device	Supporto su cui si monta la cassa di manovra di un deviatoio.	Support on which a switch point machine is mounted.
+IfcDiscreteAccessory	POINT_MACHINE_LOCKING_DEVICE	Point machine locking device	Dispositivo che blocca gli aghi del deviatoio in posizione.	Device locking the switch blades in position.
+IfcDiscreteAccessory	RAILBRACE	Rail brace	Puntello che impedisce alla rotaia di ribaltarsi verso l'esterno.	Brace stopping the rail from tilting outwards.	Puntello della rotaia
+IfcDiscreteAccessory	RAILPAD	Rail pad	Piastra elastica tra rotaia e traversa.	Elastic pad between rail and sleeper.
+IfcDiscreteAccessory	RAIL_LUBRICATION	Rail lubrication	Dispositivo che lubrifica la rotaia per ridurre usura e rumore in curva.	Device lubricating the rail to cut wear and noise in curves.
+IfcDiscreteAccessory	RAIL_MECHANICAL_EQUIPMENT	Rail mechanical equipment	Apparecchiatura meccanica del binario non compresa negli altri valori.	Track mechanical equipment not covered by other values.
+IfcDiscreteAccessory	SHOE	Shoe	Scarpa o piastra d'appoggio all'estremità di un elemento.	Bearing shoe or plate at the end of an element.
+IfcDiscreteAccessory	SLIDINGCHAIR	Sliding chair	Piastra su cui scorrono gli aghi del deviatoio.	Plate on which the switch blades slide.	Cuscinetto di scorrimento degli aghi
+IfcDiscreteAccessory	SOUNDABSORPTION	Sound absorption	Elemento fonoassorbente posato vicino al binario.	Sound-absorbing element placed near the track.
+IfcDiscreteAccessory	TENSIONINGEQUIPMENT	Tensioning equipment	Dispositivo che mantiene in tensione funi o fili, come i contrappesi delle linee aeree.	Device keeping wires or cables tensioned, such as overhead-line balance weights.
+IfcDistributionBoard	CONSUMERUNIT	Consumer unit	Piccolo quadro di utenza, per esempio di un appartamento.	Small consumer board, for example for a flat.
+IfcDistributionBoard	DISPATCHINGBOARD	Dispatching board	Quadro di permutazione per collegamenti di fonia e dati.	Patch board for voice and data connections.
+IfcDistributionBoard	DISTRIBUTIONBOARD	Distribution board	Quadro che alimenta e protegge i circuiti finali.	Board feeding and protecting final circuits.
+IfcDistributionBoard	DISTRIBUTIONFRAME	Distribution frame	Permutatore che collega i cavi di telecomunicazione tra loro.	Frame cross-connecting telecom cables.
+IfcDistributionBoard	MOTORCONTROLCENTRE	Motor control centre	Quadro che raggruppa avviamento e protezione di più motori.	Board grouping starters and protection for several motors.
+IfcDistributionBoard	SWITCHBOARD	Switchboard	Quadro generale o di potenza, con interruttori di manovra.	Main or power switchboard, with switching devices.
+IfcDistributionChamberElement	FORMEDDUCT	Formed duct	Cunicolo o canale ricavato nel terreno o nel getto per far passare le reti.	Duct formed in the ground or in concrete to carry networks.
+IfcDistributionChamberElement	INSPECTIONCHAMBER	Inspection chamber	Camera di ispezione non praticabile, accessibile dall'alto.	Non-walk-in inspection chamber, accessed from above.
+IfcDistributionChamberElement	INSPECTIONPIT	Inspection pit	Fossa da cui si ispeziona dal basso, per esempio sotto i veicoli.	Pit for inspecting from below, for example under vehicles.
+IfcDistributionChamberElement	MANHOLE	Manhole	Pozzetto praticabile in cui una persona può scendere.	Chamber a person can climb down into.
+IfcDistributionChamberElement	METERCHAMBER	Meter chamber	Pozzetto che contiene un contatore.	Chamber housing a meter.
+IfcDistributionChamberElement	SUMP	Sump	Pozzetto in cui si raccoglie un liquido per essere pompato.	Pit where liquid collects to be pumped out.
+IfcDistributionChamberElement	TRENCH	Trench	Cunicolo aperto o con coperchi in cui corrono le reti.	Open or covered trench in which networks run.
+IfcDistributionChamberElement	VALVECHAMBER	Valve chamber	Pozzetto che contiene valvole.	Chamber housing valves.
+IfcDistributionPort	CABLE	Cable	Connessione per un cavo.	Connection for a cable.	Connessione per cavo
+IfcDistributionPort	CABLECARRIER	Cable carrier	Connessione per una canalina o passerella.	Connection for a cable tray or trunking.	Connessione per portacavi
+IfcDistributionPort	DUCT	Duct	Connessione per un canale d'aria.	Connection for an air duct.	Connessione per canale
+IfcDistributionPort	PIPE	Pipe	Connessione per una tubazione.	Connection for a pipe.	Connessione per tubazione
+IfcDistributionPort	WIRELESS	Wireless	Connessione senza fili.	Wireless connection.	Connessione wireless

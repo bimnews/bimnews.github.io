@@ -1,0 +1,53 @@
+# Generato da ripeti.py: non modificare a mano
+IfcStructuralCurveAction	CONST	Constant	Carico: valore costante lungo la linea.	Load: constant value along the line.
+IfcStructuralCurveAction	DISCRETE	Discrete	Carico: valori dati in punti scelti lungo la linea.	Load: values given at chosen points along the line.
+IfcStructuralCurveAction	EQUIDISTANT	Equidistant	Carico: valori dati in punti a distanza costante.	Load: values given at equally spaced points.
+IfcStructuralCurveAction	LINEAR	Linear	Carico: variazione lineare tra inizio e fine.	Load: linear variation from start to end.
+IfcStructuralCurveAction	PARABOLA	Parabola	Carico: variazione a parabola, simmetrica.	Load: symmetric parabolic variation.
+IfcStructuralCurveAction	POLYGONAL	Polygonal	Carico: variazione lineare a tratti tra più punti.	Load: piecewise linear variation between several points.
+IfcStructuralCurveAction	SINUS	Sinus	Carico: variazione a semionda sinusoidale.	Load: half sine-wave variation.
+IfcStructuralLinearAction	CONST	Constant	Carico: valore costante lungo la linea.	Load: constant value along the line.
+IfcStructuralLinearAction	DISCRETE	Discrete	Carico: valori dati in punti scelti lungo la linea.	Load: values given at chosen points along the line.
+IfcStructuralLinearAction	EQUIDISTANT	Equidistant	Carico: valori dati in punti a distanza costante.	Load: values given at equally spaced points.
+IfcStructuralLinearAction	LINEAR	Linear	Carico: variazione lineare tra inizio e fine.	Load: linear variation from start to end.
+IfcStructuralLinearAction	PARABOLA	Parabola	Carico: variazione a parabola, simmetrica.	Load: symmetric parabolic variation.
+IfcStructuralLinearAction	POLYGONAL	Polygonal	Carico: variazione lineare a tratti tra più punti.	Load: piecewise linear variation between several points.
+IfcStructuralLinearAction	SINUS	Sinus	Carico: variazione a semionda sinusoidale.	Load: half sine-wave variation.
+IfcStructuralCurveReaction	CONST	Constant	Reazione: valore costante lungo la linea.	Reaction: constant value along the line.
+IfcStructuralCurveReaction	DISCRETE	Discrete	Reazione: valori dati in punti scelti lungo la linea.	Reaction: values given at chosen points along the line.
+IfcStructuralCurveReaction	EQUIDISTANT	Equidistant	Reazione: valori dati in punti a distanza costante.	Reaction: values given at equally spaced points.
+IfcStructuralCurveReaction	LINEAR	Linear	Reazione: variazione lineare tra inizio e fine.	Reaction: linear variation from start to end.
+IfcStructuralCurveReaction	PARABOLA	Parabola	Reazione: variazione a parabola, simmetrica.	Reaction: symmetric parabolic variation.
+IfcStructuralCurveReaction	POLYGONAL	Polygonal	Reazione: variazione lineare a tratti tra più punti.	Reaction: piecewise linear variation between several points.
+IfcStructuralCurveReaction	SINUS	Sinus	Reazione: variazione a semionda sinusoidale.	Reaction: half sine-wave variation.
+IfcStructuralSurfaceAction	BILINEAR	Bilinear	Carico: variazione lineare nelle due direzioni della superficie.	Load: linear variation in both directions of the surface.
+IfcStructuralSurfaceAction	CONST	Constant	Carico: valore costante su tutta la superficie.	Load: constant value over the whole surface.
+IfcStructuralSurfaceAction	DISCRETE	Discrete	Carico: valori dati in punti scelti della superficie.	Load: values given at chosen points of the surface.
+IfcStructuralSurfaceAction	ISOCONTOUR	Isocontour	Carico: valori dati lungo linee di uguale intensità.	Load: values given along lines of equal intensity.
+IfcStructuralPlanarAction	BILINEAR	Bilinear	Carico: variazione lineare nelle due direzioni della superficie.	Load: linear variation in both directions of the surface.
+IfcStructuralPlanarAction	CONST	Constant	Carico: valore costante su tutta la superficie.	Load: constant value over the whole surface.
+IfcStructuralPlanarAction	DISCRETE	Discrete	Carico: valori dati in punti scelti della superficie.	Load: values given at chosen points of the surface.
+IfcStructuralPlanarAction	ISOCONTOUR	Isocontour	Carico: valori dati lungo linee di uguale intensità.	Load: values given along lines of equal intensity.
+IfcStructuralSurfaceReaction	BILINEAR	Bilinear	Reazione: variazione lineare nelle due direzioni della superficie.	Reaction: linear variation in both directions of the surface.
+IfcStructuralSurfaceReaction	CONST	Constant	Reazione: valore costante su tutta la superficie.	Reaction: constant value over the whole surface.
+IfcStructuralSurfaceReaction	DISCRETE	Discrete	Reazione: valori dati in punti scelti della superficie.	Reaction: values given at chosen points of the surface.
+IfcStructuralSurfaceReaction	ISOCONTOUR	Isocontour	Reazione: valori dati lungo linee di uguale intensità.	Reaction: values given along lines of equal intensity.
+IfcStructuralCurveMemberVarying	CABLE	Cable	Cavo: lavora solo a trazione.	Cable: works in tension only.	
+IfcStructuralCurveMemberVarying	COMPRESSION_MEMBER	Compression member	Asta che lavora solo a compressione.	Member working in compression only.	
+IfcStructuralCurveMemberVarying	PIN_JOINED_MEMBER	Pin-joined member	Asta incernierata agli estremi: solo sforzo normale.	Member pinned at both ends: axial force only.	
+IfcStructuralCurveMemberVarying	RIGID_JOINED_MEMBER	Rigid-joined member	Asta collegata rigidamente: porta anche flessione e taglio.	Rigidly connected member: also carries bending and shear.	
+IfcStructuralCurveMemberVarying	TENSION_MEMBER	Tension member	Asta che lavora solo a trazione.	Member working in tension only.	
+IfcStructuralSurfaceMemberVarying	BENDING_ELEMENT	Bending element	Piastra che lavora a flessione.	Plate working in bending.	
+IfcStructuralSurfaceMemberVarying	MEMBRANE_ELEMENT	Membrane element	Lastra che lavora solo nel proprio piano.	Element working in its own plane only.	
+IfcStructuralSurfaceMemberVarying	SHELL	Shell	Guscio che lavora sia a flessione sia nel piano.	Shell working both in bending and in plane.	
+IfcWallStandardCase	ELEMENTEDWALL	Elemented wall	Parete composta da parti distinte, come una parete a telaio con pannelli. Classe deprecata: usare IfcWall.	Wall made of distinct parts, such as a framed wall with panels. Deprecated class: use IfcWall.	
+IfcWallStandardCase	MOVABLE	Movable	Parete mobile o smontabile. Classe deprecata: usare IfcWall.	Movable or demountable wall. Deprecated class: use IfcWall.	
+IfcWallStandardCase	PARAPET	Parapet	Muretto o parapetto lungo il bordo di coperture, balconi o ponti. Classe deprecata: usare IfcWall.	Low wall or parapet along the edge of roofs, balconies or bridges. Deprecated class: use IfcWall.	Parapetto
+IfcWallStandardCase	PARTITIONING	Partitioning	Parete divisoria interna non portante. Classe deprecata: usare IfcWall.	Internal non-loadbearing partition. Deprecated class: use IfcWall.	
+IfcWallStandardCase	PLUMBINGWALL	Plumbing wall	Parete che contiene o nasconde impianti, come una parete attrezzata. Classe deprecata: usare IfcWall.	Wall containing or concealing services, such as a service wall. Deprecated class: use IfcWall.	
+IfcWallStandardCase	POLYGONAL	Polygonal	Parete con pianta a più lati. Classe deprecata: usare IfcWall.	Wall with a multi-sided plan. Deprecated class: use IfcWall.	
+IfcWallStandardCase	RETAININGWALL	Retaining wall	Muro che trattiene terra o acqua. Classe deprecata: usare IfcWall.	Wall holding back soil or water. Deprecated class: use IfcWall.	
+IfcWallStandardCase	SHEAR	Shear wall	Setto che resiste alle azioni orizzontali, come vento e sisma. Classe deprecata: usare IfcWall.	Wall resisting horizontal actions, such as wind and earthquakes. Deprecated class: use IfcWall.	
+IfcWallStandardCase	SOLIDWALL	Solid wall	Muro pieno, di solito portante. Classe deprecata: usare IfcWall.	Solid wall, usually loadbearing. Deprecated class: use IfcWall.	
+IfcWallStandardCase	STANDARD	Standard	Parete a spessore costante e asse rettilineo o curvo. Classe deprecata: usare IfcWall.	Wall with constant thickness and a straight or curved axis. Deprecated class: use IfcWall.	
+IfcWallStandardCase	WAVEWALL	Wave wall	Muro che protegge dalle onde, in cima a dighe o lungomari. Classe deprecata: usare IfcWall.	Wall protecting from waves, on top of breakwaters or seafronts. Deprecated class: use IfcWall.	
