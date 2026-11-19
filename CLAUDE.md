@@ -202,6 +202,12 @@ Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato co
    - **Altre lingue delle descrizioni:** solo IT ed EN; nella pagina e nel Read me c'è l'invito «Ti servono in un'altra lingua? Scrivimi su LinkedIn» (scelta di Marco).
    - **Possibili sviluppi:** le stesse librerie per IFC 2x3 e IFC 4 (bozza WIP `art-ifc-versioni`), i tipi (IfcWallType…) e i Pset.
 
+17. **«Come costruire un IFC da zero» (bozza `art-ifc-zero`), IN CORSO dal 19/11/2026.**
+   - **File:** `manuali/ifc-da-zero/casetta.ifc`, casetta di due piani scritta a mano come testo (IFC4 ADD2 TC1, schema `IFC4`): 8×6 m, piani a 0 e 3 m, muri 30 cm, tetto a due falde al 50 %, porta, 6 finestre, scala da 16 alzate (18,75/25 cm) con foro nel solaio, 2 locali, 4 materiali, colori, Pset comuni. 311 entità, numerate a blocchi (1 geometria base, 10 unità, 20 struttura spaziale, 40 colori, 60 materiali, 110 forme condivise, 200 PT, 300 P1, 400 tetto, 500/600 fori, 700 relazioni) con commenti `/* */`. Solo i GlobalId sono stati generati con IfcOpenShell e incollati.
+   - **Controlli:** IfcOpenShell 0.9.0, `validate` con le regole EXPRESS: 0 errori; 30 oggetti con geometria. Anteprima `anteprima-sud-est.png`.
+   - **Semplificazioni note:** cuneo di 15 cm tra la testa dei muri sud/nord e il tetto (lato interno); il locale del P1 è un parallelepipedo alto 2,80 (ignora il soffitto inclinato); muri senza stratigrafia.
+   - **Prossimo passo:** Marco prova il file nei suoi software; poi l'articolo molto dettagliato che spiega il codice per «pattern» (comprensibile per un ingegnere qualsiasi).
+
 ## Fatto di recente
 
 - **19/11/2026, revisione 139:** pubblicata «La libreria IFC 4.3» (punto 16): ricerca, mappa mentale, Excel e JSON, descrizioni nostre in italiano e inglese.
