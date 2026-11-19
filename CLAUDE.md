@@ -210,6 +210,10 @@ Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato co
 
 ## Fatto di recente
 
+- **19/11/2026, revisione 143:** Work in progress, «Verifiche automatiche da checklist» passa da «Idea» a «Sviluppo» e «Test» insieme (tutte e due `now`), senza «Rilascio» (`.ph3`). Traduzione v0636 in `p08`, nuova voce v1677 (aria-label) in `p13`. Ora nessuna delle quattro schede del Work in progress ha la fase «Rilascio».
+
+- **19/11/2026, revisione 142:** Work in progress, «Dalle superfici del disegno al calcolo CasaClima» passa da «Idea» a «Test» senza «Rilascio» (`.ph3`): funziona e ha ridotto sensibilmente il lavoro, restano da migliorare i dettagli (Marco). Traduzione v0638 in `p08`.
+
 - **19/11/2026, revisione 141:** Work in progress, anche «Automazione dei disegni» (AutoCAD · AutoLISP) passa a fase «Test» senza «Rilascio» (`.ph3`): gli script funzionano e migliorano molto il lavoro, affinati di continuo «come nel kaizen» (parole di Marco). Traduzione v0634 in `p08`.
 
 - **19/11/2026, revisione 140:** Work in progress, scheda «Libreria di famiglie con struttura dati provinciale»: fase «Test» (Idea e Sviluppo fatti), testo «già funzionanti, ma ci sto ancora lavorando: le sto testando e migliorando». Tolta la fase «Rilascio» solo da questa scheda (classe `.phases.ph3`, 3 colonne): Marco per ora non vuole condividere le famiglie, quindi non promettere un rilascio. Traduzioni: v0628 aggiornata in `p08`, nuova voce v1676 (aria-label «Fase attuale: test») in `p13`.

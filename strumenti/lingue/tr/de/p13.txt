@@ -189,3 +189,4 @@ v1141	Schließen: Über die Psychologie des Geldes
 v1142	Schließen: Wirtschaft
 v1143	Weitere Bereiche der Website
 v1676	Aktuelle Phase: Test
+v1677	Aktuelle Phase: Entwicklung und Test

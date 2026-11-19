@@ -4445,9 +4445,9 @@
 "id": "v0635"
 },
 {
-"k": "Dalla checklist di controllo a verifiche ripetibili sui progetti.",
+"k": "Dalla checklist di controllo a verifiche ripetibili sui progetti. Le sto ancora elaborando e intanto le sto testando.",
 "m": "text",
-"h": "Dalla checklist di controllo a verifiche ripetibili sui progetti.",
+"h": "Dalla checklist di controllo a verifiche ripetibili sui progetti. Le sto ancora elaborando e intanto le sto testando.",
 "tag": "P",
 "id": "v0636"
 },
@@ -4459,9 +4459,9 @@
 "id": "v0637"
 },
 {
-"k": "Estrarre le superfici dai DWG e portarle nel foglio di calcolo senza ricopiarle a mano.",
+"k": "Estrarre le superfici dai DWG e portarle nel foglio di calcolo senza ricopiarle a mano. Funziona già e ha ridotto sensibilmente il lavoro; restano da migliorare i dettagli.",
 "m": "text",
-"h": "Estrarre le superfici dai DWG e portarle nel foglio di calcolo senza ricopiarle a mano.",
+"h": "Estrarre le superfici dai DWG e portarle nel foglio di calcolo senza ricopiarle a mano. Funziona già e ha ridotto sensibilmente il lavoro; restano da migliorare i dettagli.",
 "tag": "P",
 "id": "v0638"
 },
@@ -10869,5 +10869,12 @@
 "h": "Fase attuale: test",
 "tag": "@aria-label",
 "id": "v1676"
+},
+{
+"k": "Fase attuale: sviluppo e test",
+"m": "attr",
+"h": "Fase attuale: sviluppo e test",
+"tag": "@aria-label",
+"id": "v1677"
 }
 ]
