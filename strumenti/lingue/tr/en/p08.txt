@@ -31,11 +31,11 @@ v0630	Development
 v0631	Testing
 v0632	Release
 v0633	Drawing automation
-v0634	Scripts for repetitive operations, starting with the management of external references.
+v0634	Scripts for repetitive tasks, starting with managing external references. They already work and make the work much better; I keep refining them in small steps, as in kaizen.
 v0635	Automated checks from a checklist
-v0636	From the inspection checklist to repeatable checks on projects.
+v0636	From the control checklist to repeatable checks on projects. I am still developing them and testing them in the meantime.
 v0637	From drawing areas to the CasaClima calculation
-v0638	Extracting areas from DWG files and bringing them into the spreadsheet without copying them by hand.
+v0638	Extract the areas from the DWG files and bring them into the spreadsheet without copying them by hand. It already works and has cut the work considerably; the details still need improving.
 v0639	Articles in preparation
 v0640	The articles I am thinking about, with the stage they have reached. For now they are only outlined: the text will come one at a time.
 v0641	The «Hoover» script

@@ -189,3 +189,4 @@ v1141	Fermer : La Psychologie de l'argent
 v1142	Fermer : Économie
 v1143	Autres sections du site
 v1676	Étape actuelle : test
+v1677	Étape actuelle : développement et test
