@@ -188,3 +188,4 @@ v1140	Fechar: Capire l'economia For Dummies
 v1141	Fechar: A Psicologia do Dinheiro
 v1142	Fechar: Economia
 v1143	Outras secções do site
+v1676	Fase atual: testes

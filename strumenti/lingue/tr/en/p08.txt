@@ -25,7 +25,7 @@ v0624	Work in progress: the first proposals are being prepared. To discuss them,
 v0625	Work in progress
 v0626	What I am working on now, with the stage it has reached. The cards are updated as things progress.
 v0627	Family library with the provincial data structure
-v0628	Families with the parameters required by the Province of Bolzano, ready to use in projects.
+v0628	Families with the parameters required by the Province of Bolzano. They already work, but I am still working on them: I am testing and improving them step by step.
 v0629	Idea
 v0630	Development
 v0631	Testing

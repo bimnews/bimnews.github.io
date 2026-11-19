@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>BIM News · Un sito a cura di Marco Scigliuolo</title>
 <meta name="description" content="BIM News: le novità sul BIM dall'Alto Adige al resto del mondo, ogni settimana, con sintesi in italiano e link alle fonti. Mappa, filtri, archivio per mese, BIM in breve e timeline delle norme. A cura di Marco Scigliuolo.">
-<meta name="revisione" content="139 · 19/11/2026">
+<meta name="revisione" content="140 · 19/11/2026">
 <meta name="google-site-verification" content="bjOU_7z5lD6JSPxu8zu7hukgAVaRDDZoFKwbb3HMQpM">
 <meta name="color-scheme" content="dark light">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='none' stroke='%232f6db5' stroke-width='3'/%3E%3Ctext x='16' y='22' font-family='Arial' font-weight='700' font-size='16' text-anchor='middle' fill='%232f6db5'%3EM%3C/text%3E%3C/svg%3E">
@@ -129,6 +129,7 @@ h2{font-family:var(--display);font-stretch:72%;font-weight:800;font-size:clamp(1
 .phases li.done{border-color:var(--accent);color:var(--ink)}
 .phases li.now{border-color:var(--mark);color:var(--ink);font-weight:700}
 .phases li.now::after{content:" ◂"}
+.phases.ph3{grid-template-columns:repeat(3,minmax(0,1fr))}
 
 /* BIM News: ricerca */
 .finder{display:grid;gap:.8rem;border:1px solid var(--line);padding:1rem;background:var(--surface)}
@@ -2576,8 +2577,8 @@ LINE  da (5,00 ; 0,00)  a (5,00 ; 0,30)   layer=MURI  colore=1</code></pre>
       <h3 class="sub-h">Work in progress</h3>
       <p class="lead">Quello su cui sto lavorando adesso, con la fase in cui si trova. Le schede si aggiornano man mano.</p>
       <div class="wip">
-        <article class="job"><span class="label">Revit · dati</span><h3>Libreria di famiglie con struttura dati provinciale</h3><p>Famiglie con i parametri richiesti dalla Provincia di Bolzano, pronte da usare nei progetti.</p>
-          <ol class="phases" aria-label="Fase attuale: sviluppo"><li class="done">Idea</li><li class="now">Sviluppo</li><li>Test</li><li>Rilascio</li></ol></article>
+        <article class="job"><span class="label">Revit · dati</span><h3>Libreria di famiglie con struttura dati provinciale</h3><p>Famiglie con i parametri richiesti dalla Provincia di Bolzano. Sono già funzionanti, ma ci sto ancora lavorando: le sto testando e migliorando man mano.</p>
+          <ol class="phases ph3" aria-label="Fase attuale: test"><li class="done">Idea</li><li class="done">Sviluppo</li><li class="now">Test</li></ol></article>
         <article class="job"><span class="label">AutoCAD · AutoLISP</span><h3>Automazione dei disegni</h3><p>Script per le operazioni ripetitive, a partire dalla gestione dei riferimenti esterni.</p>
           <ol class="phases" aria-label="Fase attuale: sviluppo"><li class="done">Idea</li><li class="now">Sviluppo</li><li>Test</li><li>Rilascio</li></ol></article>
         <article class="job"><span class="label">Impianti elettrici</span><h3>Verifiche automatiche da checklist</h3><p>Dalla checklist di controllo a verifiche ripetibili sui progetti.</p>

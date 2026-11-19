@@ -4389,9 +4389,9 @@
 "id": "v0627"
 },
 {
-"k": "Famiglie con i parametri richiesti dalla Provincia di Bolzano, pronte da usare nei progetti.",
+"k": "Famiglie con i parametri richiesti dalla Provincia di Bolzano. Sono già funzionanti, ma ci sto ancora lavorando: le sto testando e migliorando man mano.",
 "m": "text",
-"h": "Famiglie con i parametri richiesti dalla Provincia di Bolzano, pronte da usare nei progetti.",
+"h": "Famiglie con i parametri richiesti dalla Provincia di Bolzano. Sono già funzionanti, ma ci sto ancora lavorando: le sto testando e migliorando man mano.",
 "tag": "P",
 "id": "v0628"
 },
@@ -10862,5 +10862,12 @@
 "h": "Cerca nella libreria IFC",
 "tag": "@aria-label",
 "id": "v1675"
+},
+{
+"k": "Fase attuale: test",
+"m": "attr",
+"h": "Fase attuale: test",
+"tag": "@aria-label",
+"id": "v1676"
 }
 ]
