@@ -1,0 +1,215 @@
+# classe	nome EN	descrizione IT	descrizione EN  (testi scritti da noi, non tradotti dalla documentazione buildingSMART)
+IfcProduct	Product	Radice di tutto ciò che ha una posizione nel modello: elementi fisici, spazi, griglie, tracciati, azioni strutturali. Non si usa direttamente.	Root of everything that has a placement in the model: physical elements, spaces, grids, alignments, structural actions. Never used directly.
+IfcAnnotation	Annotation	Informazione grafica di supporto: testi, quote, linee isolux, contorni. Non è un oggetto costruito.	Supporting graphic information: texts, dimensions, isolux lines, contours. Not a built object.
+IfcElement	Element	Classe astratta che raccoglie tutti i componenti fisici o virtuali dell'opera.	Abstract class grouping all physical or virtual components of the facility.
+IfcBuiltElement	Built element	Elementi che formano la costruzione vera e propria: muri, solai, travi, porte… Si usa direttamente solo per casi particolari.	Elements that make up the construction itself: walls, slabs, beams, doors… Used directly only for special cases.
+IfcBeam	Beam	Elemento lineare, di solito orizzontale, che porta carichi trasversali al proprio asse.	Linear element, usually horizontal, carrying loads across its axis.
+IfcBearing	Bearing	Dispositivo che trasmette i carichi tra struttura e appoggio permettendo movimenti controllati (ponti, impalcati).	Device that transfers loads between structure and support while allowing controlled movements (bridges, decks).
+IfcBuildingElementProxy	Building element proxy	Elemento costruttivo per cui non esiste una classe adatta. Da usare solo come ultima scelta.	Building element for which no suitable class exists. Use only as a last resort.
+IfcChimney	Chimney	Condotto verticale per l'espulsione dei fumi verso l'esterno.	Vertical flue that discharges smoke to the outside.
+IfcColumn	Column	Elemento lineare, di solito verticale, che porta carichi di compressione.	Linear element, usually vertical, carrying compression loads.
+IfcCourse	Course	Strato di materiale steso o posato in modo uniforme, come i pacchetti di massicciata o il ballast ferroviario.	Layer of material laid or spread evenly, such as road base courses or railway ballast.
+IfcCovering	Covering	Strato di finitura o rivestimento applicato a un altro elemento: intonaci, pavimenti, controsoffitti, isolanti.	Finish or cladding layer applied to another element: plaster, flooring, ceilings, insulation.
+IfcCurtainWall	Curtain wall	Facciata leggera non portante, appesa alla struttura, di solito con montanti, traversi e pannelli.	Light non-loadbearing façade hung from the structure, usually with mullions, transoms and panels.
+IfcDeepFoundation	Deep foundation	Classe madre delle fondazioni che trasferiscono i carichi in profondità (pali, cassoni).	Parent class of foundations that carry loads to deeper ground (piles, caissons).
+IfcCaissonFoundation	Caisson foundation	Fondazione profonda a forma di cassone o pozzo, realizzata scavando dall'interno.	Deep foundation shaped as a box or shaft, built by excavating from inside.
+IfcPile	Pile	Elemento snello infisso o gettato nel terreno per portare i carichi in profondità.	Slender element driven or cast into the ground to carry loads to depth.
+IfcDoor	Door	Elemento apribile che permette il passaggio di persone o mezzi attraverso un'apertura.	Openable element that lets people or vehicles pass through an opening.
+IfcEarthworksElement	Earthworks element	Elemento di terra aggiunto o trattato. Si usa direttamente solo se le sottoclassi non bastano.	Added or treated earth element. Used directly only when the subclasses do not fit.
+IfcEarthworksFill	Earthworks fill	Volume di terreno o materiale aggiunto: rilevati, rinterri, riempimenti.	Volume of soil or material added: embankments, backfills, fills.
+IfcReinforcedSoil	Reinforced soil	Terreno migliorato o rinforzato per aumentarne le prestazioni.	Ground improved or reinforced to increase its performance.
+IfcFooting	Footing	Fondazione superficiale che distribuisce i carichi sul terreno: plinti, travi rovesce, platee.	Shallow foundation spreading loads onto the ground: pads, strips, rafts.
+IfcKerb	Kerb	Bordo rialzato che delimita carreggiata, marciapiede o aiuola.	Raised edge that separates carriageway, pavement or planting.
+IfcMember	Member	Elemento lineare strutturale o non strutturale che non è né trave né pilastro: controventi, arcarecci, montanti.	Linear structural or non-structural element that is neither beam nor column: braces, purlins, mullions.
+IfcMooringDevice	Mooring device	Dispositivo a cui si ormeggiano le imbarcazioni: bitte, anelli, ganci.	Device to which vessels are moored: bollards, rings, hooks.
+IfcNavigationElement	Navigation element	Elemento che guida la navigazione: boe, fari, segnali nautici.	Element that guides navigation: buoys, beacons, nautical signs.
+IfcPavement	Pavement	Pavimentazione di strade, piazzali o piste, come insieme di strati.	Pavement of roads, yards or runways, as a set of layers.
+IfcPlate	Plate	Elemento piano sottile, spesso in acciaio o vetro, usato come pannello o lastra.	Thin flat element, often steel or glass, used as a panel or sheet.
+IfcRail	Rail	Rotaia o profilo su cui scorrono ruote o carrelli.	Rail or profile on which wheels or trolleys run.
+IfcRailing	Railing	Protezione o appoggio lungo bordi, scale e rampe: parapetti, corrimani, guardrail.	Protection or support along edges, stairs and ramps: balustrades, handrails, guardrails.
+IfcRamp	Ramp	Collegamento inclinato tra livelli diversi; contiene i tratti di rampa e i pianerottoli.	Inclined connection between levels; contains ramp flights and landings.
+IfcRampFlight	Ramp flight	Singolo tratto inclinato di una rampa, tra due pianerottoli.	Single inclined run of a ramp, between two landings.
+IfcRoof	Roof	Copertura dell'edificio come insieme: falde, solai di copertura, strati.	Roof of the building as a whole: slopes, roof slabs, layers.
+IfcShadingDevice	Shading device	Elemento che controlla luce e calore solare: frangisole, tende, persiane.	Element that controls sunlight and solar heat: louvres, blinds, shutters.
+IfcSlab	Slab	Elemento piano orizzontale o inclinato: solai, solette, platee, pianerottoli.	Horizontal or sloped planar element: floors, decks, base slabs, landings.
+IfcStair	Stair	Collegamento a gradini tra livelli; contiene le rampe e i pianerottoli.	Stepped connection between levels; contains flights and landings.
+IfcStairFlight	Stair flight	Singola rampa di gradini senza interruzioni, tra due pianerottoli.	Single uninterrupted run of steps, between two landings.
+IfcTrackElement	Track element	Componente del binario ferroviario: traverse, deviatoi, respingenti, giunti.	Railway track component: sleepers, switches, buffer stops, joints.
+IfcWall	Wall	Elemento verticale che chiude o divide gli spazi, portante o no.	Vertical element that encloses or divides spaces, loadbearing or not.
+IfcWallStandardCase	Wall (standard case)	Variante storica di IfcWall per muri a spessore costante. Deprecata: usare IfcWall.	Legacy variant of IfcWall for constant-thickness walls. Deprecated: use IfcWall.
+IfcWindow	Window	Elemento che chiude un'apertura per far entrare luce ed eventualmente aria.	Element filling an opening to admit light and possibly air.
+IfcCivilElement	Civil element	Elemento generico di opere civili. Deprecato in IFC 4.3: usare le classi specifiche.	Generic civil-works element. Deprecated in IFC 4.3: use specific classes.
+IfcDistributionElement	Distribution element	Classe madre degli elementi impiantistici (meccanici, elettrici, idraulici, di controllo). Non si istanzia.	Parent class of building services elements (mechanical, electrical, plumbing, control). Not to be instantiated.
+IfcDistributionControlElement	Distribution control element	Classe madre dei componenti che misurano, comandano o regolano gli impianti.	Parent class of components that measure, command or regulate services.
+IfcActuator	Actuator	Dispositivo che muove un organo di regolazione (valvola, serranda) su comando di un controllore.	Device that moves a control member (valve, damper) on a controller's command.
+IfcAlarm	Alarm	Dispositivo che avvisa di una situazione anomala con suono, luce o messaggio.	Device that warns of an abnormal condition by sound, light or message.
+IfcController	Controller	Dispositivo che elabora segnali e comanda altri dispositivi secondo una logica di regolazione.	Device that processes signals and drives other devices according to a control logic.
+IfcFlowInstrument	Flow instrument	Strumento che mostra a vista una grandezza dell'impianto: manometri, termometri, amperometri.	Instrument that displays a system quantity: pressure gauges, thermometers, ammeters.
+IfcProtectiveDeviceTrippingUnit	Protective device tripping unit	Unità che rileva il guasto e fa intervenire un dispositivo di protezione elettrica.	Unit that detects a fault and trips an electrical protective device.
+IfcSensor	Sensor	Dispositivo che misura una grandezza fisica e la trasmette come segnale.	Device that measures a physical quantity and transmits it as a signal.
+IfcUnitaryControlElement	Unitary control element	Insieme di controllo pronto all'uso, montato come un'unica unità: termostati ambiente, pannelli di comando.	Ready-made control assembly installed as a single unit: room thermostats, control panels.
+IfcDistributionFlowElement	Distribution flow element	Classe madre degli elementi attraversati da fluidi, energia o segnali. Non si istanzia.	Parent class of elements that carry fluids, energy or signals. Not to be instantiated.
+IfcDistributionChamberElement	Distribution chamber element	Pozzetto, camera o cunicolo che dà accesso a reti impiantistiche.	Pit, chamber or trench giving access to service networks.
+IfcEnergyConversionDevice	Energy conversion device	Classe madre dei dispositivi che trasformano energia da una forma a un'altra. Non si istanzia.	Parent class of devices that convert energy from one form to another. Not to be instantiated.
+IfcAirToAirHeatRecovery	Air-to-air heat recovery	Recuperatore che trasferisce calore tra aria espulsa e aria di rinnovo.	Unit transferring heat between exhaust air and supply air.
+IfcBoiler	Boiler	Generatore che scalda acqua o produce vapore bruciando un combustibile o con energia elettrica.	Generator heating water or producing steam by burning fuel or using electricity.
+IfcBurner	Burner	Dispositivo che miscela combustibile e aria e produce la fiamma.	Device that mixes fuel and air and produces the flame.
+IfcChiller	Chiller	Macchina frigorifera che raffredda un fluido, di solito acqua, per la climatizzazione o il processo.	Refrigeration machine cooling a fluid, usually water, for air conditioning or process.
+IfcCoil	Coil	Batteria di scambio tra aria e un fluido caldo o freddo, dentro una UTA o un terminale.	Heat-exchange coil between air and a hot or cold fluid, inside an AHU or terminal.
+IfcCondenser	Condenser	Scambiatore in cui il refrigerante cede calore e torna liquido.	Heat exchanger in which refrigerant rejects heat and condenses.
+IfcCooledBeam	Cooled beam	Terminale a soffitto che raffresca l'ambiente con acqua fredda, con o senza aria primaria.	Ceiling terminal cooling the room with chilled water, with or without primary air.
+IfcCoolingTower	Cooling tower	Apparecchio che smaltisce calore in atmosfera raffreddando l'acqua, spesso per evaporazione.	Unit rejecting heat to the atmosphere by cooling water, often by evaporation.
+IfcElectricGenerator	Electric generator	Macchina che produce energia elettrica da energia meccanica.	Machine producing electrical energy from mechanical energy.
+IfcElectricMotor	Electric motor	Macchina che trasforma energia elettrica in movimento.	Machine converting electrical energy into motion.
+IfcEngine	Engine	Motore che produce lavoro meccanico bruciando un combustibile.	Engine producing mechanical work by burning fuel.
+IfcEvaporativeCooler	Evaporative cooler	Raffrescatore che abbassa la temperatura dell'aria facendo evaporare acqua.	Cooler that lowers air temperature by evaporating water.
+IfcEvaporator	Evaporator	Scambiatore in cui il refrigerante evapora assorbendo calore.	Heat exchanger in which refrigerant evaporates by absorbing heat.
+IfcHeatExchanger	Heat exchanger	Apparecchio che trasferisce calore tra due fluidi senza mescolarli.	Device transferring heat between two fluids without mixing them.
+IfcHumidifier	Humidifier	Apparecchio che aggiunge vapore acqueo all'aria.	Device adding water vapour to the air.
+IfcMotorConnection	Motor connection	Collegamento meccanico tra un motore e la macchina che aziona: giunti, cinghie, ingranaggi.	Mechanical link between a motor and the machine it drives: couplings, belts, gears.
+IfcSolarDevice	Solar device	Dispositivo che sfrutta la radiazione solare: pannelli fotovoltaici e collettori termici.	Device using solar radiation: photovoltaic panels and thermal collectors.
+IfcTransformer	Transformer	Apparecchio che cambia tensione o corrente di un sistema elettrico.	Device changing the voltage or current of an electrical system.
+IfcTubeBundle	Tube bundle	Fascio di tubi che forma la superficie di scambio di uno scambiatore.	Set of tubes forming the exchange surface of a heat exchanger.
+IfcUnitaryEquipment	Unitary equipment	Apparecchiatura completa assemblata in fabbrica: UTA, condizionatori autonomi, rooftop, split.	Complete factory-assembled equipment: AHUs, packaged air conditioners, rooftop units, splits.
+IfcFlowController	Flow controller	Classe madre dei dispositivi che regolano o interrompono un flusso. Non si istanzia.	Parent class of devices that regulate or stop a flow. Not to be instantiated.
+IfcAirTerminalBox	Air terminal box	Cassetta che regola la portata d'aria verso uno o più terminali (VAV, CAV).	Box regulating airflow to one or more terminals (VAV, CAV).
+IfcDamper	Damper	Organo che regola o chiude il passaggio d'aria in un canale, anche per fuoco e fumo.	Device regulating or closing airflow in a duct, including for fire and smoke.
+IfcDistributionBoard	Distribution board	Quadro che distribuisce e protegge circuiti elettrici, di comando o di segnale.	Board distributing and protecting electrical, control or signal circuits.
+IfcElectricDistributionBoard	Electric distribution board	Versione precedente del quadro elettrico. Deprecata in IFC 4.3: usare IfcDistributionBoard.	Earlier version of the electrical board. Deprecated in IFC 4.3: use IfcDistributionBoard.
+IfcElectricTimeControl	Electric time control	Dispositivo che comanda un circuito in base al tempo: orologi, timer, relè temporizzati.	Device switching a circuit on a time basis: clocks, timers, time-delay relays.
+IfcFlowMeter	Flow meter	Contatore che misura e totalizza un consumo: acqua, gas, energia, calore.	Meter measuring and totalising consumption: water, gas, energy, heat.
+IfcProtectiveDevice	Protective device	Dispositivo che interrompe il circuito in caso di guasto: interruttori automatici, differenziali, fusibili.	Device breaking the circuit on a fault: circuit breakers, RCDs, fuses.
+IfcSwitchingDevice	Switching device	Dispositivo che apre o chiude un circuito su comando: interruttori, deviatori, contattori, relè.	Device opening or closing a circuit on command: switches, contactors, relays.
+IfcValve	Valve	Organo che apre, chiude o regola il flusso di un fluido in una tubazione.	Device opening, closing or regulating fluid flow in a pipe.
+IfcFlowFitting	Flow fitting	Classe madre dei raccordi tra segmenti di una rete. Non si istanzia.	Parent class of fittings joining segments of a network. Not to be instantiated.
+IfcCableCarrierFitting	Cable carrier fitting	Pezzo speciale di canalina o passerella: curve, derivazioni, incroci.	Special piece of cable tray or trunking: bends, tees, crosses.
+IfcCableFitting	Cable fitting	Accessorio che collega o termina i cavi: giunti, terminali, connettori.	Accessory joining or terminating cables: joints, terminations, connectors.
+IfcDuctFitting	Duct fitting	Pezzo speciale dei canali d'aria: curve, riduzioni, derivazioni.	Special piece of air ducts: bends, reducers, branches.
+IfcJunctionBox	Junction box	Scatola che contiene e protegge le connessioni di cavi o tubi.	Box enclosing and protecting cable or conduit connections.
+IfcPipeFitting	Pipe fitting	Pezzo speciale delle tubazioni: curve, tee, riduzioni, giunti.	Special piece of pipework: bends, tees, reducers, joints.
+IfcFlowMovingDevice	Flow moving device	Classe madre delle macchine che mettono in movimento un fluido. Non si istanzia.	Parent class of machines that move a fluid. Not to be instantiated.
+IfcCompressor	Compressor	Macchina che aumenta la pressione di un gas, tipica dei circuiti frigoriferi e dell'aria compressa.	Machine raising gas pressure, typical of refrigeration and compressed-air systems.
+IfcFan	Fan	Macchina che muove l'aria in canali o ambienti.	Machine moving air through ducts or rooms.
+IfcPump	Pump	Macchina che muove un liquido in un circuito.	Machine moving a liquid through a circuit.
+IfcFlowSegment	Flow segment	Classe madre dei tratti rettilinei di una rete. Non si istanzia.	Parent class of straight runs of a network. Not to be instantiated.
+IfcCableCarrierSegment	Cable carrier segment	Tratto di canalina, passerella o tubo protettivo che porta i cavi.	Run of cable tray, trunking or conduit carrying cables.
+IfcCableSegment	Cable segment	Tratto di cavo o conduttore elettrico o di segnale.	Run of electrical or signal cable or conductor.
+IfcConveyorSegment	Conveyor segment	Tratto di nastro o trasportatore per materiali o bagagli.	Run of belt or conveyor for materials or baggage.
+IfcDuctSegment	Duct segment	Tratto di canale per l'aria, rigido o flessibile.	Run of air duct, rigid or flexible.
+IfcPipeSegment	Pipe segment	Tratto di tubazione, rigida o flessibile.	Run of pipe, rigid or flexible.
+IfcFlowStorageDevice	Flow storage device	Classe madre dei dispositivi che accumulano fluidi o energia. Non si istanzia.	Parent class of devices storing fluids or energy. Not to be instantiated.
+IfcElectricFlowStorageDevice	Electric flow storage device	Accumulo di energia elettrica: batterie, condensatori, UPS.	Electrical energy storage: batteries, capacitors, UPS.
+IfcTank	Tank	Serbatoio o vasca che contiene un fluido.	Vessel or tank holding a fluid.
+IfcFlowTerminal	Flow terminal	Classe madre dei terminali in cui un impianto finisce o si usa. Non si istanzia.	Parent class of terminals where a system ends or is used. Not to be instantiated.
+IfcAirTerminal	Air terminal	Diffusore, bocchetta o griglia da cui l'aria entra o esce da un ambiente.	Diffuser, grille or register through which air enters or leaves a room.
+IfcAudioVisualAppliance	Audio-visual appliance	Apparecchio per suono e immagini: altoparlanti, schermi, proiettori, telecamere.	Sound and image appliance: speakers, displays, projectors, cameras.
+IfcCommunicationsAppliance	Communications appliance	Apparecchio di rete e telecomunicazione: router, switch, antenne, telefoni.	Network and telecom appliance: routers, switches, antennas, telephones.
+IfcElectricAppliance	Electric appliance	Elettrodomestico o apparecchio elettrico d'uso: frigoriferi, forni, lavatrici, distributori.	Domestic or utility electrical appliance: fridges, ovens, washing machines, vending machines.
+IfcFireSuppressionTerminal	Fire suppression terminal	Terminale di un impianto di spegnimento: sprinkler, idranti, naspi.	Terminal of a fire suppression system: sprinklers, hydrants, hose reels.
+IfcLamp	Lamp	Sorgente luminosa che si monta in un apparecchio: LED, fluorescente, alogena.	Light source fitted into a luminaire: LED, fluorescent, halogen.
+IfcLightFixture	Light fixture	Apparecchio illuminante completo, con le sue sorgenti.	Complete luminaire, with its light sources.
+IfcLiquidTerminal	Liquid terminal	Terminale da cui esce un liquido, diverso dai sanitari e dall'antincendio.	Terminal discharging a liquid, other than sanitary or fire fittings.
+IfcMedicalDevice	Medical device	Dispositivo collegato agli impianti di una struttura sanitaria: gas medicali, vuoto, aria.	Device connected to healthcare building services: medical gases, vacuum, air.
+IfcMobileTelecommunicationsAppliance	Mobile telecommunications appliance	Apparato delle reti mobili: stazioni radio base, ripetitori, unità remote.	Mobile network equipment: base stations, repeaters, remote units.
+IfcOutlet	Outlet	Punto di presa: prese elettriche, dati, audio, telefoniche.	Outlet point: power, data, audio or telephone sockets.
+IfcSanitaryTerminal	Sanitary terminal	Apparecchio sanitario: lavabi, WC, docce, vasche, orinatoi.	Sanitary fixture: basins, WCs, showers, baths, urinals.
+IfcSignal	Signal	Dispositivo che trasmette un'informazione con luce o suono, come i semafori ferroviari.	Device conveying information by light or sound, such as railway signals.
+IfcSpaceHeater	Space heater	Corpo scaldante che scalda direttamente l'ambiente: radiatori, convettori, pannelli.	Heater warming the room directly: radiators, convectors, panels.
+IfcStackTerminal	Stack terminal	Terminale in cima a una canna o colonna di ventilazione o scarico.	Terminal at the top of a vent or discharge stack.
+IfcWasteTerminal	Waste terminal	Punto di raccolta degli scarichi: pilette, caditoie, sifoni.	Drainage collection point: floor drains, gullies, traps.
+IfcFlowTreatmentDevice	Flow treatment device	Classe madre dei dispositivi che trattano un fluido. Non si istanzia.	Parent class of devices that treat a fluid. Not to be instantiated.
+IfcDuctSilencer	Duct silencer	Silenziatore inserito nei canali per ridurre il rumore.	Silencer fitted in ducts to reduce noise.
+IfcElectricFlowTreatmentDevice	Electric flow treatment device	Dispositivo che migliora la qualità dell'energia elettrica, come i filtri armonici.	Device improving power quality, such as harmonic filters.
+IfcFilter	Filter	Filtro che trattiene particelle o impurità da aria, acqua o altri fluidi.	Filter retaining particles or impurities from air, water or other fluids.
+IfcInterceptor	Interceptor	Separatore che trattiene grassi, oli, sabbia o altre sostanze dagli scarichi.	Separator retaining grease, oil, grit or other matter from drainage.
+IfcElementAssembly	Element assembly	Insieme di elementi trattati come un'unità: capriate, telai, armature preassemblate.	Group of elements handled as one unit: trusses, frames, pre-assembled cages.
+IfcElementComponent	Element component	Classe astratta delle piccole parti che completano un elemento: armature, fissaggi, accessori.	Abstract class of small parts completing an element: reinforcement, fasteners, accessories.
+IfcBuildingElementPart	Building element part	Parte di un elemento costruttivo composto, come un pannello di una parete prefabbricata.	Part of a composite building element, such as a panel of a prefabricated wall.
+IfcDiscreteAccessory	Discrete accessory	Accessorio singolo che completa un elemento: staffe, ancoraggi, giunti, guarnizioni.	Single accessory completing an element: brackets, anchors, joints, seals.
+IfcFastener	Fastener	Collegamento che unisce elementi tramite colla, saldatura o simili.	Connection joining elements by glue, welding or similar.
+IfcImpactProtectionDevice	Impact protection device	Dispositivo che assorbe gli urti: attenuatori, parabordi, protezioni.	Device absorbing impacts: crash cushions, fenders, guards.
+IfcMechanicalFastener	Mechanical fastener	Fissaggio meccanico: bulloni, viti, chiodi, tasselli, perni.	Mechanical fixing: bolts, screws, nails, anchors, dowels.
+IfcReinforcingElement	Reinforcing element	Classe astratta delle armature del calcestruzzo.	Abstract class of concrete reinforcement.
+IfcReinforcingBar	Reinforcing bar	Barra d'armatura per il calcestruzzo.	Reinforcing bar for concrete.
+IfcReinforcingMesh	Reinforcing mesh	Rete d'armatura a maglie saldate.	Welded reinforcing mesh.
+IfcTendon	Tendon	Cavo, trefolo o barra di precompressione.	Prestressing cable, strand or bar.
+IfcTendonAnchor	Tendon anchor	Ancoraggio che fissa e mette in tensione il cavo di precompressione.	Anchor fixing and tensioning a prestressing tendon.
+IfcTendonConduit	Tendon conduit	Guaina in cui scorre il cavo di precompressione.	Duct through which a prestressing tendon runs.
+IfcSign	Sign	Cartello fisico che dà un'informazione: segnaletica, targhe, indicazioni.	Physical sign giving information: signage, plates, markers.
+IfcVibrationDamper	Vibration damper	Dispositivo che dissipa l'energia delle vibrazioni.	Device dissipating vibration energy.
+IfcVibrationIsolator	Vibration isolator	Supporto che impedisce alle vibrazioni di passare alla struttura.	Mount preventing vibrations from passing to the structure.
+IfcFeatureElement	Feature element	Classe astratta delle modifiche alla forma di un altro elemento: aperture, sporgenze, trattamenti.	Abstract class of changes to another element's shape: openings, projections, treatments.
+IfcFeatureElementAddition	Feature element addition	Classe astratta delle parti aggiunte alla forma di un elemento.	Abstract class of parts added to an element's shape.
+IfcProjectionElement	Projection element	Sporgenza aggiunta a un elemento, come una lesena o un dente.	Projection added to an element, such as a pilaster or nib.
+IfcFeatureElementSubtraction	Feature element subtraction	Classe astratta delle parti tolte dalla forma di un elemento.	Abstract class of parts removed from an element's shape.
+IfcEarthworksCut	Earthworks cut	Volume di terreno asportato: scavi, sbancamenti, trincee.	Volume of ground removed: excavations, cuttings, trenches.
+IfcOpeningElement	Opening element	Vuoto in un elemento, passante o no, per porte, finestre, passaggi impiantistici.	Void in an element, through or recess, for doors, windows, service penetrations.
+IfcVoidingFeature	Voiding feature	Piccola lavorazione per asportazione: fori, smussi, intagli, tagli.	Small material-removing feature: holes, chamfers, notches, cuts.
+IfcSurfaceFeature	Surface feature	Trattamento o segno sulla superficie di un elemento: segnaletica orizzontale, marcature, trattamenti.	Treatment or marking on an element's surface: road markings, tags, treatments.
+IfcFurnishingElement	Furnishing element	Classe madre degli arredi. Deprecata per l'istanza: usare IfcFurniture o IfcSystemFurnitureElement.	Parent class of furnishings. Deprecated for instances: use IfcFurniture or IfcSystemFurnitureElement.
+IfcFurniture	Furniture	Arredo mobile o fisso: tavoli, sedie, armadi, letti.	Loose or fixed furniture: tables, chairs, cabinets, beds.
+IfcSystemFurnitureElement	System furniture element	Componente di un arredo modulare, come i pannelli e i piani delle postazioni ufficio.	Component of modular furniture, such as panels and worktops of office workstations.
+IfcGeographicElement	Geographic element	Elemento del contesto naturale o urbano: terreno, vegetazione, arredo esterno.	Element of the natural or urban context: terrain, vegetation, outdoor features.
+IfcGeotechnicalElement	Geotechnical element	Classe astratta delle informazioni sul sottosuolo.	Abstract class of subsurface information.
+IfcGeotechnicalAssembly	Geotechnical assembly	Classe astratta degli insiemi di dati geotecnici.	Abstract class of geotechnical data sets.
+IfcBorehole	Borehole	Sondaggio nel terreno con i dati raccolti lungo la perforazione.	Ground borehole with the data recorded along the boring.
+IfcGeomodel	Geomodel	Modello del sottosuolo che riunisce strati e volumi geologici.	Subsurface model combining geological layers and volumes.
+IfcGeoslice	Geoslice	Sezione del sottosuolo che mostra gli strati lungo un piano.	Subsurface section showing layers along a plane.
+IfcGeotechnicalStratum	Geotechnical stratum	Strato o volume di terreno con caratteristiche omogenee.	Ground layer or volume with uniform characteristics.
+IfcTransportationDevice	Transportation device	Classe astratta dei mezzi che trasportano persone o cose.	Abstract class of means carrying people or goods.
+IfcTransportElement	Transport element	Impianto fisso di trasporto: ascensori, scale mobili, tappeti mobili, montacarichi.	Fixed transport installation: lifts, escalators, moving walkways, hoists.
+IfcVehicle	Vehicle	Veicolo che si muove nell'opera o la usa: treni, auto, carrelli.	Vehicle moving in or using the facility: trains, cars, trolleys.
+IfcVirtualElement	Virtual element	Elemento senza materia, usato per delimitare spazi o indicare limiti e zone.	Element without matter, used to bound spaces or mark limits and zones.
+IfcLinearElement	Linear element	Elemento definito lungo una curva, usato come riferimento per le infrastrutture.	Element defined along a curve, used as a reference for infrastructure.
+IfcAlignmentCant	Alignment cant	Sopraelevazione della rotaia esterna lungo il tracciato ferroviario.	Superelevation of the outer rail along a railway alignment.
+IfcAlignmentHorizontal	Alignment horizontal	Andamento in pianta del tracciato: rettifili, curve, clotoidi.	Plan layout of the alignment: straights, curves, clothoids.
+IfcAlignmentSegment	Alignment segment	Singolo tratto di tracciato in pianta, profilo o sopraelevazione.	Single segment of an alignment in plan, profile or cant.
+IfcAlignmentVertical	Alignment vertical	Profilo longitudinale del tracciato: livellette e raccordi verticali.	Longitudinal profile of the alignment: grades and vertical curves.
+IfcPort	Port	Classe astratta dei punti di collegamento tra elementi.	Abstract class of connection points between elements.
+IfcDistributionPort	Distribution port	Punto di connessione di un elemento impiantistico (ingresso, uscita) verso tubi, canali o cavi.	Connection point of a services element (inlet, outlet) to pipes, ducts or cables.
+IfcPositioningElement	Positioning element	Classe astratta degli elementi usati per posizionare altri elementi.	Abstract class of elements used to place other elements.
+IfcGrid	Grid	Reticolo di fili fissi per posizionare gli elementi.	Grid of setting-out lines used to place elements.
+IfcLinearPositioningElement	Linear positioning element	Riferimento lineare lungo cui si posizionano gli elementi.	Linear reference along which elements are placed.
+IfcAlignment	Alignment	Tracciato di strade, ferrovie e altre opere lineari, con pianta, profilo e sopraelevazione.	Alignment of roads, railways and other linear works, with plan, profile and cant.
+IfcReferent	Referent	Punto notevole lungo un tracciato: progressive, cippi, punti di cambio pendenza.	Notable point along an alignment: chainages, markers, grade-change points.
+IfcSpatialElement	Spatial element	Classe astratta di luoghi e volumi che organizzano il progetto.	Abstract class of places and volumes organising the project.
+IfcExternalSpatialStructureElement	External spatial structure element	Classe astratta degli spazi esterni all'opera.	Abstract class of spaces outside the facility.
+IfcExternalSpatialElement	External spatial element	Spazio esterno all'edificio, usato per esempio per i confini o le analisi energetiche.	Space outside the building, used for example for boundaries or energy analysis.
+IfcSpatialStructureElement	Spatial structure element	Classe astratta della struttura del progetto: sito, opera, piano, spazio.	Abstract class of the project breakdown: site, facility, storey, space.
+IfcBuildingStorey	Building storey	Piano dell'edificio; contiene gli elementi che vi si trovano.	Storey of the building; contains the elements located on it.
+IfcFacility	Facility	Opera costruita di qualsiasi tipo. Si usa direttamente quando nessuna sottoclasse è adatta.	Built facility of any kind. Used directly when no subclass fits.
+IfcBridge	Bridge	Ponte o viadotto come opera intera.	Bridge or viaduct as a whole facility.
+IfcBuilding	Building	Edificio come opera intera; contiene i piani.	Building as a whole facility; contains storeys.
+IfcMarineFacility	Marine facility	Opera marittima o fluviale: porti, moli, banchine, dighe.	Marine or river facility: ports, piers, quays, breakwaters.
+IfcRailway	Railway	Ferrovia come opera intera.	Railway as a whole facility.
+IfcRoad	Road	Strada come opera intera.	Road as a whole facility.
+IfcFacilityPart	Facility part	Classe astratta delle parti in cui si divide un'opera.	Abstract class of the parts a facility is divided into.
+IfcBridgePart	Bridge part	Parte di un ponte: impalcato, pile, spalle, campate.	Part of a bridge: deck, piers, abutments, spans.
+IfcFacilityPartCommon	Facility part (common)	Parte di un'opera valida per qualsiasi tipo di opera: sopra o sotto terra, giunti, segmenti.	Part of a facility applicable to any type: above or below ground, joints, segments.
+IfcMarinePart	Marine part	Parte di un'opera marittima: banchina, fondale, testata, scogliera.	Part of a marine facility: quay, seabed, head, revetment.
+IfcRailwayPart	Railway part	Parte di una ferrovia: binario, piattaforma, linea aerea, sottostruttura.	Part of a railway: track, formation, overhead line, substructure.
+IfcRoadPart	Road part	Parte di una strada: carreggiata, corsia, incrocio, marciapiede.	Part of a road: carriageway, lane, intersection, sidewalk.
+IfcSite	Site	Area di terreno su cui sorge l'opera; contiene edifici e altre opere.	Area of land on which the facility stands; contains buildings and other facilities.
+IfcSpace	Space	Spazio delimitato con una funzione: locale, vano, area.	Bounded area or volume with a function: room, compartment, area.
+IfcSpatialZone	Spatial zone	Zona che non segue la suddivisione per piani: zone termiche, di sicurezza, di proprietà.	Zone not following the storey breakdown: thermal, security, ownership zones.
+IfcStructuralActivity	Structural activity	Classe astratta di azioni e reazioni del modello di calcolo.	Abstract class of actions and reactions in the analysis model.
+IfcStructuralAction	Structural action	Classe astratta dei carichi applicati al modello di calcolo.	Abstract class of loads applied to the analysis model.
+IfcStructuralCurveAction	Structural curve action	Carico distribuito lungo una linea del modello di calcolo.	Load distributed along a line of the analysis model.
+IfcStructuralLinearAction	Structural linear action	Caso particolare di azione lungo una linea, per carichi lungo un'asta.	Special case of a line action, for loads along a bar.
+IfcStructuralPointAction	Structural point action	Carico concentrato in un punto del modello di calcolo.	Load concentrated at a point of the analysis model.
+IfcStructuralSurfaceAction	Structural surface action	Carico distribuito su una superficie del modello di calcolo.	Load distributed over a surface of the analysis model.
+IfcStructuralPlanarAction	Structural planar action	Caso particolare di azione su superficie, per carichi su superfici piane.	Special case of a surface action, for loads on flat surfaces.
+IfcStructuralReaction	Structural reaction	Classe astratta delle reazioni calcolate ai vincoli.	Abstract class of reactions computed at supports.
+IfcStructuralCurveReaction	Structural curve reaction	Reazione distribuita lungo una linea del modello di calcolo.	Reaction distributed along a line of the analysis model.
+IfcStructuralPointReaction	Structural point reaction	Reazione concentrata in un punto del modello di calcolo.	Reaction concentrated at a point of the analysis model.
+IfcStructuralSurfaceReaction	Structural surface reaction	Reazione distribuita su una superficie del modello di calcolo.	Reaction distributed over a surface of the analysis model.
+IfcStructuralItem	Structural item	Classe astratta di membri e connessioni del modello di calcolo.	Abstract class of members and connections in the analysis model.
+IfcStructuralConnection	Structural connection	Classe astratta dei vincoli e nodi del modello di calcolo.	Abstract class of supports and nodes in the analysis model.
+IfcStructuralCurveConnection	Structural curve connection	Vincolo o collegamento lungo una linea del modello di calcolo.	Support or connection along a line of the analysis model.
+IfcStructuralPointConnection	Structural point connection	Nodo o vincolo puntuale del modello di calcolo.	Node or point support of the analysis model.
+IfcStructuralSurfaceConnection	Structural surface connection	Vincolo o collegamento su una superficie del modello di calcolo.	Support or connection over a surface of the analysis model.
+IfcStructuralMember	Structural member	Classe astratta delle aste e superfici del modello di calcolo.	Abstract class of bars and surfaces in the analysis model.
+IfcStructuralCurveMember	Structural curve member	Asta del modello di calcolo: trave, pilastro, tirante, puntone.	Bar of the analysis model: beam, column, tie, strut.
+IfcStructuralCurveMemberVarying	Structural curve member varying	Caso particolare di asta, con sezione che cambia lungo l'asse.	Special case of a bar, with a section that changes along its axis.
+IfcStructuralSurfaceMember	Structural surface member	Elemento a superficie del modello di calcolo: piastra, lastra, guscio.	Surface element of the analysis model: plate, shell, membrane.
+IfcStructuralSurfaceMemberVarying	Structural surface member varying	Caso particolare di elemento a superficie, con spessore che cambia.	Special case of a surface element, with changing thickness.

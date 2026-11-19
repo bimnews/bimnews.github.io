@@ -1,0 +1,249 @@
+# Testi scritti da noi (blocco C)
+IfcMarineFacility	BARRIERBEACH	Barrier beach	Cordone di sabbia o ghiaia parallelo alla costa, che la protegge dal mare aperto.	Sand or gravel ridge parallel to the coast, sheltering it from the open sea.
+IfcMarineFacility	BREAKWATER	Breakwater	Diga foranea che ripara un porto o una costa dalle onde.	Structure sheltering a harbour or coast from waves.	Diga foranea / frangiflutti
+IfcMarineFacility	CANAL	Canal	Canale artificiale navigabile.	Artificial navigable canal.
+IfcMarineFacility	DRYDOCK	Dry dock	Bacino che si svuota per lavorare sulla carena delle navi.	Dock that is emptied to work on ships' hulls.
+IfcMarineFacility	FLOATINGDOCK	Floating dock	Bacino galleggiante che si immerge e si solleva con la nave sopra.	Floating dock that sinks and rises with the ship on it.
+IfcMarineFacility	HYDROLIFT	Hydrolift	Impianto che solleva le imbarcazioni con un sistema idraulico.	Installation lifting vessels with a hydraulic system.
+IfcMarineFacility	JETTY	Jetty	Pontile o molo che si protende in acqua.	Pier or jetty projecting into the water.	Pontile / molo
+IfcMarineFacility	LAUNCHRECOVERY	Launch and recovery	Impianto per varare e recuperare imbarcazioni.	Facility for launching and recovering vessels.
+IfcMarineFacility	MARINEDEFENCE	Marine defence	Opera di difesa della costa dal mare: argini, muri, scogliere.	Coastal defence work: dykes, sea walls, revetments.
+IfcMarineFacility	NAVIGATIONALCHANNEL	Navigational channel	Canale navigabile segnalato in un'area d'acqua più ampia.	Marked navigable channel in a wider body of water.
+IfcMarineFacility	PORT	Port	Porto come insieme di opere.	Port as a whole.
+IfcMarineFacility	QUAY	Quay	Banchina lungo la quale attraccano le navi.	Quay along which ships berth.
+IfcMarineFacility	REVETMENT	Revetment	Rivestimento di una sponda o di una scarpata contro l'erosione.	Facing of a bank or slope against erosion.
+IfcMarineFacility	SHIPLIFT	Ship lift	Ascensore per navi tra due livelli d'acqua.	Lift moving ships between two water levels.
+IfcMarineFacility	SHIPLOCK	Ship lock	Conca di navigazione che fa passare le navi tra livelli d'acqua diversi.	Lock moving ships between different water levels.	Conca di navigazione
+IfcMarineFacility	SHIPYARD	Shipyard	Cantiere navale.	Shipyard.
+IfcMarineFacility	SLIPWAY	Slipway	Scivolo inclinato per varare o alare le imbarcazioni.	Inclined ramp for launching or hauling out vessels.
+IfcMarineFacility	WATERWAY	Waterway	Via d'acqua navigabile, naturale o artificiale.	Natural or artificial navigable waterway.
+IfcMarineFacility	WATERWAYSHIPLIFT	Waterway ship lift	Ascensore per navi su una via navigabile interna.	Ship lift on an inland waterway.
+IfcMarinePart	ABOVEWATERLINE	Above water line	Parte dell'opera sopra il livello medio dell'acqua.	Part of the structure above mean water level.
+IfcMarinePart	ANCHORAGE	Anchorage	Specchio d'acqua in cui le navi possono stare all'ancora.	Water area where ships can lie at anchor.
+IfcMarinePart	APPROACHCHANNEL	Approach channel	Canale di accesso al porto.	Channel leading into the port.
+IfcMarinePart	BELOWWATERLINE	Below water line	Parte dell'opera sotto il livello medio dell'acqua.	Part of the structure below mean water level.
+IfcMarinePart	BERTHINGSTRUCTURE	Berthing structure	Struttura a cui le navi accostano e si ormeggiano.	Structure ships come alongside and moor to.
+IfcMarinePart	CHAMBER	Chamber	Camera o vasca di una conca di navigazione.	Chamber of a navigation lock.
+IfcMarinePart	CILL_LEVEL	Cill level	Quota della soglia sul fondo di una conca, che limita il pescaggio.	Level of the sill at the bottom of a lock, limiting draught.
+IfcMarinePart	COPELEVEL	Cope level	Quota del bordo superiore della banchina.	Level of the top edge of the quay.
+IfcMarinePart	CORE	Core	Nucleo interno di una diga o di un'opera a gettata.	Inner core of a breakwater or rubble structure.
+IfcMarinePart	CREST	Crest	Cresta: la parte più alta di una diga o di un argine.	Crest: the highest part of a breakwater or dyke.
+IfcMarinePart	GATEHEAD	Gatehead	Testata di una conca dove si trovano le porte.	Lock head where the gates are.
+IfcMarinePart	GUDINGSTRUCTURE	Guiding structure	Struttura che guida le navi verso una conca o un ponte.	Structure guiding ships towards a lock or bridge.
+IfcMarinePart	HIGHWATERLINE	High water line	Linea del livello di alta marea.	High-water level line.
+IfcMarinePart	LANDFIELD	Landfield	Area a terra dell'opera.	Land area of the facility.
+IfcMarinePart	LEEWARDSIDE	Leeward side	Lato riparato dal vento e dalle onde.	Side sheltered from wind and waves.
+IfcMarinePart	LOWWATERLINE	Low water line	Linea del livello di bassa marea.	Low-water level line.
+IfcMarinePart	MANUFACTURING	Manufacturing	Area destinata alla produzione, per esempio in un cantiere navale.	Area used for production, for example in a shipyard.
+IfcMarinePart	NAVIGATIONALAREA	Navigational area	Area d'acqua in cui si naviga.	Water area used for navigation.
+IfcMarinePart	PROTECTION	Protection	Parte che protegge l'opera, come una mantellata.	Part protecting the structure, such as armour.
+IfcMarinePart	SHIPTRANSFER	Ship transfer	Area in cui le navi vengono spostate, per esempio tra scalo e bacino.	Area where ships are moved, for example between slipway and dock.
+IfcMarinePart	STORAGEAREA	Storage area	Area di deposito delle merci.	Cargo storage area.
+IfcMarinePart	VEHICLESERVICING	Vehicle servicing	Area di servizio per i veicoli.	Vehicle servicing area.
+IfcMarinePart	WATERFIELD	Waterfield	Area d'acqua dell'opera.	Water area of the facility.
+IfcMarinePart	WEATHERSIDE	Weather side	Lato esposto a vento e onde.	Side exposed to wind and waves.
+IfcMechanicalFastener	ANCHORBOLT	Anchor bolt	Tirafondo annegato nel calcestruzzo per fissare piastre o strutture.	Bolt cast into concrete to fix plates or structures.
+IfcMechanicalFastener	BOLT	Bolt	Bullone con dado.	Bolt with nut.
+IfcMechanicalFastener	CHAIN	Chain	Catena usata come collegamento.	Chain used as a connection.
+IfcMechanicalFastener	COUPLER	Coupler	Manicotto che giunta barre d'armatura o tiranti.	Coupler joining reinforcing bars or rods.
+IfcMechanicalFastener	DOWEL	Dowel	Perno o spinotto che unisce due elementi.	Dowel joining two elements.
+IfcMechanicalFastener	NAIL	Nail	Chiodo.	Nail.
+IfcMechanicalFastener	NAILPLATE	Nail plate	Piastra dentata per unire elementi in legno, tipica delle capriate.	Toothed plate joining timber members, typical of trusses.
+IfcMechanicalFastener	RAILFASTENING	Rail fastening	Attacco che fissa la rotaia alla traversa.	Fastening holding the rail to the sleeper.
+IfcMechanicalFastener	RAILJOINT	Rail joint	Giunzione tra due rotaie, per esempio con stecche.	Joint between two rails, for example with fishplates.
+IfcMechanicalFastener	RIVET	Rivet	Rivetto o chiodo ribattuto.	Rivet.
+IfcMechanicalFastener	ROPE	Rope	Fune usata come collegamento.	Rope used as a connection.
+IfcMechanicalFastener	SCREW	Screw	Vite.	Screw.
+IfcMechanicalFastener	SHEARCONNECTOR	Shear connector	Connettore che fa collaborare a taglio due materiali, come acciaio e calcestruzzo.	Connector making two materials, such as steel and concrete, work together in shear.
+IfcMechanicalFastener	STAPLE	Staple	Graffa o cambretta.	Staple.
+IfcMechanicalFastener	STUDSHEARCONNECTOR	Stud shear connector	Piolo saldato, il connettore a taglio più comune nelle strutture miste.	Welded headed stud, the most common shear connector in composite structures.
+IfcMedicalDevice	AIRSTATION	Air station	Centrale di produzione dell'aria medicale.	Plant producing medical air.
+IfcMedicalDevice	FEEDAIRUNIT	Feed air unit	Unità che fornisce aria ad apparecchi medicali.	Unit supplying air to medical devices.
+IfcMedicalDevice	OXYGENGENERATOR	Oxygen generator	Generatore di ossigeno.	Oxygen generator.
+IfcMedicalDevice	OXYGENPLANT	Oxygen plant	Centrale di produzione e distribuzione dell'ossigeno.	Plant producing and distributing oxygen.
+IfcMedicalDevice	VACUUMSTATION	Vacuum station	Centrale del vuoto medicale.	Medical vacuum plant.
+IfcMember	ARCH_SEGMENT	Arch segment	Concio o tratto di un arco.	Segment of an arch.
+IfcMember	BRACE	Brace	Controvento: asta inclinata che irrigidisce la struttura.	Brace: diagonal member stiffening the structure.
+IfcMember	CHORD	Chord	Corrente superiore o inferiore di una travatura reticolare.	Top or bottom chord of a truss.
+IfcMember	COLLAR	Collar	Catena alta tra due puntoni di falda.	Tie between two rafters, above the eaves.
+IfcMember	MEMBER	Member	Asta generica, quando nessun altro valore è più preciso.	Generic member, when no other value is more specific.
+IfcMember	MULLION	Mullion	Montante verticale di una facciata continua o di un serramento.	Vertical mullion of a curtain wall or window.
+IfcMember	PLATE	Plate	Corrente orizzontale in testa o al piede di una parete a telaio in legno.	Horizontal top or bottom plate of a timber-framed wall.
+IfcMember	POST	Post	Montante o palo verticale.	Vertical post.
+IfcMember	PURLIN	Purlin	Arcareccio: trave secondaria di copertura che porta il manto.	Purlin: secondary roof beam carrying the roofing.
+IfcMember	RAFTER	Rafter	Puntone o travetto inclinato di falda.	Sloping rafter of a roof.	Puntone di falda
+IfcMember	STAY_CABLE	Stay cable	Strallo che sostiene l'impalcato dal pilone.	Stay holding the deck from the pylon.
+IfcMember	STIFFENING_RIB	Stiffening rib	Nervatura che irrigidisce una lastra o un guscio.	Rib stiffening a plate or shell.
+IfcMember	STRINGER	Stringer	Elemento longitudinale, come il cosciale di una scala o il longherone di un impalcato.	Longitudinal member, such as a stair stringer or a deck stringer.
+IfcMember	STRUCTURALCABLE	Structural cable	Cavo strutturale generico.	Generic structural cable.
+IfcMember	STRUT	Strut	Puntone: asta compressa.	Strut: member in compression.
+IfcMember	STUD	Stud	Montante di una parete a telaio.	Stud of a framed wall.
+IfcMember	SUSPENDER	Suspender	Pendino che appende l'impalcato al cavo principale o all'arco.	Hanger suspending the deck from the main cable or arch.
+IfcMember	SUSPENSION_CABLE	Suspension cable	Cavo portante principale di un ponte sospeso.	Main cable of a suspension bridge.
+IfcMember	TIEBAR	Tie bar	Tirante: barra tesa.	Tie bar: member in tension.
+IfcMobileTelecommunicationsAppliance	ACCESSPOINT	Access point	Punto di accesso a una rete senza fili.	Wireless network access point.
+IfcMobileTelecommunicationsAppliance	BASEBANDUNIT	Baseband unit	Unità che elabora i segnali in banda base di una stazione radio.	Unit processing baseband signals of a radio station.
+IfcMobileTelecommunicationsAppliance	BASETRANSCEIVERSTATION	Base transceiver station	Stazione radio base delle reti mobili 2G.	Base station of 2G mobile networks.
+IfcMobileTelecommunicationsAppliance	E_UTRAN_NODE_B	E-UTRAN Node B	Stazione radio base delle reti 4G (eNodeB).	Base station of 4G networks (eNodeB).
+IfcMobileTelecommunicationsAppliance	GATEWAY_GPRS_SUPPORT_NODE	Gateway GPRS support node	Nodo che collega la rete dati mobile a Internet (GGSN).	Node linking the mobile data network to the internet (GGSN).
+IfcMobileTelecommunicationsAppliance	MASTERUNIT	Master unit	Unità principale di un sistema di ripetitori, collegata alla stazione radio.	Main unit of a repeater system, linked to the base station.
+IfcMobileTelecommunicationsAppliance	MOBILESWITCHINGCENTER	Mobile switching center	Centrale che instrada le chiamate nella rete mobile (MSC).	Centre routing calls in the mobile network (MSC).
+IfcMobileTelecommunicationsAppliance	MSCSERVER	MSC server	Server che gestisce le funzioni di controllo della centrale mobile.	Server handling the control functions of the mobile switching centre.
+IfcMobileTelecommunicationsAppliance	PACKETCONTROLUNIT	Packet control unit	Unità che gestisce il traffico dati a pacchetto nelle reti 2G (PCU).	Unit handling packet data traffic in 2G networks (PCU).
+IfcMobileTelecommunicationsAppliance	REMOTERADIOUNIT	Remote radio unit	Unità radio installata vicino all'antenna (RRU).	Radio unit installed near the antenna (RRU).
+IfcMobileTelecommunicationsAppliance	REMOTEUNIT	Remote unit	Unità remota di un sistema di ripetitori, che copre le zone d'ombra.	Remote unit of a repeater system, covering blind spots.
+IfcMobileTelecommunicationsAppliance	SERVICE_GPRS_SUPPORT_NODE	Serving GPRS support node	Nodo che gestisce i dati degli utenti mobili nella sua area (SGSN).	Node handling mobile users' data in its area (SGSN).
+IfcMobileTelecommunicationsAppliance	SUBSCRIBERSERVER	Subscriber server	Server con i dati degli abbonati della rete mobile.	Server holding the mobile network's subscriber data.
+IfcMooringDevice	BOLLARD	Bollard	Bitta a cui si legano le cime d'ormeggio.	Bollard to which mooring lines are tied.
+IfcMooringDevice	LINETENSIONER	Line tensioner	Dispositivo che mantiene in tensione le cime d'ormeggio.	Device keeping mooring lines taut.
+IfcMooringDevice	MAGNETICDEVICE	Magnetic device	Ormeggio che trattiene la nave con magneti.	Mooring holding the ship with magnets.
+IfcMooringDevice	MOORINGHOOKS	Mooring hooks	Ganci a sgancio rapido per le cime d'ormeggio.	Quick-release hooks for mooring lines.
+IfcMooringDevice	VACUUMDEVICE	Vacuum device	Ormeggio che trattiene la nave con ventose a depressione.	Mooring holding the ship with vacuum pads.
+IfcMotorConnection	BELTDRIVE	Belt drive	Trasmissione a cinghia.	Belt drive.
+IfcMotorConnection	COUPLING	Coupling	Giunto tra l'albero del motore e quello della macchina.	Coupling between motor shaft and machine shaft.
+IfcMotorConnection	DIRECTDRIVE	Direct drive	Collegamento diretto, con la macchina montata sull'albero del motore.	Direct drive, with the machine mounted on the motor shaft.
+IfcNavigationElement	BEACON	Beacon	Segnale nautico fisso, a terra o sul fondale.	Fixed nautical mark, on land or on the seabed.
+IfcNavigationElement	BUOY	Buoy	Boa galleggiante ancorata al fondo.	Floating buoy anchored to the bottom.
+IfcOpeningElement	OPENING	Opening	Foro che attraversa tutto lo spessore dell'elemento.	Hole going through the whole element.
+IfcOpeningElement	RECESS	Recess	Incasso o nicchia che non attraversa l'elemento.	Recess or niche not going through the element.
+IfcOutlet	AUDIOVISUALOUTLET	Audio-visual outlet	Presa per segnali audio e video.	Socket for audio and video signals.
+IfcOutlet	COMMUNICATIONSOUTLET	Communications outlet	Presa di comunicazione generica.	Generic communications socket.
+IfcOutlet	DATAOUTLET	Data outlet	Presa dati, per esempio RJ45.	Data socket, for example RJ45.
+IfcOutlet	POWEROUTLET	Power outlet	Presa di corrente.	Power socket.
+IfcOutlet	TELEPHONEOUTLET	Telephone outlet	Presa telefonica.	Telephone socket.
+IfcPavement	FLEXIBLE	Flexible	Pavimentazione flessibile, di solito in conglomerato bituminoso.	Flexible pavement, usually asphalt.
+IfcPavement	RIGID	Rigid	Pavimentazione rigida, di solito in calcestruzzo.	Rigid pavement, usually concrete.
+IfcPile	BORED	Bored	Palo trivellato e gettato in opera.	Bored, cast-in-place pile.
+IfcPile	COHESION	Cohesion	Palo che lavora per aderenza in terreni coesivi.	Pile working by adhesion in cohesive soils.
+IfcPile	DRIVEN	Driven	Palo infisso a percussione o vibrazione.	Pile driven by impact or vibration.
+IfcPile	FRICTION	Friction	Palo che porta il carico per attrito laterale.	Pile carrying load by shaft friction.
+IfcPile	JETGROUTING	Jet grouting	Colonna di terreno consolidato con iniezioni ad alta pressione.	Column of soil improved by high-pressure grout injection.	Colonna jet grouting
+IfcPile	SUPPORT	Support	Palo che porta il carico soprattutto di punta.	Pile carrying load mainly at its tip.	Palo di punta
+IfcPipeFitting	BEND	Bend	Curva di tubazione.	Pipe bend.
+IfcPipeFitting	CONNECTOR	Connector	Giunto o manicotto tra due tubi.	Connector or coupling between two pipes.
+IfcPipeFitting	ENTRY	Entry	Pezzo di ingresso in una rete di tubazioni.	Entry piece of a pipe network.
+IfcPipeFitting	EXIT	Exit	Pezzo di uscita da una rete di tubazioni.	Exit piece of a pipe network.
+IfcPipeFitting	JUNCTION	Junction	Derivazione in cui si incontrano più tubi: tee, croci.	Branch where several pipes meet: tees, crosses.
+IfcPipeFitting	OBSTRUCTION	Obstruction	Pezzo che limita il flusso, come un diaframma o un tappo.	Piece restricting flow, such as an orifice plate or cap.	Ostruzione
+IfcPipeFitting	TRANSITION	Transition	Riduzione o cambio di sezione o di materiale.	Reducer or change of size or material.	Transizione / riduzione
+IfcPlate	BASE_PLATE	Base plate	Piastra di base al piede di un pilastro in acciaio.	Base plate at the foot of a steel column.
+IfcPlate	COVER_PLATE	Cover plate	Piatto aggiunto sull'ala di una trave per rinforzarla.	Plate added on a beam flange to strengthen it.	Piatto di rinforzo
+IfcPlate	CURTAIN_PANEL	Curtain panel	Pannello o vetro di una facciata continua.	Panel or glass of a curtain wall.
+IfcPlate	FLANGE_PLATE	Flange plate	Piatto che forma l'ala di una trave composta.	Plate forming the flange of a built-up beam.
+IfcPlate	GUSSET_PLATE	Gusset plate	Fazzoletto: piastra che collega più aste in un nodo.	Gusset: plate joining several members at a node.
+IfcPlate	SHEET	Sheet	Lamiera o lastra sottile.	Thin sheet.
+IfcPlate	SPLICE_PLATE	Splice plate	Coprigiunto che unisce due tratti di un elemento.	Splice plate joining two lengths of a member.
+IfcPlate	STIFFENER_PLATE	Stiffener plate	Piatto di irrigidimento.	Stiffener plate.
+IfcPlate	WEB_PLATE	Web plate	Piatto che forma l'anima di una trave composta.	Plate forming the web of a built-up beam.
+IfcProjectionElement	BLISTER	Blister	Rigonfiamento locale di un elemento, per esempio per ancorare cavi di precompressione.	Local thickening of an element, for example to anchor tendons.	Rigonfiamento (blister)
+IfcProjectionElement	DEVIATOR	Deviator	Sporgenza che devia il percorso dei cavi di precompressione esterni.	Projection deviating the path of external tendons.
+IfcProtectiveDevice	ANTI_ARCING_DEVICE	Anti-arcing device	Dispositivo che rileva o spegne gli archi elettrici.	Device detecting or quenching electric arcs.
+IfcProtectiveDevice	CIRCUITBREAKER	Circuit breaker	Interruttore automatico contro sovraccarichi e cortocircuiti.	Circuit breaker against overload and short circuit.
+IfcProtectiveDevice	EARTHINGSWITCH	Earthing switch	Sezionatore che collega a terra una parte d'impianto per la manutenzione.	Switch connecting part of an installation to earth for maintenance.
+IfcProtectiveDevice	EARTHLEAKAGECIRCUITBREAKER	Earth leakage circuit breaker	Interruttore che interviene sulle dispersioni verso terra.	Breaker tripping on earth leakage.
+IfcProtectiveDevice	FUSEDISCONNECTOR	Fuse disconnector	Sezionatore con fusibili.	Disconnector with fuses.
+IfcProtectiveDevice	RESIDUALCURRENTCIRCUITBREAKER	Residual current circuit breaker	Interruttore differenziale con protezione anche da sovracorrenti.	Residual current breaker also protecting against overcurrent.
+IfcProtectiveDevice	RESIDUALCURRENTSWITCH	Residual current switch	Interruttore differenziale puro, senza protezione da sovracorrenti.	Residual current switch without overcurrent protection.
+IfcProtectiveDevice	SPARKGAP	Spark gap	Spinterometro che scarica le sovratensioni.	Spark gap discharging overvoltages.
+IfcProtectiveDevice	VARISTOR	Varistor	Varistore che limita le sovratensioni.	Varistor limiting overvoltages.
+IfcProtectiveDevice	VOLTAGELIMITER	Voltage limiter	Limitatore di tensione, per esempio tra masse e binario.	Voltage limiter, for example between structures and rail.
+IfcProtectiveDeviceTrippingUnit	ELECTROMAGNETIC	Electromagnetic	Sganciatore magnetico, contro i cortocircuiti.	Magnetic release, against short circuits.
+IfcProtectiveDeviceTrippingUnit	ELECTRONIC	Electronic	Sganciatore elettronico, con soglie regolabili.	Electronic release with adjustable settings.
+IfcProtectiveDeviceTrippingUnit	RESIDUALCURRENT	Residual current	Sganciatore differenziale.	Residual current release.
+IfcProtectiveDeviceTrippingUnit	THERMAL	Thermal	Sganciatore termico, contro i sovraccarichi.	Thermal release, against overloads.
+IfcPump	CIRCULATOR	Circulator	Circolatore per impianti di riscaldamento e raffrescamento.	Circulator for heating and cooling systems.
+IfcPump	ENDSUCTION	End suction	Pompa centrifuga con aspirazione assiale e mandata radiale.	Centrifugal pump with axial suction and radial discharge.
+IfcPump	SPLITCASE	Split case	Pompa con corpo diviso in due metà, apribile per la manutenzione.	Pump with a casing split in two halves, openable for service.
+IfcPump	SUBMERSIBLEPUMP	Submersible	Pompa che lavora immersa nel liquido.	Pump working submerged in the liquid.
+IfcPump	SUMPPUMP	Sump pump	Pompa che svuota un pozzetto di raccolta.	Pump emptying a sump.
+IfcPump	VERTICALINLINE	Vertical in-line	Pompa verticale montata direttamente sulla tubazione.	Vertical pump mounted directly in the pipeline.
+IfcPump	VERTICALTURBINE	Vertical turbine	Pompa a turbina verticale per pozzi profondi.	Vertical turbine pump for deep wells.
+IfcRail	BLADE	Blade	Ago del deviatoio, la rotaia mobile che sceglie il percorso.	Switch blade, the movable rail choosing the route.
+IfcRail	CHECKRAIL	Check rail	Controrotaia che guida le ruote nei deviatoi e nelle curve strette.	Check rail guiding wheels through turnouts and tight curves.
+IfcRail	GUARDRAIL	Guard rail	Controrotaia di sicurezza che trattiene il treno in caso di svio, per esempio sui ponti.	Guard rail keeping a derailed train on line, for example on bridges.	Controrotaia di sicurezza
+IfcRail	RACKRAIL	Rack rail	Cremagliera per le ferrovie a forte pendenza.	Rack rail for steep railways.
+IfcRail	RAIL	Rail	Rotaia di corsa.	Running rail.
+IfcRail	STOCKRAIL	Stock rail	Contrago: la rotaia fissa contro cui si appoggia l'ago.	Stock rail: the fixed rail against which the blade rests.
+IfcRailing	BALUSTRADE	Balustrade	Balaustra con colonnine o pannelli.	Balustrade with balusters or panels.
+IfcRailing	FENCE	Fence	Recinzione.	Fence.
+IfcRailing	GUARDRAIL	Guardrail	Parapetto o barriera che impedisce le cadute o le uscite di strada.	Barrier preventing falls or vehicles leaving the road.
+IfcRailing	HANDRAIL	Handrail	Corrimano.	Handrail.
+IfcRailwayPart	ABOVETRACK	Above track	Parte sopra il binario, come la linea aerea di contatto.	Part above the track, such as the overhead contact line.
+IfcRailwayPart	DILATIONTRACK	Dilation track	Tratto di binario con apparecchi di dilatazione.	Track section with expansion devices.
+IfcRailwayPart	LINESIDE	Line side	Parte a lato della linea, con impianti e opere accessorie.	Part alongside the line, with equipment and ancillary works.
+IfcRailwayPart	LINESIDEPART	Line side part	Sottoparte della zona a lato linea.	Subdivision of the lineside area.
+IfcRailwayPart	PLAINTRACK	Plain track	Binario di piena linea, senza deviatoi.	Plain line track, without turnouts.
+IfcRailwayPart	SUBSTRUCTURE	Substructure	Corpo ferroviario sotto il binario: rilevato, trincea, sottofondo.	Railway formation below the track: embankment, cutting, subgrade.
+IfcRailwayPart	TRACK	Track	Armamento: rotaie, traverse e massicciata.	Track structure: rails, sleepers and ballast.
+IfcRailwayPart	TRACKPART	Track part	Sottoparte del binario.	Subdivision of the track.
+IfcRailwayPart	TURNOUTTRACK	Turnout track	Tratto di binario con deviatoi.	Track section with turnouts.
+IfcRamp	HALF_TURN_RAMP	Half-turn ramp	Rampa che gira di 180° con un pianerottolo.	Ramp turning 180° at a landing.
+IfcRamp	QUARTER_TURN_RAMP	Quarter-turn ramp	Rampa che gira di 90° con un pianerottolo.	Ramp turning 90° at a landing.
+IfcRamp	SPIRAL_RAMP	Spiral ramp	Rampa elicoidale.	Spiral ramp.
+IfcRamp	STRAIGHT_RUN_RAMP	Straight run ramp	Rampa rettilinea senza pianerottoli intermedi.	Straight ramp without intermediate landings.
+IfcRamp	TWO_QUARTER_TURN_RAMP	Two quarter-turn ramp	Rampa che gira due volte di 90°.	Ramp with two 90° turns.
+IfcRamp	TWO_STRAIGHT_RUN_RAMP	Two straight run ramp	Rampa rettilinea in due tratti con un pianerottolo.	Straight ramp in two flights with a landing.
+IfcRampFlight	SPIRAL	Spiral	Tratto di rampa curvo, elicoidale.	Curved, spiral ramp flight.
+IfcRampFlight	STRAIGHT	Straight	Tratto di rampa rettilineo.	Straight ramp flight.
+IfcReferent	BOUNDARY	Boundary	Punto in cui il tracciato attraversa un confine, per esempio amministrativo.	Point where the alignment crosses a boundary, for example administrative.
+IfcReferent	INTERSECTION	Intersection	Punto di incrocio con un altro tracciato.	Point where another alignment crosses.
+IfcReferent	KILOPOINT	Kilopoint	Punto chilometrico lungo il tracciato.	Kilometre point along the alignment.	Progressiva chilometrica
+IfcReferent	LANDMARK	Landmark	Riferimento fisico riconoscibile sul terreno.	Recognisable physical reference on site.
+IfcReferent	MILEPOINT	Milepoint	Punto in miglia lungo il tracciato.	Mile point along the alignment.	Progressiva in miglia
+IfcReferent	POSITION	Position	Posizione generica lungo il tracciato.	Generic position along the alignment.
+IfcReferent	REFERENCEMARKER	Reference marker	Cippo o segnale fisico che indica la progressiva.	Physical marker post showing the chainage.
+IfcReferent	STATION	Station	Progressiva: distanza lungo il tracciato da un'origine. Non è una stazione ferroviaria.	Chainage: distance along the alignment from an origin. Not a railway station.	Progressiva (station)
+IfcReferent	SUPERELEVATIONEVENT	Superelevation event	Punto in cui cambia la sopraelevazione.	Point where the superelevation changes.
+IfcReferent	WIDTHEVENT	Width event	Punto in cui cambia la larghezza della sezione.	Point where the cross-section width changes.
+IfcReinforcedSoil	DYNAMICALLYCOMPACTED	Dynamically compacted	Terreno consolidato facendo cadere grandi pesi.	Ground improved by dropping heavy weights.
+IfcReinforcedSoil	GROUTED	Grouted	Terreno consolidato con iniezioni.	Ground improved by grout injection.
+IfcReinforcedSoil	REPLACED	Replaced	Terreno scadente asportato e sostituito con materiale migliore.	Poor ground removed and replaced with better material.
+IfcReinforcedSoil	ROLLERCOMPACTED	Roller compacted	Terreno compattato con rulli.	Ground compacted with rollers.
+IfcReinforcedSoil	SURCHARGEPRELOADED	Surcharge preloaded	Terreno caricato in anticipo con un sovraccarico per farlo assestare.	Ground loaded in advance with a surcharge to make it settle.
+IfcReinforcedSoil	VERTICALLYDRAINED	Vertically drained	Terreno consolidato con dreni verticali che accelerano l'uscita dell'acqua.	Ground improved with vertical drains speeding up water release.
+IfcReinforcingBar	ANCHORING	Anchoring	Barra che ancora un elemento o una zona di ancoraggio.	Bar anchoring an element or an anchorage zone.
+IfcReinforcingBar	EDGE	Edge	Armatura di bordo.	Edge reinforcement.
+IfcReinforcingBar	LIGATURE	Ligature	Staffa o legatura che cinge le barre longitudinali.	Link or stirrup tying longitudinal bars.
+IfcReinforcingBar	MAIN	Main	Armatura principale, longitudinale.	Main longitudinal reinforcement.
+IfcReinforcingBar	PUNCHING	Punching	Armatura contro il punzonamento delle piastre.	Punching shear reinforcement of slabs.
+IfcReinforcingBar	RING	Ring	Armatura ad anello o a spirale chiusa.	Ring or closed spiral reinforcement.
+IfcReinforcingBar	SHEAR	Shear	Armatura a taglio.	Shear reinforcement.
+IfcReinforcingBar	SPACEBAR	Space bar	Barra distanziatrice che tiene in posizione gli strati di armatura.	Spacer bar holding reinforcement layers in place.
+IfcReinforcingBar	STUD	Stud	Piolo o barra con testa, per esempio contro il punzonamento.	Headed stud or bar, for example against punching.
+IfcRoadPart	BICYCLECROSSING	Bicycle crossing	Attraversamento ciclabile.	Cycle crossing.
+IfcRoadPart	BUS_STOP	Bus stop	Fermata dell'autobus.	Bus stop.
+IfcRoadPart	CARRIAGEWAY	Carriageway	Carreggiata: la parte destinata ai veicoli.	Carriageway: the part used by vehicles.
+IfcRoadPart	CENTRALISLAND	Central island	Isola centrale di una rotatoria.	Central island of a roundabout.
+IfcRoadPart	CENTRALRESERVE	Central reserve	Spartitraffico centrale tra le carreggiate.	Central reserve between carriageways.
+IfcRoadPart	HARDSHOULDER	Hard shoulder	Corsia di emergenza o banchina pavimentata.	Hard shoulder or paved verge.
+IfcRoadPart	INTERSECTION	Intersection	Incrocio tra strade.	Road intersection.
+IfcRoadPart	LAYBY	Lay-by	Piazzola di sosta fuori dalla carreggiata.	Lay-by off the carriageway.
+IfcRoadPart	PARKINGBAY	Parking bay	Stallo di sosta.	Parking bay.
+IfcRoadPart	PASSINGBAY	Passing bay	Piazzola che permette l'incrocio dei veicoli su strade strette.	Bay allowing vehicles to pass on narrow roads.
+IfcRoadPart	PEDESTRIAN_CROSSING	Pedestrian crossing	Attraversamento pedonale.	Pedestrian crossing.
+IfcRoadPart	RAILWAYCROSSING	Railway crossing	Passaggio a livello, lato strada.	Level crossing, road side.
+IfcRoadPart	REFUGEISLAND	Refuge island	Isola salvagente per i pedoni che attraversano.	Refuge island for crossing pedestrians.
+IfcRoadPart	ROADSEGMENT	Road segment	Tratto di strada.	Road section.
+IfcRoadPart	ROADSIDE	Roadside	Margine esterno alla carreggiata.	Area beside the carriageway.
+IfcRoadPart	ROADSIDEPART	Roadside part	Sottoparte del margine stradale.	Subdivision of the roadside.
+IfcRoadPart	ROADWAYPLATEAU	Roadway plateau	Piattaforma stradale rialzata, per esempio un incrocio rialzato.	Raised roadway plateau, for example a raised junction.	Piattaforma rialzata
+IfcRoadPart	ROUNDABOUT	Roundabout	Rotatoria.	Roundabout.
+IfcRoadPart	SHOULDER	Shoulder	Banchina laterale.	Road shoulder.
+IfcRoadPart	SIDEWALK	Sidewalk	Marciapiede.	Sidewalk.
+IfcRoadPart	SOFTSHOULDER	Soft shoulder	Banchina non pavimentata.	Unpaved shoulder.
+IfcRoadPart	TOLLPLAZA	Toll plaza	Piazzale del casello di pedaggio.	Toll plaza.
+IfcRoadPart	TRAFFICISLAND	Traffic island	Isola di traffico che separa o incanala i flussi.	Traffic island separating or channelling flows.
+IfcRoadPart	TRAFFICLANE	Traffic lane	Corsia di marcia.	Traffic lane.
+IfcRoof	BARREL_ROOF	Barrel roof	Copertura a volta a botte.	Barrel-vault roof.
+IfcRoof	BUTTERFLY_ROOF	Butterfly roof	Copertura a due falde inclinate verso il centro.	Roof with two slopes falling towards the middle.
+IfcRoof	DOME_ROOF	Dome roof	Copertura a cupola.	Dome roof.
+IfcRoof	FLAT_ROOF	Flat roof	Copertura piana.	Flat roof.
+IfcRoof	FREEFORM	Freeform	Copertura a forma libera.	Freeform roof.
+IfcRoof	GABLE_ROOF	Gable roof	Copertura a due falde con timpani.	Two-slope roof with gables.
+IfcRoof	GAMBREL_ROOF	Gambrel roof	Copertura a due falde spezzate, più ripide in basso.	Two-slope roof with a break, steeper below.
+IfcRoof	HIPPED_GABLE_ROOF	Hipped gable roof	Copertura a padiglione con un piccolo timpano in alto.	Hipped roof with a small gable at the top.
+IfcRoof	HIP_ROOF	Hip roof	Copertura a padiglione, con falde su tutti i lati.	Hipped roof, sloping on all sides.
+IfcRoof	MANSARD_ROOF	Mansard roof	Copertura a mansarda, con falde spezzate su tutti i lati.	Mansard roof, with broken slopes on all sides.
+IfcRoof	PAVILION_ROOF	Pavilion roof	Copertura a piramide su pianta regolare.	Pyramid roof on a regular plan.
+IfcRoof	RAINBOW_ROOF	Rainbow roof	Copertura ad arco ribassato, con le falde curve.	Roof with curved slopes forming a shallow arch.
+IfcRoof	SHED_ROOF	Shed roof	Copertura a una falda.	Single-slope roof.

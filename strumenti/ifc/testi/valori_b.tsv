@@ -1,0 +1,223 @@
+# Testi scritti da noi (blocco B)
+IfcDuctFitting	BEND	Bend	Curva di canale.	Duct bend.
+IfcDuctFitting	CONNECTOR	Connector	Giunto che collega due tratti dritti di canale.	Connector joining two straight duct runs.
+IfcDuctFitting	ENTRY	Entry	Pezzo di ingresso dell'aria in una rete di canali, per esempio una presa.	Air entry piece of a duct network, such as an intake.	Ingresso
+IfcDuctFitting	EXIT	Exit	Pezzo di uscita dell'aria da una rete di canali.	Air exit piece of a duct network.	Uscita
+IfcDuctFitting	JUNCTION	Junction	Derivazione in cui si incontrano più canali: tee, croci, stacchi.	Branch where several ducts meet: tees, crosses, take-offs.
+IfcDuctFitting	OBSTRUCTION	Obstruction	Pezzo inserito nel canale che ostacola il flusso, come una griglia o un setto.	Piece in the duct that obstructs the flow, such as a screen or baffle.	Ostruzione
+IfcDuctFitting	TRANSITION	Transition	Pezzo che cambia dimensione o forma della sezione, per esempio da rettangolare a circolare.	Piece changing section size or shape, for example rectangular to round.	Transizione / riduzione
+IfcDuctSegment	FLEXIBLESEGMENT	Flexible segment	Tratto di canale flessibile.	Flexible duct run.
+IfcDuctSegment	RIGIDSEGMENT	Rigid segment	Tratto di canale rigido.	Rigid duct run.
+IfcDuctSilencer	FLATOVAL	Flat oval	Silenziatore a sezione ovale piatta.	Silencer with a flat-oval section.
+IfcDuctSilencer	RECTANGULAR	Rectangular	Silenziatore a sezione rettangolare.	Silencer with a rectangular section.
+IfcDuctSilencer	ROUND	Round	Silenziatore a sezione circolare.	Silencer with a round section.
+IfcEarthworksCut	BASE_EXCAVATION	Base excavation	Scavo per raggiungere il piano di posa di un'opera.	Excavation down to the formation level of a structure.
+IfcEarthworksCut	CUT	Cut	Sterro o sbancamento per abbassare il terreno a una quota di progetto.	Cut lowering the ground to a design level.
+IfcEarthworksCut	DREDGING	Dredging	Scavo sott'acqua, sul fondo di porti, canali o fiumi.	Underwater excavation of the bed of ports, channels or rivers.
+IfcEarthworksCut	EXCAVATION	Excavation	Scavo generico.	Generic excavation.
+IfcEarthworksCut	OVEREXCAVATION	Over-excavation	Scavo oltre la quota di progetto, per sostituire terreno scadente.	Excavation below design level, to replace poor soil.
+IfcEarthworksCut	PAVEMENTMILLING	Pavement milling	Fresatura della pavimentazione esistente.	Milling of the existing pavement.
+IfcEarthworksCut	STEPEXCAVATION	Step excavation	Scavo a gradoni, per esempio per ammorsare un rilevato al pendio.	Stepped excavation, for example to key an embankment into a slope.
+IfcEarthworksCut	TOPSOILREMOVAL	Topsoil removal	Asportazione dello strato di terreno vegetale.	Stripping of the topsoil.
+IfcEarthworksCut	TRENCH	Trench	Scavo stretto e lungo, per esempio per tubazioni.	Long narrow excavation, for example for pipes.
+IfcEarthworksFill	BACKFILL	Backfill	Rinterro di uno scavo dopo la posa di un'opera.	Refilling of an excavation after placing a structure.
+IfcEarthworksFill	COUNTERWEIGHT	Counterweight	Banca di terra al piede di un rilevato o di un pendio per stabilizzarlo.	Earth berm at the toe of an embankment or slope to stabilise it.
+IfcEarthworksFill	EMBANKMENT	Embankment	Rilevato che alza il piano di strade o ferrovie.	Embankment raising the level of roads or railways.
+IfcEarthworksFill	SLOPEFILL	Slope fill	Riempimento per ricostruire o regolarizzare una scarpata.	Fill rebuilding or trimming a slope.
+IfcEarthworksFill	SUBGRADE	Subgrade	Terreno compattato su cui si posano gli strati della sovrastruttura.	Compacted ground on which pavement or track layers are placed.
+IfcEarthworksFill	SUBGRADEBED	Subgrade bed	Strato superiore del sottofondo, più curato, a contatto con la sovrastruttura.	Top layer of the subgrade, of higher quality, in contact with the pavement or track.
+IfcEarthworksFill	TRANSITIONSECTION	Transition section	Tratto di rilevato che raccorda gradualmente la rigidezza vicino a ponti o tombini.	Embankment length grading stiffness gradually near bridges or culverts.
+IfcElectricAppliance	DISHWASHER	Dishwasher	Lavastoviglie.	Dishwasher.
+IfcElectricAppliance	ELECTRICCOOKER	Electric cooker	Cucina o piano cottura elettrico.	Electric cooker or hob.
+IfcElectricAppliance	FREESTANDINGELECTRICHEATER	Freestanding electric heater	Stufetta elettrica non fissa.	Portable electric heater.
+IfcElectricAppliance	FREESTANDINGFAN	Freestanding fan	Ventilatore non fisso, da tavolo o a colonna.	Portable desk or pedestal fan.
+IfcElectricAppliance	FREESTANDINGWATERCOOLER	Freestanding water cooler	Erogatore di acqua refrigerata non allacciato in modo fisso.	Water cooler not permanently connected.
+IfcElectricAppliance	FREESTANDINGWATERHEATER	Freestanding water heater	Scaldacqua elettrico non fisso.	Portable electric water heater.
+IfcElectricAppliance	FREEZER	Freezer	Congelatore.	Freezer.
+IfcElectricAppliance	FRIDGE_FREEZER	Fridge-freezer	Frigorifero con congelatore.	Fridge-freezer.
+IfcElectricAppliance	HANDDRYER	Hand dryer	Asciugamani elettrico.	Electric hand dryer.
+IfcElectricAppliance	KITCHENMACHINE	Kitchen machine	Macchina da cucina, come impastatrici e affettatrici.	Kitchen machine, such as mixers and slicers.
+IfcElectricAppliance	MICROWAVE	Microwave	Forno a microonde.	Microwave oven.
+IfcElectricAppliance	PHOTOCOPIER	Photocopier	Fotocopiatrice.	Photocopier.
+IfcElectricAppliance	REFRIGERATOR	Refrigerator	Frigorifero.	Refrigerator.
+IfcElectricAppliance	TUMBLEDRYER	Tumble dryer	Asciugatrice.	Tumble dryer.
+IfcElectricAppliance	VENDINGMACHINE	Vending machine	Distributore automatico di bevande o prodotti.	Vending machine for drinks or goods.
+IfcElectricAppliance	WASHINGMACHINE	Washing machine	Lavatrice.	Washing machine.
+IfcElectricDistributionBoard	CONSUMERUNIT	Consumer unit	Piccolo quadro di utenza. Classe deprecata: usare IfcDistributionBoard.	Small consumer board. Deprecated class: use IfcDistributionBoard.
+IfcElectricDistributionBoard	DISTRIBUTIONBOARD	Distribution board	Quadro di distribuzione. Classe deprecata: usare IfcDistributionBoard.	Distribution board. Deprecated class: use IfcDistributionBoard.
+IfcElectricDistributionBoard	MOTORCONTROLCENTRE	Motor control centre	Centro comando motori. Classe deprecata: usare IfcDistributionBoard.	Motor control centre. Deprecated class: use IfcDistributionBoard.
+IfcElectricDistributionBoard	SWITCHBOARD	Switchboard	Quadro di manovra. Classe deprecata: usare IfcDistributionBoard.	Switchboard. Deprecated class: use IfcDistributionBoard.
+IfcElectricFlowStorageDevice	BATTERY	Battery	Batteria di accumulatori.	Storage battery.
+IfcElectricFlowStorageDevice	CAPACITOR	Capacitor	Condensatore elettrico.	Electrical capacitor.
+IfcElectricFlowStorageDevice	CAPACITORBANK	Capacitor bank	Batteria di condensatori, per esempio per il rifasamento.	Capacitor bank, for example for power-factor correction.
+IfcElectricFlowStorageDevice	COMPENSATOR	Compensator	Dispositivo che compensa l'energia reattiva della rete.	Device compensating reactive power in the network.
+IfcElectricFlowStorageDevice	HARMONICFILTER	Harmonic filter	Filtro che riduce le armoniche di corrente.	Filter reducing current harmonics.
+IfcElectricFlowStorageDevice	INDUCTOR	Inductor	Induttore o reattanza.	Inductor or reactor.
+IfcElectricFlowStorageDevice	INDUCTORBANK	Inductor bank	Gruppo di induttori.	Bank of inductors.
+IfcElectricFlowStorageDevice	RECHARGER	Recharger	Caricabatterie.	Battery charger.
+IfcElectricFlowStorageDevice	UPS	UPS	Gruppo di continuità che alimenta i carichi quando manca la rete.	Uninterruptible power supply feeding loads when mains fail.
+IfcElectricFlowTreatmentDevice	ELECTRONICFILTER	Electronic filter	Filtro elettronico che migliora la qualità dell'alimentazione.	Electronic filter improving power quality.
+IfcElectricGenerator	CHP	CHP	Cogeneratore che produce insieme energia elettrica e calore.	Combined heat and power unit producing electricity and heat together.
+IfcElectricGenerator	ENGINEGENERATOR	Engine generator	Gruppo elettrogeno con generatore e motore sullo stesso basamento.	Generator set with generator and engine on one base.
+IfcElectricGenerator	STANDALONE	Standalone	Generatore senza motore proprio, azionato da una macchina esterna.	Generator without its own engine, driven by an external machine.
+IfcElectricMotor	DC	DC	Motore a corrente continua.	Direct-current motor.
+IfcElectricMotor	INDUCTION	Induction	Motore asincrono a induzione.	Induction (asynchronous) motor.
+IfcElectricMotor	POLYPHASE	Polyphase	Motore a corrente alternata polifase.	Polyphase AC motor.
+IfcElectricMotor	RELUCTANCESYNCHRONOUS	Reluctance synchronous	Motore sincrono a riluttanza.	Synchronous reluctance motor.
+IfcElectricMotor	SYNCHRONOUS	Synchronous	Motore sincrono, che gira alla velocità della rete.	Synchronous motor, running at mains frequency speed.
+IfcElectricTimeControl	RELAY	Relay	Relè che comanda un circuito.	Relay switching a circuit.
+IfcElectricTimeControl	TIMECLOCK	Time clock	Orologio programmatore che accende e spegne a orari stabiliti.	Time switch turning on and off at set times.
+IfcElectricTimeControl	TIMEDELAY	Time delay	Relè che interviene dopo un tempo regolabile.	Relay acting after an adjustable delay.
+IfcElementAssembly	ABUTMENT	Abutment	Spalla di ponte come insieme di elementi.	Bridge abutment as an assembly of elements.
+IfcElementAssembly	ACCESSORY_ASSEMBLY	Accessory assembly	Insieme di accessori montati insieme.	Group of accessories mounted together.
+IfcElementAssembly	ARCH	Arch	Arco formato da più elementi.	Arch made of several elements.
+IfcElementAssembly	BEAM_GRID	Beam grid	Graticcio di travi in due direzioni.	Grillage of beams in two directions.
+IfcElementAssembly	BRACED_FRAME	Braced frame	Telaio controventato.	Braced frame.
+IfcElementAssembly	CROSS_BRACING	Cross bracing	Controventatura a croce.	Cross bracing.
+IfcElementAssembly	DECK	Deck	Impalcato come insieme di elementi.	Deck as an assembly of elements.
+IfcElementAssembly	DILATATIONPANEL	Dilatation panel	Pannello di binario con l'apparecchio di dilatazione.	Track panel with an expansion device.
+IfcElementAssembly	ENTRANCEWORKS	Entrance works	Opere all'imbocco di una galleria o di un'opera.	Works at the entrance of a tunnel or structure.
+IfcElementAssembly	GIRDER	Girder	Trave principale composta da più elementi.	Main girder made of several elements.
+IfcElementAssembly	GRID	Grid	Reticolo strutturale di elementi.	Structural grid of elements.
+IfcElementAssembly	MAST	Mast	Palo con i suoi accessori, per esempio per linee aeree o illuminazione.	Mast with its fittings, for example for overhead lines or lighting.
+IfcElementAssembly	PIER	Pier	Pila di ponte come insieme di elementi.	Bridge pier as an assembly of elements.
+IfcElementAssembly	PYLON	Pylon	Pilone come insieme di elementi.	Pylon as an assembly of elements.
+IfcElementAssembly	RAIL_MECHANICAL_EQUIPMENT_ASSEMBLY	Rail mechanical equipment assembly	Insieme di apparecchiature meccaniche del binario.	Assembly of track mechanical equipment.
+IfcElementAssembly	REINFORCEMENT_UNIT	Reinforcement unit	Gabbia d'armatura preassemblata.	Pre-assembled reinforcement cage.
+IfcElementAssembly	RIGID_FRAME	Rigid frame	Telaio a nodi rigidi.	Frame with rigid joints.
+IfcElementAssembly	SHELTER	Shelter	Pensilina o riparo, come quelli delle fermate.	Canopy or shelter, such as at stops.
+IfcElementAssembly	SIGNALASSEMBLY	Signal assembly	Segnale con il suo palo e gli accessori.	Signal with its post and fittings.
+IfcElementAssembly	SLAB_FIELD	Slab field	Campo di solaio formato da più elementi, per esempio lastre prefabbricate.	Floor bay made of several elements, for example precast planks.
+IfcElementAssembly	SUMPBUSTER	Sump buster	Varco con fossa che lascia passare i bus ma non le auto.	Gate with a pit that lets buses through but not cars.
+IfcElementAssembly	SUPPORTINGASSEMBLY	Supporting assembly	Insieme che sostiene altri elementi, come una mensola per linee aeree.	Assembly supporting other elements, such as an overhead-line cantilever.
+IfcElementAssembly	SUSPENSIONASSEMBLY	Suspension assembly	Insieme che appende altri elementi, come una sospensione per linee aeree.	Assembly hanging other elements, such as an overhead-line suspension.
+IfcElementAssembly	TRACKPANEL	Track panel	Campata di binario con rotaie e traverse.	Track panel with rails and sleepers.
+IfcElementAssembly	TRACTION_SWITCHING_ASSEMBLY	Traction switching assembly	Insieme di sezionamento della linea di trazione elettrica.	Switching assembly of the electric traction line.
+IfcElementAssembly	TRAFFIC_CALMING_DEVICE	Traffic calming device	Dispositivo per rallentare il traffico, come dossi e restringimenti.	Device slowing traffic, such as humps and chicanes.
+IfcElementAssembly	TRUSS	Truss	Travatura reticolare o capriata.	Truss.	Travatura reticolare / capriata
+IfcElementAssembly	TURNOUTPANEL	Turnout panel	Pannello di binario con il deviatoio.	Track panel containing a turnout.
+IfcEngine	EXTERNALCOMBUSTION	External combustion	Motore in cui il calore viene prodotto fuori dal cilindro, come la macchina a vapore.	Engine heated from outside the cylinder, such as a steam engine.
+IfcEngine	INTERNALCOMBUSTION	Internal combustion	Motore a scoppio o diesel.	Petrol or diesel engine.
+IfcEvaporativeCooler	DIRECTEVAPORATIVEAIRWASHER	Direct evaporative air washer	Lavatore d'aria: l'aria passa attraverso spruzzi d'acqua.	Air washer: air passes through water sprays.
+IfcEvaporativeCooler	DIRECTEVAPORATIVEPACKAGEDROTARYAIRCOOLER	Direct packaged rotary	Raffrescatore diretto compatto con elemento rotante bagnato.	Packaged direct cooler with a wetted rotating element.
+IfcEvaporativeCooler	DIRECTEVAPORATIVERANDOMMEDIAAIRCOOLER	Direct random media	Raffrescatore diretto con pacco di fibre bagnate.	Direct cooler with a wetted fibrous pad.
+IfcEvaporativeCooler	DIRECTEVAPORATIVERIGIDMEDIAAIRCOOLER	Direct rigid media	Raffrescatore diretto con pacco rigido alveolare bagnato.	Direct cooler with a wetted rigid cellular pad.
+IfcEvaporativeCooler	DIRECTEVAPORATIVESLINGERSPACKAGEDAIRCOOLER	Direct slinger packaged	Raffrescatore diretto che lancia l'acqua con un disco rotante.	Direct cooler throwing water with a spinning disc.
+IfcEvaporativeCooler	INDIRECTDIRECTCOMBINATION	Indirect-direct combination	Raffrescatore a due stadi, prima indiretto poi diretto.	Two-stage cooler, indirect then direct.
+IfcEvaporativeCooler	INDIRECTEVAPORATIVECOOLINGTOWERORCOILCOOLER	Indirect with tower or coil	Raffrescamento indiretto con acqua raffreddata in una torre e una batteria.	Indirect cooling with water cooled in a tower and a coil.
+IfcEvaporativeCooler	INDIRECTEVAPORATIVEPACKAGEAIRCOOLER	Indirect packaged	Raffrescatore indiretto compatto: l'aria si raffredda senza essere umidificata.	Packaged indirect cooler: air is cooled without being humidified.
+IfcEvaporativeCooler	INDIRECTEVAPORATIVEWETCOIL	Indirect wet coil	Raffrescatore indiretto con batteria bagnata all'esterno.	Indirect cooler with an externally wetted coil.
+IfcEvaporator	DIRECTEXPANSION	Direct expansion	Evaporatore a espansione diretta, di tipo non specificato.	Direct-expansion evaporator of unspecified type.
+IfcEvaporator	DIRECTEXPANSIONBRAZEDPLATE	DX brazed plate	Evaporatore a espansione diretta a piastre brasate.	Direct-expansion brazed-plate evaporator.
+IfcEvaporator	DIRECTEXPANSIONSHELLANDTUBE	DX shell and tube	Evaporatore a espansione diretta a fascio tubiero.	Direct-expansion shell-and-tube evaporator.
+IfcEvaporator	DIRECTEXPANSIONTUBEINTUBE	DX tube in tube	Evaporatore a espansione diretta a tubi concentrici.	Direct-expansion tube-in-tube evaporator.
+IfcEvaporator	FLOODEDSHELLANDTUBE	Flooded shell and tube	Evaporatore a fascio tubiero con i tubi immersi nel refrigerante.	Shell-and-tube evaporator with tubes immersed in refrigerant.
+IfcEvaporator	SHELLANDCOIL	Shell and coil	Evaporatore con serpentina dentro un mantello.	Evaporator with a coil inside a shell.
+IfcExternalSpatialElement	EXTERNAL	External	Spazio esterno a contatto con l'aria.	External space in contact with outdoor air.
+IfcExternalSpatialElement	EXTERNAL_EARTH	External earth	Spazio esterno a contatto con il terreno, per esempio sotto la platea.	External space in contact with the ground, for example below the base slab.
+IfcExternalSpatialElement	EXTERNAL_FIRE	External fire	Spazio esterno che rappresenta un edificio adiacente, per le verifiche antincendio.	External space representing an adjacent building, for fire checks.
+IfcExternalSpatialElement	EXTERNAL_WATER	External water	Spazio esterno a contatto con l'acqua.	External space in contact with water.
+IfcFacilityPartCommon	ABOVEGROUND	Above ground	Parte dell'opera fuori terra.	Part of the facility above ground.
+IfcFacilityPartCommon	BELOWGROUND	Below ground	Parte dell'opera interrata.	Part of the facility below ground.
+IfcFacilityPartCommon	JUNCTION	Junction	Nodo in cui si incontrano più tratti di un'opera lineare.	Node where several runs of a linear facility meet.
+IfcFacilityPartCommon	LEVELCROSSING	Level crossing	Passaggio a livello tra strada e ferrovia.	Level crossing between road and railway.
+IfcFacilityPartCommon	SEGMENT	Segment	Tratto di un'opera lineare.	Section of a linear facility.
+IfcFacilityPartCommon	SUBSTRUCTURE	Substructure	Parte inferiore che porta l'opera.	Lower part carrying the facility.
+IfcFacilityPartCommon	SUPERSTRUCTURE	Superstructure	Parte superiore dell'opera, portata dalla sottostruttura.	Upper part of the facility, carried by the substructure.
+IfcFacilityPartCommon	TERMINAL	Terminal	Terminale o stazione, come quelli di passeggeri o merci.	Terminal or station, such as for passengers or freight.
+IfcFan	CENTRIFUGALAIRFOIL	Centrifugal airfoil	Ventilatore centrifugo con pale a profilo alare.	Centrifugal fan with aerofoil blades.
+IfcFan	CENTRIFUGALBACKWARDINCLINEDCURVED	Centrifugal backward-curved	Ventilatore centrifugo con pale curve all'indietro.	Centrifugal fan with backward-curved blades.
+IfcFan	CENTRIFUGALFORWARDCURVED	Centrifugal forward-curved	Ventilatore centrifugo con pale curve in avanti.	Centrifugal fan with forward-curved blades.
+IfcFan	CENTRIFUGALRADIAL	Centrifugal radial	Ventilatore centrifugo con pale radiali dritte.	Centrifugal fan with straight radial blades.
+IfcFan	PROPELLORAXIAL	Propeller axial	Ventilatore assiale a elica, senza involucro, per esempio a parete.	Propeller fan without casing, for example wall-mounted.
+IfcFan	TUBEAXIAL	Tube axial	Ventilatore assiale dentro un tubo.	Axial fan inside a tube.
+IfcFan	VANEAXIAL	Vane axial	Ventilatore assiale con alette raddrizzatrici, per pressioni più alte.	Axial fan with guide vanes, for higher pressures.
+IfcFastener	GLUE	Glue	Unione con colla o adesivo.	Joint made with glue or adhesive.
+IfcFastener	MORTAR	Mortar	Unione con malta.	Joint made with mortar.
+IfcFastener	WELD	Weld	Saldatura.	Weld.
+IfcFilter	AIRPARTICLEFILTER	Air particle filter	Filtro che trattiene le particelle dall'aria.	Filter removing particles from air.
+IfcFilter	COMPRESSEDAIRFILTER	Compressed air filter	Filtro per l'aria compressa.	Filter for compressed air.
+IfcFilter	ODORFILTER	Odour filter	Filtro che trattiene gli odori, per esempio a carboni attivi.	Filter removing odours, for example activated carbon.
+IfcFilter	OILFILTER	Oil filter	Filtro per l'olio.	Oil filter.
+IfcFilter	STRAINER	Strainer	Filtro a cestello che trattiene le impurità grosse nelle tubazioni.	Basket strainer catching coarse debris in pipes.
+IfcFilter	WATERFILTER	Water filter	Filtro per l'acqua.	Water filter.
+IfcFireSuppressionTerminal	BREECHINGINLET	Breeching inlet	Attacco esterno per i Vigili del fuoco, che alimenta l'impianto dall'autopompa.	External inlet letting fire brigade pumps feed the system.	Attacco per autopompa
+IfcFireSuppressionTerminal	FIREHYDRANT	Fire hydrant	Idrante.	Fire hydrant.
+IfcFireSuppressionTerminal	FIREMONITOR	Fire monitor	Monitore: lancia fissa orientabile di grande portata.	Fixed, aimable high-flow fire nozzle.	Monitore antincendio
+IfcFireSuppressionTerminal	HOSEREEL	Hose reel	Naspo con tubo semirigido avvolto.	Hose reel with semi-rigid hose.
+IfcFireSuppressionTerminal	SPRINKLER	Sprinkler	Erogatore sprinkler che si apre da solo con il calore.	Sprinkler head opening by itself with heat.
+IfcFireSuppressionTerminal	SPRINKLERDEFLECTOR	Sprinkler deflector	Deflettore dello sprinkler. Valore deprecato nello standard.	Sprinkler deflector. Deprecated value in the standard.
+IfcFlowInstrument	AMMETER	Ammeter	Strumento che mostra la corrente.	Instrument showing current.
+IfcFlowInstrument	COMBINED	Combined	Strumento che mostra più grandezze insieme, come pressione e temperatura.	Instrument showing several quantities, such as pressure and temperature.
+IfcFlowInstrument	FREQUENCYMETER	Frequency meter	Strumento che mostra la frequenza.	Instrument showing frequency.
+IfcFlowInstrument	PHASEANGLEMETER	Phase angle meter	Strumento che mostra lo sfasamento tra tensione e corrente.	Instrument showing the phase angle between voltage and current.
+IfcFlowInstrument	POWERFACTORMETER	Power factor meter	Strumento che mostra il fattore di potenza (cos φ).	Instrument showing the power factor.
+IfcFlowInstrument	PRESSUREGAUGE	Pressure gauge	Manometro.	Pressure gauge.
+IfcFlowInstrument	THERMOMETER	Thermometer	Termometro.	Thermometer.
+IfcFlowInstrument	VOLTMETER	Voltmeter	Strumento che mostra la tensione.	Instrument showing voltage.
+IfcFlowInstrument	VOLTMETER_PEAK	Peak voltmeter	Voltmetro che mostra il valore di picco.	Voltmeter showing peak value.
+IfcFlowInstrument	VOLTMETER_RMS	RMS voltmeter	Voltmetro che mostra il valore efficace.	Voltmeter showing RMS value.
+IfcFlowMeter	ENERGYMETER	Energy meter	Contatore di energia, elettrica o termica.	Energy meter, electrical or thermal.
+IfcFlowMeter	GASMETER	Gas meter	Contatore del gas.	Gas meter.
+IfcFlowMeter	OILMETER	Oil meter	Contatore di combustibile liquido.	Liquid fuel meter.
+IfcFlowMeter	WATERMETER	Water meter	Contatore dell'acqua.	Water meter.
+IfcFooting	CAISSON_FOUNDATION	Caisson foundation	Fondazione a cassone. Per i cassoni profondi c'è anche IfcCaissonFoundation.	Caisson foundation. Deep caissons also have IfcCaissonFoundation.
+IfcFooting	FOOTING_BEAM	Footing beam	Trave di fondazione che collega plinti o pali.	Ground beam linking pads or piles.
+IfcFooting	PAD_FOOTING	Pad footing	Plinto isolato sotto un pilastro.	Isolated pad under a column.
+IfcFooting	PILE_CAP	Pile cap	Plinto su pali che trasferisce il carico ai pali.	Cap transferring load to a group of piles.
+IfcFooting	STRIP_FOOTING	Strip footing	Fondazione continua sotto un muro.	Continuous footing under a wall.
+IfcFurniture	BED	Bed	Letto.	Bed.
+IfcFurniture	CHAIR	Chair	Sedia.	Chair.
+IfcFurniture	DESK	Desk	Scrivania.	Desk.
+IfcFurniture	FILECABINET	File cabinet	Mobile o cassettiera per archivio.	Filing cabinet.	Classificatore / mobile archivio
+IfcFurniture	SHELF	Shelf	Scaffale o mensola.	Shelf or shelving.
+IfcFurniture	SOFA	Sofa	Divano.	Sofa.
+IfcFurniture	TABLE	Table	Tavolo.	Table.
+IfcFurniture	TECHNICALCABINET	Technical cabinet	Armadio tecnico per apparecchiature, come un rack.	Equipment cabinet, such as a rack.
+IfcGeographicElement	SOIL_BORING_POINT	Soil boring point	Punto di sondaggio. Valore deprecato nello standard: in IFC 4.3 ci sono le classi geotecniche, come IfcBorehole.	Boring point. Deprecated value in the standard: IFC 4.3 has geotechnical classes, such as IfcBorehole.
+IfcGeographicElement	TERRAIN	Terrain	Superficie del terreno.	Ground surface.
+IfcGeographicElement	VEGETATION	Vegetation	Alberi, siepi e altra vegetazione.	Trees, hedges and other vegetation.
+IfcGeotechnicalStratum	SOLID	Solid	Strato di terreno o roccia.	Layer of soil or rock.
+IfcGeotechnicalStratum	VOID	Void	Vuoto nel sottosuolo, come una cavità.	Void in the ground, such as a cavity.
+IfcGeotechnicalStratum	WATER	Water	Volume d'acqua nel sottosuolo.	Body of water in the ground.	Acqua
+IfcGrid	IRREGULAR	Irregular	Griglia con fili a distanze e direzioni libere.	Grid with lines at free spacing and directions.
+IfcGrid	RADIAL	Radial	Griglia di fili radiali e archi concentrici.	Grid of radial lines and concentric arcs.
+IfcGrid	RECTANGULAR	Rectangular	Griglia di fili ortogonali.	Grid of orthogonal lines.
+IfcGrid	TRIANGULAR	Triangular	Griglia di fili in tre direzioni.	Grid of lines in three directions.
+IfcHeatExchanger	PLATE	Plate	Scambiatore a piastre.	Plate heat exchanger.
+IfcHeatExchanger	SHELLANDTUBE	Shell and tube	Scambiatore a fascio tubiero in un mantello.	Shell-and-tube heat exchanger.
+IfcHeatExchanger	TURNOUTHEATING	Turnout heating	Riscaldamento dei deviatoi ferroviari contro neve e ghiaccio.	Heating of railway turnouts against snow and ice.
+IfcHumidifier	ADIABATICAIRWASHER	Adiabatic air washer	Umidificatore a lavaggio: l'aria passa attraverso spruzzi d'acqua.	Air washer: air passes through water sprays.
+IfcHumidifier	ADIABATICATOMIZING	Adiabatic atomizing	Umidificatore che nebulizza l'acqua in goccioline fini.	Humidifier atomising water into fine droplets.
+IfcHumidifier	ADIABATICCOMPRESSEDAIRNOZZLE	Adiabatic compressed-air nozzle	Umidificatore che nebulizza l'acqua con ugelli ad aria compressa.	Humidifier atomising water with compressed-air nozzles.
+IfcHumidifier	ADIABATICPAN	Adiabatic pan	Umidificatore a vasca da cui l'acqua evapora.	Pan humidifier from which water evaporates.
+IfcHumidifier	ADIABATICRIGIDMEDIA	Adiabatic rigid media	Umidificatore con pacco rigido bagnato attraversato dall'aria.	Humidifier with a wetted rigid pad crossed by air.
+IfcHumidifier	ADIABATICULTRASONIC	Adiabatic ultrasonic	Umidificatore che nebulizza l'acqua con gli ultrasuoni.	Humidifier atomising water with ultrasound.
+IfcHumidifier	ADIABATICWETTEDELEMENT	Adiabatic wetted element	Umidificatore con elemento bagnato attraversato dall'aria.	Humidifier with a wetted element crossed by air.
+IfcHumidifier	ASSISTEDBUTANE	Assisted butane	Umidificatore a vapore prodotto con un bruciatore a butano.	Steam humidifier with a butane burner.
+IfcHumidifier	ASSISTEDELECTRIC	Assisted electric	Umidificatore a vapore prodotto elettricamente.	Steam humidifier with electric steam generation.
+IfcHumidifier	ASSISTEDNATURALGAS	Assisted natural gas	Umidificatore a vapore prodotto con un bruciatore a gas naturale.	Steam humidifier with a natural-gas burner.
+IfcHumidifier	ASSISTEDPROPANE	Assisted propane	Umidificatore a vapore prodotto con un bruciatore a propano.	Steam humidifier with a propane burner.
+IfcHumidifier	ASSISTEDSTEAM	Assisted steam	Umidificatore che produce vapore pulito usando vapore di rete in uno scambiatore.	Humidifier producing clean steam from plant steam in a heat exchanger.
+IfcHumidifier	STEAMINJECTION	Steam injection	Umidificatore che immette direttamente vapore di rete nell'aria.	Humidifier injecting plant steam directly into the air.
+IfcImpactProtectionDevice	BUMPER	Bumper	Respingente o paracolpi che assorbe gli urti, per esempio di carrelli o veicoli.	Bumper absorbing impacts, for example from trolleys or vehicles.
+IfcImpactProtectionDevice	CRASHCUSHION	Crash cushion	Attenuatore d'urto davanti a un ostacolo stradale.	Crash cushion in front of a roadside hazard.
+IfcImpactProtectionDevice	DAMPINGSYSTEM	Damping system	Sistema che smorza l'energia di un impatto.	System damping impact energy.
+IfcImpactProtectionDevice	FENDER	Fender	Parabordo di banchina che protegge navi e opera durante l'accosto.	Quay fender protecting ships and structure while berthing.	Parabordo
+IfcInterceptor	CYCLONIC	Cyclonic	Separatore che sfrutta la forza centrifuga.	Separator using centrifugal force.
+IfcInterceptor	GREASE	Grease	Degrassatore che trattiene i grassi degli scarichi di cucina.	Grease trap retaining fats from kitchen drainage.
+IfcInterceptor	OIL	Oil	Disoleatore che trattiene oli dalle acque di scarico.	Oil separator retaining oils from wastewater.
+IfcInterceptor	PETROL	Petrol	Separatore di carburanti, per esempio di parcheggi e officine.	Fuel separator, for example for car parks and garages.
+IfcJunctionBox	DATA	Data	Scatola di derivazione per cavi dati.	Junction box for data cables.
+IfcJunctionBox	POWER	Power	Scatola di derivazione per cavi di energia.	Junction box for power cables.
+IfcLamp	COMPACTFLUORESCENT	Compact fluorescent	Lampada fluorescente compatta.	Compact fluorescent lamp.
+IfcLamp	FLUORESCENT	Fluorescent	Lampada fluorescente lineare.	Linear fluorescent lamp.
+IfcLamp	HALOGEN	Halogen	Lampada alogena.	Halogen lamp.
+IfcLamp	HIGHPRESSUREMERCURY	High-pressure mercury	Lampada a vapori di mercurio ad alta pressione.	High-pressure mercury lamp.
+IfcLamp	HIGHPRESSURESODIUM	High-pressure sodium	Lampada a vapori di sodio ad alta pressione.	High-pressure sodium lamp.
+IfcLamp	LED	LED	Sorgente LED.	LED light source.
+IfcLamp	METALHALIDE	Metal halide	Lampada a ioduri metallici.	Metal halide lamp.
+IfcLamp	OLED	OLED	Sorgente OLED, a diodi organici.	OLED (organic LED) light source.
+IfcLamp	TUNGSTENFILAMENT	Tungsten filament	Lampada a incandescenza con filamento di tungsteno.	Incandescent lamp with tungsten filament.
+IfcLiquidTerminal	HOSEREEL	Hose reel	Avvolgitubo per erogare un liquido, diverso dal naspo antincendio.	Hose reel dispensing a liquid, other than a fire hose reel.
+IfcLiquidTerminal	LOADINGARM	Loading arm	Braccio articolato per caricare o scaricare liquidi da navi o cisterne.	Articulated arm loading or unloading liquids from ships or tankers.

@@ -10813,5 +10813,54 @@
 "h": "<span class=\"tag ok\">Pubblicato</span><a class=\"man-btn\" href=\"manuali/georeferenziazione-ifc.html\">Leggi online</a><a class=\"man-btn ghost\" href=\"manuali/convertitore-georeferenziazione.html\">Apri il convertitore</a><a class=\"man-btn ghost\" href=\"manuali/convertitore-georeferenziazione.html\" download=\"\">Scarica il convertitore</a>",
 "tag": "P",
 "id": "v1668"
+},
+{
+"k": "6 pubblicati · 13 voci",
+"m": "text",
+"h": "6 pubblicati · 13 voci",
+"tag": "#node",
+"id": "v1669"
+},
+{
+"k": "La libreria IFC 4.3",
+"m": "text",
+"h": "La libreria IFC 4.3",
+"tag": "H4",
+"id": "v1670"
+},
+{
+"k": "Tutte le classi IFC degli oggetti di un modello, con i loro PredefinedType, spiegate in italiano e in inglese.",
+"m": "text",
+"h": "Tutte le classi IFC degli oggetti di un modello, con i loro PredefinedType, spiegate in italiano e in inglese.",
+"tag": "#node",
+"id": "v1671"
+},
+{
+"k": "214 classi e 1422 combinazioni di classe e sottotipo dallo schema IFC 4.3 ADD2 (ISO 16739-1:2024), con la gerarchia, le classi deprecate e i valori pronti per IfcExportAs e IfcExportType. Si esplorano come una mappa mentale apribile e si scaricano gratis in Excel o in JSON.",
+"m": "text",
+"h": "214 classi e 1422 combinazioni di classe e sottotipo dallo schema IFC 4.3 ADD2 (ISO 16739-1:2024), con la gerarchia, le classi deprecate e i valori pronti per IfcExportAs e IfcExportType. Si esplorano come una mappa mentale apribile e si scaricano gratis in Excel o in JSON.",
+"tag": "P",
+"id": "v1672"
+},
+{
+"k": "PubblicatoApri la libreriaMappa mentaleScarica l'ExcelJSON",
+"m": "html",
+"h": "<span class=\"tag ok\">Pubblicato</span><a class=\"man-btn\" href=\"manuali/libreria-ifc.html\">Apri la libreria</a><a class=\"man-btn ghost\" href=\"manuali/libreria-ifc.html#c2\">Mappa mentale</a><a class=\"man-btn ghost\" href=\"manuali/libreria-ifc/IFC-4.3-library.xlsx\" download=\"\">Scarica l'Excel</a><a class=\"man-btn ghost\" href=\"manuali/libreria-ifc/ifc-4.3-map.json\" download=\"\">JSON</a>",
+"tag": "P",
+"id": "v1673"
+},
+{
+"k": "Cerca una classe: muro, damper, IfcSlab…",
+"m": "attr",
+"h": "Cerca una classe: muro, damper, IfcSlab…",
+"tag": "@placeholder",
+"id": "v1674"
+},
+{
+"k": "Cerca nella libreria IFC",
+"m": "attr",
+"h": "Cerca nella libreria IFC",
+"tag": "@aria-label",
+"id": "v1675"
 }
 ]

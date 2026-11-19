@@ -1,0 +1,7 @@
+v1669	6 veröffentlicht · 13 Einträge
+v1670	Die IFC-4.3-Bibliothek
+v1671	Alle IFC-Klassen für die Objekte eines Modells, mit ihren PredefinedType-Werten, auf Italienisch und Englisch erklärt.
+v1672	214 Klassen und 1422 Kombinationen aus Klasse und Untertyp aus dem Schema IFC 4.3 ADD2 (ISO 16739-1:2024), mit Hierarchie, veralteten Klassen und Werten für IfcExportAs und IfcExportType. Als aufklappbare Mindmap zu erkunden und kostenlos als Excel oder JSON herunterzuladen.
+v1673	<span class="tag ok">Veröffentlicht</span><a class="man-btn" href="manuali/libreria-ifc.html">Bibliothek öffnen</a><a class="man-btn ghost" href="manuali/libreria-ifc.html#c2">Mindmap</a><a class="man-btn ghost" href="manuali/libreria-ifc/IFC-4.3-library.xlsx" download="">Excel herunterladen</a><a class="man-btn ghost" href="manuali/libreria-ifc/ifc-4.3-map.json" download="">JSON</a>
+v1674	Klasse suchen: Wand, Klappe, IfcSlab…
+v1675	In der IFC-Bibliothek suchen

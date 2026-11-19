@@ -1,0 +1,7 @@
+v1669	公開 6 件 · 全 13 件
+v1670	IFC 4.3 ライブラリ
+v1671	モデルのオブジェクトに使うすべての IFC クラスとその PredefinedType を、イタリア語と英語で解説。
+v1672	IFC 4.3 ADD2 スキーマ（ISO 16739-1:2024）の 214 クラスと、クラスとサブタイプの 1422 の組み合わせ。階層、非推奨クラス、IfcExportAs・IfcExportType にそのまま使える値付き。展開できるマインドマップで探索でき、Excel または JSON で無料ダウンロードできます。
+v1673	<span class="tag ok">公開済み</span><a class="man-btn" href="manuali/libreria-ifc.html">ライブラリを開く</a><a class="man-btn ghost" href="manuali/libreria-ifc.html#c2">マインドマップ</a><a class="man-btn ghost" href="manuali/libreria-ifc/IFC-4.3-library.xlsx" download="">Excel をダウンロード</a><a class="man-btn ghost" href="manuali/libreria-ifc/ifc-4.3-map.json" download="">JSON</a>
+v1674	クラスを検索：壁、ダンパー、IfcSlab…
+v1675	IFC ライブラリを検索

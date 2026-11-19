@@ -1,0 +1,1423 @@
+# classe	PredefinedType	nome IT	deprecazione
+IfcActuator	ELECTRICACTUATOR	Attuatore elettrico	
+IfcActuator	HANDOPERATEDACTUATOR	Attuatore manuale	
+IfcActuator	HYDRAULICACTUATOR	Attuatore idraulico	
+IfcActuator	PNEUMATICACTUATOR	Attuatore pneumatico	
+IfcActuator	THERMOSTATICACTUATOR	Attuatore termostatico	
+IfcActuator	USERDEFINED	Tipo definito dall'utente	
+IfcActuator	NOTDEFINED	Tipo non definito	
+IfcAirTerminal	DIFFUSER	Diffusore	
+IfcAirTerminal	GRILLE	Griglia	
+IfcAirTerminal	LOUVRE	Griglia a lamelle (louvre)	
+IfcAirTerminal	REGISTER	Bocchetta regolabile	
+IfcAirTerminal	USERDEFINED	Tipo definito dall'utente	
+IfcAirTerminal	NOTDEFINED	Tipo non definito	
+IfcAirTerminalBox	CONSTANTFLOW	Portata costante	
+IfcAirTerminalBox	VARIABLEFLOWPRESSUREDEPENDANT	Portata variabile dipendente dalla pressione	
+IfcAirTerminalBox	VARIABLEFLOWPRESSUREINDEPENDANT	Portata variabile indipendente dalla pressione	
+IfcAirTerminalBox	USERDEFINED	Tipo definito dall'utente	
+IfcAirTerminalBox	NOTDEFINED	Tipo non definito	
+IfcAirToAirHeatRecovery	FIXEDPLATECOUNTERFLOWEXCHANGER	Scambiatore a piastre fisse in controcorrente	
+IfcAirToAirHeatRecovery	FIXEDPLATECROSSFLOWEXCHANGER	Scambiatore a piastre fisse a flussi incrociati	
+IfcAirToAirHeatRecovery	FIXEDPLATEPARALLELFLOWEXCHANGER	Scambiatore a piastre fisse in parallelo	
+IfcAirToAirHeatRecovery	HEATPIPE	Scambiatore a tubi di calore	
+IfcAirToAirHeatRecovery	ROTARYWHEEL	Recuperatore rotativo	
+IfcAirToAirHeatRecovery	RUNAROUNDCOILLOOP	Recupero a circuito ad acqua	
+IfcAirToAirHeatRecovery	THERMOSIPHONCOILTYPEHEATEXCHANGERS	Scambiatore a termosifone con batterie	
+IfcAirToAirHeatRecovery	THERMOSIPHONSEALEDTUBEHEATEXCHANGERS	Scambiatore a termosifone con tubi sigillati	
+IfcAirToAirHeatRecovery	TWINTOWERENTHALPYRECOVERYLOOPS	Recupero entalpico a doppia torre	
+IfcAirToAirHeatRecovery	USERDEFINED	Tipo definito dall'utente	
+IfcAirToAirHeatRecovery	NOTDEFINED	Tipo non definito	
+IfcAlarm	BELL	Campana d'allarme	
+IfcAlarm	BREAKGLASSBUTTON	Pulsante a rottura vetro	
+IfcAlarm	LIGHT	Segnalatore luminoso d'allarme	
+IfcAlarm	MANUALPULLBOX	Pulsante manuale a strappo	
+IfcAlarm	RAILWAYCROCODILE	Coccodrillo ferroviario	
+IfcAlarm	RAILWAYDETONATOR	Petardo ferroviario	
+IfcAlarm	SIREN	Sirena	
+IfcAlarm	WHISTLE	Fischio d'allarme	
+IfcAlarm	USERDEFINED	Tipo definito dall'utente	
+IfcAlarm	NOTDEFINED	Tipo non definito	
+IfcAlignment	USERDEFINED	Tipo definito dall'utente	
+IfcAlignment	NOTDEFINED	Tipo non definito	
+IfcAlignmentCant	—	Sopraelevazione dell’allineamento	
+IfcAlignmentHorizontal	—	Allineamento orizzontale	
+IfcAlignmentSegment	—	Segmento di allineamento	
+IfcAlignmentVertical	—	Allineamento verticale	
+IfcAnnotation	CONTOURLINE	Curva di livello	
+IfcAnnotation	DIMENSION	Quota (dimensione)	
+IfcAnnotation	ISOBAR	Isobara	
+IfcAnnotation	ISOLUX	Curva isolux	
+IfcAnnotation	ISOTHERM	Isoterma	
+IfcAnnotation	LEADER	Linea di richiamo	
+IfcAnnotation	SURVEY	Annotazione di rilievo	
+IfcAnnotation	SYMBOL	Simbolo	
+IfcAnnotation	TEXT	Testo	
+IfcAnnotation	USERDEFINED	Tipo definito dall'utente	
+IfcAnnotation	NOTDEFINED	Tipo non definito	
+IfcAudioVisualAppliance	AMPLIFIER	Amplificatore	
+IfcAudioVisualAppliance	CAMERA	Telecamera	
+IfcAudioVisualAppliance	COMMUNICATIONTERMINAL	Terminale di comunicazione (colonnina SOS)	
+IfcAudioVisualAppliance	DISPLAY	Schermo / monitor	
+IfcAudioVisualAppliance	MICROPHONE	Microfono	
+IfcAudioVisualAppliance	PLAYER	Riproduttore audio/video	
+IfcAudioVisualAppliance	PROJECTOR	Proiettore	
+IfcAudioVisualAppliance	RECEIVER	Ricevitore AV	
+IfcAudioVisualAppliance	RECORDINGEQUIPMENT	Apparecchiatura di registrazione	
+IfcAudioVisualAppliance	SPEAKER	Altoparlante	
+IfcAudioVisualAppliance	SWITCHER	Commutatore AV	
+IfcAudioVisualAppliance	TELEPHONE	Telefono	
+IfcAudioVisualAppliance	TUNER	Sintonizzatore	
+IfcAudioVisualAppliance	USERDEFINED	Tipo definito dall'utente	
+IfcAudioVisualAppliance	NOTDEFINED	Tipo non definito	
+IfcBeam	BEAM	Trave	
+IfcBeam	CORNICE	Cornicione	
+IfcBeam	DIAPHRAGM	Diaframma	
+IfcBeam	EDGEBEAM	Trave di bordo	
+IfcBeam	GIRDER_SEGMENT	Segmento di trave	
+IfcBeam	HATSTONE	Trave di coronamento (muro di sostegno)	
+IfcBeam	HOLLOWCORE	Trave alveolare	
+IfcBeam	JOIST	Trave secondaria (trave di solaio)	
+IfcBeam	LINTEL	Architrave	
+IfcBeam	PIERCAP	Pulvino (trave di testa pila)	
+IfcBeam	SPANDREL	Trave di facciata (spandrel)	
+IfcBeam	T_BEAM	Trave a T	
+IfcBeam	USERDEFINED	Tipo definito dall'utente	
+IfcBeam	NOTDEFINED	Tipo non definito	
+IfcBearing	CYLINDRICAL	Appoggio cilindrico	
+IfcBearing	DISK	Appoggio a disco	
+IfcBearing	ELASTOMERIC	Appoggio in elastomero	
+IfcBearing	GUIDE	Appoggio guidato	
+IfcBearing	POT	Appoggio a vaso	
+IfcBearing	ROCKER	Appoggio a bilanciere	
+IfcBearing	ROLLER	Appoggio a rulli	
+IfcBearing	SPHERICAL	Appoggio sferico	
+IfcBearing	USERDEFINED	Tipo definito dall'utente	
+IfcBearing	NOTDEFINED	Tipo non definito	
+IfcBoiler	STEAM	Caldaia a vapore	
+IfcBoiler	WATER	Caldaia ad acqua calda	
+IfcBoiler	USERDEFINED	Tipo definito dall'utente	
+IfcBoiler	NOTDEFINED	Tipo non definito	
+IfcBorehole	—	Foro di sondaggio	
+IfcBridge	ARCHED	Ponte ad arco	
+IfcBridge	CABLE_STAYED	Ponte strallato	
+IfcBridge	CANTILEVER	Ponte a mensola	
+IfcBridge	CULVERT	Tombino / opera idraulica	
+IfcBridge	FRAMEWORK	Ponte a telaio	
+IfcBridge	GIRDER	Ponte a travi	
+IfcBridge	SUSPENSION	Ponte sospeso	
+IfcBridge	TRUSS	Ponte a traliccio	
+IfcBridge	USERDEFINED	Tipo definito dall'utente	
+IfcBridge	NOTDEFINED	Tipo non definito	
+IfcBridgePart	ABUTMENT	Spalla	
+IfcBridgePart	DECK	Impalcato	
+IfcBridgePart	DECK_SEGMENT	Segmento di impalcato	
+IfcBridgePart	FOUNDATION	Fondazione	
+IfcBridgePart	PIER	Pila	
+IfcBridgePart	PIER_SEGMENT	Segmento di pila	
+IfcBridgePart	PYLON	Pilone	
+IfcBridgePart	SUBSTRUCTURE	Sottostruttura	
+IfcBridgePart	SUPERSTRUCTURE	Sovrastruttura	
+IfcBridgePart	SURFACESTRUCTURE	Struttura superficiale	
+IfcBridgePart	USERDEFINED	Tipo definito dall'utente	
+IfcBridgePart	NOTDEFINED	Tipo non definito	
+IfcBuilding	—	Edificio	
+IfcBuildingElementPart	APRON	Plateatico / protezione di base	
+IfcBuildingElementPart	ARMOURUNIT	Elemento di scogliera artificiale	
+IfcBuildingElementPart	INSULATION	Elemento di isolamento	
+IfcBuildingElementPart	PRECASTPANEL	Pannello prefabbricato	
+IfcBuildingElementPart	SAFETYCAGE	Gabbia di sicurezza	
+IfcBuildingElementPart	USERDEFINED	Tipo definito dall'utente	
+IfcBuildingElementPart	NOTDEFINED	Tipo non definito	
+IfcBuildingElementProxy	COMPLEX	Complesso (non usato)	Valore deprecato
+IfcBuildingElementProxy	ELEMENT	Elemento (non usato)	Valore deprecato
+IfcBuildingElementProxy	PARTIAL	Parziale (non usato)	Valore deprecato
+IfcBuildingElementProxy	PROVISIONFORSPACE	Predisposizione di spazio (deprecato)	Valore deprecato
+IfcBuildingElementProxy	PROVISIONFORVOID	Predisposizione per foro (deprecato)	Valore deprecato
+IfcBuildingElementProxy	USERDEFINED	Tipo definito dall'utente	
+IfcBuildingElementProxy	NOTDEFINED	Tipo non definito	
+IfcBuildingStorey	—	Piano	
+IfcBuiltElement	—	Elemento costruttivo generico	
+IfcBurner	USERDEFINED	Tipo definito dall'utente	
+IfcBurner	NOTDEFINED	Tipo non definito	
+IfcCableCarrierFitting	BEND	Curva	
+IfcCableCarrierFitting	CONNECTOR	Giunto	
+IfcCableCarrierFitting	CROSS	Raccordo a croce (deprecato)	Valore deprecato
+IfcCableCarrierFitting	JUNCTION	Derivazione	
+IfcCableCarrierFitting	REDUCER	Riduzione (deprecato)	Valore deprecato
+IfcCableCarrierFitting	TEE	Raccordo a T (deprecato)	Valore deprecato
+IfcCableCarrierFitting	TRANSITION	Riduzione / Transizione	
+IfcCableCarrierFitting	USERDEFINED	Tipo definito dall'utente	
+IfcCableCarrierFitting	NOTDEFINED	Tipo non definito	
+IfcCableCarrierSegment	CABLEBRACKET	Staffa portacavi	
+IfcCableCarrierSegment	CABLELADDERSEGMENT	Passerella portacavi a scala	
+IfcCableCarrierSegment	CABLETRAYSEGMENT	Passerella portacavi	
+IfcCableCarrierSegment	CABLETRUNKINGSEGMENT	Canalina portacavi	
+IfcCableCarrierSegment	CATENARYWIRE	Fune di sospensione	
+IfcCableCarrierSegment	CONDUITSEGMENT	Condotto portacavi	
+IfcCableCarrierSegment	DROPPER	Elemento di sospensione cavi	
+IfcCableCarrierSegment	USERDEFINED	Tipo definito dall'utente	
+IfcCableCarrierSegment	NOTDEFINED	Tipo non definito	
+IfcCableFitting	CONNECTOR	Connettore	
+IfcCableFitting	ENTRY	Ingresso cavo	
+IfcCableFitting	EXIT	Uscita cavo	
+IfcCableFitting	FANOUT	Diramazione multifibra	
+IfcCableFitting	JUNCTION	Giunzione	
+IfcCableFitting	TRANSITION	Transizione	
+IfcCableFitting	USERDEFINED	Tipo definito dall'utente	
+IfcCableFitting	NOTDEFINED	Tipo non definito	
+IfcCableSegment	BUSBARSEGMENT	Sbarra collettrice	
+IfcCableSegment	CABLESEGMENT	Cavo elettrico	
+IfcCableSegment	CONDUCTORSEGMENT	Conduttore	
+IfcCableSegment	CONTACTWIRESEGMENT	Filo di contatto	
+IfcCableSegment	CORESEGMENT	Anima del cavo	
+IfcCableSegment	FIBERSEGMENT	Fibra ottica	
+IfcCableSegment	FIBERTUBE	Tubetto portafibra	
+IfcCableSegment	OPTICALCABLESEGMENT	Cavo ottico	
+IfcCableSegment	STITCHWIRE	Filo di sospensione	
+IfcCableSegment	WIREPAIRSEGMENT	Coppia di fili	
+IfcCableSegment	USERDEFINED	Tipo definito dall'utente	
+IfcCableSegment	NOTDEFINED	Tipo non definito	
+IfcCaissonFoundation	CAISSON	Cassone chiuso	
+IfcCaissonFoundation	WELL	Pozzo aperto	
+IfcCaissonFoundation	USERDEFINED	Tipo definito dall'utente	
+IfcCaissonFoundation	NOTDEFINED	Tipo non definito	
+IfcChiller	AIRCOOLED	Refrigeratore condensato ad aria	
+IfcChiller	HEATRECOVERY	Refrigeratore con recupero di calore	
+IfcChiller	WATERCOOLED	Refrigeratore condensato ad acqua	
+IfcChiller	USERDEFINED	Tipo definito dall'utente	
+IfcChiller	NOTDEFINED	Tipo non definito	
+IfcChimney	USERDEFINED	Tipo definito dall'utente	
+IfcChimney	NOTDEFINED	Tipo non definito	
+IfcCivilElement	—	Elemento civile generico (deprecato)	
+IfcCoil	DXCOOLINGCOIL	Batteria ad espansione diretta (DX)	
+IfcCoil	ELECTRICHEATINGCOIL	Batteria di riscaldamento elettrica	
+IfcCoil	GASHEATINGCOIL	Batteria di riscaldamento a gas	
+IfcCoil	HYDRONICCOIL	Batteria idronica	
+IfcCoil	STEAMHEATINGCOIL	Batteria di riscaldamento a vapore	
+IfcCoil	WATERCOOLINGCOIL	Batteria di raffreddamento ad acqua	
+IfcCoil	WATERHEATINGCOIL	Batteria di riscaldamento ad acqua	
+IfcCoil	USERDEFINED	Tipo definito dall'utente	
+IfcCoil	NOTDEFINED	Tipo non definito	
+IfcColumn	COLUMN	Colonna	
+IfcColumn	PIERSTEM	Stelo di pila	
+IfcColumn	PIERSTEM_SEGMENT	Segmento di stelo di pila	
+IfcColumn	PILASTER	Pilastro inglobato	
+IfcColumn	STANDCOLUMN	Colonna portante per arco	
+IfcColumn	USERDEFINED	Tipo definito dall'utente	
+IfcColumn	NOTDEFINED	Tipo non definito	
+IfcCommunicationsAppliance	ANTENNA	Antenna	
+IfcCommunicationsAppliance	AUTOMATON	Automa	
+IfcCommunicationsAppliance	COMPUTER	Computer	
+IfcCommunicationsAppliance	FAX	Fax	
+IfcCommunicationsAppliance	GATEWAY	Gateway	
+IfcCommunicationsAppliance	INTELLIGENTPERIPHERAL	Periferica intelligente (IP)	
+IfcCommunicationsAppliance	IPNETWORKEQUIPMENT	Apparato di rete IP	
+IfcCommunicationsAppliance	LINESIDEELECTRONICUNIT	Encoder da segnale (LEU)	
+IfcCommunicationsAppliance	MODEM	Modem	
+IfcCommunicationsAppliance	NETWORKAPPLIANCE	Network appliance	
+IfcCommunicationsAppliance	NETWORKBRIDGE	Bridge di rete	
+IfcCommunicationsAppliance	NETWORKHUB	Hub di rete	
+IfcCommunicationsAppliance	OPTICALLINETERMINAL	Terminale di linea ottica (OLT)	
+IfcCommunicationsAppliance	OPTICALNETWORKUNIT	Unità di rete ottica (ONU)	
+IfcCommunicationsAppliance	PRINTER	Stampante	
+IfcCommunicationsAppliance	RADIOBLOCKCENTER	Radio Block Center (RBC)	
+IfcCommunicationsAppliance	REPEATER	Ripetitore	
+IfcCommunicationsAppliance	ROUTER	Router	
+IfcCommunicationsAppliance	SCANNER	Scanner	
+IfcCommunicationsAppliance	TELECOMMAND	Sistema di telecomando	
+IfcCommunicationsAppliance	TELEPHONYEXCHANGE	Centrale telefonica	
+IfcCommunicationsAppliance	TRANSITIONCOMPONENT	Convertitore elettro-ottico	
+IfcCommunicationsAppliance	TRANSPONDER	Transponder	
+IfcCommunicationsAppliance	TRANSPORTEQUIPMENT	Apparato di trasporto dati	
+IfcCommunicationsAppliance	USERDEFINED	Tipo definito dall'utente	
+IfcCommunicationsAppliance	NOTDEFINED	Tipo non definito	
+IfcCompressor	BOOSTER	Compressore booster	
+IfcCompressor	DYNAMIC	Compressore dinamico	
+IfcCompressor	HERMETIC	Compressore ermetico	
+IfcCompressor	OPENTYPE	Compressore open type	
+IfcCompressor	RECIPROCATING	Compressore alternativo	
+IfcCompressor	ROLLINGPISTON	Compressore a pistone rotante	
+IfcCompressor	ROTARY	Compressore rotativo	
+IfcCompressor	ROTARYVANE	Compressore a palette	
+IfcCompressor	SCROLL	Compressore scroll	
+IfcCompressor	SEMIHERMETIC	Compressore semiermetico	
+IfcCompressor	SINGLESCREW	Compressore a vite singola	
+IfcCompressor	SINGLESTAGE	Compressore mono stadio	
+IfcCompressor	TROCHOIDAL	Compressore trocoidale	
+IfcCompressor	TWINSCREW	Compressore a doppia vite	
+IfcCompressor	WELDEDSHELLHERMETIC	Compressore ermetico a mantello saldato	
+IfcCompressor	USERDEFINED	Tipo definito dall'utente	
+IfcCompressor	NOTDEFINED	Tipo non definito	
+IfcCondenser	AIRCOOLED	Condensatore raffreddato ad aria	
+IfcCondenser	EVAPORATIVECOOLED	Condensatore evaporativo	
+IfcCondenser	WATERCOOLED	Condensatore raffreddato ad acqua	
+IfcCondenser	WATERCOOLEDBRAZEDPLATE	Condensatore a piastre brasate	
+IfcCondenser	WATERCOOLEDSHELLCOIL	Condensatore a mantello e serpentina	
+IfcCondenser	WATERCOOLEDSHELLTUBE	Condensatore a mantello e tubi	
+IfcCondenser	WATERCOOLEDTUBEINTUBE	Condensatore tubo-in-tubo	
+IfcCondenser	USERDEFINED	Tipo definito dall'utente	
+IfcCondenser	NOTDEFINED	Tipo non definito	
+IfcController	FLOATING	Regolatore flottante	
+IfcController	MULTIPOSITION	Regolatore multiposizione	
+IfcController	PROGRAMMABLE	Regolatore programmabile (DDC)	
+IfcController	PROPORTIONAL	Regolatore proporzionale (P/PI/PID)	
+IfcController	TWOPOSITION	Regolatore a due posizioni (on/off)	
+IfcController	USERDEFINED	Tipo definito dall'utente	
+IfcController	NOTDEFINED	Tipo non definito	
+IfcConveyorSegment	BELTCONVEYOR	Trasportatore a nastro	
+IfcConveyorSegment	BUCKETCONVEYOR	Trasportatore a tazze	
+IfcConveyorSegment	CHUTECONVEYOR	Scivolo di trasporto	
+IfcConveyorSegment	SCREWCONVEYOR	Trasportatore a coclea	
+IfcConveyorSegment	USERDEFINED	Tipo definito dall'utente	
+IfcConveyorSegment	NOTDEFINED	Tipo non definito	
+IfcCooledBeam	ACTIVE	Trave fredda attiva	
+IfcCooledBeam	PASSIVE	Trave fredda passiva	
+IfcCooledBeam	USERDEFINED	Tipo definito dall'utente	
+IfcCooledBeam	NOTDEFINED	Tipo non definito	
+IfcCoolingTower	MECHANICALFORCEDDRAFT	Torre a tiraggio meccanico forzato	
+IfcCoolingTower	MECHANICALINDUCEDDRAFT	Torre a tiraggio meccanico indotto	
+IfcCoolingTower	NATURALDRAFT	Torre di raffreddamento a tiraggio naturale	
+IfcCoolingTower	USERDEFINED	Tipo definito dall'utente	
+IfcCoolingTower	NOTDEFINED	Tipo non definito	
+IfcCourse	ARMOUR	Rivestimento protettivo	
+IfcCourse	BALLASTBED	Letto di ballast	
+IfcCourse	CORE	Nucleo	
+IfcCourse	FILTER	Filtro	
+IfcCourse	PAVEMENT	Pavimentazione	
+IfcCourse	PROTECTION	Strato di protezione	
+IfcCourse	USERDEFINED	Tipo definito dall'utente	
+IfcCourse	NOTDEFINED	Tipo non definito	
+IfcCovering	CEILING	Controsoffitto	
+IfcCovering	CLADDING	Rivestimento	
+IfcCovering	COPING	Cordolo di coronamento	
+IfcCovering	FLOORING	Pavimentazione	
+IfcCovering	INSULATION	Isolamento	
+IfcCovering	MEMBRANE	Membrana	
+IfcCovering	MOLDING	Cornice/Modanatura	
+IfcCovering	ROOFING	Copertura	
+IfcCovering	SKIRTINGBOARD	Battiscopa	
+IfcCovering	SLEEVING	Guaina	
+IfcCovering	TOPPING	Strato di finitura	
+IfcCovering	WRAPPING	Avvolgimento	
+IfcCovering	USERDEFINED	Tipo definito dall'utente	
+IfcCovering	NOTDEFINED	Tipo non definito	
+IfcCurtainWall	USERDEFINED	Tipo definito dall'utente	
+IfcCurtainWall	NOTDEFINED	Tipo non definito	
+IfcDamper	BACKDRAFTDAMPER	Serranda di non ritorno	
+IfcDamper	BALANCINGDAMPER	Serranda di bilanciamento	
+IfcDamper	BLASTDAMPER	Serranda antiscoppio	
+IfcDamper	CONTROLDAMPER	Serranda di regolazione	
+IfcDamper	FIREDAMPER	Serranda tagliafuoco	
+IfcDamper	FIRESMOKEDAMPER	Serranda tagliafuoco e tagliafumo	
+IfcDamper	FUMEHOODEXHAUST	Serranda di estrazione cappa	
+IfcDamper	GRAVITYDAMPER	Serranda a gravità	
+IfcDamper	GRAVITYRELIEFDAMPER	Serranda di sovrappressione a gravità	
+IfcDamper	RELIEFDAMPER	Serranda di sovrappressione	
+IfcDamper	SMOKEDAMPER	Serranda tagliafumo	
+IfcDamper	USERDEFINED	Tipo definito dall'utente	
+IfcDamper	NOTDEFINED	Tipo non definito	
+IfcDeepFoundation	—	Fondazione profonda	
+IfcDiscreteAccessory	ANCHORPLATE	Piastra di ancoraggio	
+IfcDiscreteAccessory	BIRDPROTECTION	Dispositivo antinidificazione	
+IfcDiscreteAccessory	BRACKET	Staffa	
+IfcDiscreteAccessory	CABLEARRANGER	Organizzatore di cavi	
+IfcDiscreteAccessory	ELASTIC_CUSHION	Cuscinetto elastico	
+IfcDiscreteAccessory	EXPANSION_JOINT_DEVICE	Dispositivo di giunto di dilatazione	
+IfcDiscreteAccessory	FILLER	Materiale di riempimento	
+IfcDiscreteAccessory	FLASHING	Scossalina	
+IfcDiscreteAccessory	INSULATOR	Isolatore	
+IfcDiscreteAccessory	LOCK	Serratura	
+IfcDiscreteAccessory	PANEL_STRENGTHENING	Rinforzo di pannello	
+IfcDiscreteAccessory	POINTMACHINEMOUNTINGDEVICE	Dispositivo di montaggio scambio	
+IfcDiscreteAccessory	POINT_MACHINE_LOCKING_DEVICE	Dispositivo di bloccaggio scambio	
+IfcDiscreteAccessory	RAILBRACE	Tirante antiribaltamento rotaia	
+IfcDiscreteAccessory	RAILPAD	Piastra elastica per rotaie	
+IfcDiscreteAccessory	RAIL_LUBRICATION	Sistema di lubrificazione rotaie	
+IfcDiscreteAccessory	RAIL_MECHANICAL_EQUIPMENT	Apparecchiatura meccanica ferroviaria	
+IfcDiscreteAccessory	SHOE	Scarpa strutturale	
+IfcDiscreteAccessory	SLIDINGCHAIR	Cuscinetto di scorrimento (scambio)	
+IfcDiscreteAccessory	SOUNDABSORPTION	Elemento fonoassorbente del binario	
+IfcDiscreteAccessory	TENSIONINGEQUIPMENT	Dispositivo di tensionamento	
+IfcDiscreteAccessory	USERDEFINED	Tipo definito dall'utente	
+IfcDiscreteAccessory	NOTDEFINED	Tipo non definito	
+IfcDistributionBoard	CONSUMERUNIT	Centralino di utenza	
+IfcDistributionBoard	DISPATCHINGBOARD	Quadro di permutazione fonia/dati	
+IfcDistributionBoard	DISTRIBUTIONBOARD	Quadro di distribuzione elettrica	
+IfcDistributionBoard	DISTRIBUTIONFRAME	Permutatore (distribution frame)	
+IfcDistributionBoard	MOTORCONTROLCENTRE	Centro di controllo motori	
+IfcDistributionBoard	SWITCHBOARD	Quadro di manovra	
+IfcDistributionBoard	USERDEFINED	Tipo definito dall'utente	
+IfcDistributionBoard	NOTDEFINED	Tipo non definito	
+IfcDistributionChamberElement	FORMEDDUCT	Cunicolo formato nel terreno	
+IfcDistributionChamberElement	INSPECTIONCHAMBER	Camera di ispezione	
+IfcDistributionChamberElement	INSPECTIONPIT	Pozzetto di ispezione	
+IfcDistributionChamberElement	MANHOLE	Pozzetto praticabile	
+IfcDistributionChamberElement	METERCHAMBER	Camera contatori	
+IfcDistributionChamberElement	SUMP	Pozzetto di raccolta	
+IfcDistributionChamberElement	TRENCH	Trincea tecnica	
+IfcDistributionChamberElement	VALVECHAMBER	Camera valvole	
+IfcDistributionChamberElement	USERDEFINED	Tipo definito dall'utente	
+IfcDistributionChamberElement	NOTDEFINED	Tipo non definito	
+IfcDistributionControlElement	—	Elemento di controllo impiantistico	
+IfcDistributionElement	—	Elemento impiantistico generico (deprecato per l'istanza)	
+IfcDistributionFlowElement	—	Elemento di flusso impiantistico	
+IfcDistributionPort	CABLE	Porta di distribuzione - Cavo	
+IfcDistributionPort	CABLECARRIER	Porta di distribuzione - Portacavi	
+IfcDistributionPort	DUCT	Porta di distribuzione - Condotto	
+IfcDistributionPort	PIPE	Porta di distribuzione - Tubazione	
+IfcDistributionPort	WIRELESS	Porta di distribuzione - Wireless	
+IfcDistributionPort	USERDEFINED	Tipo definito dall'utente	
+IfcDistributionPort	NOTDEFINED	Tipo non definito	
+IfcDoor	BOOM_BARRIER	Barriera a leva	
+IfcDoor	DOOR	Porta	
+IfcDoor	GATE	Cancello	
+IfcDoor	TRAPDOOR	Botola	
+IfcDoor	TURNSTILE	Tornello	
+IfcDoor	USERDEFINED	Tipo definito dall'utente	
+IfcDoor	NOTDEFINED	Tipo non definito	
+IfcDuctFitting	BEND	Curva	
+IfcDuctFitting	CONNECTOR	Giunto	
+IfcDuctFitting	ENTRY	Presa aria	
+IfcDuctFitting	EXIT	Espulsione aria	
+IfcDuctFitting	JUNCTION	Derivazione	
+IfcDuctFitting	OBSTRUCTION	Ostruzione / elemento di regolazione	
+IfcDuctFitting	TRANSITION	Riduzione / transizione	
+IfcDuctFitting	USERDEFINED	Tipo definito dall'utente	
+IfcDuctFitting	NOTDEFINED	Tipo non definito	
+IfcDuctSegment	FLEXIBLESEGMENT	Condotto flessibile	
+IfcDuctSegment	RIGIDSEGMENT	Condotto rigido	
+IfcDuctSegment	USERDEFINED	Tipo definito dall'utente	
+IfcDuctSegment	NOTDEFINED	Tipo non definito	
+IfcDuctSilencer	FLATOVAL	Silenziatore a sezione ovale schiacciata	
+IfcDuctSilencer	RECTANGULAR	Silenziatore rettangolare	
+IfcDuctSilencer	ROUND	Silenziatore circolare	
+IfcDuctSilencer	USERDEFINED	Tipo definito dall'utente	
+IfcDuctSilencer	NOTDEFINED	Tipo non definito	
+IfcEarthworksCut	BASE_EXCAVATION	Scavo di base / di fondazione	
+IfcEarthworksCut	CUT	Scavo di sbancamento	
+IfcEarthworksCut	DREDGING	Dragaggio	
+IfcEarthworksCut	EXCAVATION	Scavo generico	
+IfcEarthworksCut	OVEREXCAVATION	Scavo in sovraprofondità	
+IfcEarthworksCut	PAVEMENTMILLING	Fresatura della pavimentazione	
+IfcEarthworksCut	STEPEXCAVATION	Scavo a gradoni	
+IfcEarthworksCut	TOPSOILREMOVAL	Asportazione del terreno vegetale	
+IfcEarthworksCut	TRENCH	Trincea	
+IfcEarthworksCut	USERDEFINED	Tipo definito dall'utente	
+IfcEarthworksCut	NOTDEFINED	Tipo non definito	
+IfcEarthworksElement	—	Elemento di movimento terra	
+IfcEarthworksFill	BACKFILL	Rinterro	
+IfcEarthworksFill	COUNTERWEIGHT	Banca di contrappeso	
+IfcEarthworksFill	EMBANKMENT	Rilevato	
+IfcEarthworksFill	SLOPEFILL	Riempimento di scarpata	
+IfcEarthworksFill	SUBGRADE	Sottofondo	
+IfcEarthworksFill	SUBGRADEBED	Piano di posa (sottofondo)	
+IfcEarthworksFill	TRANSITIONSECTION	Tratto di transizione	
+IfcEarthworksFill	USERDEFINED	Tipo definito dall'utente	
+IfcEarthworksFill	NOTDEFINED	Tipo non definito	
+IfcElectricAppliance	DISHWASHER	Lavastoviglie	
+IfcElectricAppliance	ELECTRICCOOKER	Cucina elettrica	
+IfcElectricAppliance	FREESTANDINGELECTRICHEATER	Riscaldatore elettrico portatile	
+IfcElectricAppliance	FREESTANDINGFAN	Ventilatore portatile	
+IfcElectricAppliance	FREESTANDINGWATERCOOLER	Distributore elettrico di acqua refrigerata	
+IfcElectricAppliance	FREESTANDINGWATERHEATER	Scaldacqua elettrico portatile	
+IfcElectricAppliance	FREEZER	Congelatore	
+IfcElectricAppliance	FRIDGE_FREEZER	Frigorifero-congelatore	
+IfcElectricAppliance	HANDDRYER	Asciugamani elettrico	
+IfcElectricAppliance	KITCHENMACHINE	Macchina da cucina	
+IfcElectricAppliance	MICROWAVE	Forno a microonde	
+IfcElectricAppliance	PHOTOCOPIER	Fotocopiatrice	
+IfcElectricAppliance	REFRIGERATOR	Frigorifero	
+IfcElectricAppliance	TUMBLEDRYER	Asciugatrice	
+IfcElectricAppliance	VENDINGMACHINE	Distributore automatico	
+IfcElectricAppliance	WASHINGMACHINE	Lavatrice	
+IfcElectricAppliance	USERDEFINED	Tipo definito dall'utente	
+IfcElectricAppliance	NOTDEFINED	Tipo non definito	
+IfcElectricDistributionBoard	CONSUMERUNIT	Centralino di utenza	
+IfcElectricDistributionBoard	DISTRIBUTIONBOARD	Quadro di distribuzione	
+IfcElectricDistributionBoard	MOTORCONTROLCENTRE	Centro di comando motori (MCC)	
+IfcElectricDistributionBoard	SWITCHBOARD	Quadro di manovra	
+IfcElectricDistributionBoard	USERDEFINED	Tipo definito dall'utente	
+IfcElectricDistributionBoard	NOTDEFINED	Tipo non definito	
+IfcElectricFlowStorageDevice	BATTERY	Batteria	
+IfcElectricFlowStorageDevice	CAPACITOR	Condensatore	
+IfcElectricFlowStorageDevice	CAPACITORBANK	Batteria di condensatori	
+IfcElectricFlowStorageDevice	COMPENSATOR	Compensatore	
+IfcElectricFlowStorageDevice	HARMONICFILTER	Filtro armonico	
+IfcElectricFlowStorageDevice	INDUCTOR	Induttore	
+IfcElectricFlowStorageDevice	INDUCTORBANK	Batteria di induttori	
+IfcElectricFlowStorageDevice	RECHARGER	Caricabatterie	
+IfcElectricFlowStorageDevice	UPS	Gruppo di continuità (UPS)	
+IfcElectricFlowStorageDevice	USERDEFINED	Tipo definito dall'utente	
+IfcElectricFlowStorageDevice	NOTDEFINED	Tipo non definito	
+IfcElectricFlowTreatmentDevice	ELECTRONICFILTER	Filtro elettronico	
+IfcElectricFlowTreatmentDevice	USERDEFINED	Tipo definito dall'utente	
+IfcElectricFlowTreatmentDevice	NOTDEFINED	Tipo non definito	
+IfcElectricGenerator	CHP	Cogeneratore (CHP)	
+IfcElectricGenerator	ENGINEGENERATOR	Gruppo elettrogeno con motore	
+IfcElectricGenerator	STANDALONE	Generatore elettrico stand-alone	
+IfcElectricGenerator	USERDEFINED	Tipo definito dall'utente	
+IfcElectricGenerator	NOTDEFINED	Tipo non definito	
+IfcElectricMotor	DC	Motore elettrico a corrente continua	
+IfcElectricMotor	INDUCTION	Motore asincrono (a induzione)	
+IfcElectricMotor	POLYPHASE	Motore polifase	
+IfcElectricMotor	RELUCTANCESYNCHRONOUS	Motore sincrono a riluttanza	
+IfcElectricMotor	SYNCHRONOUS	Motore sincrono	
+IfcElectricMotor	USERDEFINED	Tipo definito dall'utente	
+IfcElectricMotor	NOTDEFINED	Tipo non definito	
+IfcElectricTimeControl	RELAY	Relè	
+IfcElectricTimeControl	TIMECLOCK	Interruttore orario	
+IfcElectricTimeControl	TIMEDELAY	Relè temporizzato	
+IfcElectricTimeControl	USERDEFINED	Tipo definito dall'utente	
+IfcElectricTimeControl	NOTDEFINED	Tipo non definito	
+IfcElementAssembly	ABUTMENT	Spalla (ponte)	
+IfcElementAssembly	ACCESSORY_ASSEMBLY	Assemblaggio di accessori	
+IfcElementAssembly	ARCH	Arco strutturale	
+IfcElementAssembly	BEAM_GRID	Griglia di travi	
+IfcElementAssembly	BRACED_FRAME	Telaio controventato	
+IfcElementAssembly	CROSS_BRACING	Controventi incrociati	
+IfcElementAssembly	DECK	Impalcato	
+IfcElementAssembly	DILATATIONPANEL	Apparecchio di dilatazione (binario)	
+IfcElementAssembly	ENTRANCEWORKS	Opere di ingresso	
+IfcElementAssembly	GIRDER	Trave principale	
+IfcElementAssembly	GRID	Griglia strutturale	
+IfcElementAssembly	MAST	Palo / mast	
+IfcElementAssembly	PIER	Pila (ponte)	
+IfcElementAssembly	PYLON	Pilone	
+IfcElementAssembly	RAIL_MECHANICAL_EQUIPMENT_ASSEMBLY	Assemblaggio meccanico ferroviario	
+IfcElementAssembly	REINFORCEMENT_UNIT	Unità di armatura	
+IfcElementAssembly	RIGID_FRAME	Telaio rigido	
+IfcElementAssembly	SHELTER	Struttura di protezione	
+IfcElementAssembly	SIGNALASSEMBLY	Assemblaggio di segnaletica	
+IfcElementAssembly	SLAB_FIELD	Campo di solai	
+IfcElementAssembly	SUMPBUSTER	Dissuasore per corsie riservate (sump buster)	
+IfcElementAssembly	SUPPORTINGASSEMBLY	Assemblaggio di supporto	
+IfcElementAssembly	SUSPENSIONASSEMBLY	Assemblaggio di sospensione	
+IfcElementAssembly	TRACKPANEL	Pannello di binario	
+IfcElementAssembly	TRACTION_SWITCHING_ASSEMBLY	Assieme di sezionamento trazione	
+IfcElementAssembly	TRAFFIC_CALMING_DEVICE	Dispositivo di moderazione traffico	
+IfcElementAssembly	TRUSS	Capriata	
+IfcElementAssembly	TURNOUTPANEL	Pannello di scambio	
+IfcElementAssembly	USERDEFINED	Tipo definito dall'utente	
+IfcElementAssembly	NOTDEFINED	Tipo non definito	
+IfcEnergyConversionDevice	—	Dispositivo di conversione energetica (deprecato per l'istanza)	
+IfcEngine	EXTERNALCOMBUSTION	Motore a combustione esterna	
+IfcEngine	INTERNALCOMBUSTION	Motore a combustione interna	
+IfcEngine	USERDEFINED	Tipo definito dall'utente	
+IfcEngine	NOTDEFINED	Tipo non definito	
+IfcEvaporativeCooler	DIRECTEVAPORATIVEAIRWASHER	Lavatore d'aria evaporativo diretto	
+IfcEvaporativeCooler	DIRECTEVAPORATIVEPACKAGEDROTARYAIRCOOLER	Raffrescatore evaporativo diretto rotativo	
+IfcEvaporativeCooler	DIRECTEVAPORATIVERANDOMMEDIAAIRCOOLER	Raffrescatore diretto a pacco fibroso	
+IfcEvaporativeCooler	DIRECTEVAPORATIVERIGIDMEDIAAIRCOOLER	Raffrescatore diretto a pacco rigido	
+IfcEvaporativeCooler	DIRECTEVAPORATIVESLINGERSPACKAGEDAIRCOOLER	Raffrescatore diretto a disco centrifugo	
+IfcEvaporativeCooler	INDIRECTDIRECTCOMBINATION	Raffrescatore combinato indiretto-diretto	
+IfcEvaporativeCooler	INDIRECTEVAPORATIVECOOLINGTOWERORCOILCOOLER	Raffrescatore indiretto con torre o batteria	
+IfcEvaporativeCooler	INDIRECTEVAPORATIVEPACKAGEAIRCOOLER	Raffrescatore indiretto compatto	
+IfcEvaporativeCooler	INDIRECTEVAPORATIVEWETCOIL	Raffrescatore indiretto a batteria bagnata	
+IfcEvaporativeCooler	USERDEFINED	Tipo definito dall'utente	
+IfcEvaporativeCooler	NOTDEFINED	Tipo non definito	
+IfcEvaporator	DIRECTEXPANSION	Evaporatore a espansione diretta	
+IfcEvaporator	DIRECTEXPANSIONBRAZEDPLATE	Evaporatore DX a piastre brasate	
+IfcEvaporator	DIRECTEXPANSIONSHELLANDTUBE	Evaporatore DX a fascio tubiero	
+IfcEvaporator	DIRECTEXPANSIONTUBEINTUBE	Evaporatore a espansione diretta tubo‑in‑tubo	
+IfcEvaporator	FLOODEDSHELLANDTUBE	Evaporatore a fascio tubiero allagato	
+IfcEvaporator	SHELLANDCOIL	Evaporatore a serpentina immersa	
+IfcEvaporator	USERDEFINED	Tipo definito dall'utente	
+IfcEvaporator	NOTDEFINED	Tipo non definito	
+IfcExternalSpatialElement	EXTERNAL	Spazio esterno (aria)	
+IfcExternalSpatialElement	EXTERNAL_EARTH	Spazio esterno terreno	
+IfcExternalSpatialElement	EXTERNAL_FIRE	Spazio esterno edificio adiacente	
+IfcExternalSpatialElement	EXTERNAL_WATER	Spazio esterno acqua	
+IfcExternalSpatialElement	USERDEFINED	Tipo definito dall'utente	
+IfcExternalSpatialElement	NOTDEFINED	Tipo non definito	
+IfcFacility	—	Opera (generica)	
+IfcFacilityPartCommon	ABOVEGROUND	Parte di opera fuori terra	
+IfcFacilityPartCommon	BELOWGROUND	Parte di opera interrata	
+IfcFacilityPartCommon	JUNCTION	Nodo / giunzione	
+IfcFacilityPartCommon	LEVELCROSSING	Passaggio a livello	
+IfcFacilityPartCommon	SEGMENT	Tratto / segmento	
+IfcFacilityPartCommon	SUBSTRUCTURE	Sottostruttura	
+IfcFacilityPartCommon	SUPERSTRUCTURE	Sovrastruttura	
+IfcFacilityPartCommon	TERMINAL	Terminale	
+IfcFacilityPartCommon	USERDEFINED	Tipo definito dall'utente	
+IfcFacilityPartCommon	NOTDEFINED	Tipo non definito	
+IfcFan	CENTRIFUGALAIRFOIL	Ventilatore centrifugo a pale alari	
+IfcFan	CENTRIFUGALBACKWARDINCLINEDCURVED	Ventilatore centrifugo a pale rovesce	
+IfcFan	CENTRIFUGALFORWARDCURVED	Ventilatore centrifugo a pale avanti	
+IfcFan	CENTRIFUGALRADIAL	Ventilatore centrifugo radiale	
+IfcFan	PROPELLORAXIAL	Ventilatore assiale a elica	
+IfcFan	TUBEAXIAL	Ventilatore assiale intubato	
+IfcFan	VANEAXIAL	Ventilatore assiale a pale guidate	
+IfcFan	USERDEFINED	Tipo definito dall'utente	
+IfcFan	NOTDEFINED	Tipo non definito	
+IfcFastener	GLUE	Incollaggio	
+IfcFastener	MORTAR	Malta	
+IfcFastener	WELD	Saldatura	
+IfcFastener	USERDEFINED	Tipo definito dall'utente	
+IfcFastener	NOTDEFINED	Tipo non definito	
+IfcFilter	AIRPARTICLEFILTER	Filtro aria antiparticolato	
+IfcFilter	COMPRESSEDAIRFILTER	Filtro aria compressa	
+IfcFilter	ODORFILTER	Filtro deodorante	
+IfcFilter	OILFILTER	Filtro olio	
+IfcFilter	STRAINER	Filtro a cestello / colino	
+IfcFilter	WATERFILTER	Filtro acqua	
+IfcFilter	USERDEFINED	Tipo definito dall'utente	
+IfcFilter	NOTDEFINED	Tipo non definito	
+IfcFireSuppressionTerminal	BREECHINGINLET	Attacco autopompa	
+IfcFireSuppressionTerminal	FIREHYDRANT	Idrante	
+IfcFireSuppressionTerminal	FIREMONITOR	Monitor antincendio	
+IfcFireSuppressionTerminal	HOSEREEL	Naspo antincendio	
+IfcFireSuppressionTerminal	SPRINKLER	Sprinkler	
+IfcFireSuppressionTerminal	SPRINKLERDEFLECTOR	Deflettore sprinkler	Valore deprecato
+IfcFireSuppressionTerminal	USERDEFINED	Tipo definito dall'utente	
+IfcFireSuppressionTerminal	NOTDEFINED	Tipo non definito	
+IfcFlowController	—	Regolatore di flusso (deprecato per l'istanza)	
+IfcFlowFitting	—	Raccordo (deprecato per l'istanza)	
+IfcFlowInstrument	AMMETER	Amperometro	
+IfcFlowInstrument	COMBINED	Strumento combinato	
+IfcFlowInstrument	FREQUENCYMETER	Frequenzimetro	
+IfcFlowInstrument	PHASEANGLEMETER	Fasometro	
+IfcFlowInstrument	POWERFACTORMETER	Cosfimetro	
+IfcFlowInstrument	PRESSUREGAUGE	Manometro	
+IfcFlowInstrument	THERMOMETER	Termometro	
+IfcFlowInstrument	VOLTMETER	Voltmetro	
+IfcFlowInstrument	VOLTMETER_PEAK	Voltmetro di picco	
+IfcFlowInstrument	VOLTMETER_RMS	Voltmetro RMS	
+IfcFlowInstrument	USERDEFINED	Tipo definito dall'utente	
+IfcFlowInstrument	NOTDEFINED	Tipo non definito	
+IfcFlowMeter	ENERGYMETER	Contatore di energia	
+IfcFlowMeter	GASMETER	Contatore di gas	
+IfcFlowMeter	OILMETER	Contatore di olio	
+IfcFlowMeter	WATERMETER	Contatore d’acqua	
+IfcFlowMeter	USERDEFINED	Tipo definito dall'utente	
+IfcFlowMeter	NOTDEFINED	Tipo non definito	
+IfcFlowMovingDevice	—	Dispositivo di movimentazione fluidi (deprecato per l'istanza)	
+IfcFlowSegment	—	Segmento di flusso (deprecato per l'istanza)	
+IfcFlowStorageDevice	—	Dispositivo di accumulo (deprecato per l'istanza)	
+IfcFlowTerminal	—	Terminale (deprecato per l'istanza)	
+IfcFlowTreatmentDevice	—	Dispositivo di trattamento (deprecato per l'istanza)	
+IfcFooting	CAISSON_FOUNDATION	Fondazione a cassone	
+IfcFooting	FOOTING_BEAM	Trave di fondazione	
+IfcFooting	PAD_FOOTING	Plinto	
+IfcFooting	PILE_CAP	Plinto su pali	
+IfcFooting	STRIP_FOOTING	Fondazione a nastro	
+IfcFooting	USERDEFINED	Tipo definito dall'utente	
+IfcFooting	NOTDEFINED	Tipo non definito	
+IfcFurnishingElement	—	Elemento di arredo generico (deprecato per l'istanza)	
+IfcFurniture	BED	Letto	
+IfcFurniture	CHAIR	Sedia	
+IfcFurniture	DESK	Scrivania	
+IfcFurniture	FILECABINET	Mobile archivio	
+IfcFurniture	SHELF	Scaffale	
+IfcFurniture	SOFA	Divano	
+IfcFurniture	TABLE	Tavolo	
+IfcFurniture	TECHNICALCABINET	Armadio tecnico	
+IfcFurniture	USERDEFINED	Tipo definito dall'utente	
+IfcFurniture	NOTDEFINED	Tipo non definito	
+IfcGeographicElement	SOIL_BORING_POINT	Sondaggio geologico	Valore deprecato
+IfcGeographicElement	TERRAIN	Terreno / superficie topografica	
+IfcGeographicElement	VEGETATION	Vegetazione	
+IfcGeographicElement	USERDEFINED	Tipo definito dall'utente	
+IfcGeographicElement	NOTDEFINED	Tipo non definito	
+IfcGeomodel	—	Modello geologico	
+IfcGeoslice	—	Sezione geologica	
+IfcGeotechnicalStratum	SOLID	Strato solido	
+IfcGeotechnicalStratum	VOID	Vuoto geotecnico	
+IfcGeotechnicalStratum	WATER	Strato saturo d’acqua	
+IfcGeotechnicalStratum	USERDEFINED	Tipo definito dall'utente	
+IfcGeotechnicalStratum	NOTDEFINED	Tipo non definito	
+IfcGrid	IRREGULAR	Griglia irregolare	
+IfcGrid	RADIAL	Griglia radiale	
+IfcGrid	RECTANGULAR	Griglia rettangolare	
+IfcGrid	TRIANGULAR	Griglia triangolare	
+IfcGrid	USERDEFINED	Tipo definito dall'utente	
+IfcGrid	NOTDEFINED	Tipo non definito	
+IfcHeatExchanger	PLATE	Scambiatore a piastre	
+IfcHeatExchanger	SHELLANDTUBE	Scambiatore a fascio tubiero	
+IfcHeatExchanger	TURNOUTHEATING	Riscaldamento deviatoi	
+IfcHeatExchanger	USERDEFINED	Tipo definito dall'utente	
+IfcHeatExchanger	NOTDEFINED	Tipo non definito	
+IfcHumidifier	ADIABATICAIRWASHER	Umidificatore adiabatico a lavaggio d’aria	
+IfcHumidifier	ADIABATICATOMIZING	Umidificatore adiabatico a nebulizzazione	
+IfcHumidifier	ADIABATICCOMPRESSEDAIRNOZZLE	Umidificatore adiabatico ad aria compressa	
+IfcHumidifier	ADIABATICPAN	Umidificatore adiabatico a vasca	
+IfcHumidifier	ADIABATICRIGIDMEDIA	Umidificatore adiabatico a media rigida	
+IfcHumidifier	ADIABATICULTRASONIC	Umidificatore adiabatico a ultrasuoni	
+IfcHumidifier	ADIABATICWETTEDELEMENT	Umidificatore adiabatico a elemento bagnato	
+IfcHumidifier	ASSISTEDBUTANE	Umidificatore assistito a butano	
+IfcHumidifier	ASSISTEDELECTRIC	Umidificatore assistito elettrico	
+IfcHumidifier	ASSISTEDNATURALGAS	Umidificatore assistito a gas naturale	
+IfcHumidifier	ASSISTEDPROPANE	Umidificatore assistito a propano	
+IfcHumidifier	ASSISTEDSTEAM	Umidificatore assistito a vapore	
+IfcHumidifier	STEAMINJECTION	Umidificatore a iniezione diretta di vapore	
+IfcHumidifier	USERDEFINED	Tipo definito dall'utente	
+IfcHumidifier	NOTDEFINED	Tipo non definito	
+IfcImpactProtectionDevice	BUMPER	Respintore / fine corsa	
+IfcImpactProtectionDevice	CRASHCUSHION	Attenuatore d’urto	
+IfcImpactProtectionDevice	DAMPINGSYSTEM	Sistema di smorzamento	
+IfcImpactProtectionDevice	FENDER	Paracolpi (fender)	
+IfcImpactProtectionDevice	USERDEFINED	Tipo definito dall'utente	
+IfcImpactProtectionDevice	NOTDEFINED	Tipo non definito	
+IfcInterceptor	CYCLONIC	Intercettatore ciclonico	
+IfcInterceptor	GREASE	Separatore di grassi	
+IfcInterceptor	OIL	Separatore di oli	
+IfcInterceptor	PETROL	Separatore di carburanti	
+IfcInterceptor	USERDEFINED	Tipo definito dall'utente	
+IfcInterceptor	NOTDEFINED	Tipo non definito	
+IfcJunctionBox	DATA	Scatola di derivazione dati	
+IfcJunctionBox	POWER	Scatola di derivazione elettrica	
+IfcJunctionBox	USERDEFINED	Tipo definito dall'utente	
+IfcJunctionBox	NOTDEFINED	Tipo non definito	
+IfcKerb	USERDEFINED	Tipo definito dall'utente	
+IfcKerb	NOTDEFINED	Tipo non definito	
+IfcLamp	COMPACTFLUORESCENT	Lampada fluorescente compatta	
+IfcLamp	FLUORESCENT	Lampada fluorescente	
+IfcLamp	HALOGEN	Lampada alogena	
+IfcLamp	HIGHPRESSUREMERCURY	Lampada a vapori di mercurio ad alta pressione	
+IfcLamp	HIGHPRESSURESODIUM	Lampada a vapori di sodio ad alta pressione	
+IfcLamp	LED	Lampada a LED	
+IfcLamp	METALHALIDE	Lampada a ioduri metallici	
+IfcLamp	OLED	Lampada OLED	
+IfcLamp	TUNGSTENFILAMENT	Lampada a filamento di tungsteno	
+IfcLamp	USERDEFINED	Tipo definito dall'utente	
+IfcLamp	NOTDEFINED	Tipo non definito	
+IfcLightFixture	DIRECTIONSOURCE	Apparecchio a sorgente direzionale	
+IfcLightFixture	POINTSOURCE	Apparecchio a sorgente puntiforme	
+IfcLightFixture	SECURITYLIGHTING	Illuminazione di sicurezza	
+IfcLightFixture	USERDEFINED	Tipo definito dall'utente	
+IfcLightFixture	NOTDEFINED	Tipo non definito	
+IfcLinearElement	—	Elemento lineare	
+IfcLinearPositioningElement	—	Elemento di posizionamento lineare	
+IfcLiquidTerminal	HOSEREEL	Avvolgitubo / naspo per liquidi	
+IfcLiquidTerminal	LOADINGARM	Braccio di carico	
+IfcLiquidTerminal	USERDEFINED	Tipo definito dall'utente	
+IfcLiquidTerminal	NOTDEFINED	Tipo non definito	
+IfcMarineFacility	BARRIERBEACH	Spiaggia barriera	
+IfcMarineFacility	BREAKWATER	Frangiflutti	
+IfcMarineFacility	CANAL	Canale	
+IfcMarineFacility	DRYDOCK	Bacino di carenaggio	
+IfcMarineFacility	FLOATINGDOCK	Bacino di carenaggio galleggiante	
+IfcMarineFacility	HYDROLIFT	Sollevatore idraulico	
+IfcMarineFacility	JETTY	Molo	
+IfcMarineFacility	LAUNCHRECOVERY	Varo e alaggio	
+IfcMarineFacility	MARINEDEFENCE	Opera di difesa marittima	
+IfcMarineFacility	NAVIGATIONALCHANNEL	Canale navigabile	
+IfcMarineFacility	PORT	Porto	
+IfcMarineFacility	QUAY	Banchina	
+IfcMarineFacility	REVETMENT	Rivestimento di difesa costiera	
+IfcMarineFacility	SHIPLIFT	Sollevatore navale	
+IfcMarineFacility	SHIPLOCK	Chiusa navigabile	
+IfcMarineFacility	SHIPYARD	Cantiere navale	
+IfcMarineFacility	SLIPWAY	Scalo di alaggio	
+IfcMarineFacility	WATERWAY	Via navigabile	
+IfcMarineFacility	WATERWAYSHIPLIFT	Sollevatore idraulico per vie d’acqua	
+IfcMarineFacility	USERDEFINED	Tipo definito dall'utente	
+IfcMarineFacility	NOTDEFINED	Tipo non definito	
+IfcMarinePart	ABOVEWATERLINE	Parte sopra il livello medio dell’acqua	
+IfcMarinePart	ANCHORAGE	Area di ancoraggio	
+IfcMarinePart	APPROACHCHANNEL	Canale di accesso	
+IfcMarinePart	BELOWWATERLINE	Parte sotto il livello medio dell’acqua	
+IfcMarinePart	BERTHINGSTRUCTURE	Struttura di ormeggio	
+IfcMarinePart	CHAMBER	Camera	
+IfcMarinePart	CILL_LEVEL	Livello soglia	
+IfcMarinePart	COPELEVEL	Livello banchina	
+IfcMarinePart	CORE	Nucleo strutturale	
+IfcMarinePart	CREST	Cresta	
+IfcMarinePart	GATEHEAD	Testata di porta	
+IfcMarinePart	GUDINGSTRUCTURE	Struttura di guida	
+IfcMarinePart	HIGHWATERLINE	Linea di alta marea	
+IfcMarinePart	LANDFIELD	Area di terra	
+IfcMarinePart	LEEWARDSIDE	Lato sottovento	
+IfcMarinePart	LOWWATERLINE	Linea di bassa marea	
+IfcMarinePart	MANUFACTURING	Area produttiva	
+IfcMarinePart	NAVIGATIONALAREA	Area di navigazione	
+IfcMarinePart	PROTECTION	Area di protezione	
+IfcMarinePart	SHIPTRANSFER	Area di trasferimento navi	
+IfcMarinePart	STORAGEAREA	Area di stoccaggio	
+IfcMarinePart	VEHICLESERVICING	Servizio veicoli	
+IfcMarinePart	WATERFIELD	Specchio acqueo	
+IfcMarinePart	WEATHERSIDE	Lato sopravento	
+IfcMarinePart	USERDEFINED	Tipo definito dall'utente	
+IfcMarinePart	NOTDEFINED	Tipo non definito	
+IfcMechanicalFastener	ANCHORBOLT	Tirafondo / bullone di ancoraggio	
+IfcMechanicalFastener	BOLT	Bullone	
+IfcMechanicalFastener	CHAIN	Catena	
+IfcMechanicalFastener	COUPLER	Giunto / manicotto	
+IfcMechanicalFastener	DOWEL	Tassello / perno	
+IfcMechanicalFastener	NAIL	Chiodo	
+IfcMechanicalFastener	NAILPLATE	Piastra chiodata	
+IfcMechanicalFastener	RAILFASTENING	Fissaggio ferroviario	
+IfcMechanicalFastener	RAILJOINT	Giunto di rotaia	
+IfcMechanicalFastener	RIVET	Rivetto	
+IfcMechanicalFastener	ROPE	Fune	
+IfcMechanicalFastener	SCREW	Vite	
+IfcMechanicalFastener	SHEARCONNECTOR	Connettore a taglio	
+IfcMechanicalFastener	STAPLE	Graffa	
+IfcMechanicalFastener	STUDSHEARCONNECTOR	Connettore a taglio a piolo	
+IfcMechanicalFastener	USERDEFINED	Tipo definito dall'utente	
+IfcMechanicalFastener	NOTDEFINED	Tipo non definito	
+IfcMedicalDevice	AIRSTATION	Stazione aria medicale	
+IfcMedicalDevice	FEEDAIRUNIT	Unità di alimentazione aria	
+IfcMedicalDevice	OXYGENGENERATOR	Generatore di ossigeno	
+IfcMedicalDevice	OXYGENPLANT	Impianto di produzione ossigeno	
+IfcMedicalDevice	VACUUMSTATION	Stazione di vuoto medicale	
+IfcMedicalDevice	USERDEFINED	Tipo definito dall'utente	
+IfcMedicalDevice	NOTDEFINED	Tipo non definito	
+IfcMember	ARCH_SEGMENT	Concio d'arco	
+IfcMember	BRACE	Controvento	
+IfcMember	CHORD	Corrente	
+IfcMember	COLLAR	Catena alta (controcatena)	
+IfcMember	MEMBER	Asta generica	
+IfcMember	MULLION	Montante di facciata	
+IfcMember	PLATE	Corrente di parete a telaio	
+IfcMember	POST	Montante / palo	
+IfcMember	PURLIN	Arcareccio	
+IfcMember	RAFTER	Puntone (falsa trave)	
+IfcMember	STAY_CABLE	Strallo	
+IfcMember	STIFFENING_RIB	Costola di irrigidimento	
+IfcMember	STRINGER	Cosciale	
+IfcMember	STRUCTURALCABLE	Cavo strutturale	
+IfcMember	STRUT	Puntone	
+IfcMember	STUD	Montante di parete	
+IfcMember	SUSPENDER	Pendino	
+IfcMember	SUSPENSION_CABLE	Cavo portante di sospensione	
+IfcMember	TIEBAR	Tirante / barra	
+IfcMember	USERDEFINED	Tipo definito dall'utente	
+IfcMember	NOTDEFINED	Tipo non definito	
+IfcMobileTelecommunicationsAppliance	ACCESSPOINT	Access point	
+IfcMobileTelecommunicationsAppliance	BASEBANDUNIT	Unità di banda base (BBU)	
+IfcMobileTelecommunicationsAppliance	BASETRANSCEIVERSTATION	Stazione radio base (BTS)	
+IfcMobileTelecommunicationsAppliance	E_UTRAN_NODE_B	eNodeB (E-UTRAN Node B)	
+IfcMobileTelecommunicationsAppliance	GATEWAY_GPRS_SUPPORT_NODE	Nodo GGSN (Gateway GPRS)	
+IfcMobileTelecommunicationsAppliance	MASTERUNIT	Unità master (ripetitore)	
+IfcMobileTelecommunicationsAppliance	MOBILESWITCHINGCENTER	Centrale di commutazione mobile (MSC)	
+IfcMobileTelecommunicationsAppliance	MSCSERVER	Server MSC	
+IfcMobileTelecommunicationsAppliance	PACKETCONTROLUNIT	Unità di controllo pacchetti (PCU)	
+IfcMobileTelecommunicationsAppliance	REMOTERADIOUNIT	Unità radio remota (RRU)	
+IfcMobileTelecommunicationsAppliance	REMOTEUNIT	Unità remota (ripetitore)	
+IfcMobileTelecommunicationsAppliance	SERVICE_GPRS_SUPPORT_NODE	Nodo SGSN (Serving GPRS)	
+IfcMobileTelecommunicationsAppliance	SUBSCRIBERSERVER	Server abbonati (HLR/AuC)	
+IfcMobileTelecommunicationsAppliance	USERDEFINED	Tipo definito dall'utente	
+IfcMobileTelecommunicationsAppliance	NOTDEFINED	Tipo non definito	
+IfcMooringDevice	BOLLARD	Bitta	
+IfcMooringDevice	LINETENSIONER	Tenditore di cime	
+IfcMooringDevice	MAGNETICDEVICE	Ormeggio magnetico	
+IfcMooringDevice	MOORINGHOOKS	Ganci di ormeggio a sgancio rapido	
+IfcMooringDevice	VACUUMDEVICE	Ormeggio a ventose (vuoto)	
+IfcMooringDevice	USERDEFINED	Tipo definito dall'utente	
+IfcMooringDevice	NOTDEFINED	Tipo non definito	
+IfcMotorConnection	BELTDRIVE	Trasmissione a cinghia	
+IfcMotorConnection	COUPLING	Giunto	
+IfcMotorConnection	DIRECTDRIVE	Collegamento diretto	
+IfcMotorConnection	USERDEFINED	Tipo definito dall'utente	
+IfcMotorConnection	NOTDEFINED	Tipo non definito	
+IfcNavigationElement	BEACON	Meda (segnale fisso)	
+IfcNavigationElement	BUOY	Boa	
+IfcNavigationElement	USERDEFINED	Tipo definito dall'utente	
+IfcNavigationElement	NOTDEFINED	Tipo non definito	
+IfcOpeningElement	OPENING	Apertura passante	
+IfcOpeningElement	RECESS	Recesso / nicchia	
+IfcOpeningElement	USERDEFINED	Tipo definito dall'utente	
+IfcOpeningElement	NOTDEFINED	Tipo non definito	
+IfcOutlet	AUDIOVISUALOUTLET	Presa audio‑video	
+IfcOutlet	COMMUNICATIONSOUTLET	Presa di comunicazione	
+IfcOutlet	DATAOUTLET	Presa dati	
+IfcOutlet	POWEROUTLET	Presa di corrente	
+IfcOutlet	TELEPHONEOUTLET	Presa telefonica	
+IfcOutlet	USERDEFINED	Tipo definito dall'utente	
+IfcOutlet	NOTDEFINED	Tipo non definito	
+IfcPavement	FLEXIBLE	Pavimentazione flessibile	
+IfcPavement	RIGID	Pavimentazione rigida	
+IfcPavement	USERDEFINED	Tipo definito dall'utente	
+IfcPavement	NOTDEFINED	Tipo non definito	
+IfcPile	BORED	Palo trivellato	
+IfcPile	COHESION	Palo a coesione	
+IfcPile	DRIVEN	Palo infisso	
+IfcPile	FRICTION	Palo ad attrito laterale	
+IfcPile	JETGROUTING	Jet grouting	
+IfcPile	SUPPORT	Palo di sostegno	
+IfcPile	USERDEFINED	Tipo definito dall'utente	
+IfcPile	NOTDEFINED	Tipo non definito	
+IfcPipeFitting	BEND	Curva	
+IfcPipeFitting	CONNECTOR	Giunto	
+IfcPipeFitting	ENTRY	Ingresso	
+IfcPipeFitting	EXIT	Uscita	
+IfcPipeFitting	JUNCTION	Derivazione	
+IfcPipeFitting	OBSTRUCTION	Ostruzione / elemento di limitazione	
+IfcPipeFitting	TRANSITION	Riduzione / transizione	
+IfcPipeFitting	USERDEFINED	Tipo definito dall'utente	
+IfcPipeFitting	NOTDEFINED	Tipo non definito	
+IfcPipeSegment	CULVERT	Condotta interrata (culvert)	
+IfcPipeSegment	FLEXIBLESEGMENT	Tubazione flessibile	
+IfcPipeSegment	GUTTER	Canale aperto	
+IfcPipeSegment	RIGIDSEGMENT	Tubazione rigida	
+IfcPipeSegment	SPOOL	Spezzone di tubo (spool)	
+IfcPipeSegment	USERDEFINED	Tipo definito dall'utente	
+IfcPipeSegment	NOTDEFINED	Tipo non definito	
+IfcPlate	BASE_PLATE	Piastra di base	
+IfcPlate	COVER_PLATE	Piatto di rinforzo (coprigiunto d'ala)	
+IfcPlate	CURTAIN_PANEL	Pannello di facciata continua	
+IfcPlate	FLANGE_PLATE	Piatto d'ala	
+IfcPlate	GUSSET_PLATE	Fazzoletto (piastra di nodo)	
+IfcPlate	SHEET	Lamiera / lastra sottile	
+IfcPlate	SPLICE_PLATE	Coprigiunto	
+IfcPlate	STIFFENER_PLATE	Piatto di irrigidimento	
+IfcPlate	WEB_PLATE	Piatto d'anima	
+IfcPlate	USERDEFINED	Tipo definito dall'utente	
+IfcPlate	NOTDEFINED	Tipo non definito	
+IfcProjectionElement	BLISTER	Blister / rigonfiamento	
+IfcProjectionElement	DEVIATOR	Deviatore	
+IfcProjectionElement	USERDEFINED	Tipo definito dall'utente	
+IfcProjectionElement	NOTDEFINED	Tipo non definito	
+IfcProtectiveDevice	ANTI_ARCING_DEVICE	Dispositivo antiarco	
+IfcProtectiveDevice	CIRCUITBREAKER	Interruttore automatico	
+IfcProtectiveDevice	EARTHINGSWITCH	Sezionatore di terra	
+IfcProtectiveDevice	EARTHLEAKAGECIRCUITBREAKER	Interruttore di dispersione a terra	
+IfcProtectiveDevice	FUSEDISCONNECTOR	Sezionatore con fusibile	
+IfcProtectiveDevice	RESIDUALCURRENTCIRCUITBREAKER	Interruttore differenziale magnetotermico	
+IfcProtectiveDevice	RESIDUALCURRENTSWITCH	Interruttore differenziale	
+IfcProtectiveDevice	SPARKGAP	Spinterometro	
+IfcProtectiveDevice	VARISTOR	Varistore	
+IfcProtectiveDevice	VOLTAGELIMITER	Limitatore di tensione	
+IfcProtectiveDevice	USERDEFINED	Tipo definito dall'utente	
+IfcProtectiveDevice	NOTDEFINED	Tipo non definito	
+IfcProtectiveDeviceTrippingUnit	ELECTROMAGNETIC	Sganciatore elettromagnetico	
+IfcProtectiveDeviceTrippingUnit	ELECTRONIC	Sganciatore elettronico	
+IfcProtectiveDeviceTrippingUnit	RESIDUALCURRENT	Sganciatore differenziale	
+IfcProtectiveDeviceTrippingUnit	THERMAL	Sganciatore termico	
+IfcProtectiveDeviceTrippingUnit	USERDEFINED	Tipo definito dall'utente	
+IfcProtectiveDeviceTrippingUnit	NOTDEFINED	Tipo non definito	
+IfcPump	CIRCULATOR	Pompa di circolazione	
+IfcPump	ENDSUCTION	Pompa ad aspirazione frontale	
+IfcPump	SPLITCASE	Pompa a corpo diviso	
+IfcPump	SUBMERSIBLEPUMP	Pompa sommergibile	
+IfcPump	SUMPPUMP	Pompa per pozzetto (sump)	
+IfcPump	VERTICALINLINE	Pompa verticale in linea	
+IfcPump	VERTICALTURBINE	Pompa a turbina verticale	
+IfcPump	USERDEFINED	Tipo definito dall'utente	
+IfcPump	NOTDEFINED	Tipo non definito	
+IfcRail	BLADE	Ago dello scambio	
+IfcRail	CHECKRAIL	Controrotaia	
+IfcRail	GUARDRAIL	Rotaia di sicurezza (controguida)	
+IfcRail	RACKRAIL	Cremagliera	
+IfcRail	RAIL	Rotaia	
+IfcRail	STOCKRAIL	Contrago	
+IfcRail	USERDEFINED	Tipo definito dall'utente	
+IfcRail	NOTDEFINED	Tipo non definito	
+IfcRailing	BALUSTRADE	Balaustra	
+IfcRailing	FENCE	Recinzione	
+IfcRailing	GUARDRAIL	Parapetto / barriera di sicurezza	
+IfcRailing	HANDRAIL	Corrimano	
+IfcRailing	USERDEFINED	Tipo definito dall'utente	
+IfcRailing	NOTDEFINED	Tipo non definito	
+IfcRailway	USERDEFINED	Tipo definito dall'utente	
+IfcRailway	NOTDEFINED	Tipo non definito	
+IfcRailwayPart	ABOVETRACK	Parte sopra il binario	
+IfcRailwayPart	DILATIONTRACK	Tratto di binario con apparecchi di dilatazione	
+IfcRailwayPart	LINESIDE	Parte a lato linea	
+IfcRailwayPart	LINESIDEPART	Sottoparte a lato linea	
+IfcRailwayPart	PLAINTRACK	Binario di corsa (piena linea)	
+IfcRailwayPart	SUBSTRUCTURE	Sottostruttura (corpo ferroviario)	
+IfcRailwayPart	TRACK	Binario (armamento)	
+IfcRailwayPart	TRACKPART	Sottoparte di binario	
+IfcRailwayPart	TURNOUTTRACK	Tratto con deviatoi	
+IfcRailwayPart	USERDEFINED	Tipo definito dall'utente	
+IfcRailwayPart	NOTDEFINED	Tipo non definito	
+IfcRamp	HALF_TURN_RAMP	Rampa a U (svolta 180°)	
+IfcRamp	QUARTER_TURN_RAMP	Rampa a L (svolta 90°)	
+IfcRamp	SPIRAL_RAMP	Rampa elicoidale	
+IfcRamp	STRAIGHT_RUN_RAMP	Rampa rettilinea a tratto unico	
+IfcRamp	TWO_QUARTER_TURN_RAMP	Rampa con due svolte a 90°	
+IfcRamp	TWO_STRAIGHT_RUN_RAMP	Rampa rettilinea a due tratti	
+IfcRamp	USERDEFINED	Tipo definito dall'utente	
+IfcRamp	NOTDEFINED	Tipo non definito	
+IfcRampFlight	SPIRAL	Tratto di rampa elicoidale	
+IfcRampFlight	STRAIGHT	Tratto di rampa rettilineo	
+IfcRampFlight	USERDEFINED	Tipo definito dall'utente	
+IfcRampFlight	NOTDEFINED	Tipo non definito	
+IfcReferent	BOUNDARY	Referente di confine	
+IfcReferent	INTERSECTION	Referente di intersezione	
+IfcReferent	KILOPOINT	Chilometrica	
+IfcReferent	LANDMARK	Punto di riferimento fisico	
+IfcReferent	MILEPOINT	Migliarica	
+IfcReferent	POSITION	Posizione lineare	
+IfcReferent	REFERENCEMARKER	Marcatore di riferimento	
+IfcReferent	STATION	Stazione	
+IfcReferent	SUPERELEVATIONEVENT	Evento di sopraelevazione	
+IfcReferent	WIDTHEVENT	Evento di larghezza	
+IfcReferent	USERDEFINED	Tipo definito dall'utente	
+IfcReferent	NOTDEFINED	Tipo non definito	
+IfcReinforcedSoil	DYNAMICALLYCOMPACTED	Consolidamento per costipamento dinamico	
+IfcReinforcedSoil	GROUTED	Consolidamento per iniezione	
+IfcReinforcedSoil	REPLACED	Bonifica per sostituzione	
+IfcReinforcedSoil	ROLLERCOMPACTED	Compattazione con rulli	
+IfcReinforcedSoil	SURCHARGEPRELOADED	Precarico con sovraccarico	
+IfcReinforcedSoil	VERTICALLYDRAINED	Consolidamento con dreni verticali	
+IfcReinforcedSoil	USERDEFINED	Tipo definito dall'utente	
+IfcReinforcedSoil	NOTDEFINED	Tipo non definito	
+IfcReinforcingBar	ANCHORING	Armatura di ancoraggio	
+IfcReinforcingBar	EDGE	Armatura di bordo	
+IfcReinforcingBar	LIGATURE	Staffa / legatura	
+IfcReinforcingBar	MAIN	Armatura principale	
+IfcReinforcingBar	PUNCHING	Armatura a punzonamento	
+IfcReinforcingBar	RING	Armatura ad anello	
+IfcReinforcingBar	SHEAR	Armatura a taglio	
+IfcReinforcingBar	SPACEBAR	Distanziatore	
+IfcReinforcingBar	STUD	Piolo	
+IfcReinforcingBar	USERDEFINED	Tipo definito dall'utente	
+IfcReinforcingBar	NOTDEFINED	Tipo non definito	
+IfcReinforcingMesh	USERDEFINED	Tipo definito dall'utente	
+IfcReinforcingMesh	NOTDEFINED	Tipo non definito	
+IfcRoad	USERDEFINED	Tipo definito dall'utente	
+IfcRoad	NOTDEFINED	Tipo non definito	
+IfcRoadPart	BICYCLECROSSING	Attraversamento ciclabile	
+IfcRoadPart	BUS_STOP	Fermata autobus	
+IfcRoadPart	CARRIAGEWAY	Carreggiata	
+IfcRoadPart	CENTRALISLAND	Isola centrale	
+IfcRoadPart	CENTRALRESERVE	Spartitraffico centrale	
+IfcRoadPart	HARDSHOULDER	Banchina pavimentata	
+IfcRoadPart	INTERSECTION	Intersezione	
+IfcRoadPart	LAYBY	Piazzola di sosta	
+IfcRoadPart	PARKINGBAY	Stallo di parcheggio	
+IfcRoadPart	PASSINGBAY	Piazzola di incrocio	
+IfcRoadPart	PEDESTRIAN_CROSSING	Attraversamento pedonale	
+IfcRoadPart	RAILWAYCROSSING	Passaggio a livello	
+IfcRoadPart	REFUGEISLAND	Isola salvagente	
+IfcRoadPart	ROADSEGMENT	Tratto stradale	
+IfcRoadPart	ROADSIDE	Bordo strada	
+IfcRoadPart	ROADSIDEPART	Parte del margine stradale	
+IfcRoadPart	ROADWAYPLATEAU	Piattaforma stradale	
+IfcRoadPart	ROUNDABOUT	Rotatoria	
+IfcRoadPart	SHOULDER	Banchina	
+IfcRoadPart	SIDEWALK	Marciapiede	
+IfcRoadPart	SOFTSHOULDER	Banchina non pavimentata	
+IfcRoadPart	TOLLPLAZA	Piazzale di esazione (casello)	
+IfcRoadPart	TRAFFICISLAND	Isola di traffico	
+IfcRoadPart	TRAFFICLANE	Corsia	
+IfcRoadPart	USERDEFINED	Tipo definito dall'utente	
+IfcRoadPart	NOTDEFINED	Tipo non definito	
+IfcRoof	BARREL_ROOF	Copertura a botte	
+IfcRoof	BUTTERFLY_ROOF	Copertura a farfalla	
+IfcRoof	DOME_ROOF	Copertura a cupola	
+IfcRoof	FLAT_ROOF	Copertura piana	
+IfcRoof	FREEFORM	Copertura a forma libera	
+IfcRoof	GABLE_ROOF	Copertura a capanna (due falde)	
+IfcRoof	GAMBREL_ROOF	Copertura a due falde spezzate	
+IfcRoof	HIPPED_GABLE_ROOF	Copertura a padiglione con timpano (a mezzo padiglione)	
+IfcRoof	HIP_ROOF	Copertura a padiglione	
+IfcRoof	MANSARD_ROOF	Copertura a mansarda	
+IfcRoof	PAVILION_ROOF	Copertura a piramide	
+IfcRoof	RAINBOW_ROOF	Copertura ad arco ogivale	
+IfcRoof	SHED_ROOF	Copertura a una falda	
+IfcRoof	USERDEFINED	Tipo definito dall'utente	
+IfcRoof	NOTDEFINED	Tipo non definito	
+IfcSanitaryTerminal	BATH	Vasca da bagno	
+IfcSanitaryTerminal	BIDET	Bidet	
+IfcSanitaryTerminal	CISTERN	Cassetta di scarico	
+IfcSanitaryTerminal	SANITARYFOUNTAIN	Fontanella sanitaria	
+IfcSanitaryTerminal	SHOWER	Doccia	
+IfcSanitaryTerminal	SINK	Lavello	
+IfcSanitaryTerminal	TOILETPAN	Vaso sanitario (WC)	
+IfcSanitaryTerminal	URINAL	Orinatoio	
+IfcSanitaryTerminal	WASHHANDBASIN	Lavabo	
+IfcSanitaryTerminal	WCSEAT	Sedile WC (deprecato)	Valore deprecato
+IfcSanitaryTerminal	USERDEFINED	Tipo definito dall'utente	
+IfcSanitaryTerminal	NOTDEFINED	Tipo non definito	
+IfcSensor	CO2SENSOR	Sensore di CO2	
+IfcSensor	CONDUCTANCESENSOR	Sensore di conduttanza	
+IfcSensor	CONTACTSENSOR	Sensore di contatto	
+IfcSensor	COSENSOR	Sensore di CO	
+IfcSensor	EARTHQUAKESENSOR	Sensore sismico	
+IfcSensor	FIRESENSOR	Rivelatore d'incendio	
+IfcSensor	FLOWSENSOR	Sensore di flusso	
+IfcSensor	FOREIGNOBJECTDETECTIONSENSOR	Rilevatore di corpi estranei	
+IfcSensor	FROSTSENSOR	Sensore di brina/gelo	
+IfcSensor	GASSENSOR	Sensore di gas	
+IfcSensor	HEATSENSOR	Rivelatore di calore	
+IfcSensor	HUMIDITYSENSOR	Sensore di umidità	
+IfcSensor	IDENTIFIERSENSOR	Lettore di identificazione (badge)	
+IfcSensor	IONCONCENTRATIONSENSOR	Sensore di concentrazione ionica	
+IfcSensor	LEVELSENSOR	Sensore di livello	
+IfcSensor	LIGHTSENSOR	Sensore di luce	
+IfcSensor	MOISTURESENSOR	Sensore di umidità dei materiali	
+IfcSensor	MOVEMENTSENSOR	Sensore di movimento	
+IfcSensor	OBSTACLESENSOR	Rilevatore di ostacoli	
+IfcSensor	PHSENSOR	Sensore di pH	
+IfcSensor	PRESSURESENSOR	Sensore di pressione	
+IfcSensor	RADIATIONSENSOR	Sensore di radiazione	
+IfcSensor	RADIOACTIVITYSENSOR	Sensore di radioattività	
+IfcSensor	RAINSENSOR	Sensore di pioggia	
+IfcSensor	SMOKESENSOR	Rivelatore di fumo	
+IfcSensor	SNOWDEPTHSENSOR	Sensore di altezza neve	
+IfcSensor	SOUNDSENSOR	Sensore acustico	
+IfcSensor	TEMPERATURESENSOR	Sensore di temperatura	
+IfcSensor	TRAINSENSOR	Sensore di coda treno	
+IfcSensor	TURNOUTCLOSURESENSOR	Sensore di posizione dell'ago (deviatoio)	
+IfcSensor	WHEELSENSOR	Sensore di ruota (contaassi)	
+IfcSensor	WINDSENSOR	Anemometro / sensore vento	
+IfcSensor	USERDEFINED	Tipo definito dall'utente	
+IfcSensor	NOTDEFINED	Tipo non definito	
+IfcShadingDevice	AWNING	Tenda da sole (aggettante)	
+IfcShadingDevice	JALOUSIE	Gelosia / veneziana	
+IfcShadingDevice	SHUTTER	Persiana / scuro	
+IfcShadingDevice	USERDEFINED	Tipo definito dall'utente	
+IfcShadingDevice	NOTDEFINED	Tipo non definito	
+IfcSign	MARKER	Picchetto segnaletico	
+IfcSign	MIRROR	Specchio parabolico	
+IfcSign	PICTORAL	Cartello a pannello	
+IfcSign	USERDEFINED	Tipo definito dall'utente	
+IfcSign	NOTDEFINED	Tipo non definito	
+IfcSignal	AUDIO	Segnale acustico	
+IfcSignal	MIXED	Segnale audio‑visivo	
+IfcSignal	VISUAL	Segnale visivo	
+IfcSignal	USERDEFINED	Tipo definito dall'utente	
+IfcSignal	NOTDEFINED	Tipo non definito	
+IfcSite	—	Sito / lotto	
+IfcSlab	APPROACH_SLAB	Soletta di transizione	
+IfcSlab	BASESLAB	Platea di fondazione	
+IfcSlab	FLOOR	Solaio / impalcato	
+IfcSlab	LANDING	Pianerottolo	
+IfcSlab	PAVING	Pavimentazione in lastra	
+IfcSlab	ROOF	Solaio di copertura	
+IfcSlab	SIDEWALK	Marciapiede	
+IfcSlab	TRACKSLAB	Piastra di armamento (slab track)	
+IfcSlab	WEARING	Strato d'usura	
+IfcSlab	USERDEFINED	Tipo definito dall'utente	
+IfcSlab	NOTDEFINED	Tipo non definito	
+IfcSolarDevice	SOLARCOLLECTOR	Collettore solare termico	
+IfcSolarDevice	SOLARPANEL	Pannello solare fotovoltaico	
+IfcSolarDevice	USERDEFINED	Tipo definito dall'utente	
+IfcSolarDevice	NOTDEFINED	Tipo non definito	
+IfcSpace	BERTH	Posto d'ormeggio	
+IfcSpace	EXTERNAL	Spazio esterno	Valore deprecato
+IfcSpace	GFA	Superficie lorda di piano	
+IfcSpace	INTERNAL	Spazio interno	Valore deprecato
+IfcSpace	PARKING	Spazio di parcheggio	
+IfcSpace	SPACE	Spazio generico	
+IfcSpace	USERDEFINED	Tipo definito dall'utente	
+IfcSpace	NOTDEFINED	Tipo non definito	
+IfcSpaceHeater	CONVECTOR	Convettore	
+IfcSpaceHeater	RADIATOR	Radiatore	
+IfcSpaceHeater	USERDEFINED	Tipo definito dall'utente	
+IfcSpaceHeater	NOTDEFINED	Tipo non definito	
+IfcSpatialZone	CONSTRUCTION	Zona di costruzione	
+IfcSpatialZone	FIRESAFETY	Zona di sicurezza antincendio	
+IfcSpatialZone	INTERFERENCE	Zona di interferenza	
+IfcSpatialZone	LIGHTING	Zona di illuminazione	
+IfcSpatialZone	OCCUPANCY	Zona di occupazione	
+IfcSpatialZone	RESERVATION	Zona riservata	
+IfcSpatialZone	SECURITY	Zona di sicurezza	
+IfcSpatialZone	THERMAL	Zona termica	
+IfcSpatialZone	TRANSPORT	Zona di trasporto	
+IfcSpatialZone	VENTILATION	Zona di ventilazione	
+IfcSpatialZone	USERDEFINED	Tipo definito dall'utente	
+IfcSpatialZone	NOTDEFINED	Tipo non definito	
+IfcStackTerminal	BIRDCAGE	Gabbia antivolatili	
+IfcStackTerminal	COWL	Cappello antivento (comignolo)	
+IfcStackTerminal	RAINWATERHOPPER	Bocchettone / imbuto pluviale	
+IfcStackTerminal	USERDEFINED	Tipo definito dall'utente	
+IfcStackTerminal	NOTDEFINED	Tipo non definito	
+IfcStair	CURVED_RUN_STAIR	Scala curva a rampa unica	
+IfcStair	DOUBLE_RETURN_STAIR	Scala a tenaglia (doppio ritorno)	
+IfcStair	HALF_TURN_STAIR	Scala a U con pianerottolo	
+IfcStair	HALF_WINDING_STAIR	Scala a U con gradini a ventaglio	
+IfcStair	LADDER	Scala a pioli	
+IfcStair	QUARTER_TURN_STAIR	Scala a L con pianerottolo	
+IfcStair	QUARTER_WINDING_STAIR	Scala a L con gradini a ventaglio	
+IfcStair	SPIRAL_STAIR	Scala a chiocciola	
+IfcStair	STRAIGHT_RUN_STAIR	Scala rettilinea a rampa unica	
+IfcStair	THREE_QUARTER_TURN_STAIR	Scala con svolta di 270° e pianerottoli	
+IfcStair	THREE_QUARTER_WINDING_STAIR	Scala con svolta di 270° a ventaglio	
+IfcStair	TWO_CURVED_RUN_STAIR	Scala curva a due rampe	
+IfcStair	TWO_QUARTER_TURN_STAIR	Scala a U con due pianerottoli	
+IfcStair	TWO_QUARTER_WINDING_STAIR	Scala a U con due ventagli	
+IfcStair	TWO_STRAIGHT_RUN_STAIR	Scala rettilinea a due rampe	
+IfcStair	USERDEFINED	Tipo definito dall'utente	
+IfcStair	NOTDEFINED	Tipo non definito	
+IfcStairFlight	CURVED	Rampa curva	
+IfcStairFlight	FREEFORM	Rampa a forma libera	
+IfcStairFlight	SPIRAL	Rampa elicoidale	
+IfcStairFlight	STRAIGHT	Rampa rettilinea	
+IfcStairFlight	WINDER	Rampa con ventaglio	
+IfcStairFlight	USERDEFINED	Tipo definito dall'utente	
+IfcStairFlight	NOTDEFINED	Tipo non definito	
+IfcStructuralCurveAction	CONST	Distribuzione costante	
+IfcStructuralCurveAction	DISCRETE	Distribuzione discreta	
+IfcStructuralCurveAction	EQUIDISTANT	Distribuzione per campioni equidistanti	
+IfcStructuralCurveAction	LINEAR	Distribuzione lineare	
+IfcStructuralCurveAction	PARABOLA	Distribuzione parabolica	
+IfcStructuralCurveAction	POLYGONAL	Distribuzione poligonale	
+IfcStructuralCurveAction	SINUS	Distribuzione sinusoidale	
+IfcStructuralCurveAction	USERDEFINED	Tipo definito dall'utente	
+IfcStructuralCurveAction	NOTDEFINED	Tipo non definito	
+IfcStructuralCurveConnection	—	Connessione strutturale lineare	
+IfcStructuralCurveMember	CABLE	Cavo	
+IfcStructuralCurveMember	COMPRESSION_MEMBER	Elemento a compressione	
+IfcStructuralCurveMember	PIN_JOINED_MEMBER	Elemento con giunti cerniera	
+IfcStructuralCurveMember	RIGID_JOINED_MEMBER	Elemento con giunti rigidi	
+IfcStructuralCurveMember	TENSION_MEMBER	Elemento a trazione	
+IfcStructuralCurveMember	USERDEFINED	Tipo definito dall'utente	
+IfcStructuralCurveMember	NOTDEFINED	Tipo non definito	
+IfcStructuralCurveMemberVarying	CABLE	Cavo	
+IfcStructuralCurveMemberVarying	COMPRESSION_MEMBER	Elemento a compressione	
+IfcStructuralCurveMemberVarying	PIN_JOINED_MEMBER	Elemento con giunti cerniera	
+IfcStructuralCurveMemberVarying	RIGID_JOINED_MEMBER	Elemento con giunti rigidi	
+IfcStructuralCurveMemberVarying	TENSION_MEMBER	Elemento a trazione	
+IfcStructuralCurveMemberVarying	USERDEFINED	Tipo definito dall'utente	
+IfcStructuralCurveMemberVarying	NOTDEFINED	Tipo non definito	
+IfcStructuralCurveReaction	CONST	Distribuzione costante	
+IfcStructuralCurveReaction	DISCRETE	Distribuzione discreta	
+IfcStructuralCurveReaction	EQUIDISTANT	Distribuzione per campioni equidistanti	
+IfcStructuralCurveReaction	LINEAR	Distribuzione lineare	
+IfcStructuralCurveReaction	PARABOLA	Distribuzione parabolica	
+IfcStructuralCurveReaction	POLYGONAL	Distribuzione poligonale	
+IfcStructuralCurveReaction	SINUS	Distribuzione sinusoidale	
+IfcStructuralCurveReaction	USERDEFINED	Tipo definito dall'utente	
+IfcStructuralCurveReaction	NOTDEFINED	Tipo non definito	
+IfcStructuralLinearAction	CONST	Distribuzione costante	
+IfcStructuralLinearAction	DISCRETE	Distribuzione discreta	
+IfcStructuralLinearAction	EQUIDISTANT	Distribuzione per campioni equidistanti	
+IfcStructuralLinearAction	LINEAR	Distribuzione lineare	
+IfcStructuralLinearAction	PARABOLA	Distribuzione parabolica	
+IfcStructuralLinearAction	POLYGONAL	Distribuzione poligonale	
+IfcStructuralLinearAction	SINUS	Distribuzione sinusoidale	
+IfcStructuralLinearAction	USERDEFINED	Tipo definito dall'utente	
+IfcStructuralLinearAction	NOTDEFINED	Tipo non definito	
+IfcStructuralPlanarAction	BILINEAR	Distribuzione bilineare	
+IfcStructuralPlanarAction	CONST	Distribuzione costante	
+IfcStructuralPlanarAction	DISCRETE	Distribuzione discreta	
+IfcStructuralPlanarAction	ISOCONTOUR	Distribuzione per isolinee	
+IfcStructuralPlanarAction	USERDEFINED	Tipo definito dall'utente	
+IfcStructuralPlanarAction	NOTDEFINED	Tipo non definito	
+IfcStructuralPointAction	—	Azione strutturale puntuale	
+IfcStructuralPointConnection	—	Connessione strutturale puntuale	
+IfcStructuralPointReaction	—	Reazione strutturale puntuale	
+IfcStructuralSurfaceAction	BILINEAR	Distribuzione bilineare	
+IfcStructuralSurfaceAction	CONST	Distribuzione costante	
+IfcStructuralSurfaceAction	DISCRETE	Distribuzione discreta	
+IfcStructuralSurfaceAction	ISOCONTOUR	Distribuzione per isolinee	
+IfcStructuralSurfaceAction	USERDEFINED	Tipo definito dall'utente	
+IfcStructuralSurfaceAction	NOTDEFINED	Tipo non definito	
+IfcStructuralSurfaceConnection	—	Connessione strutturale superficiale	
+IfcStructuralSurfaceMember	BENDING_ELEMENT	Elemento flessionale	
+IfcStructuralSurfaceMember	MEMBRANE_ELEMENT	Elemento membranale	
+IfcStructuralSurfaceMember	SHELL	Elemento a guscio	
+IfcStructuralSurfaceMember	USERDEFINED	Tipo definito dall'utente	
+IfcStructuralSurfaceMember	NOTDEFINED	Tipo non definito	
+IfcStructuralSurfaceMemberVarying	BENDING_ELEMENT	Elemento flessionale	
+IfcStructuralSurfaceMemberVarying	MEMBRANE_ELEMENT	Elemento membranale	
+IfcStructuralSurfaceMemberVarying	SHELL	Elemento a guscio	
+IfcStructuralSurfaceMemberVarying	USERDEFINED	Tipo definito dall'utente	
+IfcStructuralSurfaceMemberVarying	NOTDEFINED	Tipo non definito	
+IfcStructuralSurfaceReaction	BILINEAR	Distribuzione bilineare	
+IfcStructuralSurfaceReaction	CONST	Distribuzione costante	
+IfcStructuralSurfaceReaction	DISCRETE	Distribuzione discreta	
+IfcStructuralSurfaceReaction	ISOCONTOUR	Distribuzione per isolinee	
+IfcStructuralSurfaceReaction	USERDEFINED	Tipo definito dall'utente	
+IfcStructuralSurfaceReaction	NOTDEFINED	Tipo non definito	
+IfcSurfaceFeature	DEFECT	Difetto superficiale	
+IfcSurfaceFeature	HATCHMARKING	Marcatura a tratteggio	
+IfcSurfaceFeature	LINEMARKING	Marcatura lineare	
+IfcSurfaceFeature	MARK	Segno di riferimento	
+IfcSurfaceFeature	NONSKIDSURFACING	Trattamento antiscivolo	
+IfcSurfaceFeature	PAVEMENTSURFACEMARKING	Segnaletica orizzontale	
+IfcSurfaceFeature	RUMBLESTRIP	Banda sonora	
+IfcSurfaceFeature	SYMBOLMARKING	Marcatura simbolica	
+IfcSurfaceFeature	TAG	Etichetta	
+IfcSurfaceFeature	TRANSVERSERUMBLESTRIP	Banda sonora trasversale	
+IfcSurfaceFeature	TREATMENT	Trattamento superficiale	
+IfcSurfaceFeature	USERDEFINED	Tipo definito dall'utente	
+IfcSurfaceFeature	NOTDEFINED	Tipo non definito	
+IfcSwitchingDevice	CONTACTOR	Contattore	
+IfcSwitchingDevice	DIMMERSWITCH	Dimmer	
+IfcSwitchingDevice	EMERGENCYSTOP	Pulsante di arresto di emergenza	
+IfcSwitchingDevice	KEYPAD	Tastierino	
+IfcSwitchingDevice	MOMENTARYSWITCH	Pulsante (interruttore momentaneo)	
+IfcSwitchingDevice	RELAY	Relè	
+IfcSwitchingDevice	SELECTORSWITCH	Interruttore selettore	
+IfcSwitchingDevice	STARTER	Avviatore	
+IfcSwitchingDevice	START_AND_STOP_EQUIPMENT	Dispositivo di marcia/arresto	
+IfcSwitchingDevice	SWITCHDISCONNECTOR	Interruttore-sezionatore	
+IfcSwitchingDevice	TOGGLESWITCH	Interruttore a leva	
+IfcSwitchingDevice	USERDEFINED	Tipo definito dall'utente	
+IfcSwitchingDevice	NOTDEFINED	Tipo non definito	
+IfcSystemFurnitureElement	PANEL	Pannello	
+IfcSystemFurnitureElement	SUBRACK	Sottorack	
+IfcSystemFurnitureElement	WORKSURFACE	Superficie di lavoro	
+IfcSystemFurnitureElement	USERDEFINED	Tipo definito dall'utente	
+IfcSystemFurnitureElement	NOTDEFINED	Tipo non definito	
+IfcTank	BASIN	Vasca aperta	
+IfcTank	BREAKPRESSURE	Vasca di rottura di pressione	
+IfcTank	EXPANSION	Vaso di espansione	
+IfcTank	FEEDANDEXPANSION	Vaso di alimentazione ed espansione	
+IfcTank	OILRETENTIONTRAY	Vasca di contenimento oli	
+IfcTank	PRESSUREVESSEL	Recipiente in pressione	
+IfcTank	STORAGE	Serbatoio di accumulo	
+IfcTank	VESSEL	Recipiente chiuso	
+IfcTank	USERDEFINED	Tipo definito dall'utente	
+IfcTank	NOTDEFINED	Tipo non definito	
+IfcTendon	BAR	Barra di precompressione	
+IfcTendon	COATED	Cavo rivestito	
+IfcTendon	STRAND	Trefolo	
+IfcTendon	WIRE	Filo di acciaio	
+IfcTendon	USERDEFINED	Tipo definito dall'utente	
+IfcTendon	NOTDEFINED	Tipo non definito	
+IfcTendonAnchor	COUPLER	Giunto di accoppiamento	
+IfcTendonAnchor	FIXED_END	Testa fissa	
+IfcTendonAnchor	TENSIONING_END	Testa di tesatura	
+IfcTendonAnchor	USERDEFINED	Tipo definito dall'utente	
+IfcTendonAnchor	NOTDEFINED	Tipo non definito	
+IfcTendonConduit	COUPLER	Giunto di guaina	
+IfcTendonConduit	DIABOLO	Diabolo (deviatore)	
+IfcTendonConduit	DUCT	Guaina	
+IfcTendonConduit	GROUTING_DUCT	Tubo di iniezione / sfiato	
+IfcTendonConduit	TRUMPET	Trombino	
+IfcTendonConduit	USERDEFINED	Tipo definito dall'utente	
+IfcTendonConduit	NOTDEFINED	Tipo non definito	
+IfcTrackElement	BLOCKINGDEVICE	Dispositivo di bloccaggio	
+IfcTrackElement	DERAILER	Deragliatore	
+IfcTrackElement	FROG	Cuore di scambio	
+IfcTrackElement	HALF_SET_OF_BLADES	Mezza coppia di aghi	
+IfcTrackElement	SLEEPER	Traversa ferroviaria	
+IfcTrackElement	SPEEDREGULATOR	Regolatore di velocità	
+IfcTrackElement	TRACKENDOFALIGNMENT	Fine tracciato ferroviario	
+IfcTrackElement	VEHICLESTOP	Paraurti di fine binario	
+IfcTrackElement	USERDEFINED	Tipo definito dall'utente	
+IfcTrackElement	NOTDEFINED	Tipo non definito	
+IfcTransformer	CHOPPER	Chopper	
+IfcTransformer	COMBINED	Trasformatore combinato	
+IfcTransformer	CURRENT	Trasformatore di corrente	
+IfcTransformer	FREQUENCY	Trasformatore di frequenza	
+IfcTransformer	INVERTER	Inverter	
+IfcTransformer	RECTIFIER	Raddrizzatore	
+IfcTransformer	VOLTAGE	Trasformatore di tensione	
+IfcTransformer	USERDEFINED	Tipo definito dall'utente	
+IfcTransformer	NOTDEFINED	Tipo non definito	
+IfcTransportElement	CRANEWAY	Via di corsa per gru	
+IfcTransportElement	ELEVATOR	Ascensore	
+IfcTransportElement	ESCALATOR	Scala mobile	
+IfcTransportElement	HAULINGGEAR	Argano di traino	
+IfcTransportElement	LIFTINGGEAR	Apparecchio di sollevamento	
+IfcTransportElement	MOVINGWALKWAY	Tapis roulant	
+IfcTransportElement	USERDEFINED	Tipo definito dall'utente	
+IfcTransportElement	NOTDEFINED	Tipo non definito	
+IfcTubeBundle	FINNED	Fascio tubiero alettato	
+IfcTubeBundle	USERDEFINED	Tipo definito dall'utente	
+IfcTubeBundle	NOTDEFINED	Tipo non definito	
+IfcUnitaryControlElement	ALARMPANEL	Pannello allarmi	
+IfcUnitaryControlElement	BASESTATIONCONTROLLER	Controllore stazione base	
+IfcUnitaryControlElement	COMBINED	Elemento combinato	
+IfcUnitaryControlElement	CONTROLPANEL	Pannello controllo	
+IfcUnitaryControlElement	GASDETECTIONPANEL	Pannello rilevamento gas	
+IfcUnitaryControlElement	HUMIDISTAT	Umidostato	
+IfcUnitaryControlElement	INDICATORPANEL	Pannello indicatori	
+IfcUnitaryControlElement	MIMICPANEL	Pannello sinottico	
+IfcUnitaryControlElement	THERMOSTAT	Termostato	
+IfcUnitaryControlElement	WEATHERSTATION	Stazione meteo	
+IfcUnitaryControlElement	USERDEFINED	Tipo definito dall'utente	
+IfcUnitaryControlElement	NOTDEFINED	Tipo non definito	
+IfcUnitaryEquipment	AIRCONDITIONINGUNIT	Unità di condizionamento	
+IfcUnitaryEquipment	AIRHANDLER	Unità di trattamento aria	
+IfcUnitaryEquipment	DEHUMIDIFIER	Deumidificatore	
+IfcUnitaryEquipment	ROOFTOPUNIT	Unità rooftop	
+IfcUnitaryEquipment	SPLITSYSTEM	Sistema split	
+IfcUnitaryEquipment	USERDEFINED	Tipo definito dall'utente	
+IfcUnitaryEquipment	NOTDEFINED	Tipo non definito	
+IfcValve	AIRRELEASE	Valvola di sfogo aria	
+IfcValve	ANTIVACUUM	Valvola antivuoto	
+IfcValve	CHANGEOVER	Valvola di commutazione	
+IfcValve	CHECK	Valvola di ritegno	
+IfcValve	COMMISSIONING	Valvola di taratura	
+IfcValve	DIVERTING	Valvola deviatrice	
+IfcValve	DOUBLECHECK	Disconnettore / doppio ritegno	
+IfcValve	DOUBLEREGULATING	Valvola a doppia regolazione	
+IfcValve	DRAWOFFCOCK	Rubinetto di scarico	
+IfcValve	FAUCET	Rubinetto di erogazione	
+IfcValve	FLUSHING	Flussometro / valvola di cacciata	
+IfcValve	GASCOCK	Valvola gas	
+IfcValve	GASTAP	Rubinetto gas	
+IfcValve	ISOLATING	Valvola di intercettazione	
+IfcValve	MIXING	Valvola di miscelazione	
+IfcValve	PRESSUREREDUCING	Valvola riduttrice di pressione	
+IfcValve	PRESSURERELIEF	Valvola di sicurezza	
+IfcValve	REGULATING	Valvola di regolazione	
+IfcValve	SAFETYCUTOFF	Valvola di intercettazione di sicurezza	
+IfcValve	STEAMTRAP	Scaricatore di condensa	
+IfcValve	STOPCOCK	Rubinetto di arresto	
+IfcValve	USERDEFINED	Tipo definito dall'utente	
+IfcValve	NOTDEFINED	Tipo non definito	
+IfcVehicle	CARGO	Unità di carico	
+IfcVehicle	ROLLINGSTOCK	Materiale rotabile	
+IfcVehicle	VEHICLE	Veicolo generico	
+IfcVehicle	VEHICLEAIR	Veicolo aereo	
+IfcVehicle	VEHICLEMARINE	Veicolo marino	
+IfcVehicle	VEHICLETRACKED	Veicolo cingolato	
+IfcVehicle	VEHICLEWHEELED	Veicolo su ruote	
+IfcVehicle	USERDEFINED	Tipo definito dall'utente	
+IfcVehicle	NOTDEFINED	Tipo non definito	
+IfcVibrationDamper	AXIAL_YIELD	Smorzatore a snervamento assiale	
+IfcVibrationDamper	BENDING_YIELD	Smorzatore a snervamento flessionale	
+IfcVibrationDamper	FRICTION	Smorzatore ad attrito	
+IfcVibrationDamper	RUBBER	Smorzatore in gomma / elastomerico	
+IfcVibrationDamper	SHEAR_YIELD	Smorzatore a snervamento a taglio	
+IfcVibrationDamper	VISCOUS	Smorzatore viscoso	
+IfcVibrationDamper	USERDEFINED	Tipo definito dall'utente	
+IfcVibrationDamper	NOTDEFINED	Tipo non definito	
+IfcVibrationIsolator	BASE	Isolatore alla base (sismico)	
+IfcVibrationIsolator	COMPRESSION	Isolatore a compressione	
+IfcVibrationIsolator	SPRING	Isolatore a molla	
+IfcVibrationIsolator	USERDEFINED	Tipo definito dall'utente	
+IfcVibrationIsolator	NOTDEFINED	Tipo non definito	
+IfcVirtualElement	BOUNDARY	Elemento virtuale di confine	
+IfcVirtualElement	CLEARANCE	Elemento virtuale di ingombro	
+IfcVirtualElement	PROVISIONFORVOID	Predisposizione per vuoto	
+IfcVirtualElement	USERDEFINED	Tipo definito dall'utente	
+IfcVirtualElement	NOTDEFINED	Tipo non definito	
+IfcVoidingFeature	CHAMFER	Smusso	
+IfcVoidingFeature	CUTOUT	Scasso	
+IfcVoidingFeature	EDGE	Modifica di bordo	
+IfcVoidingFeature	HOLE	Foro	
+IfcVoidingFeature	MITER	Taglio a mitra	
+IfcVoidingFeature	NOTCH	Intaglio	
+IfcVoidingFeature	USERDEFINED	Tipo definito dall'utente	
+IfcVoidingFeature	NOTDEFINED	Tipo non definito	
+IfcWall	ELEMENTEDWALL	Parete a telaio (stratificata)	
+IfcWall	MOVABLE	Parete mobile	
+IfcWall	PARAPET	Parapetto in muratura	
+IfcWall	PARTITIONING	Parete divisoria	
+IfcWall	PLUMBINGWALL	Parete attrezzata / cavedio impianti	
+IfcWall	POLYGONAL	Parete poligonale	
+IfcWall	RETAININGWALL	Muro di sostegno	
+IfcWall	SHEAR	Parete di taglio (setto)	
+IfcWall	SOLIDWALL	Muro pieno	
+IfcWall	STANDARD	Parete standard	
+IfcWall	WAVEWALL	Muro paraonde	
+IfcWall	USERDEFINED	Tipo definito dall'utente	
+IfcWall	NOTDEFINED	Tipo non definito	
+IfcWallStandardCase	ELEMENTEDWALL	Parete a telaio (stratificata)	
+IfcWallStandardCase	MOVABLE	Parete mobile	
+IfcWallStandardCase	PARAPET	Parapetto in muratura	
+IfcWallStandardCase	PARTITIONING	Parete divisoria	
+IfcWallStandardCase	PLUMBINGWALL	Parete attrezzata / cavedio impianti	
+IfcWallStandardCase	POLYGONAL	Parete poligonale	
+IfcWallStandardCase	RETAININGWALL	Muro di sostegno	
+IfcWallStandardCase	SHEAR	Parete di taglio (setto)	
+IfcWallStandardCase	SOLIDWALL	Muro pieno	
+IfcWallStandardCase	STANDARD	Parete standard	
+IfcWallStandardCase	WAVEWALL	Muro paraonde	
+IfcWallStandardCase	USERDEFINED	Tipo definito dall'utente	
+IfcWallStandardCase	NOTDEFINED	Tipo non definito	
+IfcWasteTerminal	FLOORTRAP	Sifone a pavimento	
+IfcWasteTerminal	FLOORWASTE	Scarico a pavimento	
+IfcWasteTerminal	GULLYSUMP	Caditoia senza sifone	
+IfcWasteTerminal	GULLYTRAP	Caditoia sifonata	
+IfcWasteTerminal	ROOFDRAIN	Bocchettone di scarico a tetto	
+IfcWasteTerminal	WASTEDISPOSALUNIT	Trituratore di rifiuti	
+IfcWasteTerminal	WASTETRAP	Sifone di scarico	
+IfcWasteTerminal	USERDEFINED	Tipo definito dall'utente	
+IfcWasteTerminal	NOTDEFINED	Tipo non definito	
+IfcWindow	LIGHTDOME	Cupolino / lucernario a cupola	
+IfcWindow	SKYLIGHT	Finestra per tetti / lucernario	
+IfcWindow	WINDOW	Finestra	
+IfcWindow	USERDEFINED	Tipo definito dall'utente	
+IfcWindow	NOTDEFINED	Tipo non definito	
