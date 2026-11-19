@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>La libreria IFC 4.3 · I manuali di BIM News</title>
+<meta name="description" content="Tutte le classi IFC 4.3 del ramo IfcProduct con i loro PredefinedType: ricerca, mappa mentale apribile, descrizioni in italiano e inglese, Excel e JSON da scaricare gratis.">
+<link rel="stylesheet" href="manuale.css">
+<script>try{var t=localStorage.getItem("tema-2026");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+<style>
+/* ricerca */
+.lf-search{display:flex;gap:.5rem;margin-top:1rem;flex-wrap:wrap}
+.lf-search input{flex:1 1 16rem;min-width:0;font:inherit;font-size:1.05rem;padding:.7rem 1rem;border:1px solid var(--line);border-radius:999px;background:var(--surface);color:var(--ink)}
+.lf-search input:focus{outline:2px solid var(--accent);outline-offset:1px}
+.lf-hint{font-size:.85rem;color:var(--muted);margin:.5rem 0 0}
+.lf-hint button{font:inherit;font-size:.85rem;background:none;border:0;color:var(--accent);cursor:pointer;padding:0 .15rem;text-decoration:underline;text-underline-offset:3px}
+.lf-res{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:1rem;margin-top:1.2rem}
+.lf-list{list-style:none;margin:0;padding:0;border:1px solid var(--line);border-radius:var(--r);background:var(--surface);max-height:32rem;overflow:auto}
+.lf-list li{margin:0;border-bottom:1px solid var(--line)}
+.lf-list li:last-child{border-bottom:0}
+.lf-list button{all:unset;box-sizing:border-box;display:block;width:100%;padding:.6rem .9rem;cursor:pointer}
+.lf-list button:hover,.lf-list button[aria-current="true"]{background:var(--soft)}
+.lf-list b{font-family:var(--mono);font-size:.86rem}
+.lf-list .pt{font-family:var(--mono);font-size:.78rem;color:var(--a4);margin-left:.35rem}
+.lf-list small{display:block;color:var(--muted);font-size:.84rem;line-height:1.35}
+.lf-empty{padding:1rem;color:var(--muted)}
+.lf-card{border:1px solid var(--line);border-radius:var(--r);background:var(--surface);padding:1.1rem 1.2rem;box-shadow:var(--shadow);align-self:start;position:sticky;top:4.2rem}
+.lf-card h3{margin:0 0 .2rem;font-family:var(--mono);font-size:1.1rem;word-break:break-word}
+.lf-card .names{margin:0 0 .8rem;color:var(--muted)}
+.lf-card .lang{display:grid;gap:.6rem;margin-bottom:.9rem}
+.lf-card .lang p{margin:0}
+.lf-card .lang span{font-family:var(--mono);font-size:.68rem;letter-spacing:.06em;color:var(--muted);margin-right:.35rem}
+.lf-crumb{font-family:var(--mono);font-size:.76rem;color:var(--muted);margin:0 0 .8rem;line-height:1.7}
+.lf-crumb button{all:unset;cursor:pointer;color:var(--accent)}
+.lf-crumb button:hover{text-decoration:underline}
+.lf-kv{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:.3rem .7rem;align-items:center;font-size:.9rem;margin:.6rem 0}
+.lf-kv dt{color:var(--muted)}
+.lf-kv dd{margin:0;font-family:var(--mono);font-size:.84rem;word-break:break-all}
+.lf-cp{font-family:var(--mono);font-size:.7rem;border:1px solid var(--line);background:var(--bg);color:var(--accent);border-radius:999px;padding:.1rem .55rem;cursor:pointer}
+.lf-dep{background:var(--a3s);color:var(--ink);border-left:4px solid var(--a3);border-radius:8px;padding:.45rem .7rem;font-size:.9rem;margin:.6rem 0}
+.lf-vals{display:flex;flex-wrap:wrap;gap:.3rem;margin:.4rem 0 .8rem}
+.lf-vals button{font-family:var(--mono);font-size:.72rem;border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:999px;padding:.15rem .55rem;cursor:pointer}
+.lf-vals button:hover,.lf-vals button[aria-pressed="true"]{border-color:var(--a4);color:var(--a4)}
+.lf-vals button.x{text-decoration:line-through;opacity:.7}
+.lf-links{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.6rem}
+.tag-a{font-family:var(--mono);font-size:.68rem;padding:.12rem .5rem;border-radius:999px;background:var(--a4s);color:var(--a4);margin-left:.4rem;vertical-align:middle}
+/* mappa mentale */
+.mm-bar{display:flex;flex-wrap:wrap;gap:.4rem;margin:.6rem 0}
+.mm-bar button{font-family:var(--mono);font-size:.76rem;border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:.35rem .8rem;border-radius:999px;cursor:pointer}
+.mm-bar button:hover{border-color:var(--accent);color:var(--accent)}
+.mm-wrap{position:relative;overflow:auto;max-height:44rem;padding:1rem .5rem 1.5rem;border:1px solid var(--line);border-radius:var(--r);background:var(--bg);box-shadow:var(--shadow)}
+.mm-lines{position:absolute;left:0;top:0;pointer-events:none;overflow:visible}
+.mm-lines path{fill:none;stroke-width:2;stroke-linecap:round;opacity:.5}
+.mm,.mm ul{list-style:none;margin:0;padding:0}
+.mm li{display:flex;align-items:flex-start;gap:0 2.4rem;padding:.18rem 0;margin:0}
+.mm ul{display:flex;flex-direction:column;justify-content:flex-start}
+.mm li.closed>ul{display:none}
+.mm-node{position:relative;display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:0 .5rem;min-width:11rem;max-width:24rem;padding:.4rem .5rem .4rem .7rem;border:1px solid var(--line);border-left:4px solid var(--c,var(--accent));border-radius:11px;background:var(--surface);box-shadow:var(--shadow);flex:none}
+.mm-node button.nm{all:unset;cursor:pointer;font-family:var(--mono);font-weight:700;font-size:.8rem;line-height:1.25;color:var(--ink);overflow-wrap:anywhere}
+.mm-node button.nm:hover{color:var(--accent);text-decoration:underline}
+.mm-node small{grid-column:1;font-size:.74rem;color:var(--muted);line-height:1.25}
+.mm-node.abs{border-style:dashed;border-left-style:solid}
+.mm-node.val{min-width:9rem;border-left-color:var(--a4);padding:.25rem .5rem .25rem .6rem}
+.mm-node.val button.nm{font-size:.72rem;font-weight:600}
+.mm-node.hit{outline:3px solid var(--a3);outline-offset:2px}
+.mm-node.dep button.nm{text-decoration:line-through}
+.mm-tog{grid-row:span 2;grid-column:2;width:1.55rem;height:1.55rem;border-radius:50%;border:1px solid var(--line);background:var(--bg);color:var(--accent);font:700 .95rem/1 var(--mono);cursor:pointer;display:grid;place-items:center;padding:0}
+.mm>li>.mm-node{background:var(--accent);border-color:var(--accent)}
+.mm>li>.mm-node button.nm,.mm>li>.mm-node small{color:#fff}
+:root[data-theme="dark"] .mm>li>.mm-node button.nm,:root[data-theme="dark"] .mm>li>.mm-node small{color:#0f1a2b}
+.legend{display:flex;flex-wrap:wrap;gap:.4rem 1.2rem;font-size:.82rem;color:var(--muted);margin:.4rem 0 0}
+.legend i{display:inline-block;width:1.4rem;height:.9rem;border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:4px;vertical-align:-2px;margin-right:.35rem;background:var(--surface)}
+.legend i.abs{border-style:dashed;border-left-style:solid}
+.legend i.val{border-left-color:var(--a4)}
+.dl{display:flex;flex-wrap:wrap;gap:.6rem;margin:1rem 0}
+.contact{border:1px dashed var(--accent);border-radius:var(--r);padding:.9rem 1.1rem;background:var(--soft)}
+@media (max-width:980px){.lf-res{grid-template-columns:1fr}.lf-card{position:static}}
+@media (max-width:640px){
+  .mm li{display:block;padding:.15rem 0}
+  .mm ul{display:block;margin-left:.7rem;padding-left:.7rem;border-left:2px solid var(--line)}
+  .mm-lines{display:none}
+  .mm-node{max-width:none;min-width:0;margin:.15rem 0}
+}
+</style>
+</head>
+<body>
+<div class="topbar"><div class="in"><a class="back" href="../#studio">← BIM News · Nello studio</a><span class="sp"></span><a class="btn ghost noprint" href="#c2">Mappa mentale</a><a class="btn noprint" href="libreria-ifc/IFC-4.3-library.xlsx" download>Scarica l'Excel</a></div></div>
+<div class="layout">
+<nav class="toc" aria-label="Indice">
+  <b>Indice</b>
+  <ol>
+    <li><a href="#c1">1 · Cerca una classe</a></li>
+    <li><a href="#c2">2 · La mappa mentale</a></li>
+    <li><a href="#c3">3 · A che cosa serve</a></li>
+    <li><a href="#c4">4 · Come si legge una classe IFC</a></li>
+    <li><a href="#c5">5 · Scarica la libreria</a></li>
+    <li><a href="#c6">6 · Fonti, testi e lingue</a></li>
+  </ol>
+</nav>
+<main>
+<header class="cover">
+  <div>
+    <span class="kick">I manuali di BIM News · Nello studio</span>
+    <h1>La libreria IFC 4.3</h1>
+    <p>Tutte le classi IFC degli oggetti di un modello, con i loro sottotipi (PredefinedType), spiegate in parole semplici in italiano e in inglese. Si cerca, si esplora come una mappa mentale e si scarica in Excel o JSON, gratis.</p>
+    <div class="meta"><span class="pill">IFC 4.3 ADD2 · ISO 16739-1:2024</span><span class="pill" id="pill-n">214 classi · 1422 righe</span><span class="pill">Excel · JSON</span><span class="pill">Edizione novembre 2026</span></div>
+  </div>
+  <svg viewBox="0 0 360 240" role="img" aria-label="Un albero di classi: IfcProduct si divide in IfcElement e IfcSpatialElement, poi in IfcWall e IfcSpace">
+    <rect x="10" y="10" width="340" height="220" rx="22" style="fill:var(--surface);stroke:var(--line)"/>
+    <g style="fill:none;stroke:var(--accent);stroke-width:2;opacity:.6">
+      <path d="M112 120C140 120 140 70 168 70"/><path d="M112 120C140 120 140 170 168 170"/>
+      <path d="M262 70C280 70 280 45 296 45"/><path d="M262 70C280 70 280 95 296 95"/><path d="M262 170C280 170 280 170 296 170"/>
+    </g>
+    <g style="font-family:var(--mono);font-size:10px;font-weight:700">
+      <rect x="24" y="104" width="88" height="32" rx="8" style="fill:var(--accent)"/><text x="68" y="124" text-anchor="middle" style="fill:var(--surface)">IfcProduct</text>
+      <rect x="168" y="54" width="94" height="32" rx="8" style="fill:var(--surface);stroke:var(--line)"/><rect x="168" y="54" width="4" height="32" style="fill:var(--accent)"/><text x="217" y="74" text-anchor="middle" style="fill:var(--ink)">IfcElement</text>
+      <rect x="168" y="154" width="94" height="32" rx="8" style="fill:var(--surface);stroke:var(--line)"/><rect x="168" y="154" width="4" height="32" style="fill:var(--accent)"/><text x="217" y="174" text-anchor="middle" style="fill:var(--ink)">IfcSpatial…</text>
+      <rect x="296" y="33" width="46" height="24" rx="6" style="fill:var(--a4s)"/><text x="319" y="49" text-anchor="middle" style="fill:var(--a4);font-size:8px">IfcWall</text>
+      <rect x="296" y="83" width="46" height="24" rx="6" style="fill:var(--a4s)"/><text x="319" y="99" text-anchor="middle" style="fill:var(--a4);font-size:8px">IfcDoor</text>
+      <rect x="296" y="158" width="46" height="24" rx="6" style="fill:var(--a4s)"/><text x="319" y="174" text-anchor="middle" style="fill:var(--a4);font-size:8px">IfcSpace</text>
+    </g>
+  </svg>
+</header>
+
+<section class="ch" id="c1">
+  <div class="ch-h"><span class="ch-n">1</span><h2>Cerca una classe</h2></div>
+  <p class="lead">Scrivi che cosa stai modellando, in italiano o in inglese, oppure il nome IFC: la ricerca guarda nomi, sottotipi e descrizioni.</p>
+  <form class="lf-search" role="search" id="lf-form">
+    <label for="q" class="sr" style="position:absolute;left:-9999px">Cerca nella libreria IFC</label>
+    <input id="q" type="search" placeholder="es. muro di sostegno, damper, IfcSlab, sprinkler…" autocomplete="off" spellcheck="false">
+    <button class="btn" type="submit">Cerca</button>
+  </form>
+  <p class="lf-hint">Prova: <button type="button" data-q="muro">muro</button> · <button type="button" data-q="controsoffitto">controsoffitto</button> · <button type="button" data-q="pile">pile</button> · <button type="button" data-q="IfcSpace">IfcSpace</button> · <button type="button" data-q="deprecat">deprecati</button></p>
+  <div class="lf-res">
+    <ul class="lf-list" id="lf-list" aria-label="Risultati"><li class="lf-empty">Carico la libreria…</li></ul>
+    <div class="lf-card" id="lf-card" aria-live="polite"><p class="names">Scegli un risultato per vedere la scheda.</p></div>
+  </div>
+</section>
+
+<section class="ch" id="c2">
+  <div class="ch-h"><span class="ch-n">2</span><h2>La mappa mentale</h2></div>
+  <p>Tutto il ramo IfcProduct come un albero: ogni classe eredita dalla classe a sinistra. Apri i rami con <b>+</b>, clicca un nome per la sua scheda. Le classi con un sottotipo si aprono sui loro PredefinedType.</p>
+  <div class="mm-bar"><button type="button" id="mm-lv1">Primo livello</button><button type="button" id="mm-cls">Tutte le classi</button><button type="button" id="mm-all">Apri tutto (anche i sottotipi)</button></div>
+  <div class="mm-wrap" id="mm-wrap"><svg class="mm-lines" id="mm-lines" aria-hidden="true"></svg><ul class="mm" id="mm" role="tree" aria-label="Mappa delle classi IFC"></ul></div>
+  <p class="legend"><span><i></i>classe che si usa</span><span><i class="abs"></i>classe astratta (solo per raggruppare)</span><span><i class="val"></i>PredefinedType</span><span><s>barrato</s> = deprecato</span></p>
+</section>
+
+<section class="ch" id="c3">
+  <div class="ch-h"><span class="ch-n">3</span><h2>A che cosa serve</h2></div>
+  <p>La documentazione ufficiale di buildingSMART è completa ma lunga da consultare: per sapere quale classe dare a un elemento bisogna risalire la gerarchia pagina per pagina. Questa libreria mette tutto su una riga per classe e sottotipo, con due righe di spiegazione. Tre usi pratici:</p>
+  <div class="grid3">
+    <div class="card"><h4>Scrivere i requisiti</h4><p>Nel capitolato informativo e nel piano di gestione informativa si indica quale classe e quale PredefinedType devono avere gli oggetti consegnati. Il foglio Library si filtra e si incolla.</p></div>
+    <div class="card"><h4>Impostare l'esportazione</h4><p>Le colonne IfcExportAs e IfcExportType contengono i valori pronti per i parametri omonimi dell'esportatore IFC di Revit; per gli altri software valgono come riferimento della classe da assegnare.</p></div>
+    <div class="card"><h4>Controllare un modello</h4><p>Aperto un IFC in un visualizzatore, si confronta classe per classe: se un muro esce come IfcBuildingElementProxy, o un valore è deprecato, la libreria lo dice subito.</p></div>
+  </div>
+</section>
+
+<section class="ch" id="c4">
+  <div class="ch-h"><span class="ch-n">4</span><h2>Come si legge una classe IFC</h2></div>
+  <p><b>La gerarchia.</b> Ogni classe eredita attributi e significato da quella sopra: IfcWall è un IfcBuiltElement, che è un IfcElement, che è un IfcProduct. Nella mappa si legge da sinistra a destra.</p>
+  <p><b>Classi astratte.</b> Servono solo a raggruppare (IfcElement, IfcFeatureElement…): un oggetto del modello non può essere di una classe astratta. Nel foglio Library ci sono solo le classi che si usano; quelle astratte sono nel foglio Classes.</p>
+  <p><b>PredefinedType.</b> È il sottotipo, scelto da un elenco chiuso: un IfcWall può essere PARTITIONING, RETAININGWALL, SHEAR… Alcune classi, come IfcBuilding o IfcBuildingStorey, non ne hanno.</p>
+  <div class="box tip"><b>USERDEFINED e NOTDEFINED</b><p>Se il sottotipo non è nell'elenco si sceglie USERDEFINED e si scrive il tipo vero nell'attributo ObjectType dell'oggetto (o ElementType del tipo). NOTDEFINED vuol dire che il sottotipo non è ancora deciso: va bene in una fase iniziale, meno in una consegna.</p></div>
+  <p><b>Deprecazioni.</b> Una classe o un valore deprecato esiste ancora nello schema per compatibilità, ma non va usato nei modelli nuovi: la scheda indica che cosa usare al suo posto quando lo standard lo dice. Esempi: IfcWallStandardCase (usare IfcWall) e IfcElectricDistributionBoard (usare IfcDistributionBoard).</p>
+  <p><b>IfcBuildingElementProxy.</b> È la classe di riserva, per gli elementi che non trovano posto altrove. Un modello pieno di proxy perde gran parte del valore dell'IFC: prima di usarla conviene cercare qui.</p>
+</section>
+
+<section class="ch" id="c5">
+  <div class="ch-h"><span class="ch-n">5</span><h2>Scarica la libreria</h2></div>
+  <p>I file sono in inglese, come i nomi dello schema, con nomi e descrizioni anche in italiano. Sono gratuiti e si possono usare liberamente.</p>
+  <div class="dl"><a class="btn" href="libreria-ifc/IFC-4.3-library.xlsx" download>Excel · IFC-4.3-library.xlsx</a><a class="btn ghost" href="libreria-ifc/ifc-4.3-map.json" download>JSON · ifc-4.3-map.json</a></div>
+  <div class="tbl"><table>
+    <tr><th>Foglio o campo</th><th>Che cosa contiene</th></tr>
+    <tr><td>Read me</td><td>Che cos'è il file, da quale schema viene, come leggere le colonne.</td></tr>
+    <tr><td>Library</td><td>Una riga per classe + PredefinedType: livelli 1–4 della gerarchia, classe, nomi e descrizioni EN/IT, IfcExportAs/IfcExportType, deprecazione, link alla documentazione ufficiale. È una tabella Excel: si filtra dalle intestazioni.</td></tr>
+    <tr><td>Classes</td><td>Tutte le 214 classi del ramo, astratte comprese, con supertipo, gerarchia completa, enumerazione e numero di valori.</td></tr>
+    <tr><td>JSON</td><td>La stessa mappa per chi scrive script (Dynamo, Python, pyRevit): <code>classes[]</code> con <code>n</code> nome, <code>s</code> supertipo, <code>a</code> astratta, <code>it</code>/<code>en</code> nomi, <code>di</code>/<code>de</code> descrizioni, <code>e</code> enumerazione, <code>p[]</code> PredefinedType con <code>v</code>, nomi, descrizioni e <code>x</code> se deprecato.</td></tr>
+  </table></div>
+</section>
+
+<section class="ch" id="c6">
+  <div class="ch-h"><span class="ch-n">6</span><h2>Fonti, testi e lingue</h2></div>
+  <p><b>Lo schema.</b> Classi, gerarchia, classi astratte ed elenchi dei PredefinedType vengono dallo schema IFC 4.3 ADD2 (IFC4X3_ADD2), pubblicato come ISO 16739-1:2024. Sono stati confrontati riga per riga con lo schema EXPRESS distribuito con IfcOpenShell 0.9.0: 214 classi, 192 utilizzabili, 1422 combinazioni di classe e sottotipo, nessuna differenza.</p>
+  <p><b>I testi.</b> Nomi e descrizioni sono scritti da BIM News in parole semplici, per aiutare a scegliere la classe giusta: non sono le definizioni ufficiali, che restano di buildingSMART International e sono a un clic, nella scheda di ogni classe. In caso di dubbio vale la definizione ufficiale.</p>
+  <p><b>Il perimetro.</b> C'è il ramo IfcProduct, cioè tutto ciò che si posiziona in un modello. Non ci sono le classi dei tipi (IfcWallType…), le relazioni, le risorse geometriche e i Property Set.</p>
+  <div class="contact"><b>Descrizioni in italiano e inglese.</b> Ti servono in un'altra lingua? <a href="https://www.linkedin.com/in/marco-scigliuolo/" rel="noopener">Scrivimi su LinkedIn</a> e chiedimelo.</div>
+  <ul class="src">
+    <li><a href="https://ifc43-docs.standards.buildingsmart.org/" rel="noopener">buildingSMART International, documentazione IFC 4.3</a></li>
+    <li><a href="https://github.com/buildingSMART/IFC4.3.x-development" rel="noopener">buildingSMART, repository IFC4.3.x-development</a></li>
+    <li><a href="https://ifcopenshell.org/" rel="noopener">IfcOpenShell</a>, usato per il controllo dello schema</li>
+  </ul>
+  <p class="foot">IFC è uno standard di buildingSMART International. Questa libreria non è una pubblicazione ufficiale di buildingSMART.</p>
+</section>
+</main>
+</div>
+<script>
+(function(){
+var DATA,BY={},KIDS={},ROWS=[],DOC;
+function $(i){return document.getElementById(i)}
+function esc(t){return String(t==null?"":t).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[c]})}
+function norm(t){return String(t||"").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"")}
+function chain(n){var o=[];while(n){o.unshift(n);n=BY[n].s}return o}
+fetch("libreria-ifc/ifc-4.3-map.json",{cache:"no-cache"}).then(function(r){return r.json()}).then(function(d){
+  DATA=d;DOC=d.doc;d.classes.forEach(function(c){BY[c.n]=c;KIDS[c.n]=[];});
+  d.classes.forEach(function(c){if(c.s)KIDS[c.s].push(c.n)});
+  d.classes.forEach(function(c){
+    ROWS.push({c:c.n,v:"",k:norm([c.n,c.it,c.en,c.di,c.de,c.xi,c.xe].join(" "))});
+    (c.p||[]).forEach(function(p){ROWS.push({c:c.n,v:p.v,k:norm([c.n,p.v,p.it,p.en,p.di,p.de,c.it,c.en,p.x?"deprecato deprecated":""].join(" "))})});
+  });
+  var n=d.classes.length,u=d.classes.filter(function(c){return!c.a}).length;
+  buildMap();
+  var q=new URLSearchParams(location.search).get("q");
+  if(q){$("q").value=q;search(q)}else{$("lf-list").innerHTML='<li class="lf-empty">Scrivi una parola: per esempio «parete», «valve», «IfcBeam».</li>'}
+  var h=location.hash.match(/^#ifc=(\w+)(?:\.(\w+))?/);if(h&&BY[h[1]])show(h[1],h[2]||"");
+}).catch(function(){$("lf-list").innerHTML='<li class="lf-empty">La libreria non si è caricata. Ricarica la pagina.</li>'});
+
+/* ricerca */
+function search(q){
+  var t=norm(q).trim(),L=$("lf-list");if(!t){L.innerHTML="";return}
+  var w=t.split(/\s+/),hit=[];
+  ROWS.forEach(function(r){if(w.every(function(x){return r.k.indexOf(x)>=0})){
+    var s=0,c=norm(r.c),v=norm(r.v);if(c===t||c==="ifc"+t)s+=50;if(v===t)s+=30;if(c.indexOf(t)>=0)s+=10;if(!r.v)s+=5;if(BY[r.c].a)s-=8;hit.push([s,r])}});
+  hit.sort(function(a,b){return b[0]-a[0]});
+  if(!hit.length){L.innerHTML='<li class="lf-empty">Nessun risultato per «'+esc(q)+'». Prova con un sinonimo o in inglese.</li>';return}
+  L.innerHTML=hit.slice(0,60).map(function(h){var r=h[1],c=BY[r.c],p=r.v?c.p.filter(function(x){return x.v===r.v})[0]:null;
+    return '<li><button type="button" data-c="'+r.c+'" data-v="'+esc(r.v)+'"><b>'+r.c+'</b>'+(r.v?'<span class="pt">'+esc(r.v)+'</span>':'')+'<small>'+esc(p?(p.it+" · "+p.en):(c.it+" · "+c.en))+'</small></button></li>'}).join("")+
+    (hit.length>60?'<li class="lf-empty">Altri '+(hit.length-60)+' risultati: aggiungi una parola per restringere.</li>':'');
+  var f=L.querySelector("button");if(f)show(f.dataset.c,f.dataset.v,true);
+}
+$("lf-form").addEventListener("submit",function(e){e.preventDefault();search($("q").value)});
+var tm;$("q").addEventListener("input",function(){clearTimeout(tm);tm=setTimeout(function(){search($("q").value)},180)});
+document.querySelectorAll(".lf-hint button").forEach(function(b){b.addEventListener("click",function(){$("q").value=b.dataset.q;search(b.dataset.q)})});
+$("lf-list").addEventListener("click",function(e){var b=e.target.closest("button[data-c]");if(b)show(b.dataset.c,b.dataset.v)});
+
+/* scheda */
+function show(cn,v,quiet){
+  var c=BY[cn],p=v?(c.p||[]).filter(function(x){return x.v===v})[0]:null;
+  $("lf-list").querySelectorAll("button[data-c]").forEach(function(b){b.setAttribute("aria-current",b.dataset.c===cn&&b.dataset.v===(v||""))});
+  var it=p?p.it:c.it,en=p?p.en:c.en,di=p&&p.di?p.di:c.di,de=p&&p.de?p.de:c.de,dep=c.xi?[c.xi,c.xe]:(p&&p.x?["Valore deprecato nello standard: da evitare nei modelli nuovi.","Deprecated value in the standard: avoid it in new models."]:null);
+  var h='<h3>'+cn+(p?'<span class="pt" style="color:var(--a4)">.'+esc(p.v)+'</span>':'')+(c.a?'<span class="tag-a">astratta</span>':'')+'</h3>';
+  h+='<p class="names">'+esc(it)+' · <span lang="en">'+esc(en)+'</span></p>';
+  h+='<p class="lf-crumb">'+chain(cn).map(function(n,i,a){return i===a.length-1?'<b>'+n+'</b>':'<button type="button" data-c="'+n+'">'+n+'</button>'}).join(" › ")+'</p>';
+  if(p&&(p.v==="USERDEFINED"||p.v==="NOTDEFINED")){}
+  h+='<div class="lang"><p><span>IT</span>'+esc(di||"—")+'</p><p lang="en"><span>EN</span>'+esc(de||"—")+'</p></div>';
+  if(p&&p.di&&c.di)h+='<p style="font-size:.88rem;color:var(--muted);margin:0 0 .6rem"><b>'+cn+':</b> '+esc(c.di)+'</p>';
+  if(dep)h+='<div class="lf-dep"><b>Deprecato.</b> '+esc(dep[0])+'</div>';
+  if(!c.a){h+='<dl class="lf-kv"><dt>IfcExportAs</dt><dd>'+cn+'</dd><dd><button type="button" class="lf-cp" data-t="'+cn+'">Copia</button></dd>';
+    if(p)h+='<dt>IfcExportType</dt><dd>'+esc(p.v)+'</dd><dd><button type="button" class="lf-cp" data-t="'+esc(p.v)+'">Copia</button></dd>';h+='</dl>'}
+  if(c.p&&c.p.length)h+='<p style="margin:.4rem 0 0;font-size:.86rem;color:var(--muted)">PredefinedType ('+c.p.length+'):</p><div class="lf-vals">'+c.p.map(function(x){return '<button type="button" data-c="'+cn+'" data-v="'+esc(x.v)+'" aria-pressed="'+(p&&p.v===x.v)+'"'+(x.x?' class="x"':'')+' title="'+esc(x.it)+'">'+esc(x.v)+'</button>'}).join("")+'</div>';
+  var k=KIDS[cn];if(k.length)h+='<p style="margin:.4rem 0 0;font-size:.86rem;color:var(--muted)">Sottoclassi ('+k.length+'):</p><div class="lf-vals">'+k.map(function(n){return '<button type="button" data-c="'+n+'" data-v="">'+n+'</button>'}).join("")+'</div>';
+  h+='<div class="lf-links"><a class="btn ghost" href="'+DOC+cn+'.htm" rel="noopener" target="_blank">Definizione ufficiale ↗</a>'+(c.e?'<a class="btn ghost" href="'+DOC+c.e+'.htm" rel="noopener" target="_blank">Elenco '+esc(c.e)+' ↗</a>':'')+'<button type="button" class="btn ghost" data-map="'+cn+'" data-v="'+esc(v||"")+'">Mostra nella mappa</button></div>';
+  $("lf-card").innerHTML=h;
+  if(!quiet)try{history.replaceState(null,"","#ifc="+cn+(v?"."+v:""))}catch(e){}
+}
+$("lf-card").addEventListener("click",function(e){
+  var cp=e.target.closest(".lf-cp");if(cp){navigator.clipboard&&navigator.clipboard.writeText(cp.dataset.t).then(function(){cp.textContent="Copiato";setTimeout(function(){cp.textContent="Copia"},1200)});return}
+  var m=e.target.closest("[data-map]");if(m){reveal(m.dataset.map,m.dataset.v);return}
+  var b=e.target.closest("button[data-c]");if(b)show(b.dataset.c,b.dataset.v||"")});
+
+/* mappa mentale */
+var NODE={},root,svg,wrap;
+function li(cn,depth){
+  var c=BY[cn],el=document.createElement("li"),kids=KIDS[cn],vals=(c.p||[]),has=kids.length||vals.length;
+  el.setAttribute("role","treeitem");el.dataset.c=cn;
+  if(has){el.classList.add("closed");el.setAttribute("aria-expanded","false")}
+  el.innerHTML='<div class="mm-node'+(c.a?' abs':'')+(c.xi?' dep':'')+'"><button type="button" class="nm" data-c="'+cn+'">'+cn+'</button>'+(has?'<button type="button" class="mm-tog" aria-label="Apri o chiudi '+cn+'">+</button>':'')+'<small>'+esc(c.it)+'</small></div>';
+  NODE[cn]=el;
+  if(has){var ul=document.createElement("ul");ul.setAttribute("role","group");
+    kids.forEach(function(k){ul.appendChild(li(k,depth+1))});
+    vals.forEach(function(p){var v=document.createElement("li");v.setAttribute("role","treeitem");v.innerHTML='<div class="mm-node val'+(p.x?' dep':'')+'"><button type="button" class="nm" data-c="'+cn+'" data-v="'+esc(p.v)+'">'+esc(p.v)+'</button><small>'+esc(p.it)+'</small></div>';NODE[cn+"."+p.v]=v;ul.appendChild(v)});
+    el.appendChild(ul)}
+  return el}
+function set(el,open){if(!el.hasAttribute("aria-expanded"))return;el.classList.toggle("closed",!open);el.setAttribute("aria-expanded",open);var b=el.querySelector(":scope>.mm-node>.mm-tog");if(b)b.textContent=open?"−":"+"}
+var raf;function lines(){cancelAnimationFrame(raf);raf=requestAnimationFrame(draw)}
+function draw(){if(getComputedStyle(svg).display==="none")return;var W=wrap.scrollWidth,H=wrap.scrollHeight,R=wrap.getBoundingClientRect(),h="",col=getComputedStyle(document.documentElement).getPropertyValue("--accent"),c4=getComputedStyle(document.documentElement).getPropertyValue("--a4");
+  svg.setAttribute("width",W);svg.setAttribute("height",H);
+  root.querySelectorAll("li:not(.closed)>ul>li>.mm-node").forEach(function(nd){var par=nd.parentNode.parentNode.parentNode.querySelector(":scope>.mm-node"),a=par.getBoundingClientRect(),b=nd.getBoundingClientRect();
+    var x1=a.right-R.left+wrap.scrollLeft,y1=a.top+a.height/2-R.top+wrap.scrollTop,x2=b.left-R.left+wrap.scrollLeft,y2=b.top+b.height/2-R.top+wrap.scrollTop,mx=(x1+x2)/2;
+    h+='<path d="M'+x1+','+y1+' C'+mx+','+y1+' '+mx+','+y2+' '+x2+','+y2+'" stroke="'+(nd.classList.contains("val")?c4:col)+'"/>'});svg.innerHTML=h}
+function buildMap(){root=$("mm");svg=$("mm-lines");wrap=$("mm-wrap");root.appendChild(li("IfcProduct",0));set(NODE.IfcProduct,true);lines();
+  root.addEventListener("click",function(e){var t=e.target.closest(".mm-tog");if(t){var el=t.closest("li");set(el,el.classList.contains("closed"));lines();return}
+    var b=e.target.closest("button.nm");if(b){show(b.dataset.c,b.dataset.v||"");document.querySelectorAll(".mm-node.hit").forEach(function(n){n.classList.remove("hit")});b.parentNode.classList.add("hit")}});
+  $("mm-lv1").addEventListener("click",function(){root.querySelectorAll("li[aria-expanded]").forEach(function(el){set(el,el===NODE.IfcProduct)});lines()});
+  $("mm-cls").addEventListener("click",function(){root.querySelectorAll("li[aria-expanded]").forEach(function(el){set(el,KIDS[el.dataset.c].length>0)});lines()});
+  $("mm-all").addEventListener("click",function(){root.querySelectorAll("li[aria-expanded]").forEach(function(el){set(el,true)});lines()});
+  addEventListener("resize",lines);wrap.addEventListener("scroll",lines);
+  if("ResizeObserver"in window)new ResizeObserver(lines).observe(root)}
+function reveal(cn,v){chain(cn).forEach(function(n){set(NODE[n],true)});if(v)set(NODE[cn],true);
+  var t=NODE[v?cn+"."+v:cn];document.querySelectorAll(".mm-node.hit").forEach(function(n){n.classList.remove("hit")});
+  var nd=t.querySelector(":scope>.mm-node");nd.classList.add("hit");lines();
+  $("c2").scrollIntoView({behavior:"smooth",block:"start"});
+  setTimeout(function(){var R=wrap.getBoundingClientRect(),b=nd.getBoundingClientRect();wrap.scrollTo({left:wrap.scrollLeft+b.left-R.left-R.width/2+b.width/2,top:wrap.scrollTop+b.top-R.top-R.height/2,behavior:"smooth"})},450)}
+})();
+</script>
+</body>
+</html>

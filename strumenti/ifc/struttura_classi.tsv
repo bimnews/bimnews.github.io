@@ -1,0 +1,215 @@
+# classe	nome IT	supertipo	astratta	enumerazione	deprecazione (IT)
+IfcProduct	Prodotto		1		
+IfcAnnotation	Annotazione	IfcProduct		IfcAnnotationTypeEnum	
+IfcElement	Elemento	IfcProduct	1		
+IfcBuiltElement	Elemento costruttivo	IfcElement			
+IfcBeam	Trave	IfcBuiltElement		IfcBeamTypeEnum	
+IfcBearing	Appoggio strutturale	IfcBuiltElement		IfcBearingTypeEnum	
+IfcBuildingElementProxy	Elemento costruttivo generico (proxy)	IfcBuiltElement		IfcBuildingElementProxyTypeEnum	
+IfcChimney	Camino	IfcBuiltElement		IfcChimneyTypeEnum	
+IfcColumn	Pilastro / colonna	IfcBuiltElement		IfcColumnTypeEnum	
+IfcCourse	Strato di materiale (course)	IfcBuiltElement		IfcCourseTypeEnum	
+IfcCovering	Rivestimento / finitura	IfcBuiltElement		IfcCoveringTypeEnum	
+IfcCurtainWall	Facciata continua	IfcBuiltElement		IfcCurtainWallTypeEnum	
+IfcDeepFoundation	Fondazione profonda	IfcBuiltElement			
+IfcCaissonFoundation	Fondazione a cassone	IfcDeepFoundation		IfcCaissonFoundationTypeEnum	
+IfcPile	Palo	IfcDeepFoundation		IfcPileTypeEnum	
+IfcDoor	Porta	IfcBuiltElement		IfcDoorTypeEnum	
+IfcEarthworksElement	Elemento di movimento terra	IfcBuiltElement			
+IfcEarthworksFill	Riempimento / rilevato	IfcEarthworksElement		IfcEarthworksFillTypeEnum	
+IfcReinforcedSoil	Terreno consolidato	IfcEarthworksElement		IfcReinforcedSoilTypeEnum	
+IfcFooting	Fondazione superficiale	IfcBuiltElement		IfcFootingTypeEnum	
+IfcKerb	Cordolo	IfcBuiltElement		IfcKerbTypeEnum	
+IfcMember	Asta / elemento strutturale lineare	IfcBuiltElement		IfcMemberTypeEnum	
+IfcMooringDevice	Dispositivo di ormeggio	IfcBuiltElement		IfcMooringDeviceTypeEnum	
+IfcNavigationElement	Elemento di segnalamento nautico	IfcBuiltElement		IfcNavigationElementTypeEnum	
+IfcPavement	Pavimentazione stradale	IfcBuiltElement		IfcPavementTypeEnum	
+IfcPlate	Piastra / lastra	IfcBuiltElement		IfcPlateTypeEnum	
+IfcRail	Rotaia	IfcBuiltElement		IfcRailTypeEnum	
+IfcRailing	Ringhiera / parapetto	IfcBuiltElement		IfcRailingTypeEnum	
+IfcRamp	Rampa	IfcBuiltElement		IfcRampTypeEnum	
+IfcRampFlight	Tratto di rampa	IfcBuiltElement		IfcRampFlightTypeEnum	
+IfcRoof	Copertura	IfcBuiltElement		IfcRoofTypeEnum	
+IfcShadingDevice	Schermatura solare	IfcBuiltElement		IfcShadingDeviceTypeEnum	
+IfcSlab	Solaio / soletta	IfcBuiltElement		IfcSlabTypeEnum	
+IfcStair	Scala	IfcBuiltElement		IfcStairTypeEnum	
+IfcStairFlight	Rampa di scala	IfcBuiltElement		IfcStairFlightTypeEnum	
+IfcTrackElement	Elemento del binario	IfcBuiltElement		IfcTrackElementTypeEnum	
+IfcWall	Parete / muro	IfcBuiltElement		IfcWallTypeEnum	
+IfcWallStandardCase	Parete (caso standard, deprecato)	IfcWall		IfcWallTypeEnum	Mantenuta per compatibilità: usare IfcWall
+IfcWindow	Finestra	IfcBuiltElement		IfcWindowTypeEnum	
+IfcCivilElement	Elemento civile generico	IfcElement			Deprecata in IFC 4.3: usare le sottoclassi specifiche
+IfcDistributionElement	Elemento impiantistico	IfcElement			Deprecata per l'istanza: usare le sottoclassi
+IfcDistributionControlElement	Elemento di controllo impiantistico	IfcDistributionElement			
+IfcActuator	Attuatore	IfcDistributionControlElement		IfcActuatorTypeEnum	
+IfcAlarm	Dispositivo di allarme	IfcDistributionControlElement		IfcAlarmTypeEnum	
+IfcController	Regolatore (controller)	IfcDistributionControlElement		IfcControllerTypeEnum	
+IfcFlowInstrument	Strumento di misura	IfcDistributionControlElement		IfcFlowInstrumentTypeEnum	
+IfcProtectiveDeviceTrippingUnit	Sganciatore	IfcDistributionControlElement		IfcProtectiveDeviceTrippingUnitTypeEnum	
+IfcSensor	Sensore	IfcDistributionControlElement		IfcSensorTypeEnum	
+IfcUnitaryControlElement	Elemento di controllo unitario	IfcDistributionControlElement		IfcUnitaryControlElementTypeEnum	
+IfcDistributionFlowElement	Elemento di flusso impiantistico	IfcDistributionElement			
+IfcDistributionChamberElement	Pozzetto / camera impiantistica	IfcDistributionFlowElement		IfcDistributionChamberElementTypeEnum	
+IfcEnergyConversionDevice	Dispositivo di conversione energetica	IfcDistributionFlowElement			Deprecata per l'istanza: usare le sottoclassi
+IfcAirToAirHeatRecovery	Recuperatore di calore aria-aria	IfcEnergyConversionDevice		IfcAirToAirHeatRecoveryTypeEnum	
+IfcBoiler	Caldaia	IfcEnergyConversionDevice		IfcBoilerTypeEnum	
+IfcBurner	Bruciatore	IfcEnergyConversionDevice		IfcBurnerTypeEnum	
+IfcChiller	Refrigeratore (chiller)	IfcEnergyConversionDevice		IfcChillerTypeEnum	
+IfcCoil	Batteria di scambio termico	IfcEnergyConversionDevice		IfcCoilTypeEnum	
+IfcCondenser	Condensatore	IfcEnergyConversionDevice		IfcCondenserTypeEnum	
+IfcCooledBeam	Trave fredda	IfcEnergyConversionDevice		IfcCooledBeamTypeEnum	
+IfcCoolingTower	Torre di raffreddamento	IfcEnergyConversionDevice		IfcCoolingTowerTypeEnum	
+IfcElectricGenerator	Generatore elettrico	IfcEnergyConversionDevice		IfcElectricGeneratorTypeEnum	
+IfcElectricMotor	Motore elettrico	IfcEnergyConversionDevice		IfcElectricMotorTypeEnum	
+IfcEngine	Motore termico	IfcEnergyConversionDevice		IfcEngineTypeEnum	
+IfcEvaporativeCooler	Raffrescatore evaporativo	IfcEnergyConversionDevice		IfcEvaporativeCoolerTypeEnum	
+IfcEvaporator	Evaporatore	IfcEnergyConversionDevice		IfcEvaporatorTypeEnum	
+IfcHeatExchanger	Scambiatore di calore	IfcEnergyConversionDevice		IfcHeatExchangerTypeEnum	
+IfcHumidifier	Umidificatore	IfcEnergyConversionDevice		IfcHumidifierTypeEnum	
+IfcMotorConnection	Collegamento motore	IfcEnergyConversionDevice		IfcMotorConnectionTypeEnum	
+IfcSolarDevice	Dispositivo solare	IfcEnergyConversionDevice		IfcSolarDeviceTypeEnum	
+IfcTransformer	Trasformatore	IfcEnergyConversionDevice		IfcTransformerTypeEnum	
+IfcTubeBundle	Fascio tubiero	IfcEnergyConversionDevice		IfcTubeBundleTypeEnum	
+IfcUnitaryEquipment	Apparecchiatura unitaria	IfcEnergyConversionDevice		IfcUnitaryEquipmentTypeEnum	
+IfcFlowController	Regolatore di flusso	IfcDistributionFlowElement			Deprecata per l'istanza: usare le sottoclassi
+IfcAirTerminalBox	Cassetta terminale aria (VAV/CAV)	IfcFlowController		IfcAirTerminalBoxTypeEnum	
+IfcDamper	Serranda	IfcFlowController		IfcDamperTypeEnum	
+IfcDistributionBoard	Quadro di distribuzione	IfcFlowController		IfcDistributionBoardTypeEnum	
+IfcElectricDistributionBoard	Quadro elettrico di distribuzione (deprecato)	IfcFlowController		IfcElectricDistributionBoardTypeEnum	Deprecata in IFC 4.3: usare IfcDistributionBoard
+IfcElectricTimeControl	Controllo temporizzato elettrico	IfcFlowController		IfcElectricTimeControlTypeEnum	
+IfcFlowMeter	Contatore	IfcFlowController		IfcFlowMeterTypeEnum	
+IfcProtectiveDevice	Dispositivo di protezione	IfcFlowController		IfcProtectiveDeviceTypeEnum	
+IfcSwitchingDevice	Dispositivo di comando/manovra	IfcFlowController		IfcSwitchingDeviceTypeEnum	
+IfcValve	Valvola	IfcFlowController		IfcValveTypeEnum	
+IfcFlowFitting	Raccordo di flusso	IfcDistributionFlowElement			Deprecata per l'istanza: usare le sottoclassi
+IfcCableCarrierFitting	Raccordo portacavi	IfcFlowFitting		IfcCableCarrierFittingTypeEnum	
+IfcCableFitting	Raccordo per cavi	IfcFlowFitting		IfcCableFittingTypeEnum	
+IfcDuctFitting	Raccordo per canali aria	IfcFlowFitting		IfcDuctFittingTypeEnum	
+IfcJunctionBox	Scatola di derivazione	IfcFlowFitting		IfcJunctionBoxTypeEnum	
+IfcPipeFitting	Raccordo per tubazioni	IfcFlowFitting		IfcPipeFittingTypeEnum	
+IfcFlowMovingDevice	Dispositivo di movimentazione fluidi	IfcDistributionFlowElement			Deprecata per l'istanza: usare le sottoclassi
+IfcCompressor	Compressore	IfcFlowMovingDevice		IfcCompressorTypeEnum	
+IfcFan	Ventilatore	IfcFlowMovingDevice		IfcFanTypeEnum	
+IfcPump	Pompa	IfcFlowMovingDevice		IfcPumpTypeEnum	
+IfcFlowSegment	Segmento di flusso	IfcDistributionFlowElement			Deprecata per l'istanza: usare le sottoclassi
+IfcCableCarrierSegment	Segmento portacavi	IfcFlowSegment		IfcCableCarrierSegmentTypeEnum	
+IfcCableSegment	Segmento di cavo	IfcFlowSegment		IfcCableSegmentTypeEnum	
+IfcConveyorSegment	Segmento di trasportatore	IfcFlowSegment		IfcConveyorSegmentTypeEnum	
+IfcDuctSegment	Canale aria	IfcFlowSegment		IfcDuctSegmentTypeEnum	
+IfcPipeSegment	Tubazione	IfcFlowSegment		IfcPipeSegmentTypeEnum	
+IfcFlowStorageDevice	Dispositivo di accumulo	IfcDistributionFlowElement			Deprecata per l'istanza: usare le sottoclassi
+IfcElectricFlowStorageDevice	Accumulo elettrico	IfcFlowStorageDevice		IfcElectricFlowStorageDeviceTypeEnum	
+IfcTank	Serbatoio / vasca	IfcFlowStorageDevice		IfcTankTypeEnum	
+IfcFlowTerminal	Terminale impiantistico	IfcDistributionFlowElement			Deprecata per l'istanza: usare le sottoclassi
+IfcAirTerminal	Terminale aria (diffusore/bocchetta)	IfcFlowTerminal		IfcAirTerminalTypeEnum	
+IfcAudioVisualAppliance	Apparecchio audiovisivo	IfcFlowTerminal		IfcAudioVisualApplianceTypeEnum	
+IfcCommunicationsAppliance	Apparecchio di comunicazione	IfcFlowTerminal		IfcCommunicationsApplianceTypeEnum	
+IfcElectricAppliance	Apparecchio elettrico	IfcFlowTerminal		IfcElectricApplianceTypeEnum	
+IfcFireSuppressionTerminal	Terminale antincendio	IfcFlowTerminal		IfcFireSuppressionTerminalTypeEnum	
+IfcLamp	Lampada	IfcFlowTerminal		IfcLampTypeEnum	
+IfcLightFixture	Apparecchio illuminante	IfcFlowTerminal		IfcLightFixtureTypeEnum	
+IfcLiquidTerminal	Terminale per liquidi	IfcFlowTerminal		IfcLiquidTerminalTypeEnum	
+IfcMedicalDevice	Dispositivo medicale	IfcFlowTerminal		IfcMedicalDeviceTypeEnum	
+IfcMobileTelecommunicationsAppliance	Apparato di telecomunicazione mobile	IfcFlowTerminal		IfcMobileTelecommunicationsApplianceTypeEnum	
+IfcOutlet	Presa	IfcFlowTerminal		IfcOutletTypeEnum	
+IfcSanitaryTerminal	Apparecchio sanitario	IfcFlowTerminal		IfcSanitaryTerminalTypeEnum	
+IfcSignal	Segnalatore	IfcFlowTerminal		IfcSignalTypeEnum	
+IfcSpaceHeater	Corpo scaldante	IfcFlowTerminal		IfcSpaceHeaterTypeEnum	
+IfcStackTerminal	Terminale di ventilazione/scarico	IfcFlowTerminal		IfcStackTerminalTypeEnum	
+IfcWasteTerminal	Terminale di scarico	IfcFlowTerminal		IfcWasteTerminalTypeEnum	
+IfcFlowTreatmentDevice	Dispositivo di trattamento fluidi	IfcDistributionFlowElement			Deprecata per l'istanza: usare le sottoclassi
+IfcDuctSilencer	Silenziatore per canali	IfcFlowTreatmentDevice		IfcDuctSilencerTypeEnum	
+IfcElectricFlowTreatmentDevice	Dispositivo di trattamento elettrico	IfcFlowTreatmentDevice		IfcElectricFlowTreatmentDeviceTypeEnum	
+IfcFilter	Filtro	IfcFlowTreatmentDevice		IfcFilterTypeEnum	
+IfcInterceptor	Separatore / intercettatore	IfcFlowTreatmentDevice		IfcInterceptorTypeEnum	
+IfcElementAssembly	Assieme di elementi	IfcElement		IfcElementAssemblyTypeEnum	
+IfcElementComponent	Componente di elemento	IfcElement	1		
+IfcBuildingElementPart	Parte di elemento costruttivo	IfcElementComponent		IfcBuildingElementPartTypeEnum	
+IfcDiscreteAccessory	Accessorio discreto	IfcElementComponent		IfcDiscreteAccessoryTypeEnum	
+IfcFastener	Collegamento (fastener)	IfcElementComponent		IfcFastenerTypeEnum	
+IfcImpactProtectionDevice	Dispositivo di protezione agli urti	IfcElementComponent		IfcImpactProtectionDeviceTypeEnum	
+IfcMechanicalFastener	Elemento di fissaggio meccanico	IfcElementComponent		IfcMechanicalFastenerTypeEnum	
+IfcReinforcingElement	Elemento d'armatura	IfcElementComponent	1		
+IfcReinforcingBar	Barra d'armatura	IfcReinforcingElement		IfcReinforcingBarTypeEnum	
+IfcReinforcingMesh	Rete elettrosaldata	IfcReinforcingElement		IfcReinforcingMeshTypeEnum	
+IfcTendon	Cavo di precompressione	IfcReinforcingElement		IfcTendonTypeEnum	
+IfcTendonAnchor	Ancoraggio di precompressione	IfcReinforcingElement		IfcTendonAnchorTypeEnum	
+IfcTendonConduit	Guaina di precompressione	IfcReinforcingElement		IfcTendonConduitTypeEnum	
+IfcSign	Cartello / segnale fisico	IfcElementComponent		IfcSignTypeEnum	
+IfcVibrationDamper	Smorzatore di vibrazioni	IfcElementComponent		IfcVibrationDamperTypeEnum	
+IfcVibrationIsolator	Isolatore di vibrazioni	IfcElementComponent		IfcVibrationIsolatorTypeEnum	
+IfcFeatureElement	Elemento di modifica (feature)	IfcElement	1		
+IfcFeatureElementAddition	Elemento di aggiunta	IfcFeatureElement	1		
+IfcProjectionElement	Elemento sporgente	IfcFeatureElementAddition		IfcProjectionElementTypeEnum	
+IfcFeatureElementSubtraction	Elemento di sottrazione	IfcFeatureElement	1		
+IfcEarthworksCut	Scavo	IfcFeatureElementSubtraction		IfcEarthworksCutTypeEnum	
+IfcOpeningElement	Apertura	IfcFeatureElementSubtraction		IfcOpeningElementTypeEnum	
+IfcVoidingFeature	Lavorazione per asportazione	IfcFeatureElementSubtraction		IfcVoidingFeatureTypeEnum	
+IfcSurfaceFeature	Trattamento / marcatura superficiale	IfcFeatureElement		IfcSurfaceFeatureTypeEnum	
+IfcFurnishingElement	Elemento di arredo	IfcElement			Deprecata per l'istanza: usare IfcFurniture / IfcSystemFurnitureElement
+IfcFurniture	Arredo	IfcFurnishingElement		IfcFurnitureTypeEnum	
+IfcSystemFurnitureElement	Elemento di arredo modulare	IfcFurnishingElement		IfcSystemFurnitureElementTypeEnum	
+IfcGeographicElement	Elemento geografico	IfcElement		IfcGeographicElementTypeEnum	
+IfcGeotechnicalElement	Elemento geotecnico	IfcElement	1		
+IfcGeotechnicalAssembly	Assieme geotecnico	IfcGeotechnicalElement	1		
+IfcBorehole	Sondaggio geognostico	IfcGeotechnicalAssembly			
+IfcGeomodel	Modello geologico	IfcGeotechnicalAssembly			
+IfcGeoslice	Sezione geologica	IfcGeotechnicalAssembly			
+IfcGeotechnicalStratum	Strato geotecnico	IfcGeotechnicalElement		IfcGeotechnicalStratumTypeEnum	
+IfcTransportationDevice	Dispositivo di trasporto	IfcElement	1		
+IfcTransportElement	Impianto di trasporto	IfcTransportationDevice		IfcTransportElementTypeEnum	
+IfcVehicle	Veicolo	IfcTransportationDevice		IfcVehicleTypeEnum	
+IfcVirtualElement	Elemento virtuale	IfcElement		IfcVirtualElementTypeEnum	
+IfcLinearElement	Elemento lineare	IfcProduct			
+IfcAlignmentCant	Sopraelevazione del tracciato (cant)	IfcLinearElement			
+IfcAlignmentHorizontal	Tracciato planimetrico	IfcLinearElement			
+IfcAlignmentSegment	Segmento di tracciato	IfcLinearElement			
+IfcAlignmentVertical	Tracciato altimetrico (profilo)	IfcLinearElement			
+IfcPort	Porta di connessione	IfcProduct	1		
+IfcDistributionPort	Porta di connessione impiantistica	IfcPort		IfcDistributionPortTypeEnum	
+IfcPositioningElement	Elemento di posizionamento	IfcProduct	1		
+IfcGrid	Griglia (fili fissi)	IfcPositioningElement		IfcGridTypeEnum	
+IfcLinearPositioningElement	Elemento di posizionamento lineare	IfcPositioningElement			
+IfcAlignment	Tracciato (allineamento)	IfcLinearPositioningElement		IfcAlignmentTypeEnum	
+IfcReferent	Riferimento lineare (referent)	IfcPositioningElement		IfcReferentTypeEnum	
+IfcSpatialElement	Elemento spaziale	IfcProduct	1		
+IfcExternalSpatialStructureElement	Elemento spaziale esterno	IfcSpatialElement	1		
+IfcExternalSpatialElement	Spazio esterno	IfcExternalSpatialStructureElement		IfcExternalSpatialElementTypeEnum	
+IfcSpatialStructureElement	Elemento della struttura spaziale	IfcSpatialElement	1		
+IfcBuildingStorey	Piano dell'edificio	IfcSpatialStructureElement			
+IfcFacility	Opera / infrastruttura	IfcSpatialStructureElement			
+IfcBridge	Ponte	IfcFacility		IfcBridgeTypeEnum	
+IfcBuilding	Edificio	IfcFacility			
+IfcMarineFacility	Opera marittima	IfcFacility		IfcMarineFacilityTypeEnum	
+IfcRailway	Ferrovia	IfcFacility		IfcRailwayTypeEnum	
+IfcRoad	Strada	IfcFacility		IfcRoadTypeEnum	
+IfcFacilityPart	Parte di opera	IfcSpatialStructureElement	1		
+IfcBridgePart	Parte di ponte	IfcFacilityPart		IfcBridgePartTypeEnum	
+IfcFacilityPartCommon	Parte di opera generica	IfcFacilityPart		IfcFacilityPartCommonTypeEnum	
+IfcMarinePart	Parte di opera marittima	IfcFacilityPart		IfcMarinePartTypeEnum	
+IfcRailwayPart	Parte di ferrovia	IfcFacilityPart		IfcRailwayPartTypeEnum	
+IfcRoadPart	Parte di strada	IfcFacilityPart		IfcRoadPartTypeEnum	
+IfcSite	Sito / lotto	IfcSpatialStructureElement			
+IfcSpace	Spazio / locale	IfcSpatialStructureElement		IfcSpaceTypeEnum	
+IfcSpatialZone	Zona spaziale	IfcSpatialElement		IfcSpatialZoneTypeEnum	
+IfcStructuralActivity	Attività strutturale	IfcProduct	1		
+IfcStructuralAction	Azione strutturale	IfcStructuralActivity	1		
+IfcStructuralCurveAction	Azione strutturale lineare (curva)	IfcStructuralAction		IfcStructuralCurveActivityTypeEnum	
+IfcStructuralLinearAction	Azione strutturale lineare	IfcStructuralCurveAction		IfcStructuralCurveActivityTypeEnum	
+IfcStructuralPointAction	Azione strutturale puntuale	IfcStructuralAction			
+IfcStructuralSurfaceAction	Azione strutturale superficiale	IfcStructuralAction		IfcStructuralSurfaceActivityTypeEnum	
+IfcStructuralPlanarAction	Azione strutturale planare	IfcStructuralSurfaceAction		IfcStructuralSurfaceActivityTypeEnum	
+IfcStructuralReaction	Reazione strutturale	IfcStructuralActivity	1		
+IfcStructuralCurveReaction	Reazione strutturale lineare	IfcStructuralReaction		IfcStructuralCurveActivityTypeEnum	
+IfcStructuralPointReaction	Reazione strutturale puntuale	IfcStructuralReaction			
+IfcStructuralSurfaceReaction	Reazione strutturale superficiale	IfcStructuralReaction		IfcStructuralSurfaceActivityTypeEnum	
+IfcStructuralItem	Elemento strutturale analitico	IfcProduct	1		
+IfcStructuralConnection	Connessione strutturale	IfcStructuralItem	1		
+IfcStructuralCurveConnection	Connessione strutturale lineare	IfcStructuralConnection			
+IfcStructuralPointConnection	Connessione strutturale puntuale	IfcStructuralConnection			
+IfcStructuralSurfaceConnection	Connessione strutturale superficiale	IfcStructuralConnection			
+IfcStructuralMember	Membro strutturale analitico	IfcStructuralItem	1		
+IfcStructuralCurveMember	Asta strutturale (modello analitico)	IfcStructuralMember		IfcStructuralCurveMemberTypeEnum	
+IfcStructuralCurveMemberVarying	Asta strutturale a sezione variabile	IfcStructuralCurveMember		IfcStructuralCurveMemberTypeEnum	
+IfcStructuralSurfaceMember	Elemento strutturale superficiale (modello analitico)	IfcStructuralMember		IfcStructuralSurfaceMemberTypeEnum	
+IfcStructuralSurfaceMemberVarying	Elemento strutturale superficiale a spessore variabile	IfcStructuralSurfaceMember		IfcStructuralSurfaceMemberTypeEnum	

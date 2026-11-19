@@ -1,0 +1,73 @@
+# classe	PredefinedType	nome EN	descrizione IT	descrizione EN	nome IT corretto (facoltativo)
+# Testi scritti da noi, non tradotti dalla documentazione buildingSMART. USERDEFINED, NOTDEFINED e le classi senza PredefinedType hanno testi automatici (genera.py).
+IfcBeam	BEAM	Beam	Trave ordinaria, quando nessun altro valore è più preciso.	Ordinary beam, when no other value is more specific.
+IfcBeam	CORNICE	Cornice	Trave sporgente in testa a una facciata o a un impalcato, con funzione anche decorativa o di gocciolatoio.	Projecting beam at the top of a façade or deck, also decorative or acting as a drip edge.
+IfcBeam	DIAPHRAGM	Diaphragm	Trave trasversale che collega e irrigidisce le travi principali, tipica degli impalcati da ponte.	Transverse beam linking and stiffening main girders, typical of bridge decks.
+IfcBeam	EDGEBEAM	Edge beam	Trave posta sul bordo di un solaio o di un impalcato.	Beam along the edge of a floor or deck.
+IfcBeam	GIRDER_SEGMENT	Girder segment	Concio di una trave principale, prodotto e posato a pezzi.	Segment of a main girder, made and placed in pieces.
+IfcBeam	HATSTONE	Hatstone	Elemento di coronamento in testa a un muro di sostegno o di banchina.	Capping element on top of a retaining or quay wall.
+IfcBeam	HOLLOWCORE	Hollow-core beam	Elemento prefabbricato con alveoli interni per alleggerirlo.	Precast element with internal voids to reduce weight.
+IfcBeam	JOIST	Joist	Trave secondaria di solaio, posata a interasse regolare.	Secondary floor beam, laid at regular spacing.
+IfcBeam	LINTEL	Lintel	Trave sopra un'apertura che porta il carico del muro soprastante.	Beam over an opening carrying the wall above.
+IfcBeam	PIERCAP	Pier cap	Trave in testa a una pila da ponte su cui appoggia l'impalcato.	Beam on top of a bridge pier supporting the deck.
+IfcBeam	SPANDREL	Spandrel	Trave di facciata tra le aperture di due piani successivi.	Façade beam between the openings of two storeys.
+IfcBeam	T_BEAM	T-beam	Trave con sezione a T, spesso prefabbricata.	Beam with a T-shaped section, often precast.
+IfcColumn	COLUMN	Column	Pilastro o colonna ordinaria, quando nessun altro valore è più preciso.	Ordinary column, when no other value is more specific.
+IfcColumn	PIERSTEM	Pier stem	Fusto di una pila da ponte, tra fondazione e pulvino.	Shaft of a bridge pier, between foundation and pier cap.
+IfcColumn	PIERSTEM_SEGMENT	Pier stem segment	Concio del fusto di una pila, prodotto e posato a pezzi.	Segment of a pier shaft, made and placed in pieces.
+IfcColumn	PILASTER	Pilaster	Pilastro inglobato in un muro, che sporge solo in parte.	Column embedded in a wall, projecting only partly.
+IfcColumn	STANDCOLUMN	Stand column	Montante verticale che trasmette all'arco il carico dell'impalcato soprastante.	Vertical post transferring the load of the deck above to the arch.
+IfcCovering	CEILING	Ceiling	Rivestimento o controsoffitto sul lato inferiore di un solaio.	Ceiling or suspended ceiling on the underside of a slab.
+IfcCovering	CLADDING	Cladding	Rivestimento esterno o interno di una parete o di un elemento.	External or internal cladding of a wall or element.
+IfcCovering	COPING	Coping	Elemento di protezione posato in cima a un muro o a un parapetto.	Protective capping laid on top of a wall or parapet.	Copertina
+IfcCovering	FLOORING	Flooring	Strato di finitura calpestabile di un pavimento.	Walkable finish layer of a floor.
+IfcCovering	INSULATION	Insulation	Strato isolante termico o acustico applicato a un elemento.	Thermal or acoustic insulation layer applied to an element.
+IfcCovering	MEMBRANE	Membrane	Telo o guaina di impermeabilizzazione, freno vapore o tenuta.	Waterproofing, vapour control or sealing sheet.
+IfcCovering	MOLDING	Moulding	Profilo decorativo lungo bordi o giunti.	Decorative profile along edges or joints.
+IfcCovering	ROOFING	Roofing	Manto di copertura: tegole, lamiere, membrane a vista.	Roof finish: tiles, metal sheets, exposed membranes.
+IfcCovering	SKIRTINGBOARD	Skirting board	Battiscopa alla base delle pareti.	Skirting at the base of walls.
+IfcCovering	SLEEVING	Sleeving	Guaina o manicotto che avvolge un tubo o un cavo.	Sleeve wrapped around a pipe or cable.
+IfcCovering	TOPPING	Topping	Strato di getto o finitura sopra un solaio, come una cappa o un massetto.	Cast or finish layer on top of a slab, such as a topping or screed.
+IfcCovering	WRAPPING	Wrapping	Rivestimento avvolto attorno a tubi o canali, per esempio isolante.	Covering wrapped around pipes or ducts, for example insulation.
+IfcDoor	BOOM_BARRIER	Boom barrier	Sbarra a leva che apre o chiude un passaggio veicolare.	Lifting arm opening or closing a vehicle passage.
+IfcDoor	DOOR	Door	Porta ordinaria.	Ordinary door.
+IfcDoor	GATE	Gate	Cancello in una recinzione o in un muro esterno.	Gate in a fence or external wall.
+IfcDoor	TRAPDOOR	Trapdoor	Botola in un solaio o in una copertura.	Hatch in a floor or roof.
+IfcDoor	TURNSTILE	Turnstile	Tornello che lascia passare una persona alla volta.	Turnstile letting one person through at a time.
+IfcLightFixture	DIRECTIONSOURCE	Direction source	Apparecchio che emette luce in una direzione prevalente, come un faretto.	Luminaire emitting light mainly in one direction, such as a spotlight.
+IfcLightFixture	POINTSOURCE	Point source	Apparecchio che emette luce da un punto in tutte le direzioni.	Luminaire emitting light from a point in all directions.
+IfcLightFixture	SECURITYLIGHTING	Security lighting	Apparecchio per l'illuminazione di sicurezza e di emergenza.	Luminaire for safety and emergency lighting.
+IfcPipeSegment	CULVERT	Culvert	Tombino o condotta che fa passare l'acqua sotto una strada o un rilevato.	Culvert carrying water under a road or embankment.
+IfcPipeSegment	FLEXIBLESEGMENT	Flexible segment	Tratto di tubo flessibile.	Flexible run of pipe.
+IfcPipeSegment	GUTTER	Gutter	Canale aperto per l'acqua, come una grondaia o una cunetta.	Open channel for water, such as a gutter or ditch.
+IfcPipeSegment	RIGIDSEGMENT	Rigid segment	Tratto di tubo rigido.	Rigid run of pipe.
+IfcPipeSegment	SPOOL	Spool	Spezzone di tubazione preassemblato con i suoi raccordi.	Pre-assembled piece of pipework with its fittings.
+IfcSlab	APPROACH_SLAB	Approach slab	Soletta che raccorda il rilevato stradale con la spalla del ponte.	Slab linking the road embankment to the bridge abutment.
+IfcSlab	BASESLAB	Base slab	Platea o soletta di fondazione appoggiata sul terreno.	Foundation or ground-bearing slab.
+IfcSlab	FLOOR	Floor	Solaio di piano o impalcato.	Floor slab or deck.
+IfcSlab	LANDING	Landing	Pianerottolo di una scala o di una rampa.	Landing of a stair or ramp.
+IfcSlab	PAVING	Paving	Pavimentazione esterna in lastre o getto.	External paving in slabs or cast concrete.
+IfcSlab	ROOF	Roof	Solaio che fa da copertura.	Slab acting as a roof.
+IfcSlab	SIDEWALK	Sidewalk	Marciapiede su strada o impalcato.	Sidewalk on a road or deck.
+IfcSlab	TRACKSLAB	Track slab	Piastra in calcestruzzo che sostiene il binario al posto del ballast.	Concrete slab supporting the track instead of ballast.
+IfcSlab	WEARING	Wearing course	Strato superficiale soggetto all'usura del traffico.	Surface layer subject to traffic wear.
+IfcSpace	BERTH	Berth	Posto di ormeggio per un'imbarcazione.	Mooring place for a vessel.
+IfcSpace	EXTERNAL	External	Spazio esterno. Valore deprecato nello standard.	External space. Deprecated value in the standard.
+IfcSpace	GFA	Gross floor area	Spazio che rappresenta la superficie lorda di un piano.	Space representing the gross floor area of a storey.
+IfcSpace	INTERNAL	Internal	Spazio interno. Valore deprecato nello standard.	Internal space. Deprecated value in the standard.
+IfcSpace	PARKING	Parking	Posto auto o area di parcheggio.	Parking bay or parking area.
+IfcSpace	SPACE	Space	Locale o spazio ordinario.	Ordinary room or space.
+IfcWall	ELEMENTEDWALL	Elemented wall	Parete composta da parti distinte, come una parete a telaio con pannelli.	Wall made of distinct parts, such as a framed wall with panels.
+IfcWall	MOVABLE	Movable	Parete mobile o smontabile.	Movable or demountable wall.
+IfcWall	PARAPET	Parapet	Muretto o parapetto lungo il bordo di coperture, balconi o ponti.	Low wall or parapet along the edge of roofs, balconies or bridges.	Parapetto
+IfcWall	PARTITIONING	Partitioning	Parete divisoria interna non portante.	Internal non-loadbearing partition.
+IfcWall	PLUMBINGWALL	Plumbing wall	Parete che contiene o nasconde impianti, come una parete attrezzata.	Wall containing or concealing services, such as a service wall.
+IfcWall	POLYGONAL	Polygonal	Parete con pianta a più lati.	Wall with a multi-sided plan.
+IfcWall	RETAININGWALL	Retaining wall	Muro che trattiene terra o acqua.	Wall holding back soil or water.
+IfcWall	SHEAR	Shear wall	Setto che resiste alle azioni orizzontali, come vento e sisma.	Wall resisting horizontal actions, such as wind and earthquakes.
+IfcWall	SOLIDWALL	Solid wall	Muro pieno, di solito portante.	Solid wall, usually loadbearing.
+IfcWall	STANDARD	Standard	Parete a spessore costante e asse rettilineo o curvo.	Wall with constant thickness and a straight or curved axis.
+IfcWall	WAVEWALL	Wave wall	Muro che protegge dalle onde, in cima a dighe o lungomari.	Wall protecting from waves, on top of breakwaters or seafronts.
+IfcWindow	LIGHTDOME	Light dome	Lucernario a cupola su una copertura piana.	Dome rooflight on a flat roof.
+IfcWindow	SKYLIGHT	Skylight	Finestra inserita in una copertura.	Window set into a roof.
+IfcWindow	WINDOW	Window	Finestra ordinaria in una parete.	Ordinary window in a wall.
