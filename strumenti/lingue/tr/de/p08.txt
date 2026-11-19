@@ -31,7 +31,7 @@ v0630	Entwicklung
 v0631	Test
 v0632	Freigabe
 v0633	Automatisierung der Zeichnungen
-v0634	Skripte für wiederkehrende Vorgänge, angefangen bei der Verwaltung externer Referenzen.
+v0634	Skripte für wiederkehrende Arbeitsschritte, angefangen bei der Verwaltung externer Referenzen. Sie funktionieren bereits und verbessern die Arbeit deutlich; ich verfeinere sie laufend in kleinen Schritten, wie beim Kaizen.
 v0635	Automatische Prüfungen aus der Checkliste
 v0636	Von der Prüfliste zu wiederholbaren Prüfungen an den Projekten.
 v0637	Von den Flächen der Zeichnung zur KlimaHaus-Berechnung

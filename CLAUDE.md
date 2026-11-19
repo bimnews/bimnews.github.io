@@ -210,6 +210,8 @@ Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato co
 
 ## Fatto di recente
 
+- **19/11/2026, revisione 141:** Work in progress, anche «Automazione dei disegni» (AutoCAD · AutoLISP) passa a fase «Test» senza «Rilascio» (`.ph3`): gli script funzionano e migliorano molto il lavoro, affinati di continuo «come nel kaizen» (parole di Marco). Traduzione v0634 in `p08`.
+
 - **19/11/2026, revisione 140:** Work in progress, scheda «Libreria di famiglie con struttura dati provinciale»: fase «Test» (Idea e Sviluppo fatti), testo «già funzionanti, ma ci sto ancora lavorando: le sto testando e migliorando». Tolta la fase «Rilascio» solo da questa scheda (classe `.phases.ph3`, 3 colonne): Marco per ora non vuole condividere le famiglie, quindi non promettere un rilascio. Traduzioni: v0628 aggiornata in `p08`, nuova voce v1676 (aria-label «Fase attuale: test») in `p13`.
 
 - **19/11/2026, revisione 139:** pubblicata «La libreria IFC 4.3» (punto 16): ricerca, mappa mentale, Excel e JSON, descrizioni nostre in italiano e inglese.

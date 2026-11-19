@@ -31,7 +31,7 @@ v0630	Development
 v0631	Testing
 v0632	Release
 v0633	Drawing automation
-v0634	Scripts for repetitive operations, starting with the management of external references.
+v0634	Scripts for repetitive tasks, starting with managing external references. They already work and make the work much better; I keep refining them in small steps, as in kaizen.
 v0635	Automated checks from a checklist
 v0636	From the inspection checklist to repeatable checks on projects.
 v0637	From drawing areas to the CasaClima calculation

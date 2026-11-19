@@ -31,7 +31,7 @@ v0630	Desarrollo
 v0631	Prueba
 v0632	Publicación
 v0633	Automatización de los dibujos
-v0634	Scripts para las operaciones repetitivas, empezando por la gestión de las referencias externas.
+v0634	Scripts para las operaciones repetitivas, empezando por la gestión de las referencias externas. Ya funcionan y mejoran mucho el trabajo; los voy afinando continuamente, a pequeños pasos, como en el kaizen.
 v0635	Comprobaciones automáticas desde la lista de control
 v0636	De la lista de control a comprobaciones repetibles en los proyectos.
 v0637	De las superficies del dibujo al cálculo CasaClima

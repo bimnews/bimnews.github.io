@@ -31,7 +31,7 @@ v0630	Sviluppo
 v0631	Test
 v0632	Rilascio
 v0633	Automazione dei disegni
-v0634	Script per le operazioni ripetitive, a partire dalla gestione dei riferimenti esterni.
+v0634	Script per le operazioni ripetitive, a partire dalla gestione dei riferimenti esterni. Funzionano già e migliorano molto il lavoro; li affino di continuo, a piccoli passi, come nel kaizen.
 v0635	Verifiche automatiche da checklist
 v0636	Dalla checklist di controllo a verifiche ripetibili sui progetti.
 v0637	Dalle superfici del disegno al calcolo CasaClima
