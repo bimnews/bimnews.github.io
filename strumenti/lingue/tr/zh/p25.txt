@@ -1,0 +1,5 @@
+v1688	公共 BIM 数据的国家词典
+v1689	每个公共业主都要求自己的参数和自己的名称：我建议为全意大利建立一个共同核心，各大区和机构的扩展挂接在其上。
+v1690	使用已有的编码（CUP、ISTAT、IPA、ISO 3166-2），先用 IFC 标准属性再加新属性，每个参数一张卡片，需求由软件自动检查（IDS）。附可查询的原型、博尔扎诺省的扩展、一个真实的 MEP 族，以及一个问题：世界其他地方呢？
+v1691	<span class="tag ok">已发布</span><a class="man-btn" href="manuali/dati-pubblici.html">阅读提案</a><a class="man-btn ghost" href="manuali/dati-pubblici.html#c3">原型</a><a class="man-btn ghost" href="manuali/dati-pubblici/dizionario-dati-pubblici.xlsx" download="">下载 Excel</a>
+v1692	欢迎在 <a href="https://www.linkedin.com/in/marco-scigliuolo/" target="_blank" rel="noopener">LinkedIn ↗</a> 上讨论。

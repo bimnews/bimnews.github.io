@@ -1,0 +1,5 @@
+v1688	公共 BIM データの全国辞書
+v1689	公共発注者はそれぞれ独自のパラメータを独自の名前で求めている。私はイタリア全土に共通の中核を提案し、州や機関の拡張をその上に接続する。
+v1690	既存のコード（CUP、ISTAT、IPA、ISO 3166-2）、まず IFC の標準プロパティ、新しいものはその後、パラメータごとに 1 枚のシート、ソフトウェアが自動でチェックする要件（IDS）。閲覧できるプロトタイプ、ボルツァーノ自治県の拡張、実際の MEP ファミリ、そして問い：世界のほかの国は？
+v1691	<span class="tag ok">公開済み</span><a class="man-btn" href="manuali/dati-pubblici.html">提案を読む</a><a class="man-btn ghost" href="manuali/dati-pubblici.html#c3">プロトタイプ</a><a class="man-btn ghost" href="manuali/dati-pubblici/dizionario-dati-pubblici.xlsx" download="">Excel をダウンロード</a>
+v1692	議論は <a href="https://www.linkedin.com/in/marco-scigliuolo/" target="_blank" rel="noopener">LinkedIn ↗</a> で。
