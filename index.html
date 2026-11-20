@@ -445,6 +445,7 @@ main>section{display:none}
 @media (max-width:560px){.tl-btn{grid-template-columns:minmax(0,1fr) auto}.tl-date{grid-column:1/-1}}
 
 .note-soon{margin:0;font-size:1rem;color:var(--muted);border-left:3px solid var(--accent);padding-left:.8rem}
+.foot-dates{margin:.8rem 0 0;font-family:var(--mono);font-size:.75rem;color:var(--muted)}
 .foot-links{display:flex;flex-wrap:wrap;gap:.4rem 1.2rem;margin-top:.8rem;font-family:var(--mono);font-size:.75rem;color:var(--muted)}
 .foot-links a{color:var(--muted)}
 body{margin:0}
@@ -2918,6 +2919,7 @@ di stelle –
 
 <footer class="wrap">
   <div class="foot-contact" id="contatti"><span class="f-lab">Contatti</span><p>Segnalazioni, correzioni o domande? Scrivimi su <a href="https://www.linkedin.com/in/marco-scigliuolo/" rel="noopener">LinkedIn ↗</a></p></div>
+  <p class="foot-dates"><span>Online dal</span> <time id="fd-born" datetime="2026-11-09">9 novembre 2026</time> · <span>Sito aggiornato il</span> <time id="fd-upd"></time></p>
   <div class="foot-links"><a href="privacy.html">Privacy</a><span>Nessun cookie. <a href="#mappa" data-goto-art="visite">Statistiche anonime</a> con GoatCounter.</span></div>
 </footer>
 
@@ -4000,6 +4002,13 @@ addEventListener("lingua",upd);upd()})();
 // libreria IFC: la ricerca nella scheda apre la pagina con i risultati
 document.querySelectorAll(".ifc-q").forEach(function(f){var i=f.querySelector("input");function go(){var q=i.value.trim();location.href="manuali/libreria-ifc.html"+(q?"?q="+encodeURIComponent(q):"")}
 f.querySelector("button").addEventListener("click",go);i.addEventListener("keydown",function(e){if(e.key==="Enter"){e.preventDefault();go()}})});
+</script>
+<script>
+/* date del sito nel piè di pagina: nascita fissa, aggiornamento letto dalla revisione */
+(function(){var m=document.querySelector('meta[name="revisione"]'),r=m&&/(\d{2})\/(\d{2})\/(\d{4})/.exec(m.content),u=document.getElementById("fd-upd"),b=document.getElementById("fd-born");if(!u||!b)return;
+if(r)u.setAttribute("datetime",r[3]+"-"+r[2]+"-"+r[1]);
+function f(el){var d=el.getAttribute("datetime");if(!d)return;var p=d.split("-");try{el.textContent=new Date(+p[0],p[1]-1,+p[2]).toLocaleDateString(document.documentElement.lang||"it",{day:"numeric",month:"long",year:"numeric"})}catch(e){el.textContent=p[2]+"/"+p[1]+"/"+p[0]}}
+function all(){f(b);f(u)}all();new MutationObserver(all).observe(document.documentElement,{attributes:true,attributeFilter:["lang"]})})();
 </script>
 </body>
 </html>

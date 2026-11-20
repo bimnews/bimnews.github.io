@@ -6,3 +6,5 @@
 §passo	{2}단계 중 {1}단계
 Ultimo aggiornamento	최근 업데이트
 Prossimo evento · costo da verificare	다음 행사 · 비용 확인 필요
+Online dal	공개일:
+Sito aggiornato il	사이트 업데이트:

@@ -6,3 +6,5 @@
 §passo	Paso {1} de {2}
 Ultimo aggiornamento	Última actualización
 Prossimo evento · costo da verificare	Próximo evento · coste por verificar
+Online dal	En línea desde el
+Sito aggiornato il	Sitio actualizado el
