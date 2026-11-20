@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Guida alla progettazione antincendio · I manuali di BIM News</title>
+<meta name="description" content="Una guida interattiva alla progettazione antincendio secondo le norme italiane, con quelle dell'Alto Adige: committente, destinazione d'uso e dimensioni portano alle regole applicabili; poi gli accorgimenti locale per locale, le vie d'esodo, i materiali, che cosa vuol dire REI e la mappa del workflow che lega antincendio, impianti e dati IFC.">
+<link rel="stylesheet" href="manuale.css">
+<script>try{var t=localStorage.getItem("tema-2026");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+<style>
+.btn.ghost,:root[data-theme="dark"] .btn.ghost{color:var(--accent)}
+.wiz{background:var(--surface);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);padding:1rem 1.1rem;margin:.6rem 0 1.2rem}
+.wiz h3{margin:.2rem 0 .5rem}
+.stepn{display:inline-grid;place-items:center;width:1.6rem;height:1.6rem;border-radius:50%;background:var(--accent);color:#fff;font-family:var(--mono);font-size:.8rem;margin-right:.4rem}
+:root[data-theme="dark"] .stepn{color:#10141b}
+.opts{display:flex;flex-wrap:wrap;gap:.4rem;margin:.3rem 0 .9rem}
+.opt{border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:999px;padding:.35rem .85rem;font:inherit;font-size:.92rem;cursor:pointer}
+.opt[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
+:root[data-theme="dark"] .opt[aria-pressed="true"]{color:#10141b}
+.search{width:100%;max-width:28rem;font:inherit;padding:.5rem .8rem;border:1px solid var(--line);border-radius:999px;background:var(--bg);color:var(--ink);margin-bottom:.4rem}
+.nums{display:flex;flex-wrap:wrap;gap:.8rem 1.4rem;margin:.3rem 0 .6rem}
+.nums label{display:grid;gap:.2rem;font-size:.9rem;color:var(--muted)}
+.nums input,.nums select{font:inherit;padding:.4rem .6rem;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink);width:10rem}
+.res{border-top:1px solid var(--line);margin-top:.6rem;padding-top:.8rem}
+.res .card{margin-bottom:.7rem}
+.kv{display:grid;grid-template-columns:minmax(9rem,max-content) 1fr;gap:.25rem 1rem;margin:.3rem 0}
+.kv dt{font-family:var(--mono);font-size:.8rem;color:var(--muted);padding-top:.15rem}
+.kv dd{margin:0}
+.big{font-family:var(--mono);font-weight:700;color:var(--accent)}
+.note{font-size:.88rem;color:var(--muted)}
+.rooms{display:flex;flex-wrap:wrap;gap:.4rem;margin:.5rem 0 .8rem}
+.room{background:var(--surface);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);padding:1rem 1.1rem}
+.room h3{margin-top:0}
+.room h4{margin:.8rem 0 .2rem;font-family:var(--mono);font-size:.78rem;text-transform:uppercase;letter-spacing:.04em;color:var(--accent)}
+.room ul{margin:.2rem 0}
+.letters{display:flex;flex-wrap:wrap;gap:.5rem;margin:.5rem 0}
+.letter{width:3.2rem;height:3.2rem;border-radius:14px;border:1px solid var(--line);background:var(--surface);font:700 1.4rem var(--mono);color:var(--ink);cursor:pointer}
+.letter[aria-pressed="true"]{background:var(--a5);border-color:var(--a5);color:#fff}
+.lx{border-left:6px solid var(--a5);background:var(--a5s);border-radius:12px;padding:.7rem 1rem;min-height:3.5rem}
+.flow{width:100%;height:auto;margin:.4rem 0 1rem}
+.fl-box{fill:var(--surface);stroke:var(--line);stroke-width:1.2}
+.fl-a{fill:var(--soft);stroke:var(--accent);stroke-width:1.4}
+.fl-b{fill:var(--a2s);stroke:var(--a2);stroke-width:1.4}
+.fl-c{fill:var(--a3s);stroke:var(--a3);stroke-width:1.4}
+.fl-d{fill:var(--a5s);stroke:var(--a5);stroke-width:1.4}
+.fl-t{font-family:var(--body);font-size:12.5px;fill:var(--ink)}
+.fl-h{font-family:var(--mono);font-size:11px;font-weight:700;fill:var(--muted);letter-spacing:.06em}
+.fl-l{stroke:var(--muted);stroke-width:1.4;fill:none}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><marker id="arm" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 10 5 0 10z" style="fill:var(--muted)"/></marker></defs></svg>
+<div class="topbar"><div class="in"><a class="back" href="../#studio">← BIM News · Nello studio</a><span class="sp"></span><a class="btn ghost noprint" href="#c6">La mappa del workflow</a><a class="btn noprint" href="#c1">Il percorso guidato</a></div></div>
+<div class="layout">
+<nav class="toc" aria-label="Indice">
+  <b>Indice</b>
+  <ol>
+    <li><a href="#c1">1 · Il percorso guidato</a></li>
+    <li><a href="#c2">2 · Locale per locale</a></li>
+    <li><a href="#c3">3 · Le vie d'esodo</a></li>
+    <li><a href="#c4">4 · I materiali</a></li>
+    <li><a href="#c5">5 · Che cosa vuol dire REI</a></li>
+    <li><a href="#c6">6 · La mappa del workflow</a></li>
+    <li><a href="#c7">7 · Rivelazione e allarme</a></li>
+    <li><a href="#c8">8 · Prima di firmare</a></li>
+    <li><a href="#fonti">Fonti</a></li>
+  </ol>
+</nav>
+<main>
+<header class="cover">
+  <div>
+    <span class="kick">I manuali di BIM News · Nello studio</span>
+    <h1>Guida alla progettazione antincendio</h1>
+    <p>Si sceglie il committente, la destinazione d'uso e le dimensioni dell'edificio, e la guida dice quali regole si applicano. Poi, locale per locale, che cosa prevedere, e come tutto questo diventa dati nel modello degli impianti.</p>
+    <div class="meta"><span class="pill">norme italiane</span><span class="pill">Codice di prevenzione incendi</span><span class="pill">Alto Adige</span><span class="pill">MEP e IFC</span><span class="pill">Edizione novembre 2026</span></div>
+  </div>
+  <svg viewBox="0 0 360 240" role="img" aria-label="Pianta schematica con due compartimenti, una porta tagliafuoco, il percorso d'esodo e il luogo sicuro">
+    <rect class="s-as" x="10" y="10" width="340" height="220" rx="22"/>
+    <rect x="34" y="40" width="250" height="160" rx="6" style="fill:var(--surface);stroke:var(--ink);stroke-width:2"/>
+    <path d="M160 40V200" style="stroke:var(--a5);stroke-width:5"/>
+    <rect x="150" y="104" width="20" height="30" style="fill:var(--a5s);stroke:var(--a5);stroke-width:2"/>
+    <text class="s-tm" x="54" y="62" style="fill:var(--a5)">REI 60</text>
+    <text class="s-tm" x="176" y="62" style="fill:var(--a5)">EI 60</text>
+    <path d="M70 160 C110 150 130 125 160 119 S240 120 284 120 H330" style="stroke:var(--a2);stroke-width:3;fill:none;stroke-dasharray:7 5" marker-end="url(#arm)"/>
+    <circle cx="70" cy="160" r="6" style="fill:var(--a3)"/>
+    <text class="s-tm" x="56" y="184">Les ≤ 60 m</text>
+    <text class="s-tb" x="292" y="108" style="fill:var(--a2)">luogo</text><text class="s-tb" x="292" y="146" style="fill:var(--a2)">sicuro</text>
+  </svg>
+</header>
+
+<div class="box warn"><b>Norme italiane</b><p>Questa guida segue la normativa antincendio italiana: il DPR 151/2011, il Codice di prevenzione incendi con le sue regole tecniche e, per l'Alto Adige, le norme della Provincia autonoma di Bolzano. Fuori dall'Italia i principi restano utili come metodo, ma soglie e valori vanno presi dalle norme del luogo.</p><p><b>Pubblico o privato cambia meno di quanto si pensi.</b> Le regole tecniche antincendio non dipendono da chi è il proprietario: una scuola privata e una scuola provinciale seguono le stesse regole. Il primo passo del percorso esiste perché con un committente pubblico cambiano altre cose, che toccano il progetto: le procedure, l'obbligo del BIM, i dati che il capitolato chiede nel modello. Ogni valore della guida ha il suo riferimento; i numeri del Codice vengono dal testo coordinato dei Vigili del fuoco in vigore dal 1° gennaio 2023, da confrontare sempre con l'ultima versione pubblicata. La guida aiuta a impostare il lavoro: non sostituisce la valutazione del rischio né la firma del progettista antincendio.</p></div>
+
+<section class="ch" id="c1">
+  <div class="ch-h"><span class="ch-n">1</span><h2>Il percorso guidato</h2></div>
+  <div class="wiz" id="wiz">
+    <h3><span class="stepn">1</span>Dove si trova l'edificio?</h3>
+    <div class="opts" id="w-loc">
+      <button class="opt" data-v="bz" aria-pressed="true">Italia · Alto Adige</button>
+      <button class="opt" data-v="it" aria-pressed="false">Italia · altre regioni</button>
+      <button class="opt" data-v="x" aria-pressed="false">Fuori dall'Italia</button>
+    </div>
+    <div id="w-body">
+    <h3><span class="stepn">2</span>Chi è il committente?</h3>
+    <div class="opts" id="w-comm">
+      <button class="opt" data-v="pub" aria-pressed="true">Pubblico</button>
+      <button class="opt" data-v="priv" aria-pressed="false">Privato</button>
+    </div>
+    <h3><span class="stepn">3</span>Che edificio è?</h3>
+    <input class="search" id="w-q" type="search" placeholder="Cerca una destinazione: scuola, ufficio, garage, hotel…" aria-label="Cerca una destinazione d'uso" autocomplete="off">
+    <div class="opts" id="w-dest"></div>
+    <h3><span class="stepn">4</span>Quanto è grande?</h3>
+    <div class="nums" id="w-nums"></div>
+    </div>
+    <div class="res" id="w-res" aria-live="polite"></div>
+  </div>
+  <p class="note">I calcoli si fanno nel browser e non escono da questa pagina. Le soglie dell'attività soggetta vengono dall'Allegato I del DPR 151/2011; le classificazioni e le tabelle dalle regole tecniche verticali del Codice (DM 3/8/2015, sezione V).</p>
+</section>
+
+<section class="ch" id="c2">
+  <div class="ch-h"><span class="ch-n">2</span><h2>Locale per locale</h2></div>
+  <p>Ogni locale ha un ruolo nella strategia antincendio, e quasi sempre un riflesso sugli impianti. Le sigle delle aree (TA, TO, TM, TK, TT) sono quelle delle regole tecniche per scuole e uffici (V.7 e V.4); per le altre attività le aree hanno nomi propri, ma la logica è la stessa.</p>
+  <div class="rooms" id="rooms"></div>
+  <div class="room" id="room" aria-live="polite"></div>
+</section>
+
+<section class="ch" id="c3">
+  <div class="ch-h"><span class="ch-n">3</span><h2>Le vie d'esodo</h2></div>
+  <p class="lead">Il sistema d'esodo porta gli occupanti fino a un <b>luogo sicuro</b> (per esempio la pubblica via) prima che l'incendio li raggiunga. Il Codice lo verifica con poche grandezze: la lunghezza del percorso, i corridoi ciechi, le larghezze e il numero delle uscite.</p>
+  <h3>Lunghezze massime (Codice, tabelle S.4-25 e S.4-18)</h3>
+  <p>La <b>lunghezza d'esodo L<sub>es</sub></b> va da qualsiasi punto dell'attività fino a un luogo sicuro o a un luogo sicuro temporaneo (per esempio una scala protetta). Il <b>corridoio cieco L<sub>cc</sub></b> è il tratto in cui si può scappare in una sola direzione.</p>
+  <div class="tbl"><table>
+    <tr><th>Profilo R<sub>vita</sub></th><th>Max L<sub>es</sub></th><th>Max L<sub>cc</sub></th><th>Max affollamento del corridoio cieco</th></tr>
+    <tr><td>A1</td><td>70 m</td><td>45 m</td><td rowspan="4">100 occupanti</td></tr>
+    <tr><td>A2</td><td>60 m</td><td>30 m</td></tr>
+    <tr><td>A3</td><td>45 m</td><td>15 m</td></tr>
+    <tr><td>A4</td><td>30 m</td><td>10 m</td></tr>
+    <tr><td>B1, E1</td><td>60 m</td><td>25 m</td><td rowspan="6">50 occupanti</td></tr>
+    <tr><td>B2, E2</td><td>50 m</td><td>20 m</td></tr>
+    <tr><td>B3, E3</td><td>40 m</td><td>15 m</td></tr>
+    <tr><td>Cii1, Ciii1</td><td>40 m</td><td>20 m</td></tr>
+    <tr><td>Cii2, Ciii2</td><td>30 m</td><td>15 m</td></tr>
+    <tr><td>Cii3, Ciii3</td><td>20 m</td><td>10 m</td></tr>
+    <tr><td>D1</td><td>30 m</td><td>20 m</td><td rowspan="2">50 occupanti</td></tr>
+    <tr><td>D2</td><td>20 m</td><td>15 m</td></tr>
+  </table></div>
+  <p class="note">Il profilo R<sub>vita</sub> unisce chi sono gli occupanti (A: svegli e che conoscono l'edificio, come in una scuola o in un ufficio non aperto al pubblico; B: svegli ma che non lo conoscono, come in un negozio; C: possono dormire; D: ricevono cure; E: in transito) e quanto velocemente cresce l'incendio (1 lenta, 2 media, 3 rapida, 4 ultra-rapida). Tabelle G.3-1, G.3-2 e G.3-3. I valori si possono aumentare con requisiti antincendio aggiuntivi (paragrafo S.4.10).</p>
+  <h3>Larghezze minime (tabella S.4-27)</h3>
+  <div class="tbl"><table>
+    <tr><th>Larghezza</th><th>Quando</th></tr>
+    <tr><td>≥ 1200 mm</td><td>Ambito servito con più di 1000 occupanti, oppure più di 200 in piedi con densità oltre 0,7 persone/m²</td></tr>
+    <tr><td>≥ 1000 mm</td><td>Ambito servito con più di 300 occupanti</td></tr>
+    <tr><td>≥ 900 mm</td><td>Fino a 300 occupanti; larghezza adatta anche a chi usa ausili per il movimento</td></tr>
+    <tr><td>≥ 800 mm</td><td>Varchi da ambiti con al massimo 50 occupanti</td></tr>
+    <tr><td>≥ 700 mm</td><td>Varchi da ambiti con al massimo 10 occupanti (singoli uffici, camere, appartamenti)</td></tr>
+    <tr><td>≥ 600 mm</td><td>Locali con solo personale formato, o presenza occasionale e breve (locali impianti, piccoli depositi)</td></tr>
+  </table></div>
+  <h3>Scale e protezione delle vie d'esodo</h3>
+  <ul>
+    <li>Le scale d'esodo che collegano più compartimenti stanno in <b>vani protetti</b> con resistenza al fuoco almeno di classe 30 e porte almeno <b>E 30-Sa</b> (paragrafo S.4.8.2); con vie d'esodo a prova di fumo bastano porte E 30.</li>
+    <li>Lo <b>spazio calmo</b> è un luogo sicuro temporaneo dove chi non può scendere da solo attende e riceve assistenza.</li>
+    <li>Nelle vie d'esodo di scuole e uffici i materiali devono essere almeno del gruppo <b>GM2</b> di reazione al fuoco (V.7.4.1 e V.4.4.1, capitolo 4).</li>
+  </ul>
+  <div class="box bim"><b>Il riflesso sugli impianti</b><p>Nelle vie d'esodo l'impiantista porta l'illuminazione di sicurezza, la segnaletica, i pulsanti di allarme vicino alle uscite (capitolo 7) e gli avvisatori; e deve togliere quello che restringe la larghezza utile (quadri, radiatori, armadi tecnici sporgenti). Nel modello i percorsi si possono verificare: la lunghezza d'esodo è una «distanza sul percorso», una delle verifiche automatiche del capitolo 6.</p></div>
+</section>
+
+<section class="ch" id="c4">
+  <div class="ch-h"><span class="ch-n">4</span><h2>I materiali: la reazione al fuoco</h2></div>
+  <p class="lead">La <b>reazione al fuoco</b> dice quanto un materiale partecipa all'incendio: se brucia, quanto fumo fa, se gocciola. È una cosa diversa dalla <b>resistenza al fuoco</b> (capitolo 5), che riguarda quanto a lungo un elemento costruttivo continua a fare il suo lavoro.</p>
+  <div class="tbl"><table>
+    <tr><th>Classificazione</th><th>Che cosa dice</th></tr>
+    <tr><td>Euroclassi (UNI EN 13501-1): A1, A2, B, C, D, E, F</td><td>Dalla A1 (incombustibile) alla F (non classificato). Per i prodotti da costruzione è la classificazione europea.</td></tr>
+    <tr><td>s1, s2, s3</td><td>Produzione di fumo: s1 poca, s3 molta.</td></tr>
+    <tr><td>d0, d1, d2</td><td>Gocce e particelle ardenti: d0 nessuna, d2 molte.</td></tr>
+    <tr><td>Classi italiane 0–5 (DM 26/6/1984)</td><td>La vecchia classificazione nazionale, ancora citata da molte regole tecniche tradizionali. Nel Codice, dal DM 14/10/2022, le tabelle di reazione al fuoco usano solo le classi europee.</td></tr>
+    <tr><td>Gruppi GM0–GM4 del Codice (capitolo S.1)</td><td>Il Codice raggruppa le classi in gruppi di materiali: GM0 il più restrittivo, GM4 il più permissivo. Le tabelle S.1-5 e seguenti dicono quali classi entrano in ogni gruppo, per rivestimenti, pavimenti, isolanti e impianti.</td></tr>
+  </table></div>
+  <ul>
+    <li>Nelle vie d'esodo di scuole e uffici: almeno <b>GM2</b>; GM3 è ammesso aumentando di un livello il controllo dell'incendio e la rivelazione (V.7.4.1, V.4.4.1).</li>
+    <li>Fino al 5% della superficie lorda interna di una via d'esodo o di un locale può essere in materiali del gruppo GM4 (paragrafo S.1.4).</li>
+    <li>Negli impianti contano soprattutto i <b>cavi</b> (classificati secondo il regolamento europeo dei prodotti da costruzione), gli <b>isolanti</b> di tubazioni e canali e le <b>condotte</b>: anche loro hanno una classe di reazione al fuoco, e va scritta nel tipo di famiglia.</li>
+  </ul>
+</section>
+
+<section class="ch" id="c5">
+  <div class="ch-h"><span class="ch-n">5</span><h2>Che cosa vuol dire REI</h2></div>
+  <p class="lead">«REI 60» non è un materiale: è il comportamento di un elemento costruttivo durante una prova di incendio normalizzata. Le lettere dicono <i>che cosa</i> l'elemento continua a garantire, il numero <i>per quanti minuti</i>. Clic su una lettera.</p>
+  <div class="letters" id="letters"></div>
+  <div class="lx" id="lx" aria-live="polite"></div>
+  <h3>Come si legge</h3>
+  <div class="tbl"><table>
+    <tr><th>Sigla</th><th>Elemento tipico</th><th>Che cosa garantisce</th></tr>
+    <tr><td>R 60</td><td>Trave, pilastro</td><td>Regge il carico per 60 minuti</td></tr>
+    <tr><td>REI 60</td><td>Solaio o muro portante di compartimento</td><td>Regge, non fa passare fiamme e gas caldi, e il lato non esposto resta sotto i limiti di temperatura, per 60 minuti</td></tr>
+    <tr><td>EI 60</td><td>Parete non portante, porta tagliafuoco</td><td>Tenuta e isolamento per 60 minuti, senza funzione portante</td></tr>
+    <tr><td>E 30-Sa</td><td>Porta di un vano scala protetto</td><td>Tenuta per 30 minuti e tenuta ai fumi freddi</td></tr>
+  </table></div>
+  <h3>Quale classe serve</h3>
+  <p>Con il Codice, al livello di prestazione III, la classe minima di un compartimento dipende dal suo <b>carico di incendio specifico di progetto q<sub>f,d</sub></b> (tabella S.2-3):</p>
+  <div class="tbl"><table>
+    <tr><th>q<sub>f,d</sub> (MJ/m²)</th><td>≤ 200</td><td>≤ 300</td><td>≤ 450</td><td>≤ 600</td><td>≤ 900</td><td>≤ 1200</td><td>≤ 1800</td><td>≤ 2400</td><td>&gt; 2400</td></tr>
+    <tr><th>Classe minima</th><td>nessuna</td><td>15</td><td>30</td><td>45</td><td>60</td><td>90</td><td>120</td><td>180</td><td>240</td></tr>
+  </table></div>
+  <p>Le regole verticali possono chiedere di più: per scuole e uffici la classe non può essere inferiore a 30 fuori terra con altezza HA, 60 fino a HD e 90 oltre, e 60 per i piani interrati (90 in HE) (tabelle V.7-1 e V.4-1). Il percorso guidato del capitolo 1 la calcola.</p>
+  <div class="box tip"><b>Riferimenti</b><p>Classificazione: DM 16/2/2007 e UNI EN 13501-2. Prestazioni di resistenza al fuoco richieste alle costruzioni: DM 9/3/2007 per le regole tradizionali, capitolo S.2 per il Codice. Per gli impianti contano soprattutto i <b>sistemi di sigillatura degli attraversamenti</b> e le <b>serrande tagliafuoco</b>: ogni tubo, canale o passerella che passa una parete EI 60 deve ripristinarne la classe.</p></div>
+</section>
+
+<section class="ch" id="c6">
+  <div class="ch-h"><span class="ch-n">6</span><h2>La mappa del workflow</h2></div>
+  <p class="lead">L'antincendio è la disciplina più intrecciata con gli impianti: la strategia decide i compartimenti, i compartimenti decidono dove servono serrande e sigillature, la rivelazione e gli idranti sono impianti. Perché il modello serva davvero, ogni decisione deve diventare un dato con un posto preciso, in Revit e nell'IFC.</p>
+  <svg class="flow" viewBox="0 0 1000 470" role="img" aria-label="Mappa del workflow: dalla regola applicabile alla strategia, al modello architettonico e impiantistico, ai dati IFC, alle verifiche e alla pratica antincendio">
+    <text class="fl-h" x="20" y="24">ANTINCENDIO</text>
+    <text class="fl-h" x="20" y="146">ARCHITETTURA</text>
+    <text class="fl-h" x="20" y="268">IMPIANTI (MEP)</text>
+    <text class="fl-h" x="20" y="390">DATI E VERIFICHE</text>
+    <path d="M10 120H990M10 242H990M10 364H990" style="stroke:var(--line);stroke-dasharray:4 6"/>
+    <rect class="fl-d" x="20" y="34" width="190" height="72" rx="12"/><text class="fl-t" x="32" y="58">1 · Attività soggetta,</text><text class="fl-t" x="32" y="76">regola applicabile,</text><text class="fl-t" x="32" y="94">profili di rischio</text>
+    <rect class="fl-d" x="250" y="34" width="210" height="72" rx="12"/><text class="fl-t" x="262" y="58">2 · Strategia S.1–S.10:</text><text class="fl-t" x="262" y="76">livelli di prestazione,</text><text class="fl-t" x="262" y="94">compartimenti, esodo</text>
+    <rect class="fl-d" x="780" y="34" width="200" height="72" rx="12"/><text class="fl-t" x="792" y="58">8 · Tavole antincendio,</text><text class="fl-t" x="792" y="76">relazione e pratica</text><text class="fl-t" x="792" y="94">(SCIA, valutazione progetto)</text>
+    <rect class="fl-a" x="250" y="156" width="210" height="72" rx="12"/><text class="fl-t" x="262" y="180">3 · Compartimenti e REI</text><text class="fl-t" x="262" y="198">su muri, solai, porte;</text><text class="fl-t" x="262" y="216">locali con area e uso</text>
+    <rect class="fl-a" x="500" y="156" width="230" height="72" rx="12"/><text class="fl-t" x="512" y="180">4 · Vie d'esodo, uscite,</text><text class="fl-t" x="512" y="198">vani scala protetti,</text><text class="fl-t" x="512" y="216">spazi calmi</text>
+    <rect class="fl-c" x="250" y="278" width="210" height="72" rx="12"/><text class="fl-t" x="262" y="302">5 · Attraversamenti:</text><text class="fl-t" x="262" y="320">serrande tagliafuoco,</text><text class="fl-t" x="262" y="338">sigillature certificate</text>
+    <rect class="fl-c" x="500" y="278" width="230" height="72" rx="12"/><text class="fl-t" x="512" y="302">6 · Impianti antincendio:</text><text class="fl-t" x="512" y="320">rivelazione, allarme, EVAC,</text><text class="fl-t" x="512" y="338">idranti, sprinkler, sicurezza</text>
+    <rect class="fl-b" x="250" y="400" width="520" height="56" rx="12"/><text class="fl-t" x="262" y="424">7 · Parametri condivisi → Property Set IFC → verifiche automatiche (presenza, quote,</text><text class="fl-t" x="262" y="442">distanze, percorsi) e controllo delle interferenze sugli elementi resistenti al fuoco</text>
+    <path class="fl-l" d="M210 70H246" marker-end="url(#arm)"/>
+    <path class="fl-l" d="M355 106V152" marker-end="url(#arm)"/>
+    <path class="fl-l" d="M460 192H496" marker-end="url(#arm)"/>
+    <path class="fl-l" d="M355 228V274" marker-end="url(#arm)"/>
+    <path class="fl-l" d="M460 70H560V152" marker-end="url(#arm)"/>
+    <path class="fl-l" d="M615 228V274" marker-end="url(#arm)"/>
+    <path class="fl-l" d="M355 350V396" marker-end="url(#arm)"/>
+    <path class="fl-l" d="M615 350V396" marker-end="url(#arm)"/>
+    <path class="fl-l" d="M770 428H880V110" marker-end="url(#arm)"/>
+    <path class="fl-l" d="M250 428H130V110" style="stroke-dasharray:5 5" marker-end="url(#arm)"/>
+    <text class="fl-t" x="138" y="300" style="font-size:11px;fill:var(--muted)">non conformità:</text><text class="fl-t" x="138" y="316" style="font-size:11px;fill:var(--muted)">si torna alla</text><text class="fl-t" x="138" y="332" style="font-size:11px;fill:var(--muted)">strategia</text>
+  </svg>
+  <h3>Dove sta ogni dato</h3>
+  <p>Le proprietà IFC qui sotto esistono nei Property Set standard di IFC 4.3 (verificate sui modelli dei Property Set di buildingSMART); i parametri di Revit vanno mappati con il file dei Property Set (si veda la guida <a href="property-set-ifc-revit.html">Property Set per l'export IFC da Revit</a>).</p>
+  <div class="tbl"><table>
+    <tr><th>Dato</th><th>Elemento</th><th>Classe IFC</th><th>Proprietà IFC</th></tr>
+    <tr><td>Classe di resistenza al fuoco</td><td>Muri, solai, travi, pilastri, porte, finestre, controsoffitti</td><td>IfcWall, IfcSlab, IfcBeam, IfcColumn, IfcDoor, IfcWindow, IfcCovering</td><td><code>Pset_WallCommon.FireRating</code> (e gli equivalenti Pset_SlabCommon, Pset_BeamCommon, Pset_ColumnCommon, Pset_DoorCommon, Pset_WindowCommon, Pset_CoveringCommon)</td></tr>
+    <tr><td>Elemento di compartimentazione</td><td>Muri e solai</td><td>IfcWall, IfcSlab</td><td><code>Pset_WallCommon.Compartmentation</code>, <code>Pset_SlabCommon.Compartmentation</code></td></tr>
+    <tr><td>Reazione al fuoco, combustibilità</td><td>Muri, solai, rivestimenti</td><td>IfcWall, IfcSlab, IfcCovering</td><td><code>Combustible</code>, <code>SurfaceSpreadOfFlame</code>; per i rivestimenti anche <code>FlammabilityRating</code></td></tr>
+    <tr><td>Uscita di sicurezza, autochiusura, tenuta fumi</td><td>Porte</td><td>IfcDoor</td><td><code>Pset_DoorCommon.FireExit</code>, <code>SelfClosing</code>, <code>SmokeStop</code></td></tr>
+    <tr><td>Compartimento</td><td>Insieme di locali</td><td>IfcSpatialZone con PredefinedType <code>FIRESAFETY</code> (oppure IfcZone)</td><td>Nome e codice del compartimento, classe richiesta</td></tr>
+    <tr><td>Requisiti del locale</td><td>Locali</td><td>IfcSpace</td><td><code>Pset_SpaceFireSafetyRequirements</code>: FireRiskFactor, FlammableStorage, FireExit, SprinklerProtection, SprinklerProtectionAutomatic, AirPressurization</td></tr>
+    <tr><td>Serranda tagliafuoco</td><td>Canali</td><td>IfcDamper, <code>FIREDAMPER</code> o <code>FIRESMOKEDAMPER</code></td><td><code>Pset_DamperTypeFireDamper</code>: ActuationType, ClosureRatingEnum, FireResistanceRating, FusibleLinkTemperature</td></tr>
+    <tr><td>Rivelatori</td><td>Impianto di rivelazione</td><td>IfcSensor, <code>SMOKESENSOR</code>, <code>HEATSENSOR</code>, <code>FIRESENSOR</code></td><td><code>Pset_SensorTypeSmokeSensor</code>: CoverageArea, SetPointConcentration, HasBuiltInAlarm</td></tr>
+    <tr><td>Pulsanti e avvisatori</td><td>Impianto di allarme</td><td>IfcAlarm, <code>BREAKGLASSBUTTON</code> o <code>MANUALPULLBOX</code>, <code>SIREN</code>, <code>BELL</code>, <code>LIGHT</code></td><td><code>Pset_AlarmTypeCommon.AlarmCondition</code></td></tr>
+    <tr><td>Idranti, naspi, sprinkler, attacco autopompa</td><td>Rete antincendio</td><td>IfcFireSuppressionTerminal, <code>FIREHYDRANT</code>, <code>HOSEREEL</code>, <code>SPRINKLER</code>, <code>BREECHINGINLET</code></td><td><code>Pset_FireSuppressionTerminalTypeHoseReel</code>, <code>…TypeSprinkler</code> (CoverageArea, ActivationTemperature, Response…)</td></tr>
+  </table></div>
+  <h3>Sei tipi di verifica automatica</h3>
+  <p>Un modello con questi dati si può controllare con regole scritte una volta (in un IDS, in Solibri, in Dynamo). Dal più semplice al più complesso:</p>
+  <ol class="steps">
+    <li><b>Dato:</b> il parametro è compilato e ha un valore ammesso (classe dell'estintore, categoria dell'avvisatore ottico).</li>
+    <li><b>Altezza:</b> quota del dispositivo dal pavimento finito (pulsante tra 1,0 e 1,6 m).</li>
+    <li><b>Presenza:</b> almeno N dispositivi per locale o per zona (almeno un rivelatore per locale, almeno due pulsanti per zona).</li>
+    <li><b>Distanza diretta:</b> minima o massima da un elemento (pulsante vicino all'uscita).</li>
+    <li><b>Distanza sul percorso:</b> lunghezza reale da ogni punto del pavimento (pulsante entro 30 m, lunghezza d'esodo).</li>
+    <li><b>Aggregato:</b> somma su zona o compartimento (zona di rivelazione fino a 1600 m², al massimo 32 punti per linea senza isolatori).</li>
+  </ol>
+  <div class="box warn"><b>Il punto debole: gli attraversamenti</b><p>Il controllo delle interferenze tra il modello impianti e gli elementi con <code>FireRating</code> trova ogni punto in cui un tubo, un canale o una passerella attraversa un compartimento. Ognuno deve avere la sua serranda o la sua sigillatura, con la stessa classe dell'elemento attraversato. È il controllo che più spesso manca, e quello che in cantiere costa di più.</p></div>
+</section>
+
+<section class="ch" id="c7">
+  <div class="ch-h"><span class="ch-n">7</span><h2>Rivelazione e allarme (UNI 9795:2021)</h2></div>
+  <p>Le regole della norma che si traducono direttamente in posizioni e dati del modello impianti. Il posizionamento dei rivelatori puntiformi (aree sorvegliate, distanze da pareti e travi, altezze) sta nei prospetti della norma e dipende dal tipo di rivelatore e dal soffitto: va letto sul testo.</p>
+  <div class="tbl"><table>
+    <tr><th>Punto</th><th>Regola</th><th>Valore</th></tr>
+    <tr><td>5.1.1–5.1.2</td><td>L'area sorvegliata è coperta per intero, compresi vani ascensore, cavedi, condotte, controsoffitti e sottopavimenti</td><td>—</td></tr>
+    <tr><td>5.2.3</td><td>Una zona non comprende più di un piano (salvo vani scala e ascensori)</td><td>—</td></tr>
+    <tr><td>5.2.4</td><td>Superficie di ogni zona</td><td>≤ 1600 m²</td></tr>
+    <tr><td>5.2.6</td><td>Rivelatori in controsoffitti e sottopavimenti in zone distinte, con segnalazione luminosa locale</td><td>—</td></tr>
+    <tr><td>5.2.7</td><td>Linea che serve più zone o più di 32 punti: ad anello, con isolatori di corto circuito (UNI EN 54-17)</td><td>32 punti</td></tr>
+    <tr><td>5.4.1.2</td><td>Almeno un rivelatore in ogni locale dell'area sorvegliata</td><td>≥ 1</td></tr>
+    <tr><td>5.4.6.2, 6.1.2</td><td>Pulsanti manuali per zona</td><td>≥ 2</td></tr>
+    <tr><td>6.1.2</td><td>Percorso massimo per raggiungere un pulsante; pulsanti lungo le vie d'esodo e vicino alle uscite di sicurezza</td><td>30 m (rischio basso e medio), 15 m (elevato)</td></tr>
+    <tr><td>6.1.3</td><td>Altezza di installazione dei pulsanti</td><td>1,0–1,6 m</td></tr>
+    <tr><td>5.5.3.7</td><td>Avvisatori ottici di categoria W a parete</td><td>≥ 2,4 m</td></tr>
+    <tr><td>5.6.4.1</td><td>Autonomia dell'alimentazione di riserva</td><td>24 h + 30 min di allarme</td></tr>
+    <tr><td>7.1.2</td><td>Linee ad anello: andata e ritorno su percorsi distinti</td><td>≥ 0,30 m o setto separatore</td></tr>
+  </table></div>
+  <p>Il livello di prestazione richiesto (dal I, affidato agli occupanti, al IV, rivelazione automatica estesa a tutta l'attività: tabella S.7-1) lo dice la regola applicabile; per scuole e uffici lo calcola il percorso guidato del capitolo 1.</p>
+</section>
+
+<section class="ch" id="c8">
+  <div class="ch-h"><span class="ch-n">8</span><h2>Prima di firmare</h2></div>
+  <p>Le verifiche minime prima di emettere le tavole antincendio. Quelle con <i>(firma)</i> restano del progettista anche quando le regole sono automatiche. Le spunte restano in questo browser.</p>
+  <ul class="ck" id="ck" style="list-style:none;padding:0">
+  </ul>
+  <p><button type="button" class="btn ghost" id="ck-reset">Azzera le spunte</button></p>
+</section>
+
+<section class="ch" id="fonti">
+  <div class="ch-h"><span class="ch-n">≡</span><h2>Fonti</h2></div>
+  <ul class="src">
+    <li>Ministero dell'Interno, Dipartimento dei Vigili del fuoco, <a href="https://www.vigilfuoco.it/servizi-le-aziende-e-i-professionisti/prevenzione-incendi/testi-coordinati-di-prevenzione/testi-coordinati-di-prevenzione-regole-tecniche-suddivise-per-attivita" target="_blank" rel="noopener">testi coordinati di prevenzione incendi</a>: Codice di prevenzione incendi, DM 3/8/2015, allegato 1, testo coordinato in vigore dal 1° gennaio 2023 (capitoli G.3, S.1, S.2, S.4, S.6, S.7, V.4, V.6, V.7, V.8, V.9, V.14).</li>
+    <li>DPR 1/8/2011 n. 151, Allegato I: elenco delle attività soggette e categorie A, B, C (tabella riportata da <a href="https://biblus.acca.it/attivita-di-prevenzione-incendi-guida-al-dpr-151-2011/" target="_blank" rel="noopener">BibLus-net</a>, confrontata con il testo del decreto).</li>
+    <li><a href="https://mauromalizia.it/testi-coordinati/codice-di-prevenzione-incendi/" target="_blank" rel="noopener">mauromalizia.it, testo coordinato del Codice</a>: storia delle modifiche, RTV V.6 obbligatoria (abrogato il DM 1/2/1986), alternatività delle altre RTV dotate di regola tradizionale.</li>
+    <li>Provincia autonoma di Bolzano, Ufficio prevenzione incendi, <a href="https://bevoelkerungsschutz.provinz.bz.it/de/brandverhuetung/brandschutzbestimmungen" target="_blank" rel="noopener">Brandschutzbestimmungen</a> (in tedesco): regole provinciali per edilizia scolastica (DPP 4/10/2006 n. 51 e DPP 23/2/2009 n. 10), esercizi pubblici e ricettivi (DPGP 13/6/1989 n. 11, modificato dal DPP 8/2/2017 n. 2), locali di pubblico spettacolo e impianti termici, che prevalgono sulle norme statali; circolari 2/2005 (opere pubbliche) e 1/2017 (applicazione del Codice in Alto Adige).</li>
+    <li>LP 15/4/2025 n. 4, procedure antincendio, e il regolamento di esecuzione (DPP 22/6/2026 n. 18): <a href="https://landesregierung.provinz.bz.it/de/news/brandschutzverfahren-durchfuhrungsverordnung-genehmigt" target="_blank" rel="noopener">comunicato della Provincia</a> e <a href="https://swz.it/die-neuen-brandschutz-regeln-und-der-termin-18-oktober/" target="_blank" rel="noopener">SWZ</a> (in tedesco). La legge regola le procedure: le regole tecniche restano quelle vigenti.</li>
+    <li>Provincia autonoma di Bolzano, <a href="https://oeffentliche-vertraege.provinz.bz.it/de/news/neue-schwellenwerte-fur-die-verpflichtung-zur-nutzung-des-bim-bei-offentlichen-auftragen-in-der-autonomen-provinz-bozen" target="_blank" rel="noopener">soglia di 2 milioni di euro per l'obbligo BIM</a> (LP 16/2015, art. 9, c. 2-bis, in tedesco).</li>
+    <li>UNI 9795:2021, sistemi fissi automatici di rivelazione e segnalazione allarme d'incendio: i punti riportati sono stati letti sul testo della norma.</li>
+    <li>buildingSMART, IFC 4.3 ADD2: classi, PredefinedType e Property Set controllati con IfcOpenShell 0.9 sui modelli dei Property Set ufficiali.</li>
+    <li>D.Lgs. 36/2023, art. 43, modificato dal D.Lgs. 209/2024: obbligo BIM dal 1° gennaio 2025 per le opere oltre 2 milioni di euro.</li>
+    <li>DM 16/2/2007 (classificazione di resistenza al fuoco), DM 9/3/2007 (prestazioni richieste alle costruzioni), DM 1, 2 e 3/9/2021 (controlli, gestione della sicurezza e luoghi di lavoro), UNI EN 13501-1 e -2.</li>
+  </ul>
+  <div class="box idea"><b>Come è nato questo articolo</b><p>È uno dei «manuali di Claude»: l'ha scritto Claude, l'assistente di intelligenza artificiale di Anthropic, partendo dalla guida di lavoro che il curatore usa per gli edifici pubblici in provincia di Bolzano. Le tabelle del Codice sono state lette sulle pagine del testo coordinato dei Vigili del fuoco; le soglie del DPR 151/2011 confrontate con l'Allegato I; le regole provinciali prese dalle pagine dell'Ufficio prevenzione incendi.</p></div>
+  <p class="foot">BIM News · I manuali di Claude · Guida alla progettazione antincendio · edizione novembre 2026</p>
+</section>
+</main>
+</div>
+<script>
+(function(){
+var $=function(i){return document.getElementById(i)};
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]});}
+/* ---------- tabelle verificate (Codice, testo coordinato 1/1/2023) ---------- */
+var H5=["HA","HB","HC","HD","HE"];
+function hcl(h){return h<=12?"HA":h<=24?"HB":h<=32?"HC":h<=54?"HD":"HE";}
+var RES47={fuori:{HA:30,HB:60,HC:60,HD:60,HE:90},interrati:{HA:60,HB:60,HC:60,HD:60,HE:90}};
+var CTRL47=function(h){return {base:h==="HA"?"II":"III",tk:(h==="HA"||h==="HB")?"III (IV se a quota inferiore a −5 m"+"%TK%)":"IV"};};
+var RIV7={OA:{HA:"I [2]",HB:"II [1]",HC:"III",HD:"III",HE:"IV"},OB:{HA:"II [1]",HB:"II [1]",HC:"III",HD:"IV",HE:"IV"},OC:{HA:"III",HB:"III",HC:"IV",HD:"IV",HE:"IV"},OD:{HA:"III",HB:"III",HC:"IV",HD:"IV",HE:"IV"},OE:{HA:"IV",HB:"IV",HC:"IV",HD:"IV",HE:"IV"}};
+var RIV4={OA:{HA:"II [1]",HB:"II [1][2]",HC:"II [1][2]",HD:"III [2]",HE:"IV"},OB:{HA:"II [1][2]",HB:"II [1][2]",HC:"III [2]",HD:"IV",HE:"IV"},OC:{HA:"III [2]",HB:"III [2]",HC:"IV",HD:"IV",HE:"IV"}};
+var IDR7={OA:"1",OB:"1",OC:"1",OD:"2",OE:"2"}, IDR4={OA:"1",OB:"2",OC:"3"};
+var LES={A1:[70,45],A2:[60,30],A3:[45,15],A4:[30,10],B1:[60,25],B2:[50,20],B3:[40,15],Cii1:[40,20],Cii2:[30,15],Cii3:[20,10],Ciii1:[40,20],Ciii2:[30,15],Ciii3:[20,10],D1:[30,20],D2:[20,15]};
+/* ---------- destinazioni ---------- */
+var D={
+ scuola:{l:"Scuola",k:"scuola istituto liceo collegio accademia aula scolastica",f:["n","h"],occ:"A",
+  dpr:function(v){if(v.n<=100)return null;return {a:67,c:v.n<=150?"A":v.n<=300?"B":"C",t:"Scuole di ogni ordine, grado e tipo con oltre 100 persone presenti"};},
+  bz:"Per l'edilizia scolastica valgono le norme provinciali (DPP 4/10/2006 n. 51 e DPP 23/2/2009 n. 10), che prevalgono su quelle statali: per applicare le norme statali serve una deroga. Le regole statali qui sotto servono per orientarsi.",
+  rule:"RTV <b>V.7</b> del Codice (scuole con più di 100 occupanti) oppure, in alternativa, la regola tradizionale DM 26/8/1992.",
+  cls:function(v){if(v.n<=100)return null;var o=v.n<=300?"OA":v.n<=500?"OB":v.n<=800?"OC":v.n<=1200?"OD":"OE",h=hcl(v.h),c=CTRL47(h);return {t:"V.7",rows:[["Classe (occupanti)",o],["Classe (quota dei piani)",h],["Resistenza al fuoco (V.7-1)","fuori terra "+RES47.fuori[h]+", interrati "+RES47.interrati[h]],["Controllo dell'incendio (V.7-3)","aree TA, TM, TO, TT: livello "+c.base+"; aree TK: livello "+c.tk.replace("%TK%","")],["Rete idranti UNI 10779 (V.7-4)","livello di pericolosità "+IDR7[o]+(IDR7[o]==="2"?"; protezione esterna richiesta"+(h==="HA"?" (non in HA)":"")+"; alimentazione singola superiore":"; protezione esterna non richiesta; alimentazione singola (ammessa promiscua)")],["Rivelazione e allarme (V.7-6)","livello "+RIV7[o][h]]],n:"[1] Le aree TM, TK e TT, se presenti, sorvegliate da rivelazione automatica. [2] Il livello I può essere garantito dall'impianto a campanelle della scuola, con un suono convenuto e codificato nel piano di emergenza. Nelle aree TA e TO i gas refrigeranti degli impianti di climatizzazione devono essere A1 o A2L (ISO 817, V.7.4.7)."};}},
+ asilo:{l:"Asilo nido",k:"asilo nido infanzia bambini",f:["n","h"],occ:"",
+  dpr:function(v){if(v.n<=30)return null;return {a:67,c:"B",t:"Asili nido con oltre 30 persone presenti"};},
+  rule:"RTV <b>V.9</b> del Codice (asili nido con più di 30 occupanti); in alternativa la regola tradizionale DM 16/7/2014. La V.9 chiede di tenere conto della vulnerabilità dei bambini e del fatto che possono dormire, soprattutto per l'esodo (V.9.4).",
+  bz:"Prima di scegliere la regola, va chiarito con l'Ufficio prevenzione incendi se la struttura rientra nelle norme provinciali sull'edilizia scolastica.",
+  cls:function(v){if(v.n<=30)return null;var h=v.h<=12?"HA":v.h<=32?"HB":v.h<=54?"HC":"HD";return {t:"V.9",rows:[["Classe (quota dei piani)",h],["Aree","TA bambini, TB uffici e servizi, TC cucine con impianti a gas, TM1 e TM2 lavanderie e depositi"]],n:"Le prestazioni richieste per ogni classe sono nelle tabelle del capitolo V.9."};}},
+ ufficio:{l:"Ufficio",k:"ufficio uffici direzionale sede municipio amministrazione",f:["n","h","pub"],occ:"A",
+  dpr:function(v){if(v.n<=300)return null;return {a:71,c:v.n<=500?"A":v.n<=800?"B":"C",t:"Aziende ed uffici con oltre 300 persone presenti"};},
+  rule:"RTV <b>V.4</b> del Codice (uffici con più di 300 occupanti) oppure, in alternativa, la regola tradizionale DM 22/2/2006.",
+  cls:function(v){if(v.n<=300)return null;var o=v.n<=500?"OA":v.n<=800?"OB":"OC",h=hcl(v.h),c=CTRL47(h);return {t:"V.4",rows:[["Classe (occupanti)",o],["Classe (quota dei piani)",h],["Resistenza al fuoco (V.4-1)","fuori terra "+RES47.fuori[h]+", interrati "+RES47.interrati[h]],["Controllo dell'incendio (V.4-3)","aree TA, TM, TO, TT: livello "+c.base+"; aree TK: livello "+c.tk.replace("%TK%"," o con superficie oltre 50 m²").replace("−5 m","−10 m")],["Rete idranti UNI 10779 (V.4-4)","livello di pericolosità "+IDR4[o]+(o==="OC"?"; protezione esterna richiesta"+(h==="HA"?" (non in HA)":"")+"; alimentazione singola superiore":o==="OB"?"; protezione esterna non richiesta; alimentazione singola":"; protezione esterna non richiesta; alimentazione singola (ammessa promiscua)")],["Rivelazione e allarme (V.4-6)","livello "+RIV4[o][h]+(v.pub?" (attività aperta al pubblico: un livello in più dove indicato [2])":"")]],n:"[1] Le aree TM, TK e TT, se presenti, sorvegliate da rivelazione automatica. [2] Un livello in più per le attività aperte al pubblico. Con il livello IV serve il sistema EVAC almeno nelle aree TA e TO (V.4.4.6). Nelle aree TA e TO i gas refrigeranti devono essere A1 o A2L (V.4.4.7)."};}},
+ residenza:{l:"Residenziale",k:"residenziale condominio abitazione appartamenti casa",f:["h"],occ:"Ci",
+  dpr:function(v){if(v.h<=24)return null;return {a:77,c:v.h<=32?"A":v.h<=54?"B":"C",t:"Edifici destinati ad uso civile con altezza antincendio superiore a 24 m"};},
+  rule:"Sopra i 24 m di altezza antincendio: RTV <b>V.14</b> del Codice oppure, in alternativa, la regola tradizionale DM 16/5/1987 n. 246. Sotto i 24 m l'edificio non è un'attività soggetta, ma possono esserlo l'autorimessa e la centrale termica.",
+  cls:function(v){if(v.h<=24)return null;var h=v.h<=32?"HC":v.h<=54?"HD":v.h<=80?"HE":"HF";return {t:"V.14",rows:[["Classe (quota dei piani)",h],["Aree","TA abitazioni, TB piccole attività, TC spazi comuni, TM1 e TM2 depositi, TO locali con più di 100 occupanti, TT locali tecnici"]],n:"Le prestazioni per classe sono nelle tabelle del capitolo V.14. Per i profili Ci il Codice permette di riferirsi alle soluzioni per Cii (G.3)."};}},
+ garage:{l:"Autorimessa",k:"autorimessa garage parcheggio box interrato",f:["A","h"],occ:"A",
+  dpr:function(v){if(v.A<=300)return null;return {a:75,c:v.A<=1000?"A":v.A<=3000?"B":"C",t:"Autorimesse pubbliche e private con superficie complessiva coperta superiore a 300 m²"};},
+  rule:"Sopra i 300 m²: RTV <b>V.6</b> del Codice, <b>obbligatoria</b> (il DM 1/2/1986 è stato abrogato).",
+  cls:function(v){if(v.A<=300)return null;var a=v.A<=1000?"AA":v.A<=5000?"AB":v.A<=10000?"AC":"AD";return {t:"V.6",rows:[["Classe (superficie lorda)",a],["Classe (occupanti)","SA se privata (occupanti che conoscono l'edificio), SB se pubblica, SC autosilo"]],n:"La classe per quota dei piani (HA, HB…) e le prestazioni sono nel capitolo V.6."};}},
+ negozio:{l:"Attività commerciale",k:"negozio commerciale supermercato vendita esposizione centro commerciale",f:["A","h"],occ:"B",
+  dpr:function(v){if(v.A<=400)return null;return {a:69,c:v.A<=600?"A":v.A<=1500?"B":"C",t:"Locali adibiti ad esposizione e/o vendita con superficie lorda superiore a 400 m²"};},
+  rule:"Sopra i 400 m²: RTV <b>V.8</b> del Codice oppure, in alternativa, la regola tradizionale DM 27/7/2010.",
+  cls:function(v){if(v.A<=400)return null;var a=v.A<=1500?"AA":v.A<=3000?"AB":v.A<=5000?"AC":v.A<=10000?"AD":"AE";return {t:"V.8",rows:[["Classe (superficie lorda utile)",a]],n:"Nella superficie lorda utile entrano vendita, servizi, depositi e spazi comuni direttamente funzionali (V.8.3)."};}},
+ albergo:{l:"Albergo",k:"albergo hotel ricettivo pensione ostello rifugio studentato bed",f:["p","h"],occ:"Ciii",
+  dpr:function(v){if(v.p<=25)return null;return {a:66,c:v.p<=50?"A":v.p<=100?"B":"C",t:"Strutture ricettive con oltre 25 posti letto"};},
+  bz:"Per gli esercizi pubblici e ricettivi valgono le norme provinciali (DPGP 13/6/1989 n. 11, modificato dal DPP 8/2/2017 n. 2), che prevalgono su quelle statali.",
+  rule:"RTV <b>V.5</b> del Codice oppure la regola tradizionale DM 9/4/1994.",
+  cls:function(){return null;}},
+ sanita:{l:"Struttura sanitaria",k:"ospedale sanitaria clinica casa di riposo rsa ambulatorio",f:["p","h"],occ:"D",
+  dpr:function(v){if(v.p<=25)return null;return {a:68,c:v.p<=50?"A":v.p<=100?"B":"C",t:"Strutture sanitarie con ricovero e case di riposo con oltre 25 posti letto (gli ambulatori sopra i 500 m² hanno soglie proprie)"};},
+  rule:"RTV <b>V.11</b> del Codice oppure la regola tradizionale DM 18/9/2002.",
+  bz:"C'è una circolare provinciale sulle deroghe per le strutture sanitarie (1/2007).",
+  cls:function(){return null;}},
+ spettacolo:{l:"Spettacolo e sport",k:"teatro cinema sala palestra impianto sportivo spettacolo auditorium",f:["n","h"],occ:"B",
+  dpr:function(v){if(v.n<=100)return null;return {a:65,c:v.n<=200?"B":"C",t:"Locali di spettacolo, impianti sportivi e palestre con capienza oltre 100 persone (o superficie lorda al chiuso oltre 200 m²)"};},
+  bz:"Per i locali di pubblico spettacolo valgono le norme provinciali, che prevalgono su quelle statali.",
+  rule:"RTV <b>V.15</b> del Codice oppure DM 19/8/1996; per gli impianti sportivi DM 18/3/1996.",
+  cls:function(){return null;}},
+ centrale:{l:"Centrale termica",k:"centrale termica caldaia impianto termico generatore calore gas",f:["kw"],occ:"",
+  dpr:function(v){if(v.kw<=116)return null;return {a:74,c:v.kw<=350?"A":v.kw<=700?"B":"C",t:"Impianti per la produzione di calore oltre 116 kW"};},
+  bz:"Gli impianti termici hanno una disciplina provinciale propria, che prevale; i moduli e la documentazione sono sul sito dell'Ufficio prevenzione incendi.",
+  rule:"Per gli impianti alimentati a gas: DM 12/4/1996.",
+  cls:function(){return null;}}
+};
+var F={n:["Persone presenti (affollamento)",250],h:["Quota del piano più alto (m)",9],A:["Superficie lorda (m²)",800],p:["Posti letto",40],kw:["Potenza termica (kW)",200],pub:["Aperto al pubblico?",0]};
+var S={loc:"bz",comm:"pub",dest:"scuola",v:{n:250,h:9,A:800,p:40,kw:200,pub:0},da:"2"};
+try{var o=JSON.parse(localStorage.getItem("antincendio-wiz")||"null");if(o)S=o;}catch(e){}
+if(!S.loc)S.loc="bz";
+function save(){try{localStorage.setItem("antincendio-wiz",JSON.stringify(S))}catch(e){}}
+function dests(q){q=(q||"").toLowerCase().trim();$("w-dest").innerHTML=Object.keys(D).filter(function(k){return !q||(D[k].l+" "+D[k].k).toLowerCase().indexOf(q)>=0}).map(function(k){return '<button class="opt" data-v="'+k+'" aria-pressed="'+(S.dest===k)+'">'+D[k].l+'</button>'}).join("")||'<span class="note">Nessuna destinazione trovata: prova con un\'altra parola.</span>';}
+function nums(){var d=D[S.dest],h="";d.f.forEach(function(k){if(k==="pub")h+='<label>'+F[k][0]+'<select data-k="pub"><option value="0"'+(S.v.pub?"":" selected")+'>No</option><option value="1"'+(S.v.pub?" selected":"")+'>Sì</option></select></label>';else h+='<label>'+F[k][0]+'<input type="number" min="0" step="1" inputmode="numeric" data-k="'+k+'" value="'+S.v[k]+'"></label>';});
+ if(d.occ&&d.occ!=="Ci")h+='<label>Velocità di crescita dell\'incendio<select data-k="da"><option value="1"'+(S.da==="1"?" selected":"")+'>1 · lenta</option><option value="2"'+(S.da==="2"?" selected":"")+'>2 · media</option><option value="3"'+(S.da==="3"?" selected":"")+'>3 · rapida</option></select></label>';
+ $("w-nums").innerHTML=h;}
+function res(){
+ var d=D[S.dest],v=S.v,p=d.dpr(v),c=d.cls(v),h="",bz=S.loc==="bz";
+ $("w-body").style.display=S.loc==="x"?"none":"";
+ if(S.loc==="x"){$("w-res").innerHTML='<div class="card"><h4>Questa guida usa solo norme italiane</h4><p>Le soglie, le regole tecniche e i valori della guida vengono dalla normativa italiana (DPR 151/2011, Codice di prevenzione incendi e regole tecniche collegate) e, per l\'Alto Adige, da quella provinciale. Fuori dall\'Italia valgono le regole del paese e spesso della regione o del cantone: i principi dei capitoli 3–6 (esodo, materiali, REI, dati nel modello) restano utili come metodo, ma i numeri vanno presi dalle norme locali.</p><p class="note">La classificazione di resistenza e di reazione al fuoco (UNI EN 13501-1 e -2) e lo schema IFC sono invece europei o internazionali, e valgono anche altrove.</p></div>';return;}
+ h+='<div class="card"><h4>Attività soggetta al controllo dei Vigili del fuoco?</h4>';
+ if(p)h+='<p><span class="big">Sì · attività n. '+p.a+', categoria '+p.c+'</span></p><p class="note">'+esc(p.t)+' (DPR 151/2011, Allegato I).</p><p>'+(p.c==="A"?"Categoria A: nessun esame del progetto; si presenta la SCIA a fine lavori.":"Categoria "+p.c+": prima si chiede la valutazione del progetto, poi si presenta la SCIA"+(p.c==="C"?" e segue il sopralluogo.":"."))+' '+(bz?'In Alto Adige le procedure seguono la LP 4/2025 e il regolamento DPP 18/2026, allineati alla disciplina statale; il riferimento è l\'Ufficio prevenzione incendi della Provincia.':'Le pratiche si presentano al Comando dei Vigili del fuoco competente (in Trentino e in Valle d\'Aosta i corpi dei vigili del fuoco hanno un ordinamento proprio).')+'</p>';
+ else h+='<p><span class="big">No</span>, con questi numeri non supera la soglia dell\'Allegato I del DPR 151/2011.</p><p class="note">Non vuol dire nessun obbligo: in un luogo di lavoro valgono comunque i DM 1, 2 e 3/9/2021 (controlli, gestione della sicurezza, criteri per i luoghi di lavoro a basso rischio), e altre parti dell\'edificio (autorimessa, centrale termica) possono essere attività soggette per conto loro.</p>';
+ h+='</div><div class="card"><h4>Quale regola tecnica</h4>'+(bz&&d.bz?'<p><b>In Alto Adige.</b> '+d.bz+'</p>':'')+'<p>'+(bz&&d.bz?'<b>Norme statali:</b> ':'')+d.rule+'</p><p class="note">Per le attività soggette senza una regola tecnica tradizionale si applica il Codice (DM 3/8/2015).</p></div>';
+ if(c){h+='<div class="card"><h4>Classificazione secondo la RTV '+c.t+'</h4><dl class="kv">'+c.rows.map(function(r){return '<dt>'+r[0]+'</dt><dd>'+r[1]+'</dd>'}).join("")+'</dl><p class="note">'+c.n+'</p></div>';}
+ if(d.occ&&d.occ!=="Ci"){var r=d.occ+S.da,L=LES[r];
+  h+='<div class="card"><h4>Esodo, con profilo R<sub>vita</sub> '+r+'</h4>'+(L?'<p>Lunghezza d\'esodo massima <span class="big">'+L[0]+' m</span>, corridoio cieco al massimo <span class="big">'+L[1]+' m</span> (tabelle S.4-25 e S.4-18).</p>':'<p>Profilo non ammesso con questa velocità di crescita (tabella G.3-3): serve una valutazione specifica.</p>')+'<p class="note">Profilo tipico per questa destinazione secondo gli esempi della tabella G.3-1; il progettista lo attribuisce per ogni compartimento, motivando le scelte diverse.</p></div>';}
+ h+='<div class="card"><h4>Committente '+(S.comm==="pub"?"pubblico":"privato")+': che cosa cambia</h4>'+(S.comm==="pub"?'<ul><li>'+(bz?'In provincia di Bolzano il BIM è obbligatorio per le opere pubbliche con costo stimato oltre 2 milioni di euro (LP 16/2015, art. 9, c. 2-bis)':'Il BIM è obbligatorio dal 1° gennaio 2025 per le nuove opere e gli interventi sull\'esistente oltre i 2 milioni di euro (D.Lgs. 36/2023, art. 43, come modificato dal D.Lgs. 209/2024)')+': i dati antincendio del capitolo 6 diventano requisiti del capitolato informativo.</li><li>Spesso l\'ente è anche il responsabile dell\'attività (per esempio di una scuola): conviene coinvolgerlo dalla strategia, non a progetto finito.</li>'+(bz?'<li>La Provincia ha una circolare sulla considerazione delle norme antincendio nella progettazione delle opere pubbliche (2/2005).</li>':'')+'</ul>':'<ul><li>Le regole tecniche sono le stesse di un committente pubblico.</li><li>Il BIM non è obbligatorio, ma i dati antincendio nel modello servono lo stesso: verifiche, computo delle serrande e delle sigillature, manutenzione.</li><li>Con dipendenti, valgono i DM 1, 2 e 3/9/2021 sui luoghi di lavoro.</li></ul>')+'</div>';
+ $("w-res").innerHTML=h;}
+function all(){dests($("w-q").value);nums();res();[].forEach.call($("w-comm").children,function(b){b.setAttribute("aria-pressed",b.dataset.v===S.comm)});[].forEach.call($("w-loc").children,function(b){b.setAttribute("aria-pressed",b.dataset.v===S.loc)});}
+$("w-loc").addEventListener("click",function(e){var b=e.target.closest(".opt");if(!b)return;S.loc=b.dataset.v;save();all();});
+$("w-comm").addEventListener("click",function(e){var b=e.target.closest(".opt");if(!b)return;S.comm=b.dataset.v;save();all();});
+$("w-dest").addEventListener("click",function(e){var b=e.target.closest(".opt");if(!b)return;S.dest=b.dataset.v;save();all();});
+$("w-q").addEventListener("input",function(){dests(this.value);});
+$("w-nums").addEventListener("input",function(e){var k=e.target.dataset.k;if(!k)return;if(k==="da")S.da=e.target.value;else if(k==="pub")S.v.pub=+e.target.value;else S.v[k]=Math.max(0,+e.target.value||0);save();res();});
+$("w-nums").addEventListener("change",function(e){if(e.target.tagName==="SELECT"){var k=e.target.dataset.k;if(k==="da")S.da=e.target.value;else S.v.pub=+e.target.value;save();res();}});
+all();
+
+/* ---------- locali ---------- */
+var R=[
+ {k:"aula",l:"Aula, ufficio",a:"TA",r:["Nessun requisito aggiuntivo di compartimentazione per scuole e uffici (tabelle V.7-2, V.4-2).","Quota del piano non inferiore a −5 m (V.7.4.3, V.4.4.3).","Nelle scuole, cartello con il massimo affollamento consentito (V.7.4.4)."],m:["Gas refrigeranti degli impianti di climatizzazione di classe A1 o A2L secondo ISO 817 (V.7.4.7, V.4.4.7).","Rivelatori e avvisatori secondo il livello di prestazione dell'attività; illuminazione di sicurezza verso le uscite.","Ogni passaggio di tubi o canali verso il corridoio, se la parete è di compartimento, con la sua sigillatura o serranda."],d:["IfcSpace con il codice dell'area (TA) e l'affollamento.","Pset_SpaceFireSafetyRequirements sul locale."]},
+ {k:"to",l:"Aula magna, mensa, sala riunioni",a:"TO (oltre 100 persone)",r:["Compartimento di tipo protetto (V.7-2, V.4-2).","Quota del piano non inferiore a −5 m.","Uscite e larghezze dimensionate sull'affollamento (tabella S.4-27): oltre 300 occupanti almeno 1000 mm."],m:["Refrigeranti A1 o A2L come nelle aule.","Con livello IV di rivelazione negli uffici: sistema EVAC almeno nelle aree TA e TO (V.4.4.6).","Illuminazione di sicurezza e segnaletica per un pubblico numeroso."],d:["IfcSpace con affollamento e area TO.","Porte con Pset_DoorCommon.FireExit e FireRating."]},
+ {k:"tm",l:"Archivio, deposito",a:"TM (oltre 25 m² e oltre 600 MJ/m²)",r:["Compartimento di tipo protetto (V.7-2, V.4-2).","La classe di resistenza al fuoco segue il carico d'incendio (tabella S.2-3) ma non scende sotto quella della RTV."],m:["Dove indicato dalla RTV, rivelazione automatica nelle aree TM (nota [1] delle tabelle V.7-6 e V.4-6).","Con livello I di rivelazione nelle scuole: sorveglianza periodica codificata nel piano di emergenza (V.7.4.4).","Serrande tagliafuoco sui canali e sigillature sugli attraversamenti della parete del compartimento."],d:["IfcSpace con FlammableStorage e il carico d'incendio come proprietà del locale.","IfcSpatialZone FIRESAFETY per il compartimento."]},
+ {k:"tk",l:"Laboratorio, officina",a:"TK (lavorazioni pericolose o oltre 1200 MJ/m²)",r:["Area a rischio specifico: si applica il capitolo V.1.","Di tipo protetto se a quota pari o superiore a −5 m; sotto, il resto dell'attività deve essere a prova di fumo proveniente dall'area TK (V.7-2, V.4-2).","Controllo dell'incendio di livello III (IV in quota sotto −5 m, o in HC, HD, HE) (V.7-3, V.4-3)."],m:["Ventilazione e aspirazioni dimensionate sulla valutazione del rischio (V.1).","Rivelazione automatica (nota [1] delle tabelle di rivelazione).","Se c'è uno sprinkler: alimentazione idrica singola superiore (singola nelle attività OA, OB, OC) (V.7-5, V.4-5)."],d:["IfcSpace con FireRiskFactor.","Le sostanze pericolose come dato del locale, per chi gestisce l'edificio."]},
+ {k:"tt",l:"Locale tecnico, quadri, CED",a:"TT (apparecchiature elettriche ed elettroniche, locali tecnici rilevanti)",r:["Compartimento di tipo protetto (V.7-2, V.4-2).","Nelle aule di informatica, che sono sia TA sia TT, valgono le prescrizioni di entrambe (nota della V.7.2)."],m:["Rivelazione automatica dove indicato (nota [1]).","Passerelle e tubi protettivi in uscita dal locale con sigillature della stessa classe della parete.","Buona pratica: un estintore adatto alle apparecchiature elettriche vicino ai quadri."],d:["IfcSpace con area TT.","Quadri come IfcElectricDistributionBoard con il loro locale."]},
+ {k:"corr",l:"Corridoio, atrio",a:"Via d'esodo orizzontale",r:["Materiali almeno GM2 nelle scuole e negli uffici (V.7.4.1, V.4.4.1).","Lunghezze d'esodo e corridoi ciechi entro i limiti del profilo (capitolo 3).","Larghezza minima secondo l'affollamento servito (tabella S.4-27)."],m:["Pulsanti di allarme lungo il percorso e vicino alle uscite, raggiungibili entro 30 m, a 1,0–1,6 m (UNI 9795, 6.1.2 e 6.1.3).","Illuminazione di sicurezza e segnaletica.","Niente sporgenze che riducano la larghezza utile; cavi e canali nel controsoffitto con la loro classe di reazione al fuoco."],d:["IfcSpace con FireExit.","Percorsi d'esodo verificabili come distanza sul percorso."]},
+ {k:"scala",l:"Vano scala",a:"Via d'esodo verticale",r:["Tra più compartimenti: vano protetto almeno di classe 30, porte almeno E 30-Sa (S.4.8.2).","Materiali almeno GM2 nelle scuole e negli uffici."],m:["Il minor numero possibile di attraversamenti impiantistici, ognuno sigillato.","Illuminazione di sicurezza su ogni rampa e pianerottolo.","Nelle scale rivelazione e zone possono comprendere più piani (UNI 9795, 5.2.3)."],d:["Porte con FireRating, SelfClosing e SmokeStop.","Il vano come compartimento (IfcSpatialZone FIRESAFETY)."]},
+ {k:"ct",l:"Centrale termica",a:"Attività n. 74 sopra i 116 kW",r:["Regola tecnica degli impianti termici; in Alto Adige la disciplina provinciale sugli impianti termici.","Il locale è di solito un compartimento a sé, con accesso, aerazione e intercettazione del combustibile secondo la regola applicabile."],m:["Il generatore, la sua potenza e il combustibile come dati di famiglia: decidono se la centrale è attività soggetta.","Attraversamenti delle tubazioni in uscita dal locale con la classe della parete."],d:["IfcBoiler o IfcBurner con la potenza nominale.","IfcSpace della centrale."]},
+ {k:"pompe",l:"Locale pompe antincendio",a:"Alimentazione idrica degli impianti",r:["Locale dedicato secondo UNI 11292; gruppo di pompaggio secondo UNI EN 12845.","Il tipo di alimentazione (singola, singola superiore…) lo dicono la RTV e la UNI 10779."],m:["Elettropompa, motopompa e pilota con i loro ingombri reali e gli spazi di manutenzione.","Riserva idrica: volume = portata × durata richieste.","Protezione dal gelo dei tratti esterni: in quota è una voce che pesa."],d:["IfcPump e IfcTank con le loro proprietà.","Attacco autopompa come IfcFireSuppressionTerminal BREECHINGINLET."]},
+ {k:"autor",l:"Autorimessa",a:"Attività n. 75 sopra i 300 m²",r:["RTV V.6 obbligatoria.","Classificazione per occupanti (SA, SB, SC), superficie (AA–AD) e quota dei piani."],m:["Ventilazione e controllo dei fumi secondo la V.6.","Illuminazione di sicurezza, segnaletica, rete idranti secondo la classificazione."],d:["IfcSpace con l'uso e la superficie.","Il compartimento come IfcSpatialZone FIRESAFETY."]}
+];
+$("rooms").innerHTML=R.map(function(r,i){return '<button class="opt" data-i="'+i+'" aria-pressed="'+(i===0)+'">'+r.l+'</button>'}).join("");
+function room(i){var r=R[i];$("room").innerHTML='<h3>'+r.l+'</h3><p class="note">'+r.a+'</p><h4>Che cosa chiedono le regole</h4><ul>'+r.r.map(function(x){return '<li>'+x+'</li>'}).join("")+'</ul><h4>Che cosa fa l\'impiantista</h4><ul>'+r.m.map(function(x){return '<li>'+x+'</li>'}).join("")+'</ul><h4>Nel modello</h4><ul>'+r.d.map(function(x){return '<li>'+x+'</li>'}).join("")+'</ul>';[].forEach.call($("rooms").children,function(b){b.setAttribute("aria-pressed",+b.dataset.i===i)});}
+$("rooms").addEventListener("click",function(e){var b=e.target.closest(".opt");if(b)room(+b.dataset.i);});room(0);
+
+/* ---------- lettere ---------- */
+var LT=[["R","Capacità portante: l'elemento continua a reggere i carichi. È la lettera delle strutture: travi, pilastri, solai, muri portanti."],["E","Tenuta: non lascia passare fiamme né gas caldi verso il lato non esposto."],["I","Isolamento termico: la temperatura del lato non esposto resta sotto i limiti della prova, così non accende ciò che c'è dall'altra parte."],["W","Irraggiamento: limita il calore radiante dal lato non esposto. Si usa soprattutto per vetrate e chiusure."],["M","Azione meccanica: resiste a un urto durante l'incendio. Si chiede per alcuni muri di compartimentazione."],["C","Autochiusura: porte e chiusure che si chiudono da sole. Un numero dopo la C (per esempio C5) indica la durabilità in cicli di apertura."],["S","Tenuta al fumo: Sa a temperatura ambiente, S200 anche a 200 °C. Le porte delle scale protette sono almeno E 30-Sa."]];
+$("letters").innerHTML=LT.map(function(l,i){return '<button class="letter" data-i="'+i+'" aria-pressed="'+(i===0)+'">'+l[0]+'</button>'}).join("");
+function showL(i){$("lx").innerHTML='<b>'+LT[i][0]+'</b> · '+LT[i][1];[].forEach.call($("letters").children,function(b){b.setAttribute("aria-pressed",+b.dataset.i===i)});}
+$("letters").addEventListener("click",function(e){var b=e.target.closest(".letter");if(b)showL(+b.dataset.i);});showL(0);
+
+/* ---------- checklist ---------- */
+var CK=["Regola applicata dichiarata nelle informazioni di progetto (Codice e RTV, regola tradizionale o norma provinciale), con la data dei testi usati <i>(firma)</i>","Valutazione del rischio e livelli di prestazione S.1–S.10 coerenti con le tavole <i>(firma)</i>","Compartimenti e classi REI/EI nel modello e in tavola, coerenti con le porte","Ogni attraversamento di un compartimento ha la sua serranda o sigillatura, con la classe dell'elemento attraversato","Ogni locale dell'area sorvegliata ha almeno un rivelatore, salvo esclusioni motivate","Zone di rivelazione: un piano, al massimo 1600 m², raggruppamenti dei locali secondo la norma","Posizione dei rivelatori puntiformi verificata sui prospetti della UNI 9795 <i>(firma)</i>","Almeno due pulsanti per zona, uno vicino a ogni uscita, raggiungibili entro 30 m (15 m a rischio elevato), a 1,0–1,6 m, con cartello","Avvisatori: copertura acustica e ottica, categoria e quota coerenti <i>(calcolo)</i>","Estintori, naspi e idranti: tipo, capacità e copertura secondo la regola applicata e la UNI 10779","Vie d'esodo: lunghezze, larghezze, verso di apertura e maniglioni secondo la regola applicata","Illuminazione di sicurezza e autonomia secondo la regola applicata, confrontate con il calcolo illuminotecnico","Segnaletica UNI EN ISO 7010 su uscite, presidi e pulsanti","Planimetria generale: accesso dei mezzi dei Vigili del fuoco, punto di raccolta, idrante esterno, attacco autopompa","Fotovoltaico, se presente: distanze in copertura, sezionamento di emergenza, cartelli lungo le condutture in corrente continua (nota VVF 1/9/2025 n. 14030)","In Alto Adige: legenda bilingue italiano e tedesco"];
+var KS={};try{KS=JSON.parse(localStorage.getItem("antincendio-ck")||"{}")}catch(e){}
+$("ck").innerHTML=CK.map(function(c,i){return '<li style="display:flex;gap:.6rem;padding:.4rem .2rem;border-bottom:1px dashed var(--line)"><input type="checkbox" id="ak'+i+'"'+(KS["ak"+i]?" checked":"")+' style="margin-top:.38rem"><label for="ak'+i+'">'+c+'</label></li>'}).join("");
+$("ck").addEventListener("change",function(e){KS[e.target.id]=e.target.checked;try{localStorage.setItem("antincendio-ck",JSON.stringify(KS))}catch(x){}});
+$("ck-reset").addEventListener("click",function(){KS={};try{localStorage.removeItem("antincendio-ck")}catch(x){}[].forEach.call($("ck").querySelectorAll("input"),function(b){b.checked=false});});
+})();
+</script>
+</body>
+</html>
