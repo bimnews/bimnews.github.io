@@ -38,7 +38,7 @@ Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato co
 
 - **Dal 20/11/2026** le figure animate e interattive si fanno in una repository a parte, privata: `bimnews/figure`. Contiene la skill «anatomy» (MIT, copiata a versione fissa in `.claude/skills/anatomy/`), i sorgenti in `figure/<nome>/` e i file finiti in `dist/`. Le regole (peso, tema, niente risorse esterne, anteprima a Marco) sono nel suo `CLAUDE.md`.
 - **Per lavorarci** collega la repository alla sessione (`add_repo` bimnews/figure). Nel sito si copia solo il file di `dist/`, di solito dentro un manuale con un `iframe` `?embed=1`, mai nella versione essenziale.
-- **Stato:** proposte di figure fatte a Marco il 20/11/2026, in attesa della sua scelta.
+- **Stato:** il 20/11/2026 Marco ha scelto la figura 1, il coordinatografo della georeferenziazione (ponte lungo Est, carrello lungo Nord, foglio del modello che ruota di θ, leva dell'unità per l'errore 1:1000, con i colori chiesti da Marco). L'anteprima è stata mandata a Marco ed è in attesa del suo sì; dopo il sì va nel capitolo 3 di `manuali/georeferenziazione-ifc.html`. Altre proposte in coda: pressa per l'estrusione e il foro (IFC scritto a mano), vassoi annidati di IfcLocalPlacement, schedario della libreria IFC.
 
 ## Come si pubblica
 
