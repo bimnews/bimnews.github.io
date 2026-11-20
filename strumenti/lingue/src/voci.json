@@ -10946,5 +10946,40 @@
 "h": "6 voci",
 "tag": "#node",
 "id": "v1687"
+},
+{
+"k": "Un dizionario nazionale dei dati BIM pubblici",
+"m": "text",
+"h": "Un dizionario nazionale dei dati BIM pubblici",
+"tag": "H4",
+"id": "v1688"
+},
+{
+"k": "Ogni committente pubblico chiede i suoi parametri, con i suoi nomi: propongo un nucleo comune per tutta l'Italia, con le estensioni di regioni ed enti agganciate sopra.",
+"m": "text",
+"h": "Ogni committente pubblico chiede i suoi parametri, con i suoi nomi: propongo un nucleo comune per tutta l'Italia, con le estensioni di regioni ed enti agganciate sopra.",
+"tag": "P",
+"id": "v1689"
+},
+{
+"k": "Codici che esistono già (CUP, ISTAT, IPA, ISO 3166-2), prima le proprietà standard di IFC e poi quelle nuove, una scheda per ogni parametro e requisiti che i software controllano da soli (IDS). Con un prototipo da consultare, l'estensione della Provincia di Bolzano, una famiglia MEP vera e una domanda: e il resto del mondo?",
+"m": "text",
+"h": "Codici che esistono già (CUP, ISTAT, IPA, ISO 3166-2), prima le proprietà standard di IFC e poi quelle nuove, una scheda per ogni parametro e requisiti che i software controllano da soli (IDS). Con un prototipo da consultare, l'estensione della Provincia di Bolzano, una famiglia MEP vera e una domanda: e il resto del mondo?",
+"tag": "P",
+"id": "v1690"
+},
+{
+"k": "PubblicatoLeggi la propostaIl prototipoScarica l'Excel",
+"m": "html",
+"h": "<span class=\"tag ok\">Pubblicato</span><a class=\"man-btn\" href=\"manuali/dati-pubblici.html\">Leggi la proposta</a><a class=\"man-btn ghost\" href=\"manuali/dati-pubblici.html#c3\">Il prototipo</a><a class=\"man-btn ghost\" href=\"manuali/dati-pubblici/dizionario-dati-pubblici.xlsx\" download=\"\">Scarica l'Excel</a>",
+"tag": "P",
+"id": "v1691"
+},
+{
+"k": "Per discuterne, ci si ritrova su LinkedIn ↗.",
+"m": "html",
+"h": "Per discuterne, ci si ritrova su <a href=\"https://www.linkedin.com/in/marco-scigliuolo/\" target=\"_blank\" rel=\"noopener\">LinkedIn ↗</a>.",
+"tag": "P",
+"id": "v1692"
 }
 ]

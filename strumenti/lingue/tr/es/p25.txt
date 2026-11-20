@@ -1,0 +1,5 @@
+v1688	Un diccionario nacional de los datos BIM públicos
+v1689	Cada cliente público pide sus propios parámetros, con sus propios nombres: propongo un núcleo común para toda Italia, con las extensiones de regiones y organismos enganchadas encima.
+v1690	Códigos que ya existen (CUP, ISTAT, IPA, ISO 3166-2), primero las propiedades estándar de IFC y después las nuevas, una ficha por parámetro y requisitos que el software comprueba solo (IDS). Con un prototipo para consultar, la extensión de la Provincia de Bolzano, una familia MEP real y una pregunta: ¿y el resto del mundo?
+v1691	<span class="tag ok">Publicado</span><a class="man-btn" href="manuali/dati-pubblici.html">Leer la propuesta</a><a class="man-btn ghost" href="manuali/dati-pubblici.html#c3">El prototipo</a><a class="man-btn ghost" href="manuali/dati-pubblici/dizionario-dati-pubblici.xlsx" download="">Descargar el Excel</a>
+v1692	Para hablar de ello, nos vemos en <a href="https://www.linkedin.com/in/marco-scigliuolo/" target="_blank" rel="noopener">LinkedIn ↗</a>.

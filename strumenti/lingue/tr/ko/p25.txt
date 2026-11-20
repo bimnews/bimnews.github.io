@@ -1,0 +1,5 @@
+v1688	공공 BIM 데이터 국가 사전
+v1689	공공 발주처마다 자기만의 이름으로 자기만의 파라미터를 요구합니다. 저는 이탈리아 전체에 공통 핵심을 두고, 그 위에 주와 기관의 확장을 연결하자고 제안합니다.
+v1690	이미 있는 코드(CUP, ISTAT, IPA, ISO 3166-2), IFC 표준 속성을 먼저 쓰고 새 속성은 그다음, 파라미터마다 한 장의 시트, 소프트웨어가 스스로 검사하는 요구사항(IDS). 살펴볼 수 있는 프로토타입, 볼차노 자치주의 확장, 실제 MEP 패밀리, 그리고 질문 하나: 나머지 세계는?
+v1691	<span class="tag ok">게시됨</span><a class="man-btn" href="manuali/dati-pubblici.html">제안 읽기</a><a class="man-btn ghost" href="manuali/dati-pubblici.html#c3">프로토타입</a><a class="man-btn ghost" href="manuali/dati-pubblici/dizionario-dati-pubblici.xlsx" download="">Excel 다운로드</a>
+v1692	논의는 <a href="https://www.linkedin.com/in/marco-scigliuolo/" target="_blank" rel="noopener">LinkedIn ↗</a> 에서 합니다.
