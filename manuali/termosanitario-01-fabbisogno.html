@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Il fabbisogno: che cosa c'è e che cosa serve · I manuali di BIM News</title>
+<meta name="description" content="Primo articolo della serie sull'impianto termosanitario: prima di scegliere un impianto si calcola che cosa serve all'edificio. Calore d'inverno, aria, acqua calda e acqua, potenza ed energia, con un'aula di esempio calcolata passo per passo e una figura interattiva.">
+<link rel="stylesheet" href="manuale.css">
+<script>try{var t=localStorage.getItem("tema-2026");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+<style>
+.btn.ghost,:root[data-theme="dark"] .btn.ghost{color:var(--accent)}
+.formula{font-family:var(--mono);background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:.9rem 1.1rem;margin:.6rem 0 1rem;font-size:.95rem;line-height:1.75;overflow-x:auto}
+.fig-frame{width:100%;border:0;min-height:640px;display:block;background:transparent;margin:.4rem 0 1rem}
+.fig-alt{margin:.4rem 0 1rem}
+.series{display:flex;flex-wrap:wrap;gap:.35rem;margin:.4rem 0 0}
+.series span{font-family:var(--mono);font-size:.72rem;border:1px solid var(--line);border-radius:999px;padding:.15rem .55rem;color:var(--muted)}
+.series span.on{background:var(--accent);border-color:var(--accent);color:#fff}
+:root[data-theme="dark"] .series span.on{color:#10141b}
+.num td:nth-child(n+2){font-family:var(--mono);white-space:nowrap}
+</style>
+</head>
+<body>
+<div class="topbar"><div class="in"><a class="back" href="../#studio">← BIM News · Nello studio</a><span class="sp"></span><a class="btn ghost noprint" href="#c5">La figura</a><a class="btn noprint" href="#c8">La scheda del fabbisogno</a></div></div>
+<div class="layout">
+<nav class="toc" aria-label="Indice">
+  <b>Indice</b>
+  <ol>
+    <li><a href="#c1">1 · Perché si parte da qui</a></li>
+    <li><a href="#c2">2 · Che cosa c'è: i dati di partenza</a></li>
+    <li><a href="#c3">3 · Il calore che esce dalle pareti</a></li>
+    <li><a href="#c4">4 · L'aria che serve alle persone</a></li>
+    <li><a href="#c5">5 · Il bilancio, da provare</a></li>
+    <li><a href="#c6">6 · Dalla potenza all'energia</a></li>
+    <li><a href="#c7">7 · Estate, acqua calda, acqua</a></li>
+    <li><a href="#c8">8 · La scheda del fabbisogno</a></li>
+    <li><a href="#c9">9 · Nel modello BIM</a></li>
+    <li><a href="#fonti">Fonti</a></li>
+  </ol>
+</nav>
+<main>
+<header class="cover">
+  <div>
+    <span class="kick">L'impianto termosanitario, passo per passo · 1</span>
+    <h1>Il fabbisogno: che cosa c'è e che cosa serve</h1>
+    <p>Prima di scegliere una caldaia, una pompa di calore o un pannello radiante si risponde a una domanda sola: di che cosa ha bisogno questo edificio? Un'aula di esempio, calcolata passo per passo, mostra perché la risposta a volte sorprende.</p>
+    <div class="series" aria-label="La serie"><span class="on">1 Fabbisogno</span><span>2 Linea d'azione</span><span>3 Generazione</span><span>4 Accumulo</span><span>5 Distribuzione</span><span>6 Emissione</span><span>7 Regolazione</span><span>8 Acqua calda</span><span>9 Idrico</span><span>10 Scarichi</span><span>11 Nel modello</span></div>
+  </div>
+  <svg viewBox="0 0 360 240" role="img" aria-label="Una bilancia: su un piatto la potenza dell'impianto, sull'altro le perdite per trasmissione e per ventilazione">
+    <rect class="s-as" x="10" y="10" width="340" height="220" rx="22"/>
+    <path d="M180 60V196M120 196H240" style="stroke:var(--ink);stroke-width:3;fill:none"/>
+    <path d="M70 84H290" style="stroke:var(--ink);stroke-width:3"/>
+    <circle cx="180" cy="72" r="7" class="s-a"/>
+    <path d="M70 84L46 140H94Z M290 84L266 140H314Z" style="fill:none;stroke:var(--muted);stroke-width:1.6"/>
+    <path d="M40 140H100M260 140H320" style="stroke:var(--ink);stroke-width:3"/>
+    <rect x="52" y="112" width="36" height="26" rx="4" style="fill:var(--a5s);stroke:var(--a5)"/>
+    <text class="s-tm" x="60" y="130" style="fill:var(--a5)">Φ</text>
+    <rect x="266" y="122" width="22" height="16" rx="3" style="fill:var(--a3s);stroke:var(--a3)"/>
+    <rect x="290" y="104" width="24" height="34" rx="3" style="fill:var(--soft);stroke:var(--accent)"/>
+    <text class="s-tm" x="268" y="160">ΦT</text><text class="s-tm" x="292" y="160">ΦV</text>
+    <text class="s-tm" x="46" y="160">impianto</text>
+  </svg>
+</header>
+
+<div class="box bim"><b>La serie</b><p>Undici articoli che seguono un impianto termosanitario dall'inizio alla fine: prima il fabbisogno, poi la linea d'azione e gli impianti da usare, fino al modello BIM. L'esempio è sempre lo stesso, un'aula di una scuola nuova in una zona di montagna, con numeri tondi e ipotesi dichiarate: serve a capire i meccanismi, non sostituisce il calcolo di un progetto vero. Le norme citate sono italiane ed europee.</p></div>
+
+<section class="ch" id="c1">
+  <div class="ch-h"><span class="ch-n">1</span><h2>Perché si parte da qui</h2></div>
+  <p class="lead">Un impianto è la risposta a un bisogno. Chi parte dalla risposta («mettiamo una pompa di calore») prima di conoscere il bisogno sceglie a caso, e se ne accorge quando la macchina è troppo grande, troppo piccola o lavora alle temperature sbagliate.</p>
+  <p>Il fabbisogno di un edificio ha cinque voci:</p>
+  <div class="tbl"><table>
+    <tr><th>Voce</th><th>Domanda</th><th>Unità</th></tr>
+    <tr><td>Calore d'inverno</td><td>Quanta potenza serve per tenere 20 °C nel giorno più freddo di progetto?</td><td>kW</td></tr>
+    <tr><td>Freddo d'estate</td><td>Quanto calore va tolto quando sole, persone e apparecchi scaldano troppo?</td><td>kW</td></tr>
+    <tr><td>Aria</td><td>Quanta aria esterna serve alle persone che ci stanno?</td><td>m³/h</td></tr>
+    <tr><td>Acqua calda sanitaria</td><td>Quanta, a che ora, a che temperatura?</td><td>litri, kW</td></tr>
+    <tr><td>Acqua fredda</td><td>Quale portata contemporanea serve agli apparecchi?</td><td>l/s</td></tr>
+  </table></div>
+  <p>E due grandezze da non confondere mai: la <b>potenza</b> (kW), che serve a dimensionare le macchine e i tubi per il caso peggiore, e l'<b>energia</b> (kWh all'anno), che dice quanto si consuma e quanto si spende. Un edificio può avere bisogno di molta potenza per poche ore e di poca energia in tutto l'anno: è proprio il caso di una scuola.</p>
+</section>
+
+<section class="ch" id="c2">
+  <div class="ch-h"><span class="ch-n">2</span><h2>Che cosa c'è: i dati di partenza</h2></div>
+  <p>Prima di qualsiasi formula si raccolgono quattro gruppi di dati. Quelli che mancano diventano ipotesi scritte, non numeri inventati in silenzio.</p>
+  <div class="tbl"><table>
+    <tr><th>Gruppo</th><th>Che cosa serve</th><th>Da dove viene</th></tr>
+    <tr><td>Clima</td><td>Temperatura esterna di progetto invernale ed estiva, gradi giorno, irraggiamento</td><td>UNI 10349-1 e -2 per i dati climatici e di progetto della località, UNI 10349-3 e DPR 412/1993 per i gradi giorno del comune</td></tr>
+    <tr><td>Involucro</td><td>Superfici e trasmittanze di pareti, finestre, coperture e pavimenti; ponti termici; tenuta all'aria</td><td>Il progetto architettonico (o il modello BIM), le schede dei serramenti, la relazione energetica</td></tr>
+    <tr><td>Uso</td><td>Persone, orari, attività, temperature e umidità richieste, apparecchi</td><td>Il committente, la destinazione d'uso, le norme sul comfort e sull'aria</td></tr>
+    <tr><td>Vincoli</td><td>Allacci disponibili (gas, teleriscaldamento, elettricità), spazi tecnici, obiettivi energetici, regole locali</td><td>Il sopralluogo, i gestori delle reti, i requisiti di legge e del bando</td></tr>
+  </table></div>
+  <h3>L'aula di esempio</h3>
+  <div class="tbl num"><table>
+    <tr><th>Dato</th><th>Valore</th></tr>
+    <tr><td>Pianta e altezza</td><td>8,0 × 7,0 m, h 3,2 m · 56 m²</td></tr>
+    <tr><td>Occupanti</td><td>25 alunni + 1 insegnante = 26</td></tr>
+    <tr><td>Parete esterna</td><td>8,0 × 3,2 = 25,6 m² lordi, U = 0,20 W/(m²K)</td></tr>
+    <tr><td>Finestre</td><td>2 × (1,5 × 2,4) = 7,2 m², U = 1,1 W/(m²K)</td></tr>
+    <tr><td>Parete netta</td><td>25,6 − 7,2 = 18,4 m²</td></tr>
+    <tr><td>Altre pareti, pavimento e soffitto</td><td>verso locali riscaldati: nessuno scambio</td></tr>
+    <tr><td>Temperature di progetto</td><td>θi = 20 °C · θe = −12 °C (ipotesi)</td></tr>
+  </table></div>
+  <p class="src">Ipotesi dell'esempio: un'aula intermedia di una scuola nuova ben isolata, con una sola parete verso l'esterno. La temperatura esterna di progetto vera si prende dalla UNI 10349-2 per il comune dell'edificio.</p>
+</section>
+
+<section class="ch" id="c3">
+  <div class="ch-h"><span class="ch-n">3</span><h2>Il calore che esce dalle pareti</h2></div>
+  <p>La UNI EN 12831-1:2018 calcola il carico termico di progetto di ogni locale come somma di due parti: il calore che passa attraverso l'involucro (<b>trasmissione</b>) e quello che se ne va con l'aria (<b>ventilazione</b>). Nella forma più semplice, per la trasmissione verso l'esterno:</p>
+  <div class="formula">Φ<sub>T</sub> = Σ (U · A) · (θ<sub>i</sub> − θ<sub>e</sub>) + ponti termici</div>
+  <div class="tbl num"><table>
+    <tr><th>Elemento</th><th>U · A (W/K)</th><th>× 32 K (W)</th></tr>
+    <tr><td>Parete netta: 0,20 × 18,4</td><td>3,68</td><td>118</td></tr>
+    <tr><td>Finestre: 1,1 × 7,2</td><td>7,92</td><td>253</td></tr>
+    <tr><td>Ponti termici: +0,05 × 25,6 (forfait)</td><td>1,28</td><td>41</td></tr>
+    <tr><th>Trasmissione Φ<sub>T</sub></th><th>12,88</th><th>412 W</th></tr>
+  </table></div>
+  <p>Due cose da notare. Le finestre, che sono meno di un terzo della parete, perdono più del doppio del muro: a parità di superficie un vetro perde cinque volte e mezza di più. E 412 W per un'aula di 56 m² sono poco più di 7 W/m²: con un involucro buono il muro non è più il problema.</p>
+  <div class="box tip"><b>Che cosa la norma aggiunge</b><p>Il calcolo vero considera anche gli scambi con locali a temperatura diversa, il terreno, i ponti termici calcolati uno per uno, il calore per riportare in temperatura l'edificio dopo uno spegnimento e le infiltrazioni. L'esempio tiene solo le voci che contano per capire il meccanismo.</p></div>
+</section>
+
+<section class="ch" id="c4">
+  <div class="ch-h"><span class="ch-n">4</span><h2>L'aria che serve alle persone</h2></div>
+  <p>In un'aula ci sono 26 persone in 56 m²: respirano, producono anidride carbonica, umidità e odori. L'aria va cambiata, e l'aria che entra d'inverno è fredda. La UNI EN 16798-1:2019 propone, nella sua appendice B, una portata che somma una quota per le persone e una per l'edificio:</p>
+  <div class="formula">q = n · q<sub>p</sub> + A · q<sub>B</sub><br>= 26 × 7 l/s + 56 m² × 0,7 l/(s·m²) = 182 + 39 = 221 l/s ≈ 796 m³/h</div>
+  <p class="src">Valori della categoria II (qualità dell'aria «normale») per un edificio a basso inquinamento, cioè con materiali interni a bassa emissione. Per un'aula il rapporto tecnico CEN/TR 16798-2 riporta valori dello stesso ordine.</p>
+  <p>Per scaldare quell'aria da −12 a 20 °C:</p>
+  <div class="formula">Φ<sub>V</sub> = 0,34 Wh/(m³K) · V̇ · (θ<sub>i</sub> − θ<sub>e</sub>) · (1 − η)<br>senza recupero: 0,34 × 796 × 32 = <b>8 660 W</b><br>con un recuperatore al 75 %: 8 660 × 0,25 = <b>2 165 W</b></div>
+  <p class="lead">Ecco la sorpresa: senza recupero l'aria chiede venti volte la potenza che serve alle pareti. In una scuola ben isolata il fabbisogno di calore non lo decide l'involucro, lo decide l'aria.</p>
+  <p>Da qui vengono già due conseguenze per la linea d'azione del prossimo articolo: la ventilazione meccanica con recupero di calore non è un accessorio ma la voce principale dell'impianto, e la portata d'aria si può modulare sulle persone presenti (un'aula vuota non ha bisogno di 800 m³/h).</p>
+</section>
+
+<section class="ch" id="c5">
+  <div class="ch-h"><span class="ch-n">5</span><h2>Il bilancio, da provare</h2></div>
+  <p>La figura è l'aula del calcolo, in spaccato. Muovendo il puntatore cambia la temperatura esterna; con un clic si accende e si spegne il recupero di calore. I punti rossi sono il calore che esce, molto più fitto sui vetri; il quadrante legge la potenza totale.</p>
+  <div id="fig-fab" class="noprint"></div>
+</section>
+
+<section class="ch" id="c6">
+  <div class="ch-h"><span class="ch-n">6</span><h2>Dalla potenza all'energia</h2></div>
+  <p>La potenza dice quanto grande deve essere l'impianto nel giorno peggiore. Quanto consumerà in un anno dipende invece da quante ore e quanto freddo ci sarà davvero. Una stima veloce usa i <b>gradi giorno</b> (GG), la somma su tutta la stagione delle differenze tra 20 °C e la temperatura media del giorno:</p>
+  <div class="formula">Q ≈ H · GG · 24 / 1000  [kWh]   con H = Φ / (θ<sub>i</sub> − θ<sub>e</sub>)  [W/K]</div>
+  <div class="tbl num"><table>
+    <tr><th>Voce (GG = 3000, ipotesi)</th><th>H (W/K)</th><th>Ore</th><th>Energia</th></tr>
+    <tr><td>Trasmissione, sempre</td><td>12,9</td><td>tutte</td><td>≈ 930 kWh</td></tr>
+    <tr><td>Aria con recupero, solo quando l'aula è occupata (40 h su 168 a settimana)</td><td>67,7</td><td>24 %</td><td>≈ 1 160 kWh</td></tr>
+    <tr><td>Aria senza recupero, stesse ore</td><td>270,7</td><td>24 %</td><td>≈ 4 640 kWh</td></tr>
+  </table></div>
+  <p>Con il recupero l'aula consuma circa 2 100 kWh all'anno, meno di 40 kWh/m². Anche nell'energia la ventilazione pesa più delle pareti, ma meno che nella potenza, perché funziona solo nelle ore di lezione.</p>
+  <div class="box warn"><b>Una stima, non un calcolo</b><p>Questa formula ignora gli apporti gratuiti (persone, luci, sole), che in una scuola sono grandi e riducono l'energia, e l'intermittenza dell'impianto. Il calcolo ufficiale si fa con le UNI/TS 11300 o con il metodo orario della UNI EN ISO 52016-1. 3000 GG è il limite tra le zone climatiche E ed F del DPR 412/1993.</p></div>
+</section>
+
+<section class="ch" id="c7">
+  <div class="ch-h"><span class="ch-n">7</span><h2>Estate, acqua calda, acqua</h2></div>
+  <ul>
+    <li><b>Il freddo d'estate</b> si calcola al contrario: si sommano il sole sulle finestre, il calore delle persone, delle luci e degli apparecchi e l'aria esterna calda. In un'aula affollata gli apporti interni da soli valgono molto più della trasmissione, e decidono se serve raffrescare o se bastano schermature e ventilazione notturna.</li>
+    <li><b>L'acqua calda sanitaria</b> in un'aula è quasi nulla; in una scuola con palestra e spogliatoi, o con una mensa, diventa una voce importante, con picchi brevi e forti. Si stima per utenze e orari (si vedrà nell'articolo 8, insieme alla Legionella).</li>
+    <li><b>L'acqua fredda</b> si dimensiona sulle portate degli apparecchi e sulla loro contemporaneità (UNI 9182, UNI EN 806-3): articolo 9.</li>
+  </ul>
+</section>
+
+<section class="ch" id="c8">
+  <div class="ch-h"><span class="ch-n">8</span><h2>La scheda del fabbisogno</h2></div>
+  <p>Il risultato di questa fase è una scheda per locale (o per zona) che passa alla fase successiva. Per l'aula di esempio:</p>
+  <div class="tbl num"><table>
+    <tr><th>Voce</th><th>Valore</th><th>Nota</th></tr>
+    <tr><td>Temperatura interna invernale</td><td>20 °C</td><td>ipotesi di progetto</td></tr>
+    <tr><td>Trasmissione Φ<sub>T</sub></td><td>0,41 kW</td><td>a −12 °C</td></tr>
+    <tr><td>Portata d'aria esterna</td><td>796 m³/h</td><td>26 persone, categoria II</td></tr>
+    <tr><td>Ventilazione Φ<sub>V</sub></td><td>2,17 kW</td><td>con recupero al 75 % (8,66 kW senza)</td></tr>
+    <tr><td>Carico di progetto Φ</td><td>2,58 kW</td><td>46 W/m²</td></tr>
+    <tr><td>Energia annua stimata</td><td>≈ 2 100 kWh</td><td>stima con i gradi giorno, senza apporti gratuiti</td></tr>
+    <tr><td>Acqua calda, acqua fredda</td><td>trascurabili nell'aula</td><td>da valutare per servizi, palestra, mensa</td></tr>
+  </table></div>
+  <div class="box tip"><b>Prima di passare oltre</b><p>Ogni numero della scheda ha un'origine: dato del progetto, norma o ipotesi. Le ipotesi vanno scritte, perché sono le prime cose da ricontrollare quando il progetto cambia: un'aula con 30 persone invece di 26 ha bisogno di 4 × 7 = 28 l/s, cioè circa 100 m³/h d'aria in più, e di circa 0,3 kW in più anche con il recupero.</p></div>
+</section>
+
+<section class="ch" id="c9">
+  <div class="ch-h"><span class="ch-n">9</span><h2>Nel modello BIM</h2></div>
+  <p>Il fabbisogno nasce dai locali, e nel modello i locali esistono già: conviene che i dati della scheda stiano lì, e non in un foglio a parte che nessuno aggiorna.</p>
+  <ul>
+    <li><b>In Revit</b> i locali dell'architettura diventano <i>Spazi</i> nel modello impiantistico: su ogni spazio si scrivono occupanti, temperature, portata d'aria e carichi, che poi le etichette e gli abachi leggono da soli.</li>
+    <li><b>In IFC 4.3</b> lo spazio è un IfcSpace, e i Property Set standard hanno già le proprietà giuste: <code>Pset_SpaceOccupancyRequirements</code> (OccupancyNumber, AreaPerOccupant), <code>Pset_SpaceHVACDesign</code> (TemperatureWinterMin, MechanicalVentilationRate…), <code>Pset_SpaceThermalLoad</code> (People, VentilationOutdoorAir…) e <code>Pset_SpaceAirHandlingDimensioning</code> (TotalHeatLoss, VentilationDesignAirFlow).</li>
+  </ul>
+  <p>Così, quando l'architetto aggiunge un'aula o cambia una finestra, il fabbisogno si aggiorna dove serve, e la scheda di questo articolo diventa un abaco.</p>
+</section>
+
+<section class="ch" id="fonti">
+  <div class="ch-h"><span class="ch-n">≡</span><h2>Fonti</h2></div>
+  <ul class="src">
+    <li>UNI EN 12831-1:2018, prestazione energetica degli edifici: metodo per il calcolo del carico termico di progetto.</li>
+    <li>UNI EN 16798-1:2019, parametri dell'ambiente interno (qualità dell'aria, ambiente termico, illuminazione, acustica), appendice B; per gli esempi di calcolo il rapporto tecnico CEN/TR 16798-2 (<a href="https://www.din.de/resource/blob/66392/911886c68e3d0917dc03085dcc35f144/tr-16789-2-draft-data.pdf" target="_blank" rel="noopener">bozza pubblicata da DIN</a>, in inglese).</li>
+    <li>UNI 10349-1, -2 e -3:2016, dati climatici, condizioni di progetto e gradi giorno; DPR 26/8/1993 n. 412, zone climatiche.</li>
+    <li>UNI/TS 11300 e UNI EN ISO 52016-1 per il calcolo del fabbisogno di energia; UNI 9182 e UNI EN 806-3 per l'acqua.</li>
+    <li>buildingSMART, IFC 4.3 ADD2: Property Set degli spazi controllati con IfcOpenShell 0.9.</li>
+  </ul>
+  <div class="box idea"><b>Come è nato questo articolo</b><p>È uno dei «manuali di Claude»: l'ha scritto Claude, l'assistente di intelligenza artificiale di Anthropic, seguendo le indicazioni del curatore. L'aula è inventata e i numeri sono tondi; i calcoli della figura e del testo vengono dallo stesso modello.</p></div>
+  <p class="foot">BIM News · L'impianto termosanitario, passo per passo · 1 · Il fabbisogno · edizione novembre 2026</p>
+</section>
+</main>
+</div>
+<script>
+window.addEventListener("message",function(e){ if(e.data&&e.data.figH&&e.data.fig==="fabbisogno"){ var g=document.getElementById("fig-frame"); if(g)g.style.height=(e.data.figH+4)+"px"; } });
+(function(){ var box=document.getElementById("fig-fab"); if(!box)return; var lite=false; try{ var m=localStorage.getItem("versione"),c=navigator.connection,a=matchMedia("(prefers-reduced-motion: reduce)").matches||(c&&(c.saveData||/(^|-)2g$/.test(c.effectiveType||""))); lite=m?m==="essenziale":a; }catch(x){}
+  if(lite){ box.innerHTML='<p class="fig-alt"><a href="figure/fabbisogno.html">Apri la figura interattiva dell\'aula</a> (pagina a parte, circa 200 KB).</p>'; return; }
+  var f=document.createElement("iframe"); f.id="fig-frame"; f.className="fig-frame"; f.title="Figura interattiva: il bilancio dell'aula"; f.loading="lazy"; f.src="figure/fabbisogno.html?embed=1"; box.appendChild(f); })();
+</script>
+</body>
+</html>
