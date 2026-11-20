@@ -6,3 +6,5 @@
 §passo	Schritt {1} von {2}
 Ultimo aggiornamento	Letzte Aktualisierung
 Prossimo evento · costo da verificare	Nächste Veranstaltung · Kosten zu prüfen
+Online dal	Online seit
+Sito aggiornato il	Website aktualisiert am

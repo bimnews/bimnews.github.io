@@ -6,3 +6,5 @@
 §passo	第 {1} 步，共 {2} 步
 Ultimo aggiornamento	最近更新
 Prossimo evento · costo da verificare	下一场活动 · 费用待核实
+Online dal	上线时间：
+Sito aggiornato il	网站更新：

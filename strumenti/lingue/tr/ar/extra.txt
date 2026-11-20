@@ -6,3 +6,5 @@
 §passo	الخطوة {1} من {2}
 Ultimo aggiornamento	آخر تحديث
 Prossimo evento · costo da verificare	الفعالية القادمة · التكلفة بحاجة إلى تحقق
+Online dal	على الإنترنت منذ
+Sito aggiornato il	آخر تحديث للموقع

@@ -6,3 +6,5 @@
 §passo	ステップ {1} / {2}
 Ultimo aggiornamento	最終更新
 Prossimo evento · costo da verificare	次のイベント · 費用は要確認
+Online dal	公開日：
+Sito aggiornato il	サイト更新日：

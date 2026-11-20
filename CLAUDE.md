@@ -23,7 +23,7 @@ Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato co
   - `manuali/` (manuali HTML e PDF);
   - `privacy.html`.
 - **Tasto Home:** `a.brand` e `#home-link` ricaricano tutta la pagina (`location.reload()` su `#home`), così si vedono sempre gli ultimi aggiornamenti; `notizie.json` e `accademia.json` si scaricano con `cache:"no-cache"`. Richiesta di Marco del 15/11/2026: non toglierlo.
-- **Revisione:** `<meta name="revisione" content="N · GG/MM/AAAA">`. Il cartiglio a piè di pagina è stato tolto di proposito.
+- **Revisione:** `<meta name="revisione" content="N · GG/MM/AAAA">`. Dalla revisione 147 la data della revisione compare nel piè di pagina come «Sito aggiornato il …» (script «date del sito nel piè di pagina», `#fd-upd`), accanto a «Online dal 9 novembre 2026» (`#fd-born`, primo commit del repository): aumentare sempre la revisione con la data giusta. Le date seguono la lingua (`Intl`), le due etichette sono in `tr/<lingua>/extra.txt`. Il cartiglio a piè di pagina è stato tolto di proposito.
 - **Due versioni:**
   - **completa:** foto, mappa, nuvola di punti, copertine e GIF;
   - **essenziale:** classe `lite` su `<html>`; non scarica foto, mappa, font, copertine né GIF.
@@ -218,6 +218,7 @@ Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato co
 
 ## Fatto di recente
 
+- **20/11/2026, revisione 147:** nel piè di pagina «Online dal 9 novembre 2026 · Sito aggiornato il …», approvato da Marco.
 - **20/11/2026, revisione 146:** prima figura animata, il coordinatografo della georeferenziazione, nel capitolo 3 dell'articolo sulla georeferenziazione (repository `bimnews/figure`, skill anatomy).
 
 - **20/11/2026, revisione 145:** pubblicata la proposta 1 «Un dizionario nazionale dei dati BIM pubblici» (punto 17): articolo, prototipo, Excel, JSON e IDS; scheda in «Le mie proposte» tradotta nelle 11 lingue.

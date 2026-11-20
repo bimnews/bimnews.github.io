@@ -6,3 +6,5 @@
 §passo	Step {1} of {2}
 Ultimo aggiornamento	Latest update
 Prossimo evento · costo da verificare	Next event · cost to be checked
+Online dal	Online since
+Sito aggiornato il	Site updated on
