@@ -39,7 +39,8 @@ Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato co
 - **Dal 20/11/2026** le figure animate e interattive si fanno in una repository a parte, privata: `bimnews/figure`. Contiene la skill «anatomy» (MIT, copiata a versione fissa in `.claude/skills/anatomy/`), i sorgenti in `figure/<nome>/` e i file finiti in `dist/`. Le regole (peso, tema, niente risorse esterne, anteprima a Marco) sono nel suo `CLAUDE.md`.
 - **Per lavorarci** collega la repository alla sessione (`add_repo` bimnews/figure). Nel sito si copia solo il file di `dist/`, di solito dentro un manuale con un `iframe` `?embed=1`, mai nella versione essenziale.
 - **Figura 1, il coordinatografo della georeferenziazione: PUBBLICATA il 20/11/2026 (revisione 146) dopo il sì di Marco.** File: `manuali/figure/georeferenziazione.html` (copia di `dist/` della repository delle figure: non modificarla qui, si rigenera là). Incorporata nel capitolo 3 di `manuali/georeferenziazione-ifc.html` dentro `#fig-coord`: lo script in fondo all'articolo crea l'iframe `?embed=1` solo fuori dalla versione essenziale (stessa regola di `index.html`: `localStorage` «versione», riduzione del movimento, risparmio dati); nella versione essenziale c'è il link alla pagina. L'altezza arriva con `postMessage({figH})`, il tema segue quello dell'articolo.
-- **Altre proposte in coda:** pressa per l'estrusione e il foro (IFC scritto a mano), vassoi annidati di IfcLocalPlacement, schedario della libreria IFC.
+- **Revisione 150 (20/11/2026):** figura 1 aggiornata: sul telefono si ruota il foglio trascinando col dito, un tocco cambia l'unità.
+- **Figure 2, 3 e 4 in ANTEPRIMA, in attesa del sì di Marco (20/11/2026)** (dettagli nel `CLAUDE.md` di `bimnews/figure`): pressa dell'estrusione e del foro → `manuali/ifc-da-zero.html` («Il foro e il serramento»); catena delle posizioni → `ifc-da-zero.html` («Le posizioni a catena»); schedario classe/PredefinedType → `manuali/libreria-ifc.html`. Dopo il sì: copiarle in `manuali/figure/` e incorporarle come la figura 1 (iframe `?embed=1` creato via script fuori dalla versione essenziale, gestore `postMessage` con `figH` e il nome della figura).
 
 ## Come si pubblica
 
@@ -217,6 +218,8 @@ Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato co
    - **Corretto anche:** `manuali/manuale.css`, nel tema scuro i pulsanti `.btn.ghost` avevano il testo scuro su fondo scuro (valeva per tutti i manuali).
 
 ## Fatto di recente
+
+- **20/11/2026, revisione 150:** figura del coordinatografo ruotabile anche col dito; figure 2–4 in anteprima.
 
 - **20/11/2026, revisione 148, PUBBLICATA dopo il sì di Marco:** «I manuali di Claude» riordinati: tolti il 02 «Manuale parametri Revit», il 07 «Promemoria avvio progetto MEP» (unito alla Checklist BIM-MEP) e il 10 «Programma di studio: c.a.» (tornerà forse in una futura sezione «Strutture»). Numeri visibili rifatti 01–11; gli id `man-pro-NN` restano quelli vecchi (non rinominarli: servono a copertine e collegamenti). Tre articoli nuovi, scritti dagli artefatti di Marco (documenti Claude Docs «Manuale famiglie Revit 2026», «Checklist BIM-MEP» con i dati JSON dell'artefatto, «Promemoria avvio progetto MEP», «Guida alla progettazione antincendio»):
   - `manuali/famiglie-revit.html` (`#man-pro-01`): metodo, non tutorial; host con aiuto interattivo (quiz), piani di riferimento, vincoli, parametri, MEP, IFC, checklist in localStorage `famiglie-revit-ck`.
