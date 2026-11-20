@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Guida alla progettazione antincendio · I manuali di BIM News</title>
-<meta name="description" content="Una guida interattiva alla progettazione antincendio in Italia e in Alto Adige: committente, destinazione d'uso e dimensioni portano alle regole applicabili; poi gli accorgimenti locale per locale, le vie d'esodo, i materiali, che cosa vuol dire REI e la mappa del workflow che lega antincendio, impianti e dati IFC.">
+<meta name="description" content="Una guida interattiva alla progettazione antincendio secondo le norme italiane, con quelle dell'Alto Adige: committente, destinazione d'uso e dimensioni portano alle regole applicabili; poi gli accorgimenti locale per locale, le vie d'esodo, i materiali, che cosa vuol dire REI e la mappa del workflow che lega antincendio, impianti e dati IFC.">
 <link rel="stylesheet" href="manuale.css">
 <script>try{var t=localStorage.getItem("tema-2026");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
 <style>
@@ -72,7 +72,7 @@
     <span class="kick">I manuali di BIM News · Nello studio</span>
     <h1>Guida alla progettazione antincendio</h1>
     <p>Si sceglie il committente, la destinazione d'uso e le dimensioni dell'edificio, e la guida dice quali regole si applicano. Poi, locale per locale, che cosa prevedere, e come tutto questo diventa dati nel modello degli impianti.</p>
-    <div class="meta"><span class="pill">Codice di prevenzione incendi</span><span class="pill">Alto Adige</span><span class="pill">MEP e IFC</span><span class="pill">Edizione novembre 2026</span></div>
+    <div class="meta"><span class="pill">norme italiane</span><span class="pill">Codice di prevenzione incendi</span><span class="pill">Alto Adige</span><span class="pill">MEP e IFC</span><span class="pill">Edizione novembre 2026</span></div>
   </div>
   <svg viewBox="0 0 360 240" role="img" aria-label="Pianta schematica con due compartimenti, una porta tagliafuoco, il percorso d'esodo e il luogo sicuro">
     <rect class="s-as" x="10" y="10" width="340" height="220" rx="22"/>
@@ -88,21 +88,29 @@
   </svg>
 </header>
 
-<div class="box warn"><b>Una premessa: pubblico o privato cambia meno di quanto si pensi</b><p>Le regole tecniche antincendio non dipendono da chi è il proprietario: una scuola privata e una scuola provinciale seguono le stesse regole. Il primo passo del percorso esiste perché con un committente pubblico cambiano altre cose, che toccano il progetto: le procedure, l'obbligo del BIM, i dati che il capitolato chiede nel modello. Ogni valore della guida ha il suo riferimento; i numeri del Codice vengono dal testo coordinato dei Vigili del fuoco in vigore dal 1° gennaio 2023, da confrontare sempre con l'ultima versione pubblicata. La guida aiuta a impostare il lavoro: non sostituisce la valutazione del rischio né la firma del progettista antincendio.</p></div>
+<div class="box warn"><b>Norme italiane</b><p>Questa guida segue la normativa antincendio italiana: il DPR 151/2011, il Codice di prevenzione incendi con le sue regole tecniche e, per l'Alto Adige, le norme della Provincia autonoma di Bolzano. Fuori dall'Italia i principi restano utili come metodo, ma soglie e valori vanno presi dalle norme del luogo.</p><p><b>Pubblico o privato cambia meno di quanto si pensi.</b> Le regole tecniche antincendio non dipendono da chi è il proprietario: una scuola privata e una scuola provinciale seguono le stesse regole. Il primo passo del percorso esiste perché con un committente pubblico cambiano altre cose, che toccano il progetto: le procedure, l'obbligo del BIM, i dati che il capitolato chiede nel modello. Ogni valore della guida ha il suo riferimento; i numeri del Codice vengono dal testo coordinato dei Vigili del fuoco in vigore dal 1° gennaio 2023, da confrontare sempre con l'ultima versione pubblicata. La guida aiuta a impostare il lavoro: non sostituisce la valutazione del rischio né la firma del progettista antincendio.</p></div>
 
 <section class="ch" id="c1">
   <div class="ch-h"><span class="ch-n">1</span><h2>Il percorso guidato</h2></div>
   <div class="wiz" id="wiz">
-    <h3><span class="stepn">1</span>Chi è il committente?</h3>
+    <h3><span class="stepn">1</span>Dove si trova l'edificio?</h3>
+    <div class="opts" id="w-loc">
+      <button class="opt" data-v="bz" aria-pressed="true">Italia · Alto Adige</button>
+      <button class="opt" data-v="it" aria-pressed="false">Italia · altre regioni</button>
+      <button class="opt" data-v="x" aria-pressed="false">Fuori dall'Italia</button>
+    </div>
+    <div id="w-body">
+    <h3><span class="stepn">2</span>Chi è il committente?</h3>
     <div class="opts" id="w-comm">
       <button class="opt" data-v="pub" aria-pressed="true">Pubblico</button>
       <button class="opt" data-v="priv" aria-pressed="false">Privato</button>
     </div>
-    <h3><span class="stepn">2</span>Che edificio è?</h3>
+    <h3><span class="stepn">3</span>Che edificio è?</h3>
     <input class="search" id="w-q" type="search" placeholder="Cerca una destinazione: scuola, ufficio, garage, hotel…" aria-label="Cerca una destinazione d'uso" autocomplete="off">
     <div class="opts" id="w-dest"></div>
-    <h3><span class="stepn">3</span>Quanto è grande?</h3>
+    <h3><span class="stepn">4</span>Quanto è grande?</h3>
     <div class="nums" id="w-nums"></div>
+    </div>
     <div class="res" id="w-res" aria-live="polite"></div>
   </div>
   <p class="note">I calcoli si fanno nel browser e non escono da questa pagina. Le soglie dell'attività soggetta vengono dall'Allegato I del DPR 151/2011; le classificazioni e le tabelle dalle regole tecniche verticali del Codice (DM 3/8/2015, sezione V).</p>
@@ -293,6 +301,7 @@
     <li>Provincia autonoma di Bolzano, <a href="https://oeffentliche-vertraege.provinz.bz.it/de/news/neue-schwellenwerte-fur-die-verpflichtung-zur-nutzung-des-bim-bei-offentlichen-auftragen-in-der-autonomen-provinz-bozen" target="_blank" rel="noopener">soglia di 2 milioni di euro per l'obbligo BIM</a> (LP 16/2015, art. 9, c. 2-bis, in tedesco).</li>
     <li>UNI 9795:2021, sistemi fissi automatici di rivelazione e segnalazione allarme d'incendio: i punti riportati sono stati letti sul testo della norma.</li>
     <li>buildingSMART, IFC 4.3 ADD2: classi, PredefinedType e Property Set controllati con IfcOpenShell 0.9 sui modelli dei Property Set ufficiali.</li>
+    <li>D.Lgs. 36/2023, art. 43, modificato dal D.Lgs. 209/2024: obbligo BIM dal 1° gennaio 2025 per le opere oltre 2 milioni di euro.</li>
     <li>DM 16/2/2007 (classificazione di resistenza al fuoco), DM 9/3/2007 (prestazioni richieste alle costruzioni), DM 1, 2 e 3/9/2021 (controlli, gestione della sicurezza e luoghi di lavoro), UNI EN 13501-1 e -2.</li>
   </ul>
   <div class="box idea"><b>Come è nato questo articolo</b><p>È uno dei «manuali di Claude»: l'ha scritto Claude, l'assistente di intelligenza artificiale di Anthropic, partendo dalla guida di lavoro che il curatore usa per gli edifici pubblici in provincia di Bolzano. Le tabelle del Codice sono state lette sulle pagine del testo coordinato dei Vigili del fuoco; le soglie del DPR 151/2011 confrontate con l'Allegato I; le regole provinciali prese dalle pagine dell'Ufficio prevenzione incendi.</p></div>
@@ -317,11 +326,13 @@ var LES={A1:[70,45],A2:[60,30],A3:[45,15],A4:[30,10],B1:[60,25],B2:[50,20],B3:[4
 var D={
  scuola:{l:"Scuola",k:"scuola istituto liceo collegio accademia aula scolastica",f:["n","h"],occ:"A",
   dpr:function(v){if(v.n<=100)return null;return {a:67,c:v.n<=150?"A":v.n<=300?"B":"C",t:"Scuole di ogni ordine, grado e tipo con oltre 100 persone presenti"};},
-  rule:"<b>In Alto Adige</b> per l'edilizia scolastica valgono le norme provinciali (DPP 4/10/2006 n. 51 e DPP 23/2/2009 n. 10), che prevalgono su quelle statali: per applicare le norme statali serve una deroga. Le regole statali, per orientarsi e per il resto d'Italia: RTV <b>V.7</b> del Codice (scuole con più di 100 occupanti) oppure, in alternativa, la regola tradizionale DM 26/8/1992.",
+  bz:"Per l'edilizia scolastica valgono le norme provinciali (DPP 4/10/2006 n. 51 e DPP 23/2/2009 n. 10), che prevalgono su quelle statali: per applicare le norme statali serve una deroga. Le regole statali qui sotto servono per orientarsi.",
+  rule:"RTV <b>V.7</b> del Codice (scuole con più di 100 occupanti) oppure, in alternativa, la regola tradizionale DM 26/8/1992.",
   cls:function(v){if(v.n<=100)return null;var o=v.n<=300?"OA":v.n<=500?"OB":v.n<=800?"OC":v.n<=1200?"OD":"OE",h=hcl(v.h),c=CTRL47(h);return {t:"V.7",rows:[["Classe (occupanti)",o],["Classe (quota dei piani)",h],["Resistenza al fuoco (V.7-1)","fuori terra "+RES47.fuori[h]+", interrati "+RES47.interrati[h]],["Controllo dell'incendio (V.7-3)","aree TA, TM, TO, TT: livello "+c.base+"; aree TK: livello "+c.tk.replace("%TK%","")],["Rete idranti UNI 10779 (V.7-4)","livello di pericolosità "+IDR7[o]+(IDR7[o]==="2"?"; protezione esterna richiesta"+(h==="HA"?" (non in HA)":"")+"; alimentazione singola superiore":"; protezione esterna non richiesta; alimentazione singola (ammessa promiscua)")],["Rivelazione e allarme (V.7-6)","livello "+RIV7[o][h]]],n:"[1] Le aree TM, TK e TT, se presenti, sorvegliate da rivelazione automatica. [2] Il livello I può essere garantito dall'impianto a campanelle della scuola, con un suono convenuto e codificato nel piano di emergenza. Nelle aree TA e TO i gas refrigeranti degli impianti di climatizzazione devono essere A1 o A2L (ISO 817, V.7.4.7)."};}},
  asilo:{l:"Asilo nido",k:"asilo nido infanzia bambini",f:["n","h"],occ:"",
   dpr:function(v){if(v.n<=30)return null;return {a:67,c:"B",t:"Asili nido con oltre 30 persone presenti"};},
-  rule:"RTV <b>V.9</b> del Codice (asili nido con più di 30 occupanti); in alternativa la regola tradizionale DM 16/7/2014. La V.9 chiede di tenere conto della vulnerabilità dei bambini e del fatto che possono dormire, soprattutto per l'esodo (V.9.4). In Alto Adige, prima di scegliere, va chiarito con l'Ufficio prevenzione incendi se la struttura rientra nelle norme provinciali sull'edilizia scolastica.",
+  rule:"RTV <b>V.9</b> del Codice (asili nido con più di 30 occupanti); in alternativa la regola tradizionale DM 16/7/2014. La V.9 chiede di tenere conto della vulnerabilità dei bambini e del fatto che possono dormire, soprattutto per l'esodo (V.9.4).",
+  bz:"Prima di scegliere la regola, va chiarito con l'Ufficio prevenzione incendi se la struttura rientra nelle norme provinciali sull'edilizia scolastica.",
   cls:function(v){if(v.n<=30)return null;var h=v.h<=12?"HA":v.h<=32?"HB":v.h<=54?"HC":"HD";return {t:"V.9",rows:[["Classe (quota dei piani)",h],["Aree","TA bambini, TB uffici e servizi, TC cucine con impianti a gas, TM1 e TM2 lavanderie e depositi"]],n:"Le prestazioni richieste per ogni classe sono nelle tabelle del capitolo V.9."};}},
  ufficio:{l:"Ufficio",k:"ufficio uffici direzionale sede municipio amministrazione",f:["n","h","pub"],occ:"A",
   dpr:function(v){if(v.n<=300)return null;return {a:71,c:v.n<=500?"A":v.n<=800?"B":"C",t:"Aziende ed uffici con oltre 300 persone presenti"};},
@@ -341,41 +352,49 @@ var D={
   cls:function(v){if(v.A<=400)return null;var a=v.A<=1500?"AA":v.A<=3000?"AB":v.A<=5000?"AC":v.A<=10000?"AD":"AE";return {t:"V.8",rows:[["Classe (superficie lorda utile)",a]],n:"Nella superficie lorda utile entrano vendita, servizi, depositi e spazi comuni direttamente funzionali (V.8.3)."};}},
  albergo:{l:"Albergo",k:"albergo hotel ricettivo pensione ostello rifugio studentato bed",f:["p","h"],occ:"Ciii",
   dpr:function(v){if(v.p<=25)return null;return {a:66,c:v.p<=50?"A":v.p<=100?"B":"C",t:"Strutture ricettive con oltre 25 posti letto"};},
-  rule:"<b>In Alto Adige</b> per gli esercizi pubblici e ricettivi valgono le norme provinciali (DPGP 13/6/1989 n. 11, modificato dal DPP 8/2/2017 n. 2), che prevalgono su quelle statali. Le regole statali: RTV <b>V.5</b> del Codice oppure la regola tradizionale DM 9/4/1994.",
+  bz:"Per gli esercizi pubblici e ricettivi valgono le norme provinciali (DPGP 13/6/1989 n. 11, modificato dal DPP 8/2/2017 n. 2), che prevalgono su quelle statali.",
+  rule:"RTV <b>V.5</b> del Codice oppure la regola tradizionale DM 9/4/1994.",
   cls:function(){return null;}},
  sanita:{l:"Struttura sanitaria",k:"ospedale sanitaria clinica casa di riposo rsa ambulatorio",f:["p","h"],occ:"D",
   dpr:function(v){if(v.p<=25)return null;return {a:68,c:v.p<=50?"A":v.p<=100?"B":"C",t:"Strutture sanitarie con ricovero e case di riposo con oltre 25 posti letto (gli ambulatori sopra i 500 m² hanno soglie proprie)"};},
-  rule:"RTV <b>V.11</b> del Codice oppure la regola tradizionale DM 18/9/2002. In Alto Adige c'è una circolare provinciale sulle deroghe per le strutture sanitarie (1/2007).",
+  rule:"RTV <b>V.11</b> del Codice oppure la regola tradizionale DM 18/9/2002.",
+  bz:"C'è una circolare provinciale sulle deroghe per le strutture sanitarie (1/2007).",
   cls:function(){return null;}},
  spettacolo:{l:"Spettacolo e sport",k:"teatro cinema sala palestra impianto sportivo spettacolo auditorium",f:["n","h"],occ:"B",
   dpr:function(v){if(v.n<=100)return null;return {a:65,c:v.n<=200?"B":"C",t:"Locali di spettacolo, impianti sportivi e palestre con capienza oltre 100 persone (o superficie lorda al chiuso oltre 200 m²)"};},
-  rule:"<b>In Alto Adige</b> per i locali di pubblico spettacolo valgono le norme provinciali, che prevalgono. Le regole statali: RTV <b>V.15</b> del Codice oppure DM 19/8/1996; per gli impianti sportivi DM 18/3/1996.",
+  bz:"Per i locali di pubblico spettacolo valgono le norme provinciali, che prevalgono su quelle statali.",
+  rule:"RTV <b>V.15</b> del Codice oppure DM 19/8/1996; per gli impianti sportivi DM 18/3/1996.",
   cls:function(){return null;}},
  centrale:{l:"Centrale termica",k:"centrale termica caldaia impianto termico generatore calore gas",f:["kw"],occ:"",
   dpr:function(v){if(v.kw<=116)return null;return {a:74,c:v.kw<=350?"A":v.kw<=700?"B":"C",t:"Impianti per la produzione di calore oltre 116 kW"};},
-  rule:"<b>In Alto Adige</b> gli impianti termici hanno una disciplina provinciale propria, che prevale; i moduli e la documentazione sono sul sito dell'Ufficio prevenzione incendi. A livello statale, per gli impianti alimentati a gas: DM 12/4/1996.",
+  bz:"Gli impianti termici hanno una disciplina provinciale propria, che prevale; i moduli e la documentazione sono sul sito dell'Ufficio prevenzione incendi.",
+  rule:"Per gli impianti alimentati a gas: DM 12/4/1996.",
   cls:function(){return null;}}
 };
 var F={n:["Persone presenti (affollamento)",250],h:["Quota del piano più alto (m)",9],A:["Superficie lorda (m²)",800],p:["Posti letto",40],kw:["Potenza termica (kW)",200],pub:["Aperto al pubblico?",0]};
-var S={comm:"pub",dest:"scuola",v:{n:250,h:9,A:800,p:40,kw:200,pub:0},da:"2"};
+var S={loc:"bz",comm:"pub",dest:"scuola",v:{n:250,h:9,A:800,p:40,kw:200,pub:0},da:"2"};
 try{var o=JSON.parse(localStorage.getItem("antincendio-wiz")||"null");if(o)S=o;}catch(e){}
+if(!S.loc)S.loc="bz";
 function save(){try{localStorage.setItem("antincendio-wiz",JSON.stringify(S))}catch(e){}}
 function dests(q){q=(q||"").toLowerCase().trim();$("w-dest").innerHTML=Object.keys(D).filter(function(k){return !q||(D[k].l+" "+D[k].k).toLowerCase().indexOf(q)>=0}).map(function(k){return '<button class="opt" data-v="'+k+'" aria-pressed="'+(S.dest===k)+'">'+D[k].l+'</button>'}).join("")||'<span class="note">Nessuna destinazione trovata: prova con un\'altra parola.</span>';}
 function nums(){var d=D[S.dest],h="";d.f.forEach(function(k){if(k==="pub")h+='<label>'+F[k][0]+'<select data-k="pub"><option value="0"'+(S.v.pub?"":" selected")+'>No</option><option value="1"'+(S.v.pub?" selected":"")+'>Sì</option></select></label>';else h+='<label>'+F[k][0]+'<input type="number" min="0" step="1" inputmode="numeric" data-k="'+k+'" value="'+S.v[k]+'"></label>';});
  if(d.occ&&d.occ!=="Ci")h+='<label>Velocità di crescita dell\'incendio<select data-k="da"><option value="1"'+(S.da==="1"?" selected":"")+'>1 · lenta</option><option value="2"'+(S.da==="2"?" selected":"")+'>2 · media</option><option value="3"'+(S.da==="3"?" selected":"")+'>3 · rapida</option></select></label>';
  $("w-nums").innerHTML=h;}
 function res(){
- var d=D[S.dest],v=S.v,p=d.dpr(v),c=d.cls(v),h="";
+ var d=D[S.dest],v=S.v,p=d.dpr(v),c=d.cls(v),h="",bz=S.loc==="bz";
+ $("w-body").style.display=S.loc==="x"?"none":"";
+ if(S.loc==="x"){$("w-res").innerHTML='<div class="card"><h4>Questa guida usa solo norme italiane</h4><p>Le soglie, le regole tecniche e i valori della guida vengono dalla normativa italiana (DPR 151/2011, Codice di prevenzione incendi e regole tecniche collegate) e, per l\'Alto Adige, da quella provinciale. Fuori dall\'Italia valgono le regole del paese e spesso della regione o del cantone: i principi dei capitoli 3–6 (esodo, materiali, REI, dati nel modello) restano utili come metodo, ma i numeri vanno presi dalle norme locali.</p><p class="note">La classificazione di resistenza e di reazione al fuoco (UNI EN 13501-1 e -2) e lo schema IFC sono invece europei o internazionali, e valgono anche altrove.</p></div>';return;}
  h+='<div class="card"><h4>Attività soggetta al controllo dei Vigili del fuoco?</h4>';
- if(p)h+='<p><span class="big">Sì · attività n. '+p.a+', categoria '+p.c+'</span></p><p class="note">'+esc(p.t)+' (DPR 151/2011, Allegato I).</p><p>'+(p.c==="A"?"Categoria A: nessun esame del progetto; si presenta la SCIA a fine lavori.":"Categoria "+p.c+": prima si chiede la valutazione del progetto, poi si presenta la SCIA"+(p.c==="C"?" e segue il sopralluogo.":"."))+' In Alto Adige le procedure seguono la LP 4/2025 e il regolamento DPP 18/2026, allineati alla disciplina statale.</p>';
+ if(p)h+='<p><span class="big">Sì · attività n. '+p.a+', categoria '+p.c+'</span></p><p class="note">'+esc(p.t)+' (DPR 151/2011, Allegato I).</p><p>'+(p.c==="A"?"Categoria A: nessun esame del progetto; si presenta la SCIA a fine lavori.":"Categoria "+p.c+": prima si chiede la valutazione del progetto, poi si presenta la SCIA"+(p.c==="C"?" e segue il sopralluogo.":"."))+' '+(bz?'In Alto Adige le procedure seguono la LP 4/2025 e il regolamento DPP 18/2026, allineati alla disciplina statale; il riferimento è l\'Ufficio prevenzione incendi della Provincia.':'Le pratiche si presentano al Comando dei Vigili del fuoco competente (in Trentino e in Valle d\'Aosta i corpi dei vigili del fuoco hanno un ordinamento proprio).')+'</p>';
  else h+='<p><span class="big">No</span>, con questi numeri non supera la soglia dell\'Allegato I del DPR 151/2011.</p><p class="note">Non vuol dire nessun obbligo: in un luogo di lavoro valgono comunque i DM 1, 2 e 3/9/2021 (controlli, gestione della sicurezza, criteri per i luoghi di lavoro a basso rischio), e altre parti dell\'edificio (autorimessa, centrale termica) possono essere attività soggette per conto loro.</p>';
- h+='</div><div class="card"><h4>Quale regola tecnica</h4><p>'+d.rule+'</p><p class="note">Per le attività soggette senza una regola tecnica tradizionale si applica il Codice (DM 3/8/2015).</p></div>';
+ h+='</div><div class="card"><h4>Quale regola tecnica</h4>'+(bz&&d.bz?'<p><b>In Alto Adige.</b> '+d.bz+'</p>':'')+'<p>'+(bz&&d.bz?'<b>Norme statali:</b> ':'')+d.rule+'</p><p class="note">Per le attività soggette senza una regola tecnica tradizionale si applica il Codice (DM 3/8/2015).</p></div>';
  if(c){h+='<div class="card"><h4>Classificazione secondo la RTV '+c.t+'</h4><dl class="kv">'+c.rows.map(function(r){return '<dt>'+r[0]+'</dt><dd>'+r[1]+'</dd>'}).join("")+'</dl><p class="note">'+c.n+'</p></div>';}
  if(d.occ&&d.occ!=="Ci"){var r=d.occ+S.da,L=LES[r];
   h+='<div class="card"><h4>Esodo, con profilo R<sub>vita</sub> '+r+'</h4>'+(L?'<p>Lunghezza d\'esodo massima <span class="big">'+L[0]+' m</span>, corridoio cieco al massimo <span class="big">'+L[1]+' m</span> (tabelle S.4-25 e S.4-18).</p>':'<p>Profilo non ammesso con questa velocità di crescita (tabella G.3-3): serve una valutazione specifica.</p>')+'<p class="note">Profilo tipico per questa destinazione secondo gli esempi della tabella G.3-1; il progettista lo attribuisce per ogni compartimento, motivando le scelte diverse.</p></div>';}
- h+='<div class="card"><h4>Committente '+(S.comm==="pub"?"pubblico":"privato")+': che cosa cambia</h4>'+(S.comm==="pub"?'<ul><li>In provincia di Bolzano il BIM è obbligatorio per le opere pubbliche con costo stimato oltre 2 milioni di euro (LP 16/2015, art. 9, c. 2-bis): i dati antincendio del capitolo 6 diventano requisiti del capitolato informativo.</li><li>Spesso l\'ente è anche il responsabile dell\'attività (per esempio di una scuola): conviene coinvolgerlo dalla strategia, non a progetto finito.</li><li>La Provincia ha una circolare sulla considerazione delle norme antincendio nella progettazione delle opere pubbliche (2/2005).</li></ul>':'<ul><li>Le regole tecniche sono le stesse di un committente pubblico.</li><li>Il BIM non è obbligatorio, ma i dati antincendio nel modello servono lo stesso: verifiche, computo delle serrande e delle sigillature, manutenzione.</li><li>Con dipendenti, valgono i DM 1, 2 e 3/9/2021 sui luoghi di lavoro.</li></ul>')+'</div>';
+ h+='<div class="card"><h4>Committente '+(S.comm==="pub"?"pubblico":"privato")+': che cosa cambia</h4>'+(S.comm==="pub"?'<ul><li>'+(bz?'In provincia di Bolzano il BIM è obbligatorio per le opere pubbliche con costo stimato oltre 2 milioni di euro (LP 16/2015, art. 9, c. 2-bis)':'Il BIM è obbligatorio dal 1° gennaio 2025 per le nuove opere e gli interventi sull\'esistente oltre i 2 milioni di euro (D.Lgs. 36/2023, art. 43, come modificato dal D.Lgs. 209/2024)')+': i dati antincendio del capitolo 6 diventano requisiti del capitolato informativo.</li><li>Spesso l\'ente è anche il responsabile dell\'attività (per esempio di una scuola): conviene coinvolgerlo dalla strategia, non a progetto finito.</li>'+(bz?'<li>La Provincia ha una circolare sulla considerazione delle norme antincendio nella progettazione delle opere pubbliche (2/2005).</li>':'')+'</ul>':'<ul><li>Le regole tecniche sono le stesse di un committente pubblico.</li><li>Il BIM non è obbligatorio, ma i dati antincendio nel modello servono lo stesso: verifiche, computo delle serrande e delle sigillature, manutenzione.</li><li>Con dipendenti, valgono i DM 1, 2 e 3/9/2021 sui luoghi di lavoro.</li></ul>')+'</div>';
  $("w-res").innerHTML=h;}
-function all(){dests($("w-q").value);nums();res();[].forEach.call($("w-comm").children,function(b){b.setAttribute("aria-pressed",b.dataset.v===S.comm)});}
+function all(){dests($("w-q").value);nums();res();[].forEach.call($("w-comm").children,function(b){b.setAttribute("aria-pressed",b.dataset.v===S.comm)});[].forEach.call($("w-loc").children,function(b){b.setAttribute("aria-pressed",b.dataset.v===S.loc)});}
+$("w-loc").addEventListener("click",function(e){var b=e.target.closest(".opt");if(!b)return;S.loc=b.dataset.v;save();all();});
 $("w-comm").addEventListener("click",function(e){var b=e.target.closest(".opt");if(!b)return;S.comm=b.dataset.v;save();all();});
 $("w-dest").addEventListener("click",function(e){var b=e.target.closest(".opt");if(!b)return;S.dest=b.dataset.v;save();all();});
 $("w-q").addEventListener("input",function(){dests(this.value);});

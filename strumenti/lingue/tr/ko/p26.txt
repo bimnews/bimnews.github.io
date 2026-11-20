@@ -5,5 +5,5 @@ v1696	Revit을 열기 전에 할 질문부터 납품까지: 설비 프로젝트�
 v1697	새 모델을 시작하기 전에 사무소의 표준으로 MEP 템플릿을 단계별로 준비하는 방법; 이어서 분야별 점검(착수와 조정, 전기, 공조, 위생, 소방)과 프로젝트 종료 회고. 체크 표시는 브라우저에 저장됩니다.
 v1698	<span class="tag ok">게시됨</span><a class="man-btn" href="manuali/checklist-bim-mep.html">온라인으로 읽기</a><a class="man-btn ghost" href="manuali/checklist-bim-mep.html#c3">MEP 템플릿</a><a class="man-btn ghost" href="manuali/checklist-bim-mep.html#c4">체크리스트</a>
 v1699	단계별 안내: 발주처, 건물의 용도와 규모를 고르면 어떤 규정이 적용되는지 알려 줍니다.
-v1700	이어서 실별로 갖춰야 할 조치, 피난 경로, 재료, REI의 진짜 의미. 마지막으로 소방을 설비와 모델 데이터(매개변수부터 IFC까지)에 연결하는 워크플로 지도. 남티롤 주 규정과 모든 값의 정확한 근거 포함.
+v1700	이어서 실별로 갖춰야 할 조치, 피난 경로, 재료, REI의 진짜 의미. 마지막으로 소방을 설비와 모델 데이터(매개변수부터 IFC까지)에 연결하는 워크플로 지도. 이탈리아 규정과 남티롤 주 규정을 따르며, 모든 값의 정확한 근거를 제시합니다.
 v1701	<span class="tag ok">게시됨</span><a class="man-btn" href="manuali/antincendio.html">안내 열기</a><a class="man-btn ghost" href="manuali/antincendio.html#c6">워크플로 지도</a>
