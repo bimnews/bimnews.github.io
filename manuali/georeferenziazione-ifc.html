@@ -9,6 +9,8 @@
 <script>try{var t=localStorage.getItem("tema-2026");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
 <style>
 .conv-frame{width:100%;border:0;min-height:1100px;display:block;background:transparent}
+.fig-frame{width:100%;border:0;min-height:560px;display:block;background:transparent;margin:.4rem 0 1rem}
+.fig-alt{margin:.4rem 0 1rem}
 .ok-v{color:var(--a2);font-weight:700}.no-v{color:var(--a3);font-weight:700}
 .btn.ghost,:root[data-theme="dark"] .btn.ghost{color:var(--accent)}
 .formula{font-family:var(--mono);background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:.9rem 1.1rem;margin:.6rem 0 1rem;font-size:.95rem;line-height:1.7;overflow-x:auto}
@@ -129,6 +131,8 @@
     <li><b>s</b>: la scala, che serve a convertire le unità (modello in mm e mappa in m: s = 0,001).</li>
   </ul>
   <p>La trasformazione è invertibile. Per passare da un software A a un software B non serve una regola «da A a B»: si va da A alla mappa con i parametri di A, poi dalla mappa a B con quelli di B. È quello che fa il convertitore, e per questo funziona per qualunque coppia.</p>
+  <p>La figura qui sotto mostra la stessa formula come un coordinatografo, lo strumento con cui i cartografi riportavano i punti per coordinate: il ponte e il carrello portano l'origine del modello in (E0, N0), il foglio del modello ruota di θ attorno a quel punto. I numeri sono quelli del caso del capitolo 6 e del convertitore: θ = −12,5° (in Revit «12°30′ Ovest») e un punto di controllo a 20 m sull'asse x. La leva dell'unità mostra l'errore 1:1000.</p>
+  <div id="fig-coord" class="noprint"></div>
   <h3>Allora perché i modelli non coincidono?</h3>
   <p>Perché la formula è esatta, ma i suoi ingressi no. Gli errori nascono quasi sempre prima del calcolo:</p>
   <div class="tbl"><table>
@@ -267,7 +271,11 @@
 </main>
 </div>
 <script>
-window.addEventListener("message",function(e){ if(e.data&&e.data.georefH){ var f=document.getElementById("conv"); if(f)f.style.height=(e.data.georefH+8)+"px"; } });
+window.addEventListener("message",function(e){ if(e.data&&e.data.georefH){ var f=document.getElementById("conv"); if(f)f.style.height=(e.data.georefH+8)+"px"; } if(e.data&&e.data.figH&&e.data.fig==="georeferenziazione"){ var g=document.getElementById("fig-frame"); if(g)g.style.height=(e.data.figH+4)+"px"; } });
+/* figura animata: non nella versione essenziale (stessa regola del sito) */
+(function(){ var box=document.getElementById("fig-coord"); if(!box)return; var lite=false; try{ var m=localStorage.getItem("versione"),c=navigator.connection,a=matchMedia("(prefers-reduced-motion: reduce)").matches||(c&&(c.saveData||/(^|-)2g$/.test(c.effectiveType||""))); lite=m?m==="essenziale":a; }catch(e){}
+  if(lite){ box.innerHTML='<p class="fig-alt"><a href="figure/georeferenziazione.html">Apri la figura interattiva del coordinatografo</a> (pagina a parte, circa 145 KB).</p>'; return; }
+  var f=document.createElement("iframe"); f.id="fig-frame"; f.className="fig-frame"; f.title="Figura interattiva: il coordinatografo della georeferenziazione"; f.loading="lazy"; f.src="figure/georeferenziazione.html?embed=1"; box.appendChild(f); })();
 </script>
 </body>
 </html>
