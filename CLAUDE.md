@@ -38,7 +38,8 @@ Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato co
 
 - **Dal 20/11/2026** le figure animate e interattive si fanno in una repository a parte, privata: `bimnews/figure`. Contiene la skill «anatomy» (MIT, copiata a versione fissa in `.claude/skills/anatomy/`), i sorgenti in `figure/<nome>/` e i file finiti in `dist/`. Le regole (peso, tema, niente risorse esterne, anteprima a Marco) sono nel suo `CLAUDE.md`.
 - **Per lavorarci** collega la repository alla sessione (`add_repo` bimnews/figure). Nel sito si copia solo il file di `dist/`, di solito dentro un manuale con un `iframe` `?embed=1`, mai nella versione essenziale.
-- **Stato:** il 20/11/2026 Marco ha scelto la figura 1, il coordinatografo della georeferenziazione (ponte lungo Est, carrello lungo Nord, foglio del modello che ruota di θ, leva dell'unità per l'errore 1:1000, con i colori chiesti da Marco). L'anteprima è stata mandata a Marco ed è in attesa del suo sì; dopo il sì va nel capitolo 3 di `manuali/georeferenziazione-ifc.html`. Altre proposte in coda: pressa per l'estrusione e il foro (IFC scritto a mano), vassoi annidati di IfcLocalPlacement, schedario della libreria IFC.
+- **Figura 1, il coordinatografo della georeferenziazione: PUBBLICATA il 20/11/2026 (revisione 146) dopo il sì di Marco.** File: `manuali/figure/georeferenziazione.html` (copia di `dist/` della repository delle figure: non modificarla qui, si rigenera là). Incorporata nel capitolo 3 di `manuali/georeferenziazione-ifc.html` dentro `#fig-coord`: lo script in fondo all'articolo crea l'iframe `?embed=1` solo fuori dalla versione essenziale (stessa regola di `index.html`: `localStorage` «versione», riduzione del movimento, risparmio dati); nella versione essenziale c'è il link alla pagina. L'altezza arriva con `postMessage({figH})`, il tema segue quello dell'articolo.
+- **Altre proposte in coda:** pressa per l'estrusione e il foro (IFC scritto a mano), vassoi annidati di IfcLocalPlacement, schedario della libreria IFC.
 
 ## Come si pubblica
 
@@ -216,6 +217,8 @@ Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato co
    - **Corretto anche:** `manuali/manuale.css`, nel tema scuro i pulsanti `.btn.ghost` avevano il testo scuro su fondo scuro (valeva per tutti i manuali).
 
 ## Fatto di recente
+
+- **20/11/2026, revisione 146:** prima figura animata, il coordinatografo della georeferenziazione, nel capitolo 3 dell'articolo sulla georeferenziazione (repository `bimnews/figure`, skill anatomy).
 
 - **20/11/2026, revisione 145:** pubblicata la proposta 1 «Un dizionario nazionale dei dati BIM pubblici» (punto 17): articolo, prototipo, Excel, JSON e IDS; scheda in «Le mie proposte» tradotta nelle 11 lingue.
 
