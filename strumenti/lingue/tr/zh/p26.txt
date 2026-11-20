@@ -1,0 +1,9 @@
+v1693	这不是教程，而是一种方法：按什么顺序做决定，才能建出经得起时间、项目和数据交换考验的族。
+v1694	族类别与主体、样板、参照平面与约束、共享参数、表达、MEP 连接件与 IFC，直到测试并发布到族库。附有选择主体的交互助手和可勾选的最终检查清单。
+v1695	<span class="tag ok">已发布</span><a class="man-btn" href="manuali/famiglie-revit.html">在线阅读</a><a class="man-btn ghost" href="manuali/famiglie-revit.html#c4">选择主体</a>
+v1696	从打开 Revit 之前要问的问题到交付：一份用于机电项目的统一检查清单，可在线勾选。
+v1697	如何在开始新模型之前，按步骤用本事务所的标准准备 MEP 样板；然后是各专业的检查（启动与协调、电气、暖通、给排水、消防）以及项目结束时的回顾。勾选状态保存在浏览器中。
+v1698	<span class="tag ok">已发布</span><a class="man-btn" href="manuali/checklist-bim-mep.html">在线阅读</a><a class="man-btn ghost" href="manuali/checklist-bim-mep.html#c3">MEP 样板</a><a class="man-btn ghost" href="manuali/checklist-bim-mep.html#c4">检查清单</a>
+v1699	引导式流程：选择业主、建筑用途和规模，指南告诉你适用哪些规定。
+v1700	然后逐个房间说明需要采取的措施；疏散通道、材料以及 REI 的真正含义；最后是把消防与机电系统、模型数据（从参数到 IFC）联系起来的工作流程图。附南蒂罗尔的省级规定，每个数值都有确切出处。
+v1701	<span class="tag ok">已发布</span><a class="man-btn" href="manuali/antincendio.html">打开指南</a><a class="man-btn ghost" href="manuali/antincendio.html#c6">工作流程图</a>

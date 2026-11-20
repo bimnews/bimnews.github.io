@@ -1,0 +1,9 @@
+v1693	Not a tutorial but a method: the order of decisions for building a family that holds up over time, in the project and in data exchange.
+v1694	Family class and host, template, reference planes and constraints, shared parameters, representation, MEP connectors and IFC, up to testing and publishing in the library. With an interactive helper to choose the host and a final checklist to tick off.
+v1695	<span class="tag ok">Published</span><a class="man-btn" href="manuali/famiglie-revit.html">Read online</a><a class="man-btn ghost" href="manuali/famiglie-revit.html#c4">Choose the host</a>
+v1696	From the questions to ask before opening Revit to delivery: a single checklist for building services projects, to tick off online.
+v1697	How to prepare an MEP template with your office's standards, step by step, before starting a new model; then the checks by discipline (start-up and coordination, electrical, HVAC, plumbing, fire protection) and the end-of-project review. The ticks stay saved in the browser.
+v1698	<span class="tag ok">Published</span><a class="man-btn" href="manuali/checklist-bim-mep.html">Read online</a><a class="man-btn ghost" href="manuali/checklist-bim-mep.html#c3">The MEP template</a><a class="man-btn ghost" href="manuali/checklist-bim-mep.html#c4">The checklist</a>
+v1699	A guided path: you choose the client, the building's use and size, and the guide tells you which rules apply.
+v1700	Then, room by room, the measures to provide; escape routes, materials and what REI really means; finally the workflow map linking fire safety to building services and model data, from parameters to IFC. With the provincial rules of South Tyrol and the exact reference for every value.
+v1701	<span class="tag ok">Published</span><a class="man-btn" href="manuali/antincendio.html">Open the guide</a><a class="man-btn ghost" href="manuali/antincendio.html#c6">The workflow map</a>

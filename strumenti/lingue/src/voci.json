@@ -10981,5 +10981,68 @@
 "h": "Per discuterne, ci si ritrova su <a href=\"https://www.linkedin.com/in/marco-scigliuolo/\" target=\"_blank\" rel=\"noopener\">LinkedIn ↗</a>.",
 "tag": "P",
 "id": "v1692"
+},
+{
+"k": "Non è un tutorial ma un metodo: l'ordine delle decisioni per costruire una famiglia che regge nel tempo, nel progetto e nello scambio dei dati.",
+"m": "text",
+"h": "Non è un tutorial ma un metodo: l'ordine delle decisioni per costruire una famiglia che regge nel tempo, nel progetto e nello scambio dei dati.",
+"tag": "P",
+"id": "v1693"
+},
+{
+"k": "Classe di famiglia e host, template, piani di riferimento e vincoli, parametri condivisi, rappresentazione, connettori MEP e IFC, fino alla prova e alla pubblicazione in libreria. Con un aiuto interattivo per scegliere l'host e la checklist finale da spuntare.",
+"m": "text",
+"h": "Classe di famiglia e host, template, piani di riferimento e vincoli, parametri condivisi, rappresentazione, connettori MEP e IFC, fino alla prova e alla pubblicazione in libreria. Con un aiuto interattivo per scegliere l'host e la checklist finale da spuntare.",
+"tag": "P",
+"id": "v1694"
+},
+{
+"k": "PubblicatoLeggi onlineScegli l'host",
+"m": "html",
+"h": "<span class=\"tag ok\">Pubblicato</span><a class=\"man-btn\" href=\"manuali/famiglie-revit.html\">Leggi online</a><a class=\"man-btn ghost\" href=\"manuali/famiglie-revit.html#c4\">Scegli l'host</a>",
+"tag": "P",
+"id": "v1695"
+},
+{
+"k": "Dalle domande da fare prima di aprire Revit fino alla consegna: un'unica checklist per i progetti di impianti, da spuntare online.",
+"m": "text",
+"h": "Dalle domande da fare prima di aprire Revit fino alla consegna: un'unica checklist per i progetti di impianti, da spuntare online.",
+"tag": "P",
+"id": "v1696"
+},
+{
+"k": "Come si prepara un template MEP con gli standard del proprio studio, passo per passo, prima di iniziare un nuovo modello; poi i controlli per disciplina (avvio e coordinamento, elettrico, climatizzazione, idrico-sanitario, antincendio) e la revisione di fine progetto. Le spunte restano salvate nel browser.",
+"m": "text",
+"h": "Come si prepara un template MEP con gli standard del proprio studio, passo per passo, prima di iniziare un nuovo modello; poi i controlli per disciplina (avvio e coordinamento, elettrico, climatizzazione, idrico-sanitario, antincendio) e la revisione di fine progetto. Le spunte restano salvate nel browser.",
+"tag": "P",
+"id": "v1697"
+},
+{
+"k": "PubblicatoLeggi onlineIl template MEPLa checklist",
+"m": "html",
+"h": "<span class=\"tag ok\">Pubblicato</span><a class=\"man-btn\" href=\"manuali/checklist-bim-mep.html\">Leggi online</a><a class=\"man-btn ghost\" href=\"manuali/checklist-bim-mep.html#c3\">Il template MEP</a><a class=\"man-btn ghost\" href=\"manuali/checklist-bim-mep.html#c4\">La checklist</a>",
+"tag": "P",
+"id": "v1698"
+},
+{
+"k": "Un percorso guidato: si sceglie il committente, la destinazione d'uso e le dimensioni dell'edificio, e la guida dice quali regole si applicano.",
+"m": "text",
+"h": "Un percorso guidato: si sceglie il committente, la destinazione d'uso e le dimensioni dell'edificio, e la guida dice quali regole si applicano.",
+"tag": "P",
+"id": "v1699"
+},
+{
+"k": "Poi, locale per locale, gli accorgimenti da prevedere; le vie d'esodo, i materiali e che cosa vuol dire davvero REI; infine la mappa del workflow che lega l'antincendio agli impianti e ai dati del modello, dai parametri all'IFC. Con le regole provinciali dell'Alto Adige e il riferimento preciso per ogni valore.",
+"m": "text",
+"h": "Poi, locale per locale, gli accorgimenti da prevedere; le vie d'esodo, i materiali e che cosa vuol dire davvero REI; infine la mappa del workflow che lega l'antincendio agli impianti e ai dati del modello, dai parametri all'IFC. Con le regole provinciali dell'Alto Adige e il riferimento preciso per ogni valore.",
+"tag": "P",
+"id": "v1700"
+},
+{
+"k": "PubblicatoApri la guidaLa mappa del workflow",
+"m": "html",
+"h": "<span class=\"tag ok\">Pubblicato</span><a class=\"man-btn\" href=\"manuali/antincendio.html\">Apri la guida</a><a class=\"man-btn ghost\" href=\"manuali/antincendio.html#c6\">La mappa del workflow</a>",
+"tag": "P",
+"id": "v1701"
 }
 ]

@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Manuale famiglie Revit 2026 · I manuali di BIM News</title>
+<meta name="description" content="Il metodo per costruire famiglie Revit che reggono nel tempo: l'ordine delle decisioni, la scelta della classe e dell'host, il template, i piani di riferimento e i vincoli, i parametri condivisi, la rappresentazione, i connettori MEP, l'IFC e la prova prima della libreria.">
+<link rel="stylesheet" href="manuale.css">
+<script>try{var t=localStorage.getItem("tema-2026");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+<style>
+.btn.ghost,:root[data-theme="dark"] .btn.ghost{color:var(--accent)}
+.phase{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.7rem;margin:.6rem 0 1.2rem}
+.phase div{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:.8rem .9rem;box-shadow:var(--shadow)}
+.phase b{display:block;font-family:var(--mono);font-size:.78rem;letter-spacing:.04em;text-transform:uppercase;color:var(--accent);margin-bottom:.3rem}
+.phase ol{margin:.2rem 0 0;padding-left:1.1rem;font-size:.95rem}
+@media (max-width:820px){.phase{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.phase{grid-template-columns:1fr}}
+.quiz{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:1rem 1.1rem;box-shadow:var(--shadow);margin:.8rem 0 1.2rem}
+.quiz fieldset{border:0;margin:0 0 .8rem;padding:0}
+.quiz legend{font-weight:700;margin-bottom:.35rem}
+.quiz label{display:inline-flex;align-items:center;gap:.35rem;margin:.15rem .9rem .15rem 0;cursor:pointer}
+.quiz .out{border-left:6px solid var(--a2);background:var(--a2s);border-radius:12px;padding:.8rem 1rem;margin-top:.4rem}
+.quiz .out h4{margin:0 0 .3rem}
+.quiz .out p{margin:.3rem 0}
+.ck{list-style:none;padding:0;margin:.4rem 0}
+.ck li{display:flex;gap:.6rem;align-items:flex-start;padding:.45rem .2rem;border-bottom:1px dashed var(--line)}
+.ck input{margin-top:.35rem;width:1.05rem;height:1.05rem;flex:none}
+.ck li.done span{color:var(--muted);text-decoration:line-through}
+.ckbar{display:flex;gap:1rem;align-items:center;flex-wrap:wrap;font-family:var(--mono);font-size:.82rem;color:var(--muted)}
+.dim{font-family:var(--mono);font-size:11px;fill:var(--muted)}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 10 5 0 10z" style="fill:var(--accent)"/></marker><marker id="arm" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 10 5 0 10z" style="fill:var(--muted)"/></marker></defs></svg>
+<div class="topbar"><div class="in"><a class="back" href="../#studio">← BIM News · Nello studio</a><span class="sp"></span><a class="btn ghost noprint" href="#c4">Scegli l'host</a><a class="btn noprint" href="#c10">La checklist</a></div></div>
+<div class="layout">
+<nav class="toc" aria-label="Indice">
+  <b>Indice</b>
+  <ol>
+    <li><a href="#c1">1 · Il modo di pensare</a></li>
+    <li><a href="#c2">2 · Il workflow in quattro fasi</a></li>
+    <li><a href="#c3">3 · Sistema, caricabile o locale</a></li>
+    <li><a href="#c4">4 · Gli host e il loro uso</a></li>
+    <li><a href="#c5">5 · Il template giusto</a></li>
+    <li><a href="#c6">6 · Lo scheletro: piani di riferimento</a></li>
+    <li><a href="#c7">7 · I vincoli</a></li>
+    <li><a href="#c8">8 · Parametri e dati</a></li>
+    <li><a href="#c9">9 · Rappresentazione, MEP e IFC</a></li>
+    <li><a href="#c10">10 · Prova e pubblicazione</a></li>
+    <li><a href="#fonti">Fonti</a></li>
+  </ol>
+</nav>
+<main>
+<header class="cover">
+  <div>
+    <span class="kick">I manuali di BIM News · Nello studio</span>
+    <h1>Manuale famiglie Revit 2026</h1>
+    <p>Il metodo per costruire famiglie che reggono nel tempo: quali decisioni prendere, in che ordine, e perché. Dall'host ai piani di riferimento, dai vincoli ai dati che arrivano nell'IFC.</p>
+    <div class="meta"><span class="pill">Revit 2026</span><span class="pill">architettura e impianti</span><span class="pill">un metodo, non un tutorial</span><span class="pill">Edizione novembre 2026</span></div>
+  </div>
+  <svg viewBox="0 0 360 240" role="img" aria-label="Lo scheletro di una famiglia: piani di riferimento, quote e un oggetto agganciato">
+    <rect class="s-as" x="10" y="10" width="340" height="220" rx="22"/>
+    <g style="stroke:var(--muted);stroke-width:1.2;stroke-dasharray:10 4 2 4">
+      <path d="M180 26V214M30 120H330"/>
+    </g>
+    <g style="stroke:var(--accent);stroke-width:1.4;stroke-dasharray:6 4">
+      <path d="M100 30V210M260 30V210M40 70H320M40 170H320"/>
+    </g>
+    <rect x="100" y="70" width="160" height="100" rx="6" style="fill:color-mix(in srgb,var(--accent) 14%,transparent);stroke:var(--accent);stroke-width:2.2"/>
+    <circle cx="180" cy="120" r="5" class="s-a"/>
+    <path d="M100 200H260" style="stroke:var(--muted);stroke-width:1.2" marker-start="url(#arm)" marker-end="url(#arm)"/>
+    <text class="s-tm" x="146" y="196">Larghezza</text>
+    <text class="s-tm" x="132" y="64">EQ</text><text class="s-tm" x="214" y="64">EQ</text>
+    <text class="s-tm" x="186" y="114">origine</text>
+    <path d="M90 70h6M90 170h6" style="stroke:var(--a3);stroke-width:2"/>
+    <text class="s-tm" x="20" y="124" style="fill:var(--a3)">🔒</text>
+  </svg>
+</header>
+
+<div class="box bim"><b>Che cosa è, e che cosa non è</b><p>Questo non è un tutorial con i clic uno dopo l'altro: per quelli bastano l'Help di Autodesk e i video. È il modo di ragionare che sta prima dei clic, cioè l'ordine delle decisioni che separa una famiglia che funziona per anni da una che si rompe al primo cambio di tipo. Vale per l'architettura e per gli impianti; dove gli impianti hanno regole proprie, lo dico.</p></div>
+
+<section class="ch" id="c1">
+  <div class="ch-h"><span class="ch-n">1</span><h2>Il modo di pensare</h2></div>
+  <p class="lead">Una famiglia è un piccolo programma: riceve valori (i parametri), li trasforma in geometria e dati, e deve dare il risultato giusto con qualunque valore ammesso. Chi la costruisce pensando solo al disegno di oggi, la dovrà rifare domani.</p>
+  <div class="grid3">
+    <div class="card"><h4>Prima si decide, poi si disegna</h4><p>Scopo, classe, host, categoria e template si scelgono a tavolino. Sono le scelte che dopo non si cambiano, o si cambiano solo rifacendo la famiglia.</p></div>
+    <div class="card"><h4>Prima lo scheletro, poi la carne</h4><p>Piani di riferimento e quote parametriche vengono prima di qualsiasi solido. La geometria si aggancia allo scheletro, mai il contrario.</p></div>
+    <div class="card"><h4>Prima i dati, poi la grafica</h4><p>Per un committente pubblico contano categoria, parametri condivisi e classe IFC. Una famiglia bellissima in categoria sbagliata non serve a nessuno.</p></div>
+    <div class="card"><h4>Una cosa sola, fatta bene</h4><p>Meglio due famiglie semplici che una famiglia «che fa tutto» e che sa usare solo chi l'ha costruita.</p></div>
+    <div class="card"><h4>Provarla come un avversario</h4><p>Si flette subito e spesso: valori minimi, massimi, nulli e assurdi. Ogni errore trovato nell'editor è un errore in meno nel progetto.</p></div>
+    <div class="card"><h4>Pensare a chi la userà</h4><p>Il collega che la posa, chi legge l'abaco, chi riceve l'IFC in un altro software. Nomi chiari e comportamento prevedibile valgono più dei dettagli.</p></div>
+  </div>
+</section>
+
+<section class="ch" id="c2">
+  <div class="ch-h"><span class="ch-n">2</span><h2>Il workflow in quattro fasi</h2></div>
+  <p>Ogni famiglia, da una presa a un'unità di trattamento aria, passa per le stesse quattro fasi. Saltarne una non fa risparmiare tempo: lo sposta più avanti, quando costa di più.</p>
+  <div class="phase">
+    <div><b>1 · Decidere</b><ol><li>Scopo e livello di dettaglio</li><li>Classe di famiglia</li><li>Host (comportamento di posa)</li><li>Template e categoria</li></ol></div>
+    <div><b>2 · Scheletro</b><ol><li>Piani di riferimento nominati</li><li>Origine e «È riferimento»</li><li>Quote ed etichette</li><li>Flessione a vuoto</li></ol></div>
+    <div><b>3 · Contenuto</b><ol><li>Geometria agganciata ai piani</li><li>Parametri condivisi e formule</li><li>Visibilità e simboli</li><li>Connettori (impianti)</li></ol></div>
+    <div><b>4 · Verificare</b><ol><li>Flessione di tutti i tipi</li><li>Progetto di prova</li><li>Abaco, etichetta, IFC</li><li>Pubblicazione in libreria</li></ol></div>
+  </div>
+  <h3>Prima di aprire l'editor: cinque domande</h3>
+  <ol class="steps">
+    <li><b>Che cosa deve fare nel progetto?</b> Contare, etichettare, calcolare, tagliare un muro, comparire in sezione? Ogni risposta aggiunge un requisito.</li>
+    <li><b>Con quale livello di dettaglio?</b> Quello richiesto dal capitolato per la fase (LOG e LOI). Disegnare di più appesantisce e non aggiunge valore.</li>
+    <li><b>Dove si posa e su che cosa?</b> Da qui viene l'host (capitolo 4), la decisione più difficile da correggere.</li>
+    <li><b>Quali dati deve portare?</b> I parametri richiesti dal committente, con il nome esatto, e la classe IFC di arrivo.</li>
+    <li><b>Esiste già?</b> Nella libreria dello studio, in quella di Revit o del produttore. Spesso conviene partire da una famiglia esistente solo per studiarla, e ricostruirla con i propri standard.</li>
+  </ol>
+</section>
+
+<section class="ch" id="c3">
+  <div class="ch-h"><span class="ch-n">3</span><h2>Sistema, caricabile o locale</h2></div>
+  <p>In Revit ogni oggetto appartiene a una di tre classi di famiglia, e la classe decide dove nasce, cosa può fare e come passa da un progetto all'altro. La regola pratica: se l'oggetto esiste già come famiglia di sistema, non si rifà; se va riusato, è caricabile; se è unico e legato a quell'edificio, è locale.</p>
+  <div class="tbl"><table>
+    <tr><th>Classe</th><th>Dove nasce</th><th>Esempi</th><th>Si può</th><th>Non si può</th></tr>
+    <tr><td><b>Di sistema</b></td><td>Nel progetto o nel template (.rte); nessun file proprio</td><td>Muri, solai, tetti, controsoffitti, scale, ringhiere, tubazioni, condotti, passerelle, livelli, griglie, locali</td><td>Duplicare tipi, cambiare stratigrafia e parametri di tipo, trasferirli con Trasferisci standard di progetto</td><td>Crearle da zero, salvarle come .rfa, aggiungere geometria libera</td></tr>
+    <tr><td><b>Caricabile</b></td><td>Nell'editor di famiglie, da un template .rft; file .rfa</td><td>Porte, finestre, arredi, apparecchi, raccordi, terminali, etichette, cartigli, componenti di dettaglio</td><td>Geometria parametrica, tipi, formule, nidificazione, catalogo tipi, riuso in libreria</td><td>Cambiare categoria nei template «speciali» (porte, finestre, profili, cartigli…)</td></tr>
+    <tr><td><b>Locale</b></td><td>Dentro il progetto (Modella localmente)</td><td>Un bancone su misura, un raccordo irripetibile, una massa di studio</td><td>Geometria libera riferita al contesto</td><td>Avere più tipi, essere riusata senza copia, restare leggera se moltiplicata</td></tr>
+  </table></div>
+  <p>La gerarchia dei dati è sempre la stessa: <b>Categoria → Famiglia → Tipo → Istanza</b>. La categoria decide visibilità, abachi, etichette e classe IFC; la famiglia contiene geometria e parametri; il tipo è un insieme di valori (per esempio 90 × 210); l'istanza è il singolo oggetto posato, con i suoi parametri di istanza.</p>
+</section>
+
+<section class="ch" id="c4">
+  <div class="ch-h"><span class="ch-n">4</span><h2>Gli host e il loro uso</h2></div>
+  <p class="lead">L'host (in italiano «ospite») è l'elemento su cui la famiglia si appoggia: un muro, un solaio, una faccia qualsiasi, niente. Lo decide il template e, una volta scelto, non si cambia. È la scelta che più spesso si sbaglia, perché si parte dalla categoria («è una plafoniera») invece che dal comportamento («deve seguire un controsoffitto che sta in un altro file»).</p>
+  <div class="tbl"><table>
+    <tr><th>Host</th><th>Template di esempio</th><th>Si usa per</th><th>Punti di forza</th><th>Attenzione</th></tr>
+    <tr><td><b>Nessuno</b> (basato su livello)</td><td>Modello generico metrico, Arredo metrico, Attrezzatura meccanica metrica</td><td>Arredi, macchine, UTA, quadri a pavimento</td><td>Il più flessibile; con «Basato su piano di lavoro» si posa anche su piani inclinati</td><td>Non segue un muro che si sposta</td></tr>
+    <tr><td><b>Muro</b></td><td>… basato su muro, Porta metrica, Finestra metrica</td><td>Porte, finestre, nicchie, pensili</td><td>Segue il muro e lo taglia (Apertura o vuoti)</td><td>Non si posa su muri di modelli collegati; se il muro viene cancellato, sparisce anche lei</td></tr>
+    <tr><td><b>Solaio, controsoffitto, tetto</b></td><td>… basato su pavimento, … basato su controsoffitto, … basato su tetto</td><td>Botole, lucernari, plafoniere con foro</td><td>Segue l'ospite e lo può tagliare</td><td>Stessi limiti del muro: niente link, ospite cancellato = istanza cancellata</td></tr>
+    <tr><td><b>Superficie</b> (face-based)</td><td>Modello generico metrico basato su superficie, i dispositivi «ospitati»</td><td>Prese, comandi, rivelatori, terminali, apparecchi a parete o a soffitto</td><td>Si posa su qualsiasi faccia, anche inclinata e anche di un modello collegato</td><td>Taglia l'ospite solo con vuoti e non nei link; se l'ospite sparisce diventa orfana (resta, ma non segue più)</td></tr>
+    <tr><td><b>Linea</b></td><td>Modello generico metrico basato su linea, Dispositivo di illuminazione metrico lineare</td><td>Profili LED, binari, cordoli, canaline</td><td>Due clic; la lunghezza è un parametro automatico</td><td>Solo tratti rettilinei</td></tr>
+    <tr><td><b>Due livelli</b></td><td>Pilastro metrico, Pilastro strutturale metrico</td><td>Pilastri, montanti tra piani</td><td>Altezza agganciata a livello di base e superiore</td><td>Per le strutture serve il template strutturale (modello analitico)</td></tr>
+    <tr><td><b>Punti adattivi</b></td><td>Modello generico metrico adattivo, basato su motivo</td><td>Pannelli irregolari, elementi guidati da punti</td><td>La geometria segue i punti posati nel progetto</td><td>Ambiente diverso, più pesante; abachi e IFC meno prevedibili</td></tr>
+  </table></div>
+
+  <h3>Negli impianti la regola cambia</h3>
+  <p>Quando gli impianti stanno in un file separato dall'architettonico, che arriva come collegamento (spesso come IFC), un dispositivo ospitato a muro o a controsoffitto non si può posare: l'host è nel link. La conseguenza pratica è semplice. Per i dispositivi MEP (prese, comandi, rivelatori, apparecchi, terminali aria, sprinkler) si usano famiglie <b>basate su superficie</b> o <b>non ospitate</b>; le famiglie ospitate restano a porte, finestre e a ciò che deve tagliare un elemento dello stesso file.</p>
+  <div class="tbl"><table>
+    <tr><th></th><th>Ospitata (muro, controsoffitto…)</th><th>Basata su superficie</th><th>Non ospitata</th></tr>
+    <tr><td>Segue l'ospite</td><td>Sì</td><td>Sì</td><td>No</td></tr>
+    <tr><td>Si posa su un modello collegato</td><td>No</td><td>Sì</td><td>Non serve</td></tr>
+    <tr><td>Taglia l'ospite</td><td>Sì</td><td>Solo con vuoti, non nei link</td><td>No</td></tr>
+    <tr><td>Se l'ospite viene cancellato</td><td>Viene cancellata</td><td>Resta orfana</td><td>Nessun effetto</td></tr>
+    <tr><td>Adatta al coordinamento tra discipline</td><td>Debole</td><td>Buona</td><td>Buona</td></tr>
+  </table></div>
+  <div class="box warn"><b>L'orfana e il link sostituito</b><p>Quando l'IFC dell'architetto viene ricaricato con una nuova versione, le facce cambiano identità e le famiglie basate su superficie possono perdere l'ospite. Non spariscono, ma smettono di seguirlo. Per questo serve un controllo dopo ogni aggiornamento del link (in questi manuali c'è anche una guida con due grafi Dynamo per sostituire l'IFC collegato senza perdere gli elementi ospitati).</p></div>
+
+  <h3>Aiuto alla scelta</h3>
+  <p>Quattro domande, e la risposta con il template da cui partire. È un aiuto al ragionamento, non una regola: i casi limite vanno pensati.</p>
+  <form class="quiz" id="quiz" onsubmit="return false">
+    <fieldset><legend>1. Che cosa rappresenta?</legend>
+      <label><input type="radio" name="q1" value="porta" checked> Porta o finestra</label>
+      <label><input type="radio" name="q1" value="disp"> Dispositivo, apparecchio, arredo</label>
+      <label><input type="radio" name="q1" value="lin"> Elemento lineare</label>
+      <label><input type="radio" name="q1" value="pil"> Elemento tra due livelli</label>
+      <label><input type="radio" name="q1" value="libera"> Pannello o forma libera</label>
+      <label><input type="radio" name="q1" value="2d"> Solo simbolo 2D o dettaglio</label>
+    </fieldset>
+    <fieldset id="q2f"><legend>2. L'elemento su cui si appoggia sta in un modello collegato?</legend>
+      <label><input type="radio" name="q2" value="si"> Sì</label>
+      <label><input type="radio" name="q2" value="no" checked> No, nello stesso file</label>
+    </fieldset>
+    <fieldset id="q3f"><legend>3. Deve tagliare quell'elemento (foro, nicchia)?</legend>
+      <label><input type="radio" name="q3" value="si"> Sì</label>
+      <label><input type="radio" name="q3" value="no" checked> No</label>
+    </fieldset>
+    <fieldset id="q4f"><legend>4. Deve seguirlo se si sposta?</legend>
+      <label><input type="radio" name="q4" value="si" checked> Sì</label>
+      <label><input type="radio" name="q4" value="no"> No</label>
+    </fieldset>
+    <div class="out" id="quiz-out" aria-live="polite"></div>
+  </form>
+</section>
+
+<section class="ch" id="c5">
+  <div class="ch-h"><span class="ch-n">5</span><h2>Il template giusto</h2></div>
+  <p>Il template (.rft) decide tre cose che dopo non si cambiano: l'host, il comportamento speciale (taglio del muro, profilo, adattività, modello analitico, connettori) e la dimensione (3D, 2D di dettaglio, 2D di annotazione). La categoria invece, nella maggior parte dei template 3D, si cambia da <i>Categoria e parametri famiglia</i>. Autodesk stessa consiglia di scegliere prima il comportamento di posa e poi la categoria.</p>
+  <div class="tbl"><table>
+    <tr><th>Esigenza</th><th>Template</th><th>Perché non il generico</th></tr>
+    <tr><td>Porta, finestra</td><td>Porta metrica, Finestra metrica</td><td>Una «porta» fatta con il generico basato su muro non va nell'abaco porte, non ha lato di apertura né il calcolo dei locali «Da / A»</td></tr>
+    <tr><td>Pannello di facciata</td><td>Pannello di facciata continua metrico</td><td>Larghezza e altezza le decide la griglia della facciata</td></tr>
+    <tr><td>Travi, pilastri, fondazioni</td><td>Telaio strutturale, Pilastro strutturale, Fondazione strutturale</td><td>Modello analitico e giunzioni: indispensabili se il modello va a un calcolatore</td></tr>
+    <tr><td>Raccordi MEP</td><td>Gomito, Raccordo a T, Croce, Transizione</td><td>Il «Tipo di parte» dice a Revit come usarli in automatico nel tracciamento</td></tr>
+    <tr><td>Profili per estrusioni</td><td>Profilo metrico e varianti</td><td>Solo linee chiuse, si usano dentro altre famiglie e nelle famiglie di sistema</td></tr>
+    <tr><td>Etichette</td><td>Annotazioni: etichetta per categoria o multicategoria</td><td>Leggono solo i parametri della loro categoria (la multicategoria solo parametri condivisi)</td></tr>
+    <tr><td>Componenti di dettaglio</td><td>Elemento di dettaglio metrico</td><td>Solo 2D, solo nella vista in cui si posano</td></tr>
+  </table></div>
+  <div class="box tip"><b>Un controllo di trenta secondi</b><p>Prima di partire, aprire <i>Categoria e parametri famiglia</i> nel template scelto e guardare la lista delle categorie e delle opzioni: è il modo più rapido per vedere che cosa il template consente.</p></div>
+</section>
+
+<section class="ch" id="c6">
+  <div class="ch-h"><span class="ch-n">6</span><h2>Lo scheletro: piani di riferimento</h2></div>
+  <p class="lead">I piani di riferimento sono lo scheletro della famiglia. Le quote si scrivono tra piani, i solidi si agganciano ai piani, i parametri muovono i piani. Una famiglia con lo scheletro giusto si può ridisegnare in un'ora; una senza scheletro si butta.</p>
+  <svg viewBox="0 0 720 300" role="img" aria-label="Pianta di una famiglia: piani centrali che definiscono l'origine, piani sinistro, destro, fronte e retro, quote con etichette e quote uguali" style="width:100%;height:auto;margin:.4rem 0 1rem">
+    <rect class="s-w" x="2" y="2" width="716" height="296" rx="16"/>
+    <g style="stroke:var(--muted);stroke-width:1.3;stroke-dasharray:12 4 2 4"><path d="M300 24V276M60 150H540"/></g>
+    <g style="stroke:var(--accent);stroke-width:1.4;stroke-dasharray:6 4"><path d="M200 34V266M400 34V266M70 100H530M70 200H530"/></g>
+    <rect x="200" y="100" width="200" height="100" rx="4" style="fill:color-mix(in srgb,var(--accent) 12%,transparent);stroke:var(--accent);stroke-width:2.4"/>
+    <circle cx="300" cy="150" r="6" class="s-a"/>
+    <text class="s-t" x="308" y="168">origine</text>
+    <text class="dim" x="304" y="38">Centro (sinistra/destra)</text>
+    <text class="dim" x="404" y="146">Centro (fronte/retro)</text>
+    <text class="dim" x="150" y="50">Sinistra</text><text class="dim" x="404" y="50">Destra</text>
+    <text class="dim" x="72" y="94">Retro</text><text class="dim" x="72" y="216">Fronte</text>
+    <path d="M200 240H400" style="stroke:var(--ink);stroke-width:1.1" marker-start="url(#arm)" marker-end="url(#arm)"/>
+    <text class="s-tm" x="262" y="258">Larghezza = 600</text>
+    <path d="M200 226H300M300 226H400" style="stroke:var(--muted);stroke-width:1" marker-start="url(#arm)" marker-end="url(#arm)"/>
+    <text class="dim" x="243" y="222">EQ</text><text class="dim" x="343" y="222">EQ</text>
+    <path d="M430 100V200" style="stroke:var(--ink);stroke-width:1.1" marker-start="url(#arm)" marker-end="url(#arm)"/>
+    <text class="s-tm" x="438" y="154">Profondità</text>
+    <g transform="translate(560 40)">
+      <text class="s-tb" x="0" y="10">Le regole</text>
+      <text class="s-t" x="0" y="34">1 · i due piani centrali</text>
+      <text class="s-t" x="12" y="52">definiscono l'origine</text>
+      <text class="s-t" x="0" y="76">2 · ogni piano ha un nome</text>
+      <text class="s-t" x="0" y="100">3 · le quote vanno tra piani</text>
+      <text class="s-t" x="0" y="124">4 · EQ tiene la simmetria</text>
+      <text class="s-t" x="0" y="148">5 · i solidi si bloccano</text>
+      <text class="s-t" x="12" y="166">ai piani, non alle quote</text>
+      <text class="s-t" x="0" y="190">6 · si flette prima di</text>
+      <text class="s-t" x="12" y="208">disegnare</text>
+    </g>
+  </svg>
+  <h3>Le proprietà che contano</h3>
+  <div class="tbl"><table>
+    <tr><th>Proprietà del piano</th><th>Che cosa fa</th><th>Come usarla</th></tr>
+    <tr><td><b>Definisce origine</b></td><td>L'incrocio dei piani con questa proprietà è il punto di inserimento della famiglia</td><td>Sceglierlo dove chi posa vuole agganciarsi: il centro di una plafoniera, l'asse di una presa, l'angolo di un quadro contro il muro. Cambiarlo dopo sposta tutte le istanze già posate</td></tr>
+    <tr><td><b>È riferimento</b> (Is Reference)</td><td>Decide se e come nel progetto ci si aggancia al piano con quote e allineamenti</td><td>Riferimento forte per i piani a cui si quota sempre (bordi, assi); sinistra, destra, fronte, retro, superiore e inferiore per i bordi; riferimento debole per quelli secondari; «non è un riferimento» per i piani di servizio interni</td></tr>
+    <tr><td><b>Nome</b></td><td>Rende il piano riconoscibile e selezionabile come piano di lavoro</td><td>Nomi parlanti: «Asse presa», «Fondo scatola», «Quota installazione». Un piano senza nome è un piano che nessuno capirà</td></tr>
+    <tr><td><b>Linee di riferimento</b></td><td>Hanno estremi e quattro piani propri</td><td>Servono per angoli e rotazioni: un'anta che ruota si aggancia a una linea di riferimento, non a un piano</td></tr>
+  </table></div>
+  <p class="src">I nomi italiani delle proprietà possono cambiare tra le versioni dell'interfaccia; tra parentesi il nome inglese, che si ritrova nell'Help di Autodesk.</p>
+  <h3>Dove mettere l'origine</h3>
+  <ul>
+    <li><b>Famiglie basate su superficie:</b> l'origine sta sulla faccia di appoggio. La geometria cresce verso l'esterno della faccia, e l'altezza di posa diventa un parametro (o l'offset dell'istanza), non un solido spostato.</li>
+    <li><b>Famiglie ospitate a muro:</b> il template porta già il muro di prova e i piani esterno e interno; si lavora rispetto alla faccia del muro, non a un valore fisso di spessore, così la famiglia funziona con ogni muro.</li>
+    <li><b>Famiglie non ospitate:</b> origine sul pavimento finito (livello di riferimento) e sull'asse più comodo per la posa.</li>
+    <li><b>Famiglie MEP:</b> pensare anche a dove sta il connettore. L'origine e il connettore non devono coincidere, ma il loro legame deve essere parametrico (capitolo 9).</li>
+  </ul>
+</section>
+
+<section class="ch" id="c7">
+  <div class="ch-h"><span class="ch-n">7</span><h2>I vincoli</h2></div>
+  <p class="lead">Un vincolo è una promessa: «questa faccia starà sempre su quel piano». Troppe promesse si contraddicono e la famiglia si blocca; troppo poche e la geometria resta indietro quando i piani si muovono.</p>
+  <h3>L'ordine che funziona</h3>
+  <ol class="steps">
+    <li><b>Piani di riferimento</b> per ogni dimensione che cambia, più i due centrali.</li>
+    <li><b>Quote tra i piani</b>, con quote uguali (EQ) per la simmetria.</li>
+    <li><b>Etichette sulle quote</b>: ogni quota che deve variare diventa un parametro (Larghezza, Profondità, Altezza). Parametri di tipo per le misure del catalogo, di istanza per ciò che cambia oggetto per oggetto.</li>
+    <li><b>Flessione a vuoto</b>: in <i>Tipi di famiglia</i> si cambiano i valori e si guarda se i piani si muovono come previsto. Ancora nessun solido.</li>
+    <li><b>Geometria</b>: gli schizzi si disegnano sul piano di lavoro giusto e i loro bordi si allineano e bloccano (lucchetto) ai piani. Gli estremi delle estrusioni si bloccano ai piani superiore e inferiore.</li>
+    <li><b>Nuova flessione</b> dopo ogni solido: se qualcosa si rompe, l'ultimo passo è il colpevole.</li>
+  </ol>
+  <h3>Gli strumenti</h3>
+  <div class="tbl"><table>
+    <tr><th>Strumento</th><th>Uso giusto</th><th>Errore tipico</th></tr>
+    <tr><td>Allinea e blocca</td><td>Legare la faccia di un solido a un piano</td><td>Bloccare ad altre facce di solidi: catene fragili che si rompono al cambio di tipo</td></tr>
+    <tr><td>Quota con etichetta</td><td>Pilotare la distanza tra due piani con un parametro</td><td>Quotare spigoli di geometria invece dei piani</td></tr>
+    <tr><td>Quota uguale (EQ)</td><td>Simmetria rispetto al centro</td><td>Usarla insieme a una quota fissa sullo stesso lato: vincolo ridondante</td></tr>
+    <tr><td>Parametro di riferimento</td><td>Misurare senza pilotare, per leggere una dimensione derivata</td><td>Usarlo per una dimensione che dovrebbe guidare</td></tr>
+    <tr><td>Formule</td><td>Regole interne: <code>Profondità = Larghezza / 2</code>, <code>if(Larghezza &gt; 1200 mm, 2, 1)</code></td><td>Formule lunghe con soglie scritte a mano: meglio un catalogo tipi o una tabella di ricerca</td></tr>
+    <tr><td>Vincoli di schizzo</td><td>Pochi e chiari, ogni linea legata a un piano</td><td>Schizzi pieni di quote interne: lo schizzo diventa una famiglia nella famiglia</td></tr>
+  </table></div>
+  <div class="box tip"><b>Unità e valori estremi</b><p>Quando si scrive una formula, le unità devono tornare: dividere una lunghezza per una lunghezza dà un numero, sommare una lunghezza a un numero dà errore. E ogni parametro ha un intervallo sensato: se una quota può arrivare a zero, la famiglia deve sopravvivere a zero (oppure una formula deve impedirlo).</p></div>
+</section>
+
+<section class="ch" id="c8">
+  <div class="ch-h"><span class="ch-n">8</span><h2>Parametri e dati</h2></div>
+  <p class="lead">La geometria si vede, ma il valore di una famiglia per un committente sta nei parametri: sono loro che arrivano negli abachi, nelle etichette e nell'IFC.</p>
+  <div class="tbl"><table>
+    <tr><th>Tipo di parametro</th><th>Dove vive</th><th>In abaco</th><th>In etichetta</th><th>Quando usarlo</th></tr>
+    <tr><td>Di famiglia</td><td>Solo nella famiglia</td><td>No</td><td>No</td><td>Geometria interna, formule di servizio</td></tr>
+    <tr><td>Condiviso</td><td>Nel file .txt dei parametri condivisi, con un GUID</td><td>Sì</td><td>Sì</td><td>Tutto ciò che va comunicato: codici, prestazioni, dati richiesti dal committente</td></tr>
+    <tr><td>Di progetto</td><td>Nel progetto, assegnato a categorie</td><td>Sì</td><td>Solo se è anche condiviso</td><td>Dati di gestione che non devono stare dentro le famiglie</td></tr>
+    <tr><td>Globale</td><td>Nel progetto</td><td>No</td><td>No</td><td>Valori unici per tutto il modello</td></tr>
+    <tr><td>Incorporato</td><td>In Revit (Larghezza, Contrassegno tipo…)</td><td>Sì</td><td>Sì</td><td>Prima di crearne uno nuovo, si controlla se esiste già</td></tr>
+  </table></div>
+  <p><b>Tipo o istanza?</b> Una domanda basta: se cambio questo valore, deve cambiare per tutti gli oggetti uguali? Se sì è di tipo (dimensioni di catalogo, produttore, prestazioni); se no è di istanza (altezza di posa, stato, codice del locale). Troppi parametri di istanza rendono inutili i tipi; troppi di tipo moltiplicano i tipi.</p>
+  <h3>Le regole che evitano i guai</h3>
+  <ul>
+    <li><b>Un solo file di parametri condivisi</b> per lo studio, con i parametri del committente nei loro gruppi. Il GUID è l'identità del parametro: due parametri con lo stesso nome e GUID diversi, per Revit sono due cose diverse.</li>
+    <li><b>Nomi esatti</b>, maiuscole e spazi compresi, quando il committente impone una struttura dati (per esempio quella della Provincia di Bolzano). Un refuso nel nome è un dato che non arriva.</li>
+    <li><b>Materiali tramite parametro</b>, non fissi nel solido: così si cambiano dal tipo o dal progetto.</li>
+    <li><b>Tanti tipi?</b> Formule per le regole interne, <b>catalogo tipi</b> (.txt con lo stesso nome della .rfa) per i prodotti a catalogo, <b>tabelle di ricerca</b> (.csv) per i raccordi con centinaia di misure.</li>
+    <li><b>Nidificate:</b> i parametri della figlia si associano a quelli della madre; la figlia va spuntata «Condivisa» se deve comparire negli abachi e nelle etichette (per esempio le lampade di un apparecchio multiplo).</li>
+  </ul>
+  <p>Per portare questi parametri nell'IFC con i nomi giusti servono un file di Property Set e la configurazione di export: in questi manuali ci sono la guida <a href="property-set-ifc-revit.html">Property Set per l'export IFC da Revit</a>, la <a href="libreria-ifc.html">libreria IFC 4.3</a> con le classi e i PredefinedType, e la proposta di un <a href="dati-pubblici.html">dizionario nazionale dei dati BIM pubblici</a>.</p>
+</section>
+
+<section class="ch" id="c9">
+  <div class="ch-h"><span class="ch-n">9</span><h2>Rappresentazione, MEP e IFC</h2></div>
+  <h3>Una famiglia, più rappresentazioni</h3>
+  <p>Ogni solido, linea e nidificata ha la sua visibilità: livello di dettaglio (basso, medio, alto) e viste in cui compare (pianta, fronte, lato, solo se tagliato). È lo strumento per avere una sola famiglia che in pianta 1:100 mostra un simbolo e in 1:20 il 3D completo.</p>
+  <ul>
+    <li><b>Linee simboliche</b> per ciò che si vede solo nella vista parallela al piano: l'apertura di una porta, il simbolo di una presa.</li>
+    <li><b>Sottocategorie</b> (Stili oggetto) per gestire spessori e colori dal progetto e spegnere solo una parte dell'oggetto.</li>
+    <li><b>Simboli elettrici</b> nelle famiglie basate su superficie: con «Mantieni orientamento annotazione» il simbolo resta leggibile anche se la famiglia è posata su un muro verticale o ruotata.</li>
+    <li><b>Abilita taglio nelle viste</b> per gli oggetti alti (armadi, macchine) che devono apparire sezionati in pianta.</li>
+  </ul>
+  <h3>Le famiglie MEP: i connettori</h3>
+  <p>Senza connettori un apparecchio è «muto»: si vede, ma non entra in un sistema, non porta carichi e non calcola nulla. Per ogni connettore si decide:</p>
+  <div class="tbl"><table>
+    <tr><th>Connettore</th><th>Da impostare</th><th>Da legare a parametri</th></tr>
+    <tr><td>Elettrico</td><td>Tipo di sistema (potenza, dati, sicurezza, allarme incendio…)</td><td>Tensione, numero di poli, potenza apparente, fattore di potenza</td></tr>
+    <tr><td>Tubazione</td><td>Classificazione di sistema (acqua fredda, calda, scarico, antincendio…), direzione del flusso</td><td>Diametro, portata, perdita di carico</td></tr>
+    <tr><td>Condotto</td><td>Classificazione (mandata, ripresa, espulsione), forma, direzione del flusso</td><td>Dimensioni, portata, perdita di carico</td></tr>
+    <tr><td>Passerella, tubo protettivo</td><td>Forma</td><td>Dimensioni</td></tr>
+  </table></div>
+  <ul>
+    <li>Il connettore si posa su una faccia o su un piano di lavoro; la sua posizione deve seguire la geometria quando cambiano le dimensioni.</li>
+    <li>Le dimensioni del connettore si associano ai parametri della famiglia, mai valori fissi: un raccordo che non segue il diametro rompe il tracciamento.</li>
+    <li>Negli apparecchi di illuminazione la sorgente luminosa (con l'eventuale file fotometrico IES) si imposta nella famiglia; i valori di progetto però vengono dal software di calcolo illuminotecnico.</li>
+    <li>Nei raccordi il <b>Tipo di parte</b> (gomito, T, croce, transizione) dice a Revit come usarli nelle preferenze di instradamento.</li>
+  </ul>
+  <h3>L'IFC parte dalla famiglia</h3>
+  <p>La classe IFC dipende prima di tutto dalla categoria. Quando la categoria non basta, da Revit 2023 ci sono i parametri <i>Esporta in IFC come</i> (IfcExportAs) e <i>Tipo predefinito IFC</i> (IfcExportType), di tipo o di istanza. Un esempio reale, raccontato nella <a href="dati-pubblici.html">proposta sul dizionario dei dati pubblici</a>: una famiglia «punto luce» esce come IfcJunctionBox con PredefinedType NOTDEFINED; il valore giusto (POWER) va scritto nella famiglia, non sistemato dopo. La <a href="libreria-ifc.html">libreria IFC 4.3</a> dà per ogni classe i valori da copiare.</p>
+</section>
+
+<section class="ch" id="c10">
+  <div class="ch-h"><span class="ch-n">10</span><h2>Prova e pubblicazione</h2></div>
+  <p class="lead">Una famiglia entra in libreria solo dopo una prova in un progetto vero, non solo nell'editor. Conviene tenere un <b>progetto banco di prova</b> con muri, solai, controsoffitti, un link e le etichette dello studio, dove ogni famiglia nuova viene posata, etichettata, messa in abaco ed esportata.</p>
+  <h3>Errori ricorrenti</h3>
+  <div class="tbl"><table>
+    <tr><th>Errore</th><th>Conseguenza</th><th>Rimedio</th></tr>
+    <tr><td>Tutto in Modello generico</td><td>Abachi, filtri, etichette e IFC inutilizzabili</td><td>La categoria vera da subito</td></tr>
+    <tr><td>Ospitata a muro per impianti in un file separato</td><td>Non si posa sul link; orfani a ogni aggiornamento</td><td>Basata su superficie o non ospitata</td></tr>
+    <tr><td>Geometria quotata agli spigoli</td><td>Si rompe al cambio di tipo</td><td>Piani nominati, allinea e blocca</td></tr>
+    <tr><td>Parametri di famiglia dove servono dati</td><td>Né etichette né abachi li vedono</td><td>Parametri condivisi da un unico file</td></tr>
+    <tr><td>Dettaglio 3D eccessivo</td><td>Modelli pesanti, piante illeggibili</td><td>Livelli di dettaglio e simboli 2D</td></tr>
+    <tr><td>DWG importati nella famiglia</td><td>Peso, nessun parametro, stili linea sporchi</td><td>Ridisegnare o usare componenti di dettaglio</td></tr>
+    <tr><td>Prova solo sul tipo predefinito</td><td>Errori scoperti nel progetto</td><td>Flettere ogni tipo, con valori minimi e massimi</td></tr>
+  </table></div>
+  <h3>La checklist prima della libreria</h3>
+  <p>Da spuntare a ogni famiglia: le spunte restano in questo browser, il pulsante le azzera per la famiglia successiva.</p>
+  <div class="ckbar"><span id="ck-n">0 / 12</span><button type="button" class="btn ghost" id="ck-reset">Azzera per una nuova famiglia</button></div>
+  <ul class="ck" id="ck">
+    <li><input type="checkbox" id="k1"><span><label for="k1">Template coerente con il comportamento di posa (host)</label></span></li>
+    <li><input type="checkbox" id="k2"><span><label for="k2">Categoria e sottocategorie corrette</label></span></li>
+    <li><input type="checkbox" id="k3"><span><label for="k3">Piani di riferimento nominati, origine sensata, «È riferimento» impostato</label></span></li>
+    <li><input type="checkbox" id="k4"><span><label for="k4">Solidi bloccati ai piani, non ad altri solidi</label></span></li>
+    <li><input type="checkbox" id="k5"><span><label for="k5">Tutti i tipi flettono senza errori, anche con valori minimi e massimi</label></span></li>
+    <li><input type="checkbox" id="k6"><span><label for="k6">Parametri condivisi richiesti presenti, con il GUID giusto e tipo/istanza coerente</label></span></li>
+    <li><input type="checkbox" id="k7"><span><label for="k7">Materiali assegnati tramite parametro</label></span></li>
+    <li><input type="checkbox" id="k8"><span><label for="k8">Visibilità per livello di dettaglio; pianta leggibile a 1:100</label></span></li>
+    <li><input type="checkbox" id="k9"><span><label for="k9">Connettori presenti e legati ai parametri (famiglie MEP)</label></span></li>
+    <li><input type="checkbox" id="k10"><span><label for="k10">Classe e tipo IFC impostati dove la categoria non basta</label></span></li>
+    <li><input type="checkbox" id="k11"><span><label for="k11">Elimina elementi inutilizzati eseguito, peso del file controllato</label></span></li>
+    <li><input type="checkbox" id="k12"><span><label for="k12">Provata nel progetto banco di prova: posa, etichetta, abaco, export IFC</label></span></li>
+  </ul>
+  <div class="box idea"><b>Il lato umano della libreria</b><p>Chi userà la libreria sono i colleghi che passano a Revit da un altro software e chi riceve il modello dall'altra parte, in un ufficio pubblico. Una famiglia che fa una cosa sola, ma la fa sempre bene, vale più di una famiglia potentissima che sa usare solo chi l'ha costruita. E una libreria ha bisogno di un custode: qualcuno che decide che cosa entra, con quale nome e quale versione.</p></div>
+</section>
+
+<section class="ch" id="fonti">
+  <div class="ch-h"><span class="ch-n">≡</span><h2>Fonti</h2></div>
+  <ul class="src">
+    <li>Autodesk, <a href="https://help.autodesk.com/cloudhelp/2024/ENU/Revit-Customize/files/GUID-E36987A9-A68F-4121-A391-907306BAA60A.htm" target="_blank" rel="noopener">About Family Templates</a> (Help di Revit, in inglese): scegliere il template partendo dal comportamento di posa.</li>
+    <li>Autodesk, <a href="https://help.autodesk.com/cloudhelp/2027/ENU/Revit-Customize/files/GUID-253B2300-35C2-4024-AB70-43E576CEA49C.htm" target="_blank" rel="noopener">Family Editor</a> (Help di Revit, in inglese): gli strumenti dell'editor di famiglie.</li>
+    <li>Autodesk, <a href="https://help.autodesk.com/cloudhelp/2026/ENU/RevitLT-Customize/files/GUID-68EFCA67-4913-4E00-AB9E-F2E6A7BEF8C6.htm" target="_blank" rel="noopener">Family Category and Parameters</a> (Help di Revit 2026, in inglese): ospite, basato su piano di lavoro, sempre verticale, taglio con vuoti, condivisa, tipo di parte, orientamento delle annotazioni.</li>
+    <li>Autodesk, <a href="https://help.autodesk.com/cloudhelp/2026/ENU/Revit-Customize/files/GUID-91270AEF-225A-49D7-BF84-1F44D1E3E216.htm" target="_blank" rel="noopener">Lookup Tables</a> (Help di Revit 2026, in inglese).</li>
+    <li>Autodesk, <a href="https://help.autodesk.com/cloudhelp/2023/ENU/RevitLT-DocumentPresent/files/GUID-7119A8C3-A0EE-4568-8C35-750410D867C9.htm" target="_blank" rel="noopener">Specify IFC Entities for Families</a> (Help di Revit, in inglese): IfcExportAs e IfcExportType.</li>
+    <li>Arkance, <a href="https://ukcommunity.arkance.world/hc/en-us/articles/21566274036370-What-new-things-do-we-see-in-Revit-2023-IFC-Mapping-options-as-Object-Parameters" target="_blank" rel="noopener">Revit 2023: IFC Mapping options as Object Parameters</a> (in inglese).</li>
+    <li>AUGI, <a href="https://augi.com/articles/detail/revit-formulas-v.-type-catalogs-v.-lookup-tables" target="_blank" rel="noopener">Revit Formulas vs Type Catalogs vs Lookup Tables</a> (in inglese).</li>
+    <li>BIM Corner, <a href="https://bimcorner.com/exporting-ifc-from-revit-part-1-mapping/" target="_blank" rel="noopener">Exporting IFC from Revit, part 1: Mapping</a> (in inglese).</li>
+    <li>Elenco dei template e delle librerie: lettura delle cartelle Family Templates\Italian, Libraries\Italian e Libraries\Italian_INTL di un'installazione di Revit 2026 in italiano, 29 ottobre 2026.</li>
+    <li>Dove non c'è una fonte, le indicazioni (origine, ordine dei vincoli, regola dell'host per gli impianti, banco di prova) vengono dall'esperienza di modellazione: sono un metodo, non una regola di Autodesk.</li>
+  </ul>
+  <div class="box idea"><b>Come è nato questo articolo</b><p>È uno dei «manuali di Claude»: l'ha scritto Claude, l'assistente di intelligenza artificiale di Anthropic, a partire da un manuale di lavoro sulle famiglie di Revit 2026 e dall'esperienza del curatore nella costruzione di una libreria con la struttura dati della Provincia di Bolzano.</p></div>
+  <p class="foot">BIM News · I manuali di Claude · Manuale famiglie Revit 2026 · edizione novembre 2026</p>
+</section>
+</main>
+</div>
+<script>
+(function(){
+  var f=document.getElementById("quiz"), out=document.getElementById("quiz-out");
+  function v(n){var e=f.querySelector('input[name="'+n+'"]:checked');return e?e.value:"";}
+  function show(id,on){document.getElementById(id).style.display=on?"":"none";}
+  function r(){
+    var a=v("q1"),link=v("q2")==="si",cut=v("q3")==="si",fol=v("q4")==="si",h="",t="",n="";
+    show("q2f",a==="disp"||a==="lin"); show("q3f",a==="disp"); show("q4f",a==="disp");
+    if(a==="porta"){h="Template Porta metrica o Finestra metrica (ospite: muro)";t="Sono famiglie speciali: tagliano il muro con l'Apertura, vanno negli abachi porte e finestre e calcolano i locali «Da / A». Nascono nel modello dove sta il muro, di solito l'architettonico.";n="Non usare il Modello generico basato su muro: si perdono abaco, lato di apertura e locali.";}
+    else if(a==="2d"){h="Elemento di dettaglio metrico, oppure un template di Annotazioni";t="Solo 2D: il dettaglio si vede nella vista in cui si posa, l'annotazione mantiene la sua dimensione sul foglio. Le etichette leggono i parametri della loro categoria.";n="Se il simbolo deve accompagnare un oggetto 3D, meglio metterlo dentro la famiglia 3D come annotazione nidificata.";}
+    else if(a==="pil"){h="Basato su due livelli: Pilastro metrico o Pilastro strutturale metrico";t="L'altezza si aggancia al livello di base e a quello superiore, con gli offset.";n="Se il modello va a un calcolatore strutturale, solo il template strutturale porta il modello analitico.";}
+    else if(a==="libera"){h="Modello generico metrico adattivo, o un template basato su motivo";t="La geometria segue i punti posati nel progetto o le celle di una superficie divisa o di una facciata continua.";n="Sono famiglie più pesanti e con abachi e IFC meno prevedibili: usarle solo quando servono davvero.";}
+    else if(a==="lin"){h="Modello generico metrico basato su linea (o Dispositivo di illuminazione metrico lineare)";t="Si posa con due clic e la lunghezza diventa un parametro automatico.";n=link?"Sta su un modello collegato: si posa con un piano di lavoro alla quota giusta, e la lunghezza va controllata se il link cambia.":"Solo tratti rettilinei: per le curve servono più segmenti.";}
+    else{
+      if(link&&cut){h="Basata su superficie, senza taglio";t="L'ospite sta in un link: nessuna famiglia può tagliarlo. Il foro o la nicchia va chiesto a chi modella l'ospite, con la posizione e la dimensione esatte.";n="Questo è un caso di coordinamento, non di modellazione.";}
+      else if(link){h=fol?"Basata su superficie (Modello generico metrico basato su superficie, o i template «ospitato» dei dispositivi)":"Non ospitata, basata su livello (con «Basato su piano di lavoro» se serve)";t=fol?"Si posa su qualsiasi faccia del modello collegato, anche verticale o inclinata, e segue l'ospite.":"Non dipende dal link: quando il link cambia, l'oggetto resta dov'è.";n=fol?"Dopo ogni aggiornamento del link controllare le orfane: le istanze restano ma possono smettere di seguire la faccia.":"Le quote di posa vanno controllate a mano rispetto all'architettonico aggiornato.";}
+      else if(cut){h="Ospitata (muro, solaio, controsoffitto o tetto) con Apertura o vuoti";t="Segue l'ospite e lo taglia. Il template ospitato giusto è quello dell'elemento da tagliare.";n="Se un giorno l'ospite finirà in un altro file, la famiglia non si potrà più posare: valutare una basata su superficie con un vuoto.";}
+      else if(fol){h="Basata su superficie (Modello generico metrico basato su superficie)";t="Una sola famiglia per muro, soffitto, pilastro e facce inclinate, ed è pronta anche per i modelli collegati.";n="Controllare l'orientamento in pianta e usare «Mantieni orientamento annotazione» per i simboli.";}
+      else{h="Non ospitata, basata su livello";t="Il comportamento più flessibile: arredi, macchine, quadri a pavimento. Con «Basato su piano di lavoro» si posa anche su piani di riferimento.";n="Non segue gli spostamenti di muri e solai: va bene per ciò che sta a pavimento o appeso a quota fissa.";}
+    }
+    out.innerHTML="<h4>"+h+"</h4><p>"+t+"</p><p><b>Attenzione:</b> "+n+"</p>";
+  }
+  f.addEventListener("change",r); r();
+  var K="famiglie-revit-ck", st={}; try{st=JSON.parse(localStorage.getItem(K)||"{}")}catch(e){}
+  var boxes=[].slice.call(document.querySelectorAll("#ck input"));
+  function upd(){var n=0;boxes.forEach(function(b){b.parentNode.classList.toggle("done",b.checked);if(b.checked)n++;});document.getElementById("ck-n").textContent=n+" / "+boxes.length;}
+  boxes.forEach(function(b){b.checked=!!st[b.id];b.addEventListener("change",function(){st[b.id]=b.checked;try{localStorage.setItem(K,JSON.stringify(st))}catch(e){}upd();});});
+  document.getElementById("ck-reset").addEventListener("click",function(){st={};try{localStorage.removeItem(K)}catch(e){}boxes.forEach(function(b){b.checked=false;});upd();});
+  upd();
+})();
+</script>
+</body>
+</html>

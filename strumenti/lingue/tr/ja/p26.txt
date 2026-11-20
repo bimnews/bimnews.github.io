@@ -1,0 +1,9 @@
+v1693	チュートリアルではなく方法論です。時間がたっても、プロジェクトでもデータ交換でも崩れないファミリを作るための、判断の順序。
+v1694	ファミリの種類とホスト、テンプレート、参照面と拘束、共有パラメータ、表現、MEP コネクタと IFC、テストとライブラリへの公開まで。ホストを選ぶ対話型ヘルプと、チェックできる最終チェックリスト付き。
+v1695	<span class="tag ok">公開済み</span><a class="man-btn" href="manuali/famiglie-revit.html">オンラインで読む</a><a class="man-btn ghost" href="manuali/famiglie-revit.html#c4">ホストを選ぶ</a>
+v1696	Revit を開く前の質問から納品まで：設備プロジェクトのための一つのチェックリスト。オンラインでチェックできます。
+v1697	新しいモデルを始める前に、事務所の標準で MEP テンプレートを準備する手順。続いて分野ごとの確認（立ち上げと調整、電気、空調、給排水、防火）とプロジェクト終了時の振り返り。チェックはブラウザに保存されます。
+v1698	<span class="tag ok">公開済み</span><a class="man-btn" href="manuali/checklist-bim-mep.html">オンラインで読む</a><a class="man-btn ghost" href="manuali/checklist-bim-mep.html#c3">MEP テンプレート</a><a class="man-btn ghost" href="manuali/checklist-bim-mep.html#c4">チェックリスト</a>
+v1699	ガイド付きの手順：発注者、建物の用途と規模を選ぶと、適用される規則がわかります。
+v1700	続いて部屋ごとに講じるべき対策、避難経路、材料、REI の本当の意味。最後に、防火を設備とモデルのデータ（パラメータから IFC まで）に結びつけるワークフローの図。南チロルの州規則と、すべての数値の正確な出典付き。
+v1701	<span class="tag ok">公開済み</span><a class="man-btn" href="manuali/antincendio.html">ガイドを開く</a><a class="man-btn ghost" href="manuali/antincendio.html#c6">ワークフローの図</a>
