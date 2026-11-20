@@ -857,7 +857,7 @@ const carriageG = svg.querySelector('[data-part="carriage"]');
 const pointer = svg.querySelector('[data-part="pointer"]');
 const readout = document.querySelector("[data-readout]");
 // sugli schermi a tocco il foglio non si ruota col dito: il suggerimento lo dice
-if (matchMedia("(hover: none)").matches) { const hint = document.querySelector('[data-corner="hint"]'); if (hint) hint.textContent = "Tocca: unità"; }
+if (matchMedia("(hover: none)").matches) { const hint = document.querySelector('[data-corner="hint"]'); if (hint) hint.textContent = "Trascina: ruota · tocca: unità"; }
 const still = matchMedia("(prefers-reduced-motion: reduce)");
 const clamp = (v, a, b) => Math.min(b, Math.max(a, v));
 const fmt = (v, d) => { const [i, f] = Math.abs(v).toFixed(d).split("."); return (v < 0 ? "−" : "") + i.replace(/\B(?=(\d{3})+(?!\d))/g, " ") + "," + f; };
@@ -922,7 +922,23 @@ stage.addEventListener("pointermove", (ev) => {
   thT = Math.round((30 - share * 60) * 2) / 2;
   pause();
 });
-stage.addEventListener("click", () => { unitT = unitT > 0.5 ? 0 : 1; pause(); });
+// col dito: trascinare in orizzontale ruota il foglio, un tocco senza trascinare cambia l'unità
+let drag = null, dragged = false;
+stage.style.touchAction = "pan-y";
+stage.addEventListener("pointerdown", (ev) => { if (ev.pointerType !== "touch") return; drag = { x: ev.clientX, th: thT }; dragged = false; });
+stage.addEventListener("pointermove", (ev) => {
+  if (!drag || ev.pointerType !== "touch") return;
+  const dx = ev.clientX - drag.x;
+  if (Math.abs(dx) > 8) dragged = true;
+  if (!dragged) return;
+  const box = svg.getBoundingClientRect();
+  thT = clamp(Math.round((drag.th - dx / box.width * 60) * 2) / 2, -30, 30);
+  pause();
+});
+const endDrag = () => { drag = null; };
+stage.addEventListener("pointerup", endDrag);
+stage.addEventListener("pointercancel", endDrag);
+stage.addEventListener("click", () => { if (dragged) { dragged = false; return; } unitT = unitT > 0.5 ? 0 : 1; pause(); });
 stage.addEventListener("keydown", (ev) => {
   if (ev.key === "ArrowLeft" || ev.key === "ArrowUp") thT = clamp(thT + 0.5, -30, 30);
   else if (ev.key === "ArrowRight" || ev.key === "ArrowDown") thT = clamp(thT - 0.5, -30, 30);
