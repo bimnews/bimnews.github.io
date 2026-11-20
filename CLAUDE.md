@@ -218,6 +218,8 @@ Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato co
 
 ## Fatto di recente
 
+- **20/11/2026, nessuna revisione:** proposta una nuova veste grafica «D» (carta da lucido, titoli serif Newsreader, linee di quota CAD come separatori, poi uno strato «umano» con note a penna in Caveat e nuvole di revisione), provata solo in anteprima con CSS iniettato da Playwright. **Marco l'ha scartata: si resta con la veste C.** Non riproporla; se tornerà sul tema, chiedergli prima quale direzione vuole.
+
 - **20/11/2026, revisione 147:** nel piè di pagina «Online dal 9 novembre 2026 · Sito aggiornato il …», approvato da Marco.
 - **20/11/2026, revisione 146:** prima figura animata, il coordinatografo della georeferenziazione, nel capitolo 3 dell'articolo sulla georeferenziazione (repository `bimnews/figure`, skill anatomy).
 
