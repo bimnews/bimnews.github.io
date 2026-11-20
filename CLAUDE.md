@@ -34,6 +34,12 @@ Sito di Marco Scigliuolo (ingegnere civile, provincia di Bolzano), pubblicato co
 - **Il curatore, regola di Marco:** ogni articolo della pagina «Il curatore» è una finestra che si apre e si chiude (triangolo ▶ a destra, script «I miei libri: categorie e schede a scomparsa», esteso a `#chi-sono .st-item`). Si vedono il titolo e la prima riga; le schede con solo «Work in progress» restano aperte perché non c'è altro. I link con la classe `hl` aprono da soli l'articolo. Ogni nuovo articolo segue questa struttura: `h4`, prima riga `p`, poi il resto.
 - **Inoltre:** la guida al sito (array `STEPS`), la FAQ (`#faq`, generabile con `strumenti/faq.py`) e i crediti delle foto in fondo alla Mappa del sito.
 
+## Figure animate (repository `bimnews/figure`)
+
+- **Dal 20/11/2026** le figure animate e interattive si fanno in una repository a parte, privata: `bimnews/figure`. Contiene la skill «anatomy» (MIT, copiata a versione fissa in `.claude/skills/anatomy/`), i sorgenti in `figure/<nome>/` e i file finiti in `dist/`. Le regole (peso, tema, niente risorse esterne, anteprima a Marco) sono nel suo `CLAUDE.md`.
+- **Per lavorarci** collega la repository alla sessione (`add_repo` bimnews/figure). Nel sito si copia solo il file di `dist/`, di solito dentro un manuale con un `iframe` `?embed=1`, mai nella versione essenziale.
+- **Stato:** proposte di figure fatte a Marco il 20/11/2026, in attesa della sua scelta.
+
 ## Come si pubblica
 
 1. Lavora sul ramo indicato dalla sessione, partendo da `origin/main` aggiornato. Prima fai sempre `git fetch origin main`: una volta si è rischiato di pubblicare su una copia vecchia.
