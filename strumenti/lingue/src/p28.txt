@@ -1,0 +1,20 @@
+v1717	L'impianto termosanitario, passo per passo · 2 · La linea d'azione
+v1718	Dal fabbisogno alle scelte: centrale o autonomo, acqua o aria, e soprattutto la temperatura a cui lavora l'impianto. Con il regolo delle temperature e il COP della pompa di calore.
+v1719	L'impianto termosanitario, passo per passo · 3 · La generazione
+v1720	Pompa di calore, caldaia a condensazione, teleriscaldamento: come lavorano e come si sceglie la potenza alla temperatura di progetto. Con il bilancio della pompa di calore da provare.
+v1721	L'impianto termosanitario, passo per passo · 4 · Accumulo e separazione
+v1722	Il volume d'acqua che protegge la macchina, il separatore tra i circuiti e il vaso di espansione, con la sua formula e la figura del vaso.
+v1723	L'impianto termosanitario, passo per passo · 5 · La distribuzione
+v1724	Dalla potenza alla portata, i diametri, la pompa e il circuito che si incontrano nel punto di lavoro, il bilanciamento.
+v1725	L'impianto termosanitario, passo per passo · 6 · L'emissione
+v1726	Pavimento radiante, radiatori, ventilconvettori: la legge di ogni terminale e la temperatura dell'acqua che serve. Con il pavimento che scalda.
+v1727	L'impianto termosanitario, passo per passo · 7 · La regolazione
+v1728	Curva climatica, regolazione per ambiente, orari e ventilazione sulla presenza: quanto calore, quando e dove.
+v1729	L'impianto termosanitario, passo per passo · 8 · L'acqua calda sanitaria
+v1730	Accumulo, ricircolo e produzione istantanea, con le temperature delle linee guida sulla legionellosi e i loro effetti su una pompa di calore.
+v1731	L'impianto termosanitario, passo per passo · 9 · La rete idrica
+v1732	Pressioni dall'allaccio al rubinetto più alto, portate contemporanee, riduttori, pressurizzazione e protezione dal riflusso.
+v1733	L'impianto termosanitario, passo per passo · 10 · Gli scarichi
+v1734	Unità di scarico e portata di progetto secondo la UNI EN 12056-2, colonne, ventilazione e sifoni.
+v1735	L'impianto termosanitario, passo per passo · 11 · Nel modello
+v1736	Classi IFC 4.3, tipi, Pset, sistemi e collegamenti: dove va ogni pezzo dell'impianto e ogni numero calcolato nella serie.

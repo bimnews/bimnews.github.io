@@ -1,0 +1,20 @@
+v1717	La instalación térmica y sanitaria, paso a paso · 2 · La línea de acción
+v1718	De las necesidades a las decisiones: central o individual, agua o aire y, sobre todo, la temperatura de trabajo de la instalación. Con la regla de temperaturas y el COP de la bomba de calor.
+v1719	La instalación térmica y sanitaria, paso a paso · 3 · La generación
+v1720	Bomba de calor, caldera de condensación, calefacción urbana: cómo funcionan y cómo se elige la potencia a la temperatura de proyecto. Con el balance de la bomba de calor para probar.
+v1721	La instalación térmica y sanitaria, paso a paso · 4 · Acumulación y separación
+v1722	El volumen de agua que protege la máquina, el separador entre circuitos y el vaso de expansión, con su fórmula y la figura del vaso.
+v1723	La instalación térmica y sanitaria, paso a paso · 5 · La distribución
+v1724	De la potencia al caudal, los diámetros, la bomba y el circuito que se encuentran en el punto de trabajo, el equilibrado.
+v1725	La instalación térmica y sanitaria, paso a paso · 6 · La emisión
+v1726	Suelo radiante, radiadores, fancoils: la ley de cada emisor y la temperatura de agua que necesita. Con el suelo que calienta.
+v1727	La instalación térmica y sanitaria, paso a paso · 7 · La regulación
+v1728	Curva climática, regulación por estancia, horarios y ventilación según ocupación: cuánto calor, cuándo y dónde.
+v1729	La instalación térmica y sanitaria, paso a paso · 8 · El agua caliente sanitaria
+v1730	Acumulación, recirculación y producción instantánea, con las temperaturas de las directrices italianas sobre la legionelosis y sus efectos en una bomba de calor.
+v1731	La instalación térmica y sanitaria, paso a paso · 9 · La red de agua
+v1732	Presiones desde la acometida hasta el grifo más alto, caudales simultáneos, reductores, grupos de presión y protección contra el retorno.
+v1733	La instalación térmica y sanitaria, paso a paso · 10 · Los desagües
+v1734	Unidades de descarga y caudal de proyecto según la EN 12056-2, bajantes, ventilación y sifones.
+v1735	La instalación térmica y sanitaria, paso a paso · 11 · En el modelo
+v1736	Clases IFC 4.3, tipos, Pset, sistemas y conexiones: dónde va cada pieza de la instalación y cada número calculado en la serie.

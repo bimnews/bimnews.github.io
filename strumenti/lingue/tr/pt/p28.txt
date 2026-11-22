@@ -1,0 +1,20 @@
+v1717	A instalação térmica e sanitária, passo a passo · 2 · A linha de ação
+v1718	Das necessidades às escolhas: central ou individual, água ou ar e, sobretudo, a temperatura de trabalho da instalação. Com a régua das temperaturas e o COP da bomba de calor.
+v1719	A instalação térmica e sanitária, passo a passo · 3 · A produção de calor
+v1720	Bomba de calor, caldeira de condensação, aquecimento urbano: como funcionam e como se escolhe a potência à temperatura de projeto. Com o balanço da bomba de calor para experimentar.
+v1721	A instalação térmica e sanitária, passo a passo · 4 · Acumulação e separação
+v1722	O volume de água que protege a máquina, o separador entre circuitos e o vaso de expansão, com a sua fórmula e a figura do vaso.
+v1723	A instalação térmica e sanitária, passo a passo · 5 · A distribuição
+v1724	Da potência ao caudal, os diâmetros, a bomba e o circuito que se encontram no ponto de funcionamento, o equilíbrio.
+v1725	A instalação térmica e sanitária, passo a passo · 6 · A emissão
+v1726	Piso radiante, radiadores, ventiloconvetores: a lei de cada emissor e a temperatura da água necessária. Com o piso que aquece.
+v1727	A instalação térmica e sanitária, passo a passo · 7 · A regulação
+v1728	Curva climática, regulação por espaço, horários e ventilação por ocupação: quanto calor, quando e onde.
+v1729	A instalação térmica e sanitária, passo a passo · 8 · A água quente sanitária
+v1730	Acumulação, recirculação e produção instantânea, com as temperaturas das diretrizes italianas sobre a legionelose e os seus efeitos numa bomba de calor.
+v1731	A instalação térmica e sanitária, passo a passo · 9 · A rede de água
+v1732	Pressões desde a ligação à rede até à torneira mais alta, caudais simultâneos, redutores, grupos de pressurização e proteção contra o refluxo.
+v1733	A instalação térmica e sanitária, passo a passo · 10 · Os esgotos
+v1734	Unidades de descarga e caudal de projeto segundo a EN 12056-2, tubos de queda, ventilação e sifões.
+v1735	A instalação térmica e sanitária, passo a passo · 11 · No modelo
+v1736	Classes IFC 4.3, tipos, Pset, sistemas e ligações: onde vai cada peça da instalação e cada número calculado na série.

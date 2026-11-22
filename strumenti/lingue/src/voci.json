@@ -11149,5 +11149,145 @@
 "h": "pubblicato",
 "tag": "#node",
 "id": "v1716"
+},
+{
+"k": "L'impianto termosanitario, passo per passo · 2 · La linea d'azione",
+"m": "text",
+"h": "L'impianto termosanitario, passo per passo · 2 · La linea d'azione",
+"tag": "H4",
+"id": "v1717"
+},
+{
+"k": "Dal fabbisogno alle scelte: centrale o autonomo, acqua o aria, e soprattutto la temperatura a cui lavora l'impianto. Con il regolo delle temperature e il COP della pompa di calore.",
+"m": "text",
+"h": "Dal fabbisogno alle scelte: centrale o autonomo, acqua o aria, e soprattutto la temperatura a cui lavora l'impianto. Con il regolo delle temperature e il COP della pompa di calore.",
+"tag": "P",
+"id": "v1718"
+},
+{
+"k": "L'impianto termosanitario, passo per passo · 3 · La generazione",
+"m": "text",
+"h": "L'impianto termosanitario, passo per passo · 3 · La generazione",
+"tag": "H4",
+"id": "v1719"
+},
+{
+"k": "Pompa di calore, caldaia a condensazione, teleriscaldamento: come lavorano e come si sceglie la potenza alla temperatura di progetto. Con il bilancio della pompa di calore da provare.",
+"m": "text",
+"h": "Pompa di calore, caldaia a condensazione, teleriscaldamento: come lavorano e come si sceglie la potenza alla temperatura di progetto. Con il bilancio della pompa di calore da provare.",
+"tag": "P",
+"id": "v1720"
+},
+{
+"k": "L'impianto termosanitario, passo per passo · 4 · Accumulo e separazione",
+"m": "text",
+"h": "L'impianto termosanitario, passo per passo · 4 · Accumulo e separazione",
+"tag": "H4",
+"id": "v1721"
+},
+{
+"k": "Il volume d'acqua che protegge la macchina, il separatore tra i circuiti e il vaso di espansione, con la sua formula e la figura del vaso.",
+"m": "text",
+"h": "Il volume d'acqua che protegge la macchina, il separatore tra i circuiti e il vaso di espansione, con la sua formula e la figura del vaso.",
+"tag": "P",
+"id": "v1722"
+},
+{
+"k": "L'impianto termosanitario, passo per passo · 5 · La distribuzione",
+"m": "text",
+"h": "L'impianto termosanitario, passo per passo · 5 · La distribuzione",
+"tag": "H4",
+"id": "v1723"
+},
+{
+"k": "Dalla potenza alla portata, i diametri, la pompa e il circuito che si incontrano nel punto di lavoro, il bilanciamento.",
+"m": "text",
+"h": "Dalla potenza alla portata, i diametri, la pompa e il circuito che si incontrano nel punto di lavoro, il bilanciamento.",
+"tag": "P",
+"id": "v1724"
+},
+{
+"k": "L'impianto termosanitario, passo per passo · 6 · L'emissione",
+"m": "text",
+"h": "L'impianto termosanitario, passo per passo · 6 · L'emissione",
+"tag": "H4",
+"id": "v1725"
+},
+{
+"k": "Pavimento radiante, radiatori, ventilconvettori: la legge di ogni terminale e la temperatura dell'acqua che serve. Con il pavimento che scalda.",
+"m": "text",
+"h": "Pavimento radiante, radiatori, ventilconvettori: la legge di ogni terminale e la temperatura dell'acqua che serve. Con il pavimento che scalda.",
+"tag": "P",
+"id": "v1726"
+},
+{
+"k": "L'impianto termosanitario, passo per passo · 7 · La regolazione",
+"m": "text",
+"h": "L'impianto termosanitario, passo per passo · 7 · La regolazione",
+"tag": "H4",
+"id": "v1727"
+},
+{
+"k": "Curva climatica, regolazione per ambiente, orari e ventilazione sulla presenza: quanto calore, quando e dove.",
+"m": "text",
+"h": "Curva climatica, regolazione per ambiente, orari e ventilazione sulla presenza: quanto calore, quando e dove.",
+"tag": "P",
+"id": "v1728"
+},
+{
+"k": "L'impianto termosanitario, passo per passo · 8 · L'acqua calda sanitaria",
+"m": "text",
+"h": "L'impianto termosanitario, passo per passo · 8 · L'acqua calda sanitaria",
+"tag": "H4",
+"id": "v1729"
+},
+{
+"k": "Accumulo, ricircolo e produzione istantanea, con le temperature delle linee guida sulla legionellosi e i loro effetti su una pompa di calore.",
+"m": "text",
+"h": "Accumulo, ricircolo e produzione istantanea, con le temperature delle linee guida sulla legionellosi e i loro effetti su una pompa di calore.",
+"tag": "P",
+"id": "v1730"
+},
+{
+"k": "L'impianto termosanitario, passo per passo · 9 · La rete idrica",
+"m": "text",
+"h": "L'impianto termosanitario, passo per passo · 9 · La rete idrica",
+"tag": "H4",
+"id": "v1731"
+},
+{
+"k": "Pressioni dall'allaccio al rubinetto più alto, portate contemporanee, riduttori, pressurizzazione e protezione dal riflusso.",
+"m": "text",
+"h": "Pressioni dall'allaccio al rubinetto più alto, portate contemporanee, riduttori, pressurizzazione e protezione dal riflusso.",
+"tag": "P",
+"id": "v1732"
+},
+{
+"k": "L'impianto termosanitario, passo per passo · 10 · Gli scarichi",
+"m": "text",
+"h": "L'impianto termosanitario, passo per passo · 10 · Gli scarichi",
+"tag": "H4",
+"id": "v1733"
+},
+{
+"k": "Unità di scarico e portata di progetto secondo la UNI EN 12056-2, colonne, ventilazione e sifoni.",
+"m": "text",
+"h": "Unità di scarico e portata di progetto secondo la UNI EN 12056-2, colonne, ventilazione e sifoni.",
+"tag": "P",
+"id": "v1734"
+},
+{
+"k": "L'impianto termosanitario, passo per passo · 11 · Nel modello",
+"m": "text",
+"h": "L'impianto termosanitario, passo per passo · 11 · Nel modello",
+"tag": "H4",
+"id": "v1735"
+},
+{
+"k": "Classi IFC 4.3, tipi, Pset, sistemi e collegamenti: dove va ogni pezzo dell'impianto e ogni numero calcolato nella serie.",
+"m": "text",
+"h": "Classi IFC 4.3, tipi, Pset, sistemi e collegamenti: dove va ogni pezzo dell'impianto e ogni numero calcolato nella serie.",
+"tag": "P",
+"id": "v1736"
 }
 ]
