@@ -45,6 +45,8 @@ details.full summary{cursor:pointer;font-weight:700}
 .cap{font-size:.86rem;color:var(--muted);margin:-.4rem 0 1rem}
 @media (max-width:640px){.kv{grid-template-columns:repeat(2,minmax(0,1fr))}.viewer canvas{height:340px}}
 @media print{.viewer,.peek{display:none!important}}
+.fig-frame{width:100%;border:0;min-height:560px;display:block;background:transparent;margin:.4rem 0 1rem}
+.fig-alt{margin:.4rem 0 1rem}
 </style>
 </head>
 <body>
@@ -318,6 +320,8 @@ END-ISO-10303-21;</code></pre>
   </svg></div>
   <h3>Perché le posizioni sono relative</h3>
   <p>Perché si spostano insieme. Se il primo piano salisse a 3,20 m basterebbe cambiare il 3 di <code>#25</code>: muri, finestre, solaio e tetto del primo piano seguirebbero da soli, perché sono tutti misurati dal piano. È il comportamento che ci si aspetta da un modello BIM, e nel file si vede come una catena di riferimenti.</p>
+  <p>Nella figura la catena diventa una piccola macchina: il primo piano poggia su martinetti a vite, e alzandolo da 3,00 a 3,20 m muro, foro e finestra salgono con lui senza che la loro posizione relativa cambi. Ogni anello ha la sua terna di assi (x rosso, y verde).</p>
+  <div class="fig-embed noprint" data-fig="catena" data-title="la catena delle posizioni"></div>
   <h3>Il sistema ruotato <code>#6</code></h3>
   <p><code>#6=IFCAXIS2PLACEMENT3D(#1,#3,#4)</code> dice: l'asse Z locale punta verso <code>#3</code> = (1, 0, 0), cioè verso est; l'asse X locale punta verso <code>#4</code> = (0, 1, 0), cioè verso nord. L'asse Y locale è il prodotto vettoriale Z × X = (1, 0, 0) × (0, 1, 0) = (0, 0, 1): punta in alto. In questo sistema il «foglio» su cui si disegna (il piano XY locale) è verticale e guarda verso est, come un prospetto. Lo uso per disegnare il profilo del timpano, della scala e delle falde del tetto, che poi si estrudono verso est (capitolo 9).</p>
 </section>
@@ -482,6 +486,8 @@ END-ISO-10303-21;</code></pre>
     <tr><td>3 · La finestra</td><td><code>#518</code></td><td>Posizionata rispetto al foro (<code>#515</code> → <code>#510</code>), con altezza e larghezza complessive (1,2 e 1,2) come attributi. La sua forma è una lastra di 6 cm al centro dello spessore del muro.</td></tr>
     <tr><td>4 · Il riempimento</td><td><code>#519</code></td><td><code>IfcRelFillsElement</code>: «la finestra <code>#518</code> riempie il foro <code>#513</code>». È il legame che permette di sapere in quale muro sta una finestra.</td></tr>
   </table></div>
+  <p>La figura mette in fila i passi dei capitoli 7 e 10 come lavorazioni di una pressa: il profilo #122 tirato verso l'alto per 2,80 m (#123), il punzone del foro #513 che attraversa il muro (#514) e la finestra #518 che entra nel foro (#519).</p>
+  <div class="fig-embed noprint" data-fig="estrusione" data-title="profilo, estrusione, foro"></div>
   <div class="box warn"><b>Il foro più spesso del muro</b><p>Il muro è spesso 0,30 m, il foro 0,40 m: sporge di 5 cm per lato. Se il foro avesse esattamente lo spessore del muro, le sue facce coinciderebbero con quelle del muro e la sottrazione potrebbe lasciare un velo di superficie, a seconda di come il programma gestisce le facce coincidenti. Un foro leggermente più grande toglie il dubbio. È la stessa accortezza che usano i software quando esportano.</p></div>
   <p>Il pattern è universale. Il foro della scala nel solaio del primo piano usa le stesse righe, senza il riempimento:</p>
 <pre class="ifc"><code>#640=IFCLOCALPLACEMENT(#320,#5);
@@ -743,5 +749,13 @@ try{new MutationObserver(draw).observe(document.documentElement,{attributes:true
 fetch("ifc-da-zero/casetta-3d.json",{cache:"no-cache"}).then(function(r){return r.json()}).then(function(d){DATA=d;draw()}).catch(function(){info.textContent="Il modello 3D non si è caricato: si vede solo da un indirizzo web, non aprendo il file dal disco."});
 })();
 </script>
+<script>/* figure animate: iframe ?embed=1 solo fuori dalla versione essenziale (stessa regola di index.html) */
+(function(){ var boxes=document.querySelectorAll(".fig-embed[data-fig]"); if(!boxes.length)return; var lite=false;
+  try{ var m=localStorage.getItem("versione"),c=navigator.connection,a=matchMedia("(prefers-reduced-motion: reduce)").matches||(c&&(c.saveData||/(^|-)2g$/.test(c.effectiveType||""))); lite=m?m==="essenziale":a; }catch(e){}
+  boxes.forEach(function(box){ var n=box.getAttribute("data-fig"), t=box.getAttribute("data-title")||"Figura interattiva";
+    if(lite){ box.innerHTML='<p class="fig-alt"><a href="figure/'+n+'.html">Apri la figura interattiva: '+t+'</a> (pagina a parte).</p>'; return; }
+    var f=document.createElement("iframe"); f.className="fig-frame"; f.title="Figura interattiva: "+t; f.loading="lazy"; f.src="figure/"+n+".html?embed=1"; f.setAttribute("data-fig",n); box.appendChild(f); });
+  window.addEventListener("message",function(e){ if(!e.data||!e.data.figH||!e.data.fig)return; var f=document.querySelector('iframe.fig-frame[data-fig="'+e.data.fig+'"]'); if(f)f.style.height=(e.data.figH+4)+"px"; });
+})();</script>
 </body>
 </html>
