@@ -14,8 +14,12 @@
 .fig-alt{margin:.4rem 0 1rem}
 .series{display:flex;flex-wrap:wrap;gap:.35rem;margin:.4rem 0 0}
 .series span{font-family:var(--mono);font-size:.72rem;border:1px solid var(--line);border-radius:999px;padding:.15rem .55rem;color:var(--muted)}
+.series a{font-family:var(--mono);font-size:.72rem;border:1px solid color-mix(in srgb,var(--accent) 45%,var(--line));border-radius:999px;padding:.15rem .55rem;color:var(--accent);text-decoration:none}
+.pn{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;margin:1.4rem 0 .6rem}
 .series span.on{background:var(--accent);border-color:var(--accent);color:#fff}
-:root[data-theme="dark"] .series span.on{color:#10141b}
+:root[data-theme="dark"] .series a{font-family:var(--mono);font-size:.72rem;border:1px solid color-mix(in srgb,var(--accent) 45%,var(--line));border-radius:999px;padding:.15rem .55rem;color:var(--accent);text-decoration:none}
+.pn{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;margin:1.4rem 0 .6rem}
+.series span.on{color:#10141b}
 .num td:nth-child(n+2){font-family:var(--mono);white-space:nowrap}
 </style>
 </head>
@@ -43,7 +47,7 @@
     <span class="kick">L'impianto termosanitario, passo per passo · 1</span>
     <h1>Il fabbisogno: che cosa c'è e che cosa serve</h1>
     <p>Prima di scegliere una caldaia, una pompa di calore o un pannello radiante si risponde a una domanda sola: di che cosa ha bisogno questo edificio? Un'aula di esempio, calcolata passo per passo, mostra perché la risposta a volte sorprende.</p>
-    <div class="series" aria-label="La serie"><span class="on">1 Fabbisogno</span><span>2 Linea d'azione</span><span>3 Generazione</span><span>4 Accumulo</span><span>5 Distribuzione</span><span>6 Emissione</span><span>7 Regolazione</span><span>8 Acqua calda</span><span>9 Idrico</span><span>10 Scarichi</span><span>11 Nel modello</span></div>
+    <div class="series" aria-label="La serie"><span class="on">1 Fabbisogno</span><a href="termosanitario-02-linea-d-azione.html">2 Linea d'azione</a><span>3 Generazione</span><span>4 Accumulo</span><span>5 Distribuzione</span><span>6 Emissione</span><span>7 Regolazione</span><span>8 Acqua calda</span><span>9 Idrico</span><span>10 Scarichi</span><span>11 Nel modello</span></div>
   </div>
   <svg viewBox="0 0 360 240" role="img" aria-label="Una bilancia: su un piatto la potenza dell'impianto, sull'altro le perdite per trasmissione e per ventilazione">
     <rect class="s-as" x="10" y="10" width="340" height="220" rx="22"/>
@@ -193,6 +197,7 @@
     <li>buildingSMART, IFC 4.3 ADD2: Property Set degli spazi controllati con IfcOpenShell 0.9.</li>
   </ul>
   <div class="box idea"><b>Come è nato questo articolo</b><p>È uno dei «manuali di Claude»: l'ha scritto Claude, l'assistente di intelligenza artificiale di Anthropic, seguendo le indicazioni del curatore. L'aula è inventata e i numeri sono tondi; i calcoli della figura e del testo vengono dallo stesso modello.</p></div>
+<nav class="pn noprint" aria-label="Articoli della serie"><span></span><a class="btn" href="termosanitario-02-linea-d-azione.html">2 · Linea d'azione →</a></nav>
   <p class="foot">BIM News · L'impianto termosanitario, passo per passo · 1 · Il fabbisogno · edizione novembre 2026</p>
 </section>
 </main>
