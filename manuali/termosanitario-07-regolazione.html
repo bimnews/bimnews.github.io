@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>La regolazione: quanto calore, quando e dove · I manuali di BIM News</title>
+<meta name="description" content="Settimo articolo della serie sull'impianto termosanitario: la regolazione. Curva climatica, regolazione di zona e di ambiente, programmi orari e ventilazione sulla presenza, con una figura interattiva sulla curva climatica.">
+<link rel="stylesheet" href="manuale.css">
+<script>try{var t=localStorage.getItem("tema-2026");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+<style>
+.btn.ghost,:root[data-theme="dark"] .btn.ghost{color:var(--accent)}
+.formula{font-family:var(--mono);background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:.9rem 1.1rem;margin:.6rem 0 1rem;font-size:.95rem;line-height:1.75;overflow-x:auto}
+.fig-frame{width:100%;border:0;min-height:640px;display:block;background:transparent;margin:.4rem 0 1rem}
+.fig-alt{margin:.4rem 0 1rem}
+.series{display:flex;flex-wrap:wrap;gap:.35rem;margin:.4rem 0 0}
+.series span,.series a{font-family:var(--mono);font-size:.72rem;border:1px solid var(--line);border-radius:999px;padding:.15rem .55rem;color:var(--muted);text-decoration:none}
+.series a{color:var(--accent);border-color:color-mix(in srgb,var(--accent) 45%,var(--line))}
+.series span.on{background:var(--accent);border-color:var(--accent);color:#fff}
+:root[data-theme="dark"] .series span.on{color:#10141b}
+.num td:nth-child(n+2){font-family:var(--mono);white-space:nowrap}
+.pn{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;margin:1.4rem 0 .6rem}
+</style>
+</head>
+<body>
+<div class="topbar"><div class="in"><a class="back" href="../#mep">← BIM News · MEP</a><span class="sp"></span><a class="btn ghost noprint" href="#c3">La figura</a><a class="btn noprint" href="#c6">Nell'esempio</a></div></div>
+<div class="layout">
+<nav class="toc" aria-label="Indice">
+  <b>Indice</b>
+  <ol><li><a href="#c1">1 · I livelli della regolazione</a></li><li><a href="#c2">2 · La curva climatica</a></li><li><a href="#c3">3 · La curva, da provare</a></li><li><a href="#c4">4 · Ambiente per ambiente</a></li><li><a href="#c5">5 · Orari, presenza, aria</a></li><li><a href="#c6">6 · Nell'esempio</a></li><li><a href="#fonti">Fonti</a></li></ol>
+</nav>
+<main>
+<header class="cover">
+  <div>
+    <span class="kick">L'impianto termosanitario, passo per passo · 7</span>
+    <h1>La regolazione: quanto calore, quando e dove</h1>
+    <p>Un impianto è dimensionato per il giorno più freddo, ma quasi tutti i giorni sono più miti. La regolazione decide quanta parte della potenza usare, momento per momento: è lì che si risparmia, o si spreca, l'energia di tutta la stagione.</p>
+    <div class="series" aria-label="La serie"><a href="termosanitario-01-fabbisogno.html">1 Fabbisogno</a><a href="termosanitario-02-linea-d-azione.html">2 Linea d'azione</a><a href="termosanitario-03-generazione.html">3 Generazione</a><a href="termosanitario-04-accumulo.html">4 Accumulo</a><a href="termosanitario-05-distribuzione.html">5 Distribuzione</a><a href="termosanitario-06-emissione.html">6 Emissione</a><span class="on">7 Regolazione</span><span>8 Acqua calda</span><span>9 Idrico</span><span>10 Scarichi</span><span>11 Nel modello</span></div>
+  </div>
+  <svg viewBox="0 0 360 240" role="img" aria-label="Una curva climatica: la mandata scende quando fuori fa più caldo"><rect class="s-as" x="10" y="10" width="340" height="220" rx="22"/><path d="M60 200H310M60 200V40" style="stroke:var(--ink);stroke-width:2;fill:none"/><path d="M60 60L300 190" style="stroke:var(--a5);stroke-width:3;fill:none"/><path d="M60 120L300 190" style="stroke:var(--accent);stroke-width:4;fill:none"/><circle cx="170" cy="152" r="8" class="s-a"/><text class="s-tm" x="250" y="222">fuori</text><text class="s-tm" x="20" y="36">mandata</text></svg>
+</header>
+
+<div class="box bim"><b>Dove eravamo</b><p>Nell'<a href="termosanitario-06-emissione.html">articolo 6</a> il calore è entrato nell'aula: il pavimento scalda le superfici, la batteria l'aria di ventilazione. Tutto dimensionato per −12 °C. Ma la temperatura di progetto si vede pochi giorni l'anno.</p></div>
+
+<section class="ch" id="c1">
+  <div class="ch-h"><span class="ch-n">1</span><h2>I livelli della regolazione</h2></div>
+  <p class="lead">La regolazione lavora su più livelli, dal generale al particolare. Ognuno corregge quello che il livello sopra non può sapere.</p>
+  <div class="tbl"><table>
+    <tr><th>Livello</th><th>Che cosa regola</th><th>Su che cosa si basa</th></tr>
+    <tr><td>Generazione</td><td>Accensione e potenza del generatore, temperatura dell'accumulo</td><td>Richiesta dei circuiti</td></tr>
+    <tr><td>Circuito</td><td>Temperatura di mandata</td><td>Temperatura esterna (curva climatica)</td></tr>
+    <tr><td>Zona</td><td>Portata o accensione di un gruppo di locali</td><td>Orari, uso, esposizione</td></tr>
+    <tr><td>Ambiente</td><td>Calore ceduto nel singolo locale</td><td>Temperatura del locale</td></tr>
+  </table></div>
+  <p>La sola regolazione climatica non basta: due aule con la stessa mandata, una al sole e una all'ombra, una piena e una vuota, non hanno bisogno dello stesso calore. La sola regolazione d'ambiente non basta neppure: con la mandata sempre al massimo, le valvole lavorano quasi chiuse e il generatore rende meno.</p>
+</section>
+
+<section class="ch" id="c2">
+  <div class="ch-h"><span class="ch-n">2</span><h2>La curva climatica</h2></div>
+  <p>La centralina legge una sonda esterna (sulla facciata nord, lontano dal sole e dalle bocchette) e da una curva ricava la temperatura di mandata. La curva parte dal punto di progetto e scende fino a 20 °C quando fuori non serve più calore.</p>
+  <div class="formula">Retta d'esempio: mandata = 20 + (Td − 20) · (20 − Te) / (20 − Tep)<br>Td = mandata di progetto, Tep = temperatura esterna di progetto (−12 °C)<br><br>Pavimento dell'aula (Td = 35 °C), 5 °C fuori: 20 + 15 · 15 / 32 ≈ 27 °C<br>COP stimato a 27 °C invece di 35 °C: 0,45 · 300,15 / 22 ≈ 6,1 contro 0,45 · 308,15 / 30 ≈ 4,6</div>
+  <p>Con una pompa di calore la curva climatica vale due volte: dà all'impianto il calore che serve e, abbassando la mandata, alza il COP. Nelle centraline vere la curva ha una leggera curvatura (le emissioni dei terminali non sono lineari) e si tara con due parametri: la pendenza e lo spostamento parallelo. La taratura giusta si trova in esercizio, nelle prime settimane fredde: è un lavoro di messa in servizio, non di disegno.</p>
+</section>
+
+<section class="ch" id="c3">
+  <div class="ch-h"><span class="ch-n">3</span><h2>La curva, da provare</h2></div>
+  <p>Con il puntatore cambia la temperatura esterna: il punto scorre sulla curva incisa nella centralina, la miscelatrice ruota e il termometro legge la mandata. Con un clic si passa dalla curva del pavimento (35 °C di progetto) a quella di un impianto a radiatori (55 °C).</p>
+  <div id="fig-box" class="noprint"></div>
+</section>
+
+<section class="ch" id="c4">
+  <div class="ch-h"><span class="ch-n">4</span><h2>Ambiente per ambiente</h2></div>
+  <p>La direttiva (UE) 2018/844 sulla prestazione energetica nell'edilizia (oggi rifusa nella direttiva (UE) 2024/1275) chiede che gli edifici nuovi abbiano dispositivi autoregolanti che controllino separatamente la temperatura in ogni vano (o, dove giustificato, in una zona riscaldata); negli edifici esistenti si installano quando si sostituisce il generatore, se è tecnicamente ed economicamente fattibile.</p>
+  <ul>
+    <li><b>Valvole termostatiche</b> sui radiatori: semplici, senza energia, agiscono sulla portata del singolo terminale.</li>
+    <li><b>Termostati di ambiente con attuatori</b> sui circuiti dei pannelli radianti: il termostato del locale apre e chiude il circuito al collettore.</li>
+    <li><b>Sistemi di automazione</b> (BACS): collegano i livelli, con orari, sonde e allarmi su un'unica supervisione. La UNI EN ISO 52120-1 ne classifica le funzioni in base al loro effetto sull'energia.</li>
+  </ul>
+  <p>Un pavimento radiante ha molta inerzia: risponde in ore, non in minuti. Non conviene inseguire con lui il sole del pomeriggio o un'aula che si riempie; meglio lasciargli il «fondo» e affidare le variazioni rapide all'aria. Ha però una buona autoregolazione: con la superficie a 21 °C e l'aria a 20 °C, se la stanza sale a 21 °C il pavimento smette quasi da solo di cedere calore.</p>
+</section>
+
+<section class="ch" id="c5">
+  <div class="ch-h"><span class="ch-n">5</span><h2>Orari, presenza, aria</h2></div>
+  <ul>
+    <li><b>Programmi orari.</b> Una scuola è vuota la sera, nei fine settimana e nelle vacanze: attenuazioni e spegnimenti si programmano sul calendario, con un anticipo d'accensione che tenga conto dell'inerzia.</li>
+    <li><b>Ventilazione sulla presenza.</b> La portata d'aria esterna dell'aula (796 m³/h nell'esempio dell'articolo 1) serve quando l'aula è piena. Con una sonda di CO₂ o un sensore di presenza la ventilazione scende quando l'aula si svuota, e con lei il calore per scaldare l'aria: la voce più grande del fabbisogno.</li>
+    <li><b>Misurare.</b> Contatori di energia sui circuiti principali dicono se l'impianto fa quello che il progetto prevede. Senza misure, la regolazione si tara a sensazione.</li>
+  </ul>
+</section>
+
+<section class="ch" id="c6">
+  <div class="ch-h"><span class="ch-n">6</span><h2>Nell'esempio</h2></div>
+  <p>Per la scuola di esempio: curva climatica sul circuito dei pannelli (35 °C a −12 °C, poi a scendere); termostato in ogni aula sugli attuatori dei circuiti radianti; ventilazione modulata sulla CO₂ dell'aula; programmi orari e calendario scolastico nella supervisione; contatori di energia sulla pompa di calore e sui circuiti.</p>
+  <div class="box tip"><b>La scheda per i prossimi articoli</b><p>Il riscaldamento è completo: fabbisogno, linea d'azione, generazione, accumulo, distribuzione, emissione e regolazione. Dal prossimo articolo si passa all'acqua che si beve e che si usa: l'acqua calda sanitaria e la Legionella (articolo 8).</p></div>
+</section>
+
+<section class="ch" id="fonti">
+  <div class="ch-h"><span class="ch-n">≡</span><h2>Fonti</h2></div>
+  <ul class="src">
+    <li>Direttiva (UE) 2018/844, che modifica la direttiva 2010/31/UE sulla prestazione energetica nell'edilizia, articolo 8: <a href="https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:32018L0844:IT:HTML" target="_blank" rel="noopener">testo su EUR-Lex</a>.</li>
+    <li>UNI EN ISO 52120-1, contributo dell'automazione degli edifici (BACS) alla prestazione energetica.</li>
+    <li>Il modello di COP riprende l'<a href="termosanitario-02-linea-d-azione.html">articolo 2</a>.</li>
+  </ul>
+  <div class="box idea"><b>Come è nato questo articolo</b><p>È uno dei «manuali di Claude»: l'ha scritto Claude, l'assistente di intelligenza artificiale di Anthropic, seguendo le indicazioni del curatore. L'esempio è inventato e i numeri sono tondi.</p></div>
+</section>
+
+<nav class="pn noprint" aria-label="Articoli della serie"><a class="btn ghost" href="termosanitario-06-emissione.html">← 6 · Emissione</a><span></span></nav>
+<p class="foot">BIM News · L'impianto termosanitario, passo per passo · 7 · La regolazione: quanto calore, quando e dove · edizione novembre 2026</p>
+</main>
+</div>
+<script>
+window.addEventListener("message",function(e){ if(e.data&&e.data.figH&&e.data.fig==="ts-climatica"){ var g=document.getElementById("fig-frame"); if(g)g.style.height=(e.data.figH+4)+"px"; } });
+(function(){ var box=document.getElementById("fig-box"); if(!box)return; var lite=false; try{ var m=localStorage.getItem("versione"),c=navigator.connection,a=matchMedia("(prefers-reduced-motion: reduce)").matches||(c&&(c.saveData||/(^|-)2g$/.test(c.effectiveType||""))); lite=m?m==="essenziale":a; }catch(x){}
+  if(lite){ box.innerHTML='<p class="fig-alt"><a href="figure/ts-climatica.html">Apri la figura interattiva</a> (pagina a parte).</p>'; return; }
+  var f=document.createElement("iframe"); f.id="fig-frame"; f.className="fig-frame"; f.title="Figura interattiva: la curva climatica"; f.loading="lazy"; f.src="figure/ts-climatica.html?embed=1"; box.appendChild(f); })();
+</script>
+</body>
+</html>
