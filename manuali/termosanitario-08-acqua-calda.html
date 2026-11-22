@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>L'acqua calda sanitaria e la Legionella · I manuali di BIM News</title>
+<meta name="description" content="Ottavo articolo della serie sull'impianto termosanitario: l'acqua calda sanitaria. Produzione con accumulo o istantanea, ricircolo, temperature delle linee guida sulla legionellosi e conseguenze per una pompa di calore, con una figura interattiva.">
+<link rel="stylesheet" href="manuale.css">
+<script>try{var t=localStorage.getItem("tema-2026");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+<style>
+.btn.ghost,:root[data-theme="dark"] .btn.ghost{color:var(--accent)}
+.formula{font-family:var(--mono);background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:.9rem 1.1rem;margin:.6rem 0 1rem;font-size:.95rem;line-height:1.75;overflow-x:auto}
+.fig-frame{width:100%;border:0;min-height:640px;display:block;background:transparent;margin:.4rem 0 1rem}
+.fig-alt{margin:.4rem 0 1rem}
+.series{display:flex;flex-wrap:wrap;gap:.35rem;margin:.4rem 0 0}
+.series span,.series a{font-family:var(--mono);font-size:.72rem;border:1px solid var(--line);border-radius:999px;padding:.15rem .55rem;color:var(--muted);text-decoration:none}
+.series a{color:var(--accent);border-color:color-mix(in srgb,var(--accent) 45%,var(--line))}
+.series span.on{background:var(--accent);border-color:var(--accent);color:#fff}
+:root[data-theme="dark"] .series span.on{color:#10141b}
+.num td:nth-child(n+2){font-family:var(--mono);white-space:nowrap}
+.pn{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;margin:1.4rem 0 .6rem}
+</style>
+</head>
+<body>
+<div class="topbar"><div class="in"><a class="back" href="../#mep">← BIM News · MEP</a><span class="sp"></span><a class="btn ghost noprint" href="#c3">La figura</a><a class="btn noprint" href="#c6">Nell'esempio</a></div></div>
+<div class="layout">
+<nav class="toc" aria-label="Indice">
+  <b>Indice</b>
+  <ol><li><a href="#c1">1 · Un'acqua diversa</a></li><li><a href="#c2">2 · Il nemico: la Legionella</a></li><li><a href="#c3">3 · Le temperature, da provare</a></li><li><a href="#c4">4 · Accumulo, ricircolo, istantaneo</a></li><li><a href="#c5">5 · Con una pompa di calore</a></li><li><a href="#c6">6 · Nell'esempio</a></li><li><a href="#fonti">Fonti</a></li></ol>
+</nav>
+<main>
+<header class="cover">
+  <div>
+    <span class="kick">L'impianto termosanitario, passo per passo · 8</span>
+    <h1>L'acqua calda sanitaria e la Legionella</h1>
+    <p>L'acqua calda dei rubinetti non è acqua dell'impianto: è acqua che si beve, si tocca, si respira nelle docce. Per questo il suo progetto ha una regola in più di tutte le altre: non lasciare spazio a un batterio.</p>
+    <div class="series" aria-label="La serie"><a href="termosanitario-01-fabbisogno.html">1 Fabbisogno</a><a href="termosanitario-02-linea-d-azione.html">2 Linea d'azione</a><a href="termosanitario-03-generazione.html">3 Generazione</a><a href="termosanitario-04-accumulo.html">4 Accumulo</a><a href="termosanitario-05-distribuzione.html">5 Distribuzione</a><a href="termosanitario-06-emissione.html">6 Emissione</a><a href="termosanitario-07-regolazione.html">7 Regolazione</a><span class="on">8 Acqua calda</span><span>9 Idrico</span><span>10 Scarichi</span><span>11 Nel modello</span></div>
+  </div>
+  <svg viewBox="0 0 360 240" role="img" aria-label="Un bollitore e un termometro con la fascia di rischio tra 20 e 50 gradi"><rect class="s-as" x="10" y="10" width="340" height="220" rx="22"/><rect x="60" y="50" width="90" height="150" rx="40" style="fill:var(--soft);stroke:var(--ink);stroke-width:2"/><rect x="240" y="40" width="24" height="160" rx="12" style="fill:none;stroke:var(--ink);stroke-width:2"/><rect x="244" y="110" width="16" height="60" style="fill:var(--a5s);stroke:var(--a5)"/><path d="M232 100h40M232 88h40" style="stroke:var(--accent);stroke-width:3"/><text class="s-tm" x="276" y="92">60</text><text class="s-tm" x="276" y="142">20–50</text></svg>
+</header>
+
+<div class="box bim"><b>Dove eravamo</b><p>Con l'<a href="termosanitario-07-regolazione.html">articolo 7</a> si è chiuso il riscaldamento dell'aula di esempio. Ora si passa all'acqua sanitaria: prima quella calda, poi (articolo 9) la rete dell'acqua fredda.</p></div>
+
+<section class="ch" id="c1">
+  <div class="ch-h"><span class="ch-n">1</span><h2>Un'acqua diversa</h2></div>
+  <p class="lead">L'acqua del riscaldamento gira chiusa nei tubi per anni; l'acqua calda sanitaria arriva dall'acquedotto, si scalda, esce dai rubinetti e se ne va. È acqua destinata al consumo umano: la sua qualità fino al rubinetto è un obbligo di legge.</p>
+  <ul>
+    <li><b>Materiali</b> adatti al contatto con l'acqua potabile e alla temperatura (tubi, raccordi, guarnizioni, accumuli con trattamento interno).</li>
+    <li><b>Separazione</b> netta dal circuito di riscaldamento: il calore passa attraverso uno scambiatore (un serpentino nel bollitore o uno scambiatore a piastre), mai mescolando le due acque.</li>
+    <li><b>Fabbisogno</b> stimato in base all'uso: in una scuola contano poco (lavabi e pulizie), in una palestra con docce, in una mensa o in un ospedale molto. La UNI 9182 e la UNI/TS 11300-2 danno i metodi per stimare portate e fabbisogni.</li>
+  </ul>
+</section>
+
+<section class="ch" id="c2">
+  <div class="ch-h"><span class="ch-n">2</span><h2>Il nemico: la Legionella</h2></div>
+  <p>La Legionella è un batterio che vive nelle acque e si moltiplica bene tra 20 e 50 °C, soprattutto dove l'acqua ristagna e si formano depositi e biofilm. L'infezione (legionellosi) si prende respirando goccioline d'acqua contaminata, per esempio sotto la doccia. Le «Linee guida per la prevenzione e il controllo della legionellosi» approvate in Conferenza Stato-Regioni il 7 maggio 2015 danno le regole di progetto e di gestione. Per gli impianti di acqua calda con ricircolo:</p>
+  <div class="formula">accumulo: almeno 60 °C<br>alla base di ogni colonna di ricircolo: non meno di 50 °C<br>fascia da evitare: 20–50 °C &nbsp;&nbsp;&nbsp; acqua fredda: non oltre 20 °C</div>
+  <p>Le stesse regole valgono, al contrario, per l'acqua fredda: tubi che passano vicino a quelli caldi o in locali caldi, senza isolamento, la portano nella fascia di rischio. E valgono per i <b>rami morti</b>: tratti di tubo dove l'acqua non scorre mai (un rubinetto tolto, un ramo previsto per un ampliamento mai fatto) sono il posto ideale per il batterio. Il progetto li evita; la manutenzione li cerca.</p>
+</section>
+
+<section class="ch" id="c3">
+  <div class="ch-h"><span class="ch-n">3</span><h2>Le temperature, da provare</h2></div>
+  <p>Con il puntatore si cambia la temperatura dell'accumulo; il secondo termometro legge l'acqua alla base della colonna, dopo il giro del ricircolo. Con un clic si spegne il ricircolo e si vede che cosa succede all'acqua che resta ferma nei tubi.</p>
+  <div id="fig-box" class="noprint"></div>
+</section>
+
+<section class="ch" id="c4">
+  <div class="ch-h"><span class="ch-n">4</span><h2>Accumulo, ricircolo, istantaneo</h2></div>
+  <ul>
+    <li><b>Con accumulo.</b> Un bollitore tiene pronta l'acqua calda per i picchi di prelievo: il generatore può essere più piccolo, ma il volume va tenuto caldo (60 °C) e protetto, con trattamenti di disinfezione termica quando servono.</li>
+    <li><b>Il ricircolo.</b> In un edificio grande, senza ricircolo, si aspetterebbe minuti prima di avere acqua calda ai rubinetti lontani, sprecando acqua; e l'acqua ferma nei tubi si raffredderebbe nella fascia di rischio. La rete di ricircolo riporta l'acqua all'accumulo e tiene calda la distribuzione. Va bilanciata colonna per colonna, perché la temperatura alla base di ognuna rispetti il minimo, e isolata.</li>
+    <li><b>Istantaneo.</b> Uno scambiatore scalda l'acqua sanitaria nel momento in cui serve, prendendo il calore da un accumulo di acqua tecnica (dell'impianto). Il volume di acqua sanitaria ferma si riduce a quello dei tubi. Con le stazioni d'utenza, uno scambiatore per appartamento o per gruppo di servizi, la rete di acqua sanitaria calda diventa corta.</li>
+    <li><b>Al rubinetto.</b> Un'acqua a 50–60 °C scotta: miscelatori termostatici vicini ai punti di prelievo, soprattutto dove ci sono bambini, anziani o persone fragili, limitano la temperatura di uscita senza abbassare quella della rete.</li>
+  </ul>
+</section>
+
+<section class="ch" id="c5">
+  <div class="ch-h"><span class="ch-n">5</span><h2>Con una pompa di calore</h2></div>
+  <p>Per una pompa di calore 60 °C sono tanti: il COP scende (articolo 2). Con 7 °C fuori:</p>
+  <div class="formula">mandata 35 °C: COP ≈ 0,45 · 308,15 / 28 ≈ 4,9<br>mandata 60 °C: COP ≈ 0,45 · 333,15 / 53 ≈ 2,8</div>
+  <p>Le soluzioni comuni sono tre: una pompa di calore dedicata all'acqua sanitaria, che lavora solo quando serve; un'integrazione (resistenza elettrica o caldaia) per l'ultimo tratto di temperatura e per i cicli di disinfezione termica; oppure un sistema istantaneo che riduce al minimo il volume da tenere a 60 °C. In ogni caso la produzione di acqua sanitaria si aggiunge alla potenza della generazione (articolo 3), con la sua priorità.</p>
+</section>
+
+<section class="ch" id="c6">
+  <div class="ch-h"><span class="ch-n">6</span><h2>Nell'esempio</h2></div>
+  <p>Una scuola senza palestra né mensa ha pochi prelievi di acqua calda, sparsi: lavabi dei bagni e locali di pulizia. Per la scuola di esempio una soluzione sensata è produrre l'acqua calda vicino ai punti di prelievo, con piccoli accumuli elettrici o a pompa di calore vicini ai servizi, evitando una lunga rete di ricircolo che resterebbe quasi sempre ferma. Se ci fosse una palestra con docce, servirebbe una produzione centralizzata con accumulo a 60 °C e ricircolo, progettata secondo le linee guida.</p>
+  <div class="box tip"><b>La scheda per i prossimi articoli</b><p>Acqua calda: produzione locale vicino ai servizi, niente rami morti, acqua fredda sotto i 20 °C. Il prossimo passo è la rete dell'acqua fredda: pressioni, portate, protezioni (articolo 9).</p></div>
+</section>
+
+<section class="ch" id="fonti">
+  <div class="ch-h"><span class="ch-n">≡</span><h2>Fonti</h2></div>
+  <ul class="src">
+    <li>Linee guida per la prevenzione e il controllo della legionellosi, Conferenza Stato-Regioni, 7 maggio 2015: <a href="https://www.comune.livorno.it/s3/3612/allegati/argomenti/igiene-pubblica/legionella/linee_guida_prevenzione_e_controllo_legionellosi.pdf" target="_blank" rel="noopener">testo (PDF)</a>.</li>
+    <li>UNI 9182, impianti di alimentazione e distribuzione d'acqua fredda e calda; UNI/TS 11300-2, fabbisogni di energia per l'acqua calda sanitaria.</li>
+    <li>Il modello di COP riprende l'<a href="termosanitario-02-linea-d-azione.html">articolo 2</a>.</li>
+  </ul>
+  <div class="box idea"><b>Come è nato questo articolo</b><p>È uno dei «manuali di Claude»: l'ha scritto Claude, l'assistente di intelligenza artificiale di Anthropic, seguendo le indicazioni del curatore. L'esempio è inventato e i numeri sono tondi.</p></div>
+</section>
+
+<nav class="pn noprint" aria-label="Articoli della serie"><a class="btn ghost" href="termosanitario-07-regolazione.html">← 7 · Regolazione</a><span></span></nav>
+<p class="foot">BIM News · L'impianto termosanitario, passo per passo · 8 · L'acqua calda sanitaria e la Legionella · edizione novembre 2026</p>
+</main>
+</div>
+<script>
+window.addEventListener("message",function(e){ if(e.data&&e.data.figH&&e.data.fig==="ts-legionella"){ var g=document.getElementById("fig-frame"); if(g)g.style.height=(e.data.figH+4)+"px"; } });
+(function(){ var box=document.getElementById("fig-box"); if(!box)return; var lite=false; try{ var m=localStorage.getItem("versione"),c=navigator.connection,a=matchMedia("(prefers-reduced-motion: reduce)").matches||(c&&(c.saveData||/(^|-)2g$/.test(c.effectiveType||""))); lite=m?m==="essenziale":a; }catch(x){}
+  if(lite){ box.innerHTML='<p class="fig-alt"><a href="figure/ts-legionella.html">Apri la figura interattiva</a> (pagina a parte).</p>'; return; }
+  var f=document.createElement("iframe"); f.id="fig-frame"; f.className="fig-frame"; f.title="Figura interattiva: acqua calda e Legionella"; f.loading="lazy"; f.src="figure/ts-legionella.html?embed=1"; box.appendChild(f); })();
+</script>
+</body>
+</html>
