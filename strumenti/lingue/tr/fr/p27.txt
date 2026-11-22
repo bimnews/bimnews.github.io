@@ -1,0 +1,15 @@
+v1702	MEP
+v1703	Les installations des bâtiments : mécaniques, électriques et hydrauliques (en anglais MEP : Mechanical, Electrical, Plumbing). La partie Didactique explique leur fonctionnement, des besoins du bâtiment jusqu'aux données de la maquette BIM ; les Exemples réunissent des guides et des outils pour le travail.
+v1704	Didactique
+v1705	Exemples
+v1706	Des séries d'articles qui expliquent une installation pas à pas, avec un exemple qui continue d'un article à l'autre et des figures interactives. Les exemples sont génériques et les chiffres ronds : ils servent à comprendre les mécanismes et ne remplacent pas le calcul d'un vrai projet.
+v1707	L'installation thermique et sanitaire, pas à pas · 1 · Les besoins
+v1708	Avant de choisir une installation, on comprend ce dont le bâtiment a besoin : chaleur en hiver, air, eau chaude et eau, puissance et énergie.
+v1709	Une salle de classe d'exemple, calculée pas à pas avec les normes de référence, montre que dans une école bien isolée le besoin de chaleur dépend davantage de l'air que des parois. Avec une figure interactive à essayer : on change la température extérieure et on active ou désactive la récupération de chaleur.
+v1710	<span class="tag ok">Publié</span><a class="man-btn" href="manuali/termosanitario-01-fabbisogno.html">Lire l'article</a><a class="man-btn ghost" href="manuali/termosanitario-01-fabbisogno.html#c5">La figure</a>
+v1711	Guides, checklists et outils pour le travail sur les installations, écrits avec Claude, l'assistant d'intelligence artificielle d'Anthropic.
+v1712	Les installations expliquées pas à pas, et des exemples à utiliser
+v1713	L'installation thermique et sanitaire, pas à pas
+v1714	Checklist, conception électrique, incendie
+v1715	publiés
+v1716	publié

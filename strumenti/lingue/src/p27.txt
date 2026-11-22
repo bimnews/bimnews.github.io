@@ -1,0 +1,15 @@
+v1702	MEP
+v1703	Gli impianti degli edifici, meccanici, elettrici e idraulici (in inglese MEP: Mechanical, Electrical, Plumbing). Nella Didattica si spiega come funzionano, dal fabbisogno dell'edificio fino ai dati del modello BIM; negli Esempi ci sono guide e strumenti da usare nel lavoro.
+v1704	Didattica
+v1705	Esempi
+v1706	Serie di articoli che spiegano un impianto passo per passo, con un esempio che continua da un articolo all'altro e figure interattive. Gli esempi sono generici e i numeri tondi: servono a capire i meccanismi, non sostituiscono il calcolo di un progetto vero.
+v1707	L'impianto termosanitario, passo per passo · 1 · Il fabbisogno
+v1708	Prima di scegliere un impianto si capisce di che cosa ha bisogno l'edificio: calore d'inverno, aria, acqua calda e acqua, potenza ed energia.
+v1709	Un'aula di esempio calcolata passo per passo, con le norme di riferimento, mostra che in una scuola ben isolata il fabbisogno di calore lo decide l'aria più delle pareti. Con una figura interattiva da provare: si cambia la temperatura esterna e si accende o si spegne il recupero di calore.
+v1710	<span class="tag ok">Pubblicato</span><a class="man-btn" href="manuali/termosanitario-01-fabbisogno.html">Leggi l'articolo</a><a class="man-btn ghost" href="manuali/termosanitario-01-fabbisogno.html#c5">La figura</a>
+v1711	Guide, checklist e strumenti per il lavoro sugli impianti, scritti con Claude, l'assistente di intelligenza artificiale di Anthropic.
+v1712	Impianti spiegati passo per passo, ed esempi da usare
+v1713	L'impianto termosanitario, passo per passo
+v1714	Checklist, progettazione elettrica, antincendio
+v1715	pubblicati
+v1716	pubblicato
