@@ -1,0 +1,58 @@
+{"titolo": "L'emissione: come il calore entra nella stanza", "descrizione": "Sesto articolo della serie sull'impianto termosanitario: i terminali. Pavimento radiante e curva della UNI EN 1264, radiatori e UNI EN 442, ventilconvettori e batterie, con una figura interattiva sul pavimento che scalda.", "sommario": "Il terminale è l'ultima tappa del calore e l'unica che chi abita l'edificio vede o sente. Ogni terminale ha la sua legge: conoscerla dice a che temperatura deve arrivare l'acqua e quanta superficie serve.", "indice": [["c1", "1 · Irraggiamento e convezione"], ["c2", "2 · Il pavimento radiante"], ["c3", "3 · Il pavimento, da provare"], ["c4", "4 · I radiatori"], ["c5", "5 · Ventilconvettori e batterie"], ["c6", "6 · Nell'esempio"]], "figura": {"nome": "ts-pavimento", "titolo": "il pavimento che scalda"}, "ancora_figura": "c3", "ancora_chiave": "c6", "etichetta_chiave": "Nell'esempio", "copertina": "<svg viewBox=\"0 0 360 240\" role=\"img\" aria-label=\"Un pavimento con i tubi e il calore che sale\"><rect class=\"s-as\" x=\"10\" y=\"10\" width=\"340\" height=\"220\" rx=\"22\"/><rect x=\"40\" y=\"150\" width=\"280\" height=\"40\" rx=\"6\" style=\"fill:var(--soft);stroke:var(--ink);stroke-width:2\"/><circle cx=\"80\" cy=\"172\" r=\"7\" class=\"s-a\"/><circle cx=\"130\" cy=\"172\" r=\"7\" class=\"s-a\"/><circle cx=\"180\" cy=\"172\" r=\"7\" class=\"s-a\"/><circle cx=\"230\" cy=\"172\" r=\"7\" class=\"s-a\"/><circle cx=\"280\" cy=\"172\" r=\"7\" class=\"s-a\"/><path d=\"M90 135V70M150 135V60M210 135V70M270 135V60\" style=\"stroke:var(--accent);stroke-width:3;stroke-dasharray:4 8;stroke-linecap:round\"/><text class=\"s-tm\" x=\"130\" y=\"214\">29 °C</text></svg>"}
+
+<div class="box bim"><b>Dove eravamo</b><p>Nell'<a href="termosanitario-05-distribuzione.html">articolo 5</a> l'acqua è arrivata alle aule: 71 l/h a 35 °C per i pannelli di ogni aula, 373 l/h per la batteria che scalda l'aria di ventilazione. Ora il calore deve passare dall'acqua alla stanza.</p></div>
+
+<section class="ch" id="c1">
+  <div class="ch-h"><span class="ch-n">1</span><h2>Irraggiamento e convezione</h2></div>
+  <p class="lead">Un terminale cede calore in due modi: scaldando l'aria che lo lambisce (<b>convezione</b>) e scaldando direttamente le superfici e le persone che «vede» (<b>irraggiamento</b>). La proporzione tra i due decide come si sta nella stanza.</p>
+  <ul>
+    <li><b>Superfici radianti</b> (pavimento, soffitto, parete): grandi e poco calde, scaldano in buona parte per irraggiamento. L'aria resta più uniforme dal pavimento al soffitto.</li>
+    <li><b>Radiatori:</b> piccoli e più caldi, scaldano in parte per irraggiamento e in parte per convezione; creano un moto d'aria che sale lungo la parete.</li>
+    <li><b>Ventilconvettori e batterie:</b> quasi solo convezione, con un ventilatore. Rispondono in fretta e possono anche raffrescare e deumidificare.</li>
+  </ul>
+  <p>Per il comfort contano tutte e due le temperature: quella dell'aria e la media delle superfici intorno. La UNI EN ISO 7730 tratta il benessere termico (indici PMV e PPD) e i disagi locali, come la differenza di temperatura tra testa e caviglie o un pavimento troppo caldo.</p>
+</section>
+
+<section class="ch" id="c2">
+  <div class="ch-h"><span class="ch-n">2</span><h2>Il pavimento radiante</h2></div>
+  <p>Un pavimento radiante è fatto di strati: la struttura, un isolante che manda il calore verso l'alto, i tubi posati a passo regolare e un massetto che li copre e distribuisce il calore. La UNI EN 1264 ne descrive il dimensionamento con una curva caratteristica che lega il flusso di calore alla differenza tra la superficie e l'aria:</p>
+  <div class="formula">q = 8,92 · (θs − θi)^1,1 &nbsp;&nbsp;&nbsp; [W/m²]<br>θs = temperatura media della superficie, θi = temperatura dell'aria (20 °C)<br><br>Limiti della temperatura superficiale: 29 °C dove si sta, 35 °C nella fascia perimetrale, 33 °C nei bagni<br>A 29 °C: q = 8,92 · 9^1,1 ≈ 100 W/m² &nbsp;&nbsp; a 35 °C: q = 8,92 · 15^1,1 ≈ 175 W/m²</div>
+  <p>I limiti sono fisiologici: un pavimento più caldo di così stanca i piedi e dà fastidio. Per questo un pavimento radiante si sposa con gli edifici ben isolati: il loro fabbisogno per metro quadrato sta molto sotto i 100 W/m². Dove non basta, si aggiunge la fascia perimetrale più calda lungo le pareti finestrate o un altro terminale.</p>
+  <div class="formula">Aula di esempio: 0,41 kW / 56 m² ≈ 7,3 W/m²<br>θs = 20 + (7,3 / 8,92)^(1/1,1) ≈ 20,8 °C</div>
+  <p>La temperatura dell'acqua che serve per ottenere quella superficie dipende dal passo dei tubi, dallo spessore e dal materiale del massetto e del rivestimento: le tabelle dei produttori, costruite secondo la UNI EN 1264, danno la resa di ogni sistema per ogni combinazione. Un rivestimento isolante (moquette, legno spesso) chiede acqua più calda.</p>
+</section>
+
+<section class="ch" id="c3">
+  <div class="ch-h"><span class="ch-n">3</span><h2>Il pavimento, da provare</h2></div>
+  <p>Con il puntatore si sceglie quanto calore deve dare il pavimento; il termometro legge la temperatura della superficie che serve. Con un clic si passa dalla zona dove si sta (limite 29 °C) alla fascia perimetrale (35 °C).</p>
+  <div id="fig-box" class="noprint"></div>
+</section>
+
+<section class="ch" id="c4">
+  <div class="ch-h"><span class="ch-n">4</span><h2>I radiatori</h2></div>
+  <p>I radiatori sono provati secondo la UNI EN 442, che dà la potenza nominale Φ50 con una differenza di 50 K tra la temperatura media dell'acqua e l'aria. Con differenze diverse la potenza cambia con un esponente n, tipico intorno a 1,3 (lo dichiara il produttore):</p>
+  <div class="formula">Φ = Φ50 · (ΔT / 50)^n<br><br>Un radiatore da 1000 W nominali (Φ50), n = 1,3:<br>acqua a 35/30 °C, media 32,5 °C → ΔT = 12,5 K → Φ = 1000 · 0,25^1,3 ≈ 165 W</div>
+  <p>Lo stesso radiatore, con l'acqua di una pompa di calore, dà circa un sesto della potenza di targa. È il motivo per cui, nelle ristrutturazioni, prima di passare a una pompa di calore si verifica radiatore per radiatore se la potenza basta a una temperatura più bassa, magari dopo aver isolato l'edificio.</p>
+</section>
+
+<section class="ch" id="c5">
+  <div class="ch-h"><span class="ch-n">5</span><h2>Ventilconvettori e batterie</h2></div>
+  <p>Un ventilconvettore è una batteria alettata con un ventilatore che ci spinge l'aria della stanza. Dà molta potenza in poco spazio anche con acqua tiepida, e con acqua fredda raffresca e toglie umidità (serve allora lo scarico della condensa). Le rese si leggono nelle tabelle del produttore per ogni velocità del ventilatore e temperatura dell'acqua; conta anche il rumore, che in un'aula o in un ufficio è un requisito di progetto.</p>
+  <p>La batteria di un'unità di trattamento aria fa lo stesso lavoro sull'aria esterna di ventilazione: nell'aula di esempio porta l'aria dalla temperatura di uscita del recuperatore (circa 12 °C con −12 °C fuori, articolo 2) a quella di immissione. Il calcolo è quello dell'articolo 1: Φ = ρ · cp · V̇ · Δθ.</p>
+</section>
+
+<section class="ch" id="c6">
+  <div class="ch-h"><span class="ch-n">6</span><h2>Nell'esempio</h2></div>
+  <p>Nelle aule di esempio il pavimento radiante deve dare pochi watt per metro quadrato: la superficie resta poco sopra i 20 °C, ben lontana dal limite. Il grosso del lavoro lo fa la batteria dell'aria di ventilazione. In pratica il pavimento copre la trasmissione e tiene calde le superfici; l'aria arriva già alla temperatura giusta.</p>
+  <div class="box tip"><b>La scheda per i prossimi articoli</b><p>Aula: pavimento 7,3 W/m² (superficie circa 20,8 °C), batteria 2,17 kW. Il prossimo passo è decidere quando e quanto scaldare: la regolazione (articolo 7).</p></div>
+</section>
+
+<section class="ch" id="fonti">
+  <div class="ch-h"><span class="ch-n">≡</span><h2>Fonti</h2></div>
+  <ul class="src">
+    <li>UNI EN 1264, sistemi radianti alimentati ad acqua: curva caratteristica q = 8,92 · (θs − θi)^1,1 e limiti della temperatura superficiale (29, 35 e 33 °C).</li>
+    <li>UNI EN 442, radiatori e convettori: potenza nominale a ΔT 50 K ed esponente caratteristico.</li>
+    <li>UNI EN ISO 7730, ergonomia degli ambienti termici: indici PMV e PPD e disagio locale.</li>
+  </ul>
+  <div class="box idea"><b>Come è nato questo articolo</b><p>È uno dei «manuali di Claude»: l'ha scritto Claude, l'assistente di intelligenza artificiale di Anthropic, seguendo le indicazioni del curatore. L'esempio è inventato e i numeri sono tondi.</p></div>
+</section>
