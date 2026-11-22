@@ -1,0 +1,64 @@
+{"titolo": "Accumulo e separazione: l'acqua che aspetta e l'acqua che si dilata", "descrizione": "Quarto articolo della serie sull'impianto termosanitario: accumulo tecnico, separatore idraulico e vaso di espansione. Perché una pompa di calore ha bisogno di un volume d'acqua, come si separano i circuiti, come si dimensiona il vaso, con una figura interattiva.", "sommario": "Tra il generatore e i terminali c'è un pezzo d'impianto che non scalda nessuno ma tiene in piedi tutto il resto: l'accumulo che dà respiro alla macchina, il separatore che rende indipendenti i circuiti, il vaso che assorbe la dilatazione dell'acqua.", "indice": [["c1", "1 · Perché serve un volume d'acqua"], ["c2", "2 · Separare i circuiti"], ["c3", "3 · L'acqua si dilata"], ["c4", "4 · Il vaso, da provare"], ["c5", "5 · Dimensionare il vaso"], ["c6", "6 · Nell'esempio"]], "figura": {"nome": "ts-vaso", "titolo": "il vaso di espansione"}, "ancora_figura": "c4", "ancora_chiave": "c6", "etichetta_chiave": "Nell'esempio", "copertina": "<svg viewBox=\"0 0 360 240\" role=\"img\" aria-label=\"Un accumulo e un vaso di espansione con la membrana\"><rect class=\"s-as\" x=\"10\" y=\"10\" width=\"340\" height=\"220\" rx=\"22\"/><rect x=\"60\" y=\"50\" width=\"90\" height=\"150\" rx=\"40\" style=\"fill:var(--soft);stroke:var(--ink);stroke-width:2\"/><path d=\"M66 90h78\" style=\"stroke:var(--a5);stroke-width:3\"/><path d=\"M66 160h78\" style=\"stroke:var(--a2);stroke-width:3\"/><rect x=\"210\" y=\"80\" width=\"80\" height=\"110\" rx=\"36\" style=\"fill:var(--a2s);stroke:var(--a2);stroke-width:2\"/><path d=\"M214 140q36 -24 72 0\" style=\"fill:none;stroke:var(--ink);stroke-width:3\"/><text class=\"s-tm\" x=\"76\" y=\"222\">accumulo</text><text class=\"s-tm\" x=\"232\" y=\"222\">vaso</text></svg>"}
+
+<div class="box bim"><b>Dove eravamo</b><p>Nell'<a href="termosanitario-03-generazione.html">articolo 3</a> la generazione dell'esempio è diventata una pompa di calore aria-acqua a velocità variabile, mandata 35 °C, ritorno 30 °C. Restava aperta una domanda: come proteggerla dagli avvii brevi e dagli sbrinamenti.</p></div>
+
+<section class="ch" id="c1">
+  <div class="ch-h"><span class="ch-n">1</span><h2>Perché serve un volume d'acqua</h2></div>
+  <p class="lead">Un impianto con poca acqua è nervoso: la temperatura sale e scende in fretta, e il generatore si accende e si spegne di continuo. Per una caldaia è uno spreco; per una pompa di calore è anche un'usura del compressore.</p>
+  <ul>
+    <li><b>Avvii brevi.</b> Quando il carico è più basso della potenza minima della macchina (in primavera e in autunno quasi sempre), l'acqua si scalda subito e la macchina si spegne. Un volume d'acqua in più allunga ogni ciclo.</li>
+    <li><b>Sbrinamento.</b> Mentre scioglie la brina della batteria esterna, la pompa di calore prende calore dall'impianto invece di dargliene. Quel calore deve essere disponibile da qualche parte.</li>
+    <li><b>Circuiti che si chiudono.</b> Quando le valvole termostatiche o di zona chiudono, la portata minima che serve alla macchina deve poter passare comunque.</li>
+  </ul>
+  <p>Il produttore della pompa di calore dichiara il <b>contenuto d'acqua minimo</b> dell'impianto e la <b>portata minima</b> al generatore: sono dati della scheda, non regole generali. Se l'impianto da solo non li garantisce, si aggiunge un <b>accumulo tecnico</b> (o inerziale): un serbatoio d'acqua dell'impianto, isolato, messo in serie sul ritorno o in parallelo come separatore.</p>
+</section>
+
+<section class="ch" id="c2">
+  <div class="ch-h"><span class="ch-n">2</span><h2>Separare i circuiti</h2></div>
+  <p>In un impianto centralizzato ci sono di solito due circuiti: il <b>primario</b>, con la pompa del generatore, e uno o più <b>secondari</b>, con le pompe che vanno ai terminali. Se si collegano direttamente, le pompe si disturbano: una spinge contro l'altra e le portate cambiano ogni volta che una zona apre o chiude.</p>
+  <p>Il <b>separatore idraulico</b> (o un accumulo usato come separatore) è un tratto di tubo largo, con perdite di carico quasi nulle, a cui si collegano i due circuiti. Ognuna delle pompe vede solo il suo circuito. Il prezzo da pagare è che, se le portate sono diverse, nel separatore l'acqua si mescola:</p>
+  <div class="formula">Se la portata secondaria Qs è maggiore della primaria Qp:<br>Tmandata,s = (Qp · Tmandata,p + (Qs − Qp) · Tritorno,s) / Qs<br><br>Esempio: Qp = 1000 l/h a 35 °C, Qs = 1200 l/h con ritorno a 30 °C<br>Tmandata,s = (1000 · 35 + 200 · 30) / 1200 ≈ 34,2 °C</div>
+  <p>Se invece la portata primaria è maggiore, l'acqua calda in eccesso torna direttamente al generatore: la mandata ai terminali resta giusta, ma il ritorno al generatore si scalda. Per una caldaia a condensazione è un danno (condensa meno); per una pompa di calore abbassa il COP. Per questo le portate dei due lati vanno bilanciate, e una pompa primaria a velocità variabile aiuta.</p>
+</section>
+
+<section class="ch" id="c3">
+  <div class="ch-h"><span class="ch-n">3</span><h2>L'acqua si dilata</h2></div>
+  <p>Scaldandosi, l'acqua aumenta di volume; in un impianto chiuso quel volume in più deve andare da qualche parte, altrimenti la pressione sale fino ad aprire la valvola di sicurezza. Il <b>vaso di espansione</b> è un serbatoio diviso in due da una membrana: da un lato l'acqua dell'impianto, dall'altro un gas precaricato. L'acqua che si dilata entra nel vaso e comprime il gas, e la pressione sale di poco.</p>
+  <div class="formula">e = ρ(T carico) / ρ(T massima) − 1 &nbsp;&nbsp;&nbsp; coefficiente di dilatazione<br>ΔV = e · Vc &nbsp;&nbsp;&nbsp; Vc = contenuto d'acqua dell'impianto<br>da 10 a 90 °C: e = 999,70 / 965,31 − 1 ≈ 0,0356 (3,6 %)<br>da 10 a 35 °C: e = 999,70 / 994,03 − 1 ≈ 0,0057 (0,6 %)</div>
+  <p>A bassa temperatura la dilatazione è sei volte più piccola: anche questo è un vantaggio degli impianti a 35 °C. Ma il vaso si dimensiona sulla <b>temperatura più alta che l'impianto può raggiungere</b>, non su quella di lavoro: per esempio quella di un ciclo antilegionella, se passa dallo stesso circuito, o quella a cui interviene la sicurezza del generatore.</p>
+</section>
+
+<section class="ch" id="c4">
+  <div class="ch-h"><span class="ch-n">4</span><h2>Il vaso, da provare</h2></div>
+  <p>Nella figura un impianto da 200 litri, caricato a 10 °C, è collegato a un vaso da 25 litri precaricato a 1,5 bar. Muovendo il puntatore l'acqua si scalda: il volume che entra nel vaso cresce, il gas si comprime e il manometro sale. A 90 °C la pressione arriva a 2,5 bar, sotto i 3 bar della valvola di sicurezza.</p>
+  <div id="fig-box" class="noprint"></div>
+</section>
+
+<section class="ch" id="c5">
+  <div class="ch-h"><span class="ch-n">5</span><h2>Dimensionare il vaso</h2></div>
+  <p>Il gas nel vaso segue la legge di Boyle (pressione per volume costante, a temperatura costante). Da qui viene la formula del volume nominale minimo:</p>
+  <div class="formula">Vn = e · Vc / (1 − Pi / Pf) &nbsp;&nbsp;&nbsp; pressioni assolute<br>Pi = pressione di precarica (circa la pressione statica nel punto del vaso)<br>Pf = pressione massima di esercizio, con un margine sotto la taratura della valvola<br><br>Esempio della figura: e = 0,0356, Vc = 200 l, Pi = 2,51 bar, Pf = 3,51 bar (assoluti)<br>Vn = 0,0356 · 200 / (1 − 2,51 / 3,51) ≈ 7,1 / 0,285 ≈ 25 l</div>
+  <ol class="steps">
+    <li><b>Contenuto d'acqua.</b> Si sommano tubazioni, terminali, generatore e accumulo: i volumi unitari li danno le schede dei prodotti.</li>
+    <li><b>Temperature.</b> Quella di riempimento e la massima raggiungibile.</li>
+    <li><b>Pressioni.</b> La precarica copre la colonna d'acqua sopra il vaso, così l'impianto resta in pressione anche nel punto più alto; la massima resta sotto la taratura della valvola di sicurezza.</li>
+    <li><b>Scelta.</b> Il vaso commerciale subito più grande, con la precarica regolata in opera.</li>
+  </ol>
+  <div class="box tip"><b>Le regole di sicurezza</b><p>In Italia gli impianti centrali di riscaldamento ad acqua calda con temperatura fino a 110 °C e potenza complessiva dei focolari oltre 35 kW seguono la «Raccolta R» dell'INAIL (edizione 2009): fissa i dispositivi di sicurezza, protezione e controllo, compresi i vasi di espansione e le valvole.</p></div>
+</section>
+
+<section class="ch" id="c6">
+  <div class="ch-h"><span class="ch-n">6</span><h2>Nell'esempio</h2></div>
+  <p>Per la scuola di esempio: un accumulo tecnico usato come separatore tra il circuito della pompa di calore e i circuiti dei pannelli e delle batterie, dimensionato sul contenuto d'acqua minimo dichiarato dal produttore; un vaso di espansione sul circuito dell'impianto, calcolato sulla temperatura massima che la pompa di calore può dare; valvola di sicurezza e dispositivi della Raccolta R se la potenza supera i 35 kW.</p>
+  <div class="box tip"><b>La scheda per i prossimi articoli</b><p>Circuito primario: pompa di calore → accumulo-separatore. Circuiti secondari: pannelli delle aule a 35/30 °C, batterie delle unità di trattamento aria. Il prossimo passo è portare l'acqua dove serve: tubi, portate e pompe (articolo 5).</p></div>
+</section>
+
+<section class="ch" id="fonti">
+  <div class="ch-h"><span class="ch-n">≡</span><h2>Fonti</h2></div>
+  <ul class="src">
+    <li>Raccolta R, edizione 2009 (INAIL, ex ISPESL), ambito di applicazione: <a href="https://www.soluzioni-arking.it/raccolta-r-edizione-2009/" target="_blank" rel="noopener">sintesi</a>; <a href="https://raccoltar.caleffi.it/pdf/raccolta_r_commentata_caleffi.pdf" target="_blank" rel="noopener">testo commentato (Caleffi, PDF)</a>.</li>
+    <li>Densità dell'acqua: valori di tabella delle proprietà termofisiche (10 °C 999,70 kg/m³, 35 °C 994,03, 90 °C 965,31).</li>
+    <li>La figura del vaso di espansione è del curatore del sito, fatta con la skill «anatomy»; modello semplificato: gas a temperatura costante, membrana senza rigidezza, vaso vuoto d'acqua a freddo.</li>
+  </ul>
+  <div class="box idea"><b>Come è nato questo articolo</b><p>È uno dei «manuali di Claude»: l'ha scritto Claude, l'assistente di intelligenza artificiale di Anthropic, seguendo le indicazioni del curatore. L'esempio è inventato e i numeri sono tondi.</p></div>
+</section>

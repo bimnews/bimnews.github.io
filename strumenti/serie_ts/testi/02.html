@@ -1,0 +1,95 @@
+{"titolo": "La linea d'azione: dal fabbisogno alla scelta dell'impianto", "descrizione": "Secondo articolo della serie sull'impianto termosanitario: dal fabbisogno si passa alle decisioni. Centralizzato o autonomo, acqua o aria, temperature di lavoro, fonti di energia e obblighi sulle rinnovabili, con l'aula di esempio e una figura interattiva sulle temperature di mandata.", "sommario": "Il fabbisogno dice che cosa serve; la linea d'azione decide come darlo. Poche scelte, prese nell'ordine giusto, fissano quasi tutto il resto del progetto: la più importante è la temperatura a cui l'impianto lavora.", "indice": [["c1", "1 · Le decisioni, in ordine"], ["c2", "2 · Chi porta il calore: acqua e aria"], ["c3", "3 · La temperatura di lavoro"], ["c4", "4 · Il regolo, da provare"], ["c5", "5 · Le fonti di energia e gli obblighi"], ["c6", "6 · La linea d'azione dell'esempio"]], "figura": {"nome": "ts-linea", "titolo": "il regolo delle temperature"}, "ancora_figura": "c4", "ancora_chiave": "c6", "etichetta_chiave": "La scelta dell'esempio", "copertina": "<svg viewBox=\"0 0 360 240\" role=\"img\" aria-label=\"Un bivio con tre strade: acqua, aria e temperatura\"><rect class=\"s-as\" x=\"10\" y=\"10\" width=\"340\" height=\"220\" rx=\"22\"/><path d=\"M180 210V130M180 130L90 60M180 130V50M180 130L270 60\" style=\"stroke:var(--ink);stroke-width:3;fill:none;stroke-linecap:round\"/><circle cx=\"180\" cy=\"130\" r=\"7\" class=\"s-a\"/><circle cx=\"90\" cy=\"60\" r=\"16\" style=\"fill:var(--soft);stroke:var(--accent)\"/><circle cx=\"180\" cy=\"44\" r=\"16\" style=\"fill:var(--a2s);stroke:var(--a2)\"/><circle cx=\"270\" cy=\"60\" r=\"16\" style=\"fill:var(--a5s);stroke:var(--a5)\"/><text class=\"s-tm\" x=\"70\" y=\"96\">acqua</text><text class=\"s-tm\" x=\"200\" y=\"48\">aria</text><text class=\"s-tm\" x=\"238\" y=\"96\">°C</text></svg>"}
+
+<div class="box bim"><b>Dove eravamo</b><p>Nell'<a href="termosanitario-01-fabbisogno.html">articolo 1</a> l'aula di esempio (56 m², 26 persone, −12 °C fuori) ha dato: 0,41 kW di trasmissione, 796 m³/h di aria esterna, 2,17 kW per scaldarla con un recuperatore al 75 % (8,66 kW senza). Qui si decide come fornire tutto questo.</p></div>
+
+<section class="ch" id="c1">
+  <div class="ch-h"><span class="ch-n">1</span><h2>Le decisioni, in ordine</h2></div>
+  <p class="lead">Un impianto si sceglie scendendo da ciò che è più difficile da cambiare a ciò che è più facile. Invertire l'ordine (partire dalla macchina) è il modo più sicuro per trovarsi con terminali sbagliati o con una caldaia dove serviva una pompa di calore.</p>
+  <ol class="steps">
+    <li><b>Centralizzato o autonomo?</b> Una centrale per tutto l'edificio o un generatore per ogni unità. In una scuola, in un ufficio pubblico, in un edificio con un solo gestore la risposta è quasi sempre la centrale: una sola manutenzione, un solo punto di controllo.</li>
+    <li><b>Chi porta il calore?</b> Acqua, aria o entrambe (capitolo 2).</li>
+    <li><b>A che temperatura?</b> La decisione che pesa di più sull'efficienza (capitoli 3 e 4).</li>
+    <li><b>Con quale energia?</b> Allacci disponibili, rinnovabili obbligatorie, spazi per le macchine (capitolo 5).</li>
+    <li><b>Serve anche raffrescare?</b> Se sì, i terminali e la macchina devono saper fare le due cose: è un'altra ragione per preferire le basse temperature in inverno, perché gli stessi terminali lavorano bene anche con acqua fresca d'estate.</li>
+  </ol>
+</section>
+
+<section class="ch" id="c2">
+  <div class="ch-h"><span class="ch-n">2</span><h2>Chi porta il calore: acqua e aria</h2></div>
+  <p>Il fabbisogno dell'aula ha due voci molto diverse, e conviene servirle con due mezzi diversi:</p>
+  <div class="tbl"><table>
+    <tr><th>Voce</th><th>Potenza (−12 °C)</th><th>Chi la porta</th></tr>
+    <tr><td>Aria esterna da scaldare (dopo il recupero)</td><td>2,17 kW</td><td>L'aria stessa: l'unità di trattamento aria la porta da 12 °C (uscita del recuperatore) a 20 °C con una batteria ad acqua</td></tr>
+    <tr><td>Calore che esce dalle pareti</td><td>0,41 kW</td><td>I terminali nell'aula: pannelli, radiatori, ventilconvettori</td></tr>
+  </table></div>
+  <div class="formula">uscita del recuperatore: θ = θ<sub>e</sub> + η · (θ<sub>i</sub> − θ<sub>e</sub>) = −12 + 0,75 × 32 = 12 °C<br>batteria: 0,34 × 796 × (20 − 12) = 2 165 W</div>
+  <p class="lead">Il risultato cambia la prospettiva: nell'aula i terminali devono dare solo circa 7 W/m². Il grosso del calore va nella batteria dell'unità di trattamento aria, non nei radiatori.</p>
+  <p>Questo non vuol dire che i terminali si possono dimenticare: servono per la messa a regime dopo un fine settimana a impianto ridotto, quando la ventilazione è spenta, e nei locali senza ventilazione meccanica. Ma vuol dire che possono lavorare a temperature basse.</p>
+</section>
+
+<section class="ch" id="c3">
+  <div class="ch-h"><span class="ch-n">3</span><h2>La temperatura di lavoro</h2></div>
+  <p>La temperatura dell'acqua che parte dal generatore (la <b>mandata</b>) decide quanto rende la macchina. Per una pompa di calore il limite teorico è quello di Carnot, e dipende solo dalle due temperature tra cui si «pompa» il calore:</p>
+  <div class="formula">COP<sub>Carnot</sub> = T<sub>mandata</sub> / (T<sub>mandata</sub> − T<sub>sorgente</sub>)   (temperature in kelvin)</div>
+  <p>Le macchine reali arrivano a una frazione di questo limite. Con una frazione di 0,45, ipotesi che riproduce bene i valori tipici dei cataloghi ai punti di prova della UNI EN 14511, si ottiene:</p>
+  <div class="tbl num"><table>
+    <tr><th>Aria esterna / mandata</th><th>COP stimato</th><th>Valori tipici di catalogo</th></tr>
+    <tr><td>+7 °C / 35 °C</td><td>4,9</td><td>4,0–5,0</td></tr>
+    <tr><td>−7 °C / 35 °C</td><td>3,3</td><td>2,5–3,3</td></tr>
+    <tr><td>+7 °C / 55 °C</td><td>3,1</td><td>2,8–3,5</td></tr>
+    <tr><td>−12 °C / 35 °C (progetto dell'esempio)</td><td>3,0</td><td>—</td></tr>
+    <tr><td>−12 °C / 55 °C</td><td>2,2</td><td>—</td></tr>
+  </table></div>
+  <p class="src">Valori tipici delle pompe di calore aria-acqua moderne riportati da schede di confronto pubbliche (in inglese); per il progetto valgono sempre i dati certificati del prodotto.</p>
+  <p>Passare da 55 a 35 °C di mandata, nel giorno di progetto, fa rendere la macchina un terzo in più. Su tutta la stagione la differenza pesa allo stesso modo sui consumi. Per questo la regola pratica è: <b>la temperatura di mandata più bassa che i terminali permettono</b>.</p>
+  <div class="tbl"><table>
+    <tr><th>Terminale</th><th>Mandata tipica</th><th>Nota</th></tr>
+    <tr><td>Pannello radiante a pavimento</td><td>30–40 °C</td><td>Grande superficie, bassa temperatura; la UNI EN 1264 limita il pavimento a 29 °C nelle zone di permanenza</td></tr>
+    <tr><td>Batteria dell'unità di trattamento aria</td><td>30–45 °C</td><td>Dipende da quanto deve scaldare l'aria dopo il recupero</td></tr>
+    <tr><td>Ventilconvettore</td><td>40–55 °C</td><td>Utile se serve anche raffrescare; ventilatore e rumore da controllare</td></tr>
+    <tr><td>Radiatore</td><td>55–75 °C</td><td>Lavora anche più basso se sovradimensionato (articolo 6)</td></tr>
+  </table></div>
+  <p class="src">Intervalli indicativi di progetto: si approfondiscono nell'articolo 6 sull'emissione.</p>
+</section>
+
+<section class="ch" id="c4">
+  <div class="ch-h"><span class="ch-n">4</span><h2>Il regolo, da provare</h2></div>
+  <p>Muovendo il puntatore si alza la temperatura di mandata nel termometro; il quadrante legge il COP stimato e i terminali si accendono quando la mandata è nel loro campo tipico. Con un clic l'aria esterna passa da −12 a +7 °C.</p>
+  <div id="fig-box" class="noprint"></div>
+</section>
+
+<section class="ch" id="c5">
+  <div class="ch-h"><span class="ch-n">5</span><h2>Le fonti di energia e gli obblighi</h2></div>
+  <ul>
+    <li><b>Obbligo delle rinnovabili.</b> Per gli edifici nuovi e le ristrutturazioni rilevanti, l'Allegato III del D.Lgs. 199/2021 chiede di coprire con fonti rinnovabili il 60 % dei consumi previsti per l'acqua calda sanitaria e il 60 % della somma dei consumi per acqua calda, riscaldamento e raffrescamento; per gli edifici pubblici le soglie salgono al 65 %. Una pompa di calore elettrica, insieme al fotovoltaico, è il modo più diretto per rispettarlo.</li>
+    <li><b>Allacci disponibili.</b> Una rete di teleriscaldamento vicina, la potenza elettrica disponibile, il gas: cambiano costi e spazi. Vanno chiesti al gestore all'inizio, non scoperti alla fine.</li>
+    <li><b>Spazi e vincoli.</b> Un'unità esterna ha bisogno di aria libera e fa rumore; una caldaia ha bisogno di un camino e, oltre i 116 kW, è un'attività soggetta ai controlli antincendio (nella <a href="antincendio.html">guida antincendio</a>, la centrale termica).</li>
+    <li><b>Regole locali.</b> Alcune regioni e province hanno requisiti energetici propri, più severi di quelli nazionali: vanno letti per la località dell'edificio.</li>
+  </ul>
+</section>
+
+<section class="ch" id="c6">
+  <div class="ch-h"><span class="ch-n">6</span><h2>La linea d'azione dell'esempio</h2></div>
+  <p>Per la scuola di esempio, una linea d'azione coerente con il fabbisogno è questa. Non è l'unica possibile, ma ogni scelta ha la sua ragione:</p>
+  <div class="tbl"><table>
+    <tr><th>Scelta</th><th>Perché</th></tr>
+    <tr><td>Centrale termica unica</td><td>Un solo gestore, manutenzione concentrata</td></tr>
+    <tr><td>Ventilazione meccanica con recupero di calore, portata modulata sulla presenza</td><td>L'aria è la voce più grande del fabbisogno (articolo 1)</td></tr>
+    <tr><td>Pompa di calore aria-acqua, mandata di progetto 35 °C</td><td>COP circa 3 nel giorno peggiore, più di 4 per gran parte della stagione; rinnovabile ai fini dell'obbligo</td></tr>
+    <tr><td>Pannelli radianti a pavimento nelle aule</td><td>Lavorano a bassa temperatura e servono anche per raffrescare in modo leggero</td></tr>
+    <tr><td>Accumulo tecnico tra macchina e impianto</td><td>Protegge la pompa di calore dagli avvii brevi e dagli sbrinamenti (articolo 4)</td></tr>
+    <tr><td>Fotovoltaico in copertura</td><td>Copre una parte dei consumi elettrici della pompa di calore e dei ventilatori</td></tr>
+  </table></div>
+  <div class="box tip"><b>La scheda per i prossimi articoli</b><p>Generatore: pompa di calore aria-acqua, mandata 35 °C, ritorno 30 °C. Terminali: pannelli a pavimento nelle aule, batterie delle unità di trattamento aria. Potenza di progetto dell'aula: 2,58 kW (0,41 ai pannelli, 2,17 alla batteria). Questi numeri tornano nella generazione, nella distribuzione e nell'emissione.</p></div>
+</section>
+
+<section class="ch" id="fonti">
+  <div class="ch-h"><span class="ch-n">≡</span><h2>Fonti</h2></div>
+  <ul class="src">
+    <li>UNI EN 14511, pompe di calore: condizioni di prova (A7/W35, A2/W35, A-7/W35, A7/W55); valori tipici di COP delle macchine aria-acqua da <a href="https://www.heatpumpdatabase.com/knowledge/cop-scop/" target="_blank" rel="noopener">Heat Pump Database</a> e <a href="https://solimpeks.com/en/knowledge/glossary/cop-coefficient-of-performance" target="_blank" rel="noopener">tabella di confronto Solimpeks</a> (in inglese).</li>
+    <li>D.Lgs. 8/11/2021 n. 199, Allegato III, obblighi di utilizzo delle fonti rinnovabili negli edifici: <a href="https://ance.it/2026/01/fonti-rinnovabili-negli-edifici-aggiornate-le-soglie-minime-di-installazione-e-ampliata-la-deroga/" target="_blank" rel="noopener">sintesi ANCE, gennaio 2026</a>.</li>
+    <li>UNI EN 1264, sistemi radianti: temperatura superficiale massima di 29 °C nelle zone di permanenza.</li>
+    <li>Il calcolo dell'aula riprende l'<a href="termosanitario-01-fabbisogno.html">articolo 1</a>.</li>
+  </ul>
+  <div class="box idea"><b>Come è nato questo articolo</b><p>È uno dei «manuali di Claude»: l'ha scritto Claude, l'assistente di intelligenza artificiale di Anthropic, seguendo le indicazioni del curatore. L'esempio è inventato e i numeri sono tondi.</p></div>
+</section>

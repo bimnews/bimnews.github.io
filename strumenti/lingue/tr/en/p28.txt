@@ -1,0 +1,20 @@
+v1717	The heating and plumbing system, step by step · 2 · The course of action
+v1718	From needs to choices: central or individual, water or air, and above all the temperature the system works at. With the temperature slide rule and the heat pump COP.
+v1719	The heating and plumbing system, step by step · 3 · Heat generation
+v1720	Heat pump, condensing boiler, district heating: how they work and how to size the output at the design temperature. With the heat pump balance to try.
+v1721	The heating and plumbing system, step by step · 4 · Storage and separation
+v1722	The water volume that protects the machine, the separator between circuits and the expansion vessel, with its formula and the vessel figure.
+v1723	The heating and plumbing system, step by step · 5 · Distribution
+v1724	From output to flow rate, pipe sizes, the pump and the circuit meeting at the operating point, balancing.
+v1725	The heating and plumbing system, step by step · 6 · Heat emission
+v1726	Underfloor heating, radiators, fan coils: the law of each emitter and the water temperature it needs. With the heating floor to try.
+v1727	The heating and plumbing system, step by step · 7 · Controls
+v1728	Weather compensation curve, room-by-room control, schedules and demand-controlled ventilation: how much heat, when and where.
+v1729	The heating and plumbing system, step by step · 8 · Domestic hot water
+v1730	Storage, recirculation and instantaneous production, with the temperatures of the Italian Legionella guidelines and their effect on a heat pump.
+v1731	The heating and plumbing system, step by step · 9 · The water supply network
+v1732	Pressures from the mains connection to the highest tap, simultaneous flow rates, pressure reducers, booster sets and backflow protection.
+v1733	The heating and plumbing system, step by step · 10 · Drainage
+v1734	Discharge units and design flow according to EN 12056-2, stacks, venting and traps.
+v1735	The heating and plumbing system, step by step · 11 · In the model
+v1736	IFC 4.3 classes, types, Psets, systems and connections: where each part of the system and each number calculated in the series belongs.

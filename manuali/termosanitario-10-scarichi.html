@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gli scarichi: l'acqua che se ne va · I manuali di BIM News</title>
+<meta name="description" content="Decimo articolo della serie sull'impianto termosanitario: gli scarichi delle acque reflue. Sistemi della UNI EN 12056-2, unità di scarico e portata di progetto, colonne, ventilazione, sifoni e pendenze, acque meteoriche, con una figura interattiva sulla colonna di scarico.">
+<link rel="stylesheet" href="manuale.css">
+<script>try{var t=localStorage.getItem("tema-2026");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+<style>
+.btn.ghost,:root[data-theme="dark"] .btn.ghost{color:var(--accent)}
+.formula{font-family:var(--mono);background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:.9rem 1.1rem;margin:.6rem 0 1rem;font-size:.95rem;line-height:1.75;overflow-x:auto}
+.fig-frame{width:100%;border:0;min-height:640px;display:block;background:transparent;margin:.4rem 0 1rem}
+.fig-alt{margin:.4rem 0 1rem}
+.series{display:flex;flex-wrap:wrap;gap:.35rem;margin:.4rem 0 0}
+.series span,.series a{font-family:var(--mono);font-size:.72rem;border:1px solid var(--line);border-radius:999px;padding:.15rem .55rem;color:var(--muted);text-decoration:none}
+.series a{color:var(--accent);border-color:color-mix(in srgb,var(--accent) 45%,var(--line))}
+.series span.on{background:var(--accent);border-color:var(--accent);color:#fff}
+:root[data-theme="dark"] .series span.on{color:#10141b}
+.num td:nth-child(n+2){font-family:var(--mono);white-space:nowrap}
+.pn{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;margin:1.4rem 0 .6rem}
+</style>
+</head>
+<body>
+<div class="topbar"><div class="in"><a class="back" href="../#mep">← BIM News · MEP</a><span class="sp"></span><a class="btn ghost noprint" href="#c3">La figura</a><a class="btn noprint" href="#c6">Nell'esempio</a></div></div>
+<div class="layout">
+<nav class="toc" aria-label="Indice">
+  <b>Indice</b>
+  <ol><li><a href="#c1">1 · A gravità, con l'aria</a></li><li><a href="#c2">2 · Le unità di scarico</a></li><li><a href="#c3">3 · La colonna, da provare</a></li><li><a href="#c4">4 · Colonne, diramazioni, collettori</a></li><li><a href="#c5">5 · Ventilazione e sifoni</a></li><li><a href="#c6">6 · Nell'esempio</a></li><li><a href="#fonti">Fonti</a></li></ol>
+</nav>
+<main>
+<header class="cover">
+  <div>
+    <span class="kick">L'impianto termosanitario, passo per passo · 10</span>
+    <h1>Gli scarichi: l'acqua che se ne va</h1>
+    <p>Lo scarico funziona a gravità, con acqua e aria che si muovono insieme negli stessi tubi. Dimensionarlo vuol dire sapere quanta acqua può arrivare insieme, e lasciare all'aria la sua strada.</p>
+    <div class="series" aria-label="La serie"><a href="termosanitario-01-fabbisogno.html">1 Fabbisogno</a><a href="termosanitario-02-linea-d-azione.html">2 Linea d'azione</a><a href="termosanitario-03-generazione.html">3 Generazione</a><a href="termosanitario-04-accumulo.html">4 Accumulo</a><a href="termosanitario-05-distribuzione.html">5 Distribuzione</a><a href="termosanitario-06-emissione.html">6 Emissione</a><a href="termosanitario-07-regolazione.html">7 Regolazione</a><a href="termosanitario-08-acqua-calda.html">8 Acqua calda</a><a href="termosanitario-09-idrico.html">9 Idrico</a><span class="on">10 Scarichi</span><a href="termosanitario-11-nel-modello.html">11 Nel modello</a></div>
+  </div>
+  <svg viewBox="0 0 360 240" role="img" aria-label="Una colonna di scarico con le diramazioni dei piani e la ventilazione"><rect class="s-as" x="10" y="10" width="340" height="220" rx="22"/><path d="M180 30V200H320" style="stroke:var(--a5);stroke-width:8;fill:none"/><path d="M70 70L180 80M70 120L180 130M70 170L180 180" style="stroke:var(--ink);stroke-width:4"/><rect x="50" y="58" width="22" height="16" rx="5" style="fill:var(--soft);stroke:var(--ink)"/><rect x="50" y="108" width="22" height="16" rx="5" style="fill:var(--soft);stroke:var(--ink)"/><rect x="50" y="158" width="22" height="16" rx="5" style="fill:var(--soft);stroke:var(--ink)"/><text class="s-tm" x="196" y="44">aria</text><text class="s-tm" x="240" y="222">K √ΣDU</text></svg>
+</header>
+
+<div class="box bim"><b>Dove eravamo</b><p>Nell'<a href="termosanitario-09-idrico.html">articolo 9</a> l'acqua fredda è arrivata ai servizi della scuola di esempio. Ora l'acqua usata deve tornare in fognatura.</p></div>
+
+<section class="ch" id="c1">
+  <div class="ch-h"><span class="ch-n">1</span><h2>A gravità, con l'aria</h2></div>
+  <p class="lead">Una rete di scarico non ha pompe (salvo i sollevamenti): l'acqua scende per gravità, nelle diramazioni in pendenza e nelle colonne verticali. E non scende da sola: ogni scarico spinge e trascina aria. Se l'aria non trova la sua strada, la pressione nei tubi cambia e svuota i sifoni, e gli odori della fognatura entrano nei locali.</p>
+  <p>La UNI EN 12056 tratta i sistemi di scarico funzionanti a gravità all'interno degli edifici: la parte 2 le acque reflue, la parte 3 le acque meteoriche dei tetti, la parte 4 le stazioni di pompaggio. La parte 2 distingue quattro tipi di sistema (da I a IV), nati dalle pratiche dei diversi paesi europei: in Italia è comune il sistema I, con una sola colonna e diramazioni riempite per metà.</p>
+</section>
+
+<section class="ch" id="c2">
+  <div class="ch-h"><span class="ch-n">2</span><h2>Le unità di scarico</h2></div>
+  <p>A ogni apparecchio la norma assegna un'<b>unità di scarico</b> DU, in litri al secondo. Per il sistema I, per esempio: lavabo 0,5; WC con cassetta da 6 litri 2,0; WC da 9 litri 2,5. La portata di progetto di un tratto non è la somma delle DU, perché gli apparecchi non scaricano tutti insieme:</p>
+  <div class="formula">Qww = K · √ΣDU &nbsp;&nbsp;&nbsp; [l/s]<br>K = coefficiente di frequenza: 0,5 uso intermittente (abitazioni, uffici), 0,7 uso frequente (scuole, ospedali, ristoranti, alberghi), 1,0 uso intenso (bagni pubblici, docce collettive)<br><br>Un piano di servizi con 4 WC da 6 l e 4 lavabi: ΣDU = 4 · 2,0 + 4 · 0,5 = 10<br>Due piani, scuola: Qww = 0,7 · √20 ≈ 3,1 l/s</div>
+  <p>Se la formula dà meno della portata dell'apparecchio con l'unità di scarico più grande, vale quest'ultima: un WC scarica comunque la sua portata, anche se è l'unico. Alla Qww si sommano gli scarichi continui (per esempio macchine) e quelli delle pompe di sollevamento. Con la portata totale si leggono nelle tabelle della norma i diametri ammessi per le diramazioni, le colonne e i collettori.</p>
+</section>
+
+<section class="ch" id="c3">
+  <div class="ch-h"><span class="ch-n">3</span><h2>La colonna, da provare</h2></div>
+  <p>Con il puntatore si collegano alla colonna da uno a sei piani di servizi; il quadrante legge la portata di progetto. Con un clic il coefficiente passa da 0,7 (scuola) a 0,5 (uffici). Si vede che sei piani non danno sei volte la portata di uno.</p>
+  <div id="fig-box" class="noprint"></div>
+</section>
+
+<section class="ch" id="c4">
+  <div class="ch-h"><span class="ch-n">4</span><h2>Colonne, diramazioni, collettori</h2></div>
+  <ul>
+    <li><b>Diramazioni</b>: dagli apparecchi alla colonna, in pendenza. La norma fissa per ogni sistema lunghezze, pendenze e numero di curve ammessi senza ventilazione; oltre quei limiti servono diametri più grandi o una ventilazione.</li>
+    <li><b>Colonne</b>: verticali, con diametro costante o crescente verso il basso, mai decrescente. Al piede la curva deve essere ampia (o fatta con due curve a 45°) per non creare un tappo d'acqua e pressioni alte ai piani bassi.</li>
+    <li><b>Collettori</b>: orizzontali, sotto il piano terra o appesi al soffitto dell'interrato, verso la fognatura, con pendenza costante, ispezioni ai cambi di direzione e alle confluenze.</li>
+    <li><b>Acque meteoriche</b>: rete separata, dimensionata sulla pioggia di progetto e sulla superficie dei tetti (UNI EN 12056-3). Il recapito (fognatura mista, separata, dispersione o riuso) lo decide il regolamento del gestore e del comune.</li>
+    <li><b>Sotto la fognatura</b>: i locali più bassi del collettore pubblico scaricano con una stazione di sollevamento (UNI EN 12056-4) e una protezione contro il rigurgito.</li>
+  </ul>
+</section>
+
+<section class="ch" id="c5">
+  <div class="ch-h"><span class="ch-n">5</span><h2>Ventilazione e sifoni</h2></div>
+  <p>Ogni apparecchio ha un <b>sifone</b>: un tratto di tubo che resta pieno d'acqua e chiude il passaggio agli odori. Quella chiusura d'acqua è sottile: se una colonna in pressione la spinge fuori, o una colonna in depressione la risucchia, il sifone si svuota.</p>
+  <ul>
+    <li><b>Ventilazione primaria</b>: la colonna prosegue oltre la copertura e si apre all'aria. È la soluzione più comune e la più semplice.</li>
+    <li><b>Ventilazione secondaria</b>: una seconda colonna, parallela, collegata alla prima o alle diramazioni; serve negli edifici alti e con molti apparecchi.</li>
+    <li><b>Valvole di aerazione</b>: lasciano entrare aria quando nella colonna c'è depressione e si chiudono quando c'è pressione. Si usano dove la ventilazione non può uscire dal tetto, con i limiti del produttore e delle norme.</li>
+    <li><b>Rumore</b>: l'acqua che cade nelle colonne è una delle fonti di rumore degli edifici; tubi fonoassorbenti, fasciature e cavedi chiusi lo riducono (in Italia i requisiti acustici passivi degli edifici sono nel D.P.C.M. 5/12/1997).</li>
+  </ul>
+</section>
+
+<section class="ch" id="c6">
+  <div class="ch-h"><span class="ch-n">6</span><h2>Nell'esempio</h2></div>
+  <p>Per la scuola di esempio, a due piani: sistema I, una colonna per ogni blocco di servizi con ventilazione primaria oltre la copertura, K = 0,7 perché all'intervallo i servizi si usano tutti insieme. Con 4 WC e 4 lavabi a piano la colonna porta circa 3,1 l/s. Acque meteoriche in rete separata, con il recapito fissato dal regolamento locale.</p>
+  <div class="box tip"><b>La scheda per l'ultimo articolo</b><p>Tutto l'impianto è descritto: riscaldamento, ventilazione, acqua calda, acqua fredda, scarichi. L'ultimo passo è portarlo nel modello BIM: elementi, sistemi e dati (articolo 11).</p></div>
+</section>
+
+<section class="ch" id="fonti">
+  <div class="ch-h"><span class="ch-n">≡</span><h2>Fonti</h2></div>
+  <ul class="src">
+    <li>UNI EN 12056-2, sistemi di scarico funzionanti a gravità all'interno degli edifici, acque reflue: unità di scarico (prospetto 2) e coefficienti di frequenza (prospetto 3), riportati in <a href="https://www.cibse.org/media/ohubb2qd/geberit-bs12056-drainage-design-without-compromise.pdf" target="_blank" rel="noopener">Geberit, «BS EN 12056 drainage design» (CIBSE, in inglese, PDF)</a>; portata totale e apparecchio più grande in <a href="https://www.edilconsulenza.it/progettazione-degli-impianti-di-scarico-delle-acque-reflue-negli-edifici-la-norma-di-riferimento/" target="_blank" rel="noopener">Edilconsulenza</a>.</li>
+    <li>UNI EN 12056-3 (acque meteoriche) e UNI EN 12056-4 (stazioni di pompaggio).</li>
+    <li>D.P.C.M. 5/12/1997, determinazione dei requisiti acustici passivi degli edifici.</li>
+  </ul>
+  <div class="box idea"><b>Come è nato questo articolo</b><p>È uno dei «manuali di Claude»: l'ha scritto Claude, l'assistente di intelligenza artificiale di Anthropic, seguendo le indicazioni del curatore. L'esempio è inventato e i numeri sono tondi.</p></div>
+</section>
+
+<nav class="pn noprint" aria-label="Articoli della serie"><a class="btn ghost" href="termosanitario-09-idrico.html">← 9 · Idrico</a><a class="btn" href="termosanitario-11-nel-modello.html">11 · Nel modello →</a></nav>
+<p class="foot">BIM News · L'impianto termosanitario, passo per passo · 10 · Gli scarichi: l'acqua che se ne va · edizione novembre 2026</p>
+</main>
+</div>
+<script>
+window.addEventListener("message",function(e){ if(e.data&&e.data.figH&&e.data.fig==="ts-scarichi"){ var g=document.getElementById("fig-frame"); if(g)g.style.height=(e.data.figH+4)+"px"; } });
+(function(){ var box=document.getElementById("fig-box"); if(!box)return; var lite=false; try{ var m=localStorage.getItem("versione"),c=navigator.connection,a=matchMedia("(prefers-reduced-motion: reduce)").matches||(c&&(c.saveData||/(^|-)2g$/.test(c.effectiveType||""))); lite=m?m==="essenziale":a; }catch(x){}
+  if(lite){ box.innerHTML='<p class="fig-alt"><a href="figure/ts-scarichi.html">Apri la figura interattiva</a> (pagina a parte).</p>'; return; }
+  var f=document.createElement("iframe"); f.id="fig-frame"; f.className="fig-frame"; f.title="Figura interattiva: la colonna di scarico"; f.loading="lazy"; f.src="figure/ts-scarichi.html?embed=1"; box.appendChild(f); })();
+</script>
+</body>
+</html>

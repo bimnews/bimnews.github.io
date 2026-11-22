@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>La rete idrica: pressioni, portate, protezioni · I manuali di BIM News</title>
+<meta name="description" content="Nono articolo della serie sull'impianto termosanitario: la rete dell'acqua fredda. Dall'allaccio ai rubinetti: pressione disponibile e dislivelli, perdite di carico, portate contemporanee, riduttori e gruppi di pressurizzazione, protezione dal riflusso, con una figura interattiva.">
+<link rel="stylesheet" href="manuale.css">
+<script>try{var t=localStorage.getItem("tema-2026");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+<style>
+.btn.ghost,:root[data-theme="dark"] .btn.ghost{color:var(--accent)}
+.formula{font-family:var(--mono);background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:.9rem 1.1rem;margin:.6rem 0 1rem;font-size:.95rem;line-height:1.75;overflow-x:auto}
+.fig-frame{width:100%;border:0;min-height:640px;display:block;background:transparent;margin:.4rem 0 1rem}
+.fig-alt{margin:.4rem 0 1rem}
+.series{display:flex;flex-wrap:wrap;gap:.35rem;margin:.4rem 0 0}
+.series span,.series a{font-family:var(--mono);font-size:.72rem;border:1px solid var(--line);border-radius:999px;padding:.15rem .55rem;color:var(--muted);text-decoration:none}
+.series a{color:var(--accent);border-color:color-mix(in srgb,var(--accent) 45%,var(--line))}
+.series span.on{background:var(--accent);border-color:var(--accent);color:#fff}
+:root[data-theme="dark"] .series span.on{color:#10141b}
+.num td:nth-child(n+2){font-family:var(--mono);white-space:nowrap}
+.pn{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;margin:1.4rem 0 .6rem}
+</style>
+</head>
+<body>
+<div class="topbar"><div class="in"><a class="back" href="../#mep">← BIM News · MEP</a><span class="sp"></span><a class="btn ghost noprint" href="#c3">La figura</a><a class="btn noprint" href="#c6">Nell'esempio</a></div></div>
+<div class="layout">
+<nav class="toc" aria-label="Indice">
+  <b>Indice</b>
+  <ol><li><a href="#c1">1 · Dall'allaccio al rubinetto</a></li><li><a href="#c2">2 · Quanto pesa un metro di salita</a></li><li><a href="#c3">3 · Le pressioni, da provare</a></li><li><a href="#c4">4 · Le portate contemporanee</a></li><li><a href="#c5">5 · Proteggere la rete</a></li><li><a href="#c6">6 · Nell'esempio</a></li><li><a href="#fonti">Fonti</a></li></ol>
+</nav>
+<main>
+<header class="cover">
+  <div>
+    <span class="kick">L'impianto termosanitario, passo per passo · 9</span>
+    <h1>La rete idrica: pressioni, portate, protezioni</h1>
+    <p>L'acqua fredda arriva dall'acquedotto con una pressione che non si sceglie. Il progetto deve farla bastare fino al rubinetto più alto e più lontano, senza esagerare a quello più basso, e impedire che l'acqua torni indietro.</p>
+    <div class="series" aria-label="La serie"><a href="termosanitario-01-fabbisogno.html">1 Fabbisogno</a><a href="termosanitario-02-linea-d-azione.html">2 Linea d'azione</a><a href="termosanitario-03-generazione.html">3 Generazione</a><a href="termosanitario-04-accumulo.html">4 Accumulo</a><a href="termosanitario-05-distribuzione.html">5 Distribuzione</a><a href="termosanitario-06-emissione.html">6 Emissione</a><a href="termosanitario-07-regolazione.html">7 Regolazione</a><a href="termosanitario-08-acqua-calda.html">8 Acqua calda</a><span class="on">9 Idrico</span><a href="termosanitario-10-scarichi.html">10 Scarichi</a><a href="termosanitario-11-nel-modello.html">11 Nel modello</a></div>
+  </div>
+  <svg viewBox="0 0 360 240" role="img" aria-label="Una colonna montante con le pressioni che diminuiscono salendo"><rect class="s-as" x="10" y="10" width="340" height="220" rx="22"/><path d="M90 210V40" style="stroke:var(--a2);stroke-width:6"/><path d="M100 190h170M100 150h150M100 110h130M100 70h110" style="stroke:var(--a2);stroke-width:5;stroke-linecap:round"/><path d="M150 50V200" style="stroke:var(--ink);stroke-dasharray:4 4"/><text class="s-tm" x="156" y="44">1 bar</text><text class="s-tm" x="30" y="222">allaccio</text></svg>
+</header>
+
+<div class="box bim"><b>Dove eravamo</b><p>Nell'<a href="termosanitario-08-acqua-calda.html">articolo 8</a> l'acqua calda della scuola di esempio è stata prodotta vicino ai servizi, con l'acqua fredda da tenere sotto i 20 °C. Ora la rete che porta l'acqua fredda a tutti i punti di prelievo.</p></div>
+
+<section class="ch" id="c1">
+  <div class="ch-h"><span class="ch-n">1</span><h2>Dall'allaccio al rubinetto</h2></div>
+  <p class="lead">La rete idrica di un edificio comincia al contatore del gestore e finisce ai rubinetti. In mezzo, in ordine: valvola d'intercettazione, protezione contro il riflusso, filtro, eventuale riduttore o gruppo di pressurizzazione, collettori e colonne, diramazioni di piano.</p>
+  <p>Il primo dato da chiedere al gestore è la <b>pressione disponibile all'allaccio</b>, minima e massima: di giorno, nelle ore di punta, può essere molto più bassa che di notte. Il progetto si verifica con la minima (per i rubinetti più sfavoriti) e con la massima (per non superare i limiti degli apparecchi).</p>
+</section>
+
+<section class="ch" id="c2">
+  <div class="ch-h"><span class="ch-n">2</span><h2>Quanto pesa un metro di salita</h2></div>
+  <p>Salire costa pressione: un metro di colonna d'acqua vale circa 0,098 bar. Quando l'acqua scorre si aggiungono le perdite di carico dei tubi e dei componenti (contatore, filtro, valvole, miscelatori).</p>
+  <div class="formula">p(rubinetto) = p(allaccio) − ρ · g · h − Σ perdite &nbsp;&nbsp;&nbsp; 1 m c.a. ≈ 0,098 bar<br><br>Esempio, rubinetto del 4° piano a 13 m sopra l'allaccio, 3,5 bar all'allaccio:<br>da fermo: 3,5 − 13 / 10,2 ≈ 2,2 bar<br>in uso, con perdite d'esempio di 5,3 m c.a. (0,1 m/m su 23 m di tubo + 3 m tra contatore e apparecchio):<br>2,2 − 5,3 / 10,2 ≈ 1,7 bar</div>
+  <p>Due limiti incorniciano il progetto. In genere i rubinetti più sfavoriti chiedono 10–15 m di colonna d'acqua (1–1,5 bar) per funzionare bene; apparecchi speciali (flussometri, docce particolari) chiedono di più, e il dato si legge nella scheda. Dall'altro lato, si consiglia di non superare circa 40 m di colonna d'acqua (4 bar) alle utenze: oltre, aumentano rumori, colpi d'ariete e usura.</p>
+</section>
+
+<section class="ch" id="c3">
+  <div class="ch-h"><span class="ch-n">3</span><h2>Le pressioni, da provare</h2></div>
+  <p>Con il puntatore si cambia la pressione all'allaccio; ogni piano mostra con una barra la pressione al suo rubinetto. Con un clic l'acqua comincia a scorrere e compaiono le perdite di carico. Le barre diventano ocra sotto 1 bar e rosse sopra 4 bar.</p>
+  <div id="fig-box" class="noprint"></div>
+</section>
+
+<section class="ch" id="c4">
+  <div class="ch-h"><span class="ch-n">4</span><h2>Le portate contemporanee</h2></div>
+  <p>In un edificio non si aprono mai tutti i rubinetti insieme. La portata di progetto di un tratto di rete non è quindi la somma delle portate di tutti gli apparecchi a valle, ma una portata «contemporanea» più piccola, che cresce meno che proporzionalmente con il numero degli apparecchi.</p>
+  <ul>
+    <li>La UNI 9182 e la UNI EN 806-3 danno i metodi: a ogni apparecchio si assegna un valore (unità di carico o portata nominale), si sommano i valori del tratto e una curva o una tabella dà la portata contemporanea.</li>
+    <li>Gli edifici con usi concentrati (spogliatoi, scuole all'intervallo, stadi) hanno picchi più stretti: la portata contemporanea va stimata con un criterio adatto a quell'uso, non con quello di un condominio.</li>
+    <li>Con la portata si sceglie il diametro tratto per tratto, controllando velocità (rumore, colpi d'ariete) e perdite di carico, come nella <a href="termosanitario-05-distribuzione.html">distribuzione del riscaldamento</a>.</li>
+  </ul>
+</section>
+
+<section class="ch" id="c5">
+  <div class="ch-h"><span class="ch-n">5</span><h2>Proteggere la rete</h2></div>
+  <ul>
+    <li><b>Contro il riflusso.</b> L'acqua dell'edificio non deve mai tornare nell'acquedotto, né l'acqua di un circuito tecnico (riempimento dell'impianto di riscaldamento, irrigazione, macchine) nella rete potabile. La UNI EN 1717 classifica i fluidi per rischio e indica il dispositivo adatto a ogni caso: dalla semplice valvola di non ritorno al disconnettore a zona di pressione ridotta, fino alla disconnessione con interruzione d'aria.</li>
+    <li><b>Troppa pressione.</b> Un riduttore di pressione all'ingresso (o di zona, negli edifici alti) porta la pressione sotto i limiti degli apparecchi.</li>
+    <li><b>Troppo poca.</b> Se l'allaccio non basta per i piani alti, un gruppo di pressurizzazione (pompe con un piccolo vaso) la alza; negli edifici alti la rete si divide in zone di pressione.</li>
+    <li><b>Il colpo d'ariete.</b> Una valvola che chiude di colpo ferma l'acqua e crea un'onda di pressione: velocità contenute e ammortizzatori vicino alle valvole a chiusura rapida lo limitano.</li>
+    <li><b>La temperatura.</b> I tubi dell'acqua fredda si isolano contro la condensa e per tenerli lontani dalla fascia di crescita della Legionella (<a href="termosanitario-08-acqua-calda.html">articolo 8</a>).</li>
+  </ul>
+</section>
+
+<section class="ch" id="c6">
+  <div class="ch-h"><span class="ch-n">6</span><h2>Nell'esempio</h2></div>
+  <p>Per la scuola di esempio, a due piani fuori terra: pressione all'allaccio dichiarata dal gestore e verificata sul rubinetto più sfavorito dell'ultimo piano; disconnettore all'ingresso e sul riempimento dell'impianto di riscaldamento; riduttore di pressione se la massima supera i limiti degli apparecchi; portate contemporanee stimate con un criterio adatto ai picchi, perché all'intervallo i servizi si riempiono tutti insieme.</p>
+  <div class="box tip"><b>La scheda per i prossimi articoli</b><p>Rete fredda: allaccio, disconnettore, filtro, riduttore, colonne dei servizi. L'acqua usata dai servizi deve andarsene: gli scarichi (articolo 10).</p></div>
+</section>
+
+<section class="ch" id="fonti">
+  <div class="ch-h"><span class="ch-n">≡</span><h2>Fonti</h2></div>
+  <ul class="src">
+    <li>Caleffi, «Le reti di distribuzione degli impianti idrosanitari», Idraulica n. 50: pressioni minime ai rubinetti più sfavoriti (10–15 m c.a.), pressione massima consigliata alle utenze (40 m c.a.), perdite di carico unitarie: <a href="https://www.caleffi.com/sites/default/files/media/external-file/Idraulica_50_IT_Le%20reti%20di%20distribuzione%20degli%20impianti%20idrosanitari%20.pdf" target="_blank" rel="noopener">PDF</a>.</li>
+    <li>UNI 9182, impianti di alimentazione e distribuzione d'acqua fredda e calda; UNI EN 806-3, dimensionamento delle tubazioni (metodo semplificato).</li>
+    <li>UNI EN 1717, protezione dall'inquinamento dell'acqua potabile negli impianti idraulici e dispositivi contro il riflusso.</li>
+  </ul>
+  <div class="box idea"><b>Come è nato questo articolo</b><p>È uno dei «manuali di Claude»: l'ha scritto Claude, l'assistente di intelligenza artificiale di Anthropic, seguendo le indicazioni del curatore. L'esempio è inventato e i numeri sono tondi.</p></div>
+</section>
+
+<nav class="pn noprint" aria-label="Articoli della serie"><a class="btn ghost" href="termosanitario-08-acqua-calda.html">← 8 · Acqua calda</a><a class="btn" href="termosanitario-10-scarichi.html">10 · Scarichi →</a></nav>
+<p class="foot">BIM News · L'impianto termosanitario, passo per passo · 9 · La rete idrica: pressioni, portate, protezioni · edizione novembre 2026</p>
+</main>
+</div>
+<script>
+window.addEventListener("message",function(e){ if(e.data&&e.data.figH&&e.data.fig==="ts-colonna"){ var g=document.getElementById("fig-frame"); if(g)g.style.height=(e.data.figH+4)+"px"; } });
+(function(){ var box=document.getElementById("fig-box"); if(!box)return; var lite=false; try{ var m=localStorage.getItem("versione"),c=navigator.connection,a=matchMedia("(prefers-reduced-motion: reduce)").matches||(c&&(c.saveData||/(^|-)2g$/.test(c.effectiveType||""))); lite=m?m==="essenziale":a; }catch(x){}
+  if(lite){ box.innerHTML='<p class="fig-alt"><a href="figure/ts-colonna.html">Apri la figura interattiva</a> (pagina a parte).</p>'; return; }
+  var f=document.createElement("iframe"); f.id="fig-frame"; f.className="fig-frame"; f.title="Figura interattiva: le pressioni lungo la colonna"; f.loading="lazy"; f.src="figure/ts-colonna.html?embed=1"; box.appendChild(f); })();
+</script>
+</body>
+</html>

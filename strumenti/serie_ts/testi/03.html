@@ -1,0 +1,78 @@
+{"titolo": "La generazione: da dove arriva il calore", "descrizione": "Terzo articolo della serie sull'impianto termosanitario: i generatori di calore. Pompa di calore, caldaia a condensazione, teleriscaldamento e sistemi ibridi; come si legge il COP, come si sceglie la potenza alla temperatura di progetto, con una figura interattiva sul bilancio della pompa di calore.", "sommario": "Il generatore è la parte più visibile dell'impianto, ma è anche quella che dipende di più dalle scelte fatte prima. Qui si guarda come funziona, come si legge la sua scheda e come si sceglie la potenza.", "indice": [["c1", "1 · I generatori, in breve"], ["c2", "2 · Come lavora una pompa di calore"], ["c3", "3 · Il bilancio, da provare"], ["c4", "4 · La potenza giusta"], ["c5", "5 · La caldaia a condensazione"], ["c6", "6 · La scelta dell'esempio"]], "figura": {"nome": "ts-generazione", "titolo": "il bilancio della pompa di calore"}, "ancora_figura": "c3", "ancora_chiave": "c6", "etichetta_chiave": "La scelta dell'esempio", "copertina": "<svg viewBox=\"0 0 360 240\" role=\"img\" aria-label=\"Una pompa di calore: il calore dell'aria più l'elettricità diventano calore per l'edificio\"><rect class=\"s-as\" x=\"10\" y=\"10\" width=\"340\" height=\"220\" rx=\"22\"/><rect x=\"40\" y=\"70\" width=\"110\" height=\"100\" rx=\"10\" style=\"fill:var(--soft);stroke:var(--ink);stroke-width:2\"/><circle cx=\"95\" cy=\"120\" r=\"30\" style=\"fill:none;stroke:var(--ink);stroke-width:2\"/><path d=\"M95 92v56M67 120h56\" style=\"stroke:var(--ink);stroke-width:2\"/><rect x=\"200\" y=\"130\" width=\"26\" height=\"60\" style=\"fill:var(--a2s);stroke:var(--a2)\"/><rect x=\"200\" y=\"100\" width=\"26\" height=\"30\" style=\"fill:var(--a5s);stroke:var(--a5)\"/><rect x=\"260\" y=\"100\" width=\"26\" height=\"90\" class=\"s-a\"/><text class=\"s-tm\" x=\"236\" y=\"150\">=</text><text class=\"s-tm\" x=\"188\" y=\"212\">aria + el.</text><text class=\"s-tm\" x=\"252\" y=\"212\">calore</text></svg>"}
+
+<div class="box bim"><b>Dove eravamo</b><p>Nell'<a href="termosanitario-02-linea-d-azione.html">articolo 2</a> la linea d'azione dell'aula di esempio è stata: centrale unica, ventilazione con recupero di calore, pompa di calore aria-acqua con mandata a 35 °C, pannelli a pavimento. Potenza di progetto dell'aula: 2,58 kW con −12 °C fuori.</p></div>
+
+<section class="ch" id="c1">
+  <div class="ch-h"><span class="ch-n">1</span><h2>I generatori, in breve</h2></div>
+  <p class="lead">Un generatore trasforma una fonte di energia in acqua calda (o fredda) per l'impianto. Le famiglie principali sono quattro, e ognuna pone domande diverse al progetto.</p>
+  <div class="tbl"><table>
+    <tr><th>Generatore</th><th>Che cosa usa</th><th>Che cosa chiede al progetto</th></tr>
+    <tr><td>Pompa di calore aria-acqua</td><td>Elettricità e il calore dell'aria esterna</td><td>Spazio all'aperto con aria libera, attenzione al rumore, temperature di mandata basse</td></tr>
+    <tr><td>Pompa di calore acqua-acqua o geotermica</td><td>Elettricità e il calore di falda o del terreno</td><td>Sonde o pozzi, autorizzazioni, indagini sul terreno; rende di più perché la sorgente è più calda d'inverno</td></tr>
+    <tr><td>Caldaia a condensazione</td><td>Gas (o un altro combustibile)</td><td>Camino, allaccio, ritorno freddo per condensare; da sola non copre l'obbligo delle rinnovabili</td></tr>
+    <tr><td>Teleriscaldamento</td><td>Calore di una rete cittadina</td><td>Una sottostazione con scambiatore; la temperatura e le condizioni le fissa il gestore della rete</td></tr>
+  </table></div>
+  <p>Esistono anche i sistemi <b>ibridi</b> (pompa di calore e caldaia insieme, con una logica che sceglie quale usare) e i generatori a biomassa. La scelta non si fa qui: l'ha già fatta la linea d'azione. Qui si dimensiona e si capisce come lavora la macchina scelta.</p>
+</section>
+
+<section class="ch" id="c2">
+  <div class="ch-h"><span class="ch-n">2</span><h2>Come lavora una pompa di calore</h2></div>
+  <p>Una pompa di calore sposta calore da un posto freddo a uno caldo, spendendo lavoro. Il fluido frigorigeno percorre un ciclo chiuso in quattro tappe:</p>
+  <ol class="steps">
+    <li><b>Evaporatore.</b> Il fluido, freddissimo e a bassa pressione, passa nella batteria esterna e prende calore dall'aria anche quando fuori ci sono pochi gradi sotto zero: per evaporare gli basta essere più freddo dell'aria.</li>
+    <li><b>Compressore.</b> Il vapore viene compresso: pressione e temperatura salgono. È qui che si spende l'elettricità.</li>
+    <li><b>Condensatore.</b> Il vapore caldo cede calore all'acqua dell'impianto e torna liquido.</li>
+    <li><b>Valvola di laminazione.</b> Il liquido si espande, si raffredda e il ciclo ricomincia.</li>
+  </ol>
+  <p>Il rapporto tra il calore consegnato e l'elettricità assorbita è il <b>COP</b> (coefficiente di prestazione). Un COP di 3 vuol dire che per ogni kWh elettrico arrivano all'acqua 3 kWh di calore: 2 presi dall'aria, 1 dall'elettricità.</p>
+  <div class="formula">Φ = Φaria + Pel &nbsp;&nbsp;&nbsp; COP = Φ / Pel<br>COP stimato ≈ 0,45 · Th / (Th − Tc) &nbsp;&nbsp;(temperature in kelvin)</div>
+  <p>Il COP non è un numero fisso della macchina: dipende dalle due temperature, quella della sorgente (l'aria esterna) e quella della mandata. Le schede tecniche lo danno in punti di prova normati dalla UNI EN 14511 (per esempio A7/W35: aria a 7 °C, acqua a 35 °C). Per confrontare le macchine sull'intera stagione si usa lo <b>SCOP</b>, il COP stagionale calcolato secondo la UNI EN 14825 su un clima di riferimento.</p>
+  <div class="box tip"><b>I refrigeranti</b><p>Il fluido del ciclo conta anche per l'ambiente. Il Regolamento (UE) 2024/573 sui gas fluorurati, in vigore dall'11 marzo 2024, riduce progressivamente l'uso dei gas ad alto potenziale di riscaldamento globale (GWP) e spinge verso refrigeranti naturali o a basso impatto. Nella scelta del prodotto conviene leggere quale refrigerante usa e quali limiti di installazione ne derivano.</p></div>
+</section>
+
+<section class="ch" id="c3">
+  <div class="ch-h"><span class="ch-n">3</span><h2>Il bilancio, da provare</h2></div>
+  <p>La figura mette in fila i due ingressi della pompa di calore (aria ed elettricità) e la sua uscita (il calore all'aula). Muovendo il puntatore cambia la temperatura esterna; con un clic la mandata passa da 35 a 55 °C. Si vede subito che il freddo pesa due volte: l'aula chiede più calore e la macchina rende meno.</p>
+  <div id="fig-box" class="noprint"></div>
+</section>
+
+<section class="ch" id="c4">
+  <div class="ch-h"><span class="ch-n">4</span><h2>La potenza giusta</h2></div>
+  <p>La potenza di un generatore si sceglie sul carico di progetto calcolato con la UNI EN 12831-1 alla temperatura esterna di progetto della località. Per una pompa di calore aria-acqua c'è un passo in più: la sua potenza <b>scende</b> quando l'aria si raffredda. Il dato da leggere sulla scheda non è la potenza nominale (spesso dichiarata a A7/W35), ma quella alla temperatura esterna di progetto e alla mandata di progetto.</p>
+  <ul>
+    <li><b>Punto bivalente.</b> È la temperatura esterna sotto la quale la pompa di calore da sola non basta più. Sotto quel punto serve un'integrazione (una resistenza elettrica o una caldaia, nei sistemi ibridi). Se il punto bivalente è più basso della temperatura di progetto, la macchina copre da sola tutto l'inverno.</li>
+    <li><b>Sbrinamento.</b> Con aria fredda e umida la batteria esterna si copre di brina; la macchina la scioglie invertendo per poco il ciclo. In quei minuti non dà calore all'impianto, anzi ne prende: è uno dei motivi dell'accumulo tecnico (articolo 4).</li>
+    <li><b>Non sovradimensionare.</b> Una macchina troppo grande lavora quasi sempre a carico parziale, con avvii e spegnimenti frequenti. Le macchine a velocità variabile (inverter) modulano, ma hanno comunque una potenza minima sotto la quale si accendono e si spengono.</li>
+    <li><b>La contemporaneità.</b> Per l'edificio intero la potenza è la somma dei carichi delle zone, tenendo conto di quali sono attive insieme; ci si aggiunge la produzione di acqua calda sanitaria, se la fa la stessa macchina (articolo 8).</li>
+  </ul>
+  <div class="formula">Aula di esempio, −12 °C fuori, mandata 35 °C<br>Φ = 2,58 kW &nbsp;&nbsp; COP ≈ 0,45 · 308,15 / 47 ≈ 3,0<br>Pel = 2,58 / 3,0 ≈ 0,87 kW &nbsp;&nbsp; Φaria ≈ 1,71 kW</div>
+</section>
+
+<section class="ch" id="c5">
+  <div class="ch-h"><span class="ch-n">5</span><h2>La caldaia a condensazione</h2></div>
+  <p>Una caldaia a gas brucia il combustibile e i fumi contengono vapore d'acqua. Se i fumi si raffreddano sotto il loro punto di rugiada (per i fumi del metano intorno ai 55 °C), il vapore condensa e restituisce il suo calore latente, circa un decimo dell'energia del gas. È questo che fa la condensazione: recupera un calore che una caldaia tradizionale manda nel camino.</p>
+  <p>La conseguenza per il progetto è semplice: la caldaia condensa solo se l'acqua che torna dall'impianto è abbastanza fredda. Con radiatori a 70/55 °C condensa poco; con pannelli a pavimento o radiatori dimensionati per temperature basse condensa sempre. La temperatura di lavoro, ancora una volta, decide il rendimento.</p>
+  <ul>
+    <li>Lo scarico della condensa è acido: va portato in fogna, con il neutralizzatore quando lo chiedono il produttore o il regolamento locale.</li>
+    <li>Il camino deve essere adatto ai fumi umidi e freddi (materiali resistenti alla condensa).</li>
+    <li>Oltre i 116 kW la centrale termica è un'attività soggetta ai controlli di prevenzione incendi (<a href="antincendio.html">guida antincendio</a>).</li>
+  </ul>
+</section>
+
+<section class="ch" id="c6">
+  <div class="ch-h"><span class="ch-n">6</span><h2>La scelta dell'esempio</h2></div>
+  <p>Per la scuola di esempio la generazione è una pompa di calore aria-acqua a velocità variabile, scelta sulla potenza a −12 °C e 35 °C di mandata con un punto bivalente sotto la temperatura di progetto: niente caldaia di integrazione. Il fotovoltaico in copertura copre una parte dei consumi nelle ore di sole.</p>
+  <div class="box tip"><b>La scheda per i prossimi articoli</b><p>Aula: 2,58 kW a −12 °C, COP stimato circa 3,0, potenza elettrica circa 0,87 kW. Mandata 35 °C, ritorno 30 °C. Da proteggere: avvii brevi e sbrinamenti, con un accumulo tecnico (articolo 4).</p></div>
+</section>
+
+<section class="ch" id="fonti">
+  <div class="ch-h"><span class="ch-n">≡</span><h2>Fonti</h2></div>
+  <ul class="src">
+    <li>UNI EN 14511, pompe di calore: condizioni di prova; UNI EN 14825, prestazioni stagionali (SCOP).</li>
+    <li>UNI EN 12831-1:2018, carico termico di progetto.</li>
+    <li>Regolamento (UE) 2024/573 sui gas fluorurati a effetto serra: <a href="https://www.mase.gov.it/portale/regolamento-ue-2024-573-sui-gas-fluorurati-a-effetto-serra-che-modifica-la-direttiva-ue-2019-1937-e-che-abroga-il-regolamento-ue-n-517-2014" target="_blank" rel="noopener">scheda del Ministero dell'ambiente e della sicurezza energetica</a>.</li>
+    <li>Punto di rugiada dei fumi del metano e calore di condensazione: <a href="https://www.energiazero.org/condensazione.html" target="_blank" rel="noopener">energiazero.org</a>, <a href="https://www.ingenio-web.it/articoli/il-funzionamento-delle-caldaie-a-condensazione-perche-sono-cosi-vantaggiose/" target="_blank" rel="noopener">Ingenio</a> (dà 53–59 °C), <a href="https://climanetonline.it/caldaia-a-condensazione/" target="_blank" rel="noopener">Climanet</a> (circa l'11 % dell'energia).</li>
+    <li>D.P.R. 1/8/2011 n. 151, allegato I: impianti per la produzione di calore oltre 116 kW.</li>
+  </ul>
+  <div class="box idea"><b>Come è nato questo articolo</b><p>È uno dei «manuali di Claude»: l'ha scritto Claude, l'assistente di intelligenza artificiale di Anthropic, seguendo le indicazioni del curatore. L'esempio è inventato e i numeri sono tondi.</p></div>
+</section>
