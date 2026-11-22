@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>La distribuzione: portate, tubi e pompe · I manuali di BIM News</title>
+<meta name="description" content="Quinto articolo della serie sull'impianto termosanitario: dalla potenza alla portata, la scelta dei diametri, il punto di lavoro tra pompa e circuito, il bilanciamento e l'isolamento delle tubazioni, con una figura interattiva.">
+<link rel="stylesheet" href="manuale.css">
+<script>try{var t=localStorage.getItem("tema-2026");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+<style>
+.btn.ghost,:root[data-theme="dark"] .btn.ghost{color:var(--accent)}
+.formula{font-family:var(--mono);background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:.9rem 1.1rem;margin:.6rem 0 1rem;font-size:.95rem;line-height:1.75;overflow-x:auto}
+.fig-frame{width:100%;border:0;min-height:640px;display:block;background:transparent;margin:.4rem 0 1rem}
+.fig-alt{margin:.4rem 0 1rem}
+.series{display:flex;flex-wrap:wrap;gap:.35rem;margin:.4rem 0 0}
+.series span,.series a{font-family:var(--mono);font-size:.72rem;border:1px solid var(--line);border-radius:999px;padding:.15rem .55rem;color:var(--muted);text-decoration:none}
+.series a{color:var(--accent);border-color:color-mix(in srgb,var(--accent) 45%,var(--line))}
+.series span.on{background:var(--accent);border-color:var(--accent);color:#fff}
+:root[data-theme="dark"] .series span.on{color:#10141b}
+.num td:nth-child(n+2){font-family:var(--mono);white-space:nowrap}
+.pn{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;margin:1.4rem 0 .6rem}
+</style>
+</head>
+<body>
+<div class="topbar"><div class="in"><a class="back" href="../#mep">← BIM News · MEP</a><span class="sp"></span><a class="btn ghost noprint" href="#c4">La figura</a><a class="btn noprint" href="#c6">Nell'esempio</a></div></div>
+<div class="layout">
+<nav class="toc" aria-label="Indice">
+  <b>Indice</b>
+  <ol><li><a href="#c1">1 · Dalla potenza alla portata</a></li><li><a href="#c2">2 · I diametri</a></li><li><a href="#c3">3 · Pompa e circuito</a></li><li><a href="#c4">4 · Il punto di lavoro, da provare</a></li><li><a href="#c5">5 · Bilanciare e isolare</a></li><li><a href="#c6">6 · Nell'esempio</a></li><li><a href="#fonti">Fonti</a></li></ol>
+</nav>
+<main>
+<header class="cover">
+  <div>
+    <span class="kick">L'impianto termosanitario, passo per passo · 5</span>
+    <h1>La distribuzione: portate, tubi e pompe</h1>
+    <p>Il calore viaggia con l'acqua. Quanta acqua serve lo dice la potenza; dove passa lo dicono i tubi; con quale spinta lo decide l'incontro tra la pompa e il circuito.</p>
+    <div class="series" aria-label="La serie"><a href="termosanitario-01-fabbisogno.html">1 Fabbisogno</a><a href="termosanitario-02-linea-d-azione.html">2 Linea d'azione</a><a href="termosanitario-03-generazione.html">3 Generazione</a><a href="termosanitario-04-accumulo.html">4 Accumulo</a><span class="on">5 Distribuzione</span><span>6 Emissione</span><span>7 Regolazione</span><span>8 Acqua calda</span><span>9 Idrico</span><span>10 Scarichi</span><span>11 Nel modello</span></div>
+  </div>
+  <svg viewBox="0 0 360 240" role="img" aria-label="La curva di una pompa che incontra la curva di un circuito"><rect class="s-as" x="10" y="10" width="340" height="220" rx="22"/><path d="M50 200H320M50 200V40" style="stroke:var(--ink);stroke-width:2;fill:none"/><path d="M50 70Q200 80 300 190" style="stroke:var(--accent);stroke-width:4;fill:none"/><path d="M50 200Q170 190 290 60" style="stroke:var(--a2);stroke-width:4;fill:none"/><circle cx="222" cy="128" r="9" class="s-a"/><text class="s-tm" x="60" y="60">pompa</text><text class="s-tm" x="250" y="80">circuito</text><text class="s-tm" x="300" y="218">Q</text><text class="s-tm" x="26" y="48">H</text></svg>
+</header>
+
+<div class="box bim"><b>Dove eravamo</b><p>Nell'<a href="termosanitario-04-accumulo.html">articolo 4</a> la centrale dell'esempio ha preso forma: pompa di calore, accumulo usato come separatore, vaso di espansione. Dai circuiti secondari partono l'acqua per i pannelli delle aule (35/30 °C) e quella per le batterie delle unità di trattamento aria.</p></div>
+
+<section class="ch" id="c1">
+  <div class="ch-h"><span class="ch-n">1</span><h2>Dalla potenza alla portata</h2></div>
+  <p class="lead">Un circuito ad acqua porta calore grazie alla differenza di temperatura tra mandata e ritorno (il «salto termico» ΔT). A parità di potenza, un salto piccolo chiede molta acqua; uno grande ne chiede poca.</p>
+  <div class="formula">Q = Φ / (ρ · c · ΔT) &nbsp;&nbsp;&nbsp; ρ · c ≈ 1,163 kWh/(m³·K) per l'acqua<br><br>Aula di esempio, ΔT = 5 K (35/30 °C):<br>pannelli: 0,41 / (1,163 · 5) ≈ 0,071 m³/h ≈ 71 l/h<br>batteria: 2,17 / (1,163 · 5) ≈ 0,373 m³/h ≈ 373 l/h<br>totale: 2,58 / (1,163 · 5) ≈ 0,444 m³/h ≈ 444 l/h</div>
+  <p>Gli impianti a bassa temperatura lavorano con salti piccoli (5 K è un valore comune per i pannelli e le pompe di calore), quindi muovono più acqua di un impianto a radiatori a 70/55 °C (15 K): a pari potenza, tre volte tanto. Tubi un po' più grandi e pompe che girano di più sono il prezzo della temperatura bassa.</p>
+</section>
+
+<section class="ch" id="c2">
+  <div class="ch-h"><span class="ch-n">2</span><h2>I diametri</h2></div>
+  <p>Scelta la portata, il diametro fissa la velocità dell'acqua. Una velocità alta fa rumore, consuma i tubi e fa crescere le perdite di carico (che crescono circa con il quadrato della velocità); una velocità bassa vuol dire tubi grandi, costosi e ingombranti.</p>
+  <div class="formula">v = Q / A &nbsp;&nbsp;&nbsp; A = π · D² / 4<br>Aula: 0,444 m³/h in un tubo da 20 mm interni → v ≈ 1,23·10⁻⁴ / 3,14·10⁻⁴ ≈ 0,39 m/s<br>Quattro aule: 1,77 m³/h in 32 mm interni → v ≈ 4,92·10⁻⁴ / 8,04·10⁻⁴ ≈ 0,61 m/s</div>
+  <p>Le perdite di carico di un tratto sono di due tipi: <b>distribuite</b>, lungo il tubo (formula di Darcy-Weisbach, Δp = λ · L/D · ρ · v²/2), e <b>concentrate</b>, in curve, valvole, raccordi e apparecchi (Δp = ξ · ρ · v²/2). La loro somma sul percorso più sfavorito, quello del terminale più lontano o più «duro», è la prevalenza che la pompa deve dare. I valori di λ e ξ si leggono nei manuali e nei cataloghi dei produttori; i software di calcolo li applicano tratto per tratto.</p>
+</section>
+
+<section class="ch" id="c3">
+  <div class="ch-h"><span class="ch-n">3</span><h2>Pompa e circuito</h2></div>
+  <p>Una pompa ha una <b>curva</b>: più portata dà, meno prevalenza riesce a spingere. Il circuito ha la sua curva: più acqua ci si fa passare, più resistenza oppone (circa con il quadrato della portata). La pompa non lavora dove la si vorrebbe, ma dove le due curve si incontrano: il <b>punto di lavoro</b>.</p>
+  <ul>
+    <li><b>Se il circuito si chiude</b> (valvole termostatiche o di zona), la sua curva si fa più ripida: il punto scivola verso sinistra, meno portata e più prevalenza. Nei circuiti con molte valvole questo aumento di pressione può far fischiare le valvole rimaste aperte.</li>
+    <li><b>Se la pompa rallenta</b>, la sua curva si abbassa: per le leggi di affinità la portata scala con la velocità, la prevalenza con il suo quadrato, la potenza assorbita circa con il cubo.</li>
+    <li><b>Le pompe elettroniche</b> regolano la velocità da sole per tenere una prevalenza costante o proporzionale alla portata: quando le valvole chiudono, rallentano invece di spingere di più. Nell'Unione europea i circolatori devono rispettare un indice di efficienza energetica massimo (Regolamento (CE) 641/2009, modificato dal Regolamento (UE) 622/2012).</li>
+  </ul>
+  <div class="formula">Potenza idraulica = ρ · g · Q · H<br>Quattro aule: 1000 · 9,81 · 4,92·10⁻⁴ · 3 ≈ 14 W (la potenza elettrica è più alta, per il rendimento della pompa)</div>
+</section>
+
+<section class="ch" id="c4">
+  <div class="ch-h"><span class="ch-n">4</span><h2>Il punto di lavoro, da provare</h2></div>
+  <p>Nella figura un circuito di quattro aule chiede 1,77 m³/h a 3 m di prevalenza (valore d'esempio). Con il puntatore si apre e si chiude la valvola sulla mandata; con un clic la pompa passa dal 100 al 70 % della velocità. Il misuratore e il quadrante leggono il punto di lavoro.</p>
+  <div id="fig-box" class="noprint"></div>
+</section>
+
+<section class="ch" id="c5">
+  <div class="ch-h"><span class="ch-n">5</span><h2>Bilanciare e isolare</h2></div>
+  <p>L'acqua segue la strada più facile: senza correzioni, i terminali vicini alla pompa ricevono troppa portata e quelli lontani troppo poca. <b>Bilanciare</b> vuol dire aggiungere resistenza dove ce n'è poca, così ogni ramo riceve la sua portata di progetto.</p>
+  <ul>
+    <li><b>Bilanciamento statico:</b> valvole tarate in opera su un valore fisso, misurato con uno strumento. Va bene per circuiti a portata costante.</li>
+    <li><b>Bilanciamento dinamico:</b> valvole che tengono costante la portata (o la pressione differenziale) qualunque cosa facciano gli altri rami. Sono la scelta comune nei circuiti a portata variabile, con molte valvole di regolazione.</li>
+    <li><b>Isolamento:</b> le tubazioni di distribuzione vanno isolate per non disperdere il calore (e, in raffrescamento, per evitare la condensa). In Italia gli spessori minimi dell'isolante sono nell'allegato B del D.P.R. 412/1993, in funzione del diametro del tubo e della conduttività del materiale.</li>
+  </ul>
+</section>
+
+<section class="ch" id="c6">
+  <div class="ch-h"><span class="ch-n">6</span><h2>Nell'esempio</h2></div>
+  <p>Per la scuola di esempio: circuiti secondari con pompe elettroniche a velocità variabile, uno per i pannelli delle aule e uno per le batterie; collettori di piano con valvole di bilanciamento dinamico; tubazioni isolate secondo l'allegato B.</p>
+  <div class="box tip"><b>La scheda per i prossimi articoli</b><p>Aula: 444 l/h a 35/30 °C, di cui 71 l/h ai pannelli. Circuito di quattro aule: 1,77 m³/h a 3 m di prevalenza (d'esempio). Il prossimo passo è il terminale: come i pannelli cedono il calore all'aula (articolo 6).</p></div>
+</section>
+
+<section class="ch" id="fonti">
+  <div class="ch-h"><span class="ch-n">≡</span><h2>Fonti</h2></div>
+  <ul class="src">
+    <li>Regolamento (CE) 641/2009 sui circolatori: <a href="https://eur-lex.europa.eu/legal-content/IT/TXT/PDF/?uri=CELEX:32009R0641" target="_blank" rel="noopener">testo su EUR-Lex</a>; modifiche del Regolamento (UE) 622/2012: <a href="https://www.reteambiente.it/normativa/17014/" target="_blank" rel="noopener">scheda di Reteambiente</a>.</li>
+    <li>D.P.R. 26/8/1993 n. 412, allegato B: spessori minimi dell'isolamento delle tubazioni.</li>
+    <li>Formule di idraulica (portata, velocità, Darcy-Weisbach, leggi di affinità): manuali di idraulica e impianti termotecnici.</li>
+  </ul>
+  <div class="box idea"><b>Come è nato questo articolo</b><p>È uno dei «manuali di Claude»: l'ha scritto Claude, l'assistente di intelligenza artificiale di Anthropic, seguendo le indicazioni del curatore. L'esempio è inventato e i numeri sono tondi.</p></div>
+</section>
+
+<nav class="pn noprint" aria-label="Articoli della serie"><a class="btn ghost" href="termosanitario-04-accumulo.html">← 4 · Accumulo</a><span></span></nav>
+<p class="foot">BIM News · L'impianto termosanitario, passo per passo · 5 · La distribuzione: portate, tubi e pompe · edizione novembre 2026</p>
+</main>
+</div>
+<script>
+window.addEventListener("message",function(e){ if(e.data&&e.data.figH&&e.data.fig==="ts-pompa"){ var g=document.getElementById("fig-frame"); if(g)g.style.height=(e.data.figH+4)+"px"; } });
+(function(){ var box=document.getElementById("fig-box"); if(!box)return; var lite=false; try{ var m=localStorage.getItem("versione"),c=navigator.connection,a=matchMedia("(prefers-reduced-motion: reduce)").matches||(c&&(c.saveData||/(^|-)2g$/.test(c.effectiveType||""))); lite=m?m==="essenziale":a; }catch(x){}
+  if(lite){ box.innerHTML='<p class="fig-alt"><a href="figure/ts-pompa.html">Apri la figura interattiva</a> (pagina a parte).</p>'; return; }
+  var f=document.createElement("iframe"); f.id="fig-frame"; f.className="fig-frame"; f.title="Figura interattiva: il punto di lavoro di pompa e circuito"; f.loading="lazy"; f.src="figure/ts-pompa.html?embed=1"; box.appendChild(f); })();
+</script>
+</body>
+</html>
