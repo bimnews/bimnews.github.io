@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dal progetto al modello: l'impianto in IFC · I manuali di BIM News</title>
+<meta name="description" content="Undicesimo e ultimo articolo della serie sull'impianto termosanitario: come portare l'impianto nel modello BIM. Classi IFC 4.3, tipi predefiniti, Pset, sistemi di distribuzione e porte, e dove mettere i numeri calcolati negli articoli precedenti, con una figura interattiva.">
+<link rel="stylesheet" href="manuale.css">
+<script>try{var t=localStorage.getItem("tema-2026");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+<style>
+.btn.ghost,:root[data-theme="dark"] .btn.ghost{color:var(--accent)}
+.formula{font-family:var(--mono);background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:.9rem 1.1rem;margin:.6rem 0 1rem;font-size:.95rem;line-height:1.75;overflow-x:auto}
+.fig-frame{width:100%;border:0;min-height:640px;display:block;background:transparent;margin:.4rem 0 1rem}
+.fig-alt{margin:.4rem 0 1rem}
+.series{display:flex;flex-wrap:wrap;gap:.35rem;margin:.4rem 0 0}
+.series span,.series a{font-family:var(--mono);font-size:.72rem;border:1px solid var(--line);border-radius:999px;padding:.15rem .55rem;color:var(--muted);text-decoration:none}
+.series a{color:var(--accent);border-color:color-mix(in srgb,var(--accent) 45%,var(--line))}
+.series span.on{background:var(--accent);border-color:var(--accent);color:#fff}
+:root[data-theme="dark"] .series span.on{color:#10141b}
+.num td:nth-child(n+2){font-family:var(--mono);white-space:nowrap}
+.pn{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;margin:1.4rem 0 .6rem}
+</style>
+</head>
+<body>
+<div class="topbar"><div class="in"><a class="back" href="../#mep">← BIM News · MEP</a><span class="sp"></span><a class="btn ghost noprint" href="#c3">La figura</a><a class="btn noprint" href="#c6">La serie, in una pagina</a></div></div>
+<div class="layout">
+<nav class="toc" aria-label="Indice">
+  <b>Indice</b>
+  <ol><li><a href="#c1">1 · Che cosa modellare</a></li><li><a href="#c2">2 · Ogni pezzo, la sua classe</a></li><li><a href="#c3">3 · Il modello, da provare</a></li><li><a href="#c4">4 · Sistemi e collegamenti</a></li><li><a href="#c5">5 · Dove vanno i numeri</a></li><li><a href="#c6">6 · La serie, in una pagina</a></li><li><a href="#fonti">Fonti</a></li></ol>
+</nav>
+<main>
+<header class="cover">
+  <div>
+    <span class="kick">L'impianto termosanitario, passo per passo · 11</span>
+    <h1>Dal progetto al modello: l'impianto in IFC</h1>
+    <p>Un impianto disegnato è un insieme di linee; un impianto modellato è un insieme di oggetti che sanno che cosa sono, a quale sistema appartengono e con chi sono collegati. Questo articolo chiude la serie mettendo ogni pezzo al suo posto nel modello.</p>
+    <div class="series" aria-label="La serie"><a href="termosanitario-01-fabbisogno.html">1 Fabbisogno</a><a href="termosanitario-02-linea-d-azione.html">2 Linea d'azione</a><a href="termosanitario-03-generazione.html">3 Generazione</a><a href="termosanitario-04-accumulo.html">4 Accumulo</a><a href="termosanitario-05-distribuzione.html">5 Distribuzione</a><a href="termosanitario-06-emissione.html">6 Emissione</a><a href="termosanitario-07-regolazione.html">7 Regolazione</a><a href="termosanitario-08-acqua-calda.html">8 Acqua calda</a><a href="termosanitario-09-idrico.html">9 Idrico</a><a href="termosanitario-10-scarichi.html">10 Scarichi</a><span class="on">11 Nel modello</span></div>
+  </div>
+  <svg viewBox="0 0 360 240" role="img" aria-label="Pezzi di impianto collegati in un sistema, con le etichette delle classi IFC"><rect class="s-as" x="10" y="10" width="340" height="220" rx="22"/><rect x="40" y="70" width="60" height="50" rx="8" style="fill:var(--soft);stroke:var(--accent);stroke-width:2"/><circle cx="170" cy="95" r="22" style="fill:var(--soft);stroke:var(--accent);stroke-width:2"/><rect x="240" y="75" width="70" height="40" rx="8" style="fill:var(--soft);stroke:var(--accent);stroke-width:2"/><path d="M100 95h48M192 95h48" style="stroke:var(--accent);stroke-width:4"/><text class="s-tm" x="36" y="150">IfcUnitary…</text><text class="s-tm" x="146" y="150">IfcPump</text><text class="s-tm" x="238" y="150">IfcTank</text><text class="s-tm" x="110" y="196">HEATING</text></svg>
+</header>
+
+<div class="box bim"><b>Dove eravamo</b><p>Negli articoli dall'<a href="termosanitario-01-fabbisogno.html">1</a> al <a href="termosanitario-10-scarichi.html">10</a> l'impianto della scuola di esempio è stato pensato e dimensionato: fabbisogno, generazione, accumulo, distribuzione, emissione, regolazione, acqua calda, acqua fredda, scarichi. Ora entra nel modello.</p></div>
+
+<section class="ch" id="c1">
+  <div class="ch-h"><span class="ch-n">1</span><h2>Che cosa modellare</h2></div>
+  <p class="lead">Non tutto va modellato allo stesso modo in ogni fase. Che cosa serve, con quale dettaglio geometrico e con quali dati, lo dice il <b>fabbisogno informativo</b> del committente (la UNI EN 17412-1 lo chiama «livello di fabbisogno informativo»; in Italia la UNI 11337-4 usa i livelli di sviluppo degli oggetti).</p>
+  <ul>
+    <li><b>Progetto di fattibilità:</b> spazi con i loro requisiti (temperature, ricambi d'aria, carichi), locali tecnici, cavedi. Bastano volumi d'ingombro.</li>
+    <li><b>Progetto esecutivo:</b> le reti con i diametri, le macchine con le loro dimensioni e gli spazi di manutenzione, i terminali, le pendenze degli scarichi. È il livello in cui si controllano le interferenze con strutture e architettura.</li>
+    <li><b>Costruito e gestione:</b> i prodotti realmente installati, con i dati che servono a chi gestirà l'edificio (marca, modello, date, manutenzione).</li>
+  </ul>
+  <p>Il formato aperto per scambiare tutto questo è l'IFC. Gli esempi che seguono usano lo schema IFC 4.3 (ISO 16739-1:2024).</p>
+</section>
+
+<section class="ch" id="c2">
+  <div class="ch-h"><span class="ch-n">2</span><h2>Ogni pezzo, la sua classe</h2></div>
+  <p>In IFC ogni oggetto ha una <b>classe</b> (che cosa è), un <b>tipo predefinito</b> (PredefinedType, quale variante) e dei <b>Pset</b>, gruppi di proprietà standard. I pezzi dell'impianto di esempio:</p>
+  <div class="tbl"><table>
+    <tr><th>Pezzo</th><th>Classe.TIPO</th><th>Pset dello schema</th></tr>
+    <tr><td>Pompa di calore</td><td>IfcUnitaryEquipment.USERDEFINED</td><td>Pset_UnitaryEquipmentTypeCommon</td></tr>
+    <tr><td>Accumulo</td><td>IfcTank.STORAGE</td><td>Pset_TankTypeCommon</td></tr>
+    <tr><td>Vaso di espansione</td><td>IfcTank.EXPANSION</td><td>Pset_TankTypeExpansion</td></tr>
+    <tr><td>Circolatore</td><td>IfcPump.CIRCULATOR</td><td>Pset_PumpTypeCommon</td></tr>
+    <tr><td>Valvola miscelatrice</td><td>IfcValve.MIXING</td><td>Pset_ValveTypeMixing</td></tr>
+    <tr><td>Tubo</td><td>IfcPipeSegment.RIGIDSEGMENT</td><td>Pset_PipeSegmentTypeCommon</td></tr>
+    <tr><td>Riduttore di pressione</td><td>IfcValve.PRESSUREREDUCING</td><td>Pset_ValveTypePressureReducing</td></tr>
+    <tr><td>Lavabo</td><td>IfcSanitaryTerminal.WASHHANDBASIN</td><td>Pset_SanitaryTerminalTypeWashHandBasin</td></tr>
+    <tr><td>WC</td><td>IfcSanitaryTerminal.TOILETPAN</td><td>Pset_SanitaryTerminalTypeToiletPan</td></tr>
+    <tr><td>Piletta a pavimento</td><td>IfcWasteTerminal.FLOORTRAP</td><td>Pset_WasteTerminalTypeCommon</td></tr>
+    <tr><td>Termostato dell'aula</td><td>IfcUnitaryControlElement.THERMOSTAT</td><td>Pset_UnitaryControlElementTypeThermostat</td></tr>
+    <tr><td>Sonda di CO₂</td><td>IfcSensor.CO2SENSOR</td><td>Pset_SensorTypeCO2Sensor</td></tr>
+  </table></div>
+  <div class="box tip"><b>Quando la classe non c'è</b><p>IFC 4.3 non ha una classe dedicata alla pompa di calore, né un tipo per il pannello radiante a pavimento (IfcSpaceHeater ha solo CONVECTOR e RADIATOR). In questi casi si sceglie la classe più vicina con il tipo USERDEFINED e si scrive il nome del tipo in ObjectType. Conviene fissare la scelta nel capitolato informativo, così tutti i modelli la fanno allo stesso modo. Ogni classe e tipo si può cercare nella <a href="libreria-ifc.html">libreria IFC 4.3</a> del sito, per esempio <a href="libreria-ifc.html#ifc=IfcPump.CIRCULATOR">IfcPump.CIRCULATOR</a>.</p></div>
+  <p>Nei software di modellazione la classe si assegna con la mappatura delle categorie verso l'IFC o con parametri dedicati (in Revit, per esempio, IfcExportAs e IfcExportType): se la mappatura è sbagliata, il circolatore arriva al coordinatore come un generico IfcBuildingElementProxy, e nessun controllo automatico lo riconosce più.</p>
+</section>
+
+<section class="ch" id="c3">
+  <div class="ch-h"><span class="ch-n">3</span><h2>Il modello, da provare</h2></div>
+  <p>Con il puntatore si scorrono i pezzi dell'impianto: quello scelto si alza e la lettura ne dà la classe e il tipo. Con un clic si vedono i sistemi: riscaldamento in rosso, acqua fredda in blu, scarichi in ocra.</p>
+  <div id="fig-box" class="noprint"></div>
+</section>
+
+<section class="ch" id="c4">
+  <div class="ch-h"><span class="ch-n">4</span><h2>Sistemi e collegamenti</h2></div>
+  <p>Un impianto non è una somma di oggetti: è una rete. In IFC la rete si descrive con tre strumenti.</p>
+  <ul>
+    <li><b>I sistemi.</b> Un IfcDistributionSystem raccoglie gli elementi di un impianto (con la relazione IfcRelAssignsToGroup) e ha anch'esso un tipo: HEATING, DOMESTICHOTWATER, DOMESTICCOLDWATER, DRAINAGE, VENTILATION, STORMWATER e altri. Con IfcRelServicesBuildings il sistema si lega all'edificio che serve.</li>
+    <li><b>Le porte.</b> Ogni elemento ha le sue IfcDistributionPort (annidate con IfcRelNests), una per attacco, con la direzione del flusso (SOURCE, SINK o SOURCEANDSINK) e il tipo (PIPE per i tubi).</li>
+    <li><b>I collegamenti.</b> Due porte collegate formano una IfcRelConnectsPorts: è così che il modello sa che l'acqua passa dalla pompa al tubo e dal tubo alla valvola, e un software può seguire la rete da un capo all'altro.</li>
+  </ul>
+  <p>I software di modellazione creano porte e collegamenti da soli quando le reti sono disegnate «collegate». Un tubo che arriva a un millimetro dal raccordo senza agganciarlo sembra a posto a vista, ma nel modello la rete è interrotta: un controllo di connettività prima della consegna lo scopre.</p>
+</section>
+
+<section class="ch" id="c5">
+  <div class="ch-h"><span class="ch-n">5</span><h2>Dove vanno i numeri</h2></div>
+  <p>I numeri calcolati nella serie hanno quasi tutti un posto nelle proprietà standard. Qualche esempio:</p>
+  <div class="tbl"><table>
+    <tr><th>Dato (articolo)</th><th>Dove nel modello</th></tr>
+    <tr><td>Carichi e portate d'aria dell'aula (1)</td><td>IfcSpace: Pset_SpaceThermalLoad, Pset_SpaceHVACDesign, Pset_SpaceAirHandlingDimensioning, Pset_SpaceOccupancyRequirements</td></tr>
+    <tr><td>Volume dell'accumulo (4)</td><td>Pset_TankTypeCommon.TankNominalCapacity</td></tr>
+    <tr><td>Precarica del vaso, 1,5 bar (4)</td><td>Pset_TankTypeExpansion.ChargePressure</td></tr>
+    <tr><td>Taratura della valvola di sicurezza (4)</td><td>Pset_TankTypeExpansion.ReliefValveSetting</td></tr>
+    <tr><td>Campo di portata della pompa (5)</td><td>Pset_PumpTypeCommon.FlowRateRange</td></tr>
+    <tr><td>Diametri dei tubi (5)</td><td>Pset_PipeSegmentTypeCommon.NominalDiameter, InnerDiameter</td></tr>
+    <tr><td>Temperatura impostata dell'aula (7)</td><td>Pset_UnitaryControlElementTypeThermostat.TemperatureSetPoint</td></tr>
+    <tr><td>Soglia di CO₂ della ventilazione (7)</td><td>Pset_SensorTypeCO2Sensor.SetPointCO2Concentration</td></tr>
+    <tr><td>Pressioni a valle del riduttore (9)</td><td>Pset_ValveTypePressureReducing.DownstreamPressure</td></tr>
+  </table></div>
+  <p>Altri dati non hanno una proprietà standard: per esempio le unità di scarico DU dell'articolo 10 o il COP di progetto della pompa di calore. Vanno in Pset propri, con nomi e unità fissati nel capitolato informativo e controllabili con un file IDS (sul sito, la proposta di un <a href="dati-pubblici.html">dizionario dei dati BIM pubblici</a> mostra come). Un dato senza un posto concordato è un dato che nessuno ritroverà.</p>
+</section>
+
+<section class="ch" id="c6">
+  <div class="ch-h"><span class="ch-n">6</span><h2>La serie, in una pagina</h2></div>
+  <ol class="steps">
+    <li><a href="termosanitario-01-fabbisogno.html"><b>Fabbisogno</b></a>: quanto calore e quanta aria servono, stanza per stanza.</li>
+    <li><a href="termosanitario-02-linea-d-azione.html"><b>Linea d'azione</b></a>: le scelte in ordine, prima di tutte la temperatura di lavoro.</li>
+    <li><a href="termosanitario-03-generazione.html"><b>Generazione</b></a>: il generatore, il suo rendimento, la potenza alla temperatura di progetto.</li>
+    <li><a href="termosanitario-04-accumulo.html"><b>Accumulo</b></a>: il volume che protegge la macchina, il separatore, il vaso di espansione.</li>
+    <li><a href="termosanitario-05-distribuzione.html"><b>Distribuzione</b></a>: portate, diametri, pompe e bilanciamento.</li>
+    <li><a href="termosanitario-06-emissione.html"><b>Emissione</b></a>: come il calore entra nella stanza, terminale per terminale.</li>
+    <li><a href="termosanitario-07-regolazione.html"><b>Regolazione</b></a>: quanto calore, quando e dove.</li>
+    <li><a href="termosanitario-08-acqua-calda.html"><b>Acqua calda</b></a>: produzione, ricircolo, Legionella.</li>
+    <li><a href="termosanitario-09-idrico.html"><b>Idrico</b></a>: pressioni, portate contemporanee, protezioni.</li>
+    <li><a href="termosanitario-10-scarichi.html"><b>Scarichi</b></a>: unità di scarico, colonne, ventilazione.</li>
+    <li><b>Nel modello</b>: classi, sistemi, collegamenti e dati.</li>
+  </ol>
+  <div class="box tip"><b>Il filo della serie</b><p>Ogni scelta dipende da quelle prima: il fabbisogno decide la temperatura, la temperatura decide il generatore e i terminali, i terminali decidono le portate. Il modello BIM è il posto dove questo filo resta visibile anche dopo la consegna, per chi costruisce e per chi gestisce.</p></div>
+</section>
+
+<section class="ch" id="fonti">
+  <div class="ch-h"><span class="ch-n">≡</span><h2>Fonti</h2></div>
+  <ul class="src">
+    <li>Schema IFC 4.3 ADD2 (ISO 16739-1:2024): classi, tipi predefiniti, Pset e relazioni controllati con IfcOpenShell 0.9 sullo schema IFC4X3_ADD2. Documentazione ufficiale: <a href="https://ifc43-docs.standards.buildingsmart.org/" target="_blank" rel="noopener">buildingSMART International</a> (in inglese).</li>
+    <li>UNI EN 17412-1, livello di fabbisogno informativo; UNI 11337-4, livelli di sviluppo degli oggetti.</li>
+    <li>Sul sito: la <a href="libreria-ifc.html">libreria IFC 4.3</a> e la proposta del <a href="dati-pubblici.html">dizionario dei dati BIM pubblici</a>.</li>
+  </ul>
+  <div class="box idea"><b>Come è nato questo articolo</b><p>È uno dei «manuali di Claude»: l'ha scritto Claude, l'assistente di intelligenza artificiale di Anthropic, seguendo le indicazioni del curatore. L'esempio è inventato e i numeri sono tondi.</p></div>
+</section>
+
+<nav class="pn noprint" aria-label="Articoli della serie"><a class="btn ghost" href="termosanitario-10-scarichi.html">← 10 · Scarichi</a><span></span></nav>
+<p class="foot">BIM News · L'impianto termosanitario, passo per passo · 11 · Dal progetto al modello: l'impianto in IFC · edizione novembre 2026</p>
+</main>
+</div>
+<script>
+window.addEventListener("message",function(e){ if(e.data&&e.data.figH&&e.data.fig==="ts-modello"){ var g=document.getElementById("fig-frame"); if(g)g.style.height=(e.data.figH+4)+"px"; } });
+(function(){ var box=document.getElementById("fig-box"); if(!box)return; var lite=false; try{ var m=localStorage.getItem("versione"),c=navigator.connection,a=matchMedia("(prefers-reduced-motion: reduce)").matches||(c&&(c.saveData||/(^|-)2g$/.test(c.effectiveType||""))); lite=m?m==="essenziale":a; }catch(x){}
+  if(lite){ box.innerHTML='<p class="fig-alt"><a href="figure/ts-modello.html">Apri la figura interattiva</a> (pagina a parte).</p>'; return; }
+  var f=document.createElement("iframe"); f.id="fig-frame"; f.className="fig-frame"; f.title="Figura interattiva: l'impianto nel modello"; f.loading="lazy"; f.src="figure/ts-modello.html?embed=1"; box.appendChild(f); })();
+</script>
+</body>
+</html>
