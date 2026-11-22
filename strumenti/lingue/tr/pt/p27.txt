@@ -1,0 +1,15 @@
+v1702	MEP
+v1703	As instalações dos edifícios: mecânicas, elétricas e hidráulicas (em inglês MEP: Mechanical, Electrical, Plumbing). A Didática explica como funcionam, das necessidades do edifício até aos dados do modelo BIM; nos Exemplos há guias e ferramentas para o trabalho.
+v1704	Didática
+v1705	Exemplos
+v1706	Séries de artigos que explicam uma instalação passo a passo, com um exemplo que continua de artigo para artigo e figuras interativas. Os exemplos são genéricos e os números redondos: servem para compreender os mecanismos e não substituem o cálculo de um projeto real.
+v1707	A instalação térmica e sanitária, passo a passo · 1 · As necessidades
+v1708	Antes de escolher uma instalação percebe-se do que o edifício precisa: calor no inverno, ar, água quente e água, potência e energia.
+v1709	Uma sala de aula de exemplo, calculada passo a passo com as normas de referência, mostra que numa escola bem isolada a necessidade de calor é decidida pelo ar mais do que pelas paredes. Com uma figura interativa para experimentar: muda-se a temperatura exterior e liga-se ou desliga-se a recuperação de calor.
+v1710	<span class="tag ok">Publicado</span><a class="man-btn" href="manuali/termosanitario-01-fabbisogno.html">Ler o artigo</a><a class="man-btn ghost" href="manuali/termosanitario-01-fabbisogno.html#c5">A figura</a>
+v1711	Guias, checklists e ferramentas para o trabalho em instalações, escritos com Claude, o assistente de inteligência artificial da Anthropic.
+v1712	Instalações explicadas passo a passo, e exemplos para usar
+v1713	A instalação térmica e sanitária, passo a passo
+v1714	Checklist, projeto elétrico, incêndio
+v1715	publicados
+v1716	publicado

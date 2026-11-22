@@ -1,0 +1,15 @@
+v1702	MEP
+v1703	Die technischen Anlagen von Gebäuden: Lüftung und Heizung, Elektro, Sanitär (auf Englisch MEP: Mechanical, Electrical, Plumbing). Die Didaktik erklärt, wie sie funktionieren, vom Bedarf des Gebäudes bis zu den Daten im BIM-Modell; die Beispiele enthalten Leitfäden und Werkzeuge für die Arbeit.
+v1704	Didaktik
+v1705	Beispiele
+v1706	Artikelserien, die eine Anlage Schritt für Schritt erklären, mit einem Beispiel, das von Artikel zu Artikel weitergeht, und interaktiven Abbildungen. Die Beispiele sind allgemein und die Zahlen gerundet: Sie dienen dem Verständnis und ersetzen nicht die Berechnung eines echten Projekts.
+v1707	Heizung und Sanitär, Schritt für Schritt · 1 · Der Bedarf
+v1708	Bevor man eine Anlage wählt, klärt man, was das Gebäude braucht: Wärme im Winter, Luft, Warmwasser und Wasser, Leistung und Energie.
+v1709	Ein Beispiel-Klassenzimmer, Schritt für Schritt mit den maßgebenden Normen berechnet, zeigt: In einer gut gedämmten Schule bestimmt die Luft den Wärmebedarf stärker als die Wände. Mit einer interaktiven Abbildung zum Ausprobieren: Außentemperatur ändern, Wärmerückgewinnung ein- und ausschalten.
+v1710	<span class="tag ok">Veröffentlicht</span><a class="man-btn" href="manuali/termosanitario-01-fabbisogno.html">Artikel lesen</a><a class="man-btn ghost" href="manuali/termosanitario-01-fabbisogno.html#c5">Die Abbildung</a>
+v1711	Leitfäden, Checklisten und Werkzeuge für die Arbeit an der Gebäudetechnik, geschrieben mit Claude, dem KI-Assistenten von Anthropic.
+v1712	Gebäudetechnik Schritt für Schritt erklärt, und Beispiele zum Anwenden
+v1713	Heizung und Sanitär, Schritt für Schritt
+v1714	Checkliste, Elektroplanung, Brandschutz
+v1715	veröffentlicht
+v1716	veröffentlicht

@@ -11044,5 +11044,110 @@
 "h": "<span class=\"tag ok\">Pubblicato</span><a class=\"man-btn\" href=\"manuali/antincendio.html\">Apri la guida</a><a class=\"man-btn ghost\" href=\"manuali/antincendio.html#c6\">La mappa del workflow</a>",
 "tag": "P",
 "id": "v1701"
+},
+{
+"k": "MEP",
+"m": "text",
+"h": "MEP",
+"tag": "H3",
+"id": "v1702"
+},
+{
+"k": "Gli impianti degli edifici, meccanici, elettrici e idraulici (in inglese MEP: Mechanical, Electrical, Plumbing). Nella Didattica si spiega come funzionano, dal fabbisogno dell'edificio fino ai dati del modello BIM; negli Esempi ci sono guide e strumenti da usare nel lavoro.",
+"m": "text",
+"h": "Gli impianti degli edifici, meccanici, elettrici e idraulici (in inglese MEP: Mechanical, Electrical, Plumbing). Nella Didattica si spiega come funzionano, dal fabbisogno dell'edificio fino ai dati del modello BIM; negli Esempi ci sono guide e strumenti da usare nel lavoro.",
+"tag": "P",
+"id": "v1703"
+},
+{
+"k": "Didattica",
+"m": "text",
+"h": "Didattica",
+"tag": "#node",
+"id": "v1704"
+},
+{
+"k": "Esempi",
+"m": "text",
+"h": "Esempi",
+"tag": "#node",
+"id": "v1705"
+},
+{
+"k": "Serie di articoli che spiegano un impianto passo per passo, con un esempio che continua da un articolo all'altro e figure interattive. Gli esempi sono generici e i numeri tondi: servono a capire i meccanismi, non sostituiscono il calcolo di un progetto vero.",
+"m": "text",
+"h": "Serie di articoli che spiegano un impianto passo per passo, con un esempio che continua da un articolo all'altro e figure interattive. Gli esempi sono generici e i numeri tondi: servono a capire i meccanismi, non sostituiscono il calcolo di un progetto vero.",
+"tag": "P",
+"id": "v1706"
+},
+{
+"k": "L'impianto termosanitario, passo per passo · 1 · Il fabbisogno",
+"m": "text",
+"h": "L'impianto termosanitario, passo per passo · 1 · Il fabbisogno",
+"tag": "H4",
+"id": "v1707"
+},
+{
+"k": "Prima di scegliere un impianto si capisce di che cosa ha bisogno l'edificio: calore d'inverno, aria, acqua calda e acqua, potenza ed energia.",
+"m": "text",
+"h": "Prima di scegliere un impianto si capisce di che cosa ha bisogno l'edificio: calore d'inverno, aria, acqua calda e acqua, potenza ed energia.",
+"tag": "P",
+"id": "v1708"
+},
+{
+"k": "Un'aula di esempio calcolata passo per passo, con le norme di riferimento, mostra che in una scuola ben isolata il fabbisogno di calore lo decide l'aria più delle pareti. Con una figura interattiva da provare: si cambia la temperatura esterna e si accende o si spegne il recupero di calore.",
+"m": "text",
+"h": "Un'aula di esempio calcolata passo per passo, con le norme di riferimento, mostra che in una scuola ben isolata il fabbisogno di calore lo decide l'aria più delle pareti. Con una figura interattiva da provare: si cambia la temperatura esterna e si accende o si spegne il recupero di calore.",
+"tag": "P",
+"id": "v1709"
+},
+{
+"k": "PubblicatoLeggi l'articoloLa figura",
+"m": "html",
+"h": "<span class=\"tag ok\">Pubblicato</span><a class=\"man-btn\" href=\"manuali/termosanitario-01-fabbisogno.html\">Leggi l'articolo</a><a class=\"man-btn ghost\" href=\"manuali/termosanitario-01-fabbisogno.html#c5\">La figura</a>",
+"tag": "P",
+"id": "v1710"
+},
+{
+"k": "Guide, checklist e strumenti per il lavoro sugli impianti, scritti con Claude, l'assistente di intelligenza artificiale di Anthropic.",
+"m": "text",
+"h": "Guide, checklist e strumenti per il lavoro sugli impianti, scritti con Claude, l'assistente di intelligenza artificiale di Anthropic.",
+"tag": "P",
+"id": "v1711"
+},
+{
+"k": "Impianti spiegati passo per passo, ed esempi da usare",
+"m": "text",
+"h": "Impianti spiegati passo per passo, ed esempi da usare",
+"tag": "#node",
+"id": "v1712"
+},
+{
+"k": "L'impianto termosanitario, passo per passo",
+"m": "text",
+"h": "L'impianto termosanitario, passo per passo",
+"tag": "#rest",
+"id": "v1713"
+},
+{
+"k": "Checklist, progettazione elettrica, antincendio",
+"m": "text",
+"h": "Checklist, progettazione elettrica, antincendio",
+"tag": "#rest",
+"id": "v1714"
+},
+{
+"k": "pubblicati",
+"m": "text",
+"h": "pubblicati",
+"tag": "#node",
+"id": "v1715"
+},
+{
+"k": "pubblicato",
+"m": "text",
+"h": "pubblicato",
+"tag": "#node",
+"id": "v1716"
 }
 ]

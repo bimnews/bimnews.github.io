@@ -1,0 +1,15 @@
+v1702	MEP
+v1703	Building services: mechanical, electrical and plumbing (MEP). The Learning part explains how they work, from the building's needs to the data in the BIM model; the Examples hold guides and tools to use at work.
+v1704	Learning
+v1705	Examples
+v1706	Article series that explain a system step by step, with one example carried from article to article and interactive figures. The examples are generic and the numbers round: they help understand the mechanisms and do not replace the calculation of a real project.
+v1707	The heating and plumbing system, step by step · 1 · The needs
+v1708	Before choosing a system, you work out what the building needs: heat in winter, air, hot water and water, power and energy.
+v1709	An example classroom, calculated step by step with the reference standards, shows that in a well-insulated school the heat demand is set by the air more than by the walls. With an interactive figure to try: change the outdoor temperature and switch heat recovery on or off.
+v1710	<span class="tag ok">Published</span><a class="man-btn" href="manuali/termosanitario-01-fabbisogno.html">Read the article</a><a class="man-btn ghost" href="manuali/termosanitario-01-fabbisogno.html#c5">The figure</a>
+v1711	Guides, checklists and tools for work on building services, written with Claude, Anthropic's artificial intelligence assistant.
+v1712	Building services explained step by step, and examples to use
+v1713	The heating and plumbing system, step by step
+v1714	Checklist, electrical design, fire safety
+v1715	published
+v1716	published
