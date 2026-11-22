@@ -81,6 +81,8 @@
   .mm-lines{display:none}
   .mm-node{max-width:none;min-width:0;margin:.15rem 0}
 }
+.fig-frame{width:100%;border:0;min-height:560px;display:block;background:transparent;margin:.4rem 0 1rem}
+.fig-alt{margin:.4rem 0 1rem}
 </style>
 </head>
 <body>
@@ -161,6 +163,8 @@
   <p><b>Classi astratte.</b> Servono solo a raggruppare (IfcElement, IfcFeatureElement…): un oggetto del modello non può essere di una classe astratta. Nel foglio Library ci sono solo le classi che si usano; quelle astratte sono nel foglio Classes.</p>
   <p><b>PredefinedType.</b> È il sottotipo, scelto da un elenco chiuso: un IfcWall può essere PARTITIONING, RETAININGWALL, SHEAR… Alcune classi, come IfcBuilding o IfcBuildingStorey, non ne hanno.</p>
   <div class="box tip"><b>USERDEFINED e NOTDEFINED</b><p>Se il sottotipo non è nell'elenco si sceglie USERDEFINED e si scrive il tipo vero nell'attributo ObjectType dell'oggetto (o ElementType del tipo). NOTDEFINED vuol dire che il sottotipo non è ancora deciso: va bene in una fase iniziale, meno in una consegna.</p></div>
+  <p>Nella figura ogni classe è un cassetto e ogni PredefinedType una scheda: il conteggio delle schede è quello della libreria, USERDEFINED e NOTDEFINED compresi.</p>
+  <div class="fig-embed noprint" data-fig="schedario" data-title="classe e PredefinedType"></div>
   <p><b>Deprecazioni.</b> Una classe o un valore deprecato esiste ancora nello schema per compatibilità, ma non va usato nei modelli nuovi: la scheda indica che cosa usare al suo posto quando lo standard lo dice. Esempi: IfcWallStandardCase (usare IfcWall) e IfcElectricDistributionBoard (usare IfcDistributionBoard).</p>
   <p><b>IfcBuildingElementProxy.</b> È la classe di riserva, per gli elementi che non trovano posto altrove. Un modello pieno di proxy perde gran parte del valore dell'IFC: prima di usarla conviene cercare qui.</p>
 </section>
@@ -292,5 +296,13 @@ function reveal(cn,v){chain(cn).forEach(function(n){set(NODE[n],true)});if(v)set
   setTimeout(function(){var R=wrap.getBoundingClientRect(),b=nd.getBoundingClientRect();wrap.scrollTo({left:wrap.scrollLeft+b.left-R.left-R.width/2+b.width/2,top:wrap.scrollTop+b.top-R.top-R.height/2,behavior:"smooth"})},450)}
 })();
 </script>
+<script>/* figure animate: iframe ?embed=1 solo fuori dalla versione essenziale (stessa regola di index.html) */
+(function(){ var boxes=document.querySelectorAll(".fig-embed[data-fig]"); if(!boxes.length)return; var lite=false;
+  try{ var m=localStorage.getItem("versione"),c=navigator.connection,a=matchMedia("(prefers-reduced-motion: reduce)").matches||(c&&(c.saveData||/(^|-)2g$/.test(c.effectiveType||""))); lite=m?m==="essenziale":a; }catch(e){}
+  boxes.forEach(function(box){ var n=box.getAttribute("data-fig"), t=box.getAttribute("data-title")||"Figura interattiva";
+    if(lite){ box.innerHTML='<p class="fig-alt"><a href="figure/'+n+'.html">Apri la figura interattiva: '+t+'</a> (pagina a parte).</p>'; return; }
+    var f=document.createElement("iframe"); f.className="fig-frame"; f.title="Figura interattiva: "+t; f.loading="lazy"; f.src="figure/"+n+".html?embed=1"; f.setAttribute("data-fig",n); box.appendChild(f); });
+  window.addEventListener("message",function(e){ if(!e.data||!e.data.figH||!e.data.fig)return; var f=document.querySelector('iframe.fig-frame[data-fig="'+e.data.fig+'"]'); if(f)f.style.height=(e.data.figH+4)+"px"; });
+})();</script>
 </body>
 </html>
