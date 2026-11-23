@@ -63,7 +63,7 @@ Sono scritti anche sul sito, nel riquadro «Come scegliamo le notizie» e nel pa
 - **Cerca in profondità nella lingua locale di ogni paese.**
   - **Lingue della ricerca e lingue in verifica:** sono quelle elencate nella FAQ del sito, domanda «In che lingue cercate le notizie?» (sezione `#faq` di `index.html`, elenchi `lg-yes` e `lg-test`). Usa quegli elenchi, sono la fonte unica.
   - Cerca le lingue in verifica a rotazione:
-    - quando una lingua in verifica porta almeno una fonte valida, spostala tra le lingue della ricerca nella FAQ (aggiornando i conteggi tra parentesi e `strumenti/faq.py`);
+    - quando una lingua in verifica porta almeno una fonte valida, spostala tra le lingue della ricerca nella FAQ, modificando a mano gli elenchi `lg-yes` e `lg-test` di `index.html` e i conteggi tra parentesi (aggiorna anche le liste in `strumenti/faq.py`, ma NON lanciarlo: è vecchio e cancella parti di `index.html`);
     - se dopo ricerche serie non porta nulla, dillo nel riepilogo.
   - Usa ricerche web e apri le pagine per leggere l'articolo e la sua data.
 - **Fonti utili di partenza (non esclusive):**
@@ -148,6 +148,7 @@ Le notizie vanno in `assets/notizie.json`: segui esattamente lo stile esistente.
 
 - **Quanti:** circa 20 articoli scientifici sul BIM a settimana, finché non avrai coperto tutti quelli pertinenti; poi continua con quelli nuovi.
 - **Dove cercarli:** nell'API pubblica di Crossref (`https://api.crossref.org/works?query.bibliographic=...&filter=type:journal-article,from-pub-date:2015-01-01,has-license:true,has-abstract:true&rows=100`).
+  - Crossref risponde 429 se le richieste sono troppo ravvicinate: aspetta circa 6 secondi tra una query e l'altra; nel parametro `select` non mettere `language` (dà errore 400). Per controllare un DOI basta il codice 302 di `https://doi.org/…` (molti editori rispondono 403 ai programmi).
   - Fai query per tema: verifica normativa, intelligenza artificiale, facility management, gemello digitale e IoT, IFC e interoperabilità, strutture, prefabbricazione, sicurezza, adozione, sostenibilità ed energia, LCA, GIS, lean construction, 4D, 5D, HBIM, infrastrutture, appalti pubblici, formazione.
   - Non usare servizi che chiedono di registrare l'email dell'utente.
 - **Quali tenere:** SOLO gli articoli che hanno tutte queste caratteristiche:
@@ -166,7 +167,7 @@ Le notizie vanno in `assets/notizie.json`: segui esattamente lo stile esistente.
 
 ## Video (`VIDEOS`, `VIDEOS_UNI` e `CHANNELS` in `index.html`, pagina `#video`)
 
-- **Che cosa:** webinar e conferenze BIM registrati e gratuiti (soprattutto YouTube) e canali utili, verificati (pagina aperta o oEmbed di YouTube).
+- **Che cosa:** webinar e conferenze BIM registrati e gratuiti (soprattutto YouTube) e canali utili, verificati (pagina aperta o oEmbed di YouTube). Metodo che funziona: dalla pagina `https://www.youtube.com/@canale/videos` si legge `externalId`, poi il feed `https://www.youtube.com/feeds/videos.xml?channel_id=…` dà gli ultimi video con la data; il titolo ufficiale arriva da `https://www.youtube.com/oembed?url=…&format=json`. Se la durata non è nota lascia `len` vuoto.
 - **Formato video:** `{t,o,l:"it|en|de|es",len,tema:"Norme|Appalti|openBIM|IFC|AI|Sostenibilità|Infrastrutture|Introduzione|Pubblica amministrazione",u,x}`.
 - **Formato canale:** `{t,l,u,x}`.
 - **Lingue diverse da it/en/de/es:** aggiungi prima il pulsante e la voce in `LN`.
