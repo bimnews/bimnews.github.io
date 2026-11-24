@@ -5,7 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>BIM News · Un sito a cura di Marco Scigliuolo</title>
 <meta name="description" content="BIM News: le novità sul BIM dall'Alto Adige al resto del mondo, ogni settimana, con sintesi in italiano e link alle fonti. Mappa, filtri, archivio per mese, BIM in breve e timeline delle norme. A cura di Marco Scigliuolo.">
-<meta name="revisione" content="155 · 23/11/2026">
+<meta name="revisione" content="156 · 24/11/2026">
+<script>/* lingua del browser: regola di Marco (24/11/2026). Senza scelta salvata si usa la prima lingua del browser tra le 11 del sito; se nessuna è disponibile, l'inglese */window.BROWSER_LANG=(function(){var ok=["it","en","fr","de","es","pt","ru","ar","zh","ja","ko"],l=(navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language||""]);for(var i=0;i<l.length;i++){var c=String(l[i]||"").toLowerCase().slice(0,2);if(ok.indexOf(c)>=0)return c}return "en"})();</script>
 <meta name="google-site-verification" content="bjOU_7z5lD6JSPxu8zu7hukgAVaRDDZoFKwbb3HMQpM">
 <meta name="color-scheme" content="dark light">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='none' stroke='%232f6db5' stroke-width='3'/%3E%3Ctext x='16' y='22' font-family='Arial' font-weight='700' font-size='16' text-anchor='middle' fill='%232f6db5'%3EM%3C/text%3E%3C/svg%3E">
@@ -2964,7 +2965,7 @@ new MutationObserver(acc).observe(root,{attributes:true,attributeFilter:["data-v
 // il tasto Home ricarica tutto il sito, così si vedono sempre gli ultimi aggiornamenti
 document.addEventListener("click",function(e){var a=e.target.closest("a.brand,#home-link");if(!a||e.button||e.ctrlKey||e.metaKey||e.shiftKey||e.altKey)return;
   e.preventDefault();try{history.scrollRestoration="manual";history.replaceState(null,"",location.pathname+"#home")}catch(x){}location.reload()});
-fetch("assets/notizie.json",{cache:"no-cache"}).then(function(r){if(!r.ok)throw 0;return r.json()}).then(function(d){ARTS=d.arts;WEEKS=d.weeks;/* notizie in inglese nelle lingue diverse dall'italiano (campi te/xe) */var L="it";try{L=localStorage.getItem("lingua")||"it"}catch(e){}window.NEWS_L=L;/* regola di Marco: in italiano t/x; nella lingua della fonte (lo) tl/xl; altrimenti inglese te/xe */if(L!=="it")ARTS.forEach(function(a){if(a.lo===L&&a.tl){a.t=a.tl;a.x=a.xl;a.tlang=L}else if(a.te){a.t=a.te;a.x=a.xe;a.tlang="en"}});addEventListener("lingua",function(){var l=(document.documentElement.lang||"it").slice(0,2);if(l!==window.NEWS_L)location.reload()});__boot();acc()}).catch(fail)})();
+fetch("assets/notizie.json",{cache:"no-cache"}).then(function(r){if(!r.ok)throw 0;return r.json()}).then(function(d){ARTS=d.arts;WEEKS=d.weeks;/* notizie in inglese nelle lingue diverse dall'italiano (campi te/xe) */var L=window.BROWSER_LANG||"it";try{L=localStorage.getItem("lingua")||L}catch(e){}window.NEWS_L=L;/* regola di Marco: in italiano t/x; nella lingua della fonte (lo) tl/xl; altrimenti inglese te/xe */if(L!=="it")ARTS.forEach(function(a){if(a.lo===L&&a.tl){a.t=a.tl;a.x=a.xl;a.tlang=L}else if(a.te){a.t=a.te;a.x=a.xe;a.tlang="en"}});addEventListener("lingua",function(){var l=(document.documentElement.lang||"it").slice(0,2);if(l!==window.NEWS_L)location.reload()});__boot();acc()}).catch(fail)})();
 function __boot(){
 /* Notizie vere: sintesi scritte da noi, link alla fonte. Raggruppate per settimana ISO. */
 var AREE={europa:"Europa",asia:"Asia",africa:"Africa",america:"America",oceania:"Oceania",mondo:"Globale"};
@@ -3870,7 +3871,7 @@ function apply(lang,inc){busy=true;pend=false;if(!(inc&&lang===cur))restore();cu
 // le scritte che cambiano da sole vengono ritradotte
 var tm=0,mo=new MutationObserver(function(){if(cur==="it")return;if(busy){pend=true;return}clearTimeout(tm);tm=setTimeout(function(){apply(cur,true)},60)});mo.observe(document.body,{childList:true,characterData:true,subtree:true});
 sel.addEventListener("change",function(){store("lingua",sel.value);apply(sel.value)});
-var saved=load("lingua");if(saved&&saved!=="it"&&sel.querySelector('option[value="'+saved+'"]'))setTimeout(function(){apply(saved)},0)})();
+var saved=load("lingua")||window.BROWSER_LANG;if(saved&&saved!=="it"&&sel.querySelector('option[value="'+saved+'"]'))setTimeout(function(){apply(saved)},0)})();
 </script>
 <style>
 /* feste: animazioni leggere nella fascia alta della mappa (vedi script «feste») */
