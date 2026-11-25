@@ -109,6 +109,7 @@ Le notizie vanno in `assets/notizie.json`: segui esattamente lo stile esistente.
   - `"te"` e `"xe"`: lo stesso titolo e la stessa sintesi in inglese, traduzione fedele.
   - `"lo"`: il codice della lingua della fonte principale (it, en, fr, de, es, pt, ru, ar, zh, ja, ko, oppure un altro codice ISO 639-1).
   - `"tl"` e `"xl"`: solo se `lo` è fr, de, es, pt, ru, ar, zh, ja o ko. Sono lo stesso titolo e la stessa sintesi nella lingua della fonte.
+  - `"fi"`: `true` solo se la fonte non è istituzionale e serve una fonte indiretta (studio, stampa, grande azienda) per un paese che altrimenti resterebbe vuoto; la scheda mostra l'etichetta «Fonte indiretta». Nella rassegna settimanale di solito non serve.
   - `"tags"`: usa i tag esistenti quando possibile.
   - `"src"`: `[["Nome fonte (lingua se non it/en/de)","URL"]]`.
 - **Campi obbligatori:** `te`, `xe` e `lo` per ogni notizia nuova; `tl` e `xl` quando la lingua della fonte è una delle lingue del sito diverse da italiano e inglese. Non scrivere `tl` e `xl` in altre lingue: si risparmiano token.

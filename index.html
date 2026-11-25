@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>BIM News · Un sito a cura di Marco Scigliuolo</title>
 <meta name="description" content="BIM News: le novità sul BIM dall'Alto Adige al resto del mondo, ogni settimana, con sintesi in italiano e link alle fonti. Mappa, filtri, archivio per mese, BIM in breve e timeline delle norme. A cura di Marco Scigliuolo.">
-<meta name="revisione" content="156 · 24/11/2026">
+<meta name="revisione" content="157 · 25/11/2026">
 <script>/* lingua del browser: regola di Marco (24/11/2026). Senza scelta salvata si usa la prima lingua del browser tra le 11 del sito; se nessuna è disponibile, l'inglese */window.BROWSER_LANG=(function(){var ok=["it","en","fr","de","es","pt","ru","ar","zh","ja","ko"],l=(navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language||""]);for(var i=0;i<l.length;i++){var c=String(l[i]||"").toLowerCase().slice(0,2);if(ok.indexOf(c)>=0)return c}return "en"})();</script>
 <meta name="google-site-verification" content="bjOU_7z5lD6JSPxu8zu7hukgAVaRDDZoFKwbb3HMQpM">
 <meta name="color-scheme" content="dark light">
@@ -476,6 +476,7 @@ body{margin:0}
 .m-nav button span{color:var(--muted);margin-left:.25rem}
 .m-nav button[aria-pressed="true"] span{color:inherit;opacity:.75}
 .arch-tag{font-family:var(--mono);font-size:.62rem;border:1px dashed var(--muted);color:var(--muted);padding:.08rem .35rem;white-space:nowrap}
+.fi-tag{font-family:var(--mono);font-size:.62rem;border:1px solid var(--k-ag,#d9a441);color:var(--k-ag,#d9a441);padding:.08rem .35rem;white-space:nowrap}
 .pager[hidden]{display:none}
 .pager{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.6rem;font-family:var(--mono);font-size:.76rem;color:var(--muted)}
 .pager button{font:inherit;background:var(--surface);border:1px solid var(--line);color:var(--ink);padding:.4rem .8rem;cursor:pointer}
@@ -2974,7 +2975,7 @@ var $=function(id){return document.getElementById(id)};
 var state={q:"",year:"",month:"",tags:[],cont:"",country:"",region:""};
 function fmt(d){var p=d.split("-");return +p[2]+" "+MESI[+p[1]-1]+" "+p[0]}
 function days(a,b){return (Date.parse(b)-Date.parse(a))/864e5}
-function arch(a){return a.r&&days(a.d,a.r)>7?'<span class="arch-tag" title="Notizia raccolta a posteriori, non nella settimana in cui è uscita">Archivio · raccolta il '+fmt(a.r)+'</span>':''}
+var FI_TXT={"it": ["Fonte indiretta", "Nessuna fonte istituzionale: la notizia viene da uno studio, dalla stampa o da un'azienda che parla del paese"], "en": ["Indirect source", "No institutional source: the news comes from a study, the press or a company writing about the country"], "fr": ["Source indirecte", "Aucune source institutionnelle : l'information provient d'une étude, de la presse ou d'une entreprise qui parle du pays"], "de": ["Indirekte Quelle", "Keine institutionelle Quelle: Die Meldung stammt aus einer Studie, der Presse oder einem Unternehmen, das über das Land berichtet"], "es": ["Fuente indirecta", "Sin fuente institucional: la noticia procede de un estudio, de la prensa o de una empresa que habla del país"], "pt": ["Fonte indireta", "Sem fonte institucional: a notícia vem de um estudo, da imprensa ou de uma empresa que fala do país"], "ru": ["Косвенный источник", "Нет официального источника: новость взята из исследования, прессы или от компании, пишущей о стране"], "ar": ["مصدر غير مباشر", "لا يوجد مصدر رسمي: الخبر مأخوذ من دراسة أو من الصحافة أو من شركة تتحدث عن البلد"], "zh": ["间接来源", "无官方来源：该新闻来自研究、媒体或介绍该国的企业"], "ja": ["間接的な情報源", "公的な情報源はありません。研究、報道、またはその国について書いた企業による情報です"], "ko": ["간접 출처", "공식 출처 없음: 연구, 언론 또는 해당 국가에 관해 쓴 기업의 정보입니다"]};function arch(a){var f=a.fi?(FI_TXT[window.NEWS_L]||FI_TXT.it):null;return (f?'<span class="fi-tag" translate="no" title="'+esc(f[1])+'">'+esc(f[0])+'</span>':'')+(a.r&&days(a.d,a.r)>7?'<span class="arch-tag" title="Notizia raccolta a posteriori, non nella settimana in cui è uscita">Archivio · raccolta il '+fmt(a.r)+'</span>':'')}
 function esc(s){return s.replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
 function hl(s,q){s=esc(s);if(!q)return s;var i=s.toLowerCase().indexOf(q.toLowerCase());return i<0?s:s.slice(0,i)+"<mark>"+s.slice(i,i+q.length)+"</mark>"+s.slice(i+q.length)}
 function norm(s){return s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"")}

@@ -8,3 +8,5 @@ Ultimo aggiornamento	Последнее обновление
 Prossimo evento · costo da verificare	Ближайшее мероприятие · стоимость уточняется
 Online dal	Сайт работает с
 Sito aggiornato il	Сайт обновлён
+Fonte indiretta	Косвенный источник
+Nessuna fonte istituzionale: la notizia viene da uno studio, dalla stampa o da un'azienda che parla del paese	Нет официального источника: новость взята из исследования, прессы или от компании, пишущей о стране
